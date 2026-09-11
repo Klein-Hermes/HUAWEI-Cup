@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.idea/
+.vscode/
+data/raw/
+data/interim/
+results/
+outputs/
+*.log
+*.tmp
