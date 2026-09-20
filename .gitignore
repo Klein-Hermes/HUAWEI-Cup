@@ -9,3 +9,4 @@ results/
 outputs/
 *.log
 *.tmp
+.DS_Store
