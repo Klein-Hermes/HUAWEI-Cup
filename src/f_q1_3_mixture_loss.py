@@ -335,20 +335,26 @@ def quadratic_feature_names(pcols: list[str]) -> list[str]:
 
 
 def fit_quadratic_ridge(p: np.ndarray, y: np.ndarray, penalty: float) -> dict[str, Any]:
-    """Fit a second-order Scheffe mixture surface without an intercept.
+    """Fit a second-order Scheffe mixture surface with an unpenalized intercept.
 
     The 17 linear mixture terms can represent a constant on the simplex, so an
-    additional intercept would be aliased. Positive ridge shrinkage handles the
-    153-term design and the sparse recipe support without changing zero shares.
+    explicit intercept would be aliased in the uncentered basis. Centering the
+    feature matrix and responses within the training fold gives an unpenalized
+    intercept equal to the fold response mean. Positive ridge shrinkage handles
+    the 153-term design without changing zero shares in the raw feature map.
     """
     x = quadratic_feature_matrix(p)
-    feature_scale = np.sqrt(np.mean(x ** 2, axis=0))
+    feature_center = x.mean(axis=0)
+    x_centered = x - feature_center[None, :]
+    feature_scale = np.sqrt(np.mean(x_centered ** 2, axis=0))
     feature_scale[feature_scale <= np.finfo(float).eps] = 1.0
-    z = x / feature_scale[None, :]
-    y_scale = y.std(axis=0, ddof=1) if len(y) > 1 else np.ones(y.shape[1])
+    z = x_centered / feature_scale[None, :]
+    y_mean = y.mean(axis=0)
+    y_centered = y - y_mean[None, :]
+    y_scale = y_centered.std(axis=0, ddof=1) if len(y) > 1 else np.ones(y.shape[1])
     zero_scale = y_scale <= np.finfo(float).eps
     y_scale[zero_scale] = 1.0
-    ys = y / y_scale[None, :]
+    ys = y_centered / y_scale[None, :]
     gram = z.T @ z / len(z)
     rhs = z.T @ ys / len(z)
     theta = np.linalg.solve(gram + float(penalty) * np.eye(gram.shape[0]), rhs)
@@ -357,7 +363,9 @@ def fit_quadratic_ridge(p: np.ndarray, y: np.ndarray, penalty: float) -> dict[st
     return {
         "kind": "quadratic_ridge",
         "coef": coef,
+        "intercept": y_mean,
         "lambda": float(penalty),
+        "feature_center": feature_center,
         "feature_scale": feature_scale,
         "target_scale": y_scale,
         "zero_scale_targets": np.flatnonzero(zero_scale).tolist(),
@@ -365,7 +373,8 @@ def fit_quadratic_ridge(p: np.ndarray, y: np.ndarray, penalty: float) -> dict[st
 
 
 def predict_quadratic(model: dict[str, Any], p: np.ndarray) -> np.ndarray:
-    return quadratic_feature_matrix(p) @ model["coef"]
+    x = quadratic_feature_matrix(p)
+    return model["intercept"] + (x - model["feature_center"][None, :]) @ model["coef"]
 
 
 def predict_linear(model: dict[str, Any], p: np.ndarray) -> np.ndarray:
@@ -841,6 +850,25 @@ def write_parameter_table(path: Path, model: dict[str, Any], pcols: list[str],
     write_csv(path, rows)
 
 
+def write_quadratic_parameter_table(path: Path, model: dict[str, Any],
+                                    pcols: list[str], ycols: list[str]) -> None:
+    terms = quadratic_feature_names(pcols)
+    rows = []
+    for j, term in enumerate(terms):
+        for k, target in enumerate(ycols):
+            rows.append({
+                "model": "quadratic_ridge_sensitivity",
+                "target": target,
+                "term": term,
+                "coefficient": float(model["coef"][j, k]),
+                "feature_center": float(model["feature_center"][j]),
+                "feature_scale_rms": float(model["feature_scale"][j]),
+                "intercept_target_mean": float(model["intercept"][k]),
+                "lambda": float(model["lambda"]),
+            })
+    write_csv(path, rows)
+
+
 def run_p1(output_dir: Path) -> dict[str, Any]:
     train = load_pair(SPLITS[0][1], SPLITS[0][2])
     n = min(96, len(train["p"]))
@@ -887,6 +915,8 @@ def run_p1(output_dir: Path) -> dict[str, Any]:
     summary = {
         "status": "MINIMAL_RUN_COMPLETED",
         "mode": "p1",
+        "source_code": {"file": str(Path(__file__).relative_to(PROJECT_ROOT)),
+                        "sha256": sha256(Path(__file__))},
         "input": {
             "mixture_file": str(train["mixture_path"].relative_to(PROJECT_ROOT)),
             "loss_file": str(train["loss_path"].relative_to(PROJECT_ROOT)),
@@ -902,6 +932,7 @@ def run_p1(output_dir: Path) -> dict[str, Any]:
             "method_basis": "simplex identifiability and grouped internal validation; hidden text does not decide inclusion or exclusion",
             "candidate_models": ["training-mean baseline", "reference-component OLS", "simplex ridge"],
             "robustness_model": "simplex_huber_ridge_sensitivity (smoke fit only; not a primary candidate)",
+            "additional_sensitivity_model": "quadratic_ridge_sensitivity (smoke fit only; not a primary candidate)",
         },
         "ridge_lambda": 0.01,
         "ridge_constraint_max_abs_sum": float(np.max(np.abs(ridge_model["coef"].sum(axis=0)))),
@@ -1005,6 +1036,37 @@ def run_full(output_dir: Path) -> dict[str, Any]:
             "inner_cv_standardized_mse_by_family": "Huber ridge only; lambda selected inside outer training",
         })
 
+    # Zero-friendly native-share quadratic model, assessed as a sensitivity only.
+    quadratic_cv = nested_quadratic_cv(p_closed, y, SEED + 30000)
+    quadratic_cv_rows = calculate_metrics(
+        y, quadratic_cv["predictions"], train["ycols"], "nested_cv_closed",
+        "quadratic_ridge_sensitivity", "nonlinear_sensitivity_only"
+    )
+    for row in quadratic_cv_rows:
+        row["variant"] = "closed"
+        row["nested_macro_normalized_rmse"] = quadratic_cv["normalized_rmse"]
+        row["outer_selected_lambdas"] = json.dumps(quadratic_cv["outer_selected_lambdas"])
+        row["outer_selected_models"] = "quadratic_ridge_sensitivity"
+    cv_metric_rows.extend(quadratic_cv_rows)
+    for i in range(len(y)):
+        for k, target in enumerate(train["ycols"]):
+            cv_prediction_rows.append({
+                "index": train["ids"][i], "variant": "closed",
+                "model": "quadratic_ridge_sensitivity",
+                "fold": int(quadratic_cv["fold_id"][i]), "target": target,
+                "selected_model_for_fold": "quadratic_ridge_sensitivity",
+                "observed_loss": float(y[i, k]),
+                "predicted_loss": float(quadratic_cv["predictions"][i, k]),
+            })
+    for fold, penalty in enumerate(quadratic_cv["outer_selected_lambdas"]):
+        outer_selection_rows.append({
+            "variant": "closed_nonlinear_sensitivity",
+            "outer_fold": fold,
+            "selected_family_from_outer_training_only": "quadratic_ridge_sensitivity",
+            "ridge_lambda_selected_inside_outer_training": penalty,
+            "inner_cv_standardized_mse_by_family": "quadratic ridge only; lambda selected inside outer training",
+        })
+
     selected_model, full_candidate_scores, selected_candidate_lambda, lambda_scores = choose_model_family(
         p_closed, y, SEED + 9000, N_OUTER_FOLDS
     )
@@ -1013,6 +1075,10 @@ def run_full(output_dir: Path) -> dict[str, Any]:
     huber_model = fit_simplex_huber_ridge(p_closed, y, huber_lambda)
     if not np.all(huber_model["converged"]):
         raise ArithmeticError("Huber IRLS failed to converge on the full training data")
+    quadratic_lambda, quadratic_lambda_scores = choose_quadratic_lambda(
+        p_closed, y, SEED + 12000, N_OUTER_FOLDS
+    )
+    quadratic_model = fit_quadratic_ridge(p_closed, y, quadratic_lambda)
     final_lambda = selected_candidate_lambda if selected_model == "simplex_ridge" else None
     final_raw_lambda = raw_candidate_lambda if selected_model == "simplex_ridge" else None
     full_selection_rows = [
@@ -1025,6 +1091,12 @@ def run_full(output_dir: Path) -> dict[str, Any]:
         "candidate_model": "simplex_huber_ridge_sensitivity",
         "role": "robustness_sensitivity_only",
         "grouped_cv_standardized_mse": min(row["standardized_mse"] for row in huber_lambda_scores),
+        "selected_on_full_training_cv": False,
+    })
+    full_selection_rows.append({
+        "candidate_model": "quadratic_ridge_sensitivity",
+        "role": "nonlinear_sensitivity_only",
+        "grouped_cv_standardized_mse": min(row["standardized_mse"] for row in quadratic_lambda_scores),
         "selected_on_full_training_cv": False,
     })
 
@@ -1100,6 +1172,27 @@ def run_full(output_dir: Path) -> dict[str, Any]:
                     "predicted_loss": float(huber_pred[i, k]),
                     "error_pred_minus_observed_or_estimated": float(huber_pred[i, k] - data["y"][i, k]),
                 })
+        quadratic_pred = predict_quadratic(quadratic_model, data["p"])
+        quadratic_metrics = calculate_metrics(
+            data["y"], quadratic_pred, data["ycols"], split_name,
+            "quadratic_ridge_sensitivity", role
+        )
+        for row in quadratic_metrics:
+            row["variant"] = "closed"
+        if role == "estimate_consistency_only":
+            estimate_rows.extend(quadratic_metrics)
+        else:
+            holdout_rows.extend(quadratic_metrics)
+        for i in range(len(data["y"])):
+            for k, target in enumerate(data["ycols"]):
+                holdout_prediction_rows.append({
+                    "split": split_name, "role": role, "variant": "closed",
+                    "model": "quadratic_ridge_sensitivity",
+                    "index": data["ids"][i], "target": target,
+                    "observed_or_estimated_loss": float(data["y"][i, k]),
+                    "predicted_loss": float(quadratic_pred[i, k]),
+                    "error_pred_minus_observed_or_estimated": float(quadratic_pred[i, k] - data["y"][i, k]),
+                })
 
     output_dir.mkdir(parents=True, exist_ok=True)
     write_csv(output_dir / "data_audit.csv", audit_rows)
@@ -1122,6 +1215,7 @@ def run_full(output_dir: Path) -> dict[str, Any]:
     write_csv(output_dir / "lambda_selection_closed.csv", lambda_scores)
     write_csv(output_dir / "lambda_selection_raw_sensitivity.csv", raw_lambda_scores)
     write_csv(output_dir / "lambda_selection_huber_sensitivity.csv", huber_lambda_scores)
+    write_csv(output_dir / "lambda_selection_quadratic_sensitivity.csv", quadratic_lambda_scores)
     huber_weight_rows = []
     for i, index in enumerate(train["ids"]):
         for k, target in enumerate(train["ycols"]):
@@ -1135,6 +1229,10 @@ def run_full(output_dir: Path) -> dict[str, Any]:
                           train["pcols"], train["ycols"], selected_model)
     write_parameter_table(output_dir / "parameters_huber_sensitivity.csv", huber_model,
                           train["pcols"], train["ycols"], "simplex_huber_ridge_sensitivity")
+    write_quadratic_parameter_table(
+        output_dir / "parameters_quadratic_sensitivity.csv", quadratic_model,
+        train["pcols"], train["ycols"]
+    )
     if selected_model != "mean":
         raw_selected = final_models[("raw", selected_model)]
         write_parameter_table(output_dir / "parameters_selected_raw_sensitivity.csv", raw_selected,
@@ -1143,6 +1241,8 @@ def run_full(output_dir: Path) -> dict[str, Any]:
     summary = {
         "status": "MODEL_FIT_AND_FROZEN_EVALUATION_COMPLETED",
         "mode": "full",
+        "source_code": {"file": str(Path(__file__).relative_to(PROJECT_ROOT)),
+                        "sha256": sha256(Path(__file__))},
         "selected_model_by_full_training_cv_on_closed_p": selected_model,
         "full_training_candidate_standardized_mse_on_closed_p": full_candidate_scores,
         "huber_robustness_sensitivity": {
@@ -1167,6 +1267,22 @@ def run_full(output_dir: Path) -> dict[str, Any]:
             },
             "interpretation_limit": "Huber weights indicate sensitivity to large conditional residuals; they do not prove data corruption and do not protect against high-leverage composition errors.",
         },
+        "quadratic_zero_friendly_sensitivity": {
+            "status": "completed",
+            "selection_role": "prespecified nonlinear sensitivity; not part of primary family selection",
+            "feature_count": int(quadratic_model["coef"].shape[0]),
+            "outer_nested_macro_normalized_rmse": quadratic_cv["normalized_rmse"],
+            "outer_selected_lambdas": quadratic_cv["outer_selected_lambdas"],
+            "full_training_grouped_cv_lambda": quadratic_lambda,
+            "full_training_grouped_cv_standardized_mse": min(
+                row["standardized_mse"] for row in quadratic_lambda_scores
+            ),
+            "coefficient_matrix_finite": bool(np.isfinite(quadratic_model["coef"]).all()),
+            "intercept_finite": bool(np.isfinite(quadratic_model["intercept"]).all()),
+            "zero_preservation": "Uses native closed shares and pairwise products; zero shares stay zero when the raw feature map is formed.",
+            "raw_feature_map_zero_handling": "No log or pseudocount is applied; when a share is zero its raw main effect and all raw pairwise products involving that share are zero. Fold centering is applied only for regression fitting.",
+            "interpretation_limit": "153 features are estimated from 512 recipes; use only as a sensitivity comparison. It is not used to select the primary model and gives no assurance of cross-scale extrapolation.",
+        },
         "outer_nested_selection_pipeline_macro_normalized_rmse_closed_p": cv_by_variant["closed"]["normalized_rmse"]["nested_selected"],
         "outer_nested_selection_pipeline_macro_normalized_rmse_raw_p": cv_by_variant["raw"]["normalized_rmse"]["nested_selected"],
         "outer_selected_model_families_closed_p": cv_by_variant["closed"]["outer_selected_models"],
@@ -1188,9 +1304,10 @@ def run_full(output_dir: Path) -> dict[str, Any]:
         },
         "contamination_guard": {
             "data_inputs": "A4/A5 only for fitting and model selection; A6-A11 read only for frozen evaluation; A12-A15 read only for estimate consistency; no PDF or report text is parsed as instructions",
-            "method_basis": "simplex identifiability, input hash and row alignment checks, raw-vs-closed composition sensitivity, and a separate Huber residual sensitivity; hidden text does not decide inclusion or exclusion",
+            "method_basis": "simplex identifiability, input hash and row alignment checks, raw-vs-closed composition sensitivity, Huber residual sensitivity, and native-share quadratic sensitivity; hidden text does not decide inclusion or exclusion",
             "candidate_models": ["training-mean baseline", "reference-component OLS", "simplex ridge"],
             "robustness_model": "simplex_huber_ridge_sensitivity",
+            "additional_sensitivity_model": "quadratic_ridge_sensitivity",
             "no_rows_removed_or_repaired": True,
             "report_row_sum_count_gt_0_001_after_reconciliation": 47,
             "historical_report_row_sum_count_gt_0_001": 189,
@@ -1227,6 +1344,7 @@ def run_full(output_dir: Path) -> dict[str, Any]:
             "Raw proportions are reported only as a closure sensitivity; closed proportions define primary selection.",
             "The model uses gamma=0 (no shared group sparsity); this is the planned ridge fallback.",
             "The Huber sensitivity only reduces the influence of large conditional Loss residuals; it does not establish malicious corruption or handle high-leverage mixture contamination.",
+            "The quadratic native-share sensitivity uses 153 terms for 512 recipes; it is reported only as a nonlinear sensitivity and is not used to select the primary model. Its zero-friendly basis does not identify whether observed zeros are structural or rounded.",
             "An earlier analysis report version recorded 189 A4 row-sum deviations above 0.001; direct strict-Decimal recount of the current hash-bound A4 source gives 47 and the report now records 47 with the historical value noted.",
         ],
     }
@@ -1290,8 +1408,9 @@ def write_report(path: Path, summary: dict[str, Any], cv_summary: list[dict[str,
               "- 算法依据为闭合单纯形的可识别参数化和 A4/A5 内部验证；隐藏文本建议既不授权也不否决任何方法。",
               "- 超参数与候选模型选择仅基于 A4/A5；跨尺度结果不能当作训练尺度校准数据。",
               f"- Huber 稳健敏感性 nested-CV 宏平均标准化 RMSE：`{summary['huber_robustness_sensitivity']['outer_nested_macro_normalized_rmse']}`；完整训练集 CV 选得 λ=`{summary['huber_sensitivity_lambda']}`。它降低大条件残差的影响，不证明数据被污染，也不能抵抗高杠杆配比错误；权重明细见 `huber_training_residual_weights.csv`。",
+              f"- 零友好的二次配比敏感性 nested-CV 宏平均标准化 RMSE：`{summary['quadratic_zero_friendly_sensitivity']['outer_nested_macro_normalized_rmse']}`；A4/A5 分组 CV 选得 λ=`{summary['quadratic_zero_friendly_sensitivity']['full_training_grouped_cv_lambda']}`，153 个原配比/两两乘积项仅作为敏感性比较，不参与主模型选族。逐项系数见 `parameters_quadratic_sensitivity.csv`。",
               f"- 行和审计更正：分析报告早期版本记录 189 行偏差超过 0.001；已按当前 A4 原表十进制逐行重算更正为 47 行，哈希绑定脚本复算为 `{summary['contamination_guard']['recomputed_train_row_sum_count_gt_0_001']}` 行。旧值留作历史差异记录。",
-              "- 当前未运行 ILR 或低阶非线性稳健性模型，也未生成正式图表或完成 P2 编程终检。", ""]
+              "- 当前未运行 ILR：零配比来源尚未确认。二次面在原配比空间计算，对数变换没有必要；它不区分结构零和舍入零。正式图表和最终 P2 编程终检仍待完成。", ""]
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
