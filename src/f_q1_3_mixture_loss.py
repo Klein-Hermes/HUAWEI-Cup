@@ -1,7 +1,9 @@
-"""Q1.3 p-only mixture-to-loss modeling.
+"""Q1.3 p-only mixture-to-loss modeling and read-only source audit.
 
-Uses only the Python standard library and NumPy.  Run from the project root:
+The audit mode uses only the Python standard library. Model modes additionally
+require NumPy. Run from the project root:
 
+    python src/f_q1_3_mixture_loss.py --mode audit --data-root <regmix_tables>
     python src/f_q1_3_mixture_loss.py --mode p1
     python src/f_q1_3_mixture_loss.py --mode full
 """
@@ -15,19 +17,24 @@ import json
 import math
 import platform
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
+from decimal import Decimal, InvalidOperation
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-import numpy as np
+try:
+    import numpy as np
+except ModuleNotFoundError:  # Audit mode deliberately remains stdlib-only.
+    np = None  # type: ignore[assignment]
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_ROOT = PROJECT_ROOT / "中文题目" / "F题" / "real_attachments" / "A_data_value" / "regmix_tables"
+DEFAULT_DATA_ROOT = PROJECT_ROOT / "中文题目" / "F题" / "real_attachments" / "A_data_value" / "regmix_tables"
+DATA_ROOT = DEFAULT_DATA_ROOT
 SEED = 20260923
-LAMBDA_GRID = np.concatenate(([0.0], np.logspace(-6, 1, 15)))
-QUADRATIC_LAMBDA_GRID = np.logspace(-5, 2, 12)
+LAMBDA_GRID = np.concatenate(([0.0], np.logspace(-6, 1, 15))) if np is not None else ()
+QUADRATIC_LAMBDA_GRID = np.logspace(-5, 2, 12) if np is not None else ()
 N_OUTER_FOLDS = 5
 N_INNER_FOLDS = 4
 REFERENCE_DOMAIN_INDEX = -1
@@ -42,6 +49,54 @@ SPLITS = [
     ("estimate_70b", "est_mixture_70b.csv", "est_pile_loss_70b.csv", "estimate_consistency_only"),
 ]
 
+# Frozen field contract from the visible A4-A15 table headers/data description.
+# Audit mode compares every file against this literal contract; it never learns
+# the global schema from whichever file happens to be read first.
+CANONICAL_MIXTURE_COLUMNS = (
+    "index",
+    "train_the_pile_arxiv",
+    "train_the_pile_freelaw",
+    "train_the_pile_nih_exporter",
+    "train_the_pile_pubmed_central",
+    "train_the_pile_wikipedia_en",
+    "train_the_pile_dm_mathematics",
+    "train_the_pile_github",
+    "train_the_pile_philpapers",
+    "train_the_pile_stackexchange",
+    "train_the_pile_enron_emails",
+    "train_the_pile_gutenberg_pg_19",
+    "train_the_pile_pile_cc",
+    "train_the_pile_ubuntu_irc",
+    "train_the_pile_europarl",
+    "train_the_pile_hackernews",
+    "train_the_pile_pubmed_abstracts",
+    "train_the_pile_uspto_backgrounds",
+)
+CANONICAL_LOSS_COLUMNS = (
+    "index",
+    "metric/the_pile_arxiv_val_loss",
+    "metric/the_pile_freelaw_val_loss",
+    "metric/the_pile_pubmed_central_val_loss",
+    "metric/the_pile_wikipedia_en_val_loss",
+    "metric/the_pile_dm_mathematics_val_loss",
+    "metric/the_pile_github_val_loss",
+    "metric/the_pile_stackexchange_val_loss",
+    "metric/the_pile_gutenberg_pg_19_val_loss",
+    "metric/the_pile_pile_cc_val_loss",
+    "metric/the_pile_ubuntu_irc_val_loss",
+    "metric/the_pile_hackernews_val_loss",
+    "metric/the_pile_pubmed_abstracts_val_loss",
+    "metric/the_pile_uspto_backgrounds_val_loss",
+)
+AUDIT_SPLITS = (
+    ("train_1m", "A4", "train_mixture_1m.csv", "A5", "train_pile_loss_1m.csv", "training"),
+    ("test_1m", "A6", "test_mixture_1m.csv", "A7", "test_pile_loss_1m.csv", "validation_same_scale"),
+    ("test_60m", "A8", "test_mixture_60m.csv", "A9", "test_pile_loss_60m.csv", "validation_cross_scale"),
+    ("test_1b", "A10", "test_mixture_1B.csv", "A11", "test_pile_loss_1B.csv", "validation_cross_scale"),
+    ("estimate_10b", "A12", "est_mixture_10b.csv", "A13", "est_pile_loss_10b.csv", "extrapolation_estimate_only"),
+    ("estimate_70b", "A14", "est_mixture_70b.csv", "A15", "est_pile_loss_70b.csv", "extrapolation_estimate_only"),
+)
+
 
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
@@ -49,6 +104,22 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def portable_path(path: Path) -> str:
+    """Prefer a project-relative path, but retain traceability for external data."""
+    try:
+        return str(path.resolve().relative_to(PROJECT_ROOT.resolve()))
+    except ValueError:
+        return str(path.resolve())
+
+
+def require_numpy(mode: str) -> None:
+    if np is None:
+        raise RuntimeError(
+            f"--mode {mode} requires NumPy. Audit mode remains available without it; "
+            "install the project environment before running model code."
+        )
 
 
 def read_csv(path: Path) -> tuple[list[str], list[dict[str, str]]]:
@@ -61,6 +132,7 @@ def read_csv(path: Path) -> tuple[list[str], list[dict[str, str]]]:
 
 def load_pair(mixture_name: str, loss_name: str, expected_p: list[str] | None = None,
               expected_y: list[str] | None = None) -> dict[str, Any]:
+    require_numpy("p1/full")
     mixture_path = DATA_ROOT / mixture_name
     loss_path = DATA_ROOT / loss_name
     mcols, mrows = read_csv(mixture_path)
@@ -801,6 +873,422 @@ def write_csv(path: Path, rows: list[dict[str, Any]], fieldnames: list[str] | No
         writer.writerows(rows)
 
 
+def inspect_csv_structure(path: Path, expected_columns: tuple[str, ...]) -> dict[str, Any]:
+    """Inspect schema and index only; numeric payloads remain untouched here."""
+    result: dict[str, Any] = {
+        "path": path,
+        "exists": path.is_file(),
+        "size_bytes": None,
+        "sha256": None,
+        "header": [],
+        "rows": [],
+        "row_count": 0,
+        "schema_exact": False,
+        "header_order_exact": False,
+        "duplicate_header_names": [],
+        "missing_columns": list(expected_columns),
+        "unexpected_columns": [],
+        "malformed_row_count": 0,
+        "index_values": [],
+        "blank_index_count": 0,
+        "duplicate_index_count": 0,
+        "duplicate_index_values": [],
+        "read_error": None,
+    }
+    if not result["exists"]:
+        result["read_error"] = "file_not_found"
+        return result
+    result["size_bytes"] = path.stat().st_size
+    result["sha256"] = sha256(path)
+    try:
+        with path.open("r", encoding="utf-8-sig", newline="") as stream:
+            reader = csv.reader(stream)
+            try:
+                header = next(reader)
+            except StopIteration:
+                result["read_error"] = "empty_file"
+                return result
+            rows = list(reader)
+    except (OSError, UnicodeError, csv.Error) as exc:
+        result["read_error"] = f"{type(exc).__name__}: {exc}"
+        return result
+
+    result["header"] = header
+    result["rows"] = rows
+    result["row_count"] = len(rows)
+    header_counts = Counter(header)
+    result["duplicate_header_names"] = sorted(
+        name for name, count in header_counts.items() if count > 1
+    )
+    result["missing_columns"] = [name for name in expected_columns if header_counts[name] == 0]
+    expected_counts = Counter(expected_columns)
+    result["unexpected_columns"] = sorted(
+        name for name, count in header_counts.items()
+        for _ in range(max(0, count - expected_counts[name]))
+    )
+    result["header_order_exact"] = header == list(expected_columns)
+    result["schema_exact"] = bool(
+        result["header_order_exact"]
+        and not result["duplicate_header_names"]
+        and not result["missing_columns"]
+        and not result["unexpected_columns"]
+    )
+    result["malformed_row_count"] = sum(len(row) != len(header) for row in rows)
+
+    if header_counts["index"] == 1:
+        index_position = header.index("index")
+        indices = [row[index_position].strip() for row in rows if len(row) > index_position]
+        result["index_values"] = indices
+        result["blank_index_count"] = sum(not value for value in indices)
+        index_counts = Counter(value for value in indices if value)
+        duplicates = sorted(value for value, count in index_counts.items() if count > 1)
+        result["duplicate_index_values"] = duplicates
+        result["duplicate_index_count"] = sum(index_counts[value] - 1 for value in duplicates)
+    return result
+
+
+def public_file_role_row(document_id: str, split: str, role: str, table_type: str,
+                         inspection: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "document_id": document_id,
+        "split": split,
+        "role": role,
+        "table_type": table_type,
+        "file": portable_path(inspection["path"]),
+        "exists": inspection["exists"],
+        "size_bytes": inspection["size_bytes"],
+        "sha256": inspection["sha256"],
+        "row_count": inspection["row_count"],
+        "schema_exact": inspection["schema_exact"],
+        "header_order_exact": inspection["header_order_exact"],
+        "duplicate_header_names": json.dumps(inspection["duplicate_header_names"], ensure_ascii=False),
+        "missing_columns": json.dumps(inspection["missing_columns"], ensure_ascii=False),
+        "unexpected_columns": json.dumps(inspection["unexpected_columns"], ensure_ascii=False),
+        "malformed_row_count": inspection["malformed_row_count"],
+        "blank_index_count": inspection["blank_index_count"],
+        "duplicate_index_count": inspection["duplicate_index_count"],
+        "read_error": inspection["read_error"] or "",
+    }
+
+
+def pair_integrity_row(split: str, role: str, mixture: dict[str, Any],
+                       loss: dict[str, Any]) -> dict[str, Any]:
+    mixture_ids = mixture["index_values"]
+    loss_ids = loss["index_values"]
+    mixture_set = {value for value in mixture_ids if value}
+    loss_set = {value for value in loss_ids if value}
+    missing_in_loss = sorted(mixture_set - loss_set)
+    extra_in_loss = sorted(loss_set - mixture_set)
+    valid = bool(
+        mixture["schema_exact"]
+        and loss["schema_exact"]
+        and mixture["read_error"] is None
+        and loss["read_error"] is None
+        and mixture["malformed_row_count"] == 0
+        and loss["malformed_row_count"] == 0
+        and mixture["blank_index_count"] == 0
+        and loss["blank_index_count"] == 0
+        and mixture["duplicate_index_count"] == 0
+        and loss["duplicate_index_count"] == 0
+        and len(mixture_ids) == len(loss_ids)
+        and not missing_in_loss
+        and not extra_in_loss
+        and mixture_ids == loss_ids
+    )
+    return {
+        "split": split,
+        "role": role,
+        "mixture_rows": len(mixture_ids),
+        "loss_rows": len(loss_ids),
+        "mixture_duplicate_index_count": mixture["duplicate_index_count"],
+        "loss_duplicate_index_count": loss["duplicate_index_count"],
+        "mixture_blank_index_count": mixture["blank_index_count"],
+        "loss_blank_index_count": loss["blank_index_count"],
+        "missing_in_loss_count": len(missing_in_loss),
+        "extra_in_loss_count": len(extra_in_loss),
+        "missing_in_loss_sample": json.dumps(missing_in_loss[:10], ensure_ascii=False),
+        "extra_in_loss_sample": json.dumps(extra_in_loss[:10], ensure_ascii=False),
+        "index_order_exact": mixture_ids == loss_ids,
+        "pair_status": "PASS" if valid else "FAIL",
+    }
+
+
+def parse_finite_decimal(value: str) -> tuple[Decimal | None, str]:
+    if value.strip() == "":
+        return None, "missing"
+    try:
+        parsed = Decimal(value.strip())
+    except InvalidOperation:
+        return None, "invalid"
+    if not parsed.is_finite():
+        return None, "nonfinite"
+    return parsed, "ok"
+
+
+def build_training_qc(mixture: dict[str, Any], loss: dict[str, Any]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """Audit A4/A5 values without closure, repair, deletion, or feature creation."""
+    qc_rows: list[dict[str, Any]] = []
+    if not mixture["schema_exact"] or not loss["schema_exact"]:
+        return qc_rows, {"status": "not_run_schema_failure", "rows_audited": 0}
+
+    mixture_header = mixture["header"]
+    loss_header = loss["header"]
+    mix_positions = {name: mixture_header.index(name) for name in CANONICAL_MIXTURE_COLUMNS}
+    loss_positions = {name: loss_header.index(name) for name in CANONICAL_LOSS_COLUMNS}
+    loss_rows_by_id: dict[str, list[list[str]]] = defaultdict(list)
+    for row in loss["rows"]:
+        if len(row) == len(loss_header):
+            loss_rows_by_id[row[loss_positions["index"]].strip()].append(row)
+
+    recipe_groups_raw: dict[tuple[Decimal, ...], list[int]] = defaultdict(list)
+    parsed_losses: list[dict[str, Decimal] | None] = []
+    total_loss_missing = total_loss_invalid = total_loss_nonfinite = 0
+    for source_row, row in enumerate(mixture["rows"], start=2):
+        index = row[mix_positions["index"]].strip() if len(row) == len(mixture_header) else ""
+        mix_values: list[Decimal] = []
+        mix_missing = mix_invalid = mix_nonfinite = mix_negative = mix_zero = 0
+        if len(row) != len(mixture_header):
+            mix_invalid = len(CANONICAL_MIXTURE_COLUMNS) - 1
+        else:
+            for name in CANONICAL_MIXTURE_COLUMNS[1:]:
+                value, status = parse_finite_decimal(row[mix_positions[name]])
+                if status == "missing":
+                    mix_missing += 1
+                elif status == "invalid":
+                    mix_invalid += 1
+                elif status == "nonfinite":
+                    mix_nonfinite += 1
+                else:
+                    assert value is not None
+                    mix_values.append(value)
+                    mix_negative += int(value < 0)
+                    mix_zero += int(value == 0)
+
+        raw_sum = sum(mix_values, Decimal(0)) if len(mix_values) == 17 else None
+        zero_sum = raw_sum == 0 if raw_sum is not None else False
+        recipe_key = tuple(mix_values) if len(mix_values) == 17 else None
+        if recipe_key is not None:
+            recipe_groups_raw[recipe_key].append(len(qc_rows))
+
+        loss_matches = loss_rows_by_id.get(index, [])
+        parsed_loss: dict[str, Decimal] | None = None
+        loss_missing = loss_invalid = loss_nonfinite = 0
+        if len(loss_matches) == 1:
+            loss_row = loss_matches[0]
+            parsed_loss = {}
+            for name in CANONICAL_LOSS_COLUMNS[1:]:
+                value, status = parse_finite_decimal(loss_row[loss_positions[name]])
+                if status == "missing":
+                    loss_missing += 1
+                elif status == "invalid":
+                    loss_invalid += 1
+                elif status == "nonfinite":
+                    loss_nonfinite += 1
+                else:
+                    assert value is not None
+                    parsed_loss[name] = value
+        else:
+            loss_invalid = len(CANONICAL_LOSS_COLUMNS) - 1
+        total_loss_missing += loss_missing
+        total_loss_invalid += loss_invalid
+        total_loss_nonfinite += loss_nonfinite
+        parsed_losses.append(parsed_loss)
+
+        row_ok = bool(
+            index
+            and mix_missing == mix_invalid == mix_nonfinite == mix_negative == 0
+            and not zero_sum
+            and len(loss_matches) == 1
+            and loss_missing == loss_invalid == loss_nonfinite == 0
+        )
+        qc_rows.append({
+            "source_row": source_row,
+            "index": index,
+            "mixture_missing_count": mix_missing,
+            "mixture_invalid_count": mix_invalid,
+            "mixture_nonfinite_count": mix_nonfinite,
+            "negative_share_count": mix_negative,
+            "zero_share_count": mix_zero,
+            "raw_share_sum": format(raw_sum, "f") if raw_sum is not None else "",
+            "absolute_raw_sum_deviation_from_one": format(abs(raw_sum - Decimal(1)), "f") if raw_sum is not None else "",
+            "zero_sum_row": zero_sum,
+            "loss_match_count": len(loss_matches),
+            "loss_missing_count": loss_missing,
+            "loss_invalid_count": loss_invalid,
+            "loss_nonfinite_count": loss_nonfinite,
+            "duplicate_raw_recipe_group_size": 1,
+            "duplicate_recipe_loss_disagreement": False,
+            "max_loss_range_within_duplicate_recipe": "",
+            "loss_target_ranges_json": "{}",
+            "row_status": "PASS" if row_ok else "FAIL",
+        })
+
+    disagreement_groups = 0
+    target_disagreement_counts: Counter[str] = Counter()
+    duplicate_rows = 0
+    duplicate_groups = 0
+    for indices in recipe_groups_raw.values():
+        if len(indices) <= 1:
+            continue
+        duplicate_groups += 1
+        duplicate_rows += len(indices)
+        target_ranges: dict[str, str] = {}
+        for target in CANONICAL_LOSS_COLUMNS[1:]:
+            values = [parsed_losses[i][target] for i in indices
+                      if parsed_losses[i] is not None and target in parsed_losses[i]]
+            if len(values) == len(indices):
+                value_range = max(values) - min(values)
+                if value_range != 0:
+                    target_ranges[target] = format(value_range, "f")
+                    target_disagreement_counts[target] += 1
+        if target_ranges:
+            disagreement_groups += 1
+        max_range = max((Decimal(value) for value in target_ranges.values()), default=None)
+        group_json = json.dumps(target_ranges, ensure_ascii=False, sort_keys=True)
+        for row_index in indices:
+            qc_rows[row_index]["duplicate_raw_recipe_group_size"] = len(indices)
+            qc_rows[row_index]["duplicate_recipe_loss_disagreement"] = bool(target_ranges)
+            qc_rows[row_index]["max_loss_range_within_duplicate_recipe"] = (
+                format(max_range, "f") if max_range is not None else "0"
+            )
+            qc_rows[row_index]["loss_target_ranges_json"] = group_json
+
+    raw_sums = [Decimal(row["raw_share_sum"]) for row in qc_rows if row["raw_share_sum"] != ""]
+    summary = {
+        "status": "completed",
+        "rows_audited": len(qc_rows),
+        "failed_rows": sum(row["row_status"] == "FAIL" for row in qc_rows),
+        "mixture_missing_values": sum(row["mixture_missing_count"] for row in qc_rows),
+        "mixture_invalid_values": sum(row["mixture_invalid_count"] for row in qc_rows),
+        "mixture_nonfinite_values": sum(row["mixture_nonfinite_count"] for row in qc_rows),
+        "negative_share_values": sum(row["negative_share_count"] for row in qc_rows),
+        "zero_sum_rows": sum(bool(row["zero_sum_row"]) for row in qc_rows),
+        "zero_share_values": sum(row["zero_share_count"] for row in qc_rows),
+        "raw_share_sum_min": format(min(raw_sums), "f") if raw_sums else None,
+        "raw_share_sum_max": format(max(raw_sums), "f") if raw_sums else None,
+        "duplicate_raw_recipe_groups": duplicate_groups,
+        "rows_in_duplicate_raw_recipe_groups": duplicate_rows,
+        "duplicate_recipe_groups_with_loss_disagreement": disagreement_groups,
+        "loss_target_disagreement_group_counts": dict(sorted(target_disagreement_counts.items())),
+        "loss_missing_values": total_loss_missing,
+        "loss_invalid_values": total_loss_invalid,
+        "loss_nonfinite_values": total_loss_nonfinite,
+        "definition_note": "Duplicate recipes use exact parsed raw 17-share vectors; no closure or pseudocount is applied.",
+    }
+    return qc_rows, summary
+
+
+def run_audit(output_dir: Path) -> dict[str, Any]:
+    """Run the isolated A4-A15 audit without importing data into any model."""
+    started_at = datetime.now(timezone.utc).isoformat()
+    file_rows: list[dict[str, Any]] = []
+    pair_rows: list[dict[str, Any]] = []
+    inspections: dict[str, tuple[dict[str, Any], dict[str, Any]]] = {}
+    issues: list[dict[str, str]] = []
+
+    for split, mixture_id, mixture_name, loss_id, loss_name, role in AUDIT_SPLITS:
+        mixture = inspect_csv_structure(DATA_ROOT / mixture_name, CANONICAL_MIXTURE_COLUMNS)
+        loss = inspect_csv_structure(DATA_ROOT / loss_name, CANONICAL_LOSS_COLUMNS)
+        inspections[split] = (mixture, loss)
+        file_rows.append(public_file_role_row(mixture_id, split, role, "mixture_17", mixture))
+        file_rows.append(public_file_role_row(loss_id, split, role, "loss_13", loss))
+        pair = pair_integrity_row(split, role, mixture, loss)
+        pair_rows.append(pair)
+        for document_id, table_type, inspected in (
+            (mixture_id, "mixture_17", mixture), (loss_id, "loss_13", loss)
+        ):
+            if inspected["read_error"]:
+                issues.append({"severity": "ERROR", "code": "READ_FAILURE", "scope": document_id,
+                               "message": inspected["read_error"]})
+            elif not inspected["schema_exact"]:
+                issues.append({"severity": "ERROR", "code": "SCHEMA_MISMATCH", "scope": document_id,
+                               "message": f"{table_type} header differs from frozen contract"})
+            if inspected["malformed_row_count"]:
+                issues.append({"severity": "ERROR", "code": "MALFORMED_ROWS", "scope": document_id,
+                               "message": str(inspected["malformed_row_count"])})
+            if inspected["blank_index_count"] or inspected["duplicate_index_count"]:
+                issues.append({"severity": "ERROR", "code": "INDEX_INVALID", "scope": document_id,
+                               "message": f"blank={inspected['blank_index_count']}, duplicate={inspected['duplicate_index_count']}"})
+        if pair["pair_status"] != "PASS":
+            issues.append({"severity": "ERROR", "code": "PAIR_KEY_MISMATCH", "scope": split,
+                           "message": "row count, key membership, uniqueness, or order differs"})
+
+    train_qc, train_summary = build_training_qc(*inspections["train_1m"])
+    if train_summary.get("failed_rows", 0):
+        issues.append({"severity": "ERROR", "code": "TRAIN_VALUE_INVALID", "scope": "A4/A5",
+                       "message": f"failed_rows={train_summary['failed_rows']}"})
+
+    status = "PASS" if not any(item["severity"] == "ERROR" for item in issues) else "FAIL"
+    conclusion_payload = {
+        "status": status,
+        "input_hashes": [(row["document_id"], row["sha256"]) for row in file_rows],
+        "file_schema_status": [(row["document_id"], row["schema_exact"]) for row in file_rows],
+        "pair_status": [(row["split"], row["pair_status"]) for row in pair_rows],
+        "train_summary": train_summary,
+        "issues": issues,
+    }
+    conclusion_hash = hashlib.sha256(
+        json.dumps(conclusion_payload, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    ).hexdigest()
+    summary = {
+        "status": status,
+        "mode": "audit",
+        "started_at_utc": started_at,
+        "completed_at_utc": datetime.now(timezone.utc).isoformat(),
+        "source_code": {"file": portable_path(Path(__file__)), "sha256": sha256(Path(__file__))},
+        "data_root": str(DATA_ROOT.resolve()),
+        "data_role_policy": {
+            "A4_A5": "training; schema, keys, and full value audit",
+            "A6_A11": "validation only; schema, keys, size, and hashes only",
+            "A12_A15": "extrapolation/estimate only; schema, keys, size, and hashes only",
+        },
+        "counts": {"files": len(file_rows), "pairs": len(pair_rows), "errors": len(issues)},
+        "training_value_audit": train_summary,
+        "issues": issues,
+        "audit_conclusion_sha256": conclusion_hash,
+        "isolation_guards": {
+            "model_functions_called": False,
+            "quality_or_conflict_outputs_read": False,
+            "a16_mapping_read": False,
+            "closure_computed_or_saved": False,
+            "pseudocount_or_imputation_applied": False,
+            "rows_deleted_or_repaired": False,
+            "external_loss_distributions_or_metrics_summarized": False,
+            "pdf_or_report_text_parsed_as_instructions": False,
+        },
+        "outputs": ["audit_summary.json", "file_roles.csv", "pair_integrity.csv", "train_composition_qc.csv"],
+        "python": platform.python_version(),
+        "python_executable": sys.executable,
+        "command": f'"{sys.executable}" -B src/f_q1_3_mixture_loss.py --mode audit --data-root "{DATA_ROOT.resolve()}"',
+    }
+    output_dir.mkdir(parents=True, exist_ok=True)
+    file_fields = [
+        "document_id", "split", "role", "table_type", "file", "exists", "size_bytes", "sha256",
+        "row_count", "schema_exact", "header_order_exact", "duplicate_header_names", "missing_columns",
+        "unexpected_columns", "malformed_row_count", "blank_index_count", "duplicate_index_count", "read_error",
+    ]
+    pair_fields = [
+        "split", "role", "mixture_rows", "loss_rows", "mixture_duplicate_index_count",
+        "loss_duplicate_index_count", "mixture_blank_index_count", "loss_blank_index_count",
+        "missing_in_loss_count", "extra_in_loss_count", "missing_in_loss_sample", "extra_in_loss_sample",
+        "index_order_exact", "pair_status",
+    ]
+    qc_fields = [
+        "source_row", "index", "mixture_missing_count", "mixture_invalid_count", "mixture_nonfinite_count",
+        "negative_share_count", "zero_share_count", "raw_share_sum", "absolute_raw_sum_deviation_from_one",
+        "zero_sum_row", "loss_match_count", "loss_missing_count", "loss_invalid_count", "loss_nonfinite_count",
+        "duplicate_raw_recipe_group_size", "duplicate_recipe_loss_disagreement",
+        "max_loss_range_within_duplicate_recipe", "loss_target_ranges_json", "row_status",
+    ]
+    write_csv(output_dir / "file_roles.csv", file_rows, file_fields)
+    write_csv(output_dir / "pair_integrity.csv", pair_rows, pair_fields)
+    write_csv(output_dir / "train_composition_qc.csv", train_qc, qc_fields)
+    (output_dir / "audit_summary.json").write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    return summary
+
+
 def data_audit_row(name: str, data: dict[str, Any], role: str) -> dict[str, Any]:
     x, p, y, sums = data["x"], data["p"], data["y"], data["row_sums"]
     groups = recipe_groups(p)
@@ -915,11 +1403,11 @@ def run_p1(output_dir: Path) -> dict[str, Any]:
     summary = {
         "status": "MINIMAL_RUN_COMPLETED",
         "mode": "p1",
-        "source_code": {"file": str(Path(__file__).relative_to(PROJECT_ROOT)),
+        "source_code": {"file": portable_path(Path(__file__)),
                         "sha256": sha256(Path(__file__))},
         "input": {
-            "mixture_file": str(train["mixture_path"].relative_to(PROJECT_ROOT)),
-            "loss_file": str(train["loss_path"].relative_to(PROJECT_ROOT)),
+            "mixture_file": portable_path(train["mixture_path"]),
+            "loss_file": portable_path(train["loss_path"]),
             "mixture_sha256": sha256(train["mixture_path"]),
             "loss_sha256": sha256(train["loss_path"]),
         },
@@ -1241,7 +1729,7 @@ def run_full(output_dir: Path) -> dict[str, Any]:
     summary = {
         "status": "MODEL_FIT_AND_FROZEN_EVALUATION_COMPLETED",
         "mode": "full",
-        "source_code": {"file": str(Path(__file__).relative_to(PROJECT_ROOT)),
+        "source_code": {"file": portable_path(Path(__file__)),
                         "sha256": sha256(Path(__file__))},
         "selected_model_by_full_training_cv_on_closed_p": selected_model,
         "full_training_candidate_standardized_mse_on_closed_p": full_candidate_scores,
@@ -1327,7 +1815,7 @@ def run_full(output_dir: Path) -> dict[str, Any]:
         "lambda_grid": LAMBDA_GRID.tolist(),
         "reference_domain": train["pcols"][REFERENCE_DOMAIN_INDEX],
         "inputs": [
-            {"file": str(data[key].relative_to(PROJECT_ROOT)), "sha256": sha256(data[key])}
+            {"file": portable_path(data[key]), "sha256": sha256(data[key])}
             for data in loaded.values() for key in ("mixture_path", "loss_path")
         ],
         "python": platform.python_version(),
@@ -1415,23 +1903,36 @@ def write_report(path: Path, summary: dict[str, Any], cv_summary: list[dict[str,
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Fit and evaluate Q1.3 p-only mixture-to-Loss models")
-    parser.add_argument("--mode", choices=("p1", "full"), default="p1",
-                        help="p1 runs a minimal real-data vertical slice; full runs nested CV and frozen evaluations")
+    parser = argparse.ArgumentParser(description="Audit or model Q1.3 p-only mixture-to-Loss data")
+    parser.add_argument("--mode", choices=("audit", "p1", "full"), default="p1",
+                        help="audit is read-only/no-fit; p1 is a minimal fit; full runs nested CV and frozen evaluations")
+    parser.add_argument(
+        "--data-root", type=Path, default=DEFAULT_DATA_ROOT,
+        help="Directory containing the twelve A4-A15 regmix CSV files",
+    )
     parser.add_argument("--output-dir", type=Path, default=None)
     args = parser.parse_args()
+    global DATA_ROOT
+    DATA_ROOT = args.data_root if args.data_root.is_absolute() else PROJECT_ROOT / args.data_root
     if args.output_dir is None:
-        out = PROJECT_ROOT / "results" / "q1_3" / ("p1" if args.mode == "p1" else "v1")
+        if args.mode == "audit":
+            out = (PROJECT_ROOT / "zwj" / "F题" / "_Q1" / "_当前编程任务"
+                   / "results" / "q1_3" / "audit")
+        else:
+            subdir = {"p1": "p1", "full": "v1"}[args.mode]
+            out = PROJECT_ROOT / "results" / "q1_3" / subdir
     else:
         out = args.output_dir if args.output_dir.is_absolute() else PROJECT_ROOT / args.output_dir
-    if args.mode == "p1":
+    if args.mode == "audit":
+        summary = run_audit(out)
+    elif args.mode == "p1":
         summary = run_p1(out)
     else:
         summary = run_full(out)
     print(json.dumps({"status": summary["status"], "output_dir": str(out),
                       "mode": args.mode,
                       "selected_model": summary.get("selected_model_by_full_training_cv_on_closed_p")}, ensure_ascii=False))
-    return 0
+    return 0 if summary["status"] not in {"FAIL"} else 2
 
 
 if __name__ == "__main__":
