@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0",
+  "scope": "F Q1.1 only",
+  "plot_script": {
+    "file": "src\\plot_f_q1_1_results.py",
+    "sha256": "aff12dc563311e4ffcaccba2312ff331d3deb07a278327a10297942c611a9d08"
+  },
+  "input_manifest_sha256": "ae5a72f147e80180ba023af3bb217dd6684d6af5bdcc894e75cbe1bd13e1ee44",
+  "figure_count": 12,
+  "categories": {
+    "raw": 3,
+    "process": 3,
+    "result": 5,
+    "flow": 1
+  },
+  "dpi": 301,
+  "svg_text_as_text": true,
+  "programmatic_visual_qa": "PASS",
+  "figure_audit_ok": true,
+  "figure_audit_warnings": 0,
+  "figure_audit_report": {
+    "ok": true,
+    "directory": "D:\\PycharmProject\\HUAWEI-Cup\\figures\\q1_1_model",
+    "questions": [
+      "q1"
+    ],
+    "files": {
+      "flow_q1_1_model.png": {
+        "width_px": 2657,
+        "height_px": 2400,
+        "dpi_x": 300.99,
+        "dpi_y": 300.99,
+        "width_in": 8.827535798531512,
+        "height_in": 7.973686833449616
+      },
+      "flow_q1_1_model.svg": {
+        "text_count": 21,
+        "embedded_raster": false
+      },
+      "process_q1_1_contamination_sensitivity.png": {
+        "width_px": 2716,
+        "height_px": 1414,
+        "dpi_x": 300.99,
+        "dpi_y": 300.99,
+        "width_in": 9.023555599853815,
+        "height_in": 4.697830492707399
+      },
+      "process_q1_1_contamination_sensitivity.svg": {
+        "text_count": 22,
+        "embedded_raster": false
+      },
+      "process_q1_1_huber_location.png": {
+        "width_px": 2657,
+        "height_px": 1322,
+        "dpi_x": 300.99,
+        "dpi_y": 300.99,
+        "width_in": 8.827535798531512,
+        "height_in": 4.392172497425164
+      },
+      "process_q1_1_huber_location.svg": {
+        "text_count": 45,
+        "embedded_raster": false
+      },
+      "process_q1_1_weight_calibration.png": {
+        "width_px": 2991,
+        "height_px": 2497,
+        "dpi_x": 300.99,
+        "dpi_y": 300.99,
+        "width_in": 9.937207216186584,
+        "height_in": 8.295956676301538
+      },
+      "process_q1_1_weight_calibration.svg": {
+        "text_count": 43,
+        "embedded_raster": false
+      },
+      "raw_q1_1_indicator_distributions.png": {
+        "width_px": 2772,
+        "height_px": 1941,
+        "dpi_x": 300.99,
+        "dpi_y": 300.99,
+        "width_in": 9.209608292634307,
+        "height_in": 6.448719226552377
+      },
+      "raw_q1_1_indicator_distributions.svg": {
+        "text_count": 33,
+        "embedded_raster": false
+      },
+      "raw_q1_1_integrity_and_text_availability.png": {
+        "width_px": 2657,
+        "height_px": 1381,
+        "dpi_x": 300.99,
+        "dpi_y": 300.99,
+        "width_in": 8.827535798531512,
+        "height_in": 4.588192298747466
+      },
+      "raw_q1_1_integrity_and_text_availability.svg": {
+        "text_count": 32,
+        "embedded_raster": false
+      },
+      "raw_q1_1_source_counts.png": {
+        "width_px": 2562,
+        "height_px": 1625,
+        "dpi_x": 300.99,
+        "dpi_y": 300.99,
+        "width_in": 8.511910694707465,
+        "height_in": 5.398850460148178
+      },
+      "raw_q1_1_source_counts.svg": {
+        "text_count": 30,
+        "embedded_raster": false
+      },
+      "result_q1_1_contamination_transfer_intervals.png": {
+        "width_px": 2959,
+        "height_px": 2204,
+        "dpi_x": 300.99,
+        "dpi_y": 300.99,
+        "width_in": 9.83089139174059,
+        "height_in": 7.322502408717898
+      },
+      "result_q1_1_contamination_transfer_intervals.svg": {
+        "text_count": 42,
+        "embedded_raster": false
+      },
+      "result_q1_1_domain_rank_robustness.png": {
+        "width_px": 2725,
+        "height_px": 1361,
+        "dpi_x": 300.99,
+        "dpi_y": 300.99,
+        "width_in": 9.053456925479251,
+        "height_in": 4.52174490846872
+      },
+      "result_q1_1_domain_rank_robustness.svg": {
+        "text_count": 51,
+        "embedded_raster": false
+      },
+      "result_q1_1_domain_scores.png": {
+        "width_px": 2974,
+        "height_px": 1734,
+        "dpi_x": 300.99,
+        "dpi_y": 300.99,
+        "width_in": 9.88072693444965,
+        "height_in": 5.760988737167348
+      },
+      "result_q1_1_domain_scores.svg": {
+        "text_count": 27,
+        "embedded_raster": false
+      },
+      "result_q1_1_same_domain_transfer.png": {
+        "width_px": 2657,
+        "height_px": 1410,
+        "dpi_x": 300.99,
+        "dpi_y": 300.99,
+        "width_in": 8.827535798531512,
+        "height_in": 4.684541014651649
+      },
+      "result_q1_1_same_domain_transfer.svg": {
+        "text_count": 22,
+        "embedded_raster": false
+      },
+      "result_q1_1_unmarked_vs_full.png": {
+        "width_px": 2957,
+        "height_px": 2380,
+        "dpi_x": 300.99,
+        "dpi_y": 300.99,
+        "width_in": 9.824246652712715,
+        "height_in": 7.9072394431708695
+      },
+      "result_q1_1_unmarked_vs_full.svg": {
+        "text_count": 34,
+        "embedded_raster": false
+      }
+    },
+    "issues": []
+  },
+  "figure_qa": [
+    {
+      "figure": "raw_q1_1_source_counts",
+      "issues": []
+    },
+    {
+      "figure": "raw_q1_1_indicator_distributions",
+      "issues": []
+    },
+    {
+      "figure": "raw_q1_1_integrity_and_text_availability",
+      "issues": []
+    },
+    {
+      "figure": "process_q1_1_weight_calibration",
+      "issues": []
+    },
+    {
+      "figure": "process_q1_1_huber_location",
+      "issues": []
+    },
+    {
+      "figure": "process_q1_1_contamination_sensitivity",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_1_domain_scores",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_1_same_domain_transfer",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_1_domain_rank_robustness",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_1_contamination_transfer_intervals",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_1_unmarked_vs_full",
+      "issues": []
+    },
+    {
+      "figure": "flow_q1_1_model",
+      "issues": []
+    }
+  ],
+  "outputs_sha256": {
+    "figure_audit_q1.json": "b3271b763b355ba98d7ab21563b6325687170ab7626efab29f6a86b9b0bdef24",
+    "flow_q1_1_model.png": "99676bcf0c0f4597be068d04c45ce17abc2d72269c8866f68b7fb45b475218b6",
+    "flow_q1_1_model.svg": "80dbc9776bbc91b488b40f27647516bac963602ed888bdef54e90b01258ea1d8",
+    "grayscale_previews/flow_q1_1_model_grayscale.png": "6f5a0bea551ec6630dc75c4fc9bc1f7261978179547eb0eaf71e702c11cf8c68",
+    "grayscale_previews/process_q1_1_contamination_sensitivity_grayscale.png": "2d12c42c7f4e13390736f7a06d8cfb0716b446d071d2e52b6e892574d9a6310e",
+    "grayscale_previews/process_q1_1_huber_location_grayscale.png": "0c8705033336666d51299cb47cc5af58bf2906ba4d9a1526e9efc871478b1d4b",
+    "grayscale_previews/process_q1_1_weight_calibration_grayscale.png": "b10a3555217ecb8ad5b14f23cd856d92861acd93b333ab7c17bbd00c662ba4eb",
+    "grayscale_previews/raw_q1_1_indicator_distributions_grayscale.png": "387bfa513c0aac152691725fd68dd5e9b06c257ebee1d6c101f885b41f168760",
+    "grayscale_previews/raw_q1_1_integrity_and_text_availability_grayscale.png": "77999defb5d741a25c4a3b27e89a16bf2e2b307ff6f592b5987d49e552a8fefd",
+    "grayscale_previews/raw_q1_1_source_counts_grayscale.png": "3f68da07f2bbf6ae07e41a8e43db1672745b5efcec7da2421635a271bd38b5bf",
+    "grayscale_previews/result_q1_1_contamination_transfer_intervals_grayscale.png": "e8c662c5cc16b78a188ff64c854167f8ae5d8abbab5a07576ca2a8549f75ad63",
+    "grayscale_previews/result_q1_1_domain_rank_robustness_grayscale.png": "c369a9472c8ca121e0966ef9d4b9bc1da09800290fdce12a458113abaa4fb9e4",
+    "grayscale_previews/result_q1_1_domain_scores_grayscale.png": "2d54b66c1fcbd538f27e47f0b15ef3c8b2ed7347d9d262ded3d20382c83e7908",
+    "grayscale_previews/result_q1_1_same_domain_transfer_grayscale.png": "148cb062fccabc191ce7a864e5f19994047bf1e43ffca4320387b43219e1566c",
+    "grayscale_previews/result_q1_1_unmarked_vs_full_grayscale.png": "f42dacdae32401b71c6e5c0b0ae72fbe30e13ab279a632d2096d8ecbf6e8a7ef",
+    "process_q1_1_contamination_sensitivity.png": "fc5b5fab7aef756279ecd93494de7e5b989d7a7f395178892b843799f08e6619",
+    "process_q1_1_contamination_sensitivity.svg": "0ecb717752ff153955f45cb6bcaacc75e3f118bebc3fc5e6d1d30068bfebd101",
+    "process_q1_1_huber_location.png": "8c158165aa38645c000f39c14079f3a0f809e58d2a1de77d336aeba1b73a57cc",
+    "process_q1_1_huber_location.svg": "ea1afb99cef00c196764f5671f54192eaf95b221b31982ddac88b5656ebb0891",
+    "process_q1_1_weight_calibration.png": "add5e99da8d2d679b10ccfef8ea4611d63c51d2aafcb0ad3b5e25a8462f56b8d",
+    "process_q1_1_weight_calibration.svg": "e1e68295fd5a1774bbf69f3940c03e68ba3eea5af57f9bfb1cdcd04782d11985",
+    "raw_q1_1_indicator_distributions.png": "61af3f9c2bbddd53bf2ddba9586016ea2ac04921737d694ffdc4950ec55bc03b",
+    "raw_q1_1_indicator_distributions.svg": "ffd537c50ed793d9b2def9fd55bd788b8693cf9697190b62246ddeae480b92b7",
+    "raw_q1_1_integrity_and_text_availability.png": "d7810c04ed0a02c43e8206c1b9391c166cfdb75d3baa7930a3008212a4c72409",
+    "raw_q1_1_integrity_and_text_availability.svg": "58efee53705d71272590215c5129058a7f4cf37b224c560e62045bf00fbcf1fd",
+    "raw_q1_1_source_counts.png": "bd50f9a88af000ed6bb8bac7885eb33d56729f44cc7d2734abae3781295fba77",
+    "raw_q1_1_source_counts.svg": "761b5673c3537571d767c27c51c613afd582afeb8f253b5a6039e1b795a59e34",
+    "result_q1_1_contamination_transfer_intervals.png": "7c686319233ff1d14b4e9c7bfc623ee0688466d5659eeca15e0ed42e5413b9fb",
+    "result_q1_1_contamination_transfer_intervals.svg": "4aebb6a5dfb8ed6e5e642956dd4779a0f1c6becbf8ec0d8fb8126f1ffafe5bcc",
+    "result_q1_1_domain_rank_robustness.png": "1f5db039976f6b657d61891eef1d2b8b08039ec54df264a67f523c450884fc2b",
+    "result_q1_1_domain_rank_robustness.svg": "25c0d0351588ef5b2bea577dad7e33514d9360841eed60deaa54e397bef1e763",
+    "result_q1_1_domain_scores.png": "077289e2f221a8d8b9e459623f3e52af742ad9a3826fdeb3f303b2eded1822f7",
+    "result_q1_1_domain_scores.svg": "fd5cce623564ee5dbaa52c31a77be46c2c6941423472caf8a7fe6843f4234448",
+    "result_q1_1_same_domain_transfer.png": "ae96dc27363ba1164002277b1ef03dab69464751a13346c9666968a1d67b6a51",
+    "result_q1_1_same_domain_transfer.svg": "7b88b98732aab927980673ec08eda3287e330bb78f76d4424e30132997fddd9f",
+    "result_q1_1_unmarked_vs_full.png": "351aecdb8fd79abe64cae1ea52dbd02750e7b54be17e327e91b82b58aebca7b5",
+    "result_q1_1_unmarked_vs_full.svg": "64cbfdee82fb1288f9484ec0850d6033ac6af0024d75e57f597f8a60fc7bf205",
+    "visual_qa.json": "c604e15269f2a7e96664c8548e56bf8a65bb24789cd6c89f4925ff0c06852a07",
+    "图表契约.md": "5627109bd5549086abda927564b3486d02725757e6b859dc59060b6508c25171"
+  }
+}

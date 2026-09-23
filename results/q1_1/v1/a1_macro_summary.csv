@@ -1,0 +1,3 @@
+﻿dataset,candidate,n_domains,macro_domain_score,ci_low,ci_high,bootstrap_repetitions,definition
+a1,q_equal,7,0.4962230100496153,0.49490973992007115,0.4976315049188478,2000,equal-weight mean of seven A1 source-domain Huber locations
+a1,q_huber,7,0.49847810484764643,0.496567443226065,0.5004265176398414,2000,equal-weight mean of seven A1 source-domain Huber locations

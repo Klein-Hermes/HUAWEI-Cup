@@ -1,0 +1,126 @@
+{
+  "audit_version": "q1-text-integrity-v1",
+  "read_only": true,
+  "raw_content_exported": false,
+  "raw_files_modified": false,
+  "detection_scope": [
+    "Unicode general category Cf",
+    "Unicode category Cc excluding tab/newline/carriage-return",
+    "Unicode categories Zl/Zp",
+    "Unicode category Co",
+    "Unicode noncharacters",
+    "explicit zero-width and bidi-control codepoint counts"
+  ],
+  "nfc_change_is_diagnostic_only": true,
+  "report_baseline_invisible_rows_a1": 334,
+  "datasets": {
+    "A1": {
+      "rows": 51230,
+      "missing_content_rows": 0,
+      "content_audit_status": "complete",
+      "json_parse_errors": 0,
+      "files": {
+        "slimpajama_quality_signal_sample.jsonl.xz": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579"
+      },
+      "by_source_domain": {
+        "arxiv": {
+          "rows": 1419,
+          "content_field_present_rows": 1419,
+          "format_flag_rows": 3,
+          "other_control_flag_rows": 0,
+          "line_separator_flag_rows": 0,
+          "unicode_integrity_flag_rows": 3,
+          "nfc_changed_rows": 0
+        },
+        "book": {
+          "rows": 171,
+          "content_field_present_rows": 171,
+          "format_flag_rows": 17,
+          "other_control_flag_rows": 0,
+          "line_separator_flag_rows": 0,
+          "unicode_integrity_flag_rows": 19,
+          "nfc_changed_rows": 0
+        },
+        "c4": {
+          "rows": 10000,
+          "content_field_present_rows": 10000,
+          "format_flag_rows": 62,
+          "other_control_flag_rows": 3,
+          "line_separator_flag_rows": 0,
+          "unicode_integrity_flag_rows": 74,
+          "nfc_changed_rows": 0
+        },
+        "commoncrawl": {
+          "rows": 9640,
+          "content_field_present_rows": 9640,
+          "format_flag_rows": 247,
+          "other_control_flag_rows": 5,
+          "line_separator_flag_rows": 0,
+          "unicode_integrity_flag_rows": 267,
+          "nfc_changed_rows": 0
+        },
+        "github": {
+          "rows": 10000,
+          "content_field_present_rows": 10000,
+          "format_flag_rows": 7,
+          "other_control_flag_rows": 4,
+          "line_separator_flag_rows": 0,
+          "unicode_integrity_flag_rows": 14,
+          "nfc_changed_rows": 0
+        },
+        "stackexchange": {
+          "rows": 10000,
+          "content_field_present_rows": 10000,
+          "format_flag_rows": 31,
+          "other_control_flag_rows": 0,
+          "line_separator_flag_rows": 0,
+          "unicode_integrity_flag_rows": 37,
+          "nfc_changed_rows": 0
+        },
+        "wikipedia": {
+          "rows": 10000,
+          "content_field_present_rows": 10000,
+          "format_flag_rows": 49,
+          "other_control_flag_rows": 0,
+          "line_separator_flag_rows": 0,
+          "unicode_integrity_flag_rows": 49,
+          "nfc_changed_rows": 0
+        }
+      }
+    },
+    "A2": {
+      "rows": 17523,
+      "missing_content_rows": 17523,
+      "content_audit_status": "not_applicable_no_content_field",
+      "json_parse_errors": 0,
+      "files": {
+        "arxiv_part-6777d8857c6e-000486.jsonl.xz": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a"
+      },
+      "by_source_domain": {
+        "arxiv": {
+          "rows": 17523,
+          "content_field_present_rows": 0,
+          "content_field_missing_rows": 17523
+        }
+      }
+    },
+    "A3": {
+      "rows": 203752,
+      "missing_content_rows": 203752,
+      "content_audit_status": "not_applicable_no_content_field",
+      "json_parse_errors": 0,
+      "files": {
+        "github_part-6777d8857c6e-000275.jsonl.xz": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382"
+      },
+      "by_source_domain": {
+        "github": {
+          "rows": 203752,
+          "content_field_present_rows": 0,
+          "content_field_missing_rows": 203752
+        }
+      }
+    }
+  },
+  "record_audit_csv": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\text_integrity_audit.csv",
+  "record_audit_sha256": "47d1eaae477825132e0c3906060137732c64213cf5596c94afde2fab8293cdf0"
+}

@@ -1,0 +1,59 @@
+{
+  "style": {
+    "journal": "general",
+    "lang": "zh",
+    "sciplots_used": false,
+    "cjk_font": "SimHei",
+    "constrained_layout": false
+  },
+  "figures": [
+    {
+      "figure": "raw_q1_1_source_counts",
+      "issues": []
+    },
+    {
+      "figure": "raw_q1_1_indicator_distributions",
+      "issues": []
+    },
+    {
+      "figure": "raw_q1_1_integrity_and_text_availability",
+      "issues": []
+    },
+    {
+      "figure": "process_q1_1_weight_calibration",
+      "issues": []
+    },
+    {
+      "figure": "process_q1_1_huber_location",
+      "issues": []
+    },
+    {
+      "figure": "process_q1_1_contamination_sensitivity",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_1_domain_scores",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_1_same_domain_transfer",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_1_domain_rank_robustness",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_1_contamination_transfer_intervals",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_1_unmarked_vs_full",
+      "issues": []
+    },
+    {
+      "figure": "flow_q1_1_model",
+      "issues": []
+    }
+  ]
+}
