@@ -36,7 +36,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from matplotlib import cm, colors as mpl_colors
+from matplotlib import colors as mpl_colors
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Polygon, Rectangle
 from PIL import Image
 from export_figure import export_figure
@@ -77,9 +77,9 @@ def save(fig, stem, size, caption):
     for severity, message in issues:
         print(f"VISUAL_QA {severity} {stem}: {message}")
     export_figure(fig, str(FIG / stem), formats=["svg", "png"],
-                  size_inches=size, dpi=300, grayscale_preview=False)
+                  size_inches=size, dpi=301, grayscale_preview=False)
     with Image.open(FIG / f"{stem}.png") as image:
-        image.convert("L").save(GRAY / f"{stem}_grayscale.png", dpi=(300,300))
+        image.convert("L").save(GRAY / f"{stem}_grayscale.png", dpi=(301,301))
     plt.close(fig)
 
 qa = []
@@ -134,12 +134,20 @@ for row in range(len(domains)):
     for col in range(len(short)):
         ax.add_patch(Rectangle((col,row),1,1,facecolor=cmap(norm(sat_values[row,col])),
                                edgecolor="white",linewidth=.25))
-im=cm.ScalarMappable(norm=norm,cmap=cmap)
 ax.set_xlim(0,len(short)); ax.set_ylim(len(domains),0)
 ax.set_xticks(np.arange(len(short))+.5,short,rotation=90,ha="right"); ax.set_yticks(np.arange(len(domains))+.5,domains)
 ax.tick_params(axis="x",labelsize=7)
 ax.set_xlabel("指标"); ax.set_ylabel("来源域"); ax.set_title("A1 各来源域 norm 指标端点占比")
-fig.colorbar(im,ax=ax,pad=.02,label="有效 norm 值等于 0 或 1 的比例（%）")
+# Draw a vector color scale from rectangles; Matplotlib's default colorbar may
+# embed a raster gradient in SVG, which defeats the editable-vector contract.
+cax=fig.add_axes([.935,.39,.022,.42])
+for i in range(80):
+    y0=i/80
+    cax.add_patch(Rectangle((0,y0),1,1/80,facecolor=cmap(norm(norm.vmin+y0*(norm.vmax-norm.vmin))),edgecolor="none"))
+cax.set_xlim(0,1); cax.set_ylim(0,1); cax.set_xticks([])
+ticks=np.linspace(0,1,6); cax.set_yticks(ticks,[f"{v:.0f}" for v in ticks*norm.vmax])
+cax.yaxis.tick_right(); cax.tick_params(axis="y",labelsize=7,length=2)
+cax.set_title("端点占比 (%)",fontsize=7,pad=4)
 save(fig,"raw_q1_2_endpoint_saturation",(10.0,5.4),"每格为域内有效指标值等于 0 或 1 的样本比例；是预处理饱和诊断，不代表数据错误或污染。")
 
 # Process: conflict distribution, pair diagnostics, marker-exclusion recalibration.
@@ -271,7 +279,7 @@ connect(ax,naudit,nsens); connect(ax,nsens,nc); connect(ax,nc,nr,color=COL["oran
 ax.text(.54,.06,"标记只用于敏感性分组；原文不进入统计，不据此认定恶意，也不证明评分器免疫污染。",ha="center",fontsize=8,color=COL["gray"])
 save(fig,"flow_q1_2_model",(10,6.6),"主分支只读冻结 norm_*；污染支路仅重估 A1 校准并比较稳定性。A2/A3 无原文字段，外部复核限于冻结评分表条件下。")
 
-contract="""# Q1.2 图表契约\n\n核心结论：冻结评分信号存在可量化分歧；剔除 A1 Unicode 标记记录后，可复核域阈值、指标对排序和候选分变化，但不能证明上游评分器免疫原文污染。\n\n- 后端：Python / Matplotlib，遵循项目科研绘图样式、导出与视觉检查流程。\n- 证据：冻结 `norm_*`；Q1.2 主结果；官方严格/扩展 Unicode 敏感性结果。绘图程序不读取 `content`。\n- 原始数据图：来源域样本量、22 个 norm 指标分布、A1 端点饱和率。\n- 过程图：A1 域内冲突度与 Q95、231 个指标对、428/463 标记剔除后的阈值变化。\n- 结果图：ΔQ 分布、A2/A3 bootstrap 差值区间、指标对排序稳定性。\n- 统计口径：箱体为 IQR；小提琴为密度；差值区间为 2000 次域内 bootstrap percentile 95% CI；不作因果或恶意污染推断。\n- 流程图：总体依赖图标明未完成分支；Q1.2 图严格对应已实现数据流。\n- 导出：SVG/PDF 矢量文字，PNG 300 DPI，并生成灰度预览。\n"""
+contract="""# Q1.2 图表契约\n\n核心结论：冻结评分信号存在可量化分歧；剔除 A1 Unicode 标记记录后，可复核域阈值、指标对排序和候选分变化，但不能证明上游评分器免疫原文污染。\n\n- 后端：Python / Matplotlib，遵循项目科研绘图样式、导出与视觉检查流程。\n- 证据：冻结 `norm_*`；Q1.2 主结果；官方严格/扩展 Unicode 敏感性结果。绘图程序不读取 `content`。\n- 原始数据图：来源域样本量、22 个 norm 指标分布、A1 端点饱和率。\n- 过程图：A1 域内冲突度与 Q95、231 个指标对、428/463 标记剔除后的阈值变化。\n- 结果图：ΔQ 分布、A2/A3 bootstrap 差值区间、指标对排序稳定性。\n- 统计口径：箱体为 IQR；小提琴为密度；差值区间为 2000 次域内 bootstrap percentile 95% CI；不作因果或恶意污染推断。\n- 流程图：总体依赖图标明未完成分支；Q1.2 图严格对应已实现数据流。\n- 题意门禁：只将可见正式题面作为题意依据；PDF 低可见度文本留在隔离审计记录，不进入 Q1.2 模型或提示词。\n- 数据边界：A1 Unicode 命中是完整性风险标记，不是恶意标签；A2/A3 无原文字段；本敏感性分析不能证明上游评分器免疫原文污染。\n- 导出：SVG 矢量文字；PNG 按 301 DPI 导出以满足至少 300 DPI 的严格门槛，并生成灰度预览。\n"""
 (FIG/"图表契约.md").write_text(contract,encoding="utf-8")
 (FIG/"visual_qa.json").write_text(json.dumps({"style":style_info,"figures":qa},ensure_ascii=False,indent=2),encoding="utf-8")
 if any(i["severity"]=="FAIL" for row in qa for i in row["issues"]): raise SystemExit("Visual QA has FAIL; revise plots and rerun.")

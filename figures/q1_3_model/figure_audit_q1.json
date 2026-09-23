@@ -1,0 +1,127 @@
+{
+  "ok": true,
+  "directory": "D:\\PycharmProject\\HUAWEI-Cup\\figures\\q1_3_model",
+  "questions": [
+    "q1"
+  ],
+  "files": {
+    "process_q1_3_huber_weights.png": {
+      "width_px": 2826,
+      "height_px": 1343,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 9.420018840037681,
+      "height_in": 4.476675620017907
+    },
+    "process_q1_3_huber_weights.svg": {
+      "text_count": 23,
+      "embedded_raster": false
+    },
+    "process_q1_3_lambda_cv.png": {
+      "width_px": 2028,
+      "height_px": 1303,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 6.760013520027041,
+      "height_in": 4.343342020017373
+    },
+    "process_q1_3_lambda_cv.svg": {
+      "text_count": 24,
+      "embedded_raster": false
+    },
+    "process_q1_3_model_selection.png": {
+      "width_px": 2025,
+      "height_px": 972,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 6.750013500027,
+      "height_in": 3.24000648001296
+    },
+    "process_q1_3_model_selection.svg": {
+      "text_count": 14,
+      "embedded_raster": false
+    },
+    "raw_q1_3_row_sum_deviation.png": {
+      "width_px": 2028,
+      "height_px": 1303,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 6.760013520027041,
+      "height_in": 4.343342020017373
+    },
+    "raw_q1_3_row_sum_deviation.svg": {
+      "text_count": 20,
+      "embedded_raster": false
+    },
+    "raw_q1_3_share_loss_correlation.png": {
+      "width_px": 2949,
+      "height_px": 1674,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 9.830019660039321,
+      "height_in": 5.580011160022321
+    },
+    "raw_q1_3_share_loss_correlation.svg": {
+      "text_count": 43,
+      "embedded_raster": true
+    },
+    "raw_q1_3_zero_count.png": {
+      "width_px": 2029,
+      "height_px": 1303,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 6.763346860027053,
+      "height_in": 4.343342020017373
+    },
+    "raw_q1_3_zero_count.svg": {
+      "text_count": 19,
+      "embedded_raster": false
+    },
+    "result_q1_3_cross_scale_rmse.png": {
+      "width_px": 2028,
+      "height_px": 1303,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 6.760013520027041,
+      "height_in": 4.343342020017373
+    },
+    "result_q1_3_cross_scale_rmse.svg": {
+      "text_count": 15,
+      "embedded_raster": false
+    },
+    "result_q1_3_substitution_coefficients.png": {
+      "width_px": 2950,
+      "height_px": 1674,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 9.833353000039335,
+      "height_in": 5.580011160022321
+    },
+    "result_q1_3_substitution_coefficients.svg": {
+      "text_count": 41,
+      "embedded_raster": true
+    },
+    "result_q1_3_test_1m_observed_predicted.png": {
+      "width_px": 3034,
+      "height_px": 2535,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 10.113353560040455,
+      "height_in": 8.4500169000338
+    },
+    "result_q1_3_test_1m_observed_predicted.svg": {
+      "text_count": 95,
+      "embedded_raster": false
+    }
+  },
+  "issues": [
+    {
+      "severity": "WARN",
+      "message": "raw_q1_3_share_loss_correlation.svg 含嵌入位图，请确认确有必要"
+    },
+    {
+      "severity": "WARN",
+      "message": "result_q1_3_substitution_coefficients.svg 含嵌入位图，请确认确有必要"
+    }
+  ]
+}

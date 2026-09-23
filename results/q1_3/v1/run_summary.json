@@ -1,0 +1,288 @@
+{
+  "status": "MODEL_FIT_AND_FROZEN_EVALUATION_COMPLETED",
+  "mode": "full",
+  "source_code": {
+    "file": "src\\f_q1_3_mixture_loss.py",
+    "sha256": "705e96f0e80e52dd4d9c73e51bb8a22bd1af613dead9862edce1d719674047dc"
+  },
+  "selected_model_by_full_training_cv_on_closed_p": "simplex_ridge",
+  "full_training_candidate_standardized_mse_on_closed_p": {
+    "mean": 1.0044751467973316,
+    "reference_ols": 0.400316151433245,
+    "simplex_ridge": 0.3985994161476655
+  },
+  "huber_robustness_sensitivity": {
+    "status": "completed",
+    "selection_role": "prespecified robustness sensitivity; not part of primary family selection",
+    "outer_nested_macro_normalized_rmse": 0.6328063605411687,
+    "outer_selected_lambdas": [
+      0.0001,
+      0.0001,
+      3.1622776601683795e-05,
+      0.0001,
+      3.1622776601683795e-05
+    ],
+    "full_training_grouped_cv_lambda": 3.1622776601683795e-05,
+    "full_training_grouped_cv_standardized_mse": 0.40164787402071234,
+    "delta_standardized_residual": 1.345,
+    "irls_max_iterations": 13,
+    "irls_all_targets_converged": true,
+    "per_target_downweight_counts": {
+      "metric/the_pile_arxiv_val_loss": {
+        "n_weight_below_1": 24,
+        "n_weight_below_0_5": 1,
+        "minimum_weight": 0.46727827325529464
+      },
+      "metric/the_pile_freelaw_val_loss": {
+        "n_weight_below_1": 4,
+        "n_weight_below_0_5": 0,
+        "minimum_weight": 0.8624497758538354
+      },
+      "metric/the_pile_pubmed_central_val_loss": {
+        "n_weight_below_1": 10,
+        "n_weight_below_0_5": 0,
+        "minimum_weight": 0.5959425795296396
+      },
+      "metric/the_pile_wikipedia_en_val_loss": {
+        "n_weight_below_1": 2,
+        "n_weight_below_0_5": 0,
+        "minimum_weight": 0.6653931367020546
+      },
+      "metric/the_pile_dm_mathematics_val_loss": {
+        "n_weight_below_1": 1,
+        "n_weight_below_0_5": 0,
+        "minimum_weight": 0.9474533556238341
+      },
+      "metric/the_pile_github_val_loss": {
+        "n_weight_below_1": 24,
+        "n_weight_below_0_5": 0,
+        "minimum_weight": 0.5852287415127914
+      },
+      "metric/the_pile_stackexchange_val_loss": {
+        "n_weight_below_1": 21,
+        "n_weight_below_0_5": 0,
+        "minimum_weight": 0.6535513941676321
+      },
+      "metric/the_pile_gutenberg_pg_19_val_loss": {
+        "n_weight_below_1": 14,
+        "n_weight_below_0_5": 0,
+        "minimum_weight": 0.6537808769692518
+      },
+      "metric/the_pile_pile_cc_val_loss": {
+        "n_weight_below_1": 3,
+        "n_weight_below_0_5": 0,
+        "minimum_weight": 0.8148594060573071
+      },
+      "metric/the_pile_ubuntu_irc_val_loss": {
+        "n_weight_below_1": 5,
+        "n_weight_below_0_5": 0,
+        "minimum_weight": 0.7573027149321383
+      },
+      "metric/the_pile_hackernews_val_loss": {
+        "n_weight_below_1": 8,
+        "n_weight_below_0_5": 0,
+        "minimum_weight": 0.6020658617718917
+      },
+      "metric/the_pile_pubmed_abstracts_val_loss": {
+        "n_weight_below_1": 8,
+        "n_weight_below_0_5": 0,
+        "minimum_weight": 0.5101940830283296
+      },
+      "metric/the_pile_uspto_backgrounds_val_loss": {
+        "n_weight_below_1": 2,
+        "n_weight_below_0_5": 0,
+        "minimum_weight": 0.6594557512559049
+      }
+    },
+    "interpretation_limit": "Huber weights indicate sensitivity to large conditional residuals; they do not prove data corruption and do not protect against high-leverage composition errors."
+  },
+  "quadratic_zero_friendly_sensitivity": {
+    "status": "completed",
+    "selection_role": "prespecified nonlinear sensitivity; not part of primary family selection",
+    "feature_count": 153,
+    "outer_nested_macro_normalized_rmse": 0.5890145267134201,
+    "outer_selected_lambdas": [
+      0.2848035868435799,
+      0.2848035868435799,
+      0.2848035868435799,
+      0.2848035868435799,
+      0.2848035868435799
+    ],
+    "full_training_grouped_cv_lambda": 0.2848035868435799,
+    "full_training_grouped_cv_standardized_mse": 0.3423824810548815,
+    "coefficient_matrix_finite": true,
+    "intercept_finite": true,
+    "zero_preservation": "Uses native closed shares and pairwise products; zero shares stay zero when the raw feature map is formed.",
+    "raw_feature_map_zero_handling": "No log or pseudocount is applied; when a share is zero its raw main effect and all raw pairwise products involving that share are zero. Fold centering is applied only for regression fitting.",
+    "interpretation_limit": "153 features are estimated from 512 recipes; use only as a sensitivity comparison. It is not used to select the primary model and gives no assurance of cross-scale extrapolation."
+  },
+  "outer_nested_selection_pipeline_macro_normalized_rmse_closed_p": 0.6330482361236224,
+  "outer_nested_selection_pipeline_macro_normalized_rmse_raw_p": 0.6330371752644487,
+  "outer_selected_model_families_closed_p": [
+    "simplex_ridge",
+    "simplex_ridge",
+    "simplex_ridge",
+    "simplex_ridge",
+    "simplex_ridge"
+  ],
+  "outer_selected_model_families_raw_p": [
+    "simplex_ridge",
+    "simplex_ridge",
+    "simplex_ridge",
+    "simplex_ridge",
+    "simplex_ridge"
+  ],
+  "substitution_effect_bootstrap": {
+    "status": "completed",
+    "requested": 500,
+    "valid": 500,
+    "rank_deficient": 0,
+    "pair_count": 136,
+    "unsupported_10pp_pairs": 30,
+    "supported_10pp_pairs": 106,
+    "interval": "95% percentile pairs bootstrap",
+    "interval_scope": "pointwise across target and substitution pairs; no multiplicity adjustment",
+    "supported_pair_target_rows": 1378,
+    "supported_intervals_entirely_positive": 214,
+    "supported_intervals_entirely_negative": 535,
+    "supported_intervals_cross_zero": 629,
+    "conditional_on": [
+      "selected model family",
+      "selected ridge lambda",
+      "observed training distribution"
+    ],
+    "seed": 20310923
+  },
+  "residual_diagnostics": {
+    "prediction_source": "outer-fold predictions from nested model-family selection on closed p",
+    "prediction_rank_bins": 5,
+    "out_of_fold_rows": 512,
+    "largest_target_rmse": {
+      "target": "metric/the_pile_dm_mathematics_val_loss",
+      "rmse": 1.2071686403526285
+    },
+    "largest_absolute_binned_bias": {
+      "target": "metric/the_pile_dm_mathematics_val_loss",
+      "prediction_rank_bin": 5,
+      "mean_error_pred_minus_observed": -0.5173989361201006
+    }
+  },
+  "contamination_guard": {
+    "data_inputs": "A4/A5 only for fitting and model selection; A6-A11 read only for frozen evaluation; A12-A15 read only for estimate consistency; no PDF or report text is parsed as instructions",
+    "method_basis": "simplex identifiability, input hash and row alignment checks, raw-vs-closed composition sensitivity, Huber residual sensitivity, and native-share quadratic sensitivity; hidden text does not decide inclusion or exclusion",
+    "candidate_models": [
+      "training-mean baseline",
+      "reference-component OLS",
+      "simplex ridge"
+    ],
+    "robustness_model": "simplex_huber_ridge_sensitivity",
+    "additional_sensitivity_model": "quadratic_ridge_sensitivity",
+    "no_rows_removed_or_repaired": true,
+    "report_row_sum_count_gt_0_001_after_reconciliation": 47,
+    "historical_report_row_sum_count_gt_0_001": 189,
+    "recomputed_train_row_sum_count_gt_0_001": 47,
+    "row_sum_discrepancy_note": "An earlier version of 题目分析报告.md recorded 189; the report now notes the direct strict-Decimal recount of the current A4 source is 47. The hash-bound code audit also computes 47."
+  },
+  "reference_ols_condition_numbers_nested_cv": [
+    198.7362583734539,
+    209.4304401236693,
+    234.9721105706066,
+    204.9456848754941,
+    206.5960655380945
+  ],
+  "ols_condition_warning_threshold": 10000000.0,
+  "closed_fit_lambda": 0.0001,
+  "huber_sensitivity_lambda": 3.1622776601683795e-05,
+  "closed_candidate_ridge_lambda": 0.0001,
+  "raw_sensitivity_lambda": 0.0001,
+  "raw_candidate_ridge_lambda": 0.0001,
+  "seed": 20260923,
+  "outer_folds": 5,
+  "inner_folds": 4,
+  "lambda_grid": [
+    0.0,
+    1e-06,
+    3.162277660168379e-06,
+    1e-05,
+    3.1622776601683795e-05,
+    0.0001,
+    0.00031622776601683794,
+    0.001,
+    0.0031622776601683794,
+    0.01,
+    0.03162277660168379,
+    0.1,
+    0.31622776601683794,
+    1.0,
+    3.1622776601683795,
+    10.0
+  ],
+  "reference_domain": "train_the_pile_uspto_backgrounds",
+  "inputs": [
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\train_mixture_1m.csv",
+      "sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\train_pile_loss_1m.csv",
+      "sha256": "49a959aa07ce5c20831d5abe3a7896ff0cd90a398bd407c8913fd5588be0465a"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_mixture_1m.csv",
+      "sha256": "197267b7d6f15367e2f46c881e564c35b0d34e51b1754bb09d07e650cf8e1ce8"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_pile_loss_1m.csv",
+      "sha256": "e027b1674f60140a65a87b5e4a59ab5f09dc33e8fd02c080682678074b160f53"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_mixture_60m.csv",
+      "sha256": "197267b7d6f15367e2f46c881e564c35b0d34e51b1754bb09d07e650cf8e1ce8"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_pile_loss_60m.csv",
+      "sha256": "8fe69d59ab7dd4fae4736459f4265ec93c7ed1ad1eca407346052560edc72b5b"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_mixture_1B.csv",
+      "sha256": "dd38052949c0a5f84165bdcb3ae3a331c7f07efd9bb83848bd579dfc4ce75a2c"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_pile_loss_1B.csv",
+      "sha256": "b2451e2b7fa15400688edc39e4d32f21ccbe0fb356e07d62a0e9ccddf247114f"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\est_mixture_10b.csv",
+      "sha256": "880c7ca1ebef470422e2b93d9bfcd0976db7db4e34ea57047518d95fe43327d1"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\est_pile_loss_10b.csv",
+      "sha256": "226457581f3f59e15e44d8f72dee31fa7492c821699725fef47627d82cf34c0d"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\est_mixture_70b.csv",
+      "sha256": "880c7ca1ebef470422e2b93d9bfcd0976db7db4e34ea57047518d95fe43327d1"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\est_pile_loss_70b.csv",
+      "sha256": "d0883b2d1a44da9386a6d629a3623c724ee291cba1ac87b6d1079e5377307682"
+    }
+  ],
+  "python": "3.10.4",
+  "numpy": "1.23.3",
+  "command": "python src/f_q1_3_mixture_loss.py --mode full",
+  "validation_policy": {
+    "A6_A7": "frozen same-scale validation; prior review notes these were previously viewed",
+    "A8_A11": "frozen cross-scale transfer evaluation; no recalibration",
+    "A12_A15": "estimate-table consistency only, never interpreted as real test accuracy"
+  },
+  "limitations": [
+    "Cross-scale absolute errors are descriptive because fitting uses only 1M training data.",
+    "Regression associations are not causal effects.",
+    "Raw proportions are reported only as a closure sensitivity; closed proportions define primary selection.",
+    "The model uses gamma=0 (no shared group sparsity); this is the planned ridge fallback.",
+    "The Huber sensitivity only reduces the influence of large conditional Loss residuals; it does not establish malicious corruption or handle high-leverage mixture contamination.",
+    "The quadratic native-share sensitivity uses 153 terms for 512 recipes; it is reported only as a nonlinear sensitivity and is not used to select the primary model. Its zero-friendly basis does not identify whether observed zeros are structural or rounded.",
+    "An earlier analysis report version recorded 189 A4 row-sum deviations above 0.001; direct strict-Decimal recount of the current hash-bound A4 source gives 47 and the report now records 47 with the historical value noted."
+  ]
+}

@@ -1,0 +1,21 @@
+﻿variant,outer_fold,selected_family_from_outer_training_only,ridge_lambda_selected_inside_outer_training,inner_cv_standardized_mse_by_family
+closed,0,simplex_ridge,0.0001,"{""mean"": 1.0073862632080823, ""reference_ols"": 0.4119542283294745, ""simplex_ridge"": 0.4096549897656421}"
+closed,1,simplex_ridge,0.0001,"{""mean"": 1.0111253568375291, ""reference_ols"": 0.40992849808776805, ""simplex_ridge"": 0.40681612430011466}"
+closed,2,simplex_ridge,0.0001,"{""mean"": 1.0047461004779825, ""reference_ols"": 0.402089377889905, ""simplex_ridge"": 0.3989989187628214}"
+closed,3,simplex_ridge,0.0001,"{""mean"": 1.0063074683157587, ""reference_ols"": 0.4041590182211321, ""simplex_ridge"": 0.40211907876893227}"
+closed,4,simplex_ridge,0.0001,"{""mean"": 1.0081585928148658, ""reference_ols"": 0.41303237035588, ""simplex_ridge"": 0.4112752881753322}"
+raw,0,simplex_ridge,0.0001,"{""mean"": 1.0073862632080823, ""reference_ols"": 0.41194510932635386, ""simplex_ridge"": 0.4096559051447765}"
+raw,1,simplex_ridge,0.0001,"{""mean"": 1.0111253568375291, ""reference_ols"": 0.4099068079413759, ""simplex_ridge"": 0.40676294019289355}"
+raw,2,simplex_ridge,0.0001,"{""mean"": 1.0047461004779825, ""reference_ols"": 0.4020853422889359, ""simplex_ridge"": 0.3989476633649615}"
+raw,3,simplex_ridge,0.0001,"{""mean"": 1.0063074683157587, ""reference_ols"": 0.4041399031508046, ""simplex_ridge"": 0.4021448187638551}"
+raw,4,simplex_ridge,0.0001,"{""mean"": 1.0081585928148658, ""reference_ols"": 0.4130450904266237, ""simplex_ridge"": 0.41125785017345867}"
+closed_robustness_sensitivity,0,simplex_huber_ridge_sensitivity,0.0001,Huber ridge only; lambda selected inside outer training
+closed_robustness_sensitivity,1,simplex_huber_ridge_sensitivity,0.0001,Huber ridge only; lambda selected inside outer training
+closed_robustness_sensitivity,2,simplex_huber_ridge_sensitivity,3.1622776601683795e-05,Huber ridge only; lambda selected inside outer training
+closed_robustness_sensitivity,3,simplex_huber_ridge_sensitivity,0.0001,Huber ridge only; lambda selected inside outer training
+closed_robustness_sensitivity,4,simplex_huber_ridge_sensitivity,3.1622776601683795e-05,Huber ridge only; lambda selected inside outer training
+closed_nonlinear_sensitivity,0,quadratic_ridge_sensitivity,0.2848035868435799,quadratic ridge only; lambda selected inside outer training
+closed_nonlinear_sensitivity,1,quadratic_ridge_sensitivity,0.2848035868435799,quadratic ridge only; lambda selected inside outer training
+closed_nonlinear_sensitivity,2,quadratic_ridge_sensitivity,0.2848035868435799,quadratic ridge only; lambda selected inside outer training
+closed_nonlinear_sensitivity,3,quadratic_ridge_sensitivity,0.2848035868435799,quadratic ridge only; lambda selected inside outer training
+closed_nonlinear_sensitivity,4,quadratic_ridge_sensitivity,0.2848035868435799,quadratic ridge only; lambda selected inside outer training

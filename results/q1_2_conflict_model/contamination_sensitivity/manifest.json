@@ -1,0 +1,38 @@
+{
+  "schema_version": "q1-2-contamination-sensitivity-v1",
+  "status": "full_sensitivity",
+  "primary_q1_2_manifest_sha256": "d8a37797a4ca4f4e1d39dd0deaeb4a0947f431aaeddff585dd4ebb9fe9f46302",
+  "preprocess_manifest_sha256": "56ac6f6178eb949e024a0ac0a1faa22f9a37fcbcc141af1371d871bac083d2ec",
+  "unicode_audit_manifest_sha256": "27b49566fcaed1fdc95acd22fc2ba56692b70758084a69c833e8c69e2473a43f",
+  "unicode_id_file_sha256": "fbc94907d813f6d0e14c14dd722975e70bd0f86a40430a7aa5df925a07d45e50",
+  "preprocessed_input_sha256": {
+    "a1": "38c753ab9b5fa3c2ac370f9a1c600ae761dca1154814d542a45fb98737e13590",
+    "a2": "55cd687cc60614084568ac09ca141b0a6a847528edc8edac88ea228362f055fb",
+    "a3": "a011c3c04a603fd306ce77f40044ecb0924ab79f18acfd53195fd0bf92213d8f"
+  },
+  "records_excluded_from_a1_q1_2_calibration": 428,
+  "records_retained_in_a1_sensitivity": 50802,
+  "unicode_flag_rule": "Unicode General Category Cf, plus Cc excluding TAB/LF/CR; report non-ASCII Zs separately",
+  "bootstrap": {
+    "threshold_repetitions": 2000,
+    "external_validation_repetitions": 2000,
+    "weight_repetitions": 1000,
+    "seed": 20260923,
+    "ci": "95% percentile"
+  },
+  "clean_a1_huber_scale_method": "1.4826*MAD",
+  "clean_a1_huber_delta": 0.3964524790437465,
+  "clean_a1_huber_scale": 0.2947602074674695,
+  "weight_l1_change": 0.0010018390171737182,
+  "weight_rank_spearman": 0.5273640002724994,
+  "runtime_seconds": 158.583,
+  "outputs_sha256": {
+    "a1_clean_thresholds.csv": "154a21ebe09485ffc5ea60d093acbee9e6fa9401da315516949b3d208a59039f",
+    "clean_a1_external_validation.csv": "a5166fe04d36d3e7cdd6491bc1fd49cffd756cc17b7f685e5963295802769138",
+    "clean_a1_indicator_weights.csv": "d244d83666e7278057f4b661d7dfe23beeccae3a32067196e8f3b94fa7a6ddfe",
+    "contamination_domain_sensitivity.csv": "c06e722a54f6cad4b3993b4edd3f989b970a3f79cd8ed16163eddae99c0ea8e6",
+    "contamination_sensitivity_report.md": "f7eca3505b158f16029a15b15e7088b76bc3a8aec4de4c86e5f47338ece83c16",
+    "huber_score_sensitivity.csv": "c3345b379af2f6e1313523bb878e2b1a1e1070993f38c3b0add2ab5146369351",
+    "pair_ranking_sensitivity.csv": "08bc204051afefc9d0eec764a0880e0fce371e28b8f0f418024b7b72d933abaa"
+  }
+}

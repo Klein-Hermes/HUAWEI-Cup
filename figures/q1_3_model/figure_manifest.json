@@ -1,0 +1,502 @@
+{
+  "schema_version": "1.0",
+  "status": "FINAL_P2_PASS",
+  "plot_script": {
+    "file": "src/plot_f_q1_3_results.py",
+    "sha256": "7062190f6712ae5c5fa976f3e3db16fd82a0259f8b469afacfe2d6e8d178dee7"
+  },
+  "contract": {
+    "file": "figures/q1_3_model/图表契约.md",
+    "sha256": "c1efa5579fb1ac2565ad9aec6bbafec669e2d39dd232a4b1d81798dcf8827933"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  },
+  "figure_count": 9,
+  "categories": {
+    "raw": 3,
+    "process": 3,
+    "result": 3
+  },
+  "programmatic_visual_qa": "PASS",
+  "figure_audit_ok": true,
+  "figure_audit_warnings": 2,
+  "figure_audit_report": {
+    "ok": true,
+    "directory": "D:\\PycharmProject\\HUAWEI-Cup\\figures\\q1_3_model",
+    "questions": [
+      "q1"
+    ],
+    "files": {
+      "process_q1_3_huber_weights.png": {
+        "width_px": 2826,
+        "height_px": 1343,
+        "dpi_x": 299.9994,
+        "dpi_y": 299.9994,
+        "width_in": 9.420018840037681,
+        "height_in": 4.476675620017907
+      },
+      "process_q1_3_huber_weights.svg": {
+        "text_count": 23,
+        "embedded_raster": false
+      },
+      "process_q1_3_lambda_cv.png": {
+        "width_px": 2028,
+        "height_px": 1303,
+        "dpi_x": 299.9994,
+        "dpi_y": 299.9994,
+        "width_in": 6.760013520027041,
+        "height_in": 4.343342020017373
+      },
+      "process_q1_3_lambda_cv.svg": {
+        "text_count": 24,
+        "embedded_raster": false
+      },
+      "process_q1_3_model_selection.png": {
+        "width_px": 2025,
+        "height_px": 972,
+        "dpi_x": 299.9994,
+        "dpi_y": 299.9994,
+        "width_in": 6.750013500027,
+        "height_in": 3.24000648001296
+      },
+      "process_q1_3_model_selection.svg": {
+        "text_count": 14,
+        "embedded_raster": false
+      },
+      "raw_q1_3_row_sum_deviation.png": {
+        "width_px": 2028,
+        "height_px": 1303,
+        "dpi_x": 299.9994,
+        "dpi_y": 299.9994,
+        "width_in": 6.760013520027041,
+        "height_in": 4.343342020017373
+      },
+      "raw_q1_3_row_sum_deviation.svg": {
+        "text_count": 20,
+        "embedded_raster": false
+      },
+      "raw_q1_3_share_loss_correlation.png": {
+        "width_px": 2949,
+        "height_px": 1674,
+        "dpi_x": 299.9994,
+        "dpi_y": 299.9994,
+        "width_in": 9.830019660039321,
+        "height_in": 5.580011160022321
+      },
+      "raw_q1_3_share_loss_correlation.svg": {
+        "text_count": 43,
+        "embedded_raster": true
+      },
+      "raw_q1_3_zero_count.png": {
+        "width_px": 2029,
+        "height_px": 1303,
+        "dpi_x": 299.9994,
+        "dpi_y": 299.9994,
+        "width_in": 6.763346860027053,
+        "height_in": 4.343342020017373
+      },
+      "raw_q1_3_zero_count.svg": {
+        "text_count": 19,
+        "embedded_raster": false
+      },
+      "result_q1_3_cross_scale_rmse.png": {
+        "width_px": 2028,
+        "height_px": 1303,
+        "dpi_x": 299.9994,
+        "dpi_y": 299.9994,
+        "width_in": 6.760013520027041,
+        "height_in": 4.343342020017373
+      },
+      "result_q1_3_cross_scale_rmse.svg": {
+        "text_count": 15,
+        "embedded_raster": false
+      },
+      "result_q1_3_substitution_coefficients.png": {
+        "width_px": 2950,
+        "height_px": 1674,
+        "dpi_x": 299.9994,
+        "dpi_y": 299.9994,
+        "width_in": 9.833353000039335,
+        "height_in": 5.580011160022321
+      },
+      "result_q1_3_substitution_coefficients.svg": {
+        "text_count": 41,
+        "embedded_raster": true
+      },
+      "result_q1_3_test_1m_observed_predicted.png": {
+        "width_px": 3034,
+        "height_px": 2535,
+        "dpi_x": 299.9994,
+        "dpi_y": 299.9994,
+        "width_in": 10.113353560040455,
+        "height_in": 8.4500169000338
+      },
+      "result_q1_3_test_1m_observed_predicted.svg": {
+        "text_count": 95,
+        "embedded_raster": false
+      }
+    },
+    "issues": [
+      {
+        "severity": "WARN",
+        "message": "raw_q1_3_share_loss_correlation.svg 含嵌入位图，请确认确有必要"
+      },
+      {
+        "severity": "WARN",
+        "message": "result_q1_3_substitution_coefficients.svg 含嵌入位图，请确认确有必要"
+      }
+    ]
+  },
+  "figure_qa": {
+    "raw_q1_3_row_sum_deviation": {
+      "verdict": "PASS",
+      "issues": [],
+      "preview": "figures/q1_3_model/previews/raw_q1_3_row_sum_deviation_preview.png",
+      "outputs": [
+        "figures/q1_3_model/raw_q1_3_row_sum_deviation.pdf",
+        "figures/q1_3_model/raw_q1_3_row_sum_deviation.svg",
+        "figures/q1_3_model/raw_q1_3_row_sum_deviation.png",
+        "figures/q1_3_model/grayscale/raw_q1_3_row_sum_deviation_grayscale.png"
+      ],
+      "size_inches": [
+        7.2,
+        4.8
+      ],
+      "png_dpi": 300
+    },
+    "raw_q1_3_zero_count": {
+      "verdict": "PASS",
+      "issues": [],
+      "preview": "figures/q1_3_model/previews/raw_q1_3_zero_count_preview.png",
+      "outputs": [
+        "figures/q1_3_model/raw_q1_3_zero_count.pdf",
+        "figures/q1_3_model/raw_q1_3_zero_count.svg",
+        "figures/q1_3_model/raw_q1_3_zero_count.png",
+        "figures/q1_3_model/grayscale/raw_q1_3_zero_count_grayscale.png"
+      ],
+      "size_inches": [
+        7.2,
+        4.8
+      ],
+      "png_dpi": 300
+    },
+    "raw_q1_3_share_loss_correlation": {
+      "verdict": "PASS",
+      "issues": [],
+      "preview": "figures/q1_3_model/previews/raw_q1_3_share_loss_correlation_preview.png",
+      "outputs": [
+        "figures/q1_3_model/raw_q1_3_share_loss_correlation.pdf",
+        "figures/q1_3_model/raw_q1_3_share_loss_correlation.svg",
+        "figures/q1_3_model/raw_q1_3_share_loss_correlation.png",
+        "figures/q1_3_model/grayscale/raw_q1_3_share_loss_correlation_grayscale.png"
+      ],
+      "size_inches": [
+        10.5,
+        6.2
+      ],
+      "png_dpi": 300
+    },
+    "process_q1_3_lambda_cv": {
+      "verdict": "PASS",
+      "issues": [],
+      "preview": "figures/q1_3_model/previews/process_q1_3_lambda_cv_preview.png",
+      "outputs": [
+        "figures/q1_3_model/process_q1_3_lambda_cv.pdf",
+        "figures/q1_3_model/process_q1_3_lambda_cv.svg",
+        "figures/q1_3_model/process_q1_3_lambda_cv.png",
+        "figures/q1_3_model/grayscale/process_q1_3_lambda_cv_grayscale.png"
+      ],
+      "size_inches": [
+        7.2,
+        4.8
+      ],
+      "png_dpi": 300
+    },
+    "process_q1_3_model_selection": {
+      "verdict": "PASS",
+      "issues": [],
+      "preview": "figures/q1_3_model/previews/process_q1_3_model_selection_preview.png",
+      "outputs": [
+        "figures/q1_3_model/process_q1_3_model_selection.pdf",
+        "figures/q1_3_model/process_q1_3_model_selection.svg",
+        "figures/q1_3_model/process_q1_3_model_selection.png",
+        "figures/q1_3_model/grayscale/process_q1_3_model_selection_grayscale.png"
+      ],
+      "size_inches": [
+        7.2,
+        3.6
+      ],
+      "png_dpi": 300
+    },
+    "process_q1_3_huber_weights": {
+      "verdict": "PASS",
+      "issues": [],
+      "preview": "figures/q1_3_model/previews/process_q1_3_huber_weights_preview.png",
+      "outputs": [
+        "figures/q1_3_model/process_q1_3_huber_weights.pdf",
+        "figures/q1_3_model/process_q1_3_huber_weights.svg",
+        "figures/q1_3_model/process_q1_3_huber_weights.png",
+        "figures/q1_3_model/grayscale/process_q1_3_huber_weights_grayscale.png"
+      ],
+      "size_inches": [
+        10.0,
+        5.0
+      ],
+      "png_dpi": 300
+    },
+    "result_q1_3_test_1m_observed_predicted": {
+      "verdict": "PASS",
+      "issues": [],
+      "preview": "figures/q1_3_model/previews/result_q1_3_test_1m_observed_predicted_preview.png",
+      "outputs": [
+        "figures/q1_3_model/result_q1_3_test_1m_observed_predicted.pdf",
+        "figures/q1_3_model/result_q1_3_test_1m_observed_predicted.svg",
+        "figures/q1_3_model/result_q1_3_test_1m_observed_predicted.png",
+        "figures/q1_3_model/grayscale/result_q1_3_test_1m_observed_predicted_grayscale.png"
+      ],
+      "size_inches": [
+        11.0,
+        8.6
+      ],
+      "png_dpi": 300
+    },
+    "result_q1_3_cross_scale_rmse": {
+      "verdict": "PASS",
+      "issues": [],
+      "preview": "figures/q1_3_model/previews/result_q1_3_cross_scale_rmse_preview.png",
+      "outputs": [
+        "figures/q1_3_model/result_q1_3_cross_scale_rmse.pdf",
+        "figures/q1_3_model/result_q1_3_cross_scale_rmse.svg",
+        "figures/q1_3_model/result_q1_3_cross_scale_rmse.png",
+        "figures/q1_3_model/grayscale/result_q1_3_cross_scale_rmse_grayscale.png"
+      ],
+      "size_inches": [
+        7.2,
+        4.8
+      ],
+      "png_dpi": 300
+    },
+    "result_q1_3_substitution_coefficients": {
+      "verdict": "PASS",
+      "issues": [],
+      "preview": "figures/q1_3_model/previews/result_q1_3_substitution_coefficients_preview.png",
+      "outputs": [
+        "figures/q1_3_model/result_q1_3_substitution_coefficients.pdf",
+        "figures/q1_3_model/result_q1_3_substitution_coefficients.svg",
+        "figures/q1_3_model/result_q1_3_substitution_coefficients.png",
+        "figures/q1_3_model/grayscale/result_q1_3_substitution_coefficients_grayscale.png"
+      ],
+      "size_inches": [
+        10.5,
+        6.2
+      ],
+      "png_dpi": 300
+    }
+  },
+  "outputs": [
+    {
+      "file": "figures/q1_3_model/figure_audit_q1.json",
+      "sha256": "b5aa7034f13b2b582be6e0e11b25085ae615b51dd838f9f8e4ce7ace8e5f46dc"
+    },
+    {
+      "file": "figures/q1_3_model/grayscale/process_q1_3_huber_weights_grayscale.png",
+      "sha256": "50d1c8e2efde7074348b905a5ef4d7c9e57cc99c9957cdae59b97ee7d616fe77"
+    },
+    {
+      "file": "figures/q1_3_model/grayscale/process_q1_3_lambda_cv_grayscale.png",
+      "sha256": "82b1930a13104c15740473e5783c9340a00faa74bff4cb675f32619412a9e4cc"
+    },
+    {
+      "file": "figures/q1_3_model/grayscale/process_q1_3_model_selection_grayscale.png",
+      "sha256": "f9a9132c0bced573e8db951e30a6c18b53174c1ed73fefd3fcd063cf0b718a9c"
+    },
+    {
+      "file": "figures/q1_3_model/grayscale/raw_q1_3_row_sum_deviation_grayscale.png",
+      "sha256": "8b1f24a9230a5545cbff2602c32573692cafbf403076abbc70d6c46cd08e3291"
+    },
+    {
+      "file": "figures/q1_3_model/grayscale/raw_q1_3_share_loss_correlation_grayscale.png",
+      "sha256": "9105f7633de0d9a5405d08d1874b8b905c81acb709a518dc6e06d06796d4ed05"
+    },
+    {
+      "file": "figures/q1_3_model/grayscale/raw_q1_3_zero_count_grayscale.png",
+      "sha256": "1258034731d5c88e04d1e9096b3e140e6f254af5fd3b5f74105c383ccd5f1b2c"
+    },
+    {
+      "file": "figures/q1_3_model/grayscale/result_q1_3_cross_scale_rmse_grayscale.png",
+      "sha256": "79b411fb78ca5cf41c41fd310677dcf4caee71a3679906f1ba92600147e665ec"
+    },
+    {
+      "file": "figures/q1_3_model/grayscale/result_q1_3_substitution_coefficients_grayscale.png",
+      "sha256": "860016678a6a0909665466b22018e60dbb6eb351cb49cec96a970f6affa297fa"
+    },
+    {
+      "file": "figures/q1_3_model/grayscale/result_q1_3_test_1m_observed_predicted_grayscale.png",
+      "sha256": "dee1a0f2faafa05b70569ef16d6917d67b273e1d885668734c91ecfd7d9784c3"
+    },
+    {
+      "file": "figures/q1_3_model/previews/process_q1_3_huber_weights_preview.png",
+      "sha256": "102fe8ccce1d9bc8596c8de8754f07d821ee93646858dd47f941a0e7e229f48c"
+    },
+    {
+      "file": "figures/q1_3_model/previews/process_q1_3_lambda_cv_preview.png",
+      "sha256": "43a536e7383b17027c5bb9dbd07818cc8a739ba31ec38617c8fbebc78c94b97f"
+    },
+    {
+      "file": "figures/q1_3_model/previews/process_q1_3_model_selection_preview.png",
+      "sha256": "384d3cd8cb565926614b827fa78e9e972dc3c6c07686a6ecf3f7d96f018a67b3"
+    },
+    {
+      "file": "figures/q1_3_model/previews/raw_q1_3_row_sum_deviation_preview.png",
+      "sha256": "fffa1dcd95bc8333a9398af65d8334d95d8de86ecfadd29c6f2051ac06702330"
+    },
+    {
+      "file": "figures/q1_3_model/previews/raw_q1_3_share_loss_correlation_preview.png",
+      "sha256": "729b1383ce71d4b478911c462875110ff73efd512d2310f6fcd51d60116ae82a"
+    },
+    {
+      "file": "figures/q1_3_model/previews/raw_q1_3_zero_count_preview.png",
+      "sha256": "b80ccf90deadbb837b3a7e4bb30811106928a7b9f2cfbef886f8fde507a834de"
+    },
+    {
+      "file": "figures/q1_3_model/previews/result_q1_3_cross_scale_rmse_preview.png",
+      "sha256": "caa66665abce7cb9324415b31b3743b3be4f144888690bf78eebb3954e32b760"
+    },
+    {
+      "file": "figures/q1_3_model/previews/result_q1_3_substitution_coefficients_preview.png",
+      "sha256": "b7fcf0baba99b55f5ea09e514e2f7a66d851e58728e266a9d4e2f9399c4e9906"
+    },
+    {
+      "file": "figures/q1_3_model/previews/result_q1_3_test_1m_observed_predicted_preview.png",
+      "sha256": "de28dd1f844c621e8f9dd04bffeb4589d52d5989ccb1efe48a1a6cfbeb820c11"
+    },
+    {
+      "file": "figures/q1_3_model/process_q1_3_huber_weights.pdf",
+      "sha256": "8386e2a5ad98eba89bd11c5e1e73f9bd2281194bb97d1fc8c1ab394df1d2eecb"
+    },
+    {
+      "file": "figures/q1_3_model/process_q1_3_huber_weights.png",
+      "sha256": "b3ed5515c0c8cd3ab3a07b069efd43187f970cb9e99a47df17c8fd9ccef3756b"
+    },
+    {
+      "file": "figures/q1_3_model/process_q1_3_huber_weights.svg",
+      "sha256": "07a0c35cdcebbafb52cc95a030f5cb230c5f855960b3983cd041dc2206502812"
+    },
+    {
+      "file": "figures/q1_3_model/process_q1_3_lambda_cv.pdf",
+      "sha256": "6bb0faf1cbc0683d022fdf78c55c5dac119e293d554cdd8533da36aaed76a783"
+    },
+    {
+      "file": "figures/q1_3_model/process_q1_3_lambda_cv.png",
+      "sha256": "695725270825aa8d1b0ea770c00eba6afd1624e80b330899546a33d64324b7a9"
+    },
+    {
+      "file": "figures/q1_3_model/process_q1_3_lambda_cv.svg",
+      "sha256": "422d47467f2989e48fff554d680b801bcec51766bf9f3732fa39ec25f16cfb55"
+    },
+    {
+      "file": "figures/q1_3_model/process_q1_3_model_selection.pdf",
+      "sha256": "64251e077b2d8be8a9faec827f36923a0cebf78e58e924228388438828e375ed"
+    },
+    {
+      "file": "figures/q1_3_model/process_q1_3_model_selection.png",
+      "sha256": "058519f3b2cd12ff39a04d350d2fdf3c772eed8f63a825849b28cbaa8f96a7fb"
+    },
+    {
+      "file": "figures/q1_3_model/process_q1_3_model_selection.svg",
+      "sha256": "fa6de96c1914197a898c3293ae2b5212fbc04c3323d5550032212a1af4f63238"
+    },
+    {
+      "file": "figures/q1_3_model/profile_q1_3_data.json",
+      "sha256": "20ee72568494a5fad196e8bf156154b4c8b5843c0e9809d4825aadb9f3ee5eac"
+    },
+    {
+      "file": "figures/q1_3_model/raw_q1_3_row_sum_deviation.pdf",
+      "sha256": "b3124cc35f1332ee5038be2ef28418f8de84487ac0abe069ab8c29668388a870"
+    },
+    {
+      "file": "figures/q1_3_model/raw_q1_3_row_sum_deviation.png",
+      "sha256": "f033162fb61a745f7b66df78c66a010d7c45b7ac61e24d763b5a88706c70af44"
+    },
+    {
+      "file": "figures/q1_3_model/raw_q1_3_row_sum_deviation.svg",
+      "sha256": "7523a90ad9206939ad6dde403db3e26c6f364c3d7c2395f6393e3f7240deb5e3"
+    },
+    {
+      "file": "figures/q1_3_model/raw_q1_3_share_loss_correlation.pdf",
+      "sha256": "0e32c09b7c7aa3001b0516fc530bf5458f5d0e22b1305eb335af6571afb1f69d"
+    },
+    {
+      "file": "figures/q1_3_model/raw_q1_3_share_loss_correlation.png",
+      "sha256": "32347a97a92fdb2893a752e0a817280b67c78623a022b022a60b488fc9e41d16"
+    },
+    {
+      "file": "figures/q1_3_model/raw_q1_3_share_loss_correlation.svg",
+      "sha256": "cebc4a73b18312cc3a5af43b2a65c86683733cc1d03e272ac640317c1bfb3ca8"
+    },
+    {
+      "file": "figures/q1_3_model/raw_q1_3_zero_count.pdf",
+      "sha256": "58dd7bc5374db358dab6831a8a89a334a15f63da9758208dc4eca542ccfbb4ae"
+    },
+    {
+      "file": "figures/q1_3_model/raw_q1_3_zero_count.png",
+      "sha256": "efb3e063e9873b74b21650c6aeaf2faad1dce8b063dcb938c47796fc092bf111"
+    },
+    {
+      "file": "figures/q1_3_model/raw_q1_3_zero_count.svg",
+      "sha256": "25de2ee18727dae6a8117796881749382cdd2201f07faf3e4316796c30a50995"
+    },
+    {
+      "file": "figures/q1_3_model/result_q1_3_cross_scale_rmse.pdf",
+      "sha256": "42005b7aecf4b76b8ed442f2b446784d5a7f7484f356b3108757fb72bf04489f"
+    },
+    {
+      "file": "figures/q1_3_model/result_q1_3_cross_scale_rmse.png",
+      "sha256": "3ccc10de95980891f3f327b4e1727af6a2e71373936146c75ef4c6b732da3d77"
+    },
+    {
+      "file": "figures/q1_3_model/result_q1_3_cross_scale_rmse.svg",
+      "sha256": "7dbf95c78a3e4c7fc086808461135acf564568eab8038773cc4d2f875e462e53"
+    },
+    {
+      "file": "figures/q1_3_model/result_q1_3_substitution_coefficients.pdf",
+      "sha256": "1346daee5da81df0fc8a9aa0357f80280a90add8be356b1a2d1c84e87f0ce458"
+    },
+    {
+      "file": "figures/q1_3_model/result_q1_3_substitution_coefficients.png",
+      "sha256": "0b4a392e3397aeed4d583845346cbe2dc359985ca0ee54d1f12dbd42e4edff7e"
+    },
+    {
+      "file": "figures/q1_3_model/result_q1_3_substitution_coefficients.svg",
+      "sha256": "3fa375ecdcc06e412583304b093f1e16ed67a0f082552f70ab3226aa570da522"
+    },
+    {
+      "file": "figures/q1_3_model/result_q1_3_test_1m_observed_predicted.pdf",
+      "sha256": "57bec618a70f739ff72601c686eb6fd66913eca81e560a8fb5201c285410b996"
+    },
+    {
+      "file": "figures/q1_3_model/result_q1_3_test_1m_observed_predicted.png",
+      "sha256": "7ebff27d8a9e2554eaf82a0bf6bfea6f0f87961bc344f7039ef8e7a4acd66ff5"
+    },
+    {
+      "file": "figures/q1_3_model/result_q1_3_test_1m_observed_predicted.svg",
+      "sha256": "a7831c94377536704b348bf9ab53baca312e7c9dafb5dcb69c82d9c0f32584fd"
+    },
+    {
+      "file": "figures/q1_3_model/visual_qa.json",
+      "sha256": "49082e8708908e7662a5983b76bee146b1767d64bdf975f32d8164dd8f178a2e"
+    },
+    {
+      "file": "figures/q1_3_model/图表契约.md",
+      "sha256": "c1efa5579fb1ac2565ad9aec6bbafec669e2d39dd232a4b1d81798dcf8827933"
+    }
+  ],
+  "final_p2_review": {
+    "status": "PASS",
+    "scope": "independent review of Q1.3 figures, contamination boundary, and artifact consistency",
+    "summary": "Nine figures and all three categories are present; visual QA passes; figure audit is ok=true. SVG image warnings refer to the narrow continuous color bars. All 10 PDF font resources are embedded; the Type0 wrapper warning is a checker false positive. Primary and sensitivity model roles and contamination limits are consistent."
+  }
+}
