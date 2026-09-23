@@ -1,0 +1,71 @@
+# ============================================================
+#  数学建模竞赛论文出图样式
+#  用法： plt.style.use('assets/gmcm.mplstyle')
+#  目的： 让全队出的图看起来像一套（语义配色 + 统一字号/线宽/网格）
+#
+#  ⚠ 本机当前未安装 matplotlib。装它：
+#      python3 -m pip install matplotlib
+#    或（若用 conda 环境）：
+#      conda install matplotlib
+# ============================================================
+
+# ---------- 字体（macOS）----------
+# 若在 Windows/Linux 出图，把下面三行换成：
+#   font.sans-serif : SimHei, Microsoft YaHei
+#   font.serif      : SimSun
+font.family         : sans-serif
+font.sans-serif     : Songti SC, Heiti SC, Arial Unicode MS, PingFang SC, DejaVu Sans
+axes.unicode_minus  : False        # 负号正常显示（否则是个方块）
+
+# ---------- 尺寸与分辨率 ----------
+# 单栏图：宽 8cm ≈ 3.15in；通栏图：宽 16cm ≈ 6.3in
+figure.figsize      : 6.3, 4.0
+figure.dpi          : 120
+savefig.dpi         : 300           # 导出必须 ≥300dpi
+savefig.bbox        : tight
+savefig.pad_inches  : 0.05
+
+# ---------- 字号（论文正文小四 ≈ 12pt，图内字号略小）----------
+font.size           : 10.5
+axes.titlesize      : 11
+axes.labelsize      : 10.5
+xtick.labelsize     : 9.5
+ytick.labelsize     : 9.5
+legend.fontsize     : 9.5
+
+# ---------- 线宽与标记 ----------
+axes.linewidth      : 0.9
+lines.linewidth     : 1.6
+lines.markersize    : 5
+grid.linewidth      : 0.5
+grid.alpha          : 0.35
+
+# ---------- 网格与边框 ----------
+axes.grid           : True
+axes.axisbelow      : True          # 网格在图元素下方
+axes.spines.top     : False         # 去掉上右边框（更现代、省墨水）
+axes.spines.right   : False
+
+# ---------- 图例 ----------
+legend.frameon      : False         # 无边框图例
+legend.framealpha   : 0.9
+legend.edgecolor    : 0.9
+
+# ---------- 色板：语义色，按含义用，不按顺序用 ----------
+# 真实值 / 观测 / 样本     → 蓝
+# 基准 / 参考线 / 理论值   → 红（配 ls='--'）
+# 模型输出 / 预测          → 橙
+# 热力图 / 密度            → viridis（顺序色，弱→强）
+# 残差                     → coolwarm（发散色，暖=正 冷=负）
+# 多类别区分               → 5 色循环，同一套跨图复用
+axes.prop_cycle     : cycler('color', ['#2E6DA4', '#E67E22', '#27AE60', '#8E44AD', '#C0392B'])
+image.cmap          : viridis
+
+# ============================================================
+#  语义色常量（出图脚本里直接引用，保证全队一致）
+#     C_TRUE = '#2E6DA4'   实测 / 样本
+#     C_BASE = '#C0392B'   基准（务必配 ls='--'）
+#     C_PRED = '#E67E22'   本文模型
+#     C_ALT  = '#27AE60'   第二模型 / 对照
+#     C_REF  = '#7F8C8D'   辅助线、边界
+# ============================================================
