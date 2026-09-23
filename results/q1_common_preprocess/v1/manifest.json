@@ -1,0 +1,257 @@
+{
+  "schema_version": "q1-common-preprocess-v1",
+  "preprocessing_version": "q1-common-v1.1",
+  "command": "src\\f_q1_common_preprocess.py --overwrite",
+  "project_root": "D:\\PycharmProject\\HUAWEI-Cup",
+  "a_root": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value",
+  "output_dir": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_common_preprocess\\v1",
+  "fit_dataset": "A1",
+  "same_calibration_for": [
+    "a1",
+    "a2",
+    "a3"
+  ],
+  "max_rows": null,
+  "field_specs": {
+    "fineweb_edu": {
+      "kind": "single_list",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "fluency_en": {
+      "kind": "prob_index_1",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "modernbert_cleanliness": {
+      "kind": "ordinal_logits",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "modernbert_readability": {
+      "kind": "ordinal_logits",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "modernbert_reasoning": {
+      "kind": "ordinal_logits",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "modernbert_professionalism": {
+      "kind": "ordinal_logits",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "dsir_books": {
+      "kind": "single",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "dsir_wiki": {
+      "kind": "single",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "dsir_math": {
+      "kind": "single",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "qurater": {
+      "kind": "mean_list",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "ad_en": {
+      "kind": "prob_index_1",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "rps_doc_word_count": {
+      "kind": "single",
+      "direction": "central",
+      "transform": "log1p"
+    },
+    "rps_doc_num_sentences": {
+      "kind": "single",
+      "direction": "central",
+      "transform": "log1p"
+    },
+    "rps_doc_unigram_entropy": {
+      "kind": "single",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "rps_doc_frac_unique_words": {
+      "kind": "single",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "rps_doc_frac_no_alph_words": {
+      "kind": "single",
+      "direction": "negative",
+      "transform": "identity"
+    },
+    "rps_doc_frac_chars_top_2gram": {
+      "kind": "single",
+      "direction": "negative",
+      "transform": "identity"
+    },
+    "rps_doc_frac_chars_top_3gram": {
+      "kind": "single",
+      "direction": "negative",
+      "transform": "identity"
+    },
+    "rps_lines_uppercase_letter_fraction": {
+      "kind": "single",
+      "direction": "negative",
+      "transform": "identity"
+    },
+    "rps_lines_ending_with_terminal_punctution_mark": {
+      "kind": "single",
+      "direction": "positive",
+      "transform": "identity"
+    },
+    "rps_lines_numerical_chars_fraction": {
+      "kind": "single",
+      "direction": "central",
+      "transform": "identity"
+    },
+    "rps_doc_mean_word_length": {
+      "kind": "single",
+      "direction": "central",
+      "transform": "identity"
+    }
+  },
+  "nonnegative_fields": [
+    "rps_doc_frac_chars_top_2gram",
+    "rps_doc_frac_chars_top_3gram",
+    "rps_doc_frac_no_alph_words",
+    "rps_doc_frac_unique_words",
+    "rps_doc_mean_word_length",
+    "rps_doc_num_sentences",
+    "rps_doc_unigram_entropy",
+    "rps_doc_word_count",
+    "rps_lines_ending_with_terminal_punctution_mark",
+    "rps_lines_numerical_chars_fraction",
+    "rps_lines_uppercase_letter_fraction"
+  ],
+  "unit_suspect_fields": [
+    "rps_doc_frac_chars_top_2gram",
+    "rps_doc_frac_chars_top_3gram",
+    "rps_doc_frac_no_alph_words",
+    "rps_doc_frac_unique_words",
+    "rps_lines_ending_with_terminal_punctution_mark",
+    "rps_lines_numerical_chars_fraction",
+    "rps_lines_uppercase_letter_fraction"
+  ],
+  "outlier_rule": {
+    "method": "robust_z_score",
+    "scale": "1.4826*MAD; fallback IQR/1.349, then SD",
+    "threshold": 3.5,
+    "comparison": "abs((value - A1_median) / A1_robust_scale) > threshold",
+    "action": "flag_only; retain scalar and normalized value"
+  },
+  "runtime": {
+    "python": "3.10.4",
+    "numpy": "1.23.3"
+  },
+  "preprocess_script": {
+    "path": "D:\\PycharmProject\\HUAWEI-Cup\\src\\f_q1_common_preprocess.py",
+    "sha256": "628432d3530f658cef851c53e8dd28d9f4d774aa3856200e28422bffc9acf643"
+  },
+  "summaries": {
+    "a1": {
+      "dataset": "a1",
+      "rows": 51230,
+      "domains": {
+        "arxiv": 1419,
+        "book": 171,
+        "c4": 10000,
+        "commoncrawl": 9640,
+        "github": 10000,
+        "stackexchange": 10000,
+        "wikipedia": 10000
+      },
+      "missing_values": 18,
+      "invalid_values": 0,
+      "unit_suspect_values": 4,
+      "outlier_flags": 63708,
+      "output": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_common_preprocess\\v1\\a1_preprocessed.csv.gz",
+      "output_sha256": "38c753ab9b5fa3c2ac370f9a1c600ae761dca1154814d542a45fb98737e13590"
+    },
+    "a2": {
+      "dataset": "a2",
+      "rows": 17523,
+      "domains": {
+        "arxiv": 17523
+      },
+      "missing_values": 0,
+      "invalid_values": 0,
+      "unit_suspect_values": 0,
+      "outlier_flags": 75785,
+      "output": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_common_preprocess\\v1\\a2_preprocessed.csv.gz",
+      "output_sha256": "55cd687cc60614084568ac09ca141b0a6a847528edc8edac88ea228362f055fb"
+    },
+    "a3": {
+      "dataset": "a3",
+      "rows": 203752,
+      "domains": {
+        "github": 203752
+      },
+      "missing_values": 1,
+      "invalid_values": 0,
+      "unit_suspect_values": 16,
+      "outlier_flags": 385678,
+      "output": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_common_preprocess\\v1\\a3_preprocessed.csv.gz",
+      "output_sha256": "a011c3c04a603fd306ce77f40044ecb0924ab79f18acfd53195fd0bf92213d8f"
+    }
+  },
+  "input_files": [
+    {
+      "dataset": "a1",
+      "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\slimpajama_quality_signal_sample.jsonl.xz",
+      "size": 103349792,
+      "sha256": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579"
+    },
+    {
+      "dataset": "a2",
+      "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\slimpajama_quality_extended\\arxiv_part-6777d8857c6e-000486.jsonl.xz",
+      "size": 3652724,
+      "sha256": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a"
+    },
+    {
+      "dataset": "a3",
+      "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\slimpajama_quality_extended\\github_part-6777d8857c6e-000275.jsonl.xz",
+      "size": 37618172,
+      "sha256": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382"
+    }
+  ],
+  "freeze_version": "q1-common-v1.1",
+  "freeze_status": "FROZEN",
+  "freeze_timestamp_utc": "2026-09-23T09:28:48Z",
+  "qc_report": "preprocess_qc_report.md",
+  "audit_artifacts": [
+    "data_overview.csv",
+    "duplicate_id_report.csv",
+    "preprocess_qc_report.csv",
+    "preprocess_qc_report.md",
+    "quality_indicator_dictionary.csv"
+  ],
+  "audit_checks": {
+    "dictionary_22_of_22": true,
+    "output_columns_140": true,
+    "rows_preserved_against_manifest": true,
+    "norm_range_0_1": true,
+    "raw_content_used_as_metric": false,
+    "a2_a3_refit_calibration": false,
+    "output_sha256_matches_manifest": true,
+    "rows_preserved": true,
+    "norm_nonfinite_zero": true,
+    "norm_out_of_range_zero": true,
+    "norm_blank_explained": true
+  },
+  "status": "frozen",
+  "freeze_blockers": []
+}
