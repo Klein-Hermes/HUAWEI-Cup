@@ -1,0 +1,3 @@
+dataset,interpretation,reference_N_B,reference_D_B,reference_Q_score,reference_fitted_Loss,Q_after_plus_0p1,N_equal_Loss_after_B,delta_N_B,local_dN_dQ_B_per_Q,finite_delta_N_per_plus_0p1_B,gamma_Q_in_Deff
+B6,illustrative fitted equal-Loss trade on semi-synthetic grid; not a real-trial resource substitution rate,1.0,150.0,0.6,2.4845051530417663,0.7,0.878084829702362,-0.12191517029763799,-1.4408946191066543,-0.12191517029763799,1.2164532933571968
+B7,illustrative fitted equal-Loss trade on semi-synthetic grid; not a real-trial resource substitution rate,1.0,150.0,0.6,2.488555911245996,0.7,0.8817949940770027,-0.11820500592299732,-1.395097965569476,-0.11820500592299732,1.1797747943816694

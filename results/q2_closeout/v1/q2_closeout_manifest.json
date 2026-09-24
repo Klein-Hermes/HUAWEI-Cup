@@ -1,0 +1,73 @@
+{
+  "task": "Q2 A/B evidence matrix, independent-Q gate, and current-data closeout",
+  "status": "FROZEN_WITH_LIMITATIONS",
+  "created_utc": "2026-09-24T14:17:27+00:00",
+  "command": "D:/Anaconda/python.exe src/q2_build_evidence_closeout.py",
+  "script": "src/q2_build_evidence_closeout.py",
+  "script_sha256": "a7d2a851c96a705eb7a0089e7adc5573fc8da593743c136b915de6d983a79e1b",
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "executable": "D:\\Anaconda\\python.exe"
+  },
+  "input_sha256": {
+    "results/q1_final/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "results/q1_final/q1_final_decision.md": "5d2f109ecdae01f2fc02919ed9469016fdc147fd710b06eaa6e2c124fc9cf617",
+    "results/q1_3/v1/holdout_metrics.csv": "e2e2f7850b9ba5b7d51373f5e78f401ec8863291c1f357577f96dd9189b7e229",
+    "results/q1_3/v1/estimate_consistency_metrics.csv": "d6a2f5dd0b4abbdadf6d8b4d96559e9574e33ec83e73645669e43e815a725c8d",
+    "results/q1_3/pq_extension_v1/paired_comparison.csv": "c6a8d411af19f27181225feae97420d4020b985ca42ed5e3cbe45d52064b4ad9",
+    "results/q1_3/pq_extension_v1/identifiability_audit.csv": "3b4c20b4e94af77ff313df8f8a5f76244d2711b7da407314328ba694ac4aa00e",
+    "results/q2_scaling_baseline/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "results/q2_scaling_baseline/v1/q2_m0_marginal_effects_by_size.csv": "6230d61ba866ac7d7c8f63c8eaa30614d8e58ce4e588fe0bb244229c25635ade",
+    "results/q2_scaling_baseline/v1/q2_m0_marginal_effects_report.md": "5da3bdc13fc9c92081dd856870e8a422cda11307a21660743130ef54a5dbc285",
+    "results/q2_scaling_baseline/v1/validation_metrics_by_source.csv": "15ea2b015ba1bd1dad49b92999b13b97d26a676be3bfb68dd11c63f574755af0",
+    "results/q2_scaling_baseline/v1/validation_metrics_by_stratum.csv": "0167fe3480330135919c812902dc6786d64e0fbf218f62c481f35c4e7aa75798",
+    "results/q2_scaling_baseline/v1/validation_comparability.json": "73fcacf9a212cd5c63428329021e7389e8f5e0d1dbb582c31a1d2aea5d908a75",
+    "results/q2_scaling_baseline/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/gate0_b1_trajectory_mapping.csv": "ea2c1fd78c7a84e0f41d70a57b630089781b8d8cbd9c9a9434e6ea7c787c0c37",
+    "Q2/03_结果/B2半合成压力测试/v1/b2_cerebras_stress_report.md": "8443b3213fdee1564cc59b8e96779402b5c32f08dad27634181350ac3d29cbb1",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b3_validation_closeout.md": "21f6928afc99cf6bb71e5ba2eb753143d4c63d229ec0e956a66ae8530b1a40fa",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b4_b5_loss_comparability_audit.md": "4523fad8c2b5dceac7619f80a06ca13b003f06e268263f0bcfb9eb512f6b96dc",
+    "Q2/03_结果/p配比可行性审计/v1/q2_p_audit_summary.json": "82e53b9a4a6612a88b9b8c244a0b145eb951d96a84d1bac8b613589b4a7a71ce",
+    "Q2/03_结果/p配比可行性审计/v1/q2_p_feasibility_audit.md": "15c61269a83f104f2020417f900f4b78626c7a5bc029a2817d6d46eba5c48a76",
+    "Q2/01_方案说明/题目分析报告.md": "5c1a06d42684d597ae3c4acdaf1544bd23b293150765a1d47bef5ebdcb32c0de",
+    "Q2/01_方案说明/Q2_主模型路线复审_2026-09-24.md": "502904c828e44ae27c6a5a43117f776e8101e70ee53432056fe5d1f0d64a39fc"
+  },
+  "verification": {
+    "B1_checkpoints": 1176,
+    "B1_independent_tracks": 8,
+    "B1_checkpoints_per_track": [
+      147
+    ],
+    "B2_B5_rows": {
+      "B2": 1029,
+      "B3": 4000,
+      "B4": 57,
+      "B5": 44
+    },
+    "verified_p_vectors_joined_to_loss": 0,
+    "qcovered_deterministic_scenarios": 8,
+    "independent_Q_scenarios_identified": 0,
+    "pooled_validation_metric": null
+  },
+  "output_sha256_excluding_this_manifest": {
+    "results/q2_closeout/v1/q2_evidence_matrix.csv": "bb389238d6fbede8ec9344c45df7d580811306419e7f2de22d45dfb67efff944",
+    "results/q2_closeout/v1/q2_identifiability_gates.csv": "c03e3e72355e233a84fbce91154a293b1747e6707ebf3dba4aa832278427e94f",
+    "results/q2_closeout/v1/q2_model_status.csv": "beba7473f39099e86826f8e51aaf476bc4106aa0293fcf93b20987c078cf8320",
+    "results/q2_closeout/v1/q2_q_incremental_effect_gate.md": "0f2e1f81223b01c0a042ee359c508fad189154f4758afe67ff6f71f680eac024",
+    "results/q2_closeout/v1/q2_stage_conclusion.md": "00b953002cb8d88a1c63325a91a2c954227b5475866fee629f2a9e6f4d90daa1",
+    "Q2/03_结果/综合收口/v1/q2_evidence_matrix.csv": "bb389238d6fbede8ec9344c45df7d580811306419e7f2de22d45dfb67efff944",
+    "Q2/03_结果/综合收口/v1/q2_identifiability_gates.csv": "c03e3e72355e233a84fbce91154a293b1747e6707ebf3dba4aa832278427e94f",
+    "Q2/03_结果/综合收口/v1/q2_model_status.csv": "beba7473f39099e86826f8e51aaf476bc4106aa0293fcf93b20987c078cf8320",
+    "Q2/03_结果/综合收口/v1/q2_q_incremental_effect_gate.md": "0f2e1f81223b01c0a042ee359c508fad189154f4758afe67ff6f71f680eac024",
+    "Q2/03_结果/综合收口/v1/q2_stage_conclusion.md": "00b953002cb8d88a1c63325a91a2c954227b5475866fee629f2a9e6f4d90daa1",
+    "docs/q2_evidence_matrix.csv": "bb389238d6fbede8ec9344c45df7d580811306419e7f2de22d45dfb67efff944",
+    "docs/q2_identifiability_gates.csv": "c03e3e72355e233a84fbce91154a293b1747e6707ebf3dba4aa832278427e94f",
+    "docs/q2_model_status.csv": "beba7473f39099e86826f8e51aaf476bc4106aa0293fcf93b20987c078cf8320",
+    "docs/q2_q_incremental_effect_gate.md": "0f2e1f81223b01c0a042ee359c508fad189154f4758afe67ff6f71f680eac024",
+    "docs/q2_stage_conclusion.md": "00b953002cb8d88a1c63325a91a2c954227b5475866fee629f2a9e6f4d90daa1",
+    "Q2/02_代码/q2_build_evidence_closeout.py": "a7d2a851c96a705eb7a0089e7adc5573fc8da593743c136b915de6d983a79e1b"
+  },
+  "manifest_note": "This manifest is mirrored to results/q2_closeout/v1, Q2/03_结果/综合收口/v1 and docs; self-hash is excluded to avoid recursion."
+}

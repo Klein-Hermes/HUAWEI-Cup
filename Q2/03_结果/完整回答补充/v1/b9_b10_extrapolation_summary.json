@@ -1,0 +1,20 @@
+{
+  "n_B10_rows": 128,
+  "n_converged_rows": 128,
+  "n_exact_B9_model_matches": 128,
+  "n_N_above_B1_support": 128,
+  "n_D_above_B1_support": 102,
+  "B1_N_max_B": 11.965825,
+  "B1_D_max_B": 299.893,
+  "B10_N_min_B": 100.0,
+  "B10_N_max_B": 10000.0,
+  "B10_D_min_B": 0.1,
+  "B10_D_max_B": 36000.0,
+  "prediction_median": 1.9064215877260597,
+  "prediction_range": [
+    1.7838375278655414,
+    4.086298347965265
+  ],
+  "parameter_bootstrap_median_width": 0.0001590145799067466,
+  "warning": "B10 is an estimated/curated table and all rows exceed B1 N support; parameter bootstrap omits extrapolation/model-form and protocol error."
+}

@@ -1,0 +1,143 @@
+Q2 current-data closeout package run log
+run_utc=2026-09-24T14:17:54+00:00
+python_executable=D:\Anaconda\python.exe
+python_version=3.13.9
+numpy=2.3.5; pandas=2.3.3; matplotlib=3.10.6
+scope=M0 derived effects + evidence/gates + figures + input inventory; no M0 refit or Bootstrap resampling
+
+Commands:
+[src/q2_m0_effects_validation_closeout.py] exit_code=0 elapsed_seconds=2.461
+command=D:\Anaconda\python.exe D:\PycharmProject\HUAWEI-Cup\src\q2_m0_effects_validation_closeout.py
+Generated 4 artifacts and one manifest in results/, Q2/, and docs/.
+B1 checkpoints: 1176; clusters: 8.
+Bootstrap fits: 1000.
+Max frozen-prediction reproduction delta: 4.44e-16.
+Validation counts: {"B2": 1029, "B3": 4000, "B4": 57, "B5": 44}
+stderr=(empty)
+
+[src/q2_build_evidence_closeout.py] exit_code=0 elapsed_seconds=2.63
+command=D:\Anaconda\python.exe D:\PycharmProject\HUAWEI-Cup\src\q2_build_evidence_closeout.py
+Wrote 5 closeout artifacts and the manifest to results/, Q2/, and docs/.
+Evidence rows: 11; gates: 2; status rows: 14.
+Gate decisions: p=FAIL_CURRENT_DATA; Q=FAIL_CURRENT_EVIDENCE; M1/M2=NOT_ESTIMATED.
+stderr=(empty)
+
+Figure QA:
+m0_marginal_effect_N: PASS | log-log dot plot with asymmetric 95% CI | 95% percentile interval from 1,000 saved complete-track cluster-bootstrap fits; 8 independent trajectory clusters
+m0_marginal_effect_D: PASS | log-log line with pointwise 95% CI band | 95% percentile interval from 1,000 saved complete-track cluster-bootstrap fits; 8 independent trajectory clusters
+m0_elasticity_N: PASS | log-x dot plot with asymmetric 95% CI | 95% percentile interval from 1,000 saved complete-track cluster-bootstrap fits; 8 independent trajectory clusters
+m0_elasticity_D: PASS | 2x4 small-multiple trend panels with 95% CI bands | 95% percentile interval from 1,000 saved complete-track cluster-bootstrap fits; 8 independent trajectory clusters
+file_compliance=PASS exit_code=0
+file_compliance_command=D:\Anaconda\python.exe C:\Users\86147\.codex\skills\math-modeling\tools\figure\scripts\check_figure.py --min-dpi 300 --strict D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\*.pdf D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\*.svg D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\*.png
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_elasticity_D.pdf ---
+  category: vector  ext: pdf  size: 57039 B
+  [INFO] pypdf / PyPDF2 δ��װ����������Ƕ�����ͼ�顣pip install pypdf ������á�
+  >>> verdict: INFO
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_elasticity_N.pdf ---
+  category: vector  ext: pdf  size: 32403 B
+  [INFO] pypdf / PyPDF2 δ��װ����������Ƕ�����ͼ�顣pip install pypdf ������á�
+  >>> verdict: INFO
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_marginal_effect_D.pdf ---
+  category: vector  ext: pdf  size: 32238 B
+  [INFO] pypdf / PyPDF2 δ��װ����������Ƕ�����ͼ�顣pip install pypdf ������á�
+  >>> verdict: INFO
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_marginal_effect_N.pdf ---
+  category: vector  ext: pdf  size: 31032 B
+  [INFO] pypdf / PyPDF2 δ��װ����������Ƕ�����ͼ�顣pip install pypdf ������á�
+  >>> verdict: INFO
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_elasticity_D.svg ---
+  category: vector  ext: svg  size: 172501 B
+  [PASS] �����⡣
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_elasticity_N.svg ---
+  category: vector  ext: svg  size: 21670 B
+  [PASS] �����⡣
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_marginal_effect_D.svg ---
+  category: vector  ext: svg  size: 31719 B
+  [PASS] �����⡣
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_marginal_effect_N.svg ---
+  category: vector  ext: svg  size: 24627 B
+  [PASS] �����⡣
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_elasticity_D.png ---
+  category: raster  ext: png  size: 245591 B
+  pixels: 2194x1654  dpi: (299.9994, 299.9994)
+  [PASS] �����⡣
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_elasticity_D_grayscale.png ---
+  category: raster  ext: png  size: 105272 B
+  pixels: 2194x1654  dpi: (299.9994, 299.9994)
+  [PASS] �����⡣
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_elasticity_N.png ---
+  category: raster  ext: png  size: 128130 B
+  pixels: 2194x1384  dpi: (299.9994, 299.9994)
+  [PASS] �����⡣
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_elasticity_N_grayscale.png ---
+  category: raster  ext: png  size: 53350 B
+  pixels: 2194x1384  dpi: (299.9994, 299.9994)
+  [PASS] �����⡣
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_marginal_effect_D.png ---
+  category: raster  ext: png  size: 140966 B
+  pixels: 2194x1384  dpi: (299.9994, 299.9994)
+  [PASS] �����⡣
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_marginal_effect_D_grayscale.png ---
+  category: raster  ext: png  size: 57930 B
+  pixels: 2194x1384  dpi: (299.9994, 299.9994)
+  [PASS] �����⡣
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_marginal_effect_N.png ---
+  category: raster  ext: png  size: 115512 B
+  pixels: 2194x1384  dpi: (299.9994, 299.9994)
+  [PASS] �����⡣
+
+--- D:\PycharmProject\HUAWEI-Cup\figures\q2_m0_effects\m0_marginal_effect_N_grayscale.png ---
+  category: raster  ext: png  size: 48282 B
+  pixels: 2194x1384  dpi: (299.9994, 299.9994)
+  [PASS] �����⡣
+effect_summary=q2_m0_effects_distribution_summary.csv; 8 tracks x 147 checkpoints; within-track quantiles are support coverage, not confidence intervals
+
+Evidence checks:
+{
+  "Q1_status": "FROZEN_WITH_LIMITATIONS",
+  "Q_operational": "q_huber",
+  "Q_sensitivity": "q_equal",
+  "M0_status": "FROZEN; NO REFIT",
+  "B1_checkpoints": 1176,
+  "B1_tracks": 8,
+  "checkpoints_per_track": [
+    147
+  ],
+  "cluster_bootstrap_fits": 1000,
+  "validation_rows": {
+    "B2": 1029,
+    "B3": 4000,
+    "B4": 57,
+    "B5": 44
+  },
+  "p_gate": "FAIL_CURRENT_DATA",
+  "Q_gate": "FAIL_CURRENT_EVIDENCE",
+  "M1": "NOT_ESTIMATED",
+  "M2": "NOT_ESTIMATED",
+  "M0_R2": 0.9999998165821044
+}
+input_rows=106
+input_hash_match_rows=89
+input_current_hash_only_rows=15
+input_changed_rows=1
+input_missing_rows=1
+frozen_input_mismatches_or_missing=2
+input_issue=missing frozen source: 中文题目/F题/数据说明.pdf
+input_issue=changed since frozen snapshot: 题目分析报告.md
+
+Q2_status=FROZEN_WITH_LIMITATIONS
+p_gate=FAIL_CURRENT_DATA; Q_gate=FAIL_CURRENT_EVIDENCE; M1=NOT_ESTIMATED; M2=NOT_ESTIMATED

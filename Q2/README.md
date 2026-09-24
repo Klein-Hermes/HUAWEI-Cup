@@ -69,7 +69,7 @@ B2 结果为半合成压力测试，不是 Cerebras 原始训练日志或独立�
 ## Q2 当前数据版本综合收口
 
 - 阶段性综合结论：`03_结果/综合收口/v1/q2_stage_conclusion.md`
-- 按《题目分析报告》§4.2 逐项组织的五项答复（不是五个正式小问）：见阶段结论中的“按题目分析报告 §4.2 的五项答复”，完整推导和证据缺口见 `03_结果/完整回答补充/v1/q2_full_answer_evidence_supplement.md`
+- 按《题目分析报告》§4.2 逐项组织的四项答复（不是四个正式小问）：见阶段结论中的“按题目分析报告 §4.2 的四项答复”，完整推导、图表索引和证据缺口见 `03_结果/完整回答补充/v1/q2_full_answer_evidence_supplement.md`
 - A/B 证据矩阵：`03_结果/综合收口/v1/q2_evidence_matrix.csv`
 - p/Q 可识别性门禁：`03_结果/综合收口/v1/q2_identifiability_gates.csv`
 - Q 独立增量效应门禁说明：`03_结果/综合收口/v1/q2_q_incremental_effect_gate.md`

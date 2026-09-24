@@ -1,0 +1,62 @@
+{
+  "status": "CONDITIONAL_A_SIDE_EXPLORATORY",
+  "seed": 20260924,
+  "bootstrap_resamples": 500,
+  "bootstrap_unit": "exact closed-composition recipe group; 512 groups in the current source table",
+  "lambda": 0.2848035868435799,
+  "reference_recipe": "arithmetic mean of the 512 closed A4/A5 training recipes",
+  "eligible_donor_domains": [
+    "train_the_pile_arxiv",
+    "train_the_pile_pubmed_central",
+    "train_the_pile_github",
+    "train_the_pile_pile_cc"
+  ],
+  "n_targets": 13,
+  "n_transfer_pairs": 6551,
+  "pointwise_interval_counts_unadjusted": {
+    "fully_negative": 273,
+    "fully_positive": 445,
+    "cross_zero": 5833
+  },
+  "maxT95_conditional_candidate_set_counts": {
+    "critical_value": 6.540313944566766,
+    "fully_negative": 0,
+    "fully_positive": 39,
+    "cross_zero": 6512,
+    "candidate_pair_count": 6551,
+    "selection_adjusted": false
+  },
+  "limitations": [
+    "quadratic model is a pre-existing sensitivity form, not Q1.3 primary model",
+    "candidate transfer directions selected by the full-sample fitted model",
+    "percentile intervals are pointwise without multiplicity adjustment",
+    "A4/A5 source-local only; not transferable to B1-B5 p effects"
+  ],
+  "inputs": [
+    {
+      "path": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\train_mixture_1m.csv",
+      "sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8"
+    },
+    {
+      "path": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\train_pile_loss_1m.csv",
+      "sha256": "49a959aa07ce5c20831d5abe3a7896ff0cd90a398bd407c8913fd5588be0465a"
+    },
+    {
+      "path": "Q1\\03_结果\\Q1.3\\v1\\lambda_selection_quadratic_sensitivity.csv",
+      "sha256": "652db54ad27ac27ba4b4382594f763736b4a3624b54ade97dfe0523db72e3629"
+    },
+    {
+      "path": "src\\f_q1_3_mixture_loss.py",
+      "sha256": "43644a23171192d50fedfc761d142b080e70a2233a11cd41b55b5d7ed9c5026a"
+    }
+  ],
+  "outputs": {
+    "a4_a5_transfer_pair_complementarity_bootstrap.csv": "023dff7f63b86894cfe7d62c2fca369fd6c83be777ce93d3c1f092a268cef9d8",
+    "a4_a5_transfer_pair_complementarity_summary.csv": "b8270fbcc67d67ad425320bf7761ba47acba664e7e8831db515abb4e7f6a0d7b",
+    "a4_a5_transfer_pair_complementarity_report.md": "594f775b08d75b26d88a3a7207180110563f24f8b28012fb7e2a60e173c8f105"
+  },
+  "code": {
+    "path": "src\\q2_a_side_complementarity_sensitivity.py",
+    "sha256": "44fb8495440c0b53846f2e614784c3453ba2b10429b9c1f11516e31fbd2c412b"
+  }
+}

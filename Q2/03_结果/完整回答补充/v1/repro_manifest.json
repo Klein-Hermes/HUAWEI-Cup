@@ -1,0 +1,335 @@
+{
+  "task": "Q2 full-answer evidence supplement",
+  "status": "SUPPLEMENT_COMPLETE_JOINT_P_Q_IDENTIFICATION_UNRESOLVED",
+  "command": "D:\\Anaconda\\python.exe src/q2_full_answer_supplement.py",
+  "code": {
+    "path": "src\\q2_full_answer_supplement.py",
+    "sha256": "ce8932f120b2d2428f34474d66feefc32ad83ea353ebafca219c2a65af7a8f52"
+  },
+  "python": "3.10+",
+  "resampling": {
+    "A4_A5_complementarity": {
+      "seed": 20260924,
+      "recipe_group_bootstrap_replicates": 500
+    },
+    "B6_B7_fits": "deterministic fixed multi-start; no bootstrap"
+  },
+  "A4_A5_complementarity": {
+    "status": "CONDITIONAL_A_SIDE_EXPLORATORY",
+    "seed": 20260924,
+    "bootstrap_resamples": 500,
+    "bootstrap_unit": "exact closed-composition recipe group; 512 groups in the current source table",
+    "lambda": 0.2848035868435799,
+    "reference_recipe": "arithmetic mean of the 512 closed A4/A5 training recipes",
+    "eligible_donor_domains": [
+      "train_the_pile_arxiv",
+      "train_the_pile_pubmed_central",
+      "train_the_pile_github",
+      "train_the_pile_pile_cc"
+    ],
+    "n_targets": 13,
+    "n_transfer_pairs": 6551,
+    "pointwise_interval_counts_unadjusted": {
+      "fully_negative": 273,
+      "fully_positive": 445,
+      "cross_zero": 5833
+    },
+    "maxT95_conditional_candidate_set_counts": {
+      "critical_value": 6.540313944566766,
+      "fully_negative": 0,
+      "fully_positive": 39,
+      "cross_zero": 6512,
+      "candidate_pair_count": 6551,
+      "selection_adjusted": false
+    },
+    "limitations": [
+      "quadratic model is a pre-existing sensitivity form, not Q1.3 primary model",
+      "candidate transfer directions selected by the full-sample fitted model",
+      "percentile intervals are pointwise without multiplicity adjustment",
+      "A4/A5 source-local only; not transferable to B1-B5 p effects"
+    ],
+    "inputs": [
+      {
+        "path": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\train_mixture_1m.csv",
+        "sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8"
+      },
+      {
+        "path": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\train_pile_loss_1m.csv",
+        "sha256": "49a959aa07ce5c20831d5abe3a7896ff0cd90a398bd407c8913fd5588be0465a"
+      },
+      {
+        "path": "Q1\\03_结果\\Q1.3\\v1\\lambda_selection_quadratic_sensitivity.csv",
+        "sha256": "652db54ad27ac27ba4b4382594f763736b4a3624b54ade97dfe0523db72e3629"
+      },
+      {
+        "path": "src\\f_q1_3_mixture_loss.py",
+        "sha256": "43644a23171192d50fedfc761d142b080e70a2233a11cd41b55b5d7ed9c5026a"
+      }
+    ],
+    "outputs": {
+      "a4_a5_transfer_pair_complementarity_bootstrap.csv": "023dff7f63b86894cfe7d62c2fca369fd6c83be777ce93d3c1f092a268cef9d8",
+      "a4_a5_transfer_pair_complementarity_summary.csv": "b8270fbcc67d67ad425320bf7761ba47acba664e7e8831db515abb4e7f6a0d7b",
+      "a4_a5_transfer_pair_complementarity_report.md": "594f775b08d75b26d88a3a7207180110563f24f8b28012fb7e2a60e173c8f105"
+    },
+    "code": {
+      "path": "src\\q2_a_side_complementarity_sensitivity.py",
+      "sha256": "44fb8495440c0b53846f2e614784c3453ba2b10429b9c1f11516e31fbd2c412b"
+    }
+  },
+  "B1_m0_refit": false,
+  "B6_B7_role": "semi-synthetic conditional response only",
+  "B8_role": "direction-conflict audit only; not pooled with B6/B7",
+  "B9_B10_role": "out-of-support scenario projection; B10 not an independent validation set",
+  "figure_runtime": {
+    "skill_root": "C:\\Users\\86147\\.codex\\skills\\math-modeling",
+    "scripts": [
+      "setup_style.py",
+      "export_figure.py",
+      "visual_qa.py"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+      "sha256": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv",
+      "sha256": "880fd265ca3e1d9bc93b4559af7ed7c18f89040634266c50bae03d88486e0f3a"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv",
+      "sha256": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/supplementary_large_baseline.csv",
+      "sha256": "a240e210c5b37444356c28eea96c6cc36be79c29baae1621c2e08aff727ccfeb"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/supplementary_large_models.csv",
+      "sha256": "ee794c1c586ed33c485a9eb9a2a3d993790402b63297e9b2765a1387930e940e"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2"
+    },
+    {
+      "path": "results/q2_scaling_baseline/v1/fit_parameters.json",
+      "sha256": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8"
+    },
+    {
+      "path": "results/q2_scaling_baseline/v1/cluster_bootstrap_estimates.csv",
+      "sha256": "c9d043ab768891a59657ee5df6c1df34e5ae5c44533723b5803f8157052d4668"
+    },
+    {
+      "path": "results/q2_scaling_baseline/v1/validation_metrics_by_source.csv",
+      "sha256": "15ea2b015ba1bd1dad49b92999b13b97d26a676be3bfb68dd11c63f574755af0"
+    },
+    {
+      "path": "results/q2_scaling_baseline/v1/validation_comparability.json",
+      "sha256": "73fcacf9a212cd5c63428329021e7389e8f5e0d1dbb582c31a1d2aea5d908a75"
+    },
+    {
+      "path": "results/q1_3/v1/holdout_metrics.csv",
+      "sha256": "e2e2f7850b9ba5b7d51373f5e78f401ec8863291c1f357577f96dd9189b7e229"
+    },
+    {
+      "path": "results/q1_3/v1/substitution_effects_10pp_bootstrap.csv",
+      "sha256": "7a79338ad9cbabcf8774eed5468ecd60f193e30d5e5608d2889fb8648241cbe5"
+    },
+    {
+      "path": "results/q1_3/pq_extension_v1/model_summary.csv",
+      "sha256": "f7ca7a877fd51d09d9b29f82e90e6dc738f037d8aa565dd3ac4888f68cf1204c"
+    },
+    {
+      "path": "results/q1_3/pq_extension_v1/paired_comparison.csv",
+      "sha256": "c6a8d411af19f27181225feae97420d4020b985ca42ed5e3cbe45d52064b4ad9"
+    },
+    {
+      "path": "Q1/03_结果/Q1.3/v1/q1_3_run_report.md",
+      "sha256": "1008f21235bf54f128b1d042ed0b4a486710d5d459e50ee1962d56c6ea445b7c"
+    },
+    {
+      "path": "Q1/03_结果/Q1.3/pq_extension_v1/q1_3_pq_extension_report.md",
+      "sha256": "d376e853caa763beae2e8a236bbcaa4e42e6078096844fa8e4584c7078a96432"
+    },
+    {
+      "path": "Q2/03_结果/经典ScalingLaw基线/v1/q2_m0_marginal_effects_report.md",
+      "sha256": "5da3bdc13fc9c92081dd856870e8a422cda11307a21660743130ef54a5dbc285"
+    },
+    {
+      "path": "Q2/03_结果/经典ScalingLaw基线/v1/q2_validation_scope_closeout.md",
+      "sha256": "551d8d00e16f5106a2239cd0dadc92b1e4ee3c305802140d2b0a9215964c1e25"
+    },
+    {
+      "path": "Q2/03_结果/经典ScalingLaw基线/v1/b3_validation_closeout.md",
+      "sha256": "21f6928afc99cf6bb71e5ba2eb753143d4c63d229ec0e956a66ae8530b1a40fa"
+    },
+    {
+      "path": "Q2/03_结果/经典ScalingLaw基线/v1/b4_b5_loss_comparability_audit.md",
+      "sha256": "4523fad8c2b5dceac7619f80a06ca13b003f06e268263f0bcfb9eb512f6b96dc"
+    },
+    {
+      "path": "Q2/03_结果/经典ScalingLaw基线/v1/loss_protocol_evidence_sources.md",
+      "sha256": "e7ce615ae6304f7c268704f94d78b58677dca984b48aec30557bc7de5c095950"
+    },
+    {
+      "path": "Q2/03_结果/经典ScalingLaw基线/v1/loss_protocol_matrix.csv",
+      "sha256": "29c08f249954d23820fb615a88c067e0ebdbec5ccc85d46b447500c6c80d9b71"
+    },
+    {
+      "path": "Q2/01_方案说明/题目分析报告.md",
+      "sha256": "5c1a06d42684d597ae3c4acdaf1544bd23b293150765a1d47bef5ebdcb32c0de"
+    },
+    {
+      "path": "题目分析报告.md",
+      "sha256": "2a2519b2ce7245b522f21d87252fb753cfea97d24c44dbce8674e858963595bb"
+    },
+    {
+      "path": "中文题目/F题/算力约束下提升大语言模型能力的资源配置建模.docx",
+      "sha256": "bc99a72460fa3d947a442d502969a13212ce0ea092d827afdbbf3b55339da4c4"
+    },
+    {
+      "path": "中文题目/F题/数据说明(无隐藏字段版本）.pdf",
+      "sha256": "b2c8e1b997f25ab7f5c83539931dfe2260262078fac85ed09f2e99b801f3866f"
+    },
+    {
+      "path": "Q2/03_结果/p配比可行性审计/v1/q2_p_audit_summary.json",
+      "sha256": "82e53b9a4a6612a88b9b8c244a0b145eb951d96a84d1bac8b613589b4a7a71ce"
+    },
+    {
+      "path": "Q2/03_结果/p配比可行性审计/v1/q2_p_feasibility_audit.md",
+      "sha256": "15c61269a83f104f2020417f900f4b78626c7a5bc029a2817d6d46eba5c48a76"
+    },
+    {
+      "path": "Q2/03_结果/p配比可行性审计/v1/q2_p_trajectory_mapping.csv",
+      "sha256": "fe7b233faa4b2c3213a0c086551e3603e957f1cc816fc69140900f394dceb868"
+    },
+    {
+      "path": "results/q1_3/pq_extension_v1/identifiability_audit.csv",
+      "sha256": "3b4c20b4e94af77ff313df8f8a5f76244d2711b7da407314328ba694ac4aa00e"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/A_data_value/regmix_tables/train_mixture_1m.csv",
+      "sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/A_data_value/regmix_tables/train_pile_loss_1m.csv",
+      "sha256": "49a959aa07ce5c20831d5abe3a7896ff0cd90a398bd407c8913fd5588be0465a"
+    },
+    {
+      "path": "results/q1_3/v1/lambda_selection_quadratic_sensitivity.csv",
+      "sha256": "652db54ad27ac27ba4b4382594f763736b4a3624b54ade97dfe0523db72e3629"
+    },
+    {
+      "path": "src/q2_a_side_complementarity_sensitivity.py",
+      "sha256": "44fb8495440c0b53846f2e614784c3453ba2b10429b9c1f11516e31fbd2c412b"
+    },
+    {
+      "path": "src/q2_full_answer_figures.py",
+      "sha256": "edc6bff8e8c79dd9a0167d17768548c9c6d07a496ac057d69cddceada6a1ea14"
+    },
+    {
+      "path": "utils/plot_style.py",
+      "sha256": "f3de0a0c858d6018310d7e461574697a4cec7b28e5e20b8ccdaa7749772147e2"
+    },
+    {
+      "path": "C:\\Users\\86147\\.codex\\skills\\math-modeling\\tools\\figure\\scripts\\setup_style.py",
+      "sha256": "d58ef81684577bb605a92733dd2ca48ade03b4f819b3d255fd62f319be7fea82"
+    },
+    {
+      "path": "C:\\Users\\86147\\.codex\\skills\\math-modeling\\tools\\figure\\scripts\\export_figure.py",
+      "sha256": "40ce3bcd31dfc4b33e38a1cb180c75dc730ee6fa046f04934c79f285c6f890c1"
+    },
+    {
+      "path": "C:\\Users\\86147\\.codex\\skills\\math-modeling\\tools\\figure\\scripts\\visual_qa.py",
+      "sha256": "67675709e523c76e2748d50749de7bc6332f07df865379b26d024321fb40120f"
+    }
+  ],
+  "outputs": {
+    "a_side_complementarity/a4_a5_transfer_pair_complementarity_bootstrap.csv": "023dff7f63b86894cfe7d62c2fca369fd6c83be777ce93d3c1f092a268cef9d8",
+    "a_side_complementarity/a4_a5_transfer_pair_complementarity_report.md": "594f775b08d75b26d88a3a7207180110563f24f8b28012fb7e2a60e173c8f105",
+    "a_side_complementarity/a4_a5_transfer_pair_complementarity_summary.csv": "b8270fbcc67d67ad425320bf7761ba47acba664e7e8831db515abb4e7f6a0d7b",
+    "a_side_complementarity/manifest.json": "6f8bab4ba52284238691faf6dddf44921f5eb16253885e7bce35348a909b48d0",
+    "b6_b7_q_model_supplement.csv": "12323933facdbdcb6b8af212e850eda90f6048d35ac11f1b21a568480954ae1d",
+    "b6_b7_q_n_equal_loss_demo.csv": "1955d67f10cae82683b8d65063e244857e231bd5c8f65c12a28330349e60c16e",
+    "b6_b8_q_direction_audit.csv": "f366953b1772bb0eac552832f0054b7847110d3e5284a1005ec9db92f7df4eeb",
+    "b9_b10_extrapolation_summary.json": "8fbb872ea8e85f8d03bf3a8e7fa8ec9caaa456b5dae6b233bc31317bb967c33f",
+    "b9_b10_m0_extrapolation.csv": "8918a9d09af59321b0be4727fca44e8148458c55201e38caddea831a4da197cb",
+    "q1_source_evidence/q1_3_holdout_metrics.csv": "e2e2f7850b9ba5b7d51373f5e78f401ec8863291c1f357577f96dd9189b7e229",
+    "q1_source_evidence/q1_3_pq_extension_report.md": "d376e853caa763beae2e8a236bbcaa4e42e6078096844fa8e4584c7078a96432",
+    "q1_source_evidence/q1_3_pq_model_summary.csv": "f7ca7a877fd51d09d9b29f82e90e6dc738f037d8aa565dd3ac4888f68cf1204c",
+    "q1_source_evidence/q1_3_pq_paired_comparison.csv": "c6a8d411af19f27181225feae97420d4020b985ca42ed5e3cbe45d52064b4ad9",
+    "q1_source_evidence/q1_3_run_report.md": "1008f21235bf54f128b1d042ed0b4a486710d5d459e50ee1962d56c6ea445b7c",
+    "q1_source_evidence/q1_3_substitution_effects_10pp_bootstrap.csv": "7a79338ad9cbabcf8774eed5468ecd60f193e30d5e5608d2889fb8648241cbe5",
+    "q1_source_evidence/README.md": "6cc17a11766a714b6f3c5e40933d48dd7876d0b16fcc4e754e62ecbf811fbfa1",
+    "q2_full_answer_evidence_supplement.md": "7510d9e37c6bc029cb042ba326ce7acc52a9404d9529772111251f0dcce0d77a",
+    "q2_full_answer_figures/flow_q2_full_answer.pdf": "7ed03b76528ddf7748605933c8586b67c01839db0358243dc730df3c19d8396f",
+    "q2_full_answer_figures/flow_q2_full_answer.png": "305f0e7ab60b885b1b93811b55435398c79f7fccd48ed94cd8903ce4e7450612",
+    "q2_full_answer_figures/flow_q2_full_answer.svg": "4dd1b4b15637836ed75b3966cc14af15332370140156906d04ee6acd78a669a0",
+    "q2_full_answer_figures/flow_q2_full_answer_grayscale.png": "ab405e59abbad071972ca35fea9db8bbfb6a66906c18114d8920b304e8386e62",
+    "q2_full_answer_figures/process_q2_p_interval_adjustment.pdf": "f5a61657b4677b03f99e623be1ea542b0912c1a3f804b9d4322d4c96202e0fb2",
+    "q2_full_answer_figures/process_q2_p_interval_adjustment.png": "50bcc53787c780ebce7450bf30814415f9a0f36a7c35d29f4e0d791188fe73e2",
+    "q2_full_answer_figures/process_q2_p_interval_adjustment.svg": "863c7eedb21b2639ff29d5fb4c2ac320cdf34fa19f12ba12ca8d2baaa1ada99e",
+    "q2_full_answer_figures/process_q2_p_interval_adjustment_grayscale.png": "e3e19e862a8908cb8f38468ec50ce5fe7e90d49f65b3925299e5cab008c2c4c0",
+    "q2_full_answer_figures/process_q2_q_leave_q_comparison.pdf": "fbefe051bed25003caf4e8804b14928acd99adcb012959754102ae5b4585ba31",
+    "q2_full_answer_figures/process_q2_q_leave_q_comparison.png": "df3af27cdc67b4159b0fa5be597d4103afb5e154138166505307055668eb9810",
+    "q2_full_answer_figures/process_q2_q_leave_q_comparison.svg": "4e6fcce90a011502a0c4e2958101ee4066dbcaf56fd0b1944953f4843d24f1f1",
+    "q2_full_answer_figures/process_q2_q_leave_q_comparison_grayscale.png": "22fe64ac4c8d5517ebb78caf7aace987742ee4364a62f1999584f517d782a800",
+    "q2_full_answer_figures/raw_q2_p_recipe_support.pdf": "31135eb7571f75a6745e906895e2abac4109033782c32206a23febc4aee73da6",
+    "q2_full_answer_figures/raw_q2_p_recipe_support.png": "2427099793b9525f27423a132f93a7526a25649f96cde2f81cfd16e84ba8c969",
+    "q2_full_answer_figures/raw_q2_p_recipe_support.svg": "84c8ae979f5ea6e967c1282ac97f364183a88cafbfeee44acf733af215d2da7c",
+    "q2_full_answer_figures/raw_q2_p_recipe_support_grayscale.png": "c22e6b89dbc3ac58bc50c053ee95bb264f00b2453d679aceb12527dc0b3fd311",
+    "q2_full_answer_figures/raw_q2_q_source_patterns.pdf": "ce621b8de97514efa446abc3d22812b03656bf12b3e2ab1c5c926045301407b4",
+    "q2_full_answer_figures/raw_q2_q_source_patterns.png": "5e97b3ea6c98d95c1a3558107e96135734fb912dbf6767c3c914a8b8f2ba165d",
+    "q2_full_answer_figures/raw_q2_q_source_patterns.svg": "5f9d0609dafe2b0aec60a8d242ceef754b2be9c24e173c612303e6f9466efe44",
+    "q2_full_answer_figures/raw_q2_q_source_patterns_grayscale.png": "35a13c70bc225a714ed1452b1fe78f3b89ab6e02568288602d3448894529aa46",
+    "q2_full_answer_figures/result_q2_p_cross_scale_rmse.pdf": "83e2d52eb13aa69cb3f2460ee382d3bbbf05ca23e54c5bf622b6f40102087cb8",
+    "q2_full_answer_figures/result_q2_p_cross_scale_rmse.png": "d8563e1a0ffa75a0cd87a18282cf1acf48a554cd2f0318cf49bf682c105a5d2c",
+    "q2_full_answer_figures/result_q2_p_cross_scale_rmse.svg": "7ab8e9599b65bc105ba455a7663ed4727c4d42dc9ff874cffe149bb15f832aa4",
+    "q2_full_answer_figures/result_q2_p_cross_scale_rmse_grayscale.png": "bc72f3385c7834e2e300d83f72965d60a577b8447c84ed0b06e751cd4ff925a4",
+    "q2_full_answer_figures/result_q2_q_matched_slope_conflict.pdf": "47ee64bb9ee5bcf1eb5d3826066542ceac78edca55faf5a7e88f81b7b4a1369a",
+    "q2_full_answer_figures/result_q2_q_matched_slope_conflict.png": "70541183bbe6980cb02d58bae64f92829b5dbb8e59fe9a5aa2f42f95d85ba4f4",
+    "q2_full_answer_figures/result_q2_q_matched_slope_conflict.svg": "6b65e6055e6dd1cded431b4816af18c929bc2ae6943cab4102d57c3ebf9e528d",
+    "q2_full_answer_figures/result_q2_q_matched_slope_conflict_grayscale.png": "59950b0e6b78f6fd2427be135a3af1610c4275806d3111f1a6be9e616c2c2c34",
+    "q2_full_answer_figures_contract.csv": "5b43243c9749c43ea260579c5b4b8220c30cc8abd5c80e81878895cb6257cfc7",
+    "q2_full_answer_figures_qa.json": "2e18b0fa199b0513bdc9b9d936d7441b2f5fca566589dff2c6e57bdd81996690",
+    "q2_m1_m2_identifiability_proof.md": "07eeead154025ee0e630eb98188db1be46390b0d30275c03a945f302fc857f29",
+    "reference_evidence/b3_validation_closeout.md": "21f6928afc99cf6bb71e5ba2eb753143d4c63d229ec0e956a66ae8530b1a40fa",
+    "reference_evidence/b4_b5_loss_comparability_audit.md": "4523fad8c2b5dceac7619f80a06ca13b003f06e268263f0bcfb9eb512f6b96dc",
+    "reference_evidence/loss_protocol_evidence_sources.md": "e7ce615ae6304f7c268704f94d78b58677dca984b48aec30557bc7de5c095950",
+    "reference_evidence/loss_protocol_matrix.csv": "29c08f249954d23820fb615a88c067e0ebdbec5ccc85d46b447500c6c80d9b71",
+    "reference_evidence/m0_fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "reference_evidence/m0_marginal_effects_report.md": "5da3bdc13fc9c92081dd856870e8a422cda11307a21660743130ef54a5dbc285",
+    "reference_evidence/m0_validation_comparability.json": "73fcacf9a212cd5c63428329021e7389e8f5e0d1dbb582c31a1d2aea5d908a75",
+    "reference_evidence/m0_validation_metrics_by_source.csv": "15ea2b015ba1bd1dad49b92999b13b97d26a676be3bfb68dd11c63f574755af0",
+    "reference_evidence/m0_validation_scope_closeout.md": "551d8d00e16f5106a2239cd0dadc92b1e4ee3c305802140d2b0a9215964c1e25",
+    "reference_evidence/README.md": "0f98bda16796522bee4141563467341bfb88980f5536770f4d0d9ae3a68789e0"
+  },
+  "B6_B7_overlap": {
+    "B6_rows": 360,
+    "B6_rows_also_in_B7": 360,
+    "shared_rows_with_changed_loss": 0,
+    "B7_extra_rows": 90
+  },
+  "B9_B10_summary": {
+    "n_B10_rows": 128,
+    "n_converged_rows": 128,
+    "n_exact_B9_model_matches": 128,
+    "n_N_above_B1_support": 128,
+    "n_D_above_B1_support": 102,
+    "B1_N_max_B": 11.965825,
+    "B1_D_max_B": 299.893,
+    "B10_N_min_B": 100.0,
+    "B10_N_max_B": 10000.0,
+    "B10_D_min_B": 0.1,
+    "B10_D_max_B": 36000.0,
+    "prediction_median": 1.9064215877260597,
+    "prediction_range": [
+      1.7838375278655414,
+      4.086298347965265
+    ],
+    "parameter_bootstrap_median_width": 0.0001590145799067466,
+    "warning": "B10 is an estimated/curated table and all rows exceed B1 N support; parameter bootstrap omits extrapolation/model-form and protocol error."
+  }
+}

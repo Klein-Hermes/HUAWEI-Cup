@@ -1,0 +1,94 @@
+{
+  "style": {
+    "journal": "general",
+    "lang": "zh",
+    "sciplots_used": false,
+    "cjk_font": "SimHei",
+    "constrained_layout": true
+  },
+  "figures": [
+    {
+      "figure_id": "raw_q2_p_recipe_support",
+      "layout_issues": [],
+      "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\raw_q2_p_recipe_support_preview.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_p_recipe_support.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_p_recipe_support.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_p_recipe_support.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_p_recipe_support_grayscale.png"
+      ]
+    },
+    {
+      "figure_id": "process_q2_p_interval_adjustment",
+      "layout_issues": [],
+      "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\process_q2_p_interval_adjustment_preview.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_p_interval_adjustment.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_p_interval_adjustment.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_p_interval_adjustment.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_p_interval_adjustment_grayscale.png"
+      ]
+    },
+    {
+      "figure_id": "result_q2_p_cross_scale_rmse",
+      "layout_issues": [
+        "('WARN', \"以下文字可能超出画布被裁切：['13 个 Loss 目标的目标级 RMSE']。跑 finalize_figure(fig) 或导出时 bbox_inches='tight' 兜底；标题/标签过长可换行或缩短。\")"
+      ],
+      "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\result_q2_p_cross_scale_rmse_preview.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_p_cross_scale_rmse.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_p_cross_scale_rmse.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_p_cross_scale_rmse.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_p_cross_scale_rmse_grayscale.png"
+      ]
+    },
+    {
+      "figure_id": "raw_q2_q_source_patterns",
+      "layout_issues": [],
+      "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\raw_q2_q_source_patterns_preview.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_q_source_patterns.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_q_source_patterns.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_q_source_patterns.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_q_source_patterns_grayscale.png"
+      ]
+    },
+    {
+      "figure_id": "process_q2_q_leave_q_comparison",
+      "layout_issues": [
+        "('WARN', \"以下文字可能超出画布被裁切：['留一 Q 水平 RMSE']。跑 finalize_figure(fig) 或导出时 bbox_inches='tight' 兜底；标题/标签过长可换行或缩短。\")"
+      ],
+      "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\process_q2_q_leave_q_comparison_preview.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_q_leave_q_comparison.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_q_leave_q_comparison.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_q_leave_q_comparison.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_q_leave_q_comparison_grayscale.png"
+      ]
+    },
+    {
+      "figure_id": "result_q2_q_matched_slope_conflict",
+      "layout_issues": [
+        "('WARN', \"以下文字可能超出画布被裁切：['固定 N,D 单元内 Loss 对 Q_scor']。跑 finalize_figure(fig) 或导出时 bbox_inches='tight' 兜底；标题/标签过长可换行或缩短。\")"
+      ],
+      "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\result_q2_q_matched_slope_conflict_preview.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_q_matched_slope_conflict.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_q_matched_slope_conflict.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_q_matched_slope_conflict.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_q_matched_slope_conflict_grayscale.png"
+      ]
+    },
+    {
+      "figure_id": "flow_q2_full_answer",
+      "layout_issues": [],
+      "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\flow_q2_full_answer_preview.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\flow_q2_full_answer.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\flow_q2_full_answer.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\flow_q2_full_answer.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\flow_q2_full_answer_grayscale.png"
+      ]
+    }
+  ]
+}

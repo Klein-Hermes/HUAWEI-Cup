@@ -1,0 +1,14 @@
+target,full_model_loss_reducing_10pp_directions,jointly_feasible_direction_pairs,point_complementary_pairs,point_diminishing_pairs,bootstrap_ci_fully_negative_unadjusted,bootstrap_ci_fully_positive_unadjusted,bootstrap_ci_cross_zero_unadjusted,bootstrap_maxT95_fully_negative,bootstrap_maxT95_fully_positive,bootstrap_maxT95_cross_zero,median_interaction_delta_loss,median_bootstrap_ci_width
+metric/the_pile_arxiv_val_loss,24,167,81,86,1,13,153,0,2,165,0.0007781261363214843,0.17678610992134258
+metric/the_pile_freelaw_val_loss,34,421,220,201,27,18,376,0,2,419,-0.00602975511414854,0.3496684592014938
+metric/the_pile_pubmed_central_val_loss,34,371,187,184,9,13,349,0,1,370,-0.0014118880267757873,0.23694331327190624
+metric/the_pile_wikipedia_en_val_loss,38,497,306,191,26,24,447,0,6,491,-0.00976789619196692,0.153174594467535
+metric/the_pile_dm_mathematics_val_loss,51,969,475,494,15,26,928,0,0,969,0.0036492293223046686,0.6450325857826449
+metric/the_pile_github_val_loss,34,389,142,247,11,44,334,0,3,386,0.029105276106747475,0.5082906677776485
+metric/the_pile_stackexchange_val_loss,33,383,151,232,11,54,318,0,4,379,0.020307494783178632,0.3595380226431013
+metric/the_pile_gutenberg_pg_19_val_loss,46,752,367,385,26,58,668,0,5,747,0.0014141100722626556,0.12057724778142562
+metric/the_pile_pile_cc_val_loss,42,599,338,261,52,38,509,0,4,595,-0.002423398646019575,0.056450717452602876
+metric/the_pile_ubuntu_irc_val_loss,30,337,148,189,18,14,305,0,0,337,0.021223815204130178,1.1515825058934592
+metric/the_pile_hackernews_val_loss,45,718,326,392,16,70,632,0,1,717,0.0021505778071011965,0.13282578413214086
+metric/the_pile_pubmed_abstracts_val_loss,39,519,275,244,45,53,421,0,5,514,-0.0031196781325559106,0.14373841576290422
+metric/the_pile_uspto_backgrounds_val_loss,35,429,294,135,16,20,393,0,6,423,-0.010373500249871007,0.1407289189014153

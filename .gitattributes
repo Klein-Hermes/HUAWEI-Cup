@@ -1,0 +1,17 @@
+# Preserve the byte-level Q2 deliverables referenced by SHA-256 manifests.
+# This avoids Windows core.autocrlf rewriting committed text artifacts.
+Q2/** -text
+docs/README_Q2_FINAL.md -text
+docs/README_inputs.md -text
+docs/inputs_manifest.csv -text
+docs/run_log.txt -text
+docs/q2* -text
+docs/Q2* -text
+docs/F题_Q2公共实验框架.md -text
+docs/q2_full_answer_figures/** -text
+figures/q2*/** -text
+results/q2_closeout/** -text
+results/q2_scaling_baseline/** -text
+src/f_q2*.py -text
+src/q2*.py -text
+src/tests/test_f_q2_b2_semisynthetic.py -text

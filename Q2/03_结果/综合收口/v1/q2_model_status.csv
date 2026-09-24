@@ -1,0 +1,15 @@
+﻿module,status,basis_and_boundary
+Q1 formal Q interface,FROZEN_WITH_LIMITATIONS,q_huber operational; q_equal sensitivity; review did not select a statistical winner
+"M0 classical Loss=f(N,D)",COMPLETE,"B1 fit frozen; 1,176 checkpoints across 8 tracks"
+M0 Bootstrap,COMPLETE_WITH_LIMITS,"1,000 complete-track resamples; only 8 independent trajectory clusters"
+M0 N/D marginal effects and elasticities,COMPLETE,Checkpoint output and 8-track summary generated
+B2/B3 validation checks,COMPLETE_WITH_LIMITS,B2 semi-synthetic; B3 same-source interpolation
+B4/B5 cross-source validation,AUDIT_COMPLETE_VALIDATION_NOT_ESTABLISHED,All source groups remain NOT_COMPARABLE to B1
+A-side p-only evidence,COMPLETE_WITH_LIMITS,Same-scale signal; cross-scale generalization fails
+A-side p+Q sensitivity,COMPLETE_WITH_LIMITS,Qcovered derived from p; independent Q effect not identified
+B-side p identifiability,FAIL_CURRENT_DATA,0 verified p vectors joined to Loss
+"M1 (N,D,p)",NOT_ESTIMATED,Do not fit before p gate passes
+B-side Q incremental-effect identifiability,FAIL_CURRENT_EVIDENCE,"No linked, independent B-side Q variation"
+"M2 (N,D,p,Q)",NOT_ESTIMATED,Do not fit before p and independent-Q gates pass
+p×Q interaction extension,NOT_ESTIMATED,Optional only if evidence supports it; not fit under current gates
+Q2 current-data package,FROZEN_WITH_LIMITATIONS,M0 and evidence audit closed; full p/Q increment remains unidentified with current B data
