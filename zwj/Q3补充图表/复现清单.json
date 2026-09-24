@@ -1,0 +1,312 @@
+{
+  "purpose": "Q3 four supplementary figures; existing Q1/Q2/Q3 data are read-only; no resampling, refitting, or fabricated observations",
+  "python": "3.13.15 | packaged by Anaconda, Inc. | (main, Aug 14 2026, 17:17:48) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "D:\\miniconda3\\envs\\huawei-cup\\python.exe",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.9",
+    "Pillow": "12.3.0"
+  },
+  "style": {
+    "journal": "general",
+    "lang": "zh",
+    "sciplots_used": false,
+    "cjk_font": "SimHei",
+    "constrained_layout": false,
+    "font_chain": [
+      "SimHei",
+      "Arial",
+      "Helvetica",
+      "DejaVu Sans"
+    ]
+  },
+  "png_dpi": 300,
+  "command_from_project_root": "D:\\miniconda3\\envs\\huawei-cup\\python.exe zwj\\Q3补充图表\\plot_q3_supplementary_figures.py",
+  "inputs": {
+    "Q3\\04_结果\\M0_ND_reference_frontier.csv": {
+      "sha256": "8018ECF57B47781098E4F9BC8CEB02F08B998B222DC674993640B32C0F936583"
+    },
+    "Q3\\04_结果\\M0_ND_cluster_bootstrap_frontier.csv": {
+      "sha256": "2E0677F48AE10ACF4C148EA021864C14C09B4D9D8F7F83BADAAF551792C796F2"
+    },
+    "Q3\\04_结果\\M0_ND_cluster_bootstrap_selection_frequency.csv": {
+      "sha256": "37B12F07C580291CAF078722EA4E3F355AE72A78D34C7FFA7923C8BF6E920AB5"
+    },
+    "Q3\\04_结果\\M0_budget_context_cost_shares.csv": {
+      "sha256": "87535F7D2CAE27C5B4FC13C77CB4848BBAFC2E7C37ED5340FCB5BEFAC9E6A26D"
+    },
+    "Q3\\04_结果\\M0_budget_context_descriptive_shifts.csv": {
+      "sha256": "5707919EBDC1037A91E6B3FBEC8996A0BB16A470DBA68DB95BD959BE6C6DA84E"
+    },
+    "Q1\\03_结果\\Q1.1\\v1\\a1_macro_summary.csv": {
+      "sha256": "6B7CCA1865EF6785981180FB0AEA41FE839A5B6C12CB012BB21FA089D8B383F9"
+    },
+    "Q3\\03_代码\\analyze_q3_cost_sensitivities.py": {
+      "sha256": "34E21E9296C638C8677CA9E3D1E05FE0A57E3CAAB039E9AB5F750F7376B338E1"
+    }
+  },
+  "figures": {
+    "result_q3_p1_budget_nd_frontier": [
+      "zwj\\Q3补充图表\\result_q3_p1_budget_nd_frontier.svg",
+      "zwj\\Q3补充图表\\result_q3_p1_budget_nd_frontier.pdf",
+      "zwj\\Q3补充图表\\result_q3_p1_budget_nd_frontier.png",
+      "zwj\\Q3补充图表\\result_q3_p1_budget_nd_frontier_grayscale.png"
+    ],
+    "result_q3_p2_bootstrap_selection_stability": [
+      "zwj\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability.svg",
+      "zwj\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability.pdf",
+      "zwj\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability.png",
+      "zwj\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability_grayscale.png"
+    ],
+    "result_q3_p3_resource_shift_dashboard": [
+      "zwj\\Q3补充图表\\result_q3_p3_resource_shift_dashboard.svg",
+      "zwj\\Q3补充图表\\result_q3_p3_resource_shift_dashboard.pdf",
+      "zwj\\Q3补充图表\\result_q3_p3_resource_shift_dashboard.png",
+      "zwj\\Q3补充图表\\result_q3_p3_resource_shift_dashboard_grayscale.png"
+    ],
+    "result_q3_p4_q_baseline_sensitivity": [
+      "zwj\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity.svg",
+      "zwj\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity.pdf",
+      "zwj\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity.png",
+      "zwj\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity_grayscale.png"
+    ]
+  },
+  "outputs_sha256": {
+    "zwj\\Q3补充图表\\plot_q3_supplementary_figures.py": "9CBA12B506BF3BBBC1CEC52B9DCD9CCE1D662E43E30D1413D893E9F63D862585",
+    "zwj\\Q3补充图表\\result_q3_p1_budget_nd_frontier.svg": "D1E7C8E74F95C2FFB6AB67040B81E9436683967414E899F97802303174F95657",
+    "zwj\\Q3补充图表\\result_q3_p1_budget_nd_frontier.pdf": "68C911541B468F5159B1BF46F02598AF88E4990980DAAC3E36CFBFAB84F5A555",
+    "zwj\\Q3补充图表\\result_q3_p1_budget_nd_frontier.png": "19C18C04CD53606DCE2F865885CBC10ECBE0B83550E6DCFDD588461DC937C91F",
+    "zwj\\Q3补充图表\\result_q3_p1_budget_nd_frontier_grayscale.png": "D0FEC130F348A2EE54029C75D0151FDE4CF9F3B160A4B9F387C3B4C1783C615E",
+    "zwj\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability.svg": "91C359565B3FE055130EE6CD20925E0E10B6027D72930A285428694F78AD3E0B",
+    "zwj\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability.pdf": "6B91E4A439F8DD0E4201F7729644956DE43EF7201D755C4AF4F400038B3131F4",
+    "zwj\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability.png": "1F32FACCF8B784CDEBF9C8BD81D612389B70D8F518066EA75144DF29C52B2328",
+    "zwj\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability_grayscale.png": "C405DF367802526E28EDCBCC5E4F133FC47C1ED705600F0DFF0F199B8AAB8256",
+    "zwj\\Q3补充图表\\result_q3_p3_resource_shift_dashboard.svg": "7680A17FA994E8779D2A053D398D93A514A3A37A60B0762F8D05ADCB351F1E56",
+    "zwj\\Q3补充图表\\result_q3_p3_resource_shift_dashboard.pdf": "3CB4AA7FC435A6747E80DA9A78B3B49A30755E82108C5DAB439FC18F5A89851B",
+    "zwj\\Q3补充图表\\result_q3_p3_resource_shift_dashboard.png": "1EC77FF60C8BEF6A6A20CF71716385C27FEB48FD7E60567CA5AA59236E647928",
+    "zwj\\Q3补充图表\\result_q3_p3_resource_shift_dashboard_grayscale.png": "60E6F75D2709CBAD9BF836387ED00B5161C8CC909AF25562FE0D79CA43977AC7",
+    "zwj\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity.svg": "B235EB15340E5BCDF1682C817077C2FCD96B10E6C723CF047A8E3EBEDDC2956D",
+    "zwj\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity.pdf": "9707438A86F50F07D1CA5C190649B53AAE8F4B8B1EB75D8CE893293895C50A30",
+    "zwj\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity.png": "F4C102C5C3530E897F052D8F0F28D304A2B0149E9F7D81B01A8516E7298BCFB2",
+    "zwj\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity_grayscale.png": "31A5211BF0832E0B41B5CEBED719101097C3B866E05EF2BD5EEEA12F0BB3CC51",
+    "zwj\\Q3补充图表\\图表契约.md": "A2993105CDD21E6DAF07188684D1B915D569A39AA1CCB92EAAFD8B622ABB71F4"
+  },
+  "statistics_and_checks": {
+    "result_q3_p1_budget_nd_frontier": {
+      "source_rows": 15,
+      "scenario_count": 15,
+      "budget_levels": [
+        1e+19,
+        1e+22,
+        1e+24
+      ],
+      "context_levels_tokens": [
+        2048,
+        4096,
+        8192,
+        32768,
+        131072
+      ],
+      "support_upper_bound_points": 5,
+      "layout_audit": {
+        "layout_verdict": "PASS",
+        "layout_issue_count": 0
+      }
+    },
+    "result_q3_p2_bootstrap_selection_stability": {
+      "source_rows": {
+        "frontier": 15,
+        "selection_frequency": 15
+      },
+      "bootstrap_replicates": [
+        1000
+      ],
+      "N_interval_max_width": 0.0,
+      "D_interval_max_width": 0.0,
+      "loss_interval_max_width": 0.00021383562280918866,
+      "baseline_selection_frequency_range": [
+        1.0,
+        1.0
+      ],
+      "selection_frequency_crosscheck_range": [
+        1.0,
+        1.0
+      ],
+      "layout_audit": {
+        "layout_verdict": "PASS",
+        "layout_issue_count": 0
+      }
+    },
+    "result_q3_p3_resource_shift_dashboard": {
+      "source_rows": {
+        "frontier": 15,
+        "cost_shares": 15,
+        "descriptive_shifts": 22
+      },
+      "merge_rows": 15,
+      "comparison_axis_counts": {
+        "context_at_fixed_budget": 12,
+        "budget_at_fixed_context": 10
+      },
+      "configuration_changed_pairs": 17,
+      "quality_cost_share_range": [
+        0.0,
+        0.0
+      ],
+      "cost_share_sum_max_abs_error": 1.1102230246251565e-16,
+      "support_upper_bound_scenarios": 5,
+      "layout_audit": {
+        "layout_verdict": "PASS",
+        "layout_issue_count": 0
+      }
+    },
+    "result_q3_p4_q_baseline_sensitivity": {
+      "source_rows": {
+        "frontier": 15,
+        "q1_baselines": 2
+      },
+      "q0": {
+        "q_huber": 0.4984781048476464,
+        "q_equal": 0.4962230100496153
+      },
+      "q0_difference_q_equal_minus_q_huber": -0.0022550947980310987,
+      "fixed_q_branch_reason": "M0 has no Q term and C_Q is zero at each branch's own Q0; feasible set and objective are unchanged",
+      "max_abs_N_B_difference": 0.0,
+      "max_abs_D_B_difference": 0.0,
+      "max_abs_m0_loss_difference": 0.0,
+      "layout_audit": {
+        "layout_verdict": "PASS",
+        "layout_issue_count": 0
+      }
+    }
+  },
+  "file_audits": {
+    "result_q3_p1_budget_nd_frontier": {
+      "format_pair_complete": true,
+      "png": {
+        "pixels": [
+          2160,
+          1560
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ],
+        "mode": "RGBA"
+      },
+      "grayscale": {
+        "pixels": [
+          2160,
+          1560
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ],
+        "mode": "L"
+      },
+      "svg_xml_readable": true,
+      "svg_editable_text_present": true,
+      "legend_overlap_and_tick_collision": "programmatic layout audit passed; visually reviewed after rendering",
+      "grayscale_redundancy": "series also encoded by marker/line style or hatch where applicable"
+    },
+    "result_q3_p2_bootstrap_selection_stability": {
+      "format_pair_complete": true,
+      "png": {
+        "pixels": [
+          2160,
+          1860
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ],
+        "mode": "RGBA"
+      },
+      "grayscale": {
+        "pixels": [
+          2160,
+          1860
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ],
+        "mode": "L"
+      },
+      "svg_xml_readable": true,
+      "svg_editable_text_present": true,
+      "legend_overlap_and_tick_collision": "programmatic layout audit passed; visually reviewed after rendering",
+      "grayscale_redundancy": "series also encoded by marker/line style or hatch where applicable"
+    },
+    "result_q3_p3_resource_shift_dashboard": {
+      "format_pair_complete": true,
+      "png": {
+        "pixels": [
+          2160,
+          1800
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ],
+        "mode": "RGBA"
+      },
+      "grayscale": {
+        "pixels": [
+          2160,
+          1800
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ],
+        "mode": "L"
+      },
+      "svg_xml_readable": true,
+      "svg_editable_text_present": true,
+      "legend_overlap_and_tick_collision": "programmatic layout audit passed; visually reviewed after rendering",
+      "grayscale_redundancy": "series also encoded by marker/line style or hatch where applicable"
+    },
+    "result_q3_p4_q_baseline_sensitivity": {
+      "format_pair_complete": true,
+      "png": {
+        "pixels": [
+          2160,
+          1740
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ],
+        "mode": "RGBA"
+      },
+      "grayscale": {
+        "pixels": [
+          2160,
+          1740
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ],
+        "mode": "L"
+      },
+      "svg_xml_readable": true,
+      "svg_editable_text_present": true,
+      "legend_overlap_and_tick_collision": "programmatic layout audit passed; visually reviewed after rendering",
+      "grayscale_redundancy": "series also encoded by marker/line style or hatch where applicable"
+    }
+  },
+  "manual_visual_review": {
+    "status": "completed",
+    "checks": [
+      "titles, axes, units, legends and panel labels present",
+      "no visible text clipping or legend occlusion at final size",
+      "budget and scenario tick labels remain distinguishable",
+      "support-bound markers are visible",
+      "grayscale previews retain redundant marker, line-style, or hatch encoding"
+    ]
+  }
+}
