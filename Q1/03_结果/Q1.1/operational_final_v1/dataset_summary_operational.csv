@@ -1,0 +1,7 @@
+dataset,candidate,score_role,n_records,n_domains,q_dataset_score,ci_low,ci_high,summary_method
+a1,q_equal,operational_primary,51230,7,0.4962230100496153,0.49490973992007115,0.4976315049188478,equal-weight mean of seven A1 source-domain Huber locations
+a2,q_equal,operational_primary,17523,1,0.5309591176048425,0.5304746761918068,0.5314777508378029,single-domain Huber location: arxiv
+a3,q_equal,operational_primary,203752,1,0.40393716747452935,0.4036353811621666,0.4042311757802963,single-domain Huber location: github
+a1,q_huber,sensitivity,51230,7,0.49847810484764643,0.496567443226065,0.5004265176398414,equal-weight mean of seven A1 source-domain Huber locations
+a2,q_huber,sensitivity,17523,1,0.5599738811018025,0.5591986939311028,0.5607526257634163,single-domain Huber location: arxiv
+a3,q_huber,sensitivity,203752,1,0.38887178212072904,0.3885551869869232,0.38919114619493483,single-domain Huber location: github

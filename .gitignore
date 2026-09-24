@@ -5,7 +5,9 @@ __pycache__/
 .vscode/
 # Competition raw and derived data stay local; do not commit anything under data/.
 data/
-results/
+# Keep generated results local by default; publish the curated, frozen Q1 interface.
+results/*
+!results/q1_final/
 outputs/
 *.log
 *.tmp

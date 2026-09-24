@@ -1,0 +1,10 @@
+dataset,source_domain,q_operational,q_version,n_records,n_scored,scored_rate,ci95_low,ci95_high,aggregation_method,domain_huber_delta_from_a1
+a1,arxiv,0.5613319908558356,Q1-q_huber-v1,1419,1419,1.0,0.5587501093745232,0.5638743057847023,A1-calibrated domain Huber location over sample-level q_huber; A2/A3 use frozen A1 domain threshold,0.06606868682625086
+a1,book,0.42874874466340707,Q1-q_huber-v1,171,171,1.0,0.4166682198643684,0.44231095165014267,A1-calibrated domain Huber location over sample-level q_huber; A2/A3 use frozen A1 domain threshold,0.11353282616335054
+a1,c4,0.5767322748885473,Q1-q_huber-v1,10000,10000,1.0,0.5747235760092735,0.5785818085074425,A1-calibrated domain Huber location over sample-level q_huber; A2/A3 use frozen A1 domain threshold,0.1313268938649077
+a1,commoncrawl,0.5359722946905645,Q1-q_huber-v1,9640,9640,1.0,0.5341207027435303,0.5378116250038147,A1-calibrated domain Huber location over sample-level q_huber; A2/A3 use frozen A1 domain threshold,0.11742606399728127
+a1,github,0.3894803356606058,Q1-q_huber-v1,10000,10000,1.0,0.3880361646413803,0.3909398004412651,A1-calibrated domain Huber location over sample-level q_huber; A2/A3 use frozen A1 domain threshold,0.09640248962543342
+a1,stackexchange,0.5183681310908792,Q1-q_huber-v1,10000,10000,1.0,0.5169330433011055,0.519771882891655,A1-calibrated domain Huber location over sample-level q_huber; A2/A3 use frozen A1 domain threshold,0.09457337203560658
+a1,wikipedia,0.4787129620836854,Q1-q_huber-v1,10000,10000,1.0,0.4769694611430168,0.4804027646780014,A1-calibrated domain Huber location over sample-level q_huber; A2/A3 use frozen A1 domain threshold,0.1146839871542882
+a2,arxiv,0.5599738811018025,Q1-q_huber-v1,17523,17523,1.0,0.5591986939311028,0.5607526257634163,A1-calibrated domain Huber location over sample-level q_huber; A2/A3 use frozen A1 domain threshold,0.06606868682625086
+a3,github,0.38887178212072904,Q1-q_huber-v1,203752,203752,1.0,0.3885551869869232,0.38919114619493483,A1-calibrated domain Huber location over sample-level q_huber; A2/A3 use frozen A1 domain threshold,0.09640248962543342

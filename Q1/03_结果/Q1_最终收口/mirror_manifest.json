@@ -1,0 +1,49 @@
+{
+  "schema_version": "q1-final-mirror-manifest-v1",
+  "generated_local_date": "2026-09-24",
+  "canonical_source_dir": "results/q1_final",
+  "canonical_reproduction_manifest_sha256": "34741c3284eddab343d8b46164c63f147e46b1e4a8eb262e135ba88698d471ff",
+  "note": "This Q1-folder copy is a reading mirror. Markdown links may be adjusted for this folder; original generated files remain under results/q1_final.",
+  "files": [
+    {
+      "path": "export_q1_final_interface.py",
+      "sha256": "af95a090f06892f8602681d36b8e2dc3e07279bf134facba9976c99b428e397b"
+    },
+    {
+      "path": "q1_candidate_audit.csv",
+      "sha256": "a6c18fa97efe8c55ebde22581399c5b106a788d34a42984e5294bded7f48a607"
+    },
+    {
+      "path": "q1_final_decision.md",
+      "sha256": "1cf2fea7aa2b55a51f12310d80f38dc0eb7ce87a6e9a6fe2770ad156450681ca"
+    },
+    {
+      "path": "q1_final_domain_quality.csv",
+      "sha256": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574"
+    },
+    {
+      "path": "q1_final_freeze.json",
+      "sha256": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7"
+    },
+    {
+      "path": "q1_final_quality.csv",
+      "sha256": "eb48687ecd003fce1dadb2445349126719515eab715724e575df8e32074034da"
+    },
+    {
+      "path": "q1_q13_consistency_check.md",
+      "sha256": "a63b5588da9feebdfe49aa973bdd37f5de260703d863beca4f132a2363f72bbe"
+    },
+    {
+      "path": "Q1交付物总清单.md",
+      "sha256": "96d6ec92aedc560399160c2151e61fbd2d4e34c448afd4ad204f2afbe7c322a5"
+    },
+    {
+      "path": "reproduction_manifest.json",
+      "sha256": "34741c3284eddab343d8b46164c63f147e46b1e4a8eb262e135ba88698d471ff"
+    },
+    {
+      "path": "README.md",
+      "sha256": "7290fd655e0ea548e91d53b24e901103b61198af9519489096eed1a166ad9f17"
+    }
+  ]
+}

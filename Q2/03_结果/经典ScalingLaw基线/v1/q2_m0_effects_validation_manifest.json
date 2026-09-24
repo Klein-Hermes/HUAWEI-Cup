@@ -1,0 +1,70 @@
+{
+  "task": "Q2 M0 marginal effects and B2-B5 validation scope closeout",
+  "status": "completed_with_validation_limits",
+  "created_utc": "2026-09-24T08:03:16+00:00",
+  "command": "D:\\Anaconda\\python.exe src/q2_m0_effects_validation_closeout.py",
+  "script": "src/q2_m0_effects_validation_closeout.py",
+  "script_sha256": "837fd30491d5d113b8f7e7853e34087bf13038bd71af679b27fbd1be086e0d1a",
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "executable": "D:\\Anaconda\\python.exe"
+  },
+  "method": {
+    "m0_formula": "L = E + A*N_params_B**(-alpha) + B*D_tokens_B**(-beta)",
+    "elasticity_denominator": "M0 fitted prediction at each fixed B1 checkpoint",
+    "bootstrap": "Reuse all saved successful complete-trajectory cluster bootstrap parameter fits; pointwise percentile interval 2.5-97.5; no refit or resampling.",
+    "independent_clusters": 8,
+    "validation_pooling": "No pooled B2-B5 metric; report by source only."
+  },
+  "input_sha256": {
+    "results/q2_scaling_baseline/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "results/q2_scaling_baseline/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "results/q2_scaling_baseline/v1/cluster_bootstrap_estimates.csv": "c9d043ab768891a59657ee5df6c1df34e5ae5c44533723b5803f8157052d4668",
+    "results/q2_scaling_baseline/v1/validation_metrics_by_source.csv": "15ea2b015ba1bd1dad49b92999b13b97d26a676be3bfb68dd11c63f574755af0",
+    "results/q2_scaling_baseline/v1/validation_metrics_by_stratum.csv": "0167fe3480330135919c812902dc6786d64e0fbf218f62c481f35c4e7aa75798",
+    "results/q2_scaling_baseline/v1/validation_comparability.json": "73fcacf9a212cd5c63428329021e7389e8f5e0d1dbb582c31a1d2aea5d908a75",
+    "results/q2_scaling_baseline/v1/复现清单.json": "14ba89697200d34d506add1a327044251084291b98a8d5804be07c4673f97fb8",
+    "Q2/03_结果/经典ScalingLaw基线/v1/gate0_b1_trajectory_mapping.csv": "ea2c1fd78c7a84e0f41d70a57b630089781b8d8cbd9c9a9434e6ea7c787c0c37",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b3_validation_closeout.md": "21f6928afc99cf6bb71e5ba2eb753143d4c63d229ec0e956a66ae8530b1a40fa",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b4_b5_loss_comparability_audit.md": "ea6232e746a4c96ba3583fe0d6b273b2cd82bf81721d07ca824d66f5c7310dd6",
+    "Q2/03_结果/B2半合成压力测试/v1/b2_cerebras_stress_report.md": "8443b3213fdee1564cc59b8e96779402b5c32f08dad27634181350ac3d29cbb1",
+    "Q2/03_结果/p配比可行性审计/v1/q2_p_feasibility_audit.md": "15c61269a83f104f2020417f900f4b78626c7a5bc029a2817d6d46eba5c48a76",
+    "Q1/03_结果/Q1_最终收口/q1_final_decision.md": "1cf2fea7aa2b55a51f12310d80f38dc0eb7ce87a6e9a6fe2770ad156450681ca",
+    "src/q2_m0_effects_validation_closeout.py": "837fd30491d5d113b8f7e7853e34087bf13038bd71af679b27fbd1be086e0d1a"
+  },
+  "checks": {
+    "checkpoint_rows": 1176,
+    "trajectory_clusters": 8,
+    "bootstrap_replicates": 1000,
+    "all_derived_numeric_finite": true,
+    "baseline_fit_scope": "B1 only",
+    "bootstrap_expected": 1000,
+    "bootstrap_observed": 1000,
+    "max_prediction_reproduction_delta": 4.440892098500626e-16,
+    "validation_rows_by_source": {
+      "B2": 1029,
+      "B3": 4000,
+      "B4": 57,
+      "B5": 44
+    },
+    "validation_pooled_metric": null
+  },
+  "output_sha256_excluding_this_manifest": {
+    "results/q2_scaling_baseline/v1/q2_m0_marginal_effects_by_checkpoint.csv": "a2e1b1408ba1e68990244b0cdfad97d25c4a8f73a74333e206ae1f0e83e43530",
+    "results/q2_scaling_baseline/v1/q2_m0_marginal_effects_by_size.csv": "6230d61ba866ac7d7c8f63c8eaa30614d8e58ce4e588fe0bb244229c25635ade",
+    "results/q2_scaling_baseline/v1/q2_m0_marginal_effects_report.md": "5da3bdc13fc9c92081dd856870e8a422cda11307a21660743130ef54a5dbc285",
+    "results/q2_scaling_baseline/v1/q2_validation_scope_closeout.md": "551d8d00e16f5106a2239cd0dadc92b1e4ee3c305802140d2b0a9215964c1e25",
+    "Q2/03_结果/经典ScalingLaw基线/v1/q2_m0_marginal_effects_by_checkpoint.csv": "a2e1b1408ba1e68990244b0cdfad97d25c4a8f73a74333e206ae1f0e83e43530",
+    "Q2/03_结果/经典ScalingLaw基线/v1/q2_m0_marginal_effects_by_size.csv": "6230d61ba866ac7d7c8f63c8eaa30614d8e58ce4e588fe0bb244229c25635ade",
+    "Q2/03_结果/经典ScalingLaw基线/v1/q2_m0_marginal_effects_report.md": "5da3bdc13fc9c92081dd856870e8a422cda11307a21660743130ef54a5dbc285",
+    "Q2/03_结果/经典ScalingLaw基线/v1/q2_validation_scope_closeout.md": "551d8d00e16f5106a2239cd0dadc92b1e4ee3c305802140d2b0a9215964c1e25",
+    "docs/q2_m0_marginal_effects_by_checkpoint.csv": "a2e1b1408ba1e68990244b0cdfad97d25c4a8f73a74333e206ae1f0e83e43530",
+    "docs/q2_m0_marginal_effects_by_size.csv": "6230d61ba866ac7d7c8f63c8eaa30614d8e58ce4e588fe0bb244229c25635ade",
+    "docs/q2_m0_marginal_effects_report.md": "5da3bdc13fc9c92081dd856870e8a422cda11307a21660743130ef54a5dbc285",
+    "docs/q2_validation_scope_closeout.md": "551d8d00e16f5106a2239cd0dadc92b1e4ee3c305802140d2b0a9215964c1e25",
+    "Q2/02_代码/q2_m0_effects_validation_closeout.py": "837fd30491d5d113b8f7e7853e34087bf13038bd71af679b27fbd1be086e0d1a"
+  },
+  "manifest_note": "This manifest is mirrored to all three delivery locations; its own hash is intentionally excluded to avoid recursion."
+}

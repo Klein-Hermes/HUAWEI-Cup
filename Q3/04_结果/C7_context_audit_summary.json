@@ -1,0 +1,57 @@
+{
+  "artifact": "Q3 C7 context length audit",
+  "scope": "Architecture max context length scenarios; not a claim about deployed task windows.",
+  "input": {
+    "path": "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv",
+    "sha256": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc",
+    "required_columns": [
+      "model_name",
+      "max_position_embeddings"
+    ]
+  },
+  "validation": {
+    "row_count": 45,
+    "unique_model_name_count": 45,
+    "blank_model_name_count": 0,
+    "blank_or_invalid_context_count": 0,
+    "duplicate_model_name_count": 0,
+    "all_context_lengths_positive_integers": true
+  },
+  "critical_length": {
+    "training_cost_coefficient": 6,
+    "attention_coefficient_eta": 0.0002,
+    "tokens": 30000,
+    "derivation": "C_train=6ND and C_attn=eta*N*D*L_ctx; equality gives L_crit=6/eta.",
+    "attention_to_training_cost_ratio": "L_ctx / L_crit"
+  },
+  "context_length_distribution": [
+    {
+      "max_position_embeddings": 2048,
+      "model_count": 18
+    },
+    {
+      "max_position_embeddings": 4096,
+      "model_count": 8
+    },
+    {
+      "max_position_embeddings": 8192,
+      "model_count": 7
+    },
+    {
+      "max_position_embeddings": 32768,
+      "model_count": 11
+    },
+    {
+      "max_position_embeddings": 131072,
+      "model_count": 1
+    }
+  ],
+  "threshold_comparison": {
+    "above_critical_count": 12,
+    "at_or_below_critical_count": 33,
+    "above_critical_fraction": 0.26666666666666666,
+    "definition": "above means strictly greater than L_crit"
+  },
+  "interpretation_limit": "max_position_embeddings is an architecture-supported upper bound; it may differ from the context window used by the task.",
+  "generated_at_utc": "2026-09-24T05:17:28+00:00"
+}

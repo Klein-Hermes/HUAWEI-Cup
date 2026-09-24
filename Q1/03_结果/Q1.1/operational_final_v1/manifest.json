@@ -1,0 +1,84 @@
+{
+  "generated_date": "2026-09-24",
+  "human_review_scope": {
+    "machine_translation_assisted": true,
+    "n_representative_for_candidate_comparison": 24,
+    "n_reviewed": 30,
+    "reviewer_candidate_selected": null,
+    "reviewer_order_independently_randomized": false
+  },
+  "no_model_recalculation": true,
+  "operation": "export_existing_q1_1_candidate_scores_and_freeze_operational_primary",
+  "outputs_sha256": {
+    "dataset_summary_operational.csv": "b3324f9cbb54f645c4a857e220bf5e9c7c8c19769247f1fada0ccdb690a4b957",
+    "decision_status.json": "1c5891827ed167181ad2517520684aec11690ec5202ae5ee4b3cc38cd9e5e3d7",
+    "domain_scores_operational.csv": "1e706aeb36579cc19a1ed737842b3dc02a5bb2e8edcbd9fa550caf7ba7e2f7fd",
+    "sample_scores_operational.csv.gz": "b2b115580f56ef5f2e280022b41436a2534e077c86cc6d285fd295219d669955",
+    "score_coverage.csv": "a330e05aa6f8d7dba3fb7841982d586a5907e3f16903d570d1465d42775d28b1",
+    "summary.md": "f26c15bab5dd97775258ac35584e52ddf8cf2a55b5ce45f75835f9e2b1f28076"
+  },
+  "q1_2_candidate_score_parity": {
+    "matched_rows": 272505,
+    "max_abs_q_equal_difference": 5.551115123125783e-16,
+    "max_abs_q_huber_difference": 5.551115123125783e-16,
+    "tolerance": 1e-12
+  },
+  "required_domain_coverage": {
+    "a1_domains": 7,
+    "a2_domains": [
+      "arxiv"
+    ],
+    "a3_domains": [
+      "github"
+    ],
+    "all_required_groups_scored": true
+  },
+  "sample_score_integrity": {
+    "candidate_scores_in_unit_interval": true,
+    "missing_q_equal": 0,
+    "missing_q_huber": 0,
+    "n_valid_indicators_max": 22,
+    "n_valid_indicators_min": 21,
+    "unique_dataset_domain_id_subpath_keys": 272505
+  },
+  "schema_version": "q1-operational-q-bundle-v1",
+  "selected_candidate": "q_equal",
+  "sensitivity_candidate": "q_huber",
+  "source_rows_by_dataset": {
+    "a1": 51230,
+    "a2": 17523,
+    "a3": 203752
+  },
+  "source_rows_by_dataset_domain": {
+    "a1/arxiv": 1419,
+    "a1/book": 171,
+    "a1/c4": 10000,
+    "a1/commoncrawl": 9640,
+    "a1/github": 10000,
+    "a1/stackexchange": 10000,
+    "a1/wikipedia": 10000,
+    "a2/arxiv": 17523,
+    "a3/github": 203752
+  },
+  "source_sample_count": 272505,
+  "source_sha256": {
+    "Q1/03_结果/Q1.1/human_spotcheck_final/received_20260924/candidate_human_comparison.csv": "274ba7742f77aebe9bf3d8a8c1bf4dcd36241e3f40936458e6d84c34e0125e47",
+    "Q1/03_结果/Q1.1/human_spotcheck_final/received_20260924/decision_status.json": "ff8fa8d848e92ff3303523080e2e279054bc572c6d5dfb561f4a0c6b92d44fe7",
+    "Q1/03_结果/Q1.1/human_spotcheck_final/received_20260924/human_check_metrics.csv": "41b4319677b2c1ff3590e1c172f85f576b02e8e94b916e043b17a7f3916df3a1",
+    "Q1/03_结果/Q1.1/human_spotcheck_final/received_20260924/paired_bootstrap.csv": "4c2e72301ecc079d7e88a7cc71b9e985bbc40169ff032e825ce58ef7f303c7e9",
+    "Q1/03_结果/Q1.1/human_spotcheck_final/received_20260924/summary.md": "a2a488cba5ff1c904f4edd8edf6858b77a9ca446f48730005aacbde2579f4f75",
+    "Q1/03_结果/Q1.3/v1/q1_3_run_report.md": "1008f21235bf54f128b1d042ed0b4a486710d5d459e50ee1962d56c6ea445b7c",
+    "results/q1_1/v1/a1_macro_summary.csv": "6b7cca1865ef6785981180fb0aea41fe839a5b6c12cb012bb21fa089d8b383f9",
+    "results/q1_1/v1/domain_confidence_intervals.csv": "f97a9c4a1ba3542fc20f90eaafda064fdc52a80f058584bb2eb20561ca4d6ab1",
+    "results/q1_1/v1/domain_summary.csv": "41863fd2530baa32616c06cfc8c7e45e1d4118c56f15fd8d0eb0b17ec8272248",
+    "results/q1_1/v1/manifest.json": "ae5a72f147e80180ba023af3bb217dd6684d6af5bdcc894e75cbe1bd13e1ee44",
+    "results/q1_1/v1/same_domain_differences.csv": "8843ba5052d6c5496d11cbcaff2e5f2930d3e436c5635df7d8aeb48f80f73532",
+    "results/q1_1/v1/sample_scores.csv.gz": "52843766cf9d4d0edb18d85e2a59296e906a08dda17c7f2b628cd4798bcb7276",
+    "results/q1_2_conflict_model/v1/manifest.json": "d8a37797a4ca4f4e1d39dd0deaeb4a0947f431aaeddff585dd4ebb9fe9f46302",
+    "results/q1_2_conflict_model/v1/sample_scores.csv.gz": "736b8f22703fa3be044679743eadd6149ed7805c6fb863b403b5110bc329f2ce",
+    "results/q1_3/pq_extension_v1/manifest.json": "8eb746ef414569ed59aa6a3b069a7236b9f01e675a42336fb0721aa0813e4259",
+    "results/q1_3/pq_extension_v1/q1_3_pq_extension_report.md": "d376e853caa763beae2e8a236bbcaa4e42e6078096844fa8e4584c7078a96432",
+    "src/finalize_q1_operational_scores.py": "72aabb684d101e31b919f00325fb53312316585285ddb8b23124d6cd87c5e6c0"
+  },
+  "status": "PASS"
+}

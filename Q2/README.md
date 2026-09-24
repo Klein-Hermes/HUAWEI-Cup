@@ -4,7 +4,7 @@
 
 ## 状态
 
-经典基线 Loss=f(N,D) 已拟合并完成受限验证；公共实验框架已用 B1/M0 演练；B2 Cerebras 半合成压力测试已生成。Q2 配比可行性审计已完成，当前 B1–B5 的 p-only 数据 Gate 为 **FAIL**：没有已核验并联接到 Loss 的数值 p 向量；Pythia 配方重建和 B4/B5 文献级追溯仍是条件性后续工作。完整广义 Q2 尚未完成，也没有 Q2 的 M1 拟合器；M2 还需冻结版本的最终质量分数 Q。
+经典基线 Loss=f(N,D) 已拟合并完成受限验证；公共实验框架已用 B1/M0 演练；B2 Cerebras 半合成压力测试已生成。Q2 配比可行性审计已完成，当前 B1–B5 的 p-only 数据 Gate 为 **FAIL**：没有已核验并联接到 Loss 的数值 p 向量。Q1.3 的 A4/A5 p-only 结果已完成，但其跨尺度预测没有通过，不能替代 B 组逐行配比。Q1.1 两份 30 条评审表已完成有限分析，项目负责人已选择 `q_huber` 并冻结正式接口；人工评审本身没有区分两候选。此外 M2 仍需要独立于 p 的 Q 变化识别依据。
 
 ## 目录
 
@@ -27,6 +27,10 @@
 - B4/B5 审计交付副本：05_审计交付/README.md
 - 论文原始网址：05_审计交付/论文网址清单.md
 - p 可行性审计：03_结果/p配比可行性审计/v1/q2_p_feasibility_audit.md
+- Q2 主模型路线复审：01_方案说明/Q2_主模型路线复审_2026-09-24.md
+- Q2 方法与局限性草稿：01_方案说明/Q2_方法与局限性草稿_2026-09-24.md
+- B3 逐轨迹收口：03_结果/经典ScalingLaw基线/v1/b3_validation_closeout.md
+- p 来源一次性补查：05_审计交付/q2_p_provenance_one_time_supplement.md
 
 ## 复现命令
 
@@ -38,3 +42,25 @@
     python src/f_q2_p_feasibility_audit.py
 
 B2 结果为半合成压力测试，不是 Cerebras 原始训练日志或独立外部验证。B2/B3 不作为独立真实验证；B4/B5 的评测口径可比性未证实。B1 只有 8 条独立轨迹，Bootstrap 区间仅作稳定性提示。
+
+## 路线复审（2026-09-24）
+
+原题要求把附件 A 的 Q、p 信息与附件 B 的 Loss 规律通过可检验假设连接，并估计边际效应、弹性与替代关系。当前保留 B1 的 M0；A4/A5 p-only 结果作为来源内证据；B1–B5 的 p Gate 继续为 FAIL，不能声称 B 组 p 效应已识别。B3 已形成单独的逐轨迹收口报告，只支持 Pythia 同来源插值检查。
+
+本路线复审生成时尚未收到评审表；其后两份 30 条评审表完成有限分析，项目负责人选择 `q_huber`，正式接口已生成。人工核查没有选出 q_equal/q_huber 胜者，选择记录为操作性决定。见 [Q1 最终收口审计](../results/q1_final/q1_final_decision.md)、[Q1 交付物总清单](../results/q1_final/Q1交付物总清单.md) 、[Q1 样本级 Q 接口](../results/q1_final/q1_final_quality.csv) 与 [Q1 领域级 Q](../results/q1_final/q1_final_domain_quality.csv)。M2 仍需可识别的独立 Q 变化；B 侧 p Gate 仍为 FAIL。路线、门禁和可写结论见 [Q2 主模型路线复审](01_方案说明/Q2_主模型路线复审_2026-09-24.md)。
+
+## 方案文档副本补充
+
+`01_方案说明/Q2_p配比可行性审计.md` 是项目 `docs/Q2_p配比可行性审计.md` 的副本；审计运行结果见 `03_结果/p配比可行性审计/v1/`。
+
+## M0 边际效应与验证收口
+
+- 边际效应与弹性报告：`03_结果/经典ScalingLaw基线/v1/q2_m0_marginal_effects_report.md`
+- B1 逐检查点效应与 Bootstrap 区间：`03_结果/经典ScalingLaw基线/v1/q2_m0_marginal_effects_by_checkpoint.csv`
+- 8 条轨迹的尺度摘要：`03_结果/经典ScalingLaw基线/v1/q2_m0_marginal_effects_by_size.csv`
+- B2–B5 验证边界：`03_结果/经典ScalingLaw基线/v1/q2_validation_scope_closeout.md`
+- 输入输出哈希清单：`03_结果/经典ScalingLaw基线/v1/q2_m0_effects_validation_manifest.json`
+- 复现命令：`D:/Anaconda/python.exe src/q2_m0_effects_validation_closeout.py`
+- Q2 代码副本：`02_代码/q2_m0_effects_validation_closeout.py`；入口源文件位于项目 `src/`。
+
+以上结果由已冻结 M0 参数及保存的 cluster Bootstrap 样本派生，不重拟合 M0。B4/B5 不与 B1 合并评分；p-only Gate 仍为 FAIL。

@@ -1,0 +1,10 @@
+dataset,source_domain,q1_1_required_domain,q1_3_direct_or_near_mapping,n_records,n_scored_main,n_missing_main,n_scored_huber,n_missing_huber,scored_rate_main,scored_rate_huber,n_valid_indicators_min,n_valid_indicators_max,mean_n_valid_indicators,mean_indicator_coverage,n_unit_suspect_records,n_unicode_cf_cc_records,n_unicode_broad_records
+a1,arxiv,true,true,1419,1419,0,1419,0,1.0,1.0,22,22,22.0,1.0,0,3,3
+a1,book,true,true,171,171,0,171,0,1.0,1.0,22,22,22.0,1.0,0,17,19
+a1,c4,true,false,10000,10000,0,10000,0,1.0,1.0,22,22,22.0,1.0,0,65,74
+a1,commoncrawl,true,true,9640,9640,0,9640,0,1.0,1.0,21,22,21.999585062240662,0.9999811391927574,0,252,267
+a1,github,true,true,10000,10000,0,10000,0,1.0,1.0,22,22,22.0,1.0,0,11,14
+a1,stackexchange,true,true,10000,10000,0,10000,0,1.0,1.0,22,22,22.0,1.0,2,31,37
+a1,wikipedia,true,true,10000,10000,0,10000,0,1.0,1.0,21,22,21.9986,0.9999363636363636,0,49,49
+a2,arxiv,true,true,17523,17523,0,17523,0,1.0,1.0,22,22,22.0,1.0,0,0,0
+a3,github,true,true,203752,203752,0,203752,0,1.0,1.0,21,22,21.999995092072716,0.9999997769123963,9,0,0

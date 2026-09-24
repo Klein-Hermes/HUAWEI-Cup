@@ -1,0 +1,7 @@
+﻿blind_id,diagnostic_category,source_domain,q_equal,q_huber,reviewer_a_overall_quality,reviewer_b_overall_quality,human_consensus,rank_q_equal_among_6,rank_q_huber_among_6,rank_human_among_6
+Q11-0553,extreme_high,c4,0.73475924165123,0.738126687255695,4,4,4.0,6.0,6.0,6.0
+Q11-0648,candidate_disagreement,github,0.436548501027797,0.383970014802534,2,2,2.0,2.0,2.0,3.5
+Q11-0491,high_conflict,wikipedia,0.481251558362511,0.452284560574986,1,1,1.0,4.0,4.0,1.0
+Q11-0666,candidate_disagreement,github,0.459081785617693,0.416299684554994,2,1,1.5,3.0,3.0,2.0
+Q11-0089,extreme_low,github,0.238743664075684,0.22851742521455,2,2,2.0,1.0,1.0,3.5
+Q11-0486,high_conflict,c4,0.52600818513265,0.553491450747826,3,4,3.5,5.0,5.0,5.0

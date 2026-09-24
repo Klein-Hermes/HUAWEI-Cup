@@ -1,0 +1,25 @@
+{
+  "artifact": "Q3 C7 audit reproducibility manifest",
+  "command": "python Q3/03_代码/audit_q3_c7_contexts.py",
+  "python_version": "3.10.4",
+  "implementation": "CPython",
+  "script": {
+    "path": "Q3/03_代码/audit_q3_c7_contexts.py",
+    "sha256": "6994a89843a7cc48036abf46d7dfd8e662da4e34e96da9a0da28273fb95e5f04"
+  },
+  "input": {
+    "path": "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv",
+    "sha256": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+  },
+  "parameters": {
+    "training_cost_coefficient": 6,
+    "attention_coefficient_eta": 0.0002,
+    "critical_context_length": 30000,
+    "critical_comparison": "strictly greater than 30,000 tokens"
+  },
+  "outputs": {
+    "Q3/02_数据审计/C7_context_by_model.csv": "b1ebd27b8606a6f002bbe974d56b0e2862287e0644ce97a2ff0a9ba19c273ac4",
+    "Q3/04_结果/C7_context_audit_summary.json": "0218eafdfadf3fd110b244c0377559741ecc3efd47555a43c524e1ac3bfec373"
+  },
+  "generated_at_utc": "2026-09-24T05:17:28+00:00"
+}

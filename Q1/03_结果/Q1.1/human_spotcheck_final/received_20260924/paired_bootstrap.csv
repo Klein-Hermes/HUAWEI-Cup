@@ -1,0 +1,4 @@
+﻿metric,point_estimate,ci_95_low,ci_95_high,valid_repetitions,requested_repetitions,seed,method
+spearman_q_equal_vs_consensus,0.566691983440891,0.18128048197555086,0.820848183224424,2000,2000,20260924,paired case bootstrap over the 24 representative items; exploratory
+spearman_q_huber_vs_consensus,0.566691983440891,0.1791349153436557,0.8176639220424976,2000,2000,20260924,paired case bootstrap over the 24 representative items; exploratory
+delta_huber_minus_equal,0.0,-0.05898703542277287,0.06231504599466164,2000,2000,20260924,paired case bootstrap over the 24 representative items; exploratory

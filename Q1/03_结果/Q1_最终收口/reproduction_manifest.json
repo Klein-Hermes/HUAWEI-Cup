@@ -1,0 +1,630 @@
+{
+  "schema_version": "q1-final-reproduction-manifest-v2",
+  "generated_local_date": "2026-09-24",
+  "stage": "stage2_interface_frozen",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "selection_gate": {
+    "PRESET_RULE_FOUND": false,
+    "status": "FROZEN_WITH_LIMITATIONS",
+    "operational_q": "q_huber",
+    "sensitivity_q": "q_equal",
+    "selection_basis": "project_operational_choice",
+    "formal_interface_generated": true
+  },
+  "audit_methods": {
+    "preset_rule_history": "Searched reachable committed history for q_equal/q_huber and selection/freeze references up to the review receipt. The committed Q1.1 manifest says final selection pending blind ratings; no valid pre-review unique-winner rule was found.",
+    "reachable_git_commit_count": 20,
+    "topic_analysis_report_git_status": "unchanged_in_working_tree",
+    "topic_analysis_report_sha256": "2a2519b2ce7245b522f21d87252fb753cfea97d24c44dbce8674e858963595bb",
+    "topic_report_read_error": null,
+    "modified_topic_analysis_report": false,
+    "preserve_q1_1_report_manifest_hash_drift": true,
+    "q1_1_report_manifest_sha256": "a15134d61d4707f2ee0ef507be1ef47aa0a9c52c77972f629d27f438c48a2051",
+    "q1_1_report_current_sha256": "1085f6c44b26adae54a7e1da973e77a21ad099a8e82409383277dba4f4ea267c",
+    "review_receipt_utc": "2026-09-24T04:39:50Z"
+  },
+  "inputs": {
+    "task_spec": {
+      "path": "Q1\\01_方案与设计\\Q1最终收口与操作性主Q冻结任务说明_修订版.md",
+      "sha256": "2b9284e21636e977794fd569aec3b8d23a5d9a361b5f21b208e3350c25282a6d"
+    },
+    "q1_1_base_manifest": {
+      "path": "results\\q1_1\\v1\\manifest.json",
+      "sha256": "ae5a72f147e80180ba023af3bb217dd6684d6af5bdcc894e75cbe1bd13e1ee44"
+    },
+    "q1_1_candidate_domain_summary": {
+      "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\domain_summary.csv",
+      "expected_sha256": "41863fd2530baa32616c06cfc8c7e45e1d4118c56f15fd8d0eb0b17ec8272248",
+      "actual_sha256": "41863fd2530baa32616c06cfc8c7e45e1d4118c56f15fd8d0eb0b17ec8272248",
+      "match": true,
+      "read_error": null
+    },
+    "q1_1_candidate_sample_scores": {
+      "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\sample_scores.csv.gz",
+      "expected_sha256": "52843766cf9d4d0edb18d85e2a59296e906a08dda17c7f2b628cd4798bcb7276",
+      "actual_sha256": "52843766cf9d4d0edb18d85e2a59296e906a08dda17c7f2b628cd4798bcb7276",
+      "match": true,
+      "read_error": null
+    },
+    "review_analysis_manifest": {
+      "path": "Q1\\03_结果\\Q1.1\\human_spotcheck_final\\received_20260924\\reproduction_manifest.json",
+      "sha256": "b3933ea908cc329a8f350f696ce26f1099e5a9e011f185dbd67d30cc50fc8601"
+    },
+    "reviewer_source_workbooks": [
+      {
+        "path": "D:\\Tencent  document\\xwechat_files\\wxid_52c3oxo44hgm22_c783\\msg\\file\\2026-09\\reviewer1_中文翻译版(1).xlsx",
+        "expected_sha256": "e4ab3f73023b6d3f60ed56d5f3bc91388cddae96484fc510511f0379612f6e6b",
+        "actual_sha256": "e4ab3f73023b6d3f60ed56d5f3bc91388cddae96484fc510511f0379612f6e6b",
+        "match": true,
+        "read_error": null,
+        "key": "reviewer_a"
+      },
+      {
+        "path": "D:\\Tencent  document\\xwechat_files\\wxid_52c3oxo44hgm22_c783\\msg\\file\\2026-09\\reviewer1_中文翻译版_zwj.xlsx",
+        "expected_sha256": "0e0860323cb2881672c66a90dca89435ea2d776dbbe43bfeb3e7477024a7238a",
+        "actual_sha256": "0e0860323cb2881672c66a90dca89435ea2d776dbbe43bfeb3e7477024a7238a",
+        "match": true,
+        "read_error": null,
+        "key": "reviewer_b"
+      }
+    ],
+    "q1_3_manifest": {
+      "path": "results\\q1_3\\pq_extension_v1\\manifest.json",
+      "sha256": "8eb746ef414569ed59aa6a3b069a7236b9f01e675a42336fb0721aa0813e4259"
+    }
+  },
+  "verification": {
+    "q1_1_manifest_outputs": {
+      "checked": 18,
+      "matched": 17,
+      "mismatches": [
+        {
+          "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\q1_1_results.md",
+          "expected_sha256": "a15134d61d4707f2ee0ef507be1ef47aa0a9c52c77972f629d27f438c48a2051",
+          "actual_sha256": "1085f6c44b26adae54a7e1da973e77a21ad099a8e82409383277dba4f4ea267c",
+          "match": false,
+          "read_error": null
+        }
+      ]
+    },
+    "review_analysis_outputs": {
+      "checked": 7,
+      "matched": 7,
+      "mismatches": []
+    },
+    "reviewer_source_workbooks": {
+      "checked": 2,
+      "matched": 2,
+      "mismatches": []
+    },
+    "q1_3_inputs_and_code": {
+      "checked": 14,
+      "matched": 14,
+      "mismatches": []
+    },
+    "q1_3_outputs": {
+      "checked": 7,
+      "matched": 7,
+      "mismatches": []
+    },
+    "q1_1_hash_records": [
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\a1_macro_summary.csv",
+        "expected_sha256": "6b7cca1865ef6785981180fb0aea41fe839a5b6c12cb012bb21fa089d8b383f9",
+        "actual_sha256": "6b7cca1865ef6785981180fb0aea41fe839a5b6c12cb012bb21fa089d8b383f9",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\a1_unmarked_vs_full.csv",
+        "expected_sha256": "9e3d7543dcad6efc0615eca88e929141b3e45c5e5dd14e08d407ca5b426484d8",
+        "actual_sha256": "9e3d7543dcad6efc0615eca88e929141b3e45c5e5dd14e08d407ca5b426484d8",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\calibration_sensitivity_parameters.csv",
+        "expected_sha256": "c018fb14bde2e8e4c319167878fa239f8236788e70388154562c2f896917a7dc",
+        "actual_sha256": "c018fb14bde2e8e4c319167878fa239f8236788e70388154562c2f896917a7dc",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\contamination_same_domain_intervals.csv",
+        "expected_sha256": "61c776473f25c02ded54f74ba628d32689fed7b6709bd1f0f627d1ac718e0f62",
+        "actual_sha256": "61c776473f25c02ded54f74ba628d32689fed7b6709bd1f0f627d1ac718e0f62",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\domain_confidence_intervals.csv",
+        "expected_sha256": "f97a9c4a1ba3542fc20f90eaafda064fdc52a80f058584bb2eb20561ca4d6ab1",
+        "actual_sha256": "f97a9c4a1ba3542fc20f90eaafda064fdc52a80f058584bb2eb20561ca4d6ab1",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\domain_rank_sensitivity.csv",
+        "expected_sha256": "f2ecef611c1a675d56e889d16b177de659e231c0d4e2e24a1edf6399b7a64eb5",
+        "actual_sha256": "f2ecef611c1a675d56e889d16b177de659e231c0d4e2e24a1edf6399b7a64eb5",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\domain_summary.csv",
+        "expected_sha256": "41863fd2530baa32616c06cfc8c7e45e1d4118c56f15fd8d0eb0b17ec8272248",
+        "actual_sha256": "41863fd2530baa32616c06cfc8c7e45e1d4118c56f15fd8d0eb0b17ec8272248",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\indicator_weights.csv",
+        "expected_sha256": "3b272c4a46c03d560dd475d6f391d82ef89f81594c0c3796aafa509c0e2e5105",
+        "actual_sha256": "3b272c4a46c03d560dd475d6f391d82ef89f81594c0c3796aafa509c0e2e5105",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\q1_1_results.md",
+        "expected_sha256": "a15134d61d4707f2ee0ef507be1ef47aa0a9c52c77972f629d27f438c48a2051",
+        "actual_sha256": "1085f6c44b26adae54a7e1da973e77a21ad099a8e82409383277dba4f4ea267c",
+        "match": false,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\review_packet\\blind_review_form.csv",
+        "expected_sha256": "625f9a1965e7c3a1f6d1357f96affac2cf779317cff9e790baba0850d9f134a1",
+        "actual_sha256": "625f9a1965e7c3a1f6d1357f96affac2cf779317cff9e790baba0850d9f134a1",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\review_packet\\blind_review_samples.md",
+        "expected_sha256": "89f50edff765124927c650d589c5f4c7029cc3b4a005b72603a3080054cb1aeb",
+        "actual_sha256": "89f50edff765124927c650d589c5f4c7029cc3b4a005b72603a3080054cb1aeb",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\review_packet\\restricted_id_mapping.csv",
+        "expected_sha256": "d7c5267c14c57c09a6b6ea7a026ff7d9b6abb413d3dd291baf2866fb57662ebb",
+        "actual_sha256": "d7c5267c14c57c09a6b6ea7a026ff7d9b6abb413d3dd291baf2866fb57662ebb",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\review_packet\\sampling_frame.csv",
+        "expected_sha256": "f238dd06133a2be1085e121739e0ed59e4a94ebc4c0d1334d3ad83bc30085bd8",
+        "actual_sha256": "f238dd06133a2be1085e121739e0ed59e4a94ebc4c0d1334d3ad83bc30085bd8",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\review_packet\\validation_scope.md",
+        "expected_sha256": "93b6b992db4701ef69c62bdc6fe97850e440b81c883c11a74bf2d4e5d3660663",
+        "actual_sha256": "93b6b992db4701ef69c62bdc6fe97850e440b81c883c11a74bf2d4e5d3660663",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\same_domain_differences.csv",
+        "expected_sha256": "8843ba5052d6c5496d11cbcaff2e5f2930d3e436c5635df7d8aeb48f80f73532",
+        "actual_sha256": "8843ba5052d6c5496d11cbcaff2e5f2930d3e436c5635df7d8aeb48f80f73532",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\sample_score_sensitivity.csv",
+        "expected_sha256": "26bf74f693a9de4e3683ed62ec7f46b2a85acb1853f864eabb4a607eb0f9a8bf",
+        "actual_sha256": "26bf74f693a9de4e3683ed62ec7f46b2a85acb1853f864eabb4a607eb0f9a8bf",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\sample_scores.csv.gz",
+        "expected_sha256": "52843766cf9d4d0edb18d85e2a59296e906a08dda17c7f2b628cd4798bcb7276",
+        "actual_sha256": "52843766cf9d4d0edb18d85e2a59296e906a08dda17c7f2b628cd4798bcb7276",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\score_sensitivity_domain.csv",
+        "expected_sha256": "b618811670fa8f1d41d01172c87014d82af1fa467eccf44a2fd8bc4aafae12b1",
+        "actual_sha256": "b618811670fa8f1d41d01172c87014d82af1fa467eccf44a2fd8bc4aafae12b1",
+        "match": true,
+        "read_error": null
+      }
+    ],
+    "review_analysis_hash_records": [
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\Q1\\03_结果\\Q1.1\\human_spotcheck_final\\received_20260924\\candidate_human_comparison.csv",
+        "expected_sha256": "274ba7742f77aebe9bf3d8a8c1bf4dcd36241e3f40936458e6d84c34e0125e47",
+        "actual_sha256": "274ba7742f77aebe9bf3d8a8c1bf4dcd36241e3f40936458e6d84c34e0125e47",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\Q1\\03_结果\\Q1.1\\human_spotcheck_final\\received_20260924\\decision_status.json",
+        "expected_sha256": "ff8fa8d848e92ff3303523080e2e279054bc572c6d5dfb561f4a0c6b92d44fe7",
+        "actual_sha256": "ff8fa8d848e92ff3303523080e2e279054bc572c6d5dfb561f4a0c6b92d44fe7",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\Q1\\03_结果\\Q1.1\\human_spotcheck_final\\received_20260924\\diagnostic_cases.csv",
+        "expected_sha256": "b3822641b7e03b5af96dcc22de4b99904c0bd16bc566a0ca38e055bc12876be2",
+        "actual_sha256": "b3822641b7e03b5af96dcc22de4b99904c0bd16bc566a0ca38e055bc12876be2",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\Q1\\03_结果\\Q1.1\\human_spotcheck_final\\received_20260924\\human_check_metrics.csv",
+        "expected_sha256": "41b4319677b2c1ff3590e1c172f85f576b02e8e94b916e043b17a7f3916df3a1",
+        "actual_sha256": "41b4319677b2c1ff3590e1c172f85f576b02e8e94b916e043b17a7f3916df3a1",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\Q1\\03_结果\\Q1.1\\human_spotcheck_final\\received_20260924\\human_consensus.csv",
+        "expected_sha256": "fcf09602a7d574d619ec416c16192696e1ac65a2317ba66fff277585565da75d",
+        "actual_sha256": "fcf09602a7d574d619ec416c16192696e1ac65a2317ba66fff277585565da75d",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\Q1\\03_结果\\Q1.1\\human_spotcheck_final\\received_20260924\\paired_bootstrap.csv",
+        "expected_sha256": "4c2e72301ecc079d7e88a7cc71b9e985bbc40169ff032e825ce58ef7f303c7e9",
+        "actual_sha256": "4c2e72301ecc079d7e88a7cc71b9e985bbc40169ff032e825ce58ef7f303c7e9",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\Q1\\03_结果\\Q1.1\\human_spotcheck_final\\received_20260924\\summary.md",
+        "expected_sha256": "a2a488cba5ff1c904f4edd8edf6858b77a9ca446f48730005aacbde2579f4f75",
+        "actual_sha256": "a2a488cba5ff1c904f4edd8edf6858b77a9ca446f48730005aacbde2579f4f75",
+        "match": true,
+        "read_error": null
+      }
+    ],
+    "q1_3_input_hash_records": [
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\domain_mapping_guide.csv",
+        "expected_sha256": "4a4479f41b9f46116e688cd0c13ccdad4e687192fc1a38c4add690771ebff480",
+        "actual_sha256": "4a4479f41b9f46116e688cd0c13ccdad4e687192fc1a38c4add690771ebff480",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\domain_summary.csv",
+        "expected_sha256": "41863fd2530baa32616c06cfc8c7e45e1d4118c56f15fd8d0eb0b17ec8272248",
+        "actual_sha256": "41863fd2530baa32616c06cfc8c7e45e1d4118c56f15fd8d0eb0b17ec8272248",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\score_sensitivity_domain.csv",
+        "expected_sha256": "b618811670fa8f1d41d01172c87014d82af1fa467eccf44a2fd8bc4aafae12b1",
+        "actual_sha256": "b618811670fa8f1d41d01172c87014d82af1fa467eccf44a2fd8bc4aafae12b1",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_1\\v1\\domain_rank_sensitivity.csv",
+        "expected_sha256": "f2ecef611c1a675d56e889d16b177de659e231c0d4e2e24a1edf6399b7a64eb5",
+        "actual_sha256": "f2ecef611c1a675d56e889d16b177de659e231c0d4e2e24a1edf6399b7a64eb5",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\train_mixture_1m.csv",
+        "expected_sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8",
+        "actual_sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\train_pile_loss_1m.csv",
+        "expected_sha256": "49a959aa07ce5c20831d5abe3a7896ff0cd90a398bd407c8913fd5588be0465a",
+        "actual_sha256": "49a959aa07ce5c20831d5abe3a7896ff0cd90a398bd407c8913fd5588be0465a",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_mixture_1m.csv",
+        "expected_sha256": "197267b7d6f15367e2f46c881e564c35b0d34e51b1754bb09d07e650cf8e1ce8",
+        "actual_sha256": "197267b7d6f15367e2f46c881e564c35b0d34e51b1754bb09d07e650cf8e1ce8",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_pile_loss_1m.csv",
+        "expected_sha256": "e027b1674f60140a65a87b5e4a59ab5f09dc33e8fd02c080682678074b160f53",
+        "actual_sha256": "e027b1674f60140a65a87b5e4a59ab5f09dc33e8fd02c080682678074b160f53",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_mixture_60m.csv",
+        "expected_sha256": "197267b7d6f15367e2f46c881e564c35b0d34e51b1754bb09d07e650cf8e1ce8",
+        "actual_sha256": "197267b7d6f15367e2f46c881e564c35b0d34e51b1754bb09d07e650cf8e1ce8",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_pile_loss_60m.csv",
+        "expected_sha256": "8fe69d59ab7dd4fae4736459f4265ec93c7ed1ad1eca407346052560edc72b5b",
+        "actual_sha256": "8fe69d59ab7dd4fae4736459f4265ec93c7ed1ad1eca407346052560edc72b5b",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_mixture_1B.csv",
+        "expected_sha256": "dd38052949c0a5f84165bdcb3ae3a331c7f07efd9bb83848bd579dfc4ce75a2c",
+        "actual_sha256": "dd38052949c0a5f84165bdcb3ae3a331c7f07efd9bb83848bd579dfc4ce75a2c",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_pile_loss_1B.csv",
+        "expected_sha256": "b2451e2b7fa15400688edc39e4d32f21ccbe0fb356e07d62a0e9ccddf247114f",
+        "actual_sha256": "b2451e2b7fa15400688edc39e4d32f21ccbe0fb356e07d62a0e9ccddf247114f",
+        "match": true,
+        "read_error": null
+      }
+    ],
+    "q1_3_code_hash_records": [
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\src\\f_q1_3_pq_extension.py",
+        "expected_sha256": "1d713013e8b3378553352b02ffae61897a991f4239e9748aeec8e883429fa558",
+        "actual_sha256": "1d713013e8b3378553352b02ffae61897a991f4239e9748aeec8e883429fa558",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\src\\f_q1_3_mixture_loss.py",
+        "expected_sha256": "43644a23171192d50fedfc761d142b080e70a2233a11cd41b55b5d7ed9c5026a",
+        "actual_sha256": "43644a23171192d50fedfc761d142b080e70a2233a11cd41b55b5d7ed9c5026a",
+        "match": true,
+        "read_error": null
+      }
+    ],
+    "q1_3_output_hash_records": [
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_3\\pq_extension_v1\\target_metrics.csv",
+        "expected_sha256": "37c51cf46b7da38cc8cfe762790ee1ddbf03fed5ce5ddd656a9518959439a718",
+        "actual_sha256": "37c51cf46b7da38cc8cfe762790ee1ddbf03fed5ce5ddd656a9518959439a718",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_3\\pq_extension_v1\\model_summary.csv",
+        "expected_sha256": "f7ca7a877fd51d09d9b29f82e90e6dc738f037d8aa565dd3ac4888f68cf1204c",
+        "actual_sha256": "f7ca7a877fd51d09d9b29f82e90e6dc738f037d8aa565dd3ac4888f68cf1204c",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_3\\pq_extension_v1\\paired_comparison.csv",
+        "expected_sha256": "c6a8d411af19f27181225feae97420d4020b985ca42ed5e3cbe45d52064b4ad9",
+        "actual_sha256": "c6a8d411af19f27181225feae97420d4020b985ca42ed5e3cbe45d52064b4ad9",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_3\\pq_extension_v1\\oof_and_holdout_predictions.csv",
+        "expected_sha256": "72fd86a0bd140f94a426b201a58749234c1242b08949a721050bbc4f936eac36",
+        "actual_sha256": "72fd86a0bd140f94a426b201a58749234c1242b08949a721050bbc4f936eac36",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_3\\pq_extension_v1\\lambda_selection.csv",
+        "expected_sha256": "f4d961f6df962845fb8a37a2ba7e17d1d64f5292f9a2dbe35c8b2ff4d9b665f1",
+        "actual_sha256": "f4d961f6df962845fb8a37a2ba7e17d1d64f5292f9a2dbe35c8b2ff4d9b665f1",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_3\\pq_extension_v1\\identifiability_audit.csv",
+        "expected_sha256": "3b4c20b4e94af77ff313df8f8a5f76244d2711b7da407314328ba694ac4aa00e",
+        "actual_sha256": "3b4c20b4e94af77ff313df8f8a5f76244d2711b7da407314328ba694ac4aa00e",
+        "match": true,
+        "read_error": null
+      },
+      {
+        "path": "D:\\PycharmProject\\HUAWEI-Cup\\results\\q1_3\\pq_extension_v1\\q1_1_domain_q_candidates_used.csv",
+        "expected_sha256": "0441e16cb0f7fda403452c408a7e8ea7ecac014b95632dc6ab6c9da2bc388276",
+        "actual_sha256": "0441e16cb0f7fda403452c408a7e8ea7ecac014b95632dc6ab6c9da2bc388276",
+        "match": true,
+        "read_error": null
+      }
+    ]
+  },
+  "review_results": {
+    "n_total_each": 30,
+    "n_representative": 24,
+    "n_diagnostic": 6,
+    "quadratic_weighted_cohen_kappa": 0.765146358066712,
+    "inter_rater_spearman": 0.80599522859595,
+    "q_equal_consensus_spearman": 0.566691983440891,
+    "q_huber_consensus_spearman": 0.566691983440891,
+    "paired_difference_ci95": [
+      -0.05898703542277287,
+      0.06231504599466164
+    ],
+    "returned_orders_identical": true,
+    "independent_randomized_order_protocol_met": false,
+    "translation_assisted": true,
+    "independent_scoring_process": "unverified",
+    "winner_selected": false
+  },
+  "q1_3_rerun_required": false,
+  "manifest_note": "This manifest intentionally omits its own hash; hash this file directly after generation.",
+  "generated_local_timestamp": "2026-09-24T14:45:09+08:00",
+  "owner_decision": {
+    "decision_maker": "project_owner",
+    "decision_received_in_current_conversation": "q_huber",
+    "decision_date": "2026-09-24",
+    "basis": "Explicit operational choice by project owner; the human review did not distinguish candidates. No empirical winner claim.",
+    "pre_review_rule_found": false
+  },
+  "execution": {
+    "script_path": "results/q1_final/export_q1_final_interface.py",
+    "script_sha256": "af95a090f06892f8602681d36b8e2dc3e07279bf134facba9976c99b428e397b",
+    "command": "C:\\Users\\86147\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe results/q1_final/export_q1_final_interface.py",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\86147\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "git_commit": null,
+    "git_worktree_source_uncommitted": true,
+    "no_model_recalculation": true,
+    "q1_3_rerun_required": false
+  },
+  "stage2_source_candidate_hashes": {
+    "sample_scores.csv.gz": {
+      "path": "results/q1_1/v1/sample_scores.csv.gz",
+      "sha256": "52843766cf9d4d0edb18d85e2a59296e906a08dda17c7f2b628cd4798bcb7276",
+      "expected_sha256": "52843766cf9d4d0edb18d85e2a59296e906a08dda17c7f2b628cd4798bcb7276",
+      "match": true
+    },
+    "domain_summary.csv": {
+      "path": "results/q1_1/v1/domain_summary.csv",
+      "sha256": "41863fd2530baa32616c06cfc8c7e45e1d4118c56f15fd8d0eb0b17ec8272248",
+      "expected_sha256": "41863fd2530baa32616c06cfc8c7e45e1d4118c56f15fd8d0eb0b17ec8272248",
+      "match": true
+    },
+    "domain_confidence_intervals.csv": {
+      "path": "results/q1_1/v1/domain_confidence_intervals.csv",
+      "sha256": "f97a9c4a1ba3542fc20f90eaafda064fdc52a80f058584bb2eb20561ca4d6ab1",
+      "expected_sha256": "f97a9c4a1ba3542fc20f90eaafda064fdc52a80f058584bb2eb20561ca4d6ab1",
+      "match": true
+    }
+  },
+  "formal_outputs": {
+    "q1_final_quality.csv": {
+      "path": "results/q1_final/q1_final_quality.csv",
+      "rows": 272505,
+      "sha256": "eb48687ecd003fce1dadb2445349126719515eab715724e575df8e32074034da"
+    },
+    "q1_candidate_audit.csv": {
+      "path": "results/q1_final/q1_candidate_audit.csv",
+      "rows": 272505,
+      "sha256": "a6c18fa97efe8c55ebde22581399c5b106a788d34a42984e5294bded7f48a607"
+    },
+    "q1_final_domain_quality.csv": {
+      "path": "results/q1_final/q1_final_domain_quality.csv",
+      "rows": 9,
+      "sha256": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574"
+    }
+  },
+  "interface_validation": {
+    "sample_rows": 272505,
+    "sample_rows_by_dataset": {
+      "a1": 51230,
+      "a2": 17523,
+      "a3": 203752
+    },
+    "primary_key": [
+      "dataset",
+      "source_domain",
+      "sample_id"
+    ],
+    "primary_key_unique": true,
+    "q_operational_equals_source_q_huber_for_all_rows": true,
+    "candidate_audit_separate_from_formal_interface": true,
+    "q_equal_equals_q_sensitivity_for_all_rows": true,
+    "q_huber_missing_count": 0,
+    "q_equal_missing_count": 0,
+    "q_scores_within_unit_interval": true,
+    "domain_rows": 9,
+    "domain_key_unique": true,
+    "domain_coverage_complete": true,
+    "domain_aggregation_extracted_from_existing_q1_1_domain_summary": true,
+    "q1_2_added_to_q_score": false,
+    "q1_2_q_huber_source_parity": {
+      "matched_rows": 272505,
+      "max_abs_difference": 5.551115123125783e-16,
+      "tolerance": 1e-12,
+      "q1_2_source_hash_matches_its_manifest": true
+    }
+  },
+  "stage1_and_current_documents": [
+    {
+      "path": "results/q1_final/q1_final_decision.md",
+      "sha256": "0a45f3e97fb9c6350c8f149cd8a06a38bfcae333408425a674d22ebca69bc985"
+    },
+    {
+      "path": "results/q1_final/q1_q13_consistency_check.md",
+      "sha256": "2e57917aa0f439a0f0b352417500cc076803c176a0171aaa3235c091768a3e43"
+    },
+    {
+      "path": "results/q1_final/Q1交付物总清单.md",
+      "sha256": "7f34e1a34624267e34fc3e7d4b7802956de1e86f4ceb3bf037dd32f8630370af"
+    },
+    {
+      "path": "results/q1_final/q1_final_freeze.json",
+      "sha256": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7"
+    },
+    {
+      "path": "Q1/README.md",
+      "sha256": "a3aa99ccb5d8619b4a445cef7939c1b2f1d1cb3596ac344ab21d2de4a799faf9"
+    },
+    {
+      "path": "Q2/README.md",
+      "sha256": "0e77ce368d95318ca41550c0c5e68bd49ff941ba6803b113d721da5cb8e1727d"
+    }
+  ],
+  "outputs_manifest_note": "This reproduction manifest does not contain its own hash; hash it directly after writing.",
+  "current_final_artifacts": [
+    {
+      "path": "results/q1_final/q1_final_decision.md",
+      "sha256": "0a45f3e97fb9c6350c8f149cd8a06a38bfcae333408425a674d22ebca69bc985"
+    },
+    {
+      "path": "results/q1_final/q1_q13_consistency_check.md",
+      "sha256": "2e57917aa0f439a0f0b352417500cc076803c176a0171aaa3235c091768a3e43"
+    },
+    {
+      "path": "results/q1_final/Q1交付物总清单.md",
+      "sha256": "7f34e1a34624267e34fc3e7d4b7802956de1e86f4ceb3bf037dd32f8630370af"
+    },
+    {
+      "path": "results/q1_final/q1_final_freeze.json",
+      "sha256": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7"
+    },
+    {
+      "path": "results/q1_final/export_q1_final_interface.py",
+      "sha256": "af95a090f06892f8602681d36b8e2dc3e07279bf134facba9976c99b428e397b"
+    },
+    {
+      "path": "results/q1_final/q1_final_quality.csv",
+      "sha256": "eb48687ecd003fce1dadb2445349126719515eab715724e575df8e32074034da"
+    },
+    {
+      "path": "results/q1_final/q1_candidate_audit.csv",
+      "sha256": "a6c18fa97efe8c55ebde22581399c5b106a788d34a42984e5294bded7f48a607"
+    },
+    {
+      "path": "results/q1_final/q1_final_domain_quality.csv",
+      "sha256": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574"
+    }
+  ],
+  "updated_existing_indices": [
+    {
+      "path": "Q1/README.md",
+      "sha256": "a3aa99ccb5d8619b4a445cef7939c1b2f1d1cb3596ac344ab21d2de4a799faf9"
+    },
+    {
+      "path": "Q2/README.md",
+      "sha256": "0e77ce368d95318ca41550c0c5e68bd49ff941ba6803b113d721da5cb8e1727d"
+    }
+  ],
+  "final_status": "FROZEN_WITH_LIMITATIONS",
+  "q_version": "Q1-q_huber-v1",
+  "preserved_legacy_q_equal_bundle": {
+    "path": "Q1/03_结果/Q1.1/operational_final_v1",
+    "selected_candidate_in_legacy_bundle": "q_equal",
+    "outputs_checked": 6,
+    "outputs_hash_match_count": 6,
+    "promoted_to_current_interface": false
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "q1-final-freeze-v2",
+  "stage": "stage2_interface_frozen",
+  "PRESET_RULE_FOUND": false,
+  "status": "FROZEN_WITH_LIMITATIONS",
+  "operational_q": "q_huber",
+  "sensitivity_q": "q_equal",
+  "selected_candidate": "q_huber",
+  "formal_interface_generated": true,
+  "q1_q2_interface_generated": true,
+  "q1_q3_interface_generated": true,
+  "q1_fully_operationally_frozen": true,
+  "existing_candidate_calculations_complete": true,
+  "human_review": {
+    "n_total_each": 30,
+    "n_representative": 24,
+    "n_diagnostic": 6,
+    "overall_quality_quadratic_weighted_kappa": 0.765146358066712,
+    "inter_rater_spearman": 0.80599522859595,
+    "q_equal_vs_consensus_spearman": 0.566691983440891,
+    "q_huber_vs_consensus_spearman": 0.566691983440891,
+    "paired_candidate_correlation_difference_ci95": [
+      -0.05898703542277287,
+      0.06231504599466164
+    ],
+    "candidate_winner_supported": false,
+    "translation_assisted": true,
+    "returned_orders_identical": true,
+    "review_order_independent_randomization_met": false,
+    "reviewer_identity_source": "project_owner_attested",
+    "independent_scoring_process": "unverified",
+    "a2_a3_original_text_validated": false
+  },
+  "Q1_3_RERUN_REQUIRED": false,
+  "q12_merged_into_q1_1_score": false,
+  "formal_quality_output_created": true,
+  "decision_gate": "Passed: project owner selected q_huber; choice is an operational decision, not a human-review winner.",
+  "decision_date": "2026-09-24",
+  "decision_maker": "project_owner",
+  "decision_record": "The project owner explicitly selected q_huber in the current conversation on 2026-09-24.",
+  "selection_basis": "project_operational_choice",
+  "q_version": "Q1-q_huber-v1",
+  "candidate_audit_created": true,
+  "domain_quality_output_created": true,
+  "sample_rows": 272505,
+  "sample_key": "dataset+source_domain+sample_id",
+  "sample_key_unique": true,
+  "domain_rows": 9,
+  "q_equal_q_huber_source_results_unchanged": true,
+  "q12_added_to_q1_1_score": false,
+  "human_review_distinguishes_candidates": false,
+  "independent_scoring_process": "unverified",
+  "outputs": {
+    "q1_final_quality.csv": {
+      "rows": 272505,
+      "sha256": "eb48687ecd003fce1dadb2445349126719515eab715724e575df8e32074034da"
+    },
+    "q1_candidate_audit.csv": {
+      "rows": 272505,
+      "sha256": "a6c18fa97efe8c55ebde22581399c5b106a788d34a42984e5294bded7f48a607"
+    },
+    "q1_final_domain_quality.csv": {
+      "rows": 9,
+      "sha256": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574"
+    }
+  },
+  "limitations": [
+    "30-row machine-translation-assisted review did not distinguish candidates; do not claim q_huber is validated as uniquely superior.",
+    "Reviewer return-order randomization was not met; independent scoring/communication status remains unverified.",
+    "Seven rps_*frac* indicators retain unresolved semantic/unit limitations.",
+    "A2/A3 original-text linkage remains incomplete; Unicode/source flags and poisoning uncertainty remain.",
+    "Q1.3 Q_covered(p) is derived from p and domain quality, not an independent quality measurement.",
+    "Q2 B1–B5 p-row linkage remains unavailable; formal Q does not remove the p or independent-Q identification gates."
+  ]
+}

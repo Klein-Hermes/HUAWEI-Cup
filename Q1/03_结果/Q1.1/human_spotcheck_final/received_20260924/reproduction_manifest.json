@@ -1,0 +1,53 @@
+{
+  "generated_at_utc": "2026-09-24T04:39:50.530688+00:00",
+  "analysis_script": "src\\q1_1_human_spotcheck_analyze_received.py",
+  "analysis_script_sha256": "a9fb2dc4483aafd895c58074926f0c22618661679fe9e6feb7d019f12487d6dd",
+  "inputs": {
+    "reviewer_a": {
+      "path": "D:\\Tencent  document\\xwechat_files\\wxid_52c3oxo44hgm22_c783\\msg\\file\\2026-09\\reviewer1_中文翻译版(1).xlsx",
+      "sha256": "e4ab3f73023b6d3f60ed56d5f3bc91388cddae96484fc510511f0379612f6e6b"
+    },
+    "reviewer_b": {
+      "path": "D:\\Tencent  document\\xwechat_files\\wxid_52c3oxo44hgm22_c783\\msg\\file\\2026-09\\reviewer1_中文翻译版_zwj.xlsx",
+      "sha256": "0e0860323cb2881672c66a90dca89435ea2d776dbbe43bfeb3e7477024a7238a"
+    },
+    "sampling_manifest_private": {
+      "path": "results\\q1_1\\human_spotcheck_final\\sampling_manifest_private.csv",
+      "sha256": "582bc3b9ffc0daf3e782f65e3f0438cd27160792076c6c77bd82b4b478ed836a"
+    },
+    "reviewer1_template": {
+      "path": "results\\q1_1\\human_spotcheck_final\\reviewer1_中文机译版.xlsx",
+      "sha256": "f12c49233bec44dd04d471f6309a92e44797c5b06246cabab72e99c40116e284"
+    },
+    "reviewer2_template": {
+      "path": "results\\q1_1\\human_spotcheck_final\\reviewer2_中文机译版.xlsx",
+      "sha256": "61498e55fce734b165f84dfdc6ea2cb36f7d8441517ab8324b4f74145481feb7"
+    }
+  },
+  "validation": {
+    "same_30_ids": true,
+    "all_scores_complete_1_to_5": true,
+    "reviewer_a_matches_reviewer1_template": true,
+    "reviewer_a_matches_reviewer2_template": false,
+    "reviewer_b_matches_reviewer1_template": true,
+    "reviewer_b_matches_reviewer2_template": false,
+    "returned_orders_identical": true
+  },
+  "analysis": {
+    "representative_only_candidate_correlation": true,
+    "diagnostic_not_pooled": true,
+    "bootstrap_repetitions": 2000,
+    "bootstrap_seed": 20260924,
+    "bootstrap_method": "paired observation percentile bootstrap over the 24 representative records; supplementary/exploratory",
+    "candidate_selection_rule": "no winner selected; both candidates retained unless modeler applies a valid pre-frozen rule"
+  },
+  "outputs_sha256": {
+    "candidate_human_comparison.csv": "274ba7742f77aebe9bf3d8a8c1bf4dcd36241e3f40936458e6d84c34e0125e47",
+    "decision_status.json": "ff8fa8d848e92ff3303523080e2e279054bc572c6d5dfb561f4a0c6b92d44fe7",
+    "diagnostic_cases.csv": "b3822641b7e03b5af96dcc22de4b99904c0bd16bc566a0ca38e055bc12876be2",
+    "human_check_metrics.csv": "41b4319677b2c1ff3590e1c172f85f576b02e8e94b916e043b17a7f3916df3a1",
+    "human_consensus.csv": "fcf09602a7d574d619ec416c16192696e1ac65a2317ba66fff277585565da75d",
+    "paired_bootstrap.csv": "4c2e72301ecc079d7e88a7cc71b9e985bbc40169ff032e825ce58ef7f303c7e9",
+    "summary.md": "a2a488cba5ff1c904f4edd8edf6858b77a9ca446f48730005aacbde2579f4f75"
+  }
+}

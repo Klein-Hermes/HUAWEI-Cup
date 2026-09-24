@@ -7,5 +7,7 @@
 - loss_protocol_evidence_sources.md：本地附件、manifest、原始论文及其证据边界。
 - b4_b5_provenance_review.csv：待核来源问题、当前处置和重新打开门禁所需证据。
 - 论文网址清单.md：本审计提到的原始论文链接；候选来源与已核实来源分开标注。
+- q2_p_provenance_one_time_supplement.md：官方论文、训练材料与 manifest 的一次性 p 来源补查及冻结结论。
+- ../01_方案说明/Q2_主模型路线复审_2026-09-24.md：回到原题重审 Q2 主模型以及 Q1/B3/p/Q 后续门禁。
 
 当前决议：B4/B5 相对 B1 均为 NOT_COMPARABLE，没有 ABSOLUTE_COMPARABLE。B4/B5 跨来源绝对 Loss 验证支路冻结；这不代表 Q2 全题完成，也不阻断 M1 的 p 数据链工作。原始 CSV 和题面 PDF 保持只读。

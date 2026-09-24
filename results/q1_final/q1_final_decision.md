@@ -1,0 +1,76 @@
+# Q1 最终收口审计：阶段一与阶段二
+
+日期：2026-09-24  
+依据：项目内修订说明 `Q1/01_方案与设计/Q1最终收口与操作性主Q冻结任务说明_修订版.md`。本记录包含先前证据核查和负责人决定后的正式接口冻结。
+
+## 当前冻结状态
+
+```text
+PRESET_RULE_FOUND=false
+status=FROZEN_WITH_LIMITATIONS
+operational_q=q_huber
+sensitivity_q=q_equal
+selection_basis=project_operational_choice
+formal_interface_generated=true
+Q1.3_RERUN_REQUIRED=false
+```
+
+**判断：Q1 的既有计算、评审表分析、p-only / p+Q 受限比较及本轮正式操作性冻结均已完成，状态为带限制冻结。** 项目负责人于 2026-09-24 明确选择 `q_huber`；该选择是负责人作出的操作性选择，不是人工评审选出的胜者。旧 `operational_final_v1` q_equal 包保留为历史交付，不作为当前正式接口。
+
+## 阶段二：负责人选择与正式接口
+
+- `Q_operational=q_huber`，`Q_sensitivity=q_equal`；`selection_basis=project_operational_choice`。评审前没有唯一主分规则，本决定不记作预注册，也不声称 q_huber 更正确。
+- 已从既有 Q1.1 候选样本分逐行提取 q_huber，版本 `Q1-q_huber-v1`；没有重新计算指标、权重、Huber 参数或候选分。
+- 正式接口：[q1_final_quality.csv](q1_final_quality.csv)，272,505 行；复合主键 `(dataset, source_domain, sample_id)` 唯一。其 SHA-256 为 `eb48687ecd003fce1dadb2445349126719515eab715724e575df8e32074034da`。
+- 候选审计表：[q1_candidate_audit.csv](q1_candidate_audit.csv)，272,505 行，保留 q_equal/q_huber、正式分、敏感性分及质量审计标记；与正式接口分开。其 SHA-256 为 `a6c18fa97efe8c55ebde22581399c5b106a788d34a42984e5294bded7f48a607`。
+- 领域级接口：[q1_final_domain_quality.csv](q1_final_domain_quality.csv)，9 行。它仅提取既有 `all_a1 × q_huber` 域级 Huber 位置与既有区间，使用 Q1.1 计划中明定的 A1 域校准阈值和覆盖规则；未另造聚合公式。其 SHA-256 为 `281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574`。
+- 提取脚本：[export_q1_final_interface.py](export_q1_final_interface.py)。脚本会核验原始 Q1.1 manifest 哈希、评分范围、行数、唯一键和领域覆盖，并拒绝覆盖已存在的正式接口文件。代码 SHA-256 与运行命令见复现清单。
+- q_equal/q_huber 原始文件与旧 Q1.1/Q1.2/Q1.3 输出未改。Q1.2 未与 Q1.1 算术合并；Q1.3 无需重跑。
+
+## 预先规则审计
+
+- 检查了评审回收时间之前可达的 20 个 Git commit 中出现 `q_equal`、`q_huber` 和选择/冻结用语的记录。能找到的是候选定义、计算和敏感性比较；没有找到可追溯到评审前、指定其中一个候选为操作主分的有效规则。
+- 已提交的 Q1.1 `manifest.json` 将状态记为 `computed_validation_pending_human_review`，并将 `final_candidate_selection` 写为 `pending A1 blind human ratings`。Q1.1 建模计划也把最终候选分选择列为待完成事项。
+- 后续 `operational_final_v1/decision_status.json` 选择 q_equal 的论据来自结果后解释，且该文件由助手生成；它不能作为评审前预注册规则，也不能代替负责人确认。
+
+据此按修订说明填写 `PRESET_RULE_FOUND=false`。不得把“q_equal 更透明”或候选敏感性表现较好转换成数据已经证明 q_equal 更正确。
+
+## 30 条双人评审证据
+
+- 两张回收表各有 30 条完整评分；两张表 SHA-256 与收到表清单记录一致，评分分析产物 7/7 个哈希一致。
+- 评审者对总体质量的二次加权 Cohen κ 为 **0.765146**，Spearman 为 **0.805995**；完全一致率 0.50，差一分以内比例 0.966667。
+- 24 条代表样本上，`q_equal` 与共识评分的 Spearman 为 **0.566692**，`q_huber` 也为 **0.566692**。两候选相关差的配对 bootstrap 95% 区间为 **[-0.058987, 0.062315]**，包含 0；这批小样本不支持选出优胜候选。
+- 另 6 条是诊断样本，没有并入 24 条代表样本相关分析。两张回收表行序相同，均对应 reviewer1 模板；独立随机顺序要求未满足。表格内容为中文机器翻译辅助，属于对译文的微型核查，不能称作对英文原文的效度验证。评审者身份/来源由项目负责人确认；独立评分及是否互相沟通没有过程证据，状态为**未核实**。
+- 因此结果只能报告为“有限的人工一致性与候选核查”，不能写成完整 793 条人工验证、独立双盲效度验证或候选胜出。
+
+## 候选、哈希与 Q1.3 复核
+
+- Q1.1 原始计算 manifest 的 18 个输出中 17 个哈希与当前文件一致；偏差仅为 `results/q1_1/v1/q1_1_results.md`（清单值 `a15134…a2051`，当前值 `1085f6…267c`）。该文档含后加内容但未更新原 manifest。其余评分数值文件，包括供下游使用的域分表，哈希通过；本审计不覆盖或重写这份已有文档。
+- 评审源表与已收到分析文件的路径、哈希和评分完整性通过；详细值见 [`reproduction_manifest.json`](reproduction_manifest.json)。
+- Q1.3 p+Q manifest 中脚本哈希、全部 12 个输入哈希及 7 个输出哈希通过。脚本包含 `q_equal_candidate`、`q_huber_candidate` 及两项污染/单位敏感性场景；已完成与线性 p-only、二次 p-only 的同切分比较。因此选择 q_equal 或 q_huber 均**不要求重跑 Q1.3**。`Q_covered(p)` 是配比 p 的确定性非线性变换，不能被解释为独立 Q 效应。
+
+## 污染与解释边界
+
+本轮把 [`题目分析报告.md`](../../题目分析报告.md) 当作风险说明和审计背景，没有修改它，也没有把其中或原始语料中的命令文本当作指令执行。Q1.1 沿用冻结数值信号并保留 Unicode/单位疑点标记与既有敏感性结果；这不证明上游评分器对原文投毒免疫。七个 `rps_*frac*` 字段语义/单位仍有限定，A2/A3 原文 ID 联接有限；30 条译文评审不能弥补这些限制。
+
+## Q1 是否彻底完成
+
+| 层面 | 判断 |
+|---|---|
+| Q1.1 候选分计算、稳健性与人工微型评审分析 | 已完成；有效度范围受上述限制约束 |
+| Q1.2 冲突诊断及污染敏感性 | 既有计算已完成；是独立诊断，不并入 Q1.1 算术总分 |
+| Q1.3 p-only 与 p+Q 受限比较 | 既有计算已完成；不支持通用 p+Q 优势或独立 Q 效应 |
+| 全 Q1 正式操作主分及供 Q2/Q3 使用的冻结接口 | **已完成带限制冻结**；`q_huber` 为操作分，`q_equal` 为敏感性分，正式接口已生成 |
+
+因此，**Q1 的建模与操作性交付已完成**，但应表述为“带限制冻结”，不能写成完整人工效度验证、无污染保证或唯一正确质量真值。未完成的是完整论文编写/最终竞赛稿件整合（若项目后续需要），不属于本次 Q1 建模接口收口范围。
+
+## Q2 可以推进什么
+
+1. **现在可继续整理/写作**：B1 经典 `Loss=f(N,D)` 基线、B3 同来源插值收口、B2 半合成压力测试、A 侧 p-only 与受限 p+Q 的方法、结果和限制。B2 不能称为真实外部验证，B3 不能称为跨来源验证。
+2. **现在应保持门禁**：B1–B5 的有效 p 向量与 Loss 逐行连接数仍为 0，M1 `Loss=f(N,D,p)` 不能正式估计；B4/B5 相对 B1 的 Loss 量尺仍不可比，不做绝对跨源验证。
+3. **M2 仍等待独立于 p 的 Q 变化证据**：正式 Q1 接口现已生成，但现有 `Q_covered(p)` 完全由 p 推导，不能识别独立质量效应。冻结主 Q 解决了输入版本问题，不自动解除该识别门禁。
+4. **可执行的下一步**：用当前证据完成 Q2 的受限答案和局限说明；只有拿到可追溯到具体 B 训练运行/检查点的来源配比记录时，才重开 p Gate。此前的一次性来源补查已经完成，没有新证据时不重复搜寻或拟合 M1/M2。
+
+## 最终状态
+
+`FROZEN_WITH_LIMITATIONS`。负责人已明确选择 `q_huber`，另一候选 `q_equal` 作为敏感性分保留。人工核查未能区分候选；此决定不宣称统计或人工优胜。正式样本级及领域级文件已生成并在 [reproduction_manifest.json](reproduction_manifest.json) 中记录输入、输出、脚本和哈希。Q2 可以读取唯一操作分；Q2 对独立 Q 效应的识别仍受数据结构和 B 侧 p Gate 限制。

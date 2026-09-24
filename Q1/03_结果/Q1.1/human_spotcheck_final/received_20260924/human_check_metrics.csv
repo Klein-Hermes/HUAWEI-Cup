@@ -1,0 +1,7 @@
+﻿metric,value,scope
+n_complete_each,30,all 30
+quadratic_weighted_cohen_kappa_overall_quality,0.765146358066712,all 30
+spearman_overall_quality,0.80599522859595,all 30
+exact_agreement_overall_quality,0.5,all 30
+within_one_point_overall_quality,0.9666666666666667,all 30
+mean_absolute_difference_overall_quality,0.5666666666666667,all 30
