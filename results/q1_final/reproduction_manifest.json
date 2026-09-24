@@ -550,7 +550,7 @@
   "stage1_and_current_documents": [
     {
       "path": "results/q1_final/q1_final_decision.md",
-      "sha256": "0a45f3e97fb9c6350c8f149cd8a06a38bfcae333408425a674d22ebca69bc985"
+      "sha256": "5d2f109ecdae01f2fc02919ed9469016fdc147fd710b06eaa6e2c124fc9cf617"
     },
     {
       "path": "results/q1_final/q1_q13_consistency_check.md",
@@ -558,7 +558,7 @@
     },
     {
       "path": "results/q1_final/Q1交付物总清单.md",
-      "sha256": "7f34e1a34624267e34fc3e7d4b7802956de1e86f4ceb3bf037dd32f8630370af"
+      "sha256": "895f47bbcb1051a51f812ae0966cda6d6f4a642cc2dbd35dba1a568957425033"
     },
     {
       "path": "results/q1_final/q1_final_freeze.json",
@@ -566,18 +566,18 @@
     },
     {
       "path": "Q1/README.md",
-      "sha256": "a3aa99ccb5d8619b4a445cef7939c1b2f1d1cb3596ac344ab21d2de4a799faf9"
+      "sha256": "4a8a9fc7b00b4cc4434fc974935b3ad09c6db3c16889d554175d1666923e3fdb"
     },
     {
       "path": "Q2/README.md",
-      "sha256": "0e77ce368d95318ca41550c0c5e68bd49ff941ba6803b113d721da5cb8e1727d"
+      "sha256": "65d7bcacbf5999cba6ba3074f320c7d397e3d183cd5cc66a9e7d5f529a9cc23f"
     }
   ],
   "outputs_manifest_note": "This reproduction manifest does not contain its own hash; hash it directly after writing.",
   "current_final_artifacts": [
     {
       "path": "results/q1_final/q1_final_decision.md",
-      "sha256": "0a45f3e97fb9c6350c8f149cd8a06a38bfcae333408425a674d22ebca69bc985"
+      "sha256": "5d2f109ecdae01f2fc02919ed9469016fdc147fd710b06eaa6e2c124fc9cf617"
     },
     {
       "path": "results/q1_final/q1_q13_consistency_check.md",
@@ -585,7 +585,7 @@
     },
     {
       "path": "results/q1_final/Q1交付物总清单.md",
-      "sha256": "7f34e1a34624267e34fc3e7d4b7802956de1e86f4ceb3bf037dd32f8630370af"
+      "sha256": "895f47bbcb1051a51f812ae0966cda6d6f4a642cc2dbd35dba1a568957425033"
     },
     {
       "path": "results/q1_final/q1_final_freeze.json",
@@ -611,20 +611,21 @@
   "updated_existing_indices": [
     {
       "path": "Q1/README.md",
-      "sha256": "a3aa99ccb5d8619b4a445cef7939c1b2f1d1cb3596ac344ab21d2de4a799faf9"
+      "sha256": "4a8a9fc7b00b4cc4434fc974935b3ad09c6db3c16889d554175d1666923e3fdb"
     },
     {
       "path": "Q2/README.md",
-      "sha256": "0e77ce368d95318ca41550c0c5e68bd49ff941ba6803b113d721da5cb8e1727d"
+      "sha256": "65d7bcacbf5999cba6ba3074f320c7d397e3d183cd5cc66a9e7d5f529a9cc23f"
     }
   ],
   "final_status": "FROZEN_WITH_LIMITATIONS",
   "q_version": "Q1-q_huber-v1",
-  "preserved_legacy_q_equal_bundle": {
-    "path": "Q1/03_结果/Q1.1/operational_final_v1",
-    "selected_candidate_in_legacy_bundle": "q_equal",
-    "outputs_checked": 6,
-    "outputs_hash_match_count": 6,
+  "superseded_q_equal_bundle_cleanup": {
+    "status": "REMOVED",
+    "superseded_by": "Q1-q_huber-v1",
+    "deleted_from_source_and_q1_mirror": true,
+    "pre_deletion_outputs_checked": 6,
+    "pre_deletion_hashes_matched": 6,
     "promoted_to_current_interface": false
   }
 }

@@ -2,7 +2,7 @@
   "schema_version": "q1-final-mirror-manifest-v1",
   "generated_local_date": "2026-09-24",
   "canonical_source_dir": "results/q1_final",
-  "canonical_reproduction_manifest_sha256": "34741c3284eddab343d8b46164c63f147e46b1e4a8eb262e135ba88698d471ff",
+  "canonical_reproduction_manifest_sha256": "03e37bb49a0f0cc5375b538a7b50c8cfcdda80dee67f0c926310319e43650885",
   "note": "This Q1-folder copy is a reading mirror. Markdown links may be adjusted for this folder; original generated files remain under results/q1_final.",
   "files": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "path": "q1_final_decision.md",
-      "sha256": "1cf2fea7aa2b55a51f12310d80f38dc0eb7ce87a6e9a6fe2770ad156450681ca"
+      "sha256": "d7b24611bc00a03edefd3b357f245d1316bfc06344674015510662a684318b67"
     },
     {
       "path": "q1_final_domain_quality.csv",
@@ -35,11 +35,11 @@
     },
     {
       "path": "Q1交付物总清单.md",
-      "sha256": "96d6ec92aedc560399160c2151e61fbd2d4e34c448afd4ad204f2afbe7c322a5"
+      "sha256": "33b2c9da17da7dd22e18f1936867b41fad38b9bf67bec32e9f9238059274b3f0"
     },
     {
       "path": "reproduction_manifest.json",
-      "sha256": "34741c3284eddab343d8b46164c63f147e46b1e4a8eb262e135ba88698d471ff"
+      "sha256": "03e37bb49a0f0cc5375b538a7b50c8cfcdda80dee67f0c926310319e43650885"
     },
     {
       "path": "README.md",

@@ -60,9 +60,11 @@
 ### B5 文献汇编
 
 - `published_scaling_data.csv` 有 44 行、6 个 source 字符串。source 粒度停留在“作者/年份”，无原文页码、表格或图号；Loss protocol 因而不能逐行闭环。
+- 原始论文的指标定义进一步显示：Chinchilla 标度分析以平滑训练 Loss 近似测试风险（其文中说明在无限数据情形下将此作为无偏估计）；Gopher 的 Pile benchmark 子集则按 UTF-8 byte 报告 bits-per-byte。B5 两组都只存本地 `val_loss`，没有具体表/图定位，因而不能判断这些行分别对应哪一个论文指标，也不能通过公式把它们换算成 B1 的验证 Loss。
 - Kaplan 组中 8 行标为 GPT-3，规模网格与 300B 训练量和 Brown 等人的 GPT-3 论文相似；但 CSV 把来源写成 Kaplan et al. 2020。Brown 论文没有通过本次检索定位到这些精确 Loss 数值，故目前只能登记为来源标签待核、Brown 为候选来源；不能据规模网格直接认定映射错误，也不能改写原标签或宣称 Brown 已证实这些点。
 - B5 的 `is_converged=1` 同样没有逐行收敛判据或 checkpoint 证明；它只是一列来源未说明的标记。
 - Hoffmann 组同时含 Chinchilla 和 Gopher。原论文指出 Chinchilla 与 Gopher 使用不同 tokenizer，因此两族必须分开；不能把该 16 行当成一个统一趋势序列。
+- 上述论文级指标信息只强化了“协议异质且 B5 点值无法追溯”的审计理由；不会把 Chinchilla 或 Gopher 升级为正式 `TREND_ONLY`，当前对 B1 仍是 `NOT_COMPARABLE`，来源内趋势也仍待逐点映射。
 - 其他单篇论文、单一模型族的点列可保留为来源内趋势候选，但须逐行补充表/图定位、确认数值和共同评测协议。当前不把候选等同正式验证。
 
 ## 4. 结论矩阵摘要

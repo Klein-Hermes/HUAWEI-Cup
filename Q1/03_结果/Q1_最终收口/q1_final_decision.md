@@ -15,7 +15,7 @@ formal_interface_generated=true
 Q1.3_RERUN_REQUIRED=false
 ```
 
-**判断：Q1 的既有计算、评审表分析、p-only / p+Q 受限比较及本轮正式操作性冻结均已完成，状态为带限制冻结。** 项目负责人于 2026-09-24 明确选择 `q_huber`；该选择是负责人作出的操作性选择，不是人工评审选出的胜者。旧 `operational_final_v1` q_equal 包保留为历史交付，不作为当前正式接口。
+**判断：Q1 的既有计算、评审表分析、p-only / p+Q 受限比较及本轮正式操作性冻结均已完成，状态为带限制冻结。** 项目负责人于 2026-09-24 明确选择 `q_huber`；该选择是负责人作出的操作性选择，不是人工评审选出的胜者。当前正式接口与冻结依据见本审计和正式复现清单。
 
 ## 阶段二：负责人选择与正式接口
 
@@ -31,7 +31,7 @@ Q1.3_RERUN_REQUIRED=false
 
 - 检查了评审回收时间之前可达的 20 个 Git commit 中出现 `q_equal`、`q_huber` 和选择/冻结用语的记录。能找到的是候选定义、计算和敏感性比较；没有找到可追溯到评审前、指定其中一个候选为操作主分的有效规则。
 - 已提交的 Q1.1 `manifest.json` 将状态记为 `computed_validation_pending_human_review`，并将 `final_candidate_selection` 写为 `pending A1 blind human ratings`。Q1.1 建模计划也把最终候选分选择列为待完成事项。
-- 后续 `operational_final_v1/decision_status.json` 选择 q_equal 的论据来自结果后解释，且该文件由助手生成；它不能作为评审前预注册规则，也不能代替负责人确认。
+- 早期 Q1.1 后处理曾基于结果后解释选择 q_equal；该解释由助手生成，不能作为评审前预注册规则，也不能代替负责人确认。当前冻结以项目负责人的明确决定为准。
 
 据此按修订说明填写 `PRESET_RULE_FOUND=false`。不得把“q_equal 更透明”或候选敏感性表现较好转换成数据已经证明 q_equal 更正确。
 

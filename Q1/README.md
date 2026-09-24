@@ -12,7 +12,7 @@
 
 ## 目录
 
-- 01_方案与设计/：Q1 总体计划、Q1.1 计划、公共预处理契约、当前编程任务、Q1.3 p-only 建模步骤和审计实现记录。
+- 01_方案与设计/：Q1 总体计划、Q1.1 计划、公共预处理契约、2026-09-23 编程任务历史快照、Q1.3 p-only 建模步骤和审计实现记录。
 - 02_代码/：预处理、Q1.1、Q1.2、Q1.3、完整性审计、敏感性分析、绘图和盲评工具。
 - 03_结果/00_公共预处理/：冻结的 A1–A3 预处理结果、校准参数、清单与 QC 报告。
 - 03_结果/Q1.1/：候选评分、域级结果、稳健性、来源追踪、盲评样本和空评分表。
@@ -29,9 +29,7 @@
 - 哈希与复现：[本地镜像清单](03_结果/Q1_最终收口/mirror_manifest.json)、[原始生成清单](../results/q1_final/reproduction_manifest.json)
 
 - Q1.1 计算结果：03_结果/Q1.1/v1/q1_1_results.md
-- Q1 实验收口报告：03_结果/Q1_实验收口报告_20260924.md
-- Q1.1 操作主分及覆盖审计：03_结果/Q1.1/operational_final_v1/summary.md
-- Q1.1 人工评审收尾状态：03_结果/Q1.1/review_intake/v1/closeout_status.md
+- 原计划 793 条全量评审状态（尚未完成；30 条微型核查已另行完成）：03_结果/Q1.1/review_intake/v1/closeout_status.md
 - Q1.1 30 条双人评分分析：03_结果/Q1.1/human_spotcheck_final/received_20260924/summary.md
 - Q1.2 冲突模型报告：03_结果/Q1.2/v1/q1_2_conflict_report.md
 - Q1.3 p-only 运行报告：03_结果/Q1.3/v1/q1_3_run_report.md
@@ -39,7 +37,7 @@
 - Q1.1/Q1.2/p+Q 评审后整合状态：03_结果/Q1.3/pq_extension_v1/postreview_integration_20260924.md
 - 公共预处理 QC：03_结果/00_公共预处理/v1/preprocess_qc_report.md
 
-历史文件说明：`03_结果/Q1_实验收口报告_20260924.md` 和 `operational_final_v1` 保留为早期审计快照；旧报告中将 q_equal 作为操作主分的口径已被后续明确选择 q_huber 的决定取代。当前状态以 `03_结果/Q1_最终收口/` 为便捷查阅入口，原始生成源仍为项目根目录 `results/q1_final/`。
+当前状态以 `03_结果/Q1_最终收口/` 为便捷查阅入口，原始生成源仍为项目根目录 `results/q1_final/`。30 条微型评审结论及其范围限制见 `Q1.1/human_spotcheck_final/received_20260924/`；793 条全量评审尚未完成，状态见 `Q1.1/review_intake/v1/closeout_status.md`。
 
 ## 复现信息
 

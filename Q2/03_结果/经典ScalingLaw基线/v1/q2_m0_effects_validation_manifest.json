@@ -1,7 +1,7 @@
 {
   "task": "Q2 M0 marginal effects and B2-B5 validation scope closeout",
   "status": "completed_with_validation_limits",
-  "created_utc": "2026-09-24T08:03:16+00:00",
+  "created_utc": "2026-09-24T12:16:38+00:00",
   "command": "D:\\Anaconda\\python.exe src/q2_m0_effects_validation_closeout.py",
   "script": "src/q2_m0_effects_validation_closeout.py",
   "script_sha256": "837fd30491d5d113b8f7e7853e34087bf13038bd71af679b27fbd1be086e0d1a",
@@ -28,7 +28,7 @@
     "results/q2_scaling_baseline/v1/复现清单.json": "14ba89697200d34d506add1a327044251084291b98a8d5804be07c4673f97fb8",
     "Q2/03_结果/经典ScalingLaw基线/v1/gate0_b1_trajectory_mapping.csv": "ea2c1fd78c7a84e0f41d70a57b630089781b8d8cbd9c9a9434e6ea7c787c0c37",
     "Q2/03_结果/经典ScalingLaw基线/v1/b3_validation_closeout.md": "21f6928afc99cf6bb71e5ba2eb753143d4c63d229ec0e956a66ae8530b1a40fa",
-    "Q2/03_结果/经典ScalingLaw基线/v1/b4_b5_loss_comparability_audit.md": "ea6232e746a4c96ba3583fe0d6b273b2cd82bf81721d07ca824d66f5c7310dd6",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b4_b5_loss_comparability_audit.md": "4523fad8c2b5dceac7619f80a06ca13b003f06e268263f0bcfb9eb512f6b96dc",
     "Q2/03_结果/B2半合成压力测试/v1/b2_cerebras_stress_report.md": "8443b3213fdee1564cc59b8e96779402b5c32f08dad27634181350ac3d29cbb1",
     "Q2/03_结果/p配比可行性审计/v1/q2_p_feasibility_audit.md": "15c61269a83f104f2020417f900f4b78626c7a5bc029a2817d6d46eba5c48a76",
     "Q1/03_结果/Q1_最终收口/q1_final_decision.md": "1cf2fea7aa2b55a51f12310d80f38dc0eb7ce87a6e9a6fe2770ad156450681ca",

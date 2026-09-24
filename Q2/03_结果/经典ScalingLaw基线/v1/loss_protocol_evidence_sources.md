@@ -20,7 +20,7 @@
 | B4 Cerebras 核验 | Dey et al., *Cerebras-GPT: Open Compute-Optimal Language Models Trained on the Cerebras Wafer-Scale Cluster*, [arXiv:2304.03208](https://arxiv.org/abs/2304.03208) | 论文 Table 1 报告七个模型训练 token 终点 2.2B–257.1B；Table 8 报告 Pile-test cross-entropy。所检查表格不能直接支持 B4 七行统一的 2050B 和 Loss 值；这说明行级来源未建立，不足以证明 B4 原始值错误或它就是这些表格的数据。 |
 | Kaplan 行 | Kaplan et al., *Scaling Laws for Neural Language Models*, [arXiv:2001.08361](https://arxiv.org/abs/2001.08361) | cross-entropy 以 nats 描述，WebText2、byte-level BPE vocab 50,257、主要 context 1024。B5 未提供其数值的确切表/图位置。 |
 | GPT-3 来源候选 | Brown et al., *Language Models are Few-Shot Learners*, [arXiv:2005.14165](https://arxiv.org/abs/2005.14165) | GPT-3 论文的模型规模/训练量网格与 B5 八行相似，因此是候选来源；本次没有在论文中定位到 B5 的精确 Loss 数值。不能据此将 CSV 的 `Kaplan et al. 2020` 标签改成 Brown。 |
-| Chinchilla / Gopher | Hoffmann et al., *Training Compute-Optimal Large Language Models*, [arXiv:2203.15556](https://arxiv.org/abs/2203.15556)；原 Gopher 论文为 [arXiv:2112.11446](https://arxiv.org/abs/2112.11446) | Chinchilla 采用 SentencePiece 32k；Hoffmann 附录明确说明它与 Gopher tokenizer 不同。该 16 行需按两族拆开。 |
+| Chinchilla / Gopher | Hoffmann et al., *Training Compute-Optimal Large Language Models*, [arXiv:2203.15556](https://arxiv.org/abs/2203.15556)；原 Gopher 论文为 [arXiv:2112.11446](https://arxiv.org/abs/2112.11446) | Chinchilla 标度分析使用平滑训练 Loss 近似测试风险（论文注明在无限数据情形下作无偏估计）；Gopher 论文在 Pile benchmark 子集报告按 UTF-8 byte 计的 bits-per-byte。两种论文级事实说明指标协议可能不同，但不能映射 B5 的具体数值行。Hoffmann 附录说明 Chinchilla 与 Gopher tokenizer 不同；该 16 行须按两族拆开。 |
 | LLaMA | Touvron et al., *LLaMA: Open and Efficient Foundation Language Models*, [arXiv:2302.13971](https://arxiv.org/abs/2302.13971) | B5 LLaMA family 的候选原始来源；数据文件未给精确 table/figure locator。 |
 | LLaMA 2 | Touvron et al., *Llama 2: Open Foundation and Fine-Tuned Chat Models*, [arXiv:2307.09288](https://arxiv.org/abs/2307.09288) | B5 LLaMA-2 family 的候选原始来源；与 LLaMA 分开核验。 |
 | PaLM | Chowdhery et al., *PaLM: Scaling Language Modeling with Pathways*, [arXiv:2204.02311](https://arxiv.org/abs/2204.02311) | B5 PaLM family 的候选原始来源；论文中 tokens 定义关联 SentencePiece，B5 未给精确 table/figure locator。 |
@@ -32,3 +32,4 @@
 - B4 的 Phi、LLaMA、Qwen2、Gemma、GPT2、OPT、BLOOM、Falcon、Mistral、Yi 均没有可从 CSV/source manifest 逐点追到原文的引用。不能根据 family 名猜具体训练版本。
 - B5 的 source 字段不是足够精确的逐行引文。以上论文可说明来源协议为何可能异质，但不能在没有 page/table/figure 映射时证明每个 CSV 数值确实来自对应论文。
 - GPT-3 数据的 source 字段仍待核。Brown et al. 2020 只是依据模型规模/训练量网格提出的候选来源，精确 Loss 值尚未闭环；核实前保留原始 `Kaplan et al. 2020` 标签并标记 `UNRESOLVED`。
+- B5 的 Chinchilla/Gopher 行没有逐点表格/图号或原始数值映射，且本地字段仅为 `val_loss`。即使公开论文能说明各自采用的 Loss 定义，也无法确认这些行究竟对应论文中的哪个评测量；不得据此跨源换算或与 B1 绝对比较。
