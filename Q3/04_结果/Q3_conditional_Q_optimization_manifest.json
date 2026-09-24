@@ -1,0 +1,36 @@
+{
+  "artifact": "Q3 conditional Q-only optimizer with response-coefficient thresholds",
+  "conditional_response": "L_cond = L_M0(N,D) - beta_Q*(Q-Q0), beta_Q >= 0",
+  "beta_Q_source": "unknown conditional parameter; not estimated from Q2",
+  "p_setting": "p excluded from model and decision variables; no p vector assigned",
+  "new_q2_data_required": false,
+  "scope": "Q2 B1/M0 support grid; existing budgets and contexts; three question-provided g(Q) cost forms",
+  "claim_boundary": "conditional sensitivity only; not a data-identified Q response or full Q/p optimum",
+  "q1_metadata": {
+    "q_version": "Q1-q_huber-v1",
+    "operational_q": "q_huber",
+    "q1_status": "FROZEN_WITH_LIMITATIONS"
+  },
+  "python_version": "3.10.4",
+  "script": {
+    "path": "Q3/03_代码/solve_q3_conditional_q_sensitivity.py",
+    "sha256": "95213a422c3ee6787007e6bd979e1f6837e3ceb8c619bcfe36cd2a7d763e9508"
+  },
+  "shared_cost_formula_script": {
+    "path": "Q3/03_代码/analyze_q3_cost_sensitivities.py",
+    "sha256": "6b51afdc7da5bc7bf441303e6ff163abae94cbddcbd839524451d6a6f05e142e"
+  },
+  "inputs": {
+    "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "Q1/03_结果/Q1.1/v1/a1_macro_summary.csv": "6b7cca1865ef6785981180fb0aea41fe839a5b6c12cb012bb21fa089d8b383f9",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "Q3/04_结果/M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583"
+  },
+  "outputs": {
+    "Q3/04_结果/Q_conditional_Q_optimality_intervals.csv": "b4b8a4a13857224bdd81dacc0a3a1af3a5ba80ae2c41d3b131f19ca804da0130",
+    "Q3/04_结果/Q_conditional_Q_break_even_summary.csv": "f2c64a42e41f5af24f8a11c246eca81991c40b1d7d4d1424cc4b6ac35e3d8e1c",
+    "Q3/04_结果/Q3_conditional_Q_optimization_report.md": "e1aa1d21d3a4d9fe3b4298585a8f7c444504ba1915fc001a4865b02831e91a17"
+  }
+}

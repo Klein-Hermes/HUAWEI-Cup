@@ -1,0 +1,53 @@
+{
+  "artifact": "Q3 cost-only quality uplift curves and descriptive budget/context shifts",
+  "new_q2_data_required": false,
+  "dependencies": {
+    "q1": "frozen q_huber Q0 interface",
+    "q2": "existing archived B1 grid for observed D support references; no new observations or fit",
+    "q3": "existing fixed-Q M0 15-scenario frontier",
+    "formulas": "question-provided g(Q) and compute-cost equations"
+  },
+  "claim_boundary": "cost-only Q scenarios plus descriptive B1/M0 config changes; no Q/p response, full Q3 optimum, or formal structural-transition claim",
+  "quality_grid": [
+    0.49847810484764643,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "D_reference_tokens": {
+    "min": 134000000.0,
+    "median": 146801000000.0,
+    "max": 299893000000.0
+  },
+  "q1_metadata": {
+    "q_version": "Q1-q_huber-v1",
+    "operational_q": "q_huber",
+    "q1_status": "FROZEN_WITH_LIMITATIONS"
+  },
+  "python_version": "3.10.4",
+  "script": {
+    "path": "Q3/03_代码/analyze_q3_cost_sensitivities.py",
+    "sha256": "6b51afdc7da5bc7bf441303e6ff163abae94cbddcbd839524451d6a6f05e142e"
+  },
+  "inputs": {
+    "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "Q1/03_结果/Q1.1/v1/a1_macro_summary.csv": "6b7cca1865ef6785981180fb0aea41fe839a5b6c12cb012bb21fa089d8b383f9",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q3/04_结果/M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583"
+  },
+  "outputs": {
+    "Q3/04_结果/Q_cost_increment_envelope.csv": "3f4d17501cbd61ca6fa515a7c7384e9a8ae3a16fe024801117b9a2df730b91a7",
+    "Q3/04_结果/M0_budget_context_cost_shares.csv": "87535f7d2cae27c5b4fc13c77cb4848bbafc2e7c37ed5340fcb5befac9e6a26d",
+    "Q3/04_结果/M0_budget_context_descriptive_shifts.csv": "5707919ebdc1037a91e6b3fbec8996a0bb16a470dba68db95bd959be6c6da84e",
+    "Q3/04_结果/Q3_cost_sensitivities_report.md": "550f01d88738f49926c32112dfbcb11c0b5ccd38c8bb8ed458241d10e641d00c"
+  }
+}

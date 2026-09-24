@@ -1,0 +1,37 @@
+{
+  "artifact": "Q3 M0 support-grid reference reproducibility manifest",
+  "command": "python Q3/03_代码/solve_q3_m0_reference_grid.py",
+  "python_version": "3.10.4",
+  "implementation": "CPython",
+  "script": {
+    "path": "Q3/03_代码/solve_q3_m0_reference_grid.py",
+    "sha256": "e5ce3d8bbc9c3ccaac7dd6b3c7772e48c542b4254f7cd2812caaead33a20039e"
+  },
+  "inputs": {
+    "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1/03_结果/Q1_最终收口/q1_final_quality.csv": "eb48687ecd003fce1dadb2445349126719515eab715724e575df8e32074034da",
+    "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "Q1/03_结果/Q1.1/v1/a1_macro_summary.csv": "6b7cca1865ef6785981180fb0aea41fe839a5b6c12cb012bb21fa089d8b383f9",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "Q2/03_结果/经典ScalingLaw基线/v1/gate0_b1_trajectory_mapping.csv": "ea2c1fd78c7a84e0f41d70a57b630089781b8d8cbd9c9a9434e6ea7c787c0c37",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+  },
+  "parameters": {
+    "eta": 0.0002,
+    "training_cost_coefficient": 6,
+    "budgets_flops": [
+      10000000000000000000,
+      10000000000000000000000,
+      1000000000000000000000000
+    ],
+    "objective": "Q2 M0 predicted validation loss",
+    "quality_setting": "Q=Q0 so C_Q=0"
+  },
+  "outputs": {
+    "Q3/04_结果/M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "Q3/04_结果/M0_ND_reference_frontier_summary.json": "e65486c8305677dcde7214bede079a118ffea57f948f54ddd12de390d620ef75",
+    "Q3/04_结果/M0_ND_reference_frontier_report.md": "27e08ff6cc35cc08cd5c014b68d3bdbf3ccbe5979050d0c8286ad7f3cd35aae8"
+  },
+  "generated_at_utc": "2026-09-24T08:11:23+00:00"
+}
