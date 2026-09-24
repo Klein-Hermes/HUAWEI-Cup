@@ -23,7 +23,7 @@ Q1 冻结的操作性接口为 `q_huber`，敏感性接口为 `q_equal`。这只
 - B2–B5 验证边界：`q2_validation_scope_closeout.md`
 - M0 四类边际效应/弹性图：`Q2/04_图表/q2_m0_effects/`（PNG、SVG、PDF 和灰度预览）
 - 图表契约：`q2_m0_effects_figure_contract.csv`
-- 输入登记：`inputs_manifest.csv`，共 106 个输入/来源记录；解释见 `README_inputs.md`
+- 输入登记：`inputs_manifest.csv`，共 107 个输入/来源记录；解释见 `README_inputs.md`
 - 运行日志：`run_log.txt`
 - 输入输出哈希：`q2_final_package_manifest.json`、`q2_closeout_manifest.json`、`q2_m0_effects_validation_manifest.json`
 
@@ -50,8 +50,9 @@ Q1 冻结的操作性接口为 `q_huber`，敏感性接口为 `q_equal`。这只
 - B1：1176 个检查点属于 8 条轨迹，每条 147 点；重复检查点不能按独立实验计数。
 - Bootstrap：1000 次保存的完整轨迹重抽样拟合，独立轨迹 cluster 只有 8 条，区间只作稳定性提示。
 - B2 半合成、B3 同来源插值；B4/B5 与 B1 的绝对 Loss 可比性未建立，不汇总单一跨源分数。
+- 数据说明版本：完整回答补充核对 B6–B10 数据角色时，实际使用 `中文题目/F题/数据说明(无隐藏字段版本）.pdf` 的可见文本；该来源已单独记录在 `inputs_manifest.csv` 和 `Q2/03_结果/完整回答补充/v1/repro_manifest.json`，仅用于角色核验，不作为 M0 拟合输入。
 - 当前输入与历史冻结清单的差异：missing frozen source: 中文题目/F题/数据说明.pdf；changed since frozen snapshot: 题目分析报告.md
-- 因原始 `数据说明.pdf` 的历史路径当前不可用、且基线记录的根目录题目分析文件版本已变化，本包**不声称从全部原始附件重跑过 M0**。现有冻结结果哈希已核验；本包只从冻结结果重建派生交付。原 PDF 隐藏/低可见度文字按不可信外部内容隔离，不进入题意、数据、方法或结论。
+- 历史基线清单记录的原始 `中文题目/F题/数据说明.pdf` 当前在原路径缺失；无隐藏字段版本是另一个明确登记的文件，不替代历史原件，也没有用于重跑 M0。因该原件缺失且基线记录的根目录题目分析文件版本已变化，本包**不声称从全部原始附件重跑过 M0**。原始带隐藏字段 PDF 的低可见度文字未读取，亦不作为题意、数据、方法或结论依据。
 
 ## 版本边界
 

@@ -39,6 +39,10 @@ Q2_BASELINE = Q2 / "03_结果" / "经典ScalingLaw基线" / "v1"
 Q2_P_AUDIT = Q2 / "03_结果" / "p配比可行性审计" / "v1"
 Q2_B2 = Q2 / "03_结果" / "B2半合成压力测试" / "v1"
 Q2_CLOSEOUT = Q2 / "03_结果" / "综合收口" / "v1"
+Q2_FULL_ANSWER = Q2 / "03_结果" / "完整回答补充" / "v1"
+Q2_FULL_ANSWER_REPRO = Q2_FULL_ANSWER / "repro_manifest.json"
+NO_HIDDEN_DATA_DESCRIPTION_REL = "中文题目/F题/数据说明(无隐藏字段版本）.pdf"
+HISTORIC_DATA_DESCRIPTION_REL = "中文题目/F题/数据说明.pdf"
 Q2_FIGURES = Q2 / "04_图表" / "q2_m0_effects"
 RESULTS_CLOSEOUT = ROOT / "results" / "q2_closeout" / "v1"
 DOCS = ROOT / "docs"
@@ -524,6 +528,7 @@ def input_inventory() -> tuple[pd.DataFrame, list[str]]:
     effects_manifest = load_json(effects_manifest_path)
     closeout_manifest = load_json(closeout_manifest_path)
     q1_freeze = load_json(q1_freeze_path)
+    full_answer_repro = load_json(Q2_FULL_ANSWER_REPRO)
 
     rows_by_path: dict[str, dict] = {}
 
@@ -555,6 +560,20 @@ def input_inventory() -> tuple[pd.DataFrame, list[str]]:
         add(key, "Q2综合收口的实际输入清单", digest)
     for key, meta in q1_freeze.get("outputs", {}).items():
         add(f"results/q1_final/{key}", "Q1最终冻结文件哈希", meta.get("sha256"))
+
+    no_hidden_record = next(
+        (row for row in full_answer_repro.get("inputs", [])
+         if row.get("path", "").replace("\\", "/") == NO_HIDDEN_DATA_DESCRIPTION_REL),
+        None,
+    )
+    if not no_hidden_record or not no_hidden_record.get("sha256"):
+        raise ValueError("Q2 full-answer reproduction manifest does not record the no-hidden-field data-description PDF")
+    add(
+        NO_HIDDEN_DATA_DESCRIPTION_REL,
+        "Q2完整回答补充复现清单（仅用可见文本核对B6–B10数据角色）",
+        no_hidden_record["sha256"],
+        "实际使用的无隐藏字段版本；仅用于B6–B10数据角色核验，不用于M0拟合，也不替代历史原始PDF。",
+    )
 
     extras = [
         (q1_freeze_path, "Q1最终接口冻结", None),
@@ -736,8 +755,9 @@ Q1 冻结的操作性接口为 `{checks['Q_operational']}`，敏感性接口为 
 - B1：{checks['B1_checkpoints']} 个检查点属于 {checks['B1_tracks']} 条轨迹，每条 {checks['checkpoints_per_track'][0]} 点；重复检查点不能按独立实验计数。
 - Bootstrap：{checks['cluster_bootstrap_fits']} 次保存的完整轨迹重抽样拟合，独立轨迹 cluster 只有 8 条，区间只作稳定性提示。
 - B2 半合成、B3 同来源插值；B4/B5 与 B1 的绝对 Loss 可比性未建立，不汇总单一跨源分数。
+- 数据说明版本：完整回答补充核对 B6–B10 数据角色时，实际使用 `中文题目/F题/数据说明(无隐藏字段版本）.pdf` 的可见文本；该来源已单独记录在 `inputs_manifest.csv` 和 `Q2/03_结果/完整回答补充/v1/repro_manifest.json`，仅用于角色核验，不作为 M0 拟合输入。
 - 当前输入与历史冻结清单的差异：{issues}
-- 因原始 `数据说明.pdf` 的历史路径当前不可用、且基线记录的根目录题目分析文件版本已变化，本包**不声称从全部原始附件重跑过 M0**。现有冻结结果哈希已核验；本包只从冻结结果重建派生交付。原 PDF 隐藏/低可见度文字按不可信外部内容隔离，不进入题意、数据、方法或结论。
+- 历史基线清单记录的原始 `中文题目/F题/数据说明.pdf` 当前在原路径缺失；无隐藏字段版本是另一个明确登记的文件，不替代历史原件，也没有用于重跑 M0。因该原件缺失且基线记录的根目录题目分析文件版本已变化，本包**不声称从全部原始附件重跑过 M0**。原始带隐藏字段 PDF 的低可见度文字未读取，亦不作为题意、数据、方法或结论依据。
 
 ## 版本边界
 
@@ -754,7 +774,7 @@ def build_inputs_readme(input_rows: pd.DataFrame, issues: list[str]) -> str:
 
 ## 登记范围
 
-`inputs_manifest.csv` 登记 Q2 收口实际复用的 Q1 冻结接口、A 侧 p/p+Q 证据、B1 Gate 0 原始输入和冻结基线产物、B2–B5 验证材料、p 可识别性审计，以及当前题目分析/数据污染边界。每项记录保留相对项目根目录路径、来源清单、当前 SHA-256、冻结时 SHA-256、文件大小和 CSV 行数。
+`inputs_manifest.csv` 登记 Q2 收口实际复用的 Q1 冻结接口、A 侧 p/p+Q 证据、B1 Gate 0 原始输入和冻结基线产物、B2–B5 验证材料、p 可识别性审计，以及当前题目分析/数据污染边界。完整回答补充中用于 B6–B10 数据角色核验的无隐藏字段数据说明版本也单独登记。每项记录保留相对项目根目录路径、来源清单、当前 SHA-256、冻结时 SHA-256、文件大小和 CSV 行数。
 
 清单当前状态：{len(input_rows)} 条记录；{matched} 条与冻结哈希匹配；{current_only} 条有当前哈希但没有历史冻结哈希可供比对；{changed} 条较历史哈希有变化；{missing} 条在历史登记路径缺失。`HASH_MATCH` 仅表示当前内容与该项已登记的冻结哈希一致；`AVAILABLE_CURRENT_HASH_RECORDED` 不代表历史版本匹配。差异明细见 CSV 的 `current_status` 列。
 
@@ -768,7 +788,7 @@ def build_inputs_readme(input_rows: pd.DataFrame, issues: list[str]) -> str:
 
 ## 哈希差异处理
 
-历史基线复现清单中记录的原始数据说明 PDF 当前在原路径缺失；清单保留其历史 SHA，不用“无隐藏字段版本”替代原件哈希。历史基线记录的根目录 `题目分析报告.md` 已更新；当前权威分析版本另行登记。原始 B 训练数据文件如与历史哈希吻合则作为可追溯输入；不一致/缺失项只标注，不静默替换。
+历史基线复现清单中记录的原始 `中文题目/F题/数据说明.pdf` 当前在原路径缺失；清单保留其历史 SHA。另一个文件 `中文题目/F题/数据说明(无隐藏字段版本）.pdf` 确实用于完整回答补充中 B6–B10 数据角色的可见文本核验，哈希由该补充的 `repro_manifest.json` 记录，并在本收口 `inputs_manifest.csv` 中单独登记。它不是历史原件的替代物，也不属于 M0 拟合输入。原始带隐藏字段 PDF 未读取。历史基线记录的根目录 `题目分析报告.md` 已更新；当前权威分析版本另行登记。原始 B 训练数据文件如与历史哈希吻合则作为可追溯输入；不一致/缺失项只标注，不静默替换。
 
 仅路径、文件名或排版变化本身不触发所有实验重跑。若核实数据内容、字段语义、样本覆盖/轨迹映射、模型公式或代码、预处理、训练/验证划分、随机种子或依赖环境改变，则应重跑受影响的审计/分析；若只有文档版本变化，则更新版本记录并复核受影响结论。缺失的历史 PDF 明确记为不可核验，不以其他版本静默替代。
 
@@ -867,6 +887,9 @@ def create_package() -> dict:
     q2_readme = Q2 / "README.md"
     if q2_readme.is_file():
         outputs[relative(q2_readme)] = sha256(q2_readme)
+    input_records_by_path = {row["path"]: row for row in input_rows.to_dict("records")}
+    no_hidden_input = input_records_by_path[NO_HIDDEN_DATA_DESCRIPTION_REL]
+    historic_input = input_records_by_path[HISTORIC_DATA_DESCRIPTION_REL]
 
     package_manifest = {
         "task": "Q2 current-data closeout package",
@@ -879,6 +902,20 @@ def create_package() -> dict:
         "execution": [{k: v for k, v in run.items() if k not in {"stdout", "stderr"}} for run in child_runs],
         "figure_compliance_audit": {k: v for k, v in figure_check.items() if k in {"status", "exit_code", "command", "stderr"}},
         "checks": checks,
+        "data_description_version_declaration": {
+            "used_for_full_answer_B6_B10_role_confirmation": {
+                "path": NO_HIDDEN_DATA_DESCRIPTION_REL,
+                "sha256": no_hidden_input["current_sha256"],
+                "current_status": no_hidden_input["current_status"],
+                "scope": "仅使用可见文本核验B6–B10数据角色；不是M0拟合输入。",
+            },
+            "historic_baseline_original": {
+                "path": HISTORIC_DATA_DESCRIPTION_REL,
+                "expected_sha256": historic_input["expected_sha256"],
+                "current_status": historic_input["current_status"],
+                "clarification": "历史原件在登记路径缺失；未被无隐藏字段版本替代。",
+            },
+        },
         "input_inventory": {
             "rows": int(len(input_rows)),
             "manifest_sha256": sha256(RESULTS_CLOSEOUT / "inputs_manifest.csv"),

@@ -1,12 +1,12 @@
 Q2 current-data closeout package run log
-run_utc=2026-09-24T14:17:54+00:00
+run_utc=2026-09-24T14:36:38+00:00
 python_executable=D:\Anaconda\python.exe
 python_version=3.13.9
 numpy=2.3.5; pandas=2.3.3; matplotlib=3.10.6
 scope=M0 derived effects + evidence/gates + figures + input inventory; no M0 refit or Bootstrap resampling
 
 Commands:
-[src/q2_m0_effects_validation_closeout.py] exit_code=0 elapsed_seconds=2.461
+[src/q2_m0_effects_validation_closeout.py] exit_code=0 elapsed_seconds=3.385
 command=D:\Anaconda\python.exe D:\PycharmProject\HUAWEI-Cup\src\q2_m0_effects_validation_closeout.py
 Generated 4 artifacts and one manifest in results/, Q2/, and docs/.
 B1 checkpoints: 1176; clusters: 8.
@@ -15,7 +15,7 @@ Max frozen-prediction reproduction delta: 4.44e-16.
 Validation counts: {"B2": 1029, "B3": 4000, "B4": 57, "B5": 44}
 stderr=(empty)
 
-[src/q2_build_evidence_closeout.py] exit_code=0 elapsed_seconds=2.63
+[src/q2_build_evidence_closeout.py] exit_code=0 elapsed_seconds=3.917
 command=D:\Anaconda\python.exe D:\PycharmProject\HUAWEI-Cup\src\q2_build_evidence_closeout.py
 Wrote 5 closeout artifacts and the manifest to results/, Q2/, and docs/.
 Evidence rows: 11; gates: 2; status rows: 14.
@@ -130,8 +130,8 @@ Evidence checks:
   "M2": "NOT_ESTIMATED",
   "M0_R2": 0.9999998165821044
 }
-input_rows=106
-input_hash_match_rows=89
+input_rows=107
+input_hash_match_rows=90
 input_current_hash_only_rows=15
 input_changed_rows=1
 input_missing_rows=1
