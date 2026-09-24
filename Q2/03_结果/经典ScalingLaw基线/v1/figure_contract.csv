@@ -1,0 +1,10 @@
+﻿figure,category,claim,chart_type,data_sources,caveat
+raw_q2_parameter_coverage,raw,Show the eight observed Pythia model sizes and their repeated checkpoints.,log-scale histogram,B1,Rows are repeated checkpoints within eight model trajectories.
+raw_q2_token_ecdf,raw,Show how B1 checkpoints cover the training-token range.,empirical CDF,B1,The checkpoint CDF is not an independent-sample distribution.
+raw_q2_N_D_support,raw,Show joint N-D support and the observed loss gradient.,colored scatter,B1,
+process_q2_multistart_cost,process,Check whether fixed initial values converge to comparable training minima.,ranked point plot,B1 fit starts,
+process_q2_residual_structure,process,Reveal residual bias or curvature across the fitted loss range.,residual scatter,B1,
+process_q2_cluster_bootstrap,process,Display percentile intervals for parameter percentage changes from the B1 estimate across resampled complete model trajectories.,five-parameter relative interval panels,B1 cluster bootstrap,Eight clusters limit interval reliability; each parameter panel has its own horizontal scale.
+result_q2_B1_observed_vs_fitted,result,Show B1 fitted values against observations for the frozen classic form.,parity scatter,B1,In-sample fit only; not an external validation result.
+result_q2_validation_by_source,result,Show predictions for each held-out source without pooling or retuning.,four-panel parity scatter,"B2, B3, B4, B5",B2/B3 are not independent real validation; B4/B5 evaluation comparability is undocumented; no pooled metric is reported.
+result_q2_leave_one_size_out,result,Show the percentage change in each fitted parameter when one entire model-size trajectory is excluded.,small-multiple relative parameter paths,B1 leave-one-size-out,Each omitted size is a whole 147-checkpoint trajectory; the horizontal zero line is the full B1 fit.

@@ -1,0 +1,143 @@
+{
+  "audit_version": "v1",
+  "audit_date": "2026-09-24",
+  "command": "python src/f_q2_p_feasibility_audit.py",
+  "python_version": "3.10.4",
+  "script_path": "src/f_q2_p_feasibility_audit.py",
+  "script_sha256": "fc900e4787157fdc3275c45b436daa6f567505141c1875d90c4f5d6be8006cd0",
+  "input_files": [
+    {
+      "path": "中文题目/F题/real_attachments/source_manifest.json",
+      "bytes": 10018,
+      "sha256": "34e81dabf46302eebaac8551fa18d2e72acd0833b1cf0276690bee897f1323db"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "bytes": 111459,
+      "sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/cerebras_training_log.csv",
+      "bytes": 89643,
+      "sha256": "178f878cad2cb31e4ec104c670553de23818197876d824a113fdb911125951a6"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/scaling_baseline.csv",
+      "bytes": 1421,
+      "sha256": "2272983ded93de35e05f9acbf95ebceedf43f283345e4be72b54fee94080391e"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/published_scaling_data.csv",
+      "bytes": 1967,
+      "sha256": "dd858c5e48610e28589340d5db023d6abfb31df597506789ccdfc6a546731bbd"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/pythia_checkpoint_index.csv",
+      "bytes": 117698,
+      "sha256": "0f7f63535cbc1bbef5165776562e71401af9f762cfe02aaea30c824f45fbc9ed"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/open_model_family_metadata.csv",
+      "bytes": 1975,
+      "sha256": "641682f0ea6c46f25a0188ac723af44e0bc2e27c760e744743a15e97e29ee064"
+    },
+    {
+      "path": "results/q2_scaling_baseline/v1/gate0_b1_trajectory_mapping.csv",
+      "bytes": 955,
+      "sha256": "ea2c1fd78c7a84e0f41d70a57b630089781b8d8cbd9c9a9434e6ea7c787c0c37"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/A_data_value/regmix_tables/train_mixture_1m.csv",
+      "bytes": 46412,
+      "sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/A_data_value/domain_mapping_guide.csv",
+      "bytes": 1296,
+      "sha256": "4a4479f41b9f46116e688cd0c13ccdad4e687192fc1a38c4add690771ebff480"
+    },
+    {
+      "path": "题目分析报告.md",
+      "bytes": 43513,
+      "sha256": "978c7e7a13a24bda2a5b3d022a004bf8dcef10639aa80f19122037ce103d832a"
+    },
+    {
+      "path": "Q2/01_方案说明/题目分析报告.md",
+      "bytes": 43513,
+      "sha256": "978c7e7a13a24bda2a5b3d022a004bf8dcef10639aa80f19122037ce103d832a"
+    },
+    {
+      "path": "docs/F题_Q2公共实验框架.md",
+      "bytes": 8090,
+      "sha256": "fbf2855d939b880a1124d6a9e883761eeebe9de840d8c615e00c3b3330358a23"
+    },
+    {
+      "path": "Q2/01_方案说明/F题_Q2公共实验框架.md",
+      "bytes": 8088,
+      "sha256": "4a3381f0c3fe34ecb669d43284bbee8c3aaedff878c930181e067ee1f6280786"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv",
+      "bytes": 14040,
+      "sha256": "19663f2f14d62af377377962ec8f794148450bfb278fdbeb2452f4641fe6a440"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv",
+      "bytes": 14040,
+      "sha256": "8e2b78cde966b0a3e8b6272935c3f3dcccc5a54e94bb7db79ded2fd8fdf5a124"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv",
+      "bytes": 14040,
+      "sha256": "8c803195d475d8ff320afd90887ae48cec6463f4d01a2264c6680611ed9db170"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv",
+      "bytes": 14040,
+      "sha256": "bb73b2852db183bee3d76c76f55e2bdcc292d7ed0881cb27966525b56afcafc0"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv",
+      "bytes": 14040,
+      "sha256": "cd0d718747fb6048cb474066dbf35f64ef852f59cba2886484cbdf14bc68a02f"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv",
+      "bytes": 14540,
+      "sha256": "e223b3d48bc4fef3cbc03fd583ff7aef87e474903d829f6c417310cb99fa7b5e"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv",
+      "bytes": 14040,
+      "sha256": "552f03249b69234009eb028b3296d6bd1b1cb3a52c0d3a84a669baa0e3179482"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv",
+      "bytes": 13540,
+      "sha256": "8814c8414fddc914444c74e6cf8da02e3e156a0d7fb8acea6c5da05e438bf054"
+    }
+  ],
+  "output_files": [
+    {
+      "path": "q2_p_trajectory_mapping.csv",
+      "bytes": 105244,
+      "sha256": "fe7b233faa4b2c3213a0c086551e3603e957f1cc816fc69140900f394dceb868"
+    },
+    {
+      "path": "q2_p_source_evidence_catalog.csv",
+      "bytes": 8854,
+      "sha256": "08b3d045e4585e704f24f17662356956b3b7d19df432b798b72c94074731970a"
+    },
+    {
+      "path": "q2_p_audit_summary.json",
+      "bytes": 13250,
+      "sha256": "82e53b9a4a6612a88b9b8c244a0b145eb951d96a84d1bac8b613589b4a7a71ce"
+    },
+    {
+      "path": "q2_p_feasibility_audit.md",
+      "bytes": 17452,
+      "sha256": "15c61269a83f104f2020417f900f4b78626c7a5bc029a2817d6d46eba5c48a76"
+    }
+  ],
+  "model_fitted": false
+}

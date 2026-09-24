@@ -1,0 +1,45 @@
+{
+  "method": "cluster bootstrap by the eight B12-confirmed Pythia model_repo trajectories; sample eight clusters with replacement, retaining all rows within selected trajectories",
+  "cluster_count": 8,
+  "requested_replicates": 1000,
+  "successful_replicates": 1000,
+  "failed_replicates": 0,
+  "success_fraction": 1.0,
+  "interval_percentiles": [
+    2.5,
+    97.5
+  ],
+  "intervals": {
+    "E": {
+      "estimate": 1.689797562928721,
+      "lower_95": 1.6896449977159096,
+      "upper_95": 1.6899624949355871,
+      "bootstrap_median": 1.6898135280085076
+    },
+    "A": {
+      "estimate": 0.353980320664689,
+      "lower_95": 0.3538432703971348,
+      "upper_95": 0.3541249393687383,
+      "bootstrap_median": 0.3539675838405605
+    },
+    "alpha": {
+      "estimate": 0.33997658189675806,
+      "lower_95": 0.3398314843053064,
+      "upper_95": 0.3401154853953109,
+      "bootstrap_median": 0.33998356119983736
+    },
+    "B": {
+      "estimate": 1.240305583540225,
+      "lower_95": 1.2401602298953889,
+      "upper_95": 1.2404340508734026,
+      "bootstrap_median": 1.2403106307697174
+    },
+    "beta": {
+      "estimate": 0.27987812854769506,
+      "lower_95": 0.2798234574722041,
+      "upper_95": 0.27993739665665157,
+      "bootstrap_median": 0.2798781682075653
+    }
+  },
+  "limitation": "Only eight independent trajectory clusters are available; percentile intervals are sensitive to the small number of clusters and are not high-precision population intervals."
+}

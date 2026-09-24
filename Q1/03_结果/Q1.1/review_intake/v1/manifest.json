@@ -1,0 +1,21 @@
+{
+  "artifact": "Q1.1 A1 blind-review intake v1",
+  "generated_local": "2026-09-24",
+  "review_cases": 793,
+  "scale": "integer 1-5",
+  "reviewers": 2,
+  "status": "forms_prepared_scores_pending",
+  "restricted_id_mapping_included": false,
+  "files_sha256": {
+    "results/q1_1/review_intake/v1/rater_1_form.csv": "87a4e34ecc44d5592cf618d09a3e8017b601a2ce10400bc4d7aae42e33d1e149",
+    "results/q1_1/review_intake/v1/rater_2_form.csv": "9e1488de675dccfd5149ce6e4071872c131f43784b10c38d577e67e437a3320f",
+    "results/q1_1/review_intake/v1/README.md": "d4a8b62afde6797d0b3d5bcce22a6daa32403652a826abc72004ea9b717368c7",
+    "results/q1_1/review_intake/v1/source_trace.md": "c5aa0955863676a069bb149eb21eabac7cc409bec26bfcc1b12929eaf33a1b04",
+    "results/q1_1/review_intake/v1/closeout_status.md": "55f1f033b4f499aa598401c6286ebcf96101941fb9d7e7ba25cd9cda2c565d85",
+    "src/validate_q1_1_reviews.ps1": "58721177bc49c91e4d621ce17c23fcc8eb7d0114f13ad54ba0dce0d15998627d",
+    "src/q1_1_blind_review_analysis.py": "b26745fce99058b141eb043fc11ee875bedf00bbdfeeac0a21ccd1ff790c5e72",
+    "results/q1_1/v1/review_packet/blind_review_samples.md": "89f50edff765124927c650d589c5f4c7029cc3b4a005b72603a3080054cb1aeb",
+    "results/q1_1/v1/review_packet/sampling_frame.csv": "f238dd06133a2be1085e121739e0ed59e4a94ebc4c0d1334d3ad83bc30085bd8",
+    "results/q1_1/v1/review_packet/blind_review_form.csv": "625f9a1965e7c3a1f6d1357f96affac2cf779317cff9e790baba0850d9f134a1"
+  }
+}

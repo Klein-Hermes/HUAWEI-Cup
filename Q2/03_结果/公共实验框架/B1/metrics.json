@@ -1,0 +1,67 @@
+{
+  "overall_oof": {
+    "n": 1176,
+    "rmse": 0.0001514391442148951,
+    "mae": 0.00010790025216674229,
+    "r2": 0.9999998039955491
+  },
+  "folds": [
+    {
+      "n": 294,
+      "rmse": 0.0001471119214671306,
+      "mae": 0.00010880026969448781,
+      "r2": 0.9999996763912383,
+      "fold": 1
+    },
+    {
+      "n": 294,
+      "rmse": 0.0001478962412246891,
+      "mae": 0.00010653448223361148,
+      "r2": 0.999999826766174,
+      "fold": 2
+    },
+    {
+      "n": 294,
+      "rmse": 0.00012186512922908621,
+      "mae": 9.031062806337162e-05,
+      "r2": 0.9999997667636349,
+      "fold": 3
+    },
+    {
+      "n": 147,
+      "rmse": 0.00013504239917127428,
+      "mae": 8.315612297813217e-05,
+      "r2": 0.9999997087931042,
+      "fold": 4
+    },
+    {
+      "n": 147,
+      "rmse": 0.00022023036796512768,
+      "mae": 0.00016875513437286432,
+      "r2": 0.9999992254998143,
+      "fold": 5
+    }
+  ],
+  "bootstrap": {
+    "method": "cluster bootstrap of out-of-fold prediction rows; sample independent groups with replacement and retain all rows in each selected group",
+    "group_count": 8,
+    "n_resamples": 2000,
+    "seed": 20260924,
+    "confidence": 0.95,
+    "intervals": {
+      "rmse": {
+        "lower": 0.00012562506912024214,
+        "upper": 0.0001791823182052438
+      },
+      "mae": {
+        "lower": 8.876018427334761e-05,
+        "upper": 0.00013046420454802536
+      },
+      "r2": {
+        "lower": 0.9999997208429665,
+        "upper": 0.9999998380689564
+      }
+    },
+    "limitation": "Intervals describe held-out prediction metrics conditional on the fixed CV assignments; a small number of independent groups limits precision."
+  }
+}

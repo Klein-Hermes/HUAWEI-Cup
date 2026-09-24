@@ -1,0 +1,55 @@
+{
+  "style": {
+    "journal": "general",
+    "lang": "zh",
+    "sciplots_used": false,
+    "cjk_font": "SimHei",
+    "constrained_layout": false
+  },
+  "figures": [
+    {
+      "figure": "raw_q1_2_source_counts",
+      "issues": []
+    },
+    {
+      "figure": "raw_q1_2_indicator_distributions",
+      "issues": []
+    },
+    {
+      "figure": "raw_q1_2_endpoint_saturation",
+      "issues": []
+    },
+    {
+      "figure": "process_q1_2_conflict_distribution",
+      "issues": []
+    },
+    {
+      "figure": "process_q1_2_pair_conflict",
+      "issues": []
+    },
+    {
+      "figure": "process_q1_2_contamination_sensitivity",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_2_score_effect",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_2_external_validation",
+      "issues": []
+    },
+    {
+      "figure": "result_q1_2_pair_rank_stability",
+      "issues": []
+    },
+    {
+      "figure": "flow_overall_model",
+      "issues": []
+    },
+    {
+      "figure": "flow_q1_2_model",
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "experiment": "B1",
+  "model": "M0",
+  "features": [
+    "N",
+    "D"
+  ],
+  "target": "loss",
+  "seed": 20260924,
+  "cv": {
+    "seed": 20260924,
+    "n_splits": 5,
+    "split_unit": "group",
+    "row_count": 1176,
+    "group_count": 8
+  },
+  "bootstrap_resamples": 2000,
+  "data_sources": [
+    {
+      "source": "B1",
+      "path": "D:/PycharmProject/HUAWEI-Cup/中文题目/F题/real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+      "rows": 1176,
+      "q_status": "absent",
+      "q_version": null,
+      "group_column": "N_params_B"
+    }
+  ],
+  "q_status_by_source": {
+    "B1": "absent"
+  },
+  "q_version_by_source": {
+    "B1": null
+  },
+  "p_columns": [],
+  "created_local_date": "2026-09-24",
+  "additional": {
+    "purpose": "P1 framework integration run; not a replacement for the frozen full-data B1 reference fit",
+    "fit": "existing additive classical scaling law, re-fitted within each grouped CV training fold",
+    "group_contract": "N_params_B identifies the eight complete trajectories; Gate 0 maps them to B12 model_repo clusters",
+    "q_or_p_used": false
+  }
+}

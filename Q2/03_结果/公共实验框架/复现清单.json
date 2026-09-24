@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-23T16:36:42.818628+00:00",
+  "random_seed": 20260924,
+  "input_files": [
+    {
+      "path": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\B_scaling_laws\\pythia_training_log_existing.csv",
+      "sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+      "bytes": 111459
+    },
+    {
+      "path": "D:\\PycharmProject\\HUAWEI-Cup\\src\\q2_experiment_framework.py",
+      "sha256": "56f8f8322d76331262217aded15c66fef955609d8033bcb588bc71e1bc53ddcc",
+      "bytes": 20787
+    },
+    {
+      "path": "D:\\PycharmProject\\HUAWEI-Cup\\src\\q2_framework_b1_demo.py",
+      "sha256": "0e2a36388052e0fc54294aab4a2ca328bb60710cafe56da14d9758be0b98b842",
+      "bytes": 2938
+    },
+    {
+      "path": "D:\\PycharmProject\\HUAWEI-Cup\\src\\f_q2_scaling_baseline.py",
+      "sha256": "55ee2385cdffca139a741b2be5adb68590285bccfea49b94aee82be4d0be2424",
+      "bytes": 72415
+    }
+  ],
+  "runtime": {
+    "name": "python",
+    "version": "3.13.9",
+    "platform": "Windows-11-10.0.22000-SP0",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "pandas": "2.3.3",
+      "matplotlib": "3.10.6",
+      "scipy": "1.16.3"
+    }
+  },
+  "key_parameters": {
+    "n_splits": 5,
+    "bootstrap_resamples": 2000,
+    "fit_starts_per_fold": 8,
+    "group": "N_params_B trajectory"
+  },
+  "reproduce_command": "D:\\Anaconda\\python.exe src/q2_framework_b1_demo.py --splits 5 --bootstrap-resamples 2000"
+}

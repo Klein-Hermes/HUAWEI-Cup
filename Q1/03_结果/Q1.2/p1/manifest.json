@@ -1,0 +1,78 @@
+{
+  "schema_version": "q1-2-conflict-v1.1",
+  "status": "sampled_p1",
+  "command": "src/f_q1_2_conflict_model.py --output-dir results/q1_2_conflict_model/p1 --max-rows-per-domain 120 --threshold-bootstrap 20 --validation-bootstrap 20 --weight-bootstrap 20 --seed 20260923",
+  "project_root": "D:\\PycharmProject\\HUAWEI-Cup",
+  "preprocessing_version": "q1-common-v1.1",
+  "preprocess_manifest_sha256": "56ac6f6178eb949e024a0ac0a1faa22f9a37fcbcc141af1371d871bac083d2ec",
+  "input_preprocessed_sha256": {
+    "a1": "38c753ab9b5fa3c2ac370f9a1c600ae761dca1154814d542a45fb98737e13590",
+    "a2": "55cd687cc60614084568ac09ca141b0a6a847528edc8edac88ea228362f055fb",
+    "a3": "a011c3c04a603fd306ce77f40044ecb0924ab79f18acfd53195fd0bf92213d8f"
+  },
+  "rows_scanned": {
+    "a1": 51230,
+    "a2": 17523,
+    "a3": 203752
+  },
+  "rows_used": {
+    "a1": 840,
+    "a2": 120,
+    "a3": 120
+  },
+  "indicators": [
+    "fineweb_edu",
+    "fluency_en",
+    "modernbert_cleanliness",
+    "modernbert_readability",
+    "modernbert_reasoning",
+    "modernbert_professionalism",
+    "dsir_books",
+    "dsir_wiki",
+    "dsir_math",
+    "qurater",
+    "ad_en",
+    "rps_doc_word_count",
+    "rps_doc_num_sentences",
+    "rps_doc_unigram_entropy",
+    "rps_doc_frac_unique_words",
+    "rps_doc_frac_no_alph_words",
+    "rps_doc_frac_chars_top_2gram",
+    "rps_doc_frac_chars_top_3gram",
+    "rps_lines_uppercase_letter_fraction",
+    "rps_lines_ending_with_terminal_punctution_mark",
+    "rps_lines_numerical_chars_fraction",
+    "rps_doc_mean_word_length"
+  ],
+  "model_parameters": {
+    "seed": 20260923,
+    "conflict_index": "row-wise mean pairwise absolute gap over finite norm_* scores",
+    "threshold": "A1 source-domain q95, numpy method=linear",
+    "threshold_bootstrap_repetitions": 20,
+    "validation_bootstrap_repetitions": 20,
+    "q1_1_weight_bootstrap_repetitions": 20,
+    "bootstrap_ci": 0.95,
+    "bootstrap_ci_method": "percentile",
+    "max_rows_per_domain": 120,
+    "huber_delta": 0.45058698869867153,
+    "huber_scale": 0.3350089135306108,
+    "huber_scale_method": "1.4826*MAD",
+    "pair_report_top_n": 10
+  },
+  "runtime": {
+    "python": "3.10.4",
+    "numpy": "1.23.3",
+    "platform": "Windows-10-10.0.22000-SP0",
+    "elapsed_seconds": 12.879
+  },
+  "outputs_sha256": {
+    "domain_summary.csv": "b7c1e2fb1562dc15564b35255d125bd6422ef7a17b846db46a02794f2d651e72",
+    "external_validation.csv": "54f5db75be45ce849b3bc825f9c83b6eb4d8c949c928095289ec8adb05488df6",
+    "indicator_weights.csv": "62a864a5e41cc157b7c0831d22d4677d07c6154072c6c2761d309d1fd623d0f7",
+    "pair_diagnostics.csv": "f546bc222cb8343b8baafa2fb8f3d41e295bc0c0687257a2fe1a66afefee1859",
+    "q1_2_conflict_report.md": "96fea17ae9dd55d9fa3848d47073a99fee4116df08570285cb262759e6738694",
+    "sample_scores.csv.gz": "72d4673c96ab1f4ba6cd90fb45d2b74c3e751cc11d0911b91b81c3fbd5bfa350",
+    "threshold_sensitivity.csv": "990fa6d8e3843443984a3fe5cade9d51c67df718cfb2622979dc14551740de7c",
+    "thresholds.csv": "abb83b25e16572cd395cbcc4354490aed597f087ef2cb828894ce50b04527907"
+  }
+}

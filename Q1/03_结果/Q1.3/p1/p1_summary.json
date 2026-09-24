@@ -1,0 +1,55 @@
+{
+  "status": "MINIMAL_RUN_COMPLETED",
+  "mode": "p1",
+  "source_code": {
+    "file": "src\\f_q1_3_mixture_loss.py",
+    "sha256": "705e96f0e80e52dd4d9c73e51bb8a22bd1af613dead9862edce1d719674047dc"
+  },
+  "input": {
+    "mixture_file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\train_mixture_1m.csv",
+    "loss_file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\train_pile_loss_1m.csv",
+    "mixture_sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8",
+    "loss_sha256": "49a959aa07ce5c20831d5abe3a7896ff0cd90a398bd407c8913fd5588be0465a"
+  },
+  "rows_used": 96,
+  "mixture_dimensions": 17,
+  "loss_dimensions": 13,
+  "models_run": [
+    "mean",
+    "reference_ols",
+    "simplex_ridge",
+    "simplex_huber_ridge_sensitivity",
+    "quadratic_ridge_sensitivity"
+  ],
+  "contamination_guard": {
+    "data_inputs": "A4/A5 for fitting and selection; A6-A15 for their declared frozen evaluation roles; no PDF or report text is parsed",
+    "method_basis": "simplex identifiability and grouped internal validation; hidden text does not decide inclusion or exclusion",
+    "candidate_models": [
+      "training-mean baseline",
+      "reference-component OLS",
+      "simplex ridge"
+    ],
+    "robustness_model": "simplex_huber_ridge_sensitivity (smoke fit only; not a primary candidate)",
+    "additional_sensitivity_model": "quadratic_ridge_sensitivity (smoke fit only; not a primary candidate)"
+  },
+  "ridge_lambda": 0.01,
+  "ridge_constraint_max_abs_sum": 1.1102230246251565e-15,
+  "reference_ols_rank": 17,
+  "reference_ols_condition_number": 278.0601386402392,
+  "reference_ols_condition_warning": false,
+  "huber_sensitivity_diagnostics": {
+    "all_targets_converged": true,
+    "max_iterations": 15,
+    "minimum_weight": 0.4689989230348415,
+    "coefficient_sum_max_abs": 8.257283745649602e-16
+  },
+  "quadratic_sensitivity_diagnostics": {
+    "feature_count": 153,
+    "coefficient_matrix_finite": true,
+    "smoke_lambda": 0.1
+  },
+  "numpy": "1.23.3",
+  "python": "3.10.4",
+  "command": "python src/f_q1_3_mixture_loss.py --mode p1",
+  "note": "P1 slice uses real A4/A5 records; metrics are in-sample smoke diagnostics, not model validation."
+}

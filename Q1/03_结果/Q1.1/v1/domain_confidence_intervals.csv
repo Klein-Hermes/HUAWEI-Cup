@@ -1,0 +1,19 @@
+﻿dataset,source_domain,candidate,bootstrap_repetitions,ci_method,ci_low,ci_high,valid_repetitions,valid_repetition_rate
+a1,arxiv,q_equal,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.5303271234035491,0.5337712049484253,2000,1.0
+a1,arxiv,q_huber,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.5587501093745232,0.5638743057847023,2000,1.0
+a1,book,q_equal,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.42312069833278654,0.44069116860628127,2000,1.0
+a1,book,q_huber,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.4166682198643684,0.44231095165014267,2000,1.0
+a1,c4,q_equal,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.5686645656824112,0.5723332583904266,2000,1.0
+a1,c4,q_huber,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.5747235760092735,0.5785818085074425,2000,1.0
+a1,commoncrawl,q_equal,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.5323690488934517,0.5356416761875152,2000,1.0
+a1,commoncrawl,q_huber,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.5341207027435303,0.5378116250038147,2000,1.0
+a1,github,q_equal,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.4031180918216705,0.4057907149195671,2000,1.0
+a1,github,q_huber,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.3880361646413803,0.3909398004412651,2000,1.0
+a1,stackexchange,q_equal,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.5159537687897682,0.5186818644404412,2000,1.0
+a1,stackexchange,q_huber,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.5169330433011055,0.519771882891655,2000,1.0
+a1,wikipedia,q_equal,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.4819977954030037,0.4849605768918991,2000,1.0
+a1,wikipedia,q_huber,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.4769694611430168,0.4804027646780014,2000,1.0
+a2,arxiv,q_equal,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.5304746761918068,0.5314777508378029,2000,1.0
+a2,arxiv,q_huber,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.5591986939311028,0.5607526257634163,2000,1.0
+a3,github,q_equal,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.4036353811621666,0.4042311757802963,2000,1.0
+a3,github,q_huber,2000,"95% percentile bootstrap; 5,000-bin empirical score histogram (step 0.0002)",0.3885551869869232,0.38919114619493483,2000,1.0

@@ -1,0 +1,11 @@
+﻿comparison,source_domain,extension_dataset,pair_rank_spearman,top10_overlap_n,top10_overlap_rate
+a1_macro_full_vs_clean,macro_7_domain,,0.9997829007574136,10,1.0
+a1_same_domain_full_vs_clean,arxiv,,0.999995132303978,10,1.0
+a1_same_domain_full_vs_clean,book,,0.999126735333632,10,1.0
+a1_same_domain_full_vs_clean,c4,,0.9999522965789832,10,1.0
+a1_same_domain_full_vs_clean,commoncrawl,,0.9998510485017231,10,1.0
+a1_same_domain_full_vs_clean,github,,0.9999873439903425,10,1.0
+a1_same_domain_full_vs_clean,stackexchange,,0.999969820284663,10,1.0
+a1_same_domain_full_vs_clean,wikipedia,,0.9999678732062541,9,0.9
+a1_clean_vs_extension,arxiv,a2,0.999618372631866,9,0.9
+a1_clean_vs_extension,github,a3,0.9995112833193791,10,1.0

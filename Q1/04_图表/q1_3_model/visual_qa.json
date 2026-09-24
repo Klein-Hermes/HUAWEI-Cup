@@ -1,0 +1,146 @@
+{
+  "raw_q1_3_row_sum_deviation": {
+    "verdict": "PASS",
+    "issues": [],
+    "preview": "figures/q1_3_model/previews/raw_q1_3_row_sum_deviation_preview.png",
+    "outputs": [
+      "figures/q1_3_model/raw_q1_3_row_sum_deviation.pdf",
+      "figures/q1_3_model/raw_q1_3_row_sum_deviation.svg",
+      "figures/q1_3_model/raw_q1_3_row_sum_deviation.png",
+      "figures/q1_3_model/grayscale/raw_q1_3_row_sum_deviation_grayscale.png"
+    ],
+    "size_inches": [
+      7.2,
+      4.8
+    ],
+    "png_dpi": 300
+  },
+  "raw_q1_3_zero_count": {
+    "verdict": "PASS",
+    "issues": [],
+    "preview": "figures/q1_3_model/previews/raw_q1_3_zero_count_preview.png",
+    "outputs": [
+      "figures/q1_3_model/raw_q1_3_zero_count.pdf",
+      "figures/q1_3_model/raw_q1_3_zero_count.svg",
+      "figures/q1_3_model/raw_q1_3_zero_count.png",
+      "figures/q1_3_model/grayscale/raw_q1_3_zero_count_grayscale.png"
+    ],
+    "size_inches": [
+      7.2,
+      4.8
+    ],
+    "png_dpi": 300
+  },
+  "raw_q1_3_share_loss_correlation": {
+    "verdict": "PASS",
+    "issues": [],
+    "preview": "figures/q1_3_model/previews/raw_q1_3_share_loss_correlation_preview.png",
+    "outputs": [
+      "figures/q1_3_model/raw_q1_3_share_loss_correlation.pdf",
+      "figures/q1_3_model/raw_q1_3_share_loss_correlation.svg",
+      "figures/q1_3_model/raw_q1_3_share_loss_correlation.png",
+      "figures/q1_3_model/grayscale/raw_q1_3_share_loss_correlation_grayscale.png"
+    ],
+    "size_inches": [
+      10.5,
+      6.2
+    ],
+    "png_dpi": 300
+  },
+  "process_q1_3_lambda_cv": {
+    "verdict": "PASS",
+    "issues": [],
+    "preview": "figures/q1_3_model/previews/process_q1_3_lambda_cv_preview.png",
+    "outputs": [
+      "figures/q1_3_model/process_q1_3_lambda_cv.pdf",
+      "figures/q1_3_model/process_q1_3_lambda_cv.svg",
+      "figures/q1_3_model/process_q1_3_lambda_cv.png",
+      "figures/q1_3_model/grayscale/process_q1_3_lambda_cv_grayscale.png"
+    ],
+    "size_inches": [
+      7.2,
+      4.8
+    ],
+    "png_dpi": 300
+  },
+  "process_q1_3_model_selection": {
+    "verdict": "PASS",
+    "issues": [],
+    "preview": "figures/q1_3_model/previews/process_q1_3_model_selection_preview.png",
+    "outputs": [
+      "figures/q1_3_model/process_q1_3_model_selection.pdf",
+      "figures/q1_3_model/process_q1_3_model_selection.svg",
+      "figures/q1_3_model/process_q1_3_model_selection.png",
+      "figures/q1_3_model/grayscale/process_q1_3_model_selection_grayscale.png"
+    ],
+    "size_inches": [
+      7.2,
+      3.6
+    ],
+    "png_dpi": 300
+  },
+  "process_q1_3_huber_weights": {
+    "verdict": "PASS",
+    "issues": [],
+    "preview": "figures/q1_3_model/previews/process_q1_3_huber_weights_preview.png",
+    "outputs": [
+      "figures/q1_3_model/process_q1_3_huber_weights.pdf",
+      "figures/q1_3_model/process_q1_3_huber_weights.svg",
+      "figures/q1_3_model/process_q1_3_huber_weights.png",
+      "figures/q1_3_model/grayscale/process_q1_3_huber_weights_grayscale.png"
+    ],
+    "size_inches": [
+      10.0,
+      5.0
+    ],
+    "png_dpi": 300
+  },
+  "result_q1_3_test_1m_observed_predicted": {
+    "verdict": "PASS",
+    "issues": [],
+    "preview": "figures/q1_3_model/previews/result_q1_3_test_1m_observed_predicted_preview.png",
+    "outputs": [
+      "figures/q1_3_model/result_q1_3_test_1m_observed_predicted.pdf",
+      "figures/q1_3_model/result_q1_3_test_1m_observed_predicted.svg",
+      "figures/q1_3_model/result_q1_3_test_1m_observed_predicted.png",
+      "figures/q1_3_model/grayscale/result_q1_3_test_1m_observed_predicted_grayscale.png"
+    ],
+    "size_inches": [
+      11.0,
+      8.6
+    ],
+    "png_dpi": 300
+  },
+  "result_q1_3_cross_scale_rmse": {
+    "verdict": "PASS",
+    "issues": [],
+    "preview": "figures/q1_3_model/previews/result_q1_3_cross_scale_rmse_preview.png",
+    "outputs": [
+      "figures/q1_3_model/result_q1_3_cross_scale_rmse.pdf",
+      "figures/q1_3_model/result_q1_3_cross_scale_rmse.svg",
+      "figures/q1_3_model/result_q1_3_cross_scale_rmse.png",
+      "figures/q1_3_model/grayscale/result_q1_3_cross_scale_rmse_grayscale.png"
+    ],
+    "size_inches": [
+      7.2,
+      4.8
+    ],
+    "png_dpi": 300
+  },
+  "result_q1_3_substitution_coefficients": {
+    "verdict": "PASS",
+    "issues": [],
+    "preview": "figures/q1_3_model/previews/result_q1_3_substitution_coefficients_preview.png",
+    "outputs": [
+      "figures/q1_3_model/result_q1_3_substitution_coefficients.pdf",
+      "figures/q1_3_model/result_q1_3_substitution_coefficients.svg",
+      "figures/q1_3_model/result_q1_3_substitution_coefficients.png",
+      "figures/q1_3_model/grayscale/result_q1_3_substitution_coefficients_grayscale.png"
+    ],
+    "size_inches": [
+      10.5,
+      6.2
+    ],
+    "png_dpi": 300
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "task": "Q2 classical scaling-law reference baseline",
+  "status": "基线已拟合、验证受限（B2/B3 非独立真实验证；B4/B5 Loss 可比性未证实）",
+  "reproduction_command": "\"D:\\Anaconda\\python.exe\" src/f_q2_scaling_baseline.py --mode full --seed 20260923",
+  "mode": "full",
+  "seed": 20260923,
+  "bootstrap_replicates": 1000,
+  "role_contract_version": "q2-classic-baseline-gate0-v1",
+  "input_sha256": {
+    "中文题目/F题/real_attachments/B_scaling_laws/cerebras_training_log.csv": "178f878cad2cb31e4ec104c670553de23818197876d824a113fdb911125951a6",
+    "中文题目/F题/real_attachments/B_scaling_laws/published_scaling_data.csv": "dd858c5e48610e28589340d5db023d6abfb31df597506789ccdfc6a546731bbd",
+    "中文题目/F题/real_attachments/B_scaling_laws/pythia_checkpoint_index.csv": "0f7f63535cbc1bbef5165776562e71401af9f762cfe02aaea30c824f45fbc9ed",
+    "中文题目/F题/real_attachments/B_scaling_laws/pythia_training_log_existing.csv": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+    "中文题目/F题/real_attachments/B_scaling_laws/scaling_baseline.csv": "2272983ded93de35e05f9acbf95ebceedf43f283345e4be72b54fee94080391e",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv": "19663f2f14d62af377377962ec8f794148450bfb278fdbeb2452f4641fe6a440",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv": "8e2b78cde966b0a3e8b6272935c3f3dcccc5a54e94bb7db79ded2fd8fdf5a124",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv": "8c803195d475d8ff320afd90887ae48cec6463f4d01a2264c6680611ed9db170",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv": "bb73b2852db183bee3d76c76f55e2bdcc292d7ed0881cb27966525b56afcafc0",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv": "cd0d718747fb6048cb474066dbf35f64ef852f59cba2886484cbdf14bc68a02f",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv": "e223b3d48bc4fef3cbc03fd583ff7aef87e474903d829f6c417310cb99fa7b5e",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv": "552f03249b69234009eb028b3296d6bd1b1cb3a52c0d3a84a669baa0e3179482",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv": "8814c8414fddc914444c74e6cf8da02e3e156a0d7fb8acea6c5da05e438bf054",
+    "中文题目/F题/数据说明.pdf": "f5c851bbe4b3d8c9079609c37f2c3b0835244067711d6d761c66adeaa8357835",
+    "题目分析报告.md": "978c7e7a13a24bda2a5b3d022a004bf8dcef10639aa80f19122037ce103d832a"
+  },
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.6",
+    "executable": "D:\\Anaconda\\python.exe",
+    "runtime_note": "The standalone Python 3.10 interpreter on this workstation is known to fail inside SciPy native linear algebra with Windows exception 0xc06d007f; reproduce with this manifest's executable or another verified Python/SciPy runtime."
+  },
+  "figure_helpers": {
+    "style": "C:\\Users\\86147\\.codex\\skills\\math-modeling\\tools\\figure\\scripts\\setup_style.py",
+    "export": "C:\\Users\\86147\\.codex\\skills\\math-modeling\\tools\\figure\\scripts\\export_figure.py"
+  },
+  "figure_style": {
+    "journal": "general",
+    "lang": "en",
+    "sciplots_used": false,
+    "cjk_font": null,
+    "constrained_layout": true
+  },
+  "figure_contract": [
+    {
+      "figure": "raw_q2_parameter_coverage",
+      "category": "raw",
+      "claim": "Show the eight observed Pythia model sizes and their repeated checkpoints.",
+      "chart_type": "log-scale histogram",
+      "data_sources": "B1",
+      "caveat": "Rows are repeated checkpoints within eight model trajectories."
+    },
+    {
+      "figure": "raw_q2_token_ecdf",
+      "category": "raw",
+      "claim": "Show how B1 checkpoints cover the training-token range.",
+      "chart_type": "empirical CDF",
+      "data_sources": "B1",
+      "caveat": "The checkpoint CDF is not an independent-sample distribution."
+    },
+    {
+      "figure": "raw_q2_N_D_support",
+      "category": "raw",
+      "claim": "Show joint N-D support and the observed loss gradient.",
+      "chart_type": "colored scatter",
+      "data_sources": "B1",
+      "caveat": ""
+    },
+    {
+      "figure": "process_q2_multistart_cost",
+      "category": "process",
+      "claim": "Check whether fixed initial values converge to comparable training minima.",
+      "chart_type": "ranked point plot",
+      "data_sources": "B1 fit starts",
+      "caveat": ""
+    },
+    {
+      "figure": "process_q2_residual_structure",
+      "category": "process",
+      "claim": "Reveal residual bias or curvature across the fitted loss range.",
+      "chart_type": "residual scatter",
+      "data_sources": "B1",
+      "caveat": ""
+    },
+    {
+      "figure": "process_q2_cluster_bootstrap",
+      "category": "process",
+      "claim": "Display percentile intervals for parameter percentage changes from the B1 estimate across resampled complete model trajectories.",
+      "chart_type": "five-parameter relative interval panels",
+      "data_sources": "B1 cluster bootstrap",
+      "caveat": "Eight clusters limit interval reliability; each parameter panel has its own horizontal scale."
+    },
+    {
+      "figure": "result_q2_B1_observed_vs_fitted",
+      "category": "result",
+      "claim": "Show B1 fitted values against observations for the frozen classic form.",
+      "chart_type": "parity scatter",
+      "data_sources": "B1",
+      "caveat": "In-sample fit only; not an external validation result."
+    },
+    {
+      "figure": "result_q2_validation_by_source",
+      "category": "result",
+      "claim": "Show predictions for each held-out source without pooling or retuning.",
+      "chart_type": "four-panel parity scatter",
+      "data_sources": "B2, B3, B4, B5",
+      "caveat": "B2/B3 are not independent real validation; B4/B5 evaluation comparability is undocumented; no pooled metric is reported."
+    },
+    {
+      "figure": "result_q2_leave_one_size_out",
+      "category": "result",
+      "claim": "Show the percentage change in each fitted parameter when one entire model-size trajectory is excluded.",
+      "chart_type": "small-multiple relative parameter paths",
+      "data_sources": "B1 leave-one-size-out",
+      "caveat": "Each omitted size is a whole 147-checkpoint trajectory; the horizontal zero line is the full B1 fit."
+    }
+  ],
+  "figure_counts": {
+    "raw": 3,
+    "process": 3,
+    "result": 3
+  },
+  "outputs_sha256": {
+    "results/q2_scaling_baseline/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "results/q2_scaling_baseline/v1/b2_predictions.csv": "69e91b27a009dfb6c0f83e2bf7e2f3c2edb22f52f4520574c19415f1eb20caec",
+    "results/q2_scaling_baseline/v1/b3_predictions.csv": "eed72f2e524a9b711e4eeb1149c7d31061d55d5010c3e1020b6d087cf00fb32e",
+    "results/q2_scaling_baseline/v1/b4_predictions.csv": "787b5627984cf7b6ab319cb5b615d6ab7269285928021f1d189754976b8af1f0",
+    "results/q2_scaling_baseline/v1/b5_predictions.csv": "6b010045996e69225a07aa0ee99a691c16ad2fb4e2f3f52a93ce9904d80dd2c4",
+    "results/q2_scaling_baseline/v1/cluster_bootstrap_estimates.csv": "c9d043ab768891a59657ee5df6c1df34e5ae5c44533723b5803f8157052d4668",
+    "results/q2_scaling_baseline/v1/cluster_bootstrap_intervals.csv": "9777aeeb31cdc3b376eb069d39e70ae8db579b503abe4e933d01d90afbdfdfe2",
+    "results/q2_scaling_baseline/v1/cluster_bootstrap_intervals.json": "abb67700bec2634544de1635ce67377e07c62efbe9384588d2d7ff65b2a4b6e6",
+    "results/q2_scaling_baseline/v1/dropped_term_diagnostics.json": "092b6ca03a44520be0961c473ba8711d51cc6dbee7b778df15042ab0727a8301",
+    "results/q2_scaling_baseline/v1/figure_contract.csv": "fae791063e4ad0ca62e125ec9f51eefc18229ebf0c8c3b7e537b11236e22e081",
+    "results/q2_scaling_baseline/v1/figure_previews/contact_sheet.png": "95d0801c691dc1cdffae760f54f83630cc1e2937b9855c2df3e8aa9baec54db1",
+    "results/q2_scaling_baseline/v1/figure_previews/grayscale/flow_q2_model_grayscale.png": "4f047cf2e13937083704e2ce25b83aae0d34aea1141b9588c3b6107bdd5bf2a9",
+    "results/q2_scaling_baseline/v1/figure_previews/grayscale/process_q2_cluster_bootstrap_grayscale.png": "8fb308f2ad959e9eb928a36b3a0bee3e486e693c092620bd6c38ff58c23e42f9",
+    "results/q2_scaling_baseline/v1/figure_previews/grayscale/process_q2_multistart_cost_grayscale.png": "e6170168e9751b6ae326ceffd3c27384e8da7ee9fba1bfc6aeb026228a93c0a3",
+    "results/q2_scaling_baseline/v1/figure_previews/grayscale/process_q2_residual_structure_grayscale.png": "12491151cac5cb918efcbb05823fc553eb74b9b9b48edc835fe5c2b8b1474a6d",
+    "results/q2_scaling_baseline/v1/figure_previews/grayscale/raw_q2_N_D_support_grayscale.png": "efe959becd564323f11c5ed3ed3c5de7aaaddf5ea7452ed87b88e58195bbe4f0",
+    "results/q2_scaling_baseline/v1/figure_previews/grayscale/raw_q2_parameter_coverage_grayscale.png": "f4582056f25f41656e39e64ff2fdf35054b7e3a6dc6b94625f4a292d0e95f7f8",
+    "results/q2_scaling_baseline/v1/figure_previews/grayscale/raw_q2_token_ecdf_grayscale.png": "942a4e6ffecc22106368bb6c3eb031189ba4c3832cadca92fb01a91695a3b869",
+    "results/q2_scaling_baseline/v1/figure_previews/grayscale/result_q2_B1_observed_vs_fitted_grayscale.png": "28a31164e8dc4c7841e12e1a1ecd2ed7f9d62d7f6039a097b94d2ffe20d29741",
+    "results/q2_scaling_baseline/v1/figure_previews/grayscale/result_q2_leave_one_size_out_grayscale.png": "cdcb2c02a72ec3262f1f15cfd66049eb94736f9e2f18f09c6dc963e54f2346f5",
+    "results/q2_scaling_baseline/v1/figure_previews/grayscale/result_q2_validation_by_source_grayscale.png": "12d151d18e2b7b94c38010d565ad5b271653332ec02bcc609f9370cd638d7a4d",
+    "results/q2_scaling_baseline/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "results/q2_scaling_baseline/v1/fit_summary.json": "a5fe21c1b23c466fe86c67ebf1520fb4e56723a0c5764528a8e12f51dff521ea",
+    "results/q2_scaling_baseline/v1/gate0_audit.json": "cd390dd83074321943e11e189ecae4e536583da0221531788ef7220bb60315af",
+    "results/q2_scaling_baseline/v1/gate0_b1_trajectory_mapping.csv": "ea2c1fd78c7a84e0f41d70a57b630089781b8d8cbd9c9a9434e6ea7c787c0c37",
+    "results/q2_scaling_baseline/v1/gate0_design_support.json": "3a93a6dc4fb11c6477390d13ba887cfee7f9d84a68064fc1172c36f3cf3db2c0",
+    "results/q2_scaling_baseline/v1/gate0_file_roles.csv": "4c5091c00a59635fe3630211dc49344e4e5428a4606aaadabffeef365ec83928",
+    "results/q2_scaling_baseline/v1/gate0_frozen_input_snapshot.json": "05f20b329dc45099a975a8732e7b81f498baf9b3fac60b8e75194dcdc9b0323f",
+    "results/q2_scaling_baseline/v1/leave_one_size_out.csv": "1da4d0ca5909f584c0ab4a1e40a33113c9fc768940d154308088e0edb4e22708",
+    "results/q2_scaling_baseline/v1/multistart_fits.csv": "72926da185ab884a382a502e1ccabe1033737c6a66de6c638e9cbd593ffc36e3",
+    "results/q2_scaling_baseline/v1/q2_scaling_baseline_report.md": "8aa65fc287cf4c3ae3b12f06abc56c76739a1c38f79c386b2c87d2bd9b314fd8",
+    "results/q2_scaling_baseline/v1/validation_comparability.json": "73fcacf9a212cd5c63428329021e7389e8f5e0d1dbb582c31a1d2aea5d908a75",
+    "results/q2_scaling_baseline/v1/validation_metrics_by_source.csv": "15ea2b015ba1bd1dad49b92999b13b97d26a676be3bfb68dd11c63f574755af0",
+    "results/q2_scaling_baseline/v1/validation_metrics_by_stratum.csv": "0167fe3480330135919c812902dc6786d64e0fbf218f62c481f35c4e7aa75798",
+    "figures/q2_scaling_baseline/flow_q2_model.png": "9d13904deb16172c6748f5c8aff1e7d18f4a74e401ce410e2ced3db85a8ed325",
+    "figures/q2_scaling_baseline/flow_q2_model.svg": "18d7a7e47490dec0778208134edad27d81b29436aed548ea96673fb2f6c2de32",
+    "figures/q2_scaling_baseline/process_q2_cluster_bootstrap.png": "179e38f439c52ab1e14ea28294414a5751c00d53f110cebf5aafe5a7ec2eb31d",
+    "figures/q2_scaling_baseline/process_q2_cluster_bootstrap.svg": "e78df4499ac86a34df5620031774533dd516e3c988a77f81f709bae6daaf8478",
+    "figures/q2_scaling_baseline/process_q2_multistart_cost.png": "c5342cbc54f4c9c013acc79f6d0e06907ba953744942098deddbfd295afa3b2a",
+    "figures/q2_scaling_baseline/process_q2_multistart_cost.svg": "798413a7b32c948a266d38800b300d67a47efbd932d9eb86193e1797a3cb372f",
+    "figures/q2_scaling_baseline/process_q2_residual_structure.png": "83e62ecf9f5098eae49e23a89d075b9f13631b303124fa92c878c27742ba3c7e",
+    "figures/q2_scaling_baseline/process_q2_residual_structure.svg": "1cbc9cb17433aae341550838d92025066f48fb475fa0f66861f3152304ee997f",
+    "figures/q2_scaling_baseline/raw_q2_N_D_support.png": "e51da8db1f05177c805aac6762f7e24ec4460639455700b06e33d22ecec93b03",
+    "figures/q2_scaling_baseline/raw_q2_N_D_support.svg": "6406c1366465e3371e5efc6654843a15423f479544549f02dfc4c8b1747c9800",
+    "figures/q2_scaling_baseline/raw_q2_parameter_coverage.png": "8437017e2304e56bcd7af752e9caf8c18a704544412e114ccfb9b5969655e884",
+    "figures/q2_scaling_baseline/raw_q2_parameter_coverage.svg": "bdaa0e43c02cb7dceb3f35c13cbfb05c6dcb62a4e315a7b202434e1fd225a0f3",
+    "figures/q2_scaling_baseline/raw_q2_token_ecdf.png": "24004603b41d1ac3c4478b5caeee1da9b06f7cac2f93b322cabb8efb3a264975",
+    "figures/q2_scaling_baseline/raw_q2_token_ecdf.svg": "232999440063ca3774bfd9af95a80f0f7fe16d6d4bcd3b2b0c56bf65fd004459",
+    "figures/q2_scaling_baseline/result_q2_B1_observed_vs_fitted.png": "95c972b18a44ae7aa12932786b68958da807e0448f46bab25eb396df1bdbd883",
+    "figures/q2_scaling_baseline/result_q2_B1_observed_vs_fitted.svg": "85e3803eaa27feb810dda481bab83b47c8299cb1dcd248bec03e3b9db17b8868",
+    "figures/q2_scaling_baseline/result_q2_leave_one_size_out.png": "f3e2d103d1fb96f6afbf80cad1fef79c45083aa3aff6c02b7210057c75f8ce03",
+    "figures/q2_scaling_baseline/result_q2_leave_one_size_out.svg": "9eeaa9c2a4a506a6ed76f35ff3a365789518029136f8ce88df1891f7bae1c6a6",
+    "figures/q2_scaling_baseline/result_q2_validation_by_source.png": "9a3f0c9ec2a8662a873e87335aacee55ddf9e4530cce8c3afdf227fa274e4f6d",
+    "figures/q2_scaling_baseline/result_q2_validation_by_source.svg": "f8d711acedbfd02d4355c6855e686dff3ad72c0ab31c3772d1611d12f92c4838"
+  },
+  "limits": [
+    "B1 has only eight trajectory clusters.",
+    "B2/B3 are not independent real validations.",
+    "B4/B5 evaluation protocol comparability is undocumented.",
+    "This is not the generalized Q2 model with Q and p."
+  ],
+  "created_utc": "2026-09-23T16:27:31.496555+00:00"
+}

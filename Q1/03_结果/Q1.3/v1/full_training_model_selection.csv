@@ -1,0 +1,6 @@
+﻿candidate_model,role,grouped_cv_standardized_mse,selected_on_full_training_cv
+mean,primary_candidate,1.0044751467973316,False
+reference_ols,primary_candidate,0.400316151433245,False
+simplex_ridge,primary_candidate,0.3985994161476655,True
+simplex_huber_ridge_sensitivity,robustness_sensitivity_only,0.40164787402071234,False
+quadratic_ridge_sensitivity,nonlinear_sensitivity_only,0.3423824810548815,False

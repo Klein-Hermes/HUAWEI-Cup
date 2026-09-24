@@ -1,0 +1,51 @@
+{
+  "scope": "diagnostic only; not a model search",
+  "results": [
+    {
+      "omitted_term": "N",
+      "status": "diagnostic_only",
+      "parameters": {
+        "E": 2.093299999899996,
+        "A": null,
+        "alpha": null,
+        "B": 1.2450495298511448,
+        "beta": 0.2783163130906266
+      },
+      "metrics": {
+        "n": 1176,
+        "rmse": 0.23319070158670901,
+        "mae": 0.19662043929412124,
+        "bias_pred_minus_obs": -6.314078269875925e-05,
+        "r2": 0.535257812114736,
+        "spearman": 0.42454453781276535,
+        "max_abs_error": 0.46715028677552883
+      },
+      "sse": 63.94841428844587,
+      "successful_starts": 8,
+      "total_starts": 8
+    },
+    {
+      "omitted_term": "D",
+      "status": "diagnostic_only",
+      "parameters": {
+        "E": 2.069571018877831,
+        "A": 0.3539803826261223,
+        "alpha": 0.3399765353085158,
+        "B": null,
+        "beta": null
+      },
+      "metrics": {
+        "n": 1176,
+        "rmse": 0.2502577811030852,
+        "mae": 0.12638742811481965,
+        "bias_pred_minus_obs": -1.439171129963468e-09,
+        "r2": 0.46473996361498426,
+        "spearman": 0.8390036881227686,
+        "max_abs_error": 1.797710133736469
+      },
+      "sse": 73.6516534351043,
+      "successful_starts": 8,
+      "total_starts": 8
+    }
+  ]
+}

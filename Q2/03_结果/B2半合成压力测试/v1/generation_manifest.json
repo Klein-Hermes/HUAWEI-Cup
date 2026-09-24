@@ -1,0 +1,160 @@
+{
+  "task": "B2 Cerebras-GPT semi-synthetic trajectory stress test",
+  "status": "COMPLETED_SEMISYNTHETIC_STRESS_TEST_NOT_EXTERNAL_VALIDATION",
+  "created_utc": "2026-09-23T16:44:00.572588+00:00",
+  "reproduction_command": "\"D:\\Anaconda\\python.exe\" src/f_q2_b2_semisynthetic.py --seed 20260924",
+  "seed": 20260924,
+  "checkpoint_count_per_trajectory": 147,
+  "progress_fraction": [
+    0.1,
+    1.0
+  ],
+  "calibration_rule": "For each Cerebras size, target_loss(D)=published_Pile_test_xent + slope_multiplier*(frozen_B1_Pythia_loss(N,D)-frozen_B1_Pythia_loss(N,D_end)) + family_offset + endpoint-centered_AR1_noise. D_end uses the published per-model token count. The terminal Cerebras anchor is never included in the interior stress metrics.",
+  "b1_freeze_evidence": {
+    "status": "PASS",
+    "freeze_evidence": "Q2 classic baseline report + hash-closed reproduction manifest",
+    "b1_input_sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+    "b1_fit_parameters_sha256": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "b1_fitted_predictions_sha256": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "b1_gate0_status": "PASS",
+    "b1_parameters": {
+      "E": 1.689797562928721,
+      "A": 0.353980320664689,
+      "alpha": 0.33997658189675806,
+      "B": 1.240305583540225,
+      "beta": 0.27987812854769506
+    },
+    "b1_fit_scope": "B1 only"
+  },
+  "cerebras_source": {
+    "paper_version": "arXiv:2304.03208v1, 2023-04-06",
+    "url": "https://arxiv.org/html/2304.03208v1",
+    "reported_metric": "Pile test cross-entropy in nats/token, GPT-2 vocabulary corrected"
+  },
+  "anchors": [
+    {
+      "model_label": "111M",
+      "N_params_B": 0.111,
+      "D_end_tokens_B": 2.2,
+      "pile_test_xent": 2.608,
+      "training_flops": 2.6e+18
+    },
+    {
+      "model_label": "256M",
+      "N_params_B": 0.256,
+      "D_end_tokens_B": 5.1,
+      "pile_test_xent": 2.349,
+      "training_flops": 1.3e+19
+    },
+    {
+      "model_label": "590M",
+      "N_params_B": 0.59,
+      "D_end_tokens_B": 11.8,
+      "pile_test_xent": 2.181,
+      "training_flops": 6.1e+19
+    },
+    {
+      "model_label": "1.3B",
+      "N_params_B": 1.3,
+      "D_end_tokens_B": 26.3,
+      "pile_test_xent": 1.997,
+      "training_flops": 2.8e+20
+    },
+    {
+      "model_label": "2.7B",
+      "N_params_B": 2.7,
+      "D_end_tokens_B": 53.0,
+      "pile_test_xent": 1.834,
+      "training_flops": 1.1e+21
+    },
+    {
+      "model_label": "6.7B",
+      "N_params_B": 6.7,
+      "D_end_tokens_B": 133.2,
+      "pile_test_xent": 1.704,
+      "training_flops": 6.3e+21
+    },
+    {
+      "model_label": "13B",
+      "N_params_B": 13.0,
+      "D_end_tokens_B": 257.1,
+      "pile_test_xent": 1.572,
+      "training_flops": 2.3e+22
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "calibrated_pythia_shape",
+      "family_offset": 0.0,
+      "slope_multiplier": 1.0,
+      "noise_sd": 0.0,
+      "rho": 0.0
+    },
+    {
+      "name": "family_offset_minus_0p15",
+      "family_offset": -0.15,
+      "slope_multiplier": 1.0,
+      "noise_sd": 0.0,
+      "rho": 0.0
+    },
+    {
+      "name": "family_offset_plus_0p15",
+      "family_offset": 0.15,
+      "slope_multiplier": 1.0,
+      "noise_sd": 0.0,
+      "rho": 0.0
+    },
+    {
+      "name": "shallow_progress_0p75",
+      "family_offset": 0.0,
+      "slope_multiplier": 0.75,
+      "noise_sd": 0.0,
+      "rho": 0.0
+    },
+    {
+      "name": "steep_progress_1p25",
+      "family_offset": 0.0,
+      "slope_multiplier": 1.25,
+      "noise_sd": 0.0,
+      "rho": 0.0
+    },
+    {
+      "name": "ar1_noise_sd_0p02_rho_0p70",
+      "family_offset": 0.0,
+      "slope_multiplier": 1.0,
+      "noise_sd": 0.02,
+      "rho": 0.7
+    }
+  ],
+  "inputs_sha256": {
+    "B1_Pythia_training_log": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+    "B1_fit_parameters": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "B1_fit_manifest": "14ba89697200d34d506add1a327044251084291b98a8d5804be07c4673f97fb8",
+    "B1_fit_predictions": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "B1_Gate0_snapshot": "05f20b329dc45099a975a8732e7b81f498baf9b3fac60b8e75194dcdc9b0323f"
+  },
+  "audited_but_excluded_sources_sha256": {
+    "中文题目/F题/real_attachments/B_scaling_laws/scaling_baseline.csv": {
+      "sha256": "2272983ded93de35e05f9acbf95ebceedf43f283345e4be72b54fee94080391e",
+      "reason": "Its seven Cerebras rows use D=2050B and loss 2.95..2.00, inconsistent with the paper's model-specific training tokens and Pile test xent; not used for calibration."
+    }
+  },
+  "outputs_sha256": {
+    "trajectories": "728ce56c8a5dc90a34cfbe0d45d484c633750d192bf2169856e06b21b5a416cd",
+    "metrics": "33be5b9ded96ce97dbd3da3d900f4372c7c46310a24ad795d88bbee2e118ca60",
+    "anchors": "d03ffd130dd8548373cf93b049ac9ccda6a4c4502c66324c4719acbbaf6aab57",
+    "report": "8443b3213fdee1564cc59b8e96779402b5c32f08dad27634181350ac3d29cbb1"
+  },
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "executable": "D:\\Anaconda\\python.exe"
+  },
+  "limits": [
+    "Generated trajectories are not observed Cerebras checkpoints.",
+    "Published Cerebras terminal points were used for calibration and are excluded from interior error scores.",
+    "The Pythia val_loss and Cerebras Pile test xent evaluation protocols are not proven identical.",
+    "The source attachment's older 14–2050B token paths were left unchanged and are not reproduced as authentic Cerebras schedules."
+  ]
+}

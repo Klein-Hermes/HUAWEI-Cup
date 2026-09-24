@@ -1,0 +1,9 @@
+﻿N_params_B,B12_model_size,model_repo,B1_rows,B1_unique_steps,B12_available_steps,matched_steps,missing_steps,relative_nominal_size_difference,cluster_key
+0.070542,70m,EleutherAI/pythia-70m,147,147,154,147,[],0.007683365938022554,EleutherAI/pythia-70m
+0.162405,160m,EleutherAI/pythia-160m,147,147,154,147,[],0.014808657368923313,EleutherAI/pythia-160m
+0.409009,410m,EleutherAI/pythia-410m,147,147,154,147,[],0.002422929568786907,EleutherAI/pythia-410m
+1.040867,1b,EleutherAI/pythia-1b,147,147,154,147,[],0.039262461006065126,EleutherAI/pythia-1b
+1.416184,1.4b,EleutherAI/pythia-1.4b,147,147,154,147,[],0.011427893550555717,EleutherAI/pythia-1.4b
+2.782831,2.8b,EleutherAI/pythia-2.8b,147,147,154,147,[],0.006169616480483361,EleutherAI/pythia-2.8b
+6.86104,6.9b,EleutherAI/pythia-6.9b,147,147,154,147,[],0.005678439420262865,EleutherAI/pythia-6.9b
+11.965825,12b,EleutherAI/pythia-12b,147,147,154,147,[],0.0028560504603735554,EleutherAI/pythia-12b

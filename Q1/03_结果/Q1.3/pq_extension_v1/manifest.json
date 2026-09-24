@@ -1,0 +1,184 @@
+{
+  "status": "PASS",
+  "mode": "full",
+  "generated_at_utc": "2026-09-23T17:05:31.888345+00:00",
+  "source_code": {
+    "file": "src\\f_q1_3_pq_extension.py",
+    "sha256": "1d713013e8b3378553352b02ffae61897a991f4239e9748aeec8e883429fa558"
+  },
+  "base_p_only_code": {
+    "file": "src/f_q1_3_mixture_loss.py",
+    "sha256": "43644a23171192d50fedfc761d142b080e70a2233a11cd41b55b5d7ed9c5026a"
+  },
+  "environment": {
+    "python": "3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.22000-SP0",
+    "numpy": "1.23.3"
+  },
+  "input_hashes": [
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\domain_mapping_guide.csv",
+      "sha256": "4a4479f41b9f46116e688cd0c13ccdad4e687192fc1a38c4add690771ebff480"
+    },
+    {
+      "file": "results\\q1_1\\v1\\domain_summary.csv",
+      "sha256": "41863fd2530baa32616c06cfc8c7e45e1d4118c56f15fd8d0eb0b17ec8272248"
+    },
+    {
+      "file": "results\\q1_1\\v1\\score_sensitivity_domain.csv",
+      "sha256": "b618811670fa8f1d41d01172c87014d82af1fa467eccf44a2fd8bc4aafae12b1"
+    },
+    {
+      "file": "results\\q1_1\\v1\\domain_rank_sensitivity.csv",
+      "sha256": "f2ecef611c1a675d56e889d16b177de659e231c0d4e2e24a1edf6399b7a64eb5"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\train_mixture_1m.csv",
+      "sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\train_pile_loss_1m.csv",
+      "sha256": "49a959aa07ce5c20831d5abe3a7896ff0cd90a398bd407c8913fd5588be0465a"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_mixture_1m.csv",
+      "sha256": "197267b7d6f15367e2f46c881e564c35b0d34e51b1754bb09d07e650cf8e1ce8"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_pile_loss_1m.csv",
+      "sha256": "e027b1674f60140a65a87b5e4a59ab5f09dc33e8fd02c080682678074b160f53"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_mixture_60m.csv",
+      "sha256": "197267b7d6f15367e2f46c881e564c35b0d34e51b1754bb09d07e650cf8e1ce8"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_pile_loss_60m.csv",
+      "sha256": "8fe69d59ab7dd4fae4736459f4265ec93c7ed1ad1eca407346052560edc72b5b"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_mixture_1B.csv",
+      "sha256": "dd38052949c0a5f84165bdcb3ae3a331c7f07efd9bb83848bd579dfc4ce75a2c"
+    },
+    {
+      "file": "中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\\test_pile_loss_1B.csv",
+      "sha256": "b2451e2b7fa15400688edc39e4d32f21ccbe0fb356e07d62a0e9ccddf247114f"
+    }
+  ],
+  "parameters": {
+    "seed": 20260923,
+    "outer_folds": 5,
+    "inner_folds": 4,
+    "linear_lambda_grid": [
+      0.0,
+      1e-06,
+      3.162277660168379e-06,
+      1e-05,
+      3.1622776601683795e-05,
+      0.0001,
+      0.00031622776601683794,
+      0.001,
+      0.0031622776601683794,
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0,
+      3.1622776601683795,
+      10.0
+    ],
+    "quadratic_lambda_grid": [
+      1e-05,
+      4.328761281083062e-05,
+      0.0001873817422860383,
+      0.0008111308307896872,
+      0.003511191734215131,
+      0.01519911082952933,
+      0.06579332246575682,
+      0.2848035868435799,
+      1.232846739442066,
+      5.336699231206313,
+      23.10129700083158,
+      100.0
+    ],
+    "q_covered_formula": "sum(p_j*q_j for mapped j)/sum(p_j for mapped j)",
+    "map_variants": {
+      "direct_only": [
+        "direct"
+      ],
+      "direct_plus_near": [
+        "direct",
+        "near_direct"
+      ]
+    },
+    "q_scenarios": [
+      "q_equal_candidate",
+      "q_huber_candidate",
+      "q_huber_unicode_broad_sensitivity",
+      "q_huber_exclude_7_frac_sensitivity"
+    ],
+    "eligible_rows_rule": "mapped share coverage > 0; shared by all three models within each mapping"
+  },
+  "training_support": {
+    "direct_only": {
+      "total_rows": 512,
+      "supported_rows": 478,
+      "uncovered_rows": 34,
+      "coverage_min": 0.000999000999000999,
+      "coverage_median": 0.29264614614614615,
+      "coverage_max": 0.998
+    },
+    "direct_plus_near": {
+      "total_rows": 512,
+      "supported_rows": 507,
+      "uncovered_rows": 5,
+      "coverage_min": 0.001,
+      "coverage_median": 0.6020000000000001,
+      "coverage_max": 1.0
+    }
+  },
+  "data_roles": {
+    "train_1m": "training",
+    "test_1m": "heldout_same_scale_previously_seen",
+    "test_60m": "heldout_cross_scale_previously_seen",
+    "test_1b": "heldout_cross_scale_previously_seen"
+  },
+  "estimate_tables_used": false,
+  "independent_quality_effect_identified": false,
+  "primary_metric": "A4/A5 grouped nested-CV normalized RMSE; lower is better",
+  "interpretation_limit": "Any p+Qcovered gain is a deterministic nonlinear composition-basis gain, not independent Q information or a causal quality effect.",
+  "outputs": [
+    {
+      "file": "results\\q1_3\\pq_extension_v1\\target_metrics.csv",
+      "sha256": "37c51cf46b7da38cc8cfe762790ee1ddbf03fed5ce5ddd656a9518959439a718"
+    },
+    {
+      "file": "results\\q1_3\\pq_extension_v1\\model_summary.csv",
+      "sha256": "f7ca7a877fd51d09d9b29f82e90e6dc738f037d8aa565dd3ac4888f68cf1204c"
+    },
+    {
+      "file": "results\\q1_3\\pq_extension_v1\\paired_comparison.csv",
+      "sha256": "c6a8d411af19f27181225feae97420d4020b985ca42ed5e3cbe45d52064b4ad9"
+    },
+    {
+      "file": "results\\q1_3\\pq_extension_v1\\oof_and_holdout_predictions.csv",
+      "sha256": "72fd86a0bd140f94a426b201a58749234c1242b08949a721050bbc4f936eac36"
+    },
+    {
+      "file": "results\\q1_3\\pq_extension_v1\\lambda_selection.csv",
+      "sha256": "f4d961f6df962845fb8a37a2ba7e17d1d64f5292f9a2dbe35c8b2ff4d9b665f1"
+    },
+    {
+      "file": "results\\q1_3\\pq_extension_v1\\identifiability_audit.csv",
+      "sha256": "3b4c20b4e94af77ff313df8f8a5f76244d2711b7da407314328ba694ac4aa00e"
+    },
+    {
+      "file": "results\\q1_3\\pq_extension_v1\\q1_1_domain_q_candidates_used.csv",
+      "sha256": "0441e16cb0f7fda403452c408a7e8ea7ecac014b95632dc6ab6c9da2bc388276"
+    }
+  ],
+  "report": {
+    "file": "q1_3_pq_extension_report.md",
+    "sha256": "d376e853caa763beae2e8a236bbcaa4e42e6078096844fa8e4584c7078a96432"
+  }
+}

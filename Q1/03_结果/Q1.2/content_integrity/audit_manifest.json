@@ -1,0 +1,46 @@
+{
+  "schema_version": "q1-a1-content-integrity-audit-v1",
+  "status": "complete",
+  "input_dataset": "a1",
+  "input_file": "D:\\PycharmProject\\HUAWEI-Cup\\中文题目\\F题\\real_attachments\\A_data_value\\slimpajama_quality_signal_sample.jsonl.xz",
+  "input_sha256": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+  "records_scanned": 51230,
+  "records_flagged_cf_or_nonstandard_cc": 428,
+  "records_with_nfkc_changes": 5748,
+  "flag_rule": "Unicode General Category Cf, plus Cc excluding TAB/LF/CR; report non-ASCII Zs separately",
+  "normalization": "NFKC used to compute per-record digest only; no text is written or used as a model feature",
+  "reported_prior_scan_count": 334,
+  "reported_count_matches_this_rule": false,
+  "category_record_counts": {
+    "Cf": 416,
+    "Cc": 12
+  },
+  "codepoint_record_counts": {
+    "U+000C": 3,
+    "U+0081": 2,
+    "U+009D": 7,
+    "U+00AD": 88,
+    "U+200B": 235,
+    "U+200C": 12,
+    "U+200D": 18,
+    "U+200E": 53,
+    "U+200F": 10,
+    "U+202A": 5,
+    "U+202C": 7,
+    "U+202D": 2,
+    "U+2060": 3,
+    "U+2061": 1,
+    "U+2063": 1,
+    "U+2066": 1,
+    "U+2069": 1,
+    "U+E0062": 1,
+    "U+E0065": 1,
+    "U+E0067": 1,
+    "U+E006E": 1,
+    "U+E007F": 1
+  },
+  "a2_a3_prior_scan_note": "The referenced analysis report states no same-type invisible-Unicode hits for A2/A3; this script audits A1 only.",
+  "output_sha256": {
+    "a1_invisible_content_ids.csv": "fbc94907d813f6d0e14c14dd722975e70bd0f86a40430a7aa5df925a07d45e50"
+  }
+}

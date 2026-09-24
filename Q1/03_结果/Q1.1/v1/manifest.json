@@ -1,0 +1,162 @@
+{
+  "schema_version": "q1-1-quality-model-v1",
+  "status": "computed_validation_pending_human_review",
+  "scope": "Q1.1 quality scoring only",
+  "command": "python src/f_q1_1_model.py --bootstrap-stability 1000 --bootstrap-domain 2000 --build-review-package",
+  "canonical_full_run_command": "python src/f_q1_1_model.py --bootstrap-stability 1000 --bootstrap-domain 2000 --build-review-package",
+  "execution_scope": {
+    "max_rows_per_domain": null,
+    "sampling_method": "all frozen records in file order",
+    "rows_scanned": {
+      "a1": 51230,
+      "a2": 17523,
+      "a3": 203752
+    },
+    "rows_scanned_by_domain": {
+      "a1": {
+        "arxiv": 1419,
+        "book": 171,
+        "c4": 10000,
+        "commoncrawl": 9640,
+        "github": 10000,
+        "stackexchange": 10000,
+        "wikipedia": 10000
+      },
+      "a2": {
+        "arxiv": 17523
+      },
+      "a3": {
+        "github": 203752
+      }
+    },
+    "rows_selected": {
+      "a1": 51230,
+      "a2": 17523,
+      "a3": 203752
+    },
+    "rows_selected_by_domain": {
+      "a1": {
+        "arxiv": 1419,
+        "book": 171,
+        "c4": 10000,
+        "commoncrawl": 9640,
+        "github": 10000,
+        "stackexchange": 10000,
+        "wikipedia": 10000
+      },
+      "a2": {
+        "arxiv": 17523
+      },
+      "a3": {
+        "github": 203752
+      }
+    },
+    "human_review_package_built": true
+  },
+  "seed": 20260923,
+  "bootstrap": {
+    "stability_weight_repetitions": 1000,
+    "domain_interval_repetitions": 2000,
+    "domain_interval_method": "percentile bootstrap over 5,000-bin empirical Q histogram; bin width 0.0002, score quantization error at most 0.0001, Huber root solved by 24 bisections",
+    "sensitivity_interval_repetitions": 2000,
+    "sensitivity_domain_threshold_calibration": "Unicode strict/broad scenarios estimate domain thresholds from their corresponding unmarked A1 subsets; unit exclusion uses A1 rows with no unit_suspect_* flags; other scenarios use all A1 records; applicable thresholds are frozen across A2/A3",
+    "contamination_same_domain_method": "independent within-dataset percentile bootstrap; scenario-calibration-subset A1 domain Huber threshold frozen across datasets; 5,000-bin histogram; 24 Huber bisections",
+    "unmarked_vs_full_method": "paired stratified percentile bootstrap; fixed marked/unmarked counts; shared unmarked resample for subset and full estimate; 5,000-bin histogram; 24 Huber bisections",
+    "sensitivity_seed_rule": "stable_seed(20260923, table/scenario/dataset/domain/candidate label)",
+    "confidence": 0.95
+  },
+  "sensitivity_scenarios": [
+    "all_a1",
+    "exclude_7_unit_ambiguous_fields",
+    "huber_delta_0.5x",
+    "huber_delta_2x",
+    "unicode_broad_clean_a1",
+    "unicode_strict_clean_a1",
+    "unit_flagged_a1_excluded",
+    "weight_alpha_0.25",
+    "weight_alpha_0.5",
+    "weight_alpha_1",
+    "weighted_arithmetic_mean"
+  ],
+  "preprocessing_version": "q1-common-v1.1",
+  "preprocess_manifest_sha256": "56ac6f6178eb949e024a0ac0a1faa22f9a37fcbcc141af1371d871bac083d2ec",
+  "q1_1_input_contract_sha256": "e4977c072a11fda99f1ed27b867c6b84b18239498cd2714b1703b9355efe41e5",
+  "q1_1_modeling_plan_sha256": "1dc93bfc4b4c2df9e3387a013068e01acdedadfd86e904e889e236181551d72f",
+  "q1_1_script_sha256": "b4ed8a2ed9080e04bca0cdbb5a17358c77501370cfe4a21359b08499b07e90f5",
+  "text_integrity_summary_sha256": "5cc5ed2fe1537a2355e1d6ca2ce04946aef25297d2a61fe4de2d171ecad95d70",
+  "text_integrity_audit_sha256": "47d1eaae477825132e0c3906060137732c64213cf5596c94afde2fab8293cdf0",
+  "input_preprocessed_sha256": {
+    "a1": "38c753ab9b5fa3c2ac370f9a1c600ae761dca1154814d542a45fb98737e13590",
+    "a2": "55cd687cc60614084568ac09ca141b0a6a847528edc8edac88ea228362f055fb",
+    "a3": "a011c3c04a603fd306ce77f40044ecb0924ab79f18acfd53195fd0bf92213d8f"
+  },
+  "q1_2_shared_calibration_evidence": {
+    "main_manifest_sha256": "d8a37797a4ca4f4e1d39dd0deaeb4a0947f431aaeddff585dd4ebb9fe9f46302",
+    "main_script_sha256": "9553c52dc41df29a9ca090fb297b36550e2199ab34553ec4d4fac2280acceaac",
+    "strict_manifest_sha256": "8cd8ff6905e3f8f86dc45c793b23c164c86b2b5c770965a0f0e01613b3555349",
+    "broad_manifest_sha256": "bea2d9b16bac3a7741946201c892ca0f7f4aa4fe891a5f77db3e6909013bffa1",
+    "contamination_script_sha256": "65fdd05d7675b79e045b78eff580f06a40912cd2afe86711e6fd079cecd829e0"
+  },
+  "parameter_checks": {
+    "all_a1_weight_max_abs_reproduction_error": 0.0,
+    "q12_sample_score_parity": {
+      "matched_rows": 272505,
+      "max_abs_equal_difference": 0.0,
+      "max_abs_huber_difference": 0.0,
+      "status": "PASS"
+    },
+    "all_a1_huber_delta": 0.3965543116163043,
+    "unit_flagged_a1_calibration_rows": 51228,
+    "unit_flagged_a1_excluded_rows": 2
+  },
+  "field_unit_scope": {
+    "all_22_scored_candidate_is_restricted": true,
+    "unresolved_unit_fields": [
+      "rps_doc_frac_unique_words",
+      "rps_doc_frac_no_alph_words",
+      "rps_doc_frac_chars_top_2gram",
+      "rps_doc_frac_chars_top_3gram",
+      "rps_lines_uppercase_letter_fraction",
+      "rps_lines_ending_with_terminal_punctution_mark",
+      "rps_lines_numerical_chars_fraction"
+    ],
+    "no_manual_unit_conversion_applied": true
+  },
+  "text_validation": {
+    "a1_blind_review_packet": {
+      "sample_count": 793,
+      "strata_count": 42,
+      "raw_a1_sha256": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+      "review_dir": "results\\q1_1\\v1\\review_packet"
+    },
+    "a2_a3_original_text_mapping_available": false,
+    "human_ratings_supplied": false,
+    "final_candidate_selection": "pending A1 blind human ratings"
+  },
+  "runtime": {
+    "python": "3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.23.3",
+    "platform": "Windows-10-10.0.22000-SP0",
+    "elapsed_seconds": 185.268
+  },
+  "outputs_sha256": {
+    "a1_macro_summary.csv": "6b7cca1865ef6785981180fb0aea41fe839a5b6c12cb012bb21fa089d8b383f9",
+    "a1_unmarked_vs_full.csv": "9e3d7543dcad6efc0615eca88e929141b3e45c5e5dd14e08d407ca5b426484d8",
+    "calibration_sensitivity_parameters.csv": "c018fb14bde2e8e4c319167878fa239f8236788e70388154562c2f896917a7dc",
+    "contamination_same_domain_intervals.csv": "61c776473f25c02ded54f74ba628d32689fed7b6709bd1f0f627d1ac718e0f62",
+    "domain_confidence_intervals.csv": "f97a9c4a1ba3542fc20f90eaafda064fdc52a80f058584bb2eb20561ca4d6ab1",
+    "domain_rank_sensitivity.csv": "f2ecef611c1a675d56e889d16b177de659e231c0d4e2e24a1edf6399b7a64eb5",
+    "domain_summary.csv": "41863fd2530baa32616c06cfc8c7e45e1d4118c56f15fd8d0eb0b17ec8272248",
+    "indicator_weights.csv": "3b272c4a46c03d560dd475d6f391d82ef89f81594c0c3796aafa509c0e2e5105",
+    "q1_1_results.md": "a15134d61d4707f2ee0ef507be1ef47aa0a9c52c77972f629d27f438c48a2051",
+    "review_packet/blind_review_form.csv": "625f9a1965e7c3a1f6d1357f96affac2cf779317cff9e790baba0850d9f134a1",
+    "review_packet/blind_review_samples.md": "89f50edff765124927c650d589c5f4c7029cc3b4a005b72603a3080054cb1aeb",
+    "review_packet/restricted_id_mapping.csv": "d7c5267c14c57c09a6b6ea7a026ff7d9b6abb413d3dd291baf2866fb57662ebb",
+    "review_packet/sampling_frame.csv": "f238dd06133a2be1085e121739e0ed59e4a94ebc4c0d1334d3ad83bc30085bd8",
+    "review_packet/validation_scope.md": "93b6b992db4701ef69c62bdc6fe97850e440b81c883c11a74bf2d4e5d3660663",
+    "same_domain_differences.csv": "8843ba5052d6c5496d11cbcaff2e5f2930d3e436c5635df7d8aeb48f80f73532",
+    "sample_score_sensitivity.csv": "26bf74f693a9de4e3683ed62ec7f46b2a85acb1853f864eabb4a607eb0f9a8bf",
+    "sample_scores.csv.gz": "52843766cf9d4d0edb18d85e2a59296e906a08dda17c7f2b628cd4798bcb7276",
+    "score_sensitivity_domain.csv": "b618811670fa8f1d41d01172c87014d82af1fa467eccf44a2fd8bc4aafae12b1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "artifact": "Q1.1 partial A2/A3 text linkage",
+  "generated_local": "2026-09-24",
+  "status": "partial_linkage_only",
+  "matched_rows": {
+    "A3_total": 203752,
+    "A3_github": 10000,
+    "A2_arxiv": 1419,
+    "A2_total": 17523
+  },
+  "verification": "exact ID and source_domain; all seven RPS values match within absolute tolerance 1e-9",
+  "text_content_exported": false,
+  "linkage_csv_sha256": "c7bd3ae246c1781758065e207772cb8bb59d2207c2ee839b11d58145ab450931",
+  "input_files_sha256": {
+    "中文题目/F题/real_attachments/A_data_value/slimpajama_quality_signal_sample.jsonl.xz": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+    "中文题目/F题/real_attachments/A_data_value/slimpajama_quality_extended/arxiv_part-6777d8857c6e-000486.jsonl.xz": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a",
+    "中文题目/F题/real_attachments/A_data_value/slimpajama_quality_extended/github_part-6777d8857c6e-000275.jsonl.xz": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382"
+  }
+}

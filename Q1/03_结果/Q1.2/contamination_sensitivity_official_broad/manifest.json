@@ -1,0 +1,39 @@
+{
+  "schema_version": "q1-2-contamination-sensitivity-v1",
+  "status": "full_sensitivity",
+  "primary_q1_2_manifest_sha256": "d8a37797a4ca4f4e1d39dd0deaeb4a0947f431aaeddff585dd4ebb9fe9f46302",
+  "preprocess_manifest_sha256": "56ac6f6178eb949e024a0ac0a1faa22f9a37fcbcc141af1371d871bac083d2ec",
+  "unicode_audit_manifest_sha256": "5cc5ed2fe1537a2355e1d6ca2ce04946aef25297d2a61fe4de2d171ecad95d70",
+  "unicode_audit_summary_sha256": "5cc5ed2fe1537a2355e1d6ca2ce04946aef25297d2a61fe4de2d171ecad95d70",
+  "unicode_record_audit_sha256": "47d1eaae477825132e0c3906060137732c64213cf5596c94afde2fab8293cdf0",
+  "preprocessed_input_sha256": {
+    "a1": "38c753ab9b5fa3c2ac370f9a1c600ae761dca1154814d542a45fb98737e13590",
+    "a2": "55cd687cc60614084568ac09ca141b0a6a847528edc8edac88ea228362f055fb",
+    "a3": "a011c3c04a603fd306ce77f40044ecb0924ab79f18acfd53195fd0bf92213d8f"
+  },
+  "records_excluded_from_a1_q1_2_calibration": 463,
+  "records_retained_in_a1_sensitivity": 50767,
+  "unicode_flag_rule": "A1 content 中存在 Cf/Cc/Zl/Zp/Co 或 Unicode noncharacter",
+  "bootstrap": {
+    "threshold_repetitions": 2000,
+    "external_validation_repetitions": 2000,
+    "weight_repetitions": 1000,
+    "seed": 20260923,
+    "ci": "95% percentile"
+  },
+  "clean_a1_huber_scale_method": "1.4826*MAD",
+  "clean_a1_huber_delta": 0.3964418180205215,
+  "clean_a1_huber_scale": 0.2947522810561498,
+  "weight_l1_change": 0.0007881596486733963,
+  "weight_rank_spearman": 0.6550219615167182,
+  "runtime_seconds": 176.903,
+  "outputs_sha256": {
+    "a1_clean_thresholds.csv": "4a1f58786c63ad8ed4d0eaf8531d329f7964ea7ead29cc4734412709f80fd06c",
+    "clean_a1_external_validation.csv": "14da27d337bac9b654b1b366b604d6c13ad1d1a5bfa3e4836fe39ae801eb115e",
+    "clean_a1_indicator_weights.csv": "d0153b6dd974db0c454f4f221c3ebfe4f6c248ae3292781f4ca1826734bdd4d0",
+    "contamination_domain_sensitivity.csv": "fb1093ce5683fd3f173a8f52c66be1235454c4b3a283d45682045cd5821b0bb9",
+    "contamination_sensitivity_report.md": "02103603c69c61d43481c6cc986599d8401b7ecda1ead9dd6d8e9291fe96a332",
+    "huber_score_sensitivity.csv": "ad48b18700474f1a5e746c2974a3f5a081600c640994d3dab01ddbc5ac7d89c5",
+    "pair_ranking_sensitivity.csv": "bf330df14acbddbbe35bf30882ba803ba1e2be71cd1adbf8f0bbc57427ca06a7"
+  }
+}

@@ -1,0 +1,25 @@
+﻿q_scenario,label,domain,domain_score,source_file,source_scenario,candidate
+q_equal_candidate,Q1.1 等权候选,arxiv,0.5320965357791057,results\q1_1\v1\domain_summary.csv,all_a1,q_equal
+q_equal_candidate,Q1.1 等权候选,book,0.4316026991517443,results\q1_1\v1\domain_summary.csv,all_a1,q_equal
+q_equal_candidate,Q1.1 等权候选,commoncrawl,0.5340113140988176,results\q1_1\v1\domain_summary.csv,all_a1,q_equal
+q_equal_candidate,Q1.1 等权候选,github,0.40449680208832284,results\q1_1\v1\domain_summary.csv,all_a1,q_equal
+q_equal_candidate,Q1.1 等权候选,stackexchange,0.5173367560072943,results\q1_1\v1\domain_summary.csv,all_a1,q_equal
+q_equal_candidate,Q1.1 等权候选,wikipedia,0.48349146724793535,results\q1_1\v1\domain_summary.csv,all_a1,q_equal
+q_huber_candidate,Q1.1 加权 Huber 候选,arxiv,0.5613319908558356,results\q1_1\v1\domain_summary.csv,all_a1,q_huber
+q_huber_candidate,Q1.1 加权 Huber 候选,book,0.42874874466340707,results\q1_1\v1\domain_summary.csv,all_a1,q_huber
+q_huber_candidate,Q1.1 加权 Huber 候选,commoncrawl,0.5359722946905645,results\q1_1\v1\domain_summary.csv,all_a1,q_huber
+q_huber_candidate,Q1.1 加权 Huber 候选,github,0.3894803356606058,results\q1_1\v1\domain_summary.csv,all_a1,q_huber
+q_huber_candidate,Q1.1 加权 Huber 候选,stackexchange,0.5183681310908792,results\q1_1\v1\domain_summary.csv,all_a1,q_huber
+q_huber_candidate,Q1.1 加权 Huber 候选,wikipedia,0.4787129620836854,results\q1_1\v1\domain_summary.csv,all_a1,q_huber
+q_huber_unicode_broad_sensitivity,Q1.1 Huber（宽 Unicode 未标记 A1 校准敏感性）,arxiv,0.5612832361062718,results\q1_1\v1\score_sensitivity_domain.csv,unicode_broad_clean_a1,q_huber
+q_huber_unicode_broad_sensitivity,Q1.1 Huber（宽 Unicode 未标记 A1 校准敏感性）,book,0.42866589956467216,results\q1_1\v1\score_sensitivity_domain.csv,unicode_broad_clean_a1,q_huber
+q_huber_unicode_broad_sensitivity,Q1.1 Huber（宽 Unicode 未标记 A1 校准敏感性）,commoncrawl,0.5359728935937849,results\q1_1\v1\score_sensitivity_domain.csv,unicode_broad_clean_a1,q_huber
+q_huber_unicode_broad_sensitivity,Q1.1 Huber（宽 Unicode 未标记 A1 校准敏感性）,github,0.38955625223162293,results\q1_1\v1\score_sensitivity_domain.csv,unicode_broad_clean_a1,q_huber
+q_huber_unicode_broad_sensitivity,Q1.1 Huber（宽 Unicode 未标记 A1 校准敏感性）,stackexchange,0.5183630776258692,results\q1_1\v1\score_sensitivity_domain.csv,unicode_broad_clean_a1,q_huber
+q_huber_unicode_broad_sensitivity,Q1.1 Huber（宽 Unicode 未标记 A1 校准敏感性）,wikipedia,0.478681110118627,results\q1_1\v1\score_sensitivity_domain.csv,unicode_broad_clean_a1,q_huber
+q_huber_exclude_7_frac_sensitivity,Q1.1 Huber（排除 7 个语义/单位未核实 frac 字段）,arxiv,0.6513836651552456,results\q1_1\v1\domain_rank_sensitivity.csv,exclude_7_unit_ambiguous_fields,q_huber
+q_huber_exclude_7_frac_sensitivity,Q1.1 Huber（排除 7 个语义/单位未核实 frac 字段）,book,0.39621873169446253,results\q1_1\v1\domain_rank_sensitivity.csv,exclude_7_unit_ambiguous_fields,q_huber
+q_huber_exclude_7_frac_sensitivity,Q1.1 Huber（排除 7 个语义/单位未核实 frac 字段）,commoncrawl,0.5262473605676288,results\q1_1\v1\domain_rank_sensitivity.csv,exclude_7_unit_ambiguous_fields,q_huber
+q_huber_exclude_7_frac_sensitivity,Q1.1 Huber（排除 7 个语义/单位未核实 frac 字段）,github,0.375167570567422,results\q1_1\v1\domain_rank_sensitivity.csv,exclude_7_unit_ambiguous_fields,q_huber
+q_huber_exclude_7_frac_sensitivity,Q1.1 Huber（排除 7 个语义/单位未核实 frac 字段）,stackexchange,0.5668684609912145,results\q1_1\v1\domain_rank_sensitivity.csv,exclude_7_unit_ambiguous_fields,q_huber
+q_huber_exclude_7_frac_sensitivity,Q1.1 Huber（排除 7 个语义/单位未核实 frac 字段）,wikipedia,0.49128043337272764,results\q1_1\v1\domain_rank_sensitivity.csv,exclude_7_unit_ambiguous_fields,q_huber

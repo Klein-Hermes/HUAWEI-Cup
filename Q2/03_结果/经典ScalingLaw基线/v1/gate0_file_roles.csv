@@ -1,0 +1,7 @@
+﻿dataset,role,origin,use,independent_real_validation
+B1,主拟合数据,Pythia training log,"仅用于经典 Loss=f(N,D) 拟合、诊断和按轨迹重抽样",不适用
+B2,族外验证轨迹,Cerebras 半合成/校准轨迹,留出验证；按参数规模分层,否
+B3,轨迹验证,由 Pythia 轨迹插值得到,留出验证；按插值轨迹分层,否
+B4,跨族验证,真实开放模型族标度数据,留出验证；按模型族分层,是；Loss 口径可比性未由字段证明
+B5,文献验证,公开文献汇总数据,留出验证；按模型族和来源分层,是；Loss 口径可比性未由字段证明
+B12,B1 检查点索引,Pythia checkpoint index,确认 B1 规模—仓库—step 轨迹映射,否

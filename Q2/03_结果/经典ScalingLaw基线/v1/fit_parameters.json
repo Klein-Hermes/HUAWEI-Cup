@@ -1,0 +1,63 @@
+{
+  "formula": "L = E + A*N_params_B**(-alpha) + B*D_tokens_B**(-beta)",
+  "parameters": {
+    "E": 1.689797562928721,
+    "A": 0.353980320664689,
+    "alpha": 0.33997658189675806,
+    "B": 1.240305583540225,
+    "beta": 0.27987812854769506
+  },
+  "constraints": {
+    "E": "0 <= E < min(B1 val_loss)",
+    "A_alpha_B_beta": "strictly positive"
+  },
+  "fit_scope": "B1 only",
+  "metrics": {
+    "n": 1176,
+    "rmse": 0.00014649608992588895,
+    "mae": 0.0001052319129958883,
+    "bias_pred_minus_obs": 2.6428972389265587e-14,
+    "r2": 0.9999998165821044,
+    "spearman": 0.9999996458388953,
+    "max_abs_error": 0.0009203780853663801
+  },
+  "diagnostics": {
+    "jacobian": {
+      "scaled_jacobian_singular_values": [
+        62.72295103594264,
+        12.789695946400531,
+        10.175565464252978,
+        2.3406867455394518,
+        1.1125477848795926
+      ],
+      "scaled_jacobian_rank": 5,
+      "parameter_count": 5,
+      "scaled_jacobian_condition_number": 56.37775912944804,
+      "rank_deficient": false,
+      "condition_warning": false
+    },
+    "multistart": {
+      "attempt_count": 24,
+      "success_count": 24,
+      "success_fraction": 1.0,
+      "best_sse": 2.5238258731563194e-05,
+      "near_optimal_count": 24,
+      "near_optimal_sse_relative_tolerance": 1e-05,
+      "relative_parameter_spread": {
+        "E": 1.6220002028306413e-10,
+        "A": 2.3855910528856164e-10,
+        "alpha": 1.8253927888447627e-10,
+        "B": 2.806816998483547e-10,
+        "beta": 4.4649031359046437e-10
+      },
+      "unstable": false
+    },
+    "boundary": {
+      "E_at_zero_or_near": false,
+      "E_at_upper_or_near": false,
+      "alpha_near_lower": false,
+      "beta_near_lower": false
+    },
+    "identifiability_warning": false
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "ok": true,
+  "directory": "D:\\PycharmProject\\HUAWEI-Cup\\figures\\q1_1_model",
+  "questions": [
+    "q1"
+  ],
+  "files": {
+    "flow_q1_1_model.png": {
+      "width_px": 2657,
+      "height_px": 2400,
+      "dpi_x": 300.99,
+      "dpi_y": 300.99,
+      "width_in": 8.827535798531512,
+      "height_in": 7.973686833449616
+    },
+    "flow_q1_1_model.svg": {
+      "text_count": 21,
+      "embedded_raster": false
+    },
+    "process_q1_1_contamination_sensitivity.png": {
+      "width_px": 2716,
+      "height_px": 1414,
+      "dpi_x": 300.99,
+      "dpi_y": 300.99,
+      "width_in": 9.023555599853815,
+      "height_in": 4.697830492707399
+    },
+    "process_q1_1_contamination_sensitivity.svg": {
+      "text_count": 22,
+      "embedded_raster": false
+    },
+    "process_q1_1_huber_location.png": {
+      "width_px": 2657,
+      "height_px": 1322,
+      "dpi_x": 300.99,
+      "dpi_y": 300.99,
+      "width_in": 8.827535798531512,
+      "height_in": 4.392172497425164
+    },
+    "process_q1_1_huber_location.svg": {
+      "text_count": 45,
+      "embedded_raster": false
+    },
+    "process_q1_1_weight_calibration.png": {
+      "width_px": 2991,
+      "height_px": 2497,
+      "dpi_x": 300.99,
+      "dpi_y": 300.99,
+      "width_in": 9.937207216186584,
+      "height_in": 8.295956676301538
+    },
+    "process_q1_1_weight_calibration.svg": {
+      "text_count": 43,
+      "embedded_raster": false
+    },
+    "raw_q1_1_indicator_distributions.png": {
+      "width_px": 2772,
+      "height_px": 1941,
+      "dpi_x": 300.99,
+      "dpi_y": 300.99,
+      "width_in": 9.209608292634307,
+      "height_in": 6.448719226552377
+    },
+    "raw_q1_1_indicator_distributions.svg": {
+      "text_count": 33,
+      "embedded_raster": false
+    },
+    "raw_q1_1_integrity_and_text_availability.png": {
+      "width_px": 2657,
+      "height_px": 1381,
+      "dpi_x": 300.99,
+      "dpi_y": 300.99,
+      "width_in": 8.827535798531512,
+      "height_in": 4.588192298747466
+    },
+    "raw_q1_1_integrity_and_text_availability.svg": {
+      "text_count": 32,
+      "embedded_raster": false
+    },
+    "raw_q1_1_source_counts.png": {
+      "width_px": 2562,
+      "height_px": 1625,
+      "dpi_x": 300.99,
+      "dpi_y": 300.99,
+      "width_in": 8.511910694707465,
+      "height_in": 5.398850460148178
+    },
+    "raw_q1_1_source_counts.svg": {
+      "text_count": 30,
+      "embedded_raster": false
+    },
+    "result_q1_1_contamination_transfer_intervals.png": {
+      "width_px": 2959,
+      "height_px": 2204,
+      "dpi_x": 300.99,
+      "dpi_y": 300.99,
+      "width_in": 9.83089139174059,
+      "height_in": 7.322502408717898
+    },
+    "result_q1_1_contamination_transfer_intervals.svg": {
+      "text_count": 42,
+      "embedded_raster": false
+    },
+    "result_q1_1_domain_rank_robustness.png": {
+      "width_px": 2725,
+      "height_px": 1361,
+      "dpi_x": 300.99,
+      "dpi_y": 300.99,
+      "width_in": 9.053456925479251,
+      "height_in": 4.52174490846872
+    },
+    "result_q1_1_domain_rank_robustness.svg": {
+      "text_count": 51,
+      "embedded_raster": false
+    },
+    "result_q1_1_domain_scores.png": {
+      "width_px": 2974,
+      "height_px": 1734,
+      "dpi_x": 300.99,
+      "dpi_y": 300.99,
+      "width_in": 9.88072693444965,
+      "height_in": 5.760988737167348
+    },
+    "result_q1_1_domain_scores.svg": {
+      "text_count": 27,
+      "embedded_raster": false
+    },
+    "result_q1_1_same_domain_transfer.png": {
+      "width_px": 2657,
+      "height_px": 1410,
+      "dpi_x": 300.99,
+      "dpi_y": 300.99,
+      "width_in": 8.827535798531512,
+      "height_in": 4.684541014651649
+    },
+    "result_q1_1_same_domain_transfer.svg": {
+      "text_count": 22,
+      "embedded_raster": false
+    },
+    "result_q1_1_unmarked_vs_full.png": {
+      "width_px": 2957,
+      "height_px": 2380,
+      "dpi_x": 300.99,
+      "dpi_y": 300.99,
+      "width_in": 9.824246652712715,
+      "height_in": 7.9072394431708695
+    },
+    "result_q1_1_unmarked_vs_full.svg": {
+      "text_count": 34,
+      "embedded_raster": false
+    }
+  },
+  "issues": []
+}

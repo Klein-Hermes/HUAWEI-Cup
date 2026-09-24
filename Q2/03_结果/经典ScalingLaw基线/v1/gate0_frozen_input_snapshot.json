@@ -1,0 +1,65 @@
+{
+  "role_contract_version": "q2-classic-baseline-gate0-v1",
+  "input_sha256": {
+    "中文题目/F题/real_attachments/B_scaling_laws/cerebras_training_log.csv": "178f878cad2cb31e4ec104c670553de23818197876d824a113fdb911125951a6",
+    "中文题目/F题/real_attachments/B_scaling_laws/published_scaling_data.csv": "dd858c5e48610e28589340d5db023d6abfb31df597506789ccdfc6a546731bbd",
+    "中文题目/F题/real_attachments/B_scaling_laws/pythia_checkpoint_index.csv": "0f7f63535cbc1bbef5165776562e71401af9f762cfe02aaea30c824f45fbc9ed",
+    "中文题目/F题/real_attachments/B_scaling_laws/pythia_training_log_existing.csv": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+    "中文题目/F题/real_attachments/B_scaling_laws/scaling_baseline.csv": "2272983ded93de35e05f9acbf95ebceedf43f283345e4be72b54fee94080391e",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv": "19663f2f14d62af377377962ec8f794148450bfb278fdbeb2452f4641fe6a440",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv": "8e2b78cde966b0a3e8b6272935c3f3dcccc5a54e94bb7db79ded2fd8fdf5a124",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv": "8c803195d475d8ff320afd90887ae48cec6463f4d01a2264c6680611ed9db170",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv": "bb73b2852db183bee3d76c76f55e2bdcc292d7ed0881cb27966525b56afcafc0",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv": "cd0d718747fb6048cb474066dbf35f64ef852f59cba2886484cbdf14bc68a02f",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv": "e223b3d48bc4fef3cbc03fd583ff7aef87e474903d829f6c417310cb99fa7b5e",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv": "552f03249b69234009eb028b3296d6bd1b1cb3a52c0d3a84a669baa0e3179482",
+    "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv": "8814c8414fddc914444c74e6cf8da02e3e156a0d7fb8acea6c5da05e438bf054",
+    "中文题目/F题/数据说明.pdf": "f5c851bbe4b3d8c9079609c37f2c3b0835244067711d6d761c66adeaa8357835",
+    "题目分析报告.md": "978c7e7a13a24bda2a5b3d022a004bf8dcef10639aa80f19122037ce103d832a"
+  },
+  "file_roles": [
+    {
+      "dataset": "B1",
+      "role": "主拟合数据",
+      "origin": "Pythia training log",
+      "use": "仅用于经典 Loss=f(N,D) 拟合、诊断和按轨迹重抽样",
+      "independent_real_validation": "不适用"
+    },
+    {
+      "dataset": "B2",
+      "role": "族外验证轨迹",
+      "origin": "Cerebras 半合成/校准轨迹",
+      "use": "留出验证；按参数规模分层",
+      "independent_real_validation": "否"
+    },
+    {
+      "dataset": "B3",
+      "role": "轨迹验证",
+      "origin": "由 Pythia 轨迹插值得到",
+      "use": "留出验证；按插值轨迹分层",
+      "independent_real_validation": "否"
+    },
+    {
+      "dataset": "B4",
+      "role": "跨族验证",
+      "origin": "真实开放模型族标度数据",
+      "use": "留出验证；按模型族分层",
+      "independent_real_validation": "是；Loss 口径可比性未由字段证明"
+    },
+    {
+      "dataset": "B5",
+      "role": "文献验证",
+      "origin": "公开文献汇总数据",
+      "use": "留出验证；按模型族和来源分层",
+      "independent_real_validation": "是；Loss 口径可比性未由字段证明"
+    },
+    {
+      "dataset": "B12",
+      "role": "B1 检查点索引",
+      "origin": "Pythia checkpoint index",
+      "use": "确认 B1 规模—仓库—step 轨迹映射",
+      "independent_real_validation": "否"
+    }
+  ],
+  "frozen_by": "audit mode"
+}

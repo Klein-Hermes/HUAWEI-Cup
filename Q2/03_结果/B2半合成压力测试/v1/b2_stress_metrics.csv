@@ -1,0 +1,7 @@
+﻿scenario,n_interior_points,n_trajectory_clusters,rmse_diagnostic_only,mae_diagnostic_only,bias_prediction_minus_synthetic_target,max_abs_error_diagnostic_only,endpoint_used_for_calibration_excluded,independent_external_validation,comparability_caveat
+calibrated_pythia_shape,1022,7,0.5984785514,0.5874416685,0.5874416685,0.8238869007,True,False,B1 val_loss evaluation protocol is not established as identical to published Cerebras Pile test xent.
+family_offset_minus_0p15,1022,7,0.7462634099,0.7374416685,0.7374416685,0.9738869007,True,False,B1 val_loss evaluation protocol is not established as identical to published Cerebras Pile test xent.
+family_offset_plus_0p15,1022,7,0.4521549247,0.4374416685,0.4374416685,0.6738869007,True,False,B1 val_loss evaluation protocol is not established as identical to published Cerebras Pile test xent.
+shallow_progress_0p75,1022,7,0.6597263657,0.6439590766,0.6439590766,1.048919375,True,False,B1 val_loss evaluation protocol is not established as identical to published Cerebras Pile test xent.
+steep_progress_1p25,1022,7,0.5402546137,0.5309242603,0.5309242603,0.8227868246,True,False,B1 val_loss evaluation protocol is not established as identical to published Cerebras Pile test xent.
+ar1_noise_sd_0p02_rho_0p70,1022,7,0.6020425122,0.5910413594,0.5910413594,0.8843201988,True,False,B1 val_loss evaluation protocol is not established as identical to published Cerebras Pile test xent.

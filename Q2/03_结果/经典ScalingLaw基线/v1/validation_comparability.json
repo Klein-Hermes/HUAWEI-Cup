@@ -1,0 +1,10 @@
+{
+  "source_comparability": {
+    "B2": "separate: semisynthetic; same field name does not establish independent real validation",
+    "B3": "separate: interpolation from Pythia trajectories; not independent real validation",
+    "B4": "separate: real cross-family values; CSV lacks evaluation protocol needed to establish direct Loss-scale comparability",
+    "B5": "separate: literature values from multiple sources; CSV lacks common evaluation protocol"
+  },
+  "pooled_validation_metric": null,
+  "reason_no_pooled_metric": "The source roles and evaluation protocols differ or are undocumented; all B2-B5 metrics are reported by source only."
+}

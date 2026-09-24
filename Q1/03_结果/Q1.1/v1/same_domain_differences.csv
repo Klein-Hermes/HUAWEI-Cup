@@ -1,0 +1,5 @@
+﻿extension_dataset,source_domain,candidate,a1_domain_score,extension_domain_score,difference_extension_minus_a1,ci_low,ci_high,bootstrap_repetitions,ci_method
+a2,arxiv,q_equal,0.5320965357791057,0.5309591176048425,-0.0011374181742631606,-0.0028760626912117003,0.0007041797041892998,2000,independent within-dataset percentile bootstrap draws; frozen A1 domain delta
+a2,arxiv,q_huber,0.5613319908558356,0.5599738811018025,-0.0013581097540331655,-0.00399278402328491,0.0012827798724174475,2000,independent within-dataset percentile bootstrap draws; frozen A1 domain delta
+a3,github,q_equal,0.40449680208832284,0.40393716747452935,-0.0005596346137934916,-0.0018471524119377132,0.0008610531687736507,2000,independent within-dataset percentile bootstrap draws; frozen A1 domain delta
+a3,github,q_huber,0.3894803356606058,0.38887178212072904,-0.0006085535398767661,-0.0021098062396049497,0.0008522719144821165,2000,independent within-dataset percentile bootstrap draws; frozen A1 domain delta

@@ -1,0 +1,16 @@
+{
+  "N_params_B_range": [
+    0.070542,
+    11.965825
+  ],
+  "D_tokens_B_range": [
+    0.134,
+    299.893
+  ],
+  "N_unique": 8,
+  "D_unique": 147,
+  "unique_N_D_pairs": 1176,
+  "log_N_log_D_pearson_r": -1.0977549857326728e-32,
+  "rows": 1176,
+  "warning": "B1 has eight trajectory clusters; row count is not the independent-cluster count."
+}

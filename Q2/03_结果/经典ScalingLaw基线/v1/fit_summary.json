@@ -1,0 +1,175 @@
+{
+  "status": "基线已拟合、验证受限（B2/B3 非独立真实验证；B4/B5 Loss 可比性未证实）",
+  "formula": "L = E + A*N_params_B**(-alpha) + B*D_tokens_B**(-beta)",
+  "parameters": {
+    "E": 1.689797562928721,
+    "A": 0.353980320664689,
+    "alpha": 0.33997658189675806,
+    "B": 1.240305583540225,
+    "beta": 0.27987812854769506
+  },
+  "B1_metrics": {
+    "n": 1176,
+    "rmse": 0.00014649608992588895,
+    "mae": 0.0001052319129958883,
+    "bias_pred_minus_obs": 2.6428972389265587e-14,
+    "r2": 0.9999998165821044,
+    "spearman": 0.9999996458388953,
+    "max_abs_error": 0.0009203780853663801
+  },
+  "diagnostics": {
+    "jacobian": {
+      "scaled_jacobian_singular_values": [
+        62.72295103594264,
+        12.789695946400531,
+        10.175565464252978,
+        2.3406867455394518,
+        1.1125477848795926
+      ],
+      "scaled_jacobian_rank": 5,
+      "parameter_count": 5,
+      "scaled_jacobian_condition_number": 56.37775912944804,
+      "rank_deficient": false,
+      "condition_warning": false
+    },
+    "multistart": {
+      "attempt_count": 24,
+      "success_count": 24,
+      "success_fraction": 1.0,
+      "best_sse": 2.5238258731563194e-05,
+      "near_optimal_count": 24,
+      "near_optimal_sse_relative_tolerance": 1e-05,
+      "relative_parameter_spread": {
+        "E": 1.6220002028306413e-10,
+        "A": 2.3855910528856164e-10,
+        "alpha": 1.8253927888447627e-10,
+        "B": 2.806816998483547e-10,
+        "beta": 4.4649031359046437e-10
+      },
+      "unstable": false
+    },
+    "boundary": {
+      "E_at_zero_or_near": false,
+      "E_at_upper_or_near": false,
+      "alpha_near_lower": false,
+      "beta_near_lower": false
+    },
+    "identifiability_warning": false
+  },
+  "bootstrap": {
+    "method": "cluster bootstrap by the eight B12-confirmed Pythia model_repo trajectories; sample eight clusters with replacement, retaining all rows within selected trajectories",
+    "cluster_count": 8,
+    "requested_replicates": 1000,
+    "successful_replicates": 1000,
+    "failed_replicates": 0,
+    "success_fraction": 1.0,
+    "interval_percentiles": [
+      2.5,
+      97.5
+    ],
+    "intervals": {
+      "E": {
+        "estimate": 1.689797562928721,
+        "lower_95": 1.6896449977159096,
+        "upper_95": 1.6899624949355871,
+        "bootstrap_median": 1.6898135280085076
+      },
+      "A": {
+        "estimate": 0.353980320664689,
+        "lower_95": 0.3538432703971348,
+        "upper_95": 0.3541249393687383,
+        "bootstrap_median": 0.3539675838405605
+      },
+      "alpha": {
+        "estimate": 0.33997658189675806,
+        "lower_95": 0.3398314843053064,
+        "upper_95": 0.3401154853953109,
+        "bootstrap_median": 0.33998356119983736
+      },
+      "B": {
+        "estimate": 1.240305583540225,
+        "lower_95": 1.2401602298953889,
+        "upper_95": 1.2404340508734026,
+        "bootstrap_median": 1.2403106307697174
+      },
+      "beta": {
+        "estimate": 0.27987812854769506,
+        "lower_95": 0.2798234574722041,
+        "upper_95": 0.27993739665665157,
+        "bootstrap_median": 0.2798781682075653
+      }
+    },
+    "limitation": "Only eight independent trajectory clusters are available; percentile intervals are sensitive to the small number of clusters and are not high-precision population intervals."
+  },
+  "validation": [
+    {
+      "dataset": "B2",
+      "role": "separate: semisynthetic; same field name does not establish independent real validation",
+      "n": 1029,
+      "rmse": 1.2430848665779983,
+      "mae": 1.1784418124911544,
+      "bias_pred_minus_obs": -1.1784418124911544,
+      "r2": -5.072798817276571,
+      "spearman": 0.7881022686524627,
+      "max_abs_error": 3.5117049313128623
+    },
+    {
+      "dataset": "B3",
+      "role": "separate: interpolation from Pythia trajectories; not independent real validation",
+      "n": 4000,
+      "rmse": 0.003821282084297711,
+      "mae": 0.0028929513358234436,
+      "bias_pred_minus_obs": -0.0019683175256384328,
+      "r2": 0.9999577401373937,
+      "spearman": 0.9999897947960312,
+      "max_abs_error": 0.014734165423332612
+    },
+    {
+      "dataset": "B4",
+      "role": "separate: real cross-family values; CSV lacks evaluation protocol needed to establish direct Loss-scale comparability",
+      "n": 57,
+      "rmse": 0.2926666775450497,
+      "mae": 0.227263293266055,
+      "bias_pred_minus_obs": -0.22100853266106338,
+      "r2": 0.6045048852534352,
+      "spearman": 0.9829816454561005,
+      "max_abs_error": 1.0477113610859856
+    },
+    {
+      "dataset": "B5",
+      "role": "separate: literature values from multiple sources; CSV lacks common evaluation protocol",
+      "n": 44,
+      "rmse": 0.19759507403763663,
+      "mae": 0.17072153146305036,
+      "bias_pred_minus_obs": -0.020569863146184655,
+      "r2": 0.7305591129232403,
+      "spearman": 0.9588075695723213,
+      "max_abs_error": 0.45083840665002484
+    }
+  ],
+  "validation_source_comparability": {
+    "source_comparability": {
+      "B2": "separate: semisynthetic; same field name does not establish independent real validation",
+      "B3": "separate: interpolation from Pythia trajectories; not independent real validation",
+      "B4": "separate: real cross-family values; CSV lacks evaluation protocol needed to establish direct Loss-scale comparability",
+      "B5": "separate: literature values from multiple sources; CSV lacks common evaluation protocol"
+    },
+    "pooled_validation_metric": null,
+    "reason_no_pooled_metric": "The source roles and evaluation protocols differ or are undocumented; all B2-B5 metrics are reported by source only."
+  },
+  "validation_predictions_all_finite": true,
+  "figure_counts": {
+    "raw": 3,
+    "process": 3,
+    "result": 3
+  },
+  "figure_style": {
+    "journal": "general",
+    "lang": "en",
+    "sciplots_used": false,
+    "cjk_font": null,
+    "constrained_layout": true
+  },
+  "elapsed_seconds_before_report": 54.77192687988281,
+  "seed": 20260923
+}
