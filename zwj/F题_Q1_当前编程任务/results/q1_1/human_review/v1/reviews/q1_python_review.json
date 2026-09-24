@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "question_id": "Q1.1",
+  "language": "python",
+  "reviewed_files": [
+    "zwj/F题_Q1_当前编程任务/q1_1_human_review_tool.py",
+    "zwj/F题_Q1_当前编程任务/tests/test_q1_1_human_review_tool.py",
+    "zwj/F题_Q1_当前编程任务/tests/verify_q1_1_prepared.py",
+    "zwj/F题_Q1_当前编程任务/results/q1_1/human_review/v1/prepared/manifest.json"
+  ],
+  "decision_id": "q1_1_human_double_blind_review_logistics_v1",
+  "checks": {
+    "syntax": {
+      "status": "PASS",
+      "evidence": [
+        "Python 3.13.15 py_compile passed",
+        "7 standard-library unit tests passed"
+      ]
+    },
+    "input_contract": {
+      "status": "PASS",
+      "evidence": [
+        "Frozen packet and form contain exactly 793 unique blind_id values",
+        "Packet SHA-256 7a0be4632ec79d041b41534c64e8a9fea71f247e4d6639eecf2cc3d25ecf592b",
+        "Form SHA-256 625f9a1965e7c3a1f6d1357f96affac2cf779317cff9e790baba0850d9f134a1",
+        "Restricted mapping, candidate Q, domain, and raw ID are not inputs"
+      ]
+    },
+    "method_alignment": {
+      "status": "PASS",
+      "evidence": [
+        "Two independent deterministic presentation orders are used",
+        "No ratings are generated, inferred, filled, or imputed",
+        "Merge is keyed by blind_id and rejects the same rating path for both raters",
+        "AI Judge was not executed"
+      ]
+    },
+    "reproducibility": {
+      "status": "PASS",
+      "evidence": [
+        "Seeds 202609241 and 202609242 are recorded",
+        "Manifest records runtime, input/code/output hashes, parameters, and reproduce command",
+        "Tool code SHA-256 66e6f02a961eda3577499fc81ab7defca63c9a9ce9344e71094bd6199ef01d69"
+      ]
+    },
+    "output_contract": {
+      "status": "PASS",
+      "evidence": [
+        "35 of 35 listed output hashes and byte sizes verified",
+        "Each rater has 793 rows, 3965 blank score cells, and 16 packet parts",
+        "All 1586 presented texts match the frozen source exactly",
+        "Existing outputs and merge sidecar manifests are protected from overwrite"
+      ]
+    }
+  },
+  "findings": [],
+  "verdict": "PASSED",
+  "reviewed_at": "2026-09-24T01:44:17.6588123Z"
+}

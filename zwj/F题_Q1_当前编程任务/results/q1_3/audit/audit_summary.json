@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "mode": "audit",
+  "started_at_utc": "2026-09-23T12:22:30.620681+00:00",
+  "completed_at_utc": "2026-09-23T12:22:30.651920+00:00",
+  "source_code": {
+    "file": "src\\f_q1_3_mixture_loss.py",
+    "sha256": "626d5e08e32ecb2d63035606acc9fd5dcaed7708e600b4faf8313b9c5d3021c8"
+  },
+  "data_root": "C:\\Users\\Zhang Wanjie\\Desktop\\第二十三届中国研究生数学建模竞赛 - 中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables",
+  "data_role_policy": {
+    "A4_A5": "training; schema, keys, and full value audit",
+    "A6_A11": "validation only; schema, keys, size, and hashes only",
+    "A12_A15": "extrapolation/estimate only; schema, keys, size, and hashes only"
+  },
+  "counts": {
+    "files": 12,
+    "pairs": 6,
+    "errors": 0
+  },
+  "training_value_audit": {
+    "status": "completed",
+    "rows_audited": 512,
+    "failed_rows": 0,
+    "mixture_missing_values": 0,
+    "mixture_invalid_values": 0,
+    "mixture_nonfinite_values": 0,
+    "negative_share_values": 0,
+    "zero_sum_rows": 0,
+    "zero_share_values": 3928,
+    "raw_share_sum_min": "0.996",
+    "raw_share_sum_max": "1.003",
+    "duplicate_raw_recipe_groups": 0,
+    "rows_in_duplicate_raw_recipe_groups": 0,
+    "duplicate_recipe_groups_with_loss_disagreement": 0,
+    "loss_target_disagreement_group_counts": {},
+    "loss_missing_values": 0,
+    "loss_invalid_values": 0,
+    "loss_nonfinite_values": 0,
+    "definition_note": "Duplicate recipes use exact parsed raw 17-share vectors; no closure or pseudocount is applied."
+  },
+  "issues": [],
+  "audit_conclusion_sha256": "33bf7dddccb195787e5d744f2ac3a5f646f422b80e3b10a9b6a1acd519794055",
+  "isolation_guards": {
+    "model_functions_called": false,
+    "quality_or_conflict_outputs_read": false,
+    "a16_mapping_read": false,
+    "closure_computed_or_saved": false,
+    "pseudocount_or_imputation_applied": false,
+    "rows_deleted_or_repaired": false,
+    "external_loss_distributions_or_metrics_summarized": false,
+    "pdf_or_report_text_parsed_as_instructions": false
+  },
+  "outputs": [
+    "audit_summary.json",
+    "file_roles.csv",
+    "pair_integrity.csv",
+    "train_composition_qc.csv"
+  ],
+  "python": "3.13.15",
+  "python_executable": "D:\\miniconda3\\envs\\huawei-cup\\python.exe",
+  "command": "\"D:\\miniconda3\\envs\\huawei-cup\\python.exe\" -B src/f_q1_3_mixture_loss.py --mode audit --data-root \"C:\\Users\\Zhang Wanjie\\Desktop\\第二十三届中国研究生数学建模竞赛 - 中文题目\\F题\\real_attachments\\A_data_value\\regmix_tables\""
+}

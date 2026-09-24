@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="518.4pt" height="324pt" viewBox="0 0 518.4 324" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-24T18:34:59.333827</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 324 
+L 518.4 324 
+L 518.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="table_1">
+    <g id="patch_2">
+     <path d="M 78.8616 104.1606 
+L 181.370664 104.1606 
+L 181.370664 78.7968 
+L 78.8616 78.7968 
+z
+" style="fill: #dde3e8; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_1">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #222222" x="130.116132" y="93.406434" transform="rotate(-0 130.116132 93.406434)">记录数 / 来源性质</text>
+    </g>
+    <g id="patch_3">
+     <path d="M 181.370664 104.1606 
+L 226.930248 104.1606 
+L 226.930248 78.7968 
+L 181.370664 78.7968 
+z
+" style="fill: #dde3e8; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_2">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #222222" transform="translate(193.650456 89.02345)">已核验</text>
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #222222" transform="translate(192.959753 97.789419)">17维 p</text>
+    </g>
+    <g id="patch_4">
+     <path d="M 226.930248 104.1606 
+L 268.6932 104.1606 
+L 268.6932 78.7968 
+L 226.930248 78.7968 
+z
+" style="fill: #dde3e8; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_3">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #222222" transform="translate(236.283052 89.178981)">p-Loss</text>
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #222222" transform="translate(240.811724 97.633888)">连接</text>
+    </g>
+    <g id="patch_5">
+     <path d="M 268.6932 104.1606 
+L 359.812368 104.1606 
+L 359.812368 78.7968 
+L 268.6932 78.7968 
+z
+" style="fill: #dde3e8; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_4">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #222222" x="314.252784" y="93.406434" transform="rotate(-0 314.252784 93.406434)">验证角色</text>
+    </g>
+    <g id="patch_6">
+     <path d="M 359.812368 104.1606 
+L 458.5248 104.1606 
+L 458.5248 78.7968 
+L 359.812368 78.7968 
+z
+" style="fill: #dde3e8; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_5">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #222222" transform="translate(392.032803 89.178981)">相对 B1 的</text>
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #222222" transform="translate(389.956865 97.633888)">Loss 可比性</text>
+    </g>
+    <g id="patch_7">
+     <path d="M 67.938975 129.5244 
+L 78.8616 129.5244 
+L 78.8616 104.1606 
+L 67.938975 104.1606 
+z
+" style="fill: #dde3e8; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_6">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #222222" x="73.400288" y="118.770234" transform="rotate(-0 73.400288 118.770234)">B1</text>
+    </g>
+    <g id="patch_8">
+     <path d="M 78.8616 129.5244 
+L 181.370664 129.5244 
+L 181.370664 104.1606 
+L 78.8616 104.1606 
+z
+" style="fill: #eceff1; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(94.663866 114.645594)">1,176个 Pythia 检查点</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(117.56371 123.140969)">8条轨迹</text>
+    </g>
+    <g id="patch_9">
+     <path d="M 181.370664 129.5244 
+L 226.930248 129.5244 
+L 226.930248 104.1606 
+L 181.370664 104.1606 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_8">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="204.150456" y="118.770234" transform="rotate(-0 204.150456 118.770234)">无</text>
+    </g>
+    <g id="patch_10">
+     <path d="M 226.930248 129.5244 
+L 268.6932 129.5244 
+L 268.6932 104.1606 
+L 226.930248 104.1606 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_9">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="247.811724" y="118.770234" transform="rotate(-0 247.811724 118.770234)">0</text>
+    </g>
+    <g id="patch_11">
+     <path d="M 268.6932 129.5244 
+L 359.812368 129.5244 
+L 359.812368 104.1606 
+L 268.6932 104.1606 
+z
+" style="fill: #dceaf7; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="314.252784" y="118.770234" transform="rotate(-0 314.252784 118.770234)">主参考来源</text>
+    </g>
+    <g id="patch_12">
+     <path d="M 359.812368 129.5244 
+L 458.5248 129.5244 
+L 458.5248 104.1606 
+L 359.812368 104.1606 
+z
+" style="fill: #dceaf7; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(398.668584 114.542781)">参考组</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(388.168584 122.997688)">不是外部比较</text>
+    </g>
+    <g id="patch_13">
+     <path d="M 67.938975 154.8882 
+L 78.8616 154.8882 
+L 78.8616 129.5244 
+L 67.938975 129.5244 
+z
+" style="fill: #dde3e8; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_12">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #222222" x="73.400288" y="144.134034" transform="rotate(-0 73.400288 144.134034)">B2</text>
+    </g>
+    <g id="patch_14">
+     <path d="M 78.8616 154.8882 
+L 181.370664 154.8882 
+L 181.370664 129.5244 
+L 78.8616 129.5244 
+z
+" style="fill: #eceff1; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(100.06371 139.906581)">1,029条半合成记录</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(117.56371 148.361488)">7条轨迹</text>
+    </g>
+    <g id="patch_15">
+     <path d="M 181.370664 154.8882 
+L 226.930248 154.8882 
+L 226.930248 129.5244 
+L 181.370664 129.5244 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_14">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="204.150456" y="144.134034" transform="rotate(-0 204.150456 144.134034)">无</text>
+    </g>
+    <g id="patch_16">
+     <path d="M 226.930248 154.8882 
+L 268.6932 154.8882 
+L 268.6932 129.5244 
+L 226.930248 129.5244 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_15">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="247.811724" y="144.134034" transform="rotate(-0 247.811724 144.134034)">0</text>
+    </g>
+    <g id="patch_17">
+     <path d="M 268.6932 154.8882 
+L 359.812368 154.8882 
+L 359.812368 129.5244 
+L 268.6932 129.5244 
+z
+" style="fill: #fce8c3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="314.252784" y="144.134034" transform="rotate(-0 314.252784 144.134034)">半合成压力测试</text>
+    </g>
+    <g id="patch_18">
+     <path d="M 359.812368 154.8882 
+L 458.5248 154.8882 
+L 458.5248 129.5244 
+L 359.812368 129.5244 
+z
+" style="fill: #fce8c3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="409.168584" y="144.134034" transform="rotate(-0 409.168584 144.134034)">不作为真实外部验证</text>
+    </g>
+    <g id="patch_19">
+     <path d="M 67.938975 180.252 
+L 78.8616 180.252 
+L 78.8616 154.8882 
+L 67.938975 154.8882 
+z
+" style="fill: #dde3e8; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_18">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #222222" x="73.400288" y="169.497834" transform="rotate(-0 73.400288 169.497834)">B3</text>
+    </g>
+    <g id="patch_20">
+     <path d="M 78.8616 180.252 
+L 181.370664 180.252 
+L 181.370664 154.8882 
+L 78.8616 154.8882 
+z
+" style="fill: #eceff1; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_19">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(94.663866 165.373194)">4,000个 Pythia 插值点</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(117.56371 173.868569)">8条轨迹</text>
+    </g>
+    <g id="patch_21">
+     <path d="M 181.370664 180.252 
+L 226.930248 180.252 
+L 226.930248 154.8882 
+L 181.370664 154.8882 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_20">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="204.150456" y="169.497834" transform="rotate(-0 204.150456 169.497834)">无</text>
+    </g>
+    <g id="patch_22">
+     <path d="M 226.930248 180.252 
+L 268.6932 180.252 
+L 268.6932 154.8882 
+L 226.930248 154.8882 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_21">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="247.811724" y="169.497834" transform="rotate(-0 247.811724 169.497834)">0</text>
+    </g>
+    <g id="patch_23">
+     <path d="M 268.6932 180.252 
+L 359.812368 180.252 
+L 359.812368 154.8882 
+L 268.6932 154.8882 
+z
+" style="fill: #fce8c3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_22">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="314.252784" y="169.497834" transform="rotate(-0 314.252784 169.497834)">同来源插值检查</text>
+    </g>
+    <g id="patch_24">
+     <path d="M 359.812368 180.252 
+L 458.5248 180.252 
+L 458.5248 154.8882 
+L 359.812368 154.8882 
+z
+" style="fill: #fce8c3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_23">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="409.168584" y="169.497834" transform="rotate(-0 409.168584 169.497834)">不作为独立真实验证</text>
+    </g>
+    <g id="patch_25">
+     <path d="M 67.938975 205.6158 
+L 78.8616 205.6158 
+L 78.8616 180.252 
+L 67.938975 180.252 
+z
+" style="fill: #dde3e8; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_24">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #222222" x="73.400288" y="194.861634" transform="rotate(-0 73.400288 194.861634)">B4</text>
+    </g>
+    <g id="patch_26">
+     <path d="M 78.8616 205.6158 
+L 181.370664 205.6158 
+L 181.370664 180.252 
+L 78.8616 180.252 
+z
+" style="fill: #eceff1; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_25">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(108.511288 190.634181)">57个跨族记录</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(112.011288 199.089088)">12个模型族</text>
+    </g>
+    <g id="patch_27">
+     <path d="M 181.370664 205.6158 
+L 226.930248 205.6158 
+L 226.930248 180.252 
+L 181.370664 180.252 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_26">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="204.150456" y="194.861634" transform="rotate(-0 204.150456 194.861634)">无</text>
+    </g>
+    <g id="patch_28">
+     <path d="M 226.930248 205.6158 
+L 268.6932 205.6158 
+L 268.6932 180.252 
+L 226.930248 180.252 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_27">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="247.811724" y="194.861634" transform="rotate(-0 247.811724 194.861634)">0</text>
+    </g>
+    <g id="patch_29">
+     <path d="M 268.6932 205.6158 
+L 359.812368 205.6158 
+L 359.812368 180.252 
+L 268.6932 180.252 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_28">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="314.252784" y="194.861634" transform="rotate(-0 314.252784 194.861634)">行级来源 / 运行键缺失</text>
+    </g>
+    <g id="patch_30">
+     <path d="M 359.812368 205.6158 
+L 458.5248 205.6158 
+L 458.5248 180.252 
+L 359.812368 180.252 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_29">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="409.168584" y="194.769759" transform="rotate(-0 409.168584 194.769759)">NOT_COMPARABLE</text>
+    </g>
+    <g id="patch_31">
+     <path d="M 67.938975 230.9796 
+L 78.8616 230.9796 
+L 78.8616 205.6158 
+L 67.938975 205.6158 
+z
+" style="fill: #dde3e8; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_30">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #222222" x="73.400288" y="220.225434" transform="rotate(-0 73.400288 220.225434)">B5</text>
+    </g>
+    <g id="patch_32">
+     <path d="M 78.8616 230.9796 
+L 181.370664 230.9796 
+L 181.370664 205.6158 
+L 78.8616 205.6158 
+z
+" style="fill: #eceff1; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_31">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(108.511288 215.997981)">44个文献记录</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(114.06371 224.452888)">9个模型族</text>
+    </g>
+    <g id="patch_33">
+     <path d="M 181.370664 230.9796 
+L 226.930248 230.9796 
+L 226.930248 205.6158 
+L 181.370664 205.6158 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_32">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="204.150456" y="220.225434" transform="rotate(-0 204.150456 220.225434)">无</text>
+    </g>
+    <g id="patch_34">
+     <path d="M 226.930248 230.9796 
+L 268.6932 230.9796 
+L 268.6932 205.6158 
+L 226.930248 205.6158 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_33">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="247.811724" y="220.225434" transform="rotate(-0 247.811724 220.225434)">0</text>
+    </g>
+    <g id="patch_35">
+     <path d="M 268.6932 230.9796 
+L 359.812368 230.9796 
+L 359.812368 205.6158 
+L 268.6932 205.6158 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_34">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(296.752784 215.997981)">多来源汇编</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(293.252784 224.452888)">缺行级运行键</text>
+    </g>
+    <g id="patch_36">
+     <path d="M 359.812368 230.9796 
+L 458.5248 230.9796 
+L 458.5248 205.6158 
+L 359.812368 205.6158 
+z
+" style="fill: #f7d9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_35">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="409.168584" y="220.133559" transform="rotate(-0 409.168584 220.133559)">NOT_COMPARABLE</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_36">
+   <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="259.2" y="16.893125" transform="rotate(-0 259.2 16.893125)">B1–B5 配比数据与验证边界状态矩阵</text>
+  </g>
+  <g id="text_37">
+   <text style="font-weight: 700; font-size: 8.2px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8c2d21" x="259.2" y="38.034016" transform="rotate(-0 259.2 38.034016)">当前没有已核验并逐行连接到 Loss 的 17 维 p 向量，正式 B 侧 p-only 拟合尚不能启动</text>
+  </g>
+  <g id="text_38">
+   <text style="font-size: 6.8px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #40464d" transform="translate(104.751812 278.025987)">“0”表示当前审计材料中没有已核验且连接到 Loss 的17维配比，不表示真实训练中的配比效应为零。</text>
+   <text style="font-size: 6.8px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #40464d" transform="translate(114.177781 286.239325)">B2半合成、B3插值、B4/B5 Loss口径不可比是不同限制，不能合并为同一状态；颜色仅作辅助。</text>
+  </g>
+  <g id="text_39">
+   <text style="font-size: 6.2px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7280" x="259.2" y="308.026437" transform="rotate(-0 259.2 308.026437)">数据来源：p配比可行性审计、轨迹映射、验证可比性与 Loss 协议矩阵（均为已有审计结果）</text>
+  </g>
+ </g>
+</svg>
