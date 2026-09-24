@@ -1,0 +1,34 @@
+{
+  "schema_version": "q1-1-ai-proxy-review-v1",
+  "rating_source": "AI-assisted proxy; not human; not independent blind review",
+  "sample_seed": 20260925,
+  "review_order_seed": 20260926,
+  "input_sha256": {
+    "Q1/03_结果/Q1.1/v1/review_packet/restricted_id_mapping.csv": "d7c5267c14c57c09a6b6ea7a026ff7d9b6abb413d3dd291baf2866fb57662ebb",
+    "Q1/03_结果/Q1.1/v1/review_packet/blind_review_samples.md": "7a0be4632ec79d041b41534c64e8a9fea71f247e4d6639eecf2cc3d25ecf592b",
+    "Q1/03_结果/Q1.1/v1/sample_scores.csv.gz": "52843766cf9d4d0edb18d85e2a59296e906a08dda17c7f2b628cd4798bcb7276",
+    "Q1/03_结果/Q1.2/v1/sample_scores.csv.gz": "736b8f22703fa3be044679743eadd6149ed7805c6fb863b403b5110bc329f2ce"
+  },
+  "sample_count": 30,
+  "representative_count": 24,
+  "diagnostic_count": 6,
+  "runtime": {
+    "python_executable": "C:\\Users\\Zhang Wanjie\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "pandas": "3.0.1",
+    "openpyxl": "3.1.5"
+  },
+  "script_sha256": "3ec236bddcdc6a279e5a9384745e90f9efa04da545125f98bc0e3cd7fae3abb2",
+  "working_directory": "C:\\Users\\Zhang Wanjie\\Desktop\\github-work\\HUAWEI-Cup",
+  "prepare_command": "\"C:\\Users\\Zhang Wanjie\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -B \"zwj/Q1.1_30条小样本代理评审_20260924/q1_1_proxy_review.py\" prepare",
+  "apply_command": "\"C:\\Users\\Zhang Wanjie\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -B \"zwj/Q1.1_30条小样本代理评审_20260924/q1_1_proxy_review.py\" apply",
+  "verify_command": "\"C:\\Users\\Zhang Wanjie\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -B \"zwj/Q1.1_30条小样本代理评审_20260924/q1_1_proxy_review.py\" verify",
+  "score_input_sha256": "fa2a7ef4f5f6c5001953dd59c6d396fafb6021ed29a85148a65d24b70133ad7c",
+  "outputs_sha256": {
+    "输出/Q1.1_30条抽样清单_私有.csv": "b9f103f8df0bad9becb8fcba1d8c823802be11e709670fc11c1035ad875aa7f6",
+    "输出/Q1.1_30条盲评索引.csv": "1b8ad9d9435578b60900b03566a7f07796552ebca1a48c262d777ecce8caca94",
+    "输出/Q1.1_30条_AI辅助代理评分.xlsx": "63db3a097f7547fedac8eba69dc8bcf5254288819499a33191f2cf831cfefae2",
+    "输出/Q1.1_AI辅助代理评分说明.md": "34e4dff5255d643eb9e88cc9eb123c1026afb7cb07366f9618ede195da9097ed"
+  },
+  "text_content_set_sha256": "959b677187ae32f65f819ccb98ad0b950145c2a6fc115fda688a24e48c2630ee"
+}
