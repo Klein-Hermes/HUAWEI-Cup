@@ -1,0 +1,44 @@
+{
+  "schema_version": "q1-1-frac-recalculation-audit-v1",
+  "generated_at_utc": "2026-09-24T13:43:37.444419+00:00",
+  "status": "full_a1_complete",
+  "rows_recalculated": 51230,
+  "expected_a1_rows": 51230,
+  "unique_sample_ids": 51230,
+  "input": {
+    "path": "中文题目\\F题\\real_attachments\\A_data_value\\slimpajama_quality_signal_sample.jsonl.xz",
+    "size_bytes": 103349792,
+    "sha256": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+    "matches_frozen_preprocessing_manifest": true,
+    "preprocessing_manifest": "Q1\\03_结果\\00_公共预处理\\v1\\manifest.json"
+  },
+  "script": {
+    "path": "src\\q1_1_frac_field_recalculation_audit.py",
+    "sha256": "4737abf16ed1e2ca8404118d88a8ba5b699218fea1de12abc6eec25355574813"
+  },
+  "method": {
+    "public_reference_branch": "togethercomputer/RedPajama-Data main (dynamic branch; source generation commit for OpenDataLab not identified)",
+    "retrieved_date_local": "2026-09-24",
+    "upstream_precision_digits": 8,
+    "unit_comparison": "stored values compared with independently calculated ratios multiplied by 100",
+    "line_aggregation": "not specified by OpenDataLab card; arithmetic all-line, arithmetic nonempty-line, and character-weighted candidates reported separately",
+    "absolute_tolerance_percentage_points": 0.01,
+    "random_seed": null,
+    "randomness": "none",
+    "source_urls": {
+      "normalization": "https://github.com/togethercomputer/RedPajama-Data/blob/main/app/src/utilities/text/normalization.py",
+      "document": "https://github.com/togethercomputer/RedPajama-Data/blob/main/app/src/core/document.py",
+      "natural_language": "https://github.com/togethercomputer/RedPajama-Data/blob/main/app/src/core/quality_signals/natural_language.py",
+      "lines": "https://github.com/togethercomputer/RedPajama-Data/blob/main/app/src/core/quality_signals/lines.py",
+      "repetitions": "https://github.com/togethercomputer/RedPajama-Data/blob/main/app/src/core/quality_signals/repetitions.py",
+      "opendatalab_card": "https://huggingface.co/datasets/opendatalab/SlimPajama-Meta-rater"
+    }
+  },
+  "command": "python src/q1_1_frac_field_recalculation_audit.py --output-dir results/q1_1/fraction_recalculation_audit/v1",
+  "output_sha256": {
+    "field_recalculation_metrics.csv": "8b8270aefcc88c5683f8f35bb2db796d2c6ffd3118f6b9aedfe256e55728ddc1",
+    "a1_record_recalculation.csv.gz": "84230682480c4965e12fbaf8bab47d3b38e9d21545e7eefb0f34abe328604cbf",
+    "summary.md": "90f119ae8ebe02e0219b946cb39ceb6f73553adf769689227acf5dbce16a0a22"
+  },
+  "frozen_q1_outputs_modified": false
+}

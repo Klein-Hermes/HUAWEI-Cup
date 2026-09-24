@@ -1,0 +1,65 @@
+{
+  "schema_version": "q1-1-frac-audit-deliverable-v2",
+  "generated_at_utc": "2026-09-24T14:03:21.625855+00:00",
+  "audit_status": "full_a1_complete",
+  "rows_recalculated": 51230,
+  "input_sha256": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+  "q1_frozen_outputs_modified": false,
+  "files": [
+    {
+      "path": "Q1/02_代码/q1_1_frac_field_recalculation_audit_v2.py",
+      "size_bytes": 23785,
+      "sha256": "a4d56998b383be2f0093c4887b27a9ace61358a9791804c686c0cfc97eb2c924"
+    },
+    {
+      "path": "Q1/02_代码/q1_1_frac_field_domain_diagnostic.py",
+      "size_bytes": 6605,
+      "sha256": "42a44ec3e67a97c7c8134e3762355cfef9bae509240344f39927d91804f4fde9"
+    },
+    {
+      "path": "Q1/03_结果/Q1.1/frac字段独立复算/v2/summary.md",
+      "size_bytes": 4416,
+      "sha256": "cc2fe73273d9e5e5dbf0ed748591ace1f04c5f75080e7a97490e68226398ca58"
+    },
+    {
+      "path": "Q1/03_结果/Q1.1/frac字段独立复算/v2/field_recalculation_metrics.csv",
+      "size_bytes": 2884,
+      "sha256": "6f74eddb9c53c32f8cf28f545bb7b5a4380446c7a3c988052f54bfd9e98d9ac8"
+    },
+    {
+      "path": "Q1/03_结果/Q1.1/frac字段独立复算/v2/a1_record_recalculation.csv.gz",
+      "size_bytes": 6642553,
+      "sha256": "187801af9794ea0813dc041bc7cf02a51bff32c1d818e4c0b3ac66fa2228dfcc"
+    },
+    {
+      "path": "Q1/03_结果/Q1.1/frac字段独立复算/v2/manifest.json",
+      "size_bytes": 2652,
+      "sha256": "446188c42e2d6f0645463078560dbb4d8401cd39e59ca92ee7847cc0cc26aad6"
+    },
+    {
+      "path": "Q1/03_结果/Q1.1/frac字段独立复算/v2/domain_match_by_source.csv",
+      "size_bytes": 12629,
+      "sha256": "81ee7dfa7d70919478faabe13d79d6e7cd4b6abe325c7c371f25a5fede577f75"
+    },
+    {
+      "path": "Q1/03_结果/Q1.1/frac字段独立复算/v2/domain_diagnostic_manifest.json",
+      "size_bytes": 1086,
+      "sha256": "f781a97f1ec69b92cda236cced049457c9d08afd9f45d15015e65d39e0e67670"
+    },
+    {
+      "path": "Q1/03_结果/Q1.1/frac字段独立复算/v2/结论与Q1处理建议.md",
+      "size_bytes": 4739,
+      "sha256": "ea9f77e27ca68a377aa8e36455795f01c81e711b90ba0f8ed4c3fa047e0c9047"
+    },
+    {
+      "path": "src/q1_1_frac_field_recalculation_audit.py",
+      "size_bytes": 23785,
+      "sha256": "a4d56998b383be2f0093c4887b27a9ace61358a9791804c686c0cfc97eb2c924"
+    },
+    {
+      "path": "src/q1_1_frac_field_domain_diagnostic.py",
+      "size_bytes": 6605,
+      "sha256": "42a44ec3e67a97c7c8134e3762355cfef9bae509240344f39927d91804f4fde9"
+    }
+  ]
+}
