@@ -1,0 +1,62 @@
+{
+  "analysis": "Q3 trajectory leave-one-out decision sensitivity and restricted scaling-form comparison",
+  "status": "complete",
+  "created_utc": "2026-09-25T08:07:16Z",
+  "scope": "fixed Q=Q0; p excluded; 8 whole Pythia trajectory folds; 1,176 observed B1 N/D support points; 15 budget-context scenarios",
+  "models": {
+    "m0_current": "L = E + A*N^(-alpha) + B*D^(-beta)",
+    "m0_no_floor": "L = A*N^(-alpha) + B*D^(-beta); E=0",
+    "m0_shared_exponent": "L = E + A*N^(-gamma) + B*D^(-gamma); alpha=beta=gamma"
+  },
+  "random_seed": null,
+  "optimizer": {
+    "method": "scipy.optimize.least_squares(method='trf', x_scale='jac')",
+    "alternative_form_starts": 16,
+    "max_nfev": 10000
+  },
+  "runtime_seconds": 10.215863200006424,
+  "python_version": "3.10.20",
+  "numpy_version": "1.26.4",
+  "pandas_version": "2.3.3",
+  "scipy_version": "1.15.3",
+  "command": "D:/Anaconda/envs/mmdet/python.exe Q3/03_代码/analyze_q3_trajectory_form_sensitivity.py",
+  "input_sha256": {
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/gate0_b1_trajectory_mapping.csv": "ea2c1fd78c7a84e0f41d70a57b630089781b8d8cbd9c9a9434e6ea7c787c0c37",
+    "Q2/03_结果/经典ScalingLaw基线/v1/leave_one_size_out.csv": "1da4d0ca5909f584c0ab4a1e40a33113c9fc768940d154308088e0edb4e22708",
+    "Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "Q3/04_结果/m3_candidate_grid.csv": "1710f5a9ae72f57c06be4daeb2d6cd4b84ad0aa1a90977c326d6a12f0d7c0b29",
+    "Q3/04_结果/m4_budget_feasible_mask.csv": "aae829847746b3db9fa6c382b863941655d86ab1b910c71834ba9b6c63bb87bc",
+    "Q3/04_结果/M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "Q3/02_数据审计/C7_context_by_model.csv": "b1ebd27b8606a6f002bbe974d56b0e2862287e0644ce97a2ff0a9ba19c273ac4"
+  },
+  "code_sha256": "cfc3cea7ce6efd05fe5d7446d4d763ea7ec321d026e948d38764b7a74959f2cd",
+  "frozen_m0_reconciliation": {
+    "max_prediction_abs_difference": 4.440892098500626e-16,
+    "baseline_scenario_matches": 15,
+    "baseline_scenario_total": 15
+  },
+  "row_counts": {
+    "q3_loto_parameters.csv": 27,
+    "q3_loto_holdout_metrics.csv": 24,
+    "q3_loto_oof_predictions.csv": 3528,
+    "q3_loto_scenario_selections.csv": 360,
+    "q3_loto_scenario_summary.csv": 45,
+    "q3_function_form_summary.csv": 3
+  },
+  "output_sha256": {
+    "q3_loto_parameters.csv": "936daa29dfa75c85b1c92d99d133f463d23a375fb52b62972eafe4fe53920647",
+    "q3_loto_holdout_metrics.csv": "c559d538200aa6af47e58756321b70b4955f905b4549aecd81ef2b29b6eaf412",
+    "q3_loto_oof_predictions.csv": "cecc9f9836ab989a64a2d8b8320dfdca0e6c0dac6dd0bf61a6e394f198b7dd1e",
+    "q3_loto_scenario_selections.csv": "61256cee0f256887828fa68e7d8ac823c38e6b4f8596db00f165d90618c5de50",
+    "q3_loto_scenario_summary.csv": "5bc5fe9b5dd93de04fd4b7f725a05f50e581dd3eded8d3ff2c36602e0cdf15af",
+    "q3_function_form_summary.csv": "b710d14523038ab3049f7a0fddf4a70385b4d0eed13cc4286f636d0de6692ae5",
+    "report.md": "6308133f2123d9850757b8441156843f747ac3362101db37e47fc15fb0aa3e03"
+  },
+  "limitations": [
+    "Only eight trajectory clusters are available; no inferential test is reported.",
+    "LOO decision candidates retain the full fixed Q3 support grid; a selected omitted-trajectory point is flagged.",
+    "The two restricted models do not exhaust model-form uncertainty.",
+    "All Q3 outputs remain fixed-Q0 M0 reference results; p and Q response are not identified here."
+  ]
+}

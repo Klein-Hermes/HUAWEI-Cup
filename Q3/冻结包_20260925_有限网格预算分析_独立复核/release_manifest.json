@@ -1,0 +1,692 @@
+{
+  "artifact": "Q3 scope-limited release package",
+  "created_on": "2026-09-25",
+  "scope": "Q3 identifiable result package at fixed Q0; full empirical Q/p joint optimization excluded",
+  "files_excluding_this_manifest": [
+    {
+      "path": "01_fixed/figures/process_q3_m3_m4_mask_audit.png",
+      "sha256": "0eeb21afff5c79b6f00ef1056e9565ccb021df0e19aee92f12a56e4d646f7a99",
+      "bytes": 200624
+    },
+    {
+      "path": "01_fixed/figures/process_q3_m3_m4_mask_audit.svg",
+      "sha256": "968a10c81a33eac0d71ede8ba0809e9cbe08123a19e692dccdec319e916998e0",
+      "bytes": 39801
+    },
+    {
+      "path": "01_fixed/figures/raw_q3_observed_nd_support.png",
+      "sha256": "de557a291a8a91e7ac52eafe0e62aaaf74b88b4878d86aba2c6a17fe8416aab3",
+      "bytes": 178621
+    },
+    {
+      "path": "01_fixed/figures/raw_q3_observed_nd_support.svg",
+      "sha256": "84d05b39281d3ee39fb00297cce8d7608ccfeddbb00aa5bac1210c99e6cd25d5",
+      "bytes": 98209
+    },
+    {
+      "path": "01_fixed/figures/result_q3_fixedq_master_and_resource_transition.pdf",
+      "sha256": "606bdd98bfbaa2c051e733774121a7a934813fe0720cb9bdca80016b064b7f18",
+      "bytes": 59092
+    },
+    {
+      "path": "01_fixed/figures/result_q3_fixedq_master_and_resource_transition.png",
+      "sha256": "a766b5394676e8b9b7ea247435a4cbd2c9bd466d48f5dea78e12247d8f3373a6",
+      "bytes": 372797
+    },
+    {
+      "path": "01_fixed/figures/result_q3_fixedq_master_and_resource_transition.svg",
+      "sha256": "3fa6230e8c8cc3186d2de9fa75f589f4bb358fb9e787579261d881ae8592bd6c",
+      "bytes": 83634
+    },
+    {
+      "path": "01_fixed/figures/result_q3_fixedq_master_and_resource_transition_grayscale.png",
+      "sha256": "4d8ec8366f0a92a233b87ec8c6395a9ae86ed154e8a185504c48b35cabec6ae0",
+      "bytes": 356094
+    },
+    {
+      "path": "01_fixed/figures/result_q3_m1_budget_optima.png",
+      "sha256": "fe7b8506e2bd6bd7d65031d0e990d0f0f90fdd95523d6aeaef8fe49df3dbcba2",
+      "bytes": 312164
+    },
+    {
+      "path": "01_fixed/figures/result_q3_m1_budget_optima.svg",
+      "sha256": "a3d1b47360909a5a81c3b5f3b9ff43da4ca294955c5b8027b63e9af7f0fa556b",
+      "bytes": 282903
+    },
+    {
+      "path": "01_fixed/figures/result_q3_m1_budget_optima_grayscale.png",
+      "sha256": "72530ff50120e8ef417d55c264e77a75d452a796e3b9cf0331af20868ffb380e",
+      "bytes": 136782
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/chart_contract.md",
+      "sha256": "3284e9471f6efa5d359fdd50a9498224ca474bb6778611cfbc1b35210ab86710",
+      "bytes": 961
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/figures/result_q3_m3_m4_cost_feasibility.png",
+      "sha256": "5c437c8634a0c6d6973a5f6774d5745e7053165ab644ddcac9db69d716cf0c5b",
+      "bytes": 223507
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/figures/result_q3_m3_m4_cost_feasibility.svg",
+      "sha256": "1a8c01c557a7dc9049f4e08d46f2125c025f648afa28c5de13518ff5465dda93",
+      "bytes": 47673
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/m0_optimum_cost_audit.csv",
+      "sha256": "d91beb993da501573f7b150f3256f4609b7e7f86bd4c24d19e0a9edd1858bd83",
+      "bytes": 4813
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/m3_support_alignment.csv",
+      "sha256": "7426324d77c8dc1b9e0d6dd8b60089f5de3fd232c98b21fc5573c4b64f3dd63b",
+      "bytes": 101587
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/m4_cost_audit_report.md",
+      "sha256": "f42cb6dc0ca8a9e1dc3ed2837c89a5158125c24a75c7b6c04d926cf498c6e31e",
+      "bytes": 4324
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/m_budget_feasibility.csv",
+      "sha256": "bc66380fb49d4a63b7655e648e136d95812fdf8cb74c7aaf74806713e69787a6",
+      "bytes": 4023462
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/m_budget_nesting_audit.csv",
+      "sha256": "53045a1653319249e88c49b44b0c47e6bf833956b6a37d99c6c3814df2ec6561",
+      "bytes": 914
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/m_budget_summary.csv",
+      "sha256": "4c196f6941635726308ea6f7cd67f662280cf3b0e7bc89acdfd351a74985dc25",
+      "bytes": 1992
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/m_cost_grid.csv",
+      "sha256": "ea18712363bc8312c63cfecb1ed7ef0fbcabb824780d6f4198bbabb33d0b7c10",
+      "bytes": 1153293
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/m_cost_identity_failures.csv",
+      "sha256": "ae092c97ca8bfd024396af786f49b45655624188f634d89af323bcbddd54f0ae",
+      "bytes": 77
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/m_cost_share.csv",
+      "sha256": "d91beb993da501573f7b150f3256f4609b7e7f86bd4c24d19e0a9edd1858bd83",
+      "bytes": 4813
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/m_monotonicity_audit.csv",
+      "sha256": "3d97adcddb7d70a589d84d66dde716c38c49a0b317fef6d84db06ffbc6d9d47a",
+      "bytes": 1030
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/m_unit_check.csv",
+      "sha256": "f0233bee23aae6811de5a0eb20a9d5aed0d33096c462296a25c9a35cf68ce81d",
+      "bytes": 511
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/p1_smoke_receipt.json",
+      "sha256": "95e98ca389940b22e504f6c69c88b1234f80d25d64e68029d1dc592583980f0f",
+      "bytes": 2330
+    },
+    {
+      "path": "01_fixed/M3_M4成本独立审计/reproduction_manifest.json",
+      "sha256": "bb84781387546b3ef8b904b988acfad343c91da14e7c64f6ed49ca3c35c7dc8f",
+      "bytes": 8346
+    },
+    {
+      "path": "01_fixed/p1_smoke_receipt.json",
+      "sha256": "f01fb98703c7652f923b86a80e9b5b9e1ee4760535b80f37aa9843d326d129b9",
+      "bytes": 1591
+    },
+    {
+      "path": "01_fixed/q3_fixedQ_master_results.csv",
+      "sha256": "24448178e2dc372f9f37eb8597b693a4e98cf2e8a8d2896c71b8ba87cdac0978",
+      "bytes": 9778
+    },
+    {
+      "path": "01_fixed/Q3_fixedQ_results_integration_report.md",
+      "sha256": "92941919b0ee3dd0d50254567f804d97ee6d8bd41d7f7d875267fd737337804a",
+      "bytes": 2674
+    },
+    {
+      "path": "01_fixed/Q3_fixedQ_results_manifest.json",
+      "sha256": "cb3010797e05c99e1fccdc47d4dfd0308c91110b936e458056901a0cc384bedc",
+      "bytes": 5199
+    },
+    {
+      "path": "01_fixed/q3_resource_transition.csv",
+      "sha256": "eb04c4bae24b04fb6816bf205882ae6015f7fdbb1647b03e436263c70712d548",
+      "bytes": 16643
+    },
+    {
+      "path": "01_fixed/source_tables/M0_cluster_bootstrap_sensitivity_manifest.json",
+      "sha256": "ca3d20fa819e9ed2a990aaf48124af22ca92ca95c2d160f4d438d28f6da4aa63",
+      "bytes": 1784
+    },
+    {
+      "path": "01_fixed/source_tables/M0_discrete_transition_bootstrap_draws.csv",
+      "sha256": "1855f6fc70a25797ebd242cff5bb4a325090fdd88eceb45980181f5d5d9058bb",
+      "bytes": 6881951
+    },
+    {
+      "path": "01_fixed/source_tables/M0_discrete_transition_manifest.json",
+      "sha256": "6181d79c5d99e1d8134972a5400432cd2cb7be5b35d2d1e8c7e9af8e791c532e",
+      "bytes": 2422
+    },
+    {
+      "path": "01_fixed/source_tables/M0_discrete_transition_pairs.csv",
+      "sha256": "7410fcc545c7bea281598bb46ea9ff77eff0d976291887f4968063b0cc1c19fc",
+      "bytes": 6942
+    },
+    {
+      "path": "01_fixed/source_tables/M0_ND_cluster_bootstrap_frontier.csv",
+      "sha256": "2e0677f48ae10acf4c148ea021864c14c09b4d9d8f7f83badaaf551792c796f2",
+      "bytes": 3956
+    },
+    {
+      "path": "01_fixed/source_tables/M0_ND_cluster_bootstrap_selection_frequency.csv",
+      "sha256": "37b12f07c580291caf078722ea4e3f355ae72a78d34c7ffa7923c8bf6e920ab5",
+      "bytes": 1086
+    },
+    {
+      "path": "01_fixed/source_tables/M0_ND_reference_frontier.csv",
+      "sha256": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+      "bytes": 7785
+    },
+    {
+      "path": "01_fixed/source_tables/m1_final_feasible_mask.csv",
+      "sha256": "2e201705adfdfec6089b088b7a17f403ff2b02e06ef87c0cffb9d80c69272662",
+      "bytes": 4335991
+    },
+    {
+      "path": "01_fixed/source_tables/m3_q3_support_grid.csv",
+      "sha256": "7e97aed1ef5f35a336da50baf2760b08c053ab7a697f65e1453b95702bf53e07",
+      "bytes": 162084
+    },
+    {
+      "path": "01_fixed/source_tables/m4_budget_feasible_mask.csv",
+      "sha256": "aae829847746b3db9fa6c382b863941655d86ab1b910c71834ba9b6c63bb87bc",
+      "bytes": 3191287
+    },
+    {
+      "path": "01_fixed/预算饱和与有限网格切换/figure_contract.md",
+      "sha256": "e612df199a5cfe784cdbdc91067d953dfb2ecc1daf09ddc40a53e98dd9ca9abe",
+      "bytes": 893
+    },
+    {
+      "path": "01_fixed/预算饱和与有限网格切换/figures/result_q3_budget_saturation_finite_grid_switches.pdf",
+      "sha256": "80f8b861a879d468e7ea78219d242ed6aeeeb1b16d50a6c22dfc4aff81e3174b",
+      "bytes": 64155
+    },
+    {
+      "path": "01_fixed/预算饱和与有限网格切换/figures/result_q3_budget_saturation_finite_grid_switches.png",
+      "sha256": "d6ce74806127d3f5b6056c8bb5fbab2492ae24c01892c1100cfa1b2d9c560550",
+      "bytes": 187956
+    },
+    {
+      "path": "01_fixed/预算饱和与有限网格切换/figures/result_q3_budget_saturation_finite_grid_switches.svg",
+      "sha256": "aa4407f998ea20ce4df76666822a2e94bbd07e93b3fb631899f58fdaea9aee0d",
+      "bytes": 228096
+    },
+    {
+      "path": "01_fixed/预算饱和与有限网格切换/figures/result_q3_budget_saturation_finite_grid_switches_grayscale.png",
+      "sha256": "91aa0a4e145e08cae86c35a3d65e3b9b459985b3a3e966105d0b9a690b0cf028",
+      "bytes": 82953
+    },
+    {
+      "path": "01_fixed/预算饱和与有限网格切换/p1_smoke_receipt.json",
+      "sha256": "6bdab993c597dbd7bcc96d27e065bc3b4cc664abe81bc9800231d848abcf7d4f",
+      "bytes": 1252
+    },
+    {
+      "path": "01_fixed/预算饱和与有限网格切换/q3_budget_saturation_by_context.csv",
+      "sha256": "66fb850859ba09c77639ac6d221964f054216d586acb2069aabf5856b19b73e9",
+      "bytes": 2041
+    },
+    {
+      "path": "01_fixed/预算饱和与有限网格切换/q3_finite_grid_switch_events.csv",
+      "sha256": "9ca72edb5b26b63ee1a2537484953826f84ae31a5472ded9f0198b1195f5a435",
+      "bytes": 364105
+    },
+    {
+      "path": "01_fixed/预算饱和与有限网格切换/q3_formal_budget_coverage.csv",
+      "sha256": "5769c4ca36137f3e2d481e7f346e254ebca488ccc24361e47a9465a83ce0b579",
+      "bytes": 2045
+    },
+    {
+      "path": "01_fixed/预算饱和与有限网格切换/q3_formal_budget_switches.csv",
+      "sha256": "fe26fcafd4e6855d3a78614ded2c040cb15bb462d86c5440d18ac43e91b04a8e",
+      "bytes": 2368
+    },
+    {
+      "path": "01_fixed/预算饱和与有限网格切换/report.md",
+      "sha256": "a29b3b0db06ceea2a0dbe51feb4ca619424d45edd736e8b7d8b7b79858dc315e",
+      "bytes": 3645
+    },
+    {
+      "path": "01_fixed/预算饱和与有限网格切换/reproduction_manifest.json",
+      "sha256": "04e34943d0e6be0e039aac572d34aaf6a89848f05e372d41477c1e130df3904b",
+      "bytes": 3780
+    },
+    {
+      "path": "02_robustness/T2/figure_contract.md",
+      "sha256": "b63bdb2abdca4bf43c5ecfeaaec568f41f71a541c5b4fd626797a0a12a2f1007",
+      "bytes": 1348
+    },
+    {
+      "path": "02_robustness/T2/figures/result_q3_t2_near_optimal_pareto_marginal_return.png",
+      "sha256": "6889447b6bbb9396d887fae4b990141adb6dda13f02aa84eb3f39a704504d9df",
+      "bytes": 440590
+    },
+    {
+      "path": "02_robustness/T2/figures/result_q3_t2_near_optimal_pareto_marginal_return.svg",
+      "sha256": "781145855b9e39a0332812bc9f44a44b4eea64a9e48afe5793ed5efc14e09e47",
+      "bytes": 455431
+    },
+    {
+      "path": "02_robustness/T2/figures/result_q3_t2_near_optimal_pareto_marginal_return_grayscale.png",
+      "sha256": "bbfe66d6e1bb4dbdf8b887291f4a598d58942bbe4e1bdf98daa941da91ce46e4",
+      "bytes": 176826
+    },
+    {
+      "path": "02_robustness/T2/p1_smoke_receipt.json",
+      "sha256": "9a6976d55f5ee899b1607a6c9e89a87f7c609e95d4a62d405a895479e54063e7",
+      "bytes": 5450
+    },
+    {
+      "path": "02_robustness/T2/q3_marginal_return.csv",
+      "sha256": "c5a257eae1535186a61a84bbf466fcc1771671c3940663f0f840e7e3fafeb7e8",
+      "bytes": 5840
+    },
+    {
+      "path": "02_robustness/T2/q3_near_optimal.csv",
+      "sha256": "5e9911c7a274698f7bc7220aa8747cd958e1a7be84cde951168da91f4115126c",
+      "bytes": 4107610
+    },
+    {
+      "path": "02_robustness/T2/q3_pareto.csv",
+      "sha256": "1bcae490c0554e8f5192f20674bd84e7b77213dfdd0ce5bbcc5968166069d579",
+      "bytes": 304448
+    },
+    {
+      "path": "02_robustness/T2/report.md",
+      "sha256": "685e0d1636af1c88ad9680e5756d745a5a3db7d5f415049c463267acda71bb56",
+      "bytes": 4113
+    },
+    {
+      "path": "02_robustness/T2/reproduction_manifest.json",
+      "sha256": "e69ef6af2776cb77211148e3c6fb08ee3835a5bf15a6fff36c1e1702b967d618",
+      "bytes": 45699
+    },
+    {
+      "path": "02_robustness/T3/figure_contract.md",
+      "sha256": "ab1f2512037c56c124614672d4db1a191eaee0812c8a7d37166bd2db098d84cd",
+      "bytes": 1693
+    },
+    {
+      "path": "02_robustness/T3/figures/result_q3_t3_bootstrap_stability.pdf",
+      "sha256": "f7790669e467b32f84059ebe9137f58ef771fff4ea612961b66b7181ca0fd5e5",
+      "bytes": 10969
+    },
+    {
+      "path": "02_robustness/T3/figures/result_q3_t3_bootstrap_stability.png",
+      "sha256": "06ed99f2886d2349a12bdf8a7b78e1a9d30200a049f8689d3ea1612418764048",
+      "bytes": 213635
+    },
+    {
+      "path": "02_robustness/T3/figures/result_q3_t3_bootstrap_stability.svg",
+      "sha256": "f4781c32e81bfb94c7c4d46d08e07bcc107e7f151538e0efd6569d953f2fe343",
+      "bytes": 19314
+    },
+    {
+      "path": "02_robustness/T3/figures/result_q3_t3_bootstrap_stability_grayscale.png",
+      "sha256": "f05ad4ed6c5899a54228abac132d3a4f40e2987b78a06a46c3134cac4ca34dfe",
+      "bytes": 91342
+    },
+    {
+      "path": "02_robustness/T3/figures/result_q3_t3_configuration_switch.pdf",
+      "sha256": "15a86b25e1c605fecdfca35b92494c8f668798f20516b1bf6744482ee6b9452d",
+      "bytes": 13574
+    },
+    {
+      "path": "02_robustness/T3/figures/result_q3_t3_configuration_switch.png",
+      "sha256": "0f7ebdab0e012d1d11eeb87dd6cdae841a4c00f92ac53cb9fec42650b0cb259f",
+      "bytes": 198892
+    },
+    {
+      "path": "02_robustness/T3/figures/result_q3_t3_configuration_switch.svg",
+      "sha256": "bbc0a0ac231f33df051cef9ba63d9ece7b7b31edf2a37be27dbc30fc8870f8ad",
+      "bytes": 28550
+    },
+    {
+      "path": "02_robustness/T3/figures/result_q3_t3_configuration_switch_grayscale.png",
+      "sha256": "b005e4ceb85dacd49ea33ac9b61a53955e158e9e3ce24133197a6168b7f90aa8",
+      "bytes": 87123
+    },
+    {
+      "path": "02_robustness/T3/figures/result_q3_t3_cost_structure_switch.pdf",
+      "sha256": "584a9eb8fea648bb5e58c7eba22a42a2a2921528b99a57224725eb315c5d610a",
+      "bytes": 13897
+    },
+    {
+      "path": "02_robustness/T3/figures/result_q3_t3_cost_structure_switch.png",
+      "sha256": "d24d31126db69c16605d4fc998b5210afee02e2aeead03146d4a9eb6e2018ef1",
+      "bytes": 198905
+    },
+    {
+      "path": "02_robustness/T3/figures/result_q3_t3_cost_structure_switch.svg",
+      "sha256": "35fd23fa6272c3716ee9e77f3db943ddd9f04dc01a45e6881f0228e49212d43b",
+      "bytes": 28561
+    },
+    {
+      "path": "02_robustness/T3/figures/result_q3_t3_cost_structure_switch_grayscale.png",
+      "sha256": "70a0c731935ec58e8b9122a48860224c9ac132e745edf0514d25e3e469824bc0",
+      "bytes": 87187
+    },
+    {
+      "path": "02_robustness/T3/p1_smoke_receipt.json",
+      "sha256": "1a4a2284007ef76a740785de928a87cf3bb643894a1e542d82154acaf704c1c3",
+      "bytes": 2727
+    },
+    {
+      "path": "02_robustness/T3/q3_bootstrap_summary.csv",
+      "sha256": "eba32b001ed167c3a612d693440c623de5f0fc7ac6e142acad8fc865750932e2",
+      "bytes": 4185
+    },
+    {
+      "path": "02_robustness/T3/q3_configuration_switch.csv",
+      "sha256": "8c952b95b8262b444744b34a96d83c6219b587165ab811e9c974969284f8d7ca",
+      "bytes": 6694
+    },
+    {
+      "path": "02_robustness/T3/q3_cost_structure_switch.csv",
+      "sha256": "b506f8c0188c54d4104d23cc061de324a9411d640e1f953dc4d62a5c67029d3e",
+      "bytes": 6470
+    },
+    {
+      "path": "02_robustness/T3/report.md",
+      "sha256": "0ef77282f153a383d052279adad12790449e0523caa0bbf63c589ac85e30c998",
+      "bytes": 2411
+    },
+    {
+      "path": "02_robustness/T3/reproduction_manifest.json",
+      "sha256": "a51c23e7e9eecbada11f9484b62cfc6b4dc1d39e9507cb34331bcc6185dbfd62",
+      "bytes": 9480
+    },
+    {
+      "path": "03_conditional/figures/result_q3_t4_betaQ_scenario.pdf",
+      "sha256": "5a56fbdf77e76042f76b2ce43af22a4102dee6b8aef6ff5235e6d4e58e9e9e23",
+      "bytes": 119763
+    },
+    {
+      "path": "03_conditional/figures/result_q3_t4_betaQ_scenario.png",
+      "sha256": "06d898dc68ddef17931f87ed154de08b0a06611c46302ebdeeaa9461dae9a154",
+      "bytes": 415034
+    },
+    {
+      "path": "03_conditional/figures/result_q3_t4_betaQ_scenario.svg",
+      "sha256": "72365de5203c98ec5f24520d9ea89dd8932614f314fd77c508058759ef2e1227",
+      "bytes": 307024
+    },
+    {
+      "path": "03_conditional/figures/result_q3_t4_betaQ_scenario_grayscale.png",
+      "sha256": "709f9f4852a0607d3f01f2df45032f579f112f7e253931ba39970156bf295f60",
+      "bytes": 158814
+    },
+    {
+      "path": "03_conditional/q3_betaQ_threshold.csv",
+      "sha256": "1ba9981ae14dce2731e93ab641a8511bf6dab62f42988eb8bf455f9fee93888e",
+      "bytes": 17571
+    },
+    {
+      "path": "03_conditional/Q3_conditional_Q_optimization_manifest.json",
+      "sha256": "4a7da6ec25b410032bd2cfcf0f056b6bacc553e5e5b0d355357773d16c8890f3",
+      "bytes": 2305
+    },
+    {
+      "path": "03_conditional/Q3_conditional_Q_optimization_report.md",
+      "sha256": "e1aa1d21d3a4d9fe3b4298585a8f7c444504ba1915fc001a4865b02831e91a17",
+      "bytes": 5995
+    },
+    {
+      "path": "03_conditional/q3_conditional_regime.csv",
+      "sha256": "5e9118b5cadd406a4921b149fe376f5b5162fad2196f32f44ea36ef8ebd3c2ee",
+      "bytes": 79754
+    },
+    {
+      "path": "03_conditional/Q3_Q0_baseline_sensitivity_beta_thresholds.csv",
+      "sha256": "772c8dc512290682fc82dbd93356b1742e9701a4df5542cb19edff4a6fc8c656",
+      "bytes": 55136
+    },
+    {
+      "path": "03_conditional/Q3_Q0_baseline_sensitivity_cost.csv",
+      "sha256": "5164491af2930e0f1e38ecf7f8437652eb1a986f15fc2147094fb79b647eed5e",
+      "bytes": 31151
+    },
+    {
+      "path": "03_conditional/Q3_Q0_baseline_sensitivity_manifest.json",
+      "sha256": "64f7be5bac9c8bc52d111d9586af34cfbd08756e45748a0da7685c2aff2c3f02",
+      "bytes": 3022
+    },
+    {
+      "path": "03_conditional/Q3_Q0_baseline_sensitivity_report.md",
+      "sha256": "c23eb098e2912352b17d900249728d755db2f780937f850172418fdac3e6eced",
+      "bytes": 3263
+    },
+    {
+      "path": "03_conditional/q3_t4_conditional_beta_manifest.json",
+      "sha256": "b374c6585eee82e45e77bb263810cab474985801891af674961cdd9202d86e2f",
+      "bytes": 7018
+    },
+    {
+      "path": "03_conditional/Q_conditional_Q_break_even_summary.csv",
+      "sha256": "f2c64a42e41f5af24f8a11c246eca81991c40b1d7d4d1424cc4b6ac35e3d8e1c",
+      "bytes": 11630
+    },
+    {
+      "path": "03_conditional/Q_conditional_Q_optimality_intervals.csv",
+      "sha256": "b4b8a4a13857224bdd81dacc0a3a1af3a5ba80ae2c41d3b131f19ca804da0130",
+      "bytes": 71684
+    },
+    {
+      "path": "code_sources/analyze_q3_budget_grid_transitions.py",
+      "sha256": "7fe315d58e02654a2f76c20bdd6efb9aef957277f767b2917d722d6ccb043398",
+      "bytes": 32609
+    },
+    {
+      "path": "code_sources/analyze_q3_cost_sensitivities.py",
+      "sha256": "6b51afdc7da5bc7bf441303e6ff163abae94cbddcbd839524451d6a6f05e142e",
+      "bytes": 17078
+    },
+    {
+      "path": "code_sources/analyze_q3_t2_near_optimal_pareto.py",
+      "sha256": "f8f760dffd01bceac27826f60435c537e7fcc3e693491892dcf4530de34c4ee0",
+      "bytes": 56173
+    },
+    {
+      "path": "code_sources/assemble_q3_fixedq_master_results.py",
+      "sha256": "70ea9371ea2d575a4763da7aa7e79f40d3957105de6b845b000764a8e709be6e",
+      "bytes": 43267
+    },
+    {
+      "path": "code_sources/assemble_q3_scoped_release.py",
+      "sha256": "c07bf802cdf0cfe81e007d5ab035dbbc2d91dfe1705642b6eb1ca923c2fa9eca",
+      "bytes": 54055
+    },
+    {
+      "path": "code_sources/assess_q3_m0_discrete_transitions.py",
+      "sha256": "4289c035f045ceda677b3a81a3258da254880545d5d36e5bf2bfa242145773d9",
+      "bytes": 22127
+    },
+    {
+      "path": "code_sources/audit_q3_m3_m4_cost_outputs.py",
+      "sha256": "839070d58e96062a32506c83b87259e0701c3c1b6439c8f8d3ed330273de6252",
+      "bytes": 60660
+    },
+    {
+      "path": "code_sources/build_q3_m3_m4_mask_pipeline.py",
+      "sha256": "2ca0de71796f5aedc5460ee339a71ab89d40cd83d6461f3f7d9f0f8facdf5f0c",
+      "bytes": 28677
+    },
+    {
+      "path": "code_sources/export_q3_t4_conditional_scenarios.py",
+      "sha256": "638c9af0726d1fd86d55cc9fe4e4622f9cdee794a689b4c18fb50d1638437fdd",
+      "bytes": 23793
+    },
+    {
+      "path": "code_sources/plot_q3_m3_m4_m1_audit.py",
+      "sha256": "37a434acba945e784901a757f8a7dc959b714db8d7c608d4bbf217448556ac8b",
+      "bytes": 16958
+    },
+    {
+      "path": "code_sources/q3_repro_support.py",
+      "sha256": "ef5b8877a2d07c6a812422f3fe520ca1e379969145f5473e4817476081fd8b4d",
+      "bytes": 1203
+    },
+    {
+      "path": "code_sources/solve_q3_conditional_q_sensitivity.py",
+      "sha256": "95213a422c3ee6787007e6bd979e1f6837e3ceb8c619bcfe36cd2a7d763e9508",
+      "bytes": 20611
+    },
+    {
+      "path": "code_sources/solve_q3_m1_from_masks.py",
+      "sha256": "430346f57047b81eac3528b60cff48e29afd92a6433ee88ef27f7153132402ef",
+      "bytes": 19037
+    },
+    {
+      "path": "code_sources/standardize_q3_t3_outputs.py",
+      "sha256": "c9458a19ba4adb4f4a90888984e5bd197f01ef2a28f7e3d38496cfe08cb7f0cb",
+      "bytes": 34587
+    },
+    {
+      "path": "code_sources/utils/plot_style.py",
+      "sha256": "f3de0a0c858d6018310d7e461574697a4cec7b28e5e20b8ccdaa7749772147e2",
+      "bytes": 17160
+    },
+    {
+      "path": "figure_manifest.csv",
+      "sha256": "9e59d06af74c548b1121ee987930eee25c9b7bbc4eeef5827ccbc7ad6492f0bf",
+      "bytes": 9745
+    },
+    {
+      "path": "frozen_numbers.json",
+      "sha256": "5a2522e2729c5cdf0fff386db22830346c387e33c2691f060f01d919630dfdaf",
+      "bytes": 1653
+    },
+    {
+      "path": "q3_final_report.md",
+      "sha256": "78b702cf7eac82841a5d8f21e8b8d18e181c3cbaa021a5d1e47ca63a93184d0b",
+      "bytes": 13836
+    },
+    {
+      "path": "q3_master_table.csv",
+      "sha256": "36d280445fc55c44c4c2cefe137aabca77d664b618f7313f3cb6ab64e0e91ce3",
+      "bytes": 13979
+    },
+    {
+      "path": "QA/P2_independent_release_receipt.md",
+      "sha256": "14b210fbbcd29e90aed6a09395b1eaa49f18f6ed475a0d6cfbd4354f136f1add",
+      "bytes": 1535
+    },
+    {
+      "path": "QA/Q3-T3_Bootstrap稳定性与配置切换_P2范围记录.md",
+      "sha256": "3ef3492d9b5e33b422b6cdbe6b47f744f75c5ecc0eba842659147669f79d25bd",
+      "bytes": 8394
+    },
+    {
+      "path": "QA/Q3_预算饱和与有限网格切换_优化执行计划.md",
+      "sha256": "20df5aeaed3decec56f23bc5203c36e98a05e21f79d0f699da2bfcb72431fc5f",
+      "bytes": 4674
+    },
+    {
+      "path": "QA/scoped_completeness_audit.md",
+      "sha256": "8a78b4ff9cd17e125de364d330ff3c92eb97226edf633f6d1108cbd8e88e4d32",
+      "bytes": 1358
+    },
+    {
+      "path": "QA/scoped_consistency_audit.md",
+      "sha256": "fb0a8270e1fc2cd57dc1e6e68c3f54cd3125f996590de742aa37b3aee2d2e3bf",
+      "bytes": 1167
+    },
+    {
+      "path": "QA/scoped_reproducibility_audit.md",
+      "sha256": "a4ae0e54d9f979c86471d7ba7c66a9bffbc6272612001e600f619a5a4166e133",
+      "bytes": 991
+    },
+    {
+      "path": "QA/T4_independent_P2_receipt.md",
+      "sha256": "6abab4afb0778fc830ebb465e6ae21904975b4eee9628af5ccc44c6826fdd7f5",
+      "bytes": 1199
+    },
+    {
+      "path": "README.md",
+      "sha256": "3045ebc945c293ced39b1a5530c1439cdadc56faca115f65f303ee55d04d6c23",
+      "bytes": 1871
+    },
+    {
+      "path": "reproduction_manifest.md",
+      "sha256": "668618aba6669357c649bbe7326ef6ab3a028965b7b81df4db553ef0cad6b80b",
+      "bytes": 3058
+    },
+    {
+      "path": "scope_decision_ledger.md",
+      "sha256": "2a11d416587f5706235948b51422a64e3b8fca260f6ec23d21f4b18b7d42d177",
+      "bytes": 1232
+    },
+    {
+      "path": "table_manifest.csv",
+      "sha256": "a17e3747538ff9602639321c16f0e62a5db5ae8b958ae4e5d0f736b2d7ef83aa",
+      "bytes": 8197
+    }
+  ],
+  "file_count": 128,
+  "source_manifest_checks": [
+    {
+      "manifest": "Q3/04_结果/Q3_fixedQ_results_manifest.json",
+      "verified": 23,
+      "missing": 0,
+      "hash_mismatch": 0,
+      "status": "PASS"
+    },
+    {
+      "manifest": "Q3/04_结果/M3_M4成本独立审计/reproduction_manifest.json",
+      "verified": 28,
+      "missing": 0,
+      "hash_mismatch": 0,
+      "status": "PASS"
+    },
+    {
+      "manifest": "Q3/04_结果/Q3_T2_近最优_Pareto_边际收益/reproduction_manifest.json",
+      "verified": 18,
+      "missing": 0,
+      "hash_mismatch": 0,
+      "status": "PASS"
+    },
+    {
+      "manifest": "Q3/04_结果/Q3_T3_稳健性与配置切换/reproduction_manifest.json",
+      "verified": 27,
+      "missing": 0,
+      "hash_mismatch": 0,
+      "status": "PASS"
+    },
+    {
+      "manifest": "Q3/04_结果/q3_t4_conditional_beta_manifest.json",
+      "verified": 7,
+      "missing": 0,
+      "hash_mismatch": 0,
+      "status": "PASS"
+    },
+    {
+      "manifest": "Q3/04_结果/预算饱和与有限网格切换/reproduction_manifest.json",
+      "verified": 13,
+      "missing": 0,
+      "hash_mismatch": 0,
+      "status": "PASS"
+    }
+  ]
+}

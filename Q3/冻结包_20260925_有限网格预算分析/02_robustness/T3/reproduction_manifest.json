@@ -1,0 +1,136 @@
+{
+  "artifact": "Q3-T3 standardized Bootstrap stability and distinct transition outputs",
+  "status": "T3 standardized; Q3 remains unfrozen",
+  "created_at": "2026-09-25T01:59:05+08:00",
+  "bootstrap_recomputed": false,
+  "bootstrap_replicates": 1000,
+  "paired_replicates_per_pair": 1000,
+  "independent_trajectory_clusters": 8,
+  "robust_switch_threshold": 0.95,
+  "source_manifests": {
+    "Q3/04_结果/M0_cluster_bootstrap_sensitivity_manifest.json": "ca3d20fa819e9ed2a990aaf48124af22ca92ca95c2d160f4d438d28f6da4aa63",
+    "Q3/04_结果/M0_discrete_transition_manifest.json": "6181d79c5d99e1d8134972a5400432cd2cb7be5b35d2d1e8c7e9af8e791c532e"
+  },
+  "script": {
+    "path": "Q3/03_代码/standardize_q3_t3_outputs.py",
+    "sha256": "c9458a19ba4adb4f4a90888984e5bd197f01ef2a28f7e3d38496cfe08cb7f0cb"
+  },
+  "source_hashes": {
+    "Q3/04_结果/M0_ND_cluster_bootstrap_frontier.csv": "2e0677f48ae10acf4c148ea021864c14c09b4d9d8f7f83badaaf551792c796f2",
+    "Q3/04_结果/M0_ND_cluster_bootstrap_selection_frequency.csv": "37b12f07c580291caf078722ea4e3f355ae72a78d34c7ffa7923c8bf6e920ab5",
+    "Q3/04_结果/M0_cluster_bootstrap_sensitivity_manifest.json": "ca3d20fa819e9ed2a990aaf48124af22ca92ca95c2d160f4d438d28f6da4aa63",
+    "Q3/04_结果/M0_discrete_transition_pairs.csv": "7410fcc545c7bea281598bb46ea9ff77eff0d976291887f4968063b0cc1c19fc",
+    "Q3/04_结果/M0_discrete_transition_bootstrap_draws.csv": "1855f6fc70a25797ebd242cff5bb4a325090fdd88eceb45980181f5d5d9058bb",
+    "Q3/04_结果/M0_discrete_transition_manifest.json": "6181d79c5d99e1d8134972a5400432cd2cb7be5b35d2d1e8c7e9af8e791c532e"
+  },
+  "source_checks": {
+    "bootstrap_manifest_phase": "Q3 M0 B1 trajectory-cluster bootstrap frontier sensitivity",
+    "transition_manifest_scope": "full: 22 adjacent budget/context pairs, 1,000 actual Q2 trajectory-bootstrap fits",
+    "transition_bootstrap_cluster_count": 8,
+    "source_manifest_hashes_verified": true
+  },
+  "counts": {
+    "bootstrap_scenarios": 15,
+    "bootstrap_replicates_per_scenario": 1000,
+    "paired_scenario_pairs": 22,
+    "paired_replicates_per_pair": 1000,
+    "paired_draw_rows": 22000,
+    "robust_ND_configuration_switches": 17,
+    "robust_cost_structure_switches": 12,
+    "pair_type_counts": {
+      "adjacent_budget": 10,
+      "adjacent_context": 12
+    },
+    "robust_switch_counts_by_pair_type": {
+      "adjacent_budget": {
+        "configuration": 10,
+        "cost": 0
+      },
+      "adjacent_context": {
+        "configuration": 7,
+        "cost": 12
+      }
+    }
+  },
+  "switch_definitions": {
+    "configuration": "selected N/D grid point differs between adjacent scenarios; robust if paired-bootstrap frequency >= 0.95",
+    "cost_structure": "exact total variation of training/attention cost shares is nonzero; robust if paired-bootstrap frequency >= 0.95"
+  },
+  "claim_boundary": "fixed Q=Q0 and frozen M0 over the observed B1 support grid; trajectory-bootstrap parameter sensitivity, not independent validation, causality, or full Q3 joint optimization",
+  "figure_specs_inches": {
+    "result_q3_t3_bootstrap_stability": [
+      7.2,
+      5.6
+    ],
+    "result_q3_t3_configuration_switch": [
+      7.2,
+      8.1
+    ],
+    "result_q3_t3_cost_structure_switch": [
+      7.2,
+      8.1
+    ]
+  },
+  "figure_dpi": 300,
+  "figure_qa": {
+    "result_q3_t3_bootstrap_stability": [],
+    "result_q3_t3_configuration_switch": [],
+    "result_q3_t3_cost_structure_switch": []
+  },
+  "python_version": "3.10.20",
+  "python_executable": "D:\\Anaconda\\envs\\mmdet\\python.exe",
+  "packages": {
+    "matplotlib": "3.10.9",
+    "numpy": "1.26.4"
+  },
+  "reproduction_command": "& \"D:/Anaconda/envs/mmdet/python.exe\" \"Q3/03_代码/standardize_q3_t3_outputs.py\"",
+  "validate_only_command": "& \"D:/Anaconda/envs/mmdet/python.exe\" \"Q3/03_代码/standardize_q3_t3_outputs.py\" --validate-only",
+  "code_dependencies_sha256": {
+    "Q3/03_代码/q3_repro_support.py": "ef5b8877a2d07c6a812422f3fe520ca1e379969145f5473e4817476081fd8b4d",
+    "utils/plot_style.py": "f3de0a0c858d6018310d7e461574697a4cec7b28e5e20b8ccdaa7749772147e2"
+  },
+  "figure_tools": {
+    "skill_root": "C:\\Users\\86147\\.codex\\skills\\math-modeling",
+    "files_sha256": {
+      "tools/figure/scripts/check_figure.py": "861191858ff47c5af5247f08d0759b14956a2a7e7d8eafcc6b414d37b9d70f06",
+      "tools/figure/scripts/export_figure.py": "40ce3bcd31dfc4b33e38a1cb180c75dc730ee6fa046f04934c79f285c6f890c1",
+      "tools/figure/scripts/layout_tools.py": "68e1d25774148fe78f5d87035d651f5e3707382502505cb11f62f9ec7ae88e49",
+      "tools/figure/scripts/profile_data.py": "d8a2a72c2607c390f2d3ed1508209d515ad4fbf833fa1602ab9da519b3596ec4",
+      "tools/figure/scripts/setup_style.py": "d58ef81684577bb605a92733dd2ca48ade03b4f819b3d255fd62f319be7fea82",
+      "tools/figure/scripts/style_constants.py": "d574969063fc1fb0fbd2449c4a77201ae8e46bb837cf4db8467c36bb0073dc8b",
+      "tools/figure/scripts/validate_figure.py": "1886d3cb050c9e0eea6a17d798e3ec8df823b3abbfd50b4490c6c910c95c92d8",
+      "tools/figure/scripts/visual_qa.py": "67675709e523c76e2748d50749de7bc6332f07df865379b26d024321fb40120f"
+    }
+  },
+  "inputs": {
+    "Q3/04_结果/M0_ND_cluster_bootstrap_frontier.csv": "2e0677f48ae10acf4c148ea021864c14c09b4d9d8f7f83badaaf551792c796f2",
+    "Q3/04_结果/M0_ND_cluster_bootstrap_selection_frequency.csv": "37b12f07c580291caf078722ea4e3f355ae72a78d34c7ffa7923c8bf6e920ab5",
+    "Q3/04_结果/M0_cluster_bootstrap_sensitivity_manifest.json": "ca3d20fa819e9ed2a990aaf48124af22ca92ca95c2d160f4d438d28f6da4aa63",
+    "Q3/04_结果/M0_discrete_transition_pairs.csv": "7410fcc545c7bea281598bb46ea9ff77eff0d976291887f4968063b0cc1c19fc",
+    "Q3/04_结果/M0_discrete_transition_bootstrap_draws.csv": "1855f6fc70a25797ebd242cff5bb4a325090fdd88eceb45980181f5d5d9058bb",
+    "Q3/04_结果/M0_discrete_transition_manifest.json": "6181d79c5d99e1d8134972a5400432cd2cb7be5b35d2d1e8c7e9af8e791c532e"
+  },
+  "outputs": {
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/_figure_previews/result_q3_t3_bootstrap_stability_preview.png": "28cf1bb382643e123528b2f5199ed6a885442a38b9663e3edc0c8f33051bd496",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/_figure_previews/result_q3_t3_configuration_switch_preview.png": "bdce0dbc6fb1f0b33da895f23ce334a739e893e9c31f61a443b85687ad6022dc",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/_figure_previews/result_q3_t3_cost_structure_switch_preview.png": "3f879ab13cbc9b78bc064f8f7297fcda2c843f69e6d94e3f5664d00c9a2f99a8",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figure_contract.md": "ab1f2512037c56c124614672d4db1a191eaee0812c8a7d37166bd2db098d84cd",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figures/result_q3_t3_bootstrap_stability.pdf": "f7790669e467b32f84059ebe9137f58ef771fff4ea612961b66b7181ca0fd5e5",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figures/result_q3_t3_bootstrap_stability.png": "06ed99f2886d2349a12bdf8a7b78e1a9d30200a049f8689d3ea1612418764048",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figures/result_q3_t3_bootstrap_stability.svg": "f4781c32e81bfb94c7c4d46d08e07bcc107e7f151538e0efd6569d953f2fe343",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figures/result_q3_t3_bootstrap_stability_grayscale.png": "f05ad4ed6c5899a54228abac132d3a4f40e2987b78a06a46c3134cac4ca34dfe",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figures/result_q3_t3_configuration_switch.pdf": "15a86b25e1c605fecdfca35b92494c8f668798f20516b1bf6744482ee6b9452d",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figures/result_q3_t3_configuration_switch.png": "0f7ebdab0e012d1d11eeb87dd6cdae841a4c00f92ac53cb9fec42650b0cb259f",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figures/result_q3_t3_configuration_switch.svg": "bbc0a0ac231f33df051cef9ba63d9ece7b7b31edf2a37be27dbc30fc8870f8ad",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figures/result_q3_t3_configuration_switch_grayscale.png": "b005e4ceb85dacd49ea33ac9b61a53955e158e9e3ce24133197a6168b7f90aa8",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figures/result_q3_t3_cost_structure_switch.pdf": "584a9eb8fea648bb5e58c7eba22a42a2a2921528b99a57224725eb315c5d610a",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figures/result_q3_t3_cost_structure_switch.png": "d24d31126db69c16605d4fc998b5210afee02e2aeead03146d4a9eb6e2018ef1",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figures/result_q3_t3_cost_structure_switch.svg": "35fd23fa6272c3716ee9e77f3db943ddd9f04dc01a45e6881f0228e49212d43b",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/figures/result_q3_t3_cost_structure_switch_grayscale.png": "70a0c731935ec58e8b9122a48860224c9ac132e745edf0514d25e3e469824bc0",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/p1_smoke_receipt.json": "1a4a2284007ef76a740785de928a87cf3bb643894a1e542d82154acaf704c1c3",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/q3_bootstrap_summary.csv": "eba32b001ed167c3a612d693440c623de5f0fc7ac6e142acad8fc865750932e2",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/q3_configuration_switch.csv": "8c952b95b8262b444744b34a96d83c6219b587165ab811e9c974969284f8d7ca",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/q3_cost_structure_switch.csv": "b506f8c0188c54d4104d23cc061de324a9411d640e1f953dc4d62a5c67029d3e",
+    "Q3/04_结果/Q3_T3_稳健性与配置切换/report.md": "0ef77282f153a383d052279adad12790449e0523caa0bbf63c589ac85e30c998"
+  }
+}

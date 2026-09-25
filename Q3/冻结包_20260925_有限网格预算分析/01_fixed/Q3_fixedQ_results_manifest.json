@@ -1,0 +1,108 @@
+{
+  "artifact": "Q3-T1 fixed-Q0 master scenario results and resource transitions",
+  "command": "$env:MPLBACKEND = 'Agg'; & 'D:/Anaconda/envs/mmdet/python.exe' 'Q3/03_代码/assemble_q3_fixedq_master_results.py'",
+  "script": {
+    "path": "Q3/03_代码/assemble_q3_fixedq_master_results.py",
+    "sha256": "70ea9371ea2d575a4763da7aa7e79f40d3957105de6b845b000764a8e709be6e"
+  },
+  "python_version": "3.10.20",
+  "python_executable": "D:\\Anaconda\\envs\\mmdet\\python.exe",
+  "environment": {
+    "MPLBACKEND": "Agg"
+  },
+  "packages": {
+    "matplotlib": "3.10.9",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "Pillow": "11.1.0"
+  },
+  "scope": "fixed Q=Q0, no p response; exact B1/M3 supported grid only",
+  "join_keys": {
+    "scenario": [
+      "budget_flops",
+      "context_length_tokens"
+    ],
+    "selected_candidate": [
+      "scenario_id",
+      "grid_id"
+    ],
+    "transition_pair": "pair_id plus left/right budget-context endpoints"
+  },
+  "source_rows": {
+    "master_scenarios": 15,
+    "observed_support_points": 1176,
+    "budget_mask_rows": 17640,
+    "final_mask_rows": 17640,
+    "transition_pairs": 22
+  },
+  "reconciliation": {
+    "independent_cost_audit_pass_scenarios": 15,
+    "all_selected_m3_m4_m1_feasible": true,
+    "transition_summary": {
+      "adjacent_budget": {
+        "pairs": 10,
+        "robust_ND_allocation_changes": 10,
+        "robust_cost_mix_changes": 0
+      },
+      "adjacent_context": {
+        "pairs": 12,
+        "robust_ND_allocation_changes": 7,
+        "robust_cost_mix_changes": 12
+      }
+    }
+  },
+  "inputs_sha256": {
+    "m0_frontier": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "m1_boundary_audit": "90b6b160bbf969a034096f20535d2ded631f47c2dd5216b0b7ef03a46aecad0d",
+    "m3_support": "7e97aed1ef5f35a336da50baf2760b08c053ab7a697f65e1453b95702bf53e07",
+    "m4_budget_mask": "aae829847746b3db9fa6c382b863941655d86ab1b910c71834ba9b6c63bb87bc",
+    "m1_final_mask": "2e201705adfdfec6089b088b7a17f403ff2b02e06ef87c0cffb9d80c69272662",
+    "cost_shares": "87535f7d2cae27c5b4fc13c77cb4848bbafc2e7c37ed5340fcb5befac9e6a26d",
+    "transition_pairs": "7410fcc545c7bea281598bb46ea9ff77eff0d976291887f4968063b0cc1c19fc",
+    "independent_cost_audit": "d91beb993da501573f7b150f3256f4609b7e7f86bd4c24d19e0a9edd1858bd83",
+    "cost_manifest": "dbabe4967a94717bf83db3aadc0d3add6ab17b5f5a12c3c51f736829e3c82221",
+    "independent_audit_manifest": "bb84781387546b3ef8b904b988acfad343c91da14e7c64f6ed49ca3c35c7dc8f",
+    "m0_manifest": "35402782fdb1ce38207b2969760b607ab8114d9848bd1929093a650a83e453a6",
+    "m1_manifest": "2af7518962a36624d894a05dc4d930e313bd8d643746f5890941ee1ec0695701",
+    "m3_manifest": "8d0616fcc0289fe10356f30f81c2fd1dcdeb598638b5c24822d45788cb7e602c",
+    "m4_manifest": "382b49ff7466a72e8fbc5190737271372df01e844baedbc50ac2505a83b763bd",
+    "transition_manifest": "6181d79c5d99e1d8134972a5400432cd2cb7be5b35d2d1e8c7e9af8e791c532e"
+  },
+  "code_dependencies_sha256": {
+    "utils/plot_style.py": "f3de0a0c858d6018310d7e461574697a4cec7b28e5e20b8ccdaa7749772147e2"
+  },
+  "reproducibility_contract": {
+    "byte_stable_outputs": [
+      "q3_fixedQ_master_results.csv",
+      "q3_resource_transition.csv",
+      "figures/result_q3_fixedq_master_and_resource_transition.png",
+      "figures/_qa/result_q3_fixedq_master_and_resource_transition_grayscale.png"
+    ],
+    "metadata_may_vary": [
+      "Q3_fixedQ_results_integration_report.md generation timestamp",
+      "SVG IDs/timestamp",
+      "PDF creation metadata"
+    ],
+    "verification": "Recompute table values and compare CSV/PNG outputs; regenerate this manifest for the current report/vector metadata hashes."
+  },
+  "outputs_sha256": {
+    "Q3/04_结果/q3_fixedQ_master_results.csv": "24448178e2dc372f9f37eb8597b693a4e98cf2e8a8d2896c71b8ba87cdac0978",
+    "Q3/04_结果/q3_resource_transition.csv": "eb04c4bae24b04fb6816bf205882ae6015f7fdbb1647b03e436263c70712d548",
+    "Q3/04_结果/Q3_fixedQ_master_resource_transition_图表契约.md": "c05260015e2e2dfb35bad3943bda13794c5aedb160480c1b2902760f95eb40d5",
+    "Q3/04_结果/Q3_fixedQ_results_integration_report.md": "92941919b0ee3dd0d50254567f804d97ee6d8bd41d7f7d875267fd737337804a",
+    "Q3/04_结果/figures/result_q3_fixedq_master_and_resource_transition.svg": "3fa6230e8c8cc3186d2de9fa75f589f4bb358fb9e787579261d881ae8592bd6c",
+    "Q3/04_结果/figures/result_q3_fixedq_master_and_resource_transition.png": "a766b5394676e8b9b7ea247435a4cbd2c9bd466d48f5dea78e12247d8f3373a6",
+    "Q3/04_结果/figures/_qa/result_q3_fixedq_master_and_resource_transition_grayscale.png": "4d8ec8366f0a92a233b87ec8c6395a9ae86ed154e8a185504c48b35cabec6ae0",
+    "Q3/04_结果/figures/result_q3_fixedq_master_and_resource_transition.pdf": "606bdd98bfbaa2c051e733774121a7a934813fe0720cb9bdca80016b064b7f18"
+  },
+  "figure": {
+    "stem": "Q3/04_结果/figures/result_q3_fixedq_master_and_resource_transition",
+    "style": "utils.plot_style.apply_publication_style",
+    "dpi": 300,
+    "size_inches": [
+      7.2,
+      5.0
+    ]
+  },
+  "generated_at_utc": "2026-09-24T18:13:28+00:00"
+}

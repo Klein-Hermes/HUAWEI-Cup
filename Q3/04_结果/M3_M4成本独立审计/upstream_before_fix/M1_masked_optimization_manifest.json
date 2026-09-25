@@ -1,0 +1,122 @@
+{
+  "artifact": "Q3 M1 masked optimization and boundary audit",
+  "command": "python Q3/03_代码/solve_q3_m1_from_masks.py",
+  "script": {
+    "path": "Q3/03_代码/solve_q3_m1_from_masks.py",
+    "sha256": "d8163976551674e76dcb8d170da9510a83eaab961e3f11c358434fb053a136e2"
+  },
+  "python_version": "3.10.4",
+  "inputs_sha256": {
+    "Q3/04_结果/M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "Q3/04_结果/m3_candidate_grid.csv": "1710f5a9ae72f57c06be4daeb2d6cd4b84ad0aa1a90977c326d6a12f0d7c0b29",
+    "Q3/04_结果/m3_q3_support_grid.csv": "7e97aed1ef5f35a336da50baf2760b08c053ab7a697f65e1453b95702bf53e07",
+    "Q3/04_结果/m3_budget_feasible_mask.csv": "aae829847746b3db9fa6c382b863941655d86ab1b910c71834ba9b6c63bb87bc",
+    "Q3/04_结果/M3_M4_support_budget_manifest.json": "69512731f4a13d65117c1094a7bd294ed6724f7bb49aaf7fb6ff48ccc6c2be72",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e"
+  },
+  "outputs_sha256": {
+    "Q3/04_结果/m1_optimum_boundary_audit.csv": "3f8f3275764774fbfab1b9c15ac0b42535f18323799755cb50386452988a557c",
+    "Q3/04_结果/M1_masked_optimization_report.md": "be50b04c800af176579b318983e6e006a7e01b5dd596f149a00296d11985ac17"
+  },
+  "objective": "minimize frozen B1/M0 predicted validation loss",
+  "eligibility": "M3 m3_search_allowed AND M4 budget_feasible",
+  "parity_with_existing_m0_frontier": {
+    "performed": true,
+    "scenario_count": 15,
+    "all_match": true,
+    "scenarios": [
+      {
+        "budget_flops": 10000000000000000000,
+        "context_length_tokens": 2048,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 10000000000000000000000,
+        "context_length_tokens": 2048,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 1000000000000000000000000,
+        "context_length_tokens": 2048,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 10000000000000000000,
+        "context_length_tokens": 4096,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 10000000000000000000000,
+        "context_length_tokens": 4096,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 1000000000000000000000000,
+        "context_length_tokens": 4096,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 10000000000000000000,
+        "context_length_tokens": 8192,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 10000000000000000000000,
+        "context_length_tokens": 8192,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 1000000000000000000000000,
+        "context_length_tokens": 8192,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 10000000000000000000,
+        "context_length_tokens": 32768,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 10000000000000000000000,
+        "context_length_tokens": 32768,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 1000000000000000000000000,
+        "context_length_tokens": 32768,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 10000000000000000000,
+        "context_length_tokens": 131072,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 10000000000000000000000,
+        "context_length_tokens": 131072,
+        "selection_match": true,
+        "feasible_count_match": true
+      },
+      {
+        "budget_flops": 1000000000000000000000000,
+        "context_length_tokens": 131072,
+        "selection_match": true,
+        "feasible_count_match": true
+      }
+    ]
+  },
+  "claim_boundary": "fixed-Q B1/M0 support-grid reference; no interpolation or Q/p response inferred",
+  "generated_at_utc": "2026-09-24T15:19:38+00:00"
+}

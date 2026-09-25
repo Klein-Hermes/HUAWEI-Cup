@@ -1,0 +1,63 @@
+{
+  "artifact": "Q3 M3 observed support and candidate support diagnostics",
+  "command": "python Q3/03_代码/build_q3_m3_m4_mask_pipeline.py --component m3",
+  "script": {
+    "path": "Q3/03_代码/build_q3_m3_m4_mask_pipeline.py",
+    "sha256": "2ca0de71796f5aedc5460ee339a71ab89d40cd83d6461f3f7d9f0f8facdf5f0c"
+  },
+  "python_version": "3.10.4",
+  "inputs_sha256": {
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8"
+  },
+  "outputs_sha256": {
+    "Q3/04_结果/m3_observed_support.csv": "142f00b7b57a0f6a7502820dc7bf5f3a8aa6cf59c4ba202d96ffc4486f864f5a",
+    "Q3/04_结果/m3_candidate_grid.csv": "1710f5a9ae72f57c06be4daeb2d6cd4b84ad0aa1a90977c326d6a12f0d7c0b29",
+    "Q3/04_结果/m3_q3_support_grid.csv": "7e97aed1ef5f35a336da50baf2760b08c053ab7a697f65e1453b95702bf53e07",
+    "Q3/04_结果/M3_support_domain_audit.md": "c3e14a54e896e4c2b443e2e609c20e94d2ebd709bef0bbef531eb1dc77cd980b"
+  },
+  "policy": {
+    "M3": "exact_observed_only; hull and distance are diagnostics",
+    "convex_hull_space": "standardized log(N_params_B), log(D_tokens_B)",
+    "nearest_distance": "Euclidean distance in standardized log coordinates; diagnostic only",
+    "exact_match_rel_tol": 1e-12,
+    "exact_match_abs_tol": 1e-12,
+    "interpolation_acceptance_threshold": null
+  },
+  "support_transform": {
+    "log_N_mean": 0.0570219031281536,
+    "log_N_population_sd": 1.6638642750109833,
+    "log_D_mean": 4.57220066281028,
+    "log_D_population_sd": 1.316959781979075,
+    "N_min_B": 0.070542,
+    "N_max_B": 11.965825,
+    "D_min_B": 0.134,
+    "D_max_B": 299.893,
+    "hull_vertex_count": 4,
+    "hull_standardized_log_vertices": [
+      [
+        -1.6278785148979489,
+        -4.997962908138441
+      ],
+      [
+        1.4574703017447463,
+        -4.997962908138441
+      ],
+      [
+        1.4574703017447463,
+        0.8589670672088482
+      ],
+      [
+        -1.6278785148979489,
+        0.8589670672088482
+      ]
+    ]
+  },
+  "scope": {
+    "observed_support_points": 1176,
+    "candidate_points": 1176,
+    "candidate_grid_source": "Q2 B1 observed 1,176-point grid; matches the existing M0 search domain",
+    "claim_boundary": "support diagnostics only; no interpolation is inferred"
+  },
+  "generated_at_utc": "2026-09-24T15:26:03+00:00"
+}

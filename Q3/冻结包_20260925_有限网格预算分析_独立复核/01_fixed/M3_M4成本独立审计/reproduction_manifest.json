@@ -1,0 +1,139 @@
+{
+  "artifact": "Independent Q3 M3/M4 fixed-Q cost and feasibility audit",
+  "status": "PASS",
+  "command": "$env:MPLBACKEND = 'Agg'; & 'D:/Anaconda/envs/mmdet/python.exe' 'Q3/03_代码/audit_q3_m3_m4_cost_outputs.py'",
+  "smoke_command": "$env:MPLBACKEND = 'Agg'; & 'D:/Anaconda/envs/mmdet/python.exe' 'Q3/03_代码/audit_q3_m3_m4_cost_outputs.py' --smoke",
+  "environment": {
+    "MPLBACKEND": "Agg"
+  },
+  "python_executable": "D:\\Anaconda\\envs\\mmdet\\python.exe",
+  "python_version": "3.10.20",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.9",
+    "Pillow": "11.1.0"
+  },
+  "script": {
+    "path": "Q3/03_代码/audit_q3_m3_m4_cost_outputs.py",
+    "sha256": "839070d58e96062a32506c83b87259e0701c3c1b6439c8f8d3ed330273de6252"
+  },
+  "code_dependencies_sha256": {
+    "Q3/03_代码/q3_repro_support.py": "ef5b8877a2d07c6a812422f3fe520ca1e379969145f5473e4817476081fd8b4d"
+  },
+  "figure_tools": {
+    "skill_root": "C:\\Users\\86147\\.codex\\skills\\math-modeling",
+    "files_sha256": {
+      "tools/figure/scripts/check_figure.py": "861191858ff47c5af5247f08d0759b14956a2a7e7d8eafcc6b414d37b9d70f06",
+      "tools/figure/scripts/export_figure.py": "40ce3bcd31dfc4b33e38a1cb180c75dc730ee6fa046f04934c79f285c6f890c1",
+      "tools/figure/scripts/layout_tools.py": "68e1d25774148fe78f5d87035d651f5e3707382502505cb11f62f9ec7ae88e49",
+      "tools/figure/scripts/profile_data.py": "d8a2a72c2607c390f2d3ed1508209d515ad4fbf833fa1602ab9da519b3596ec4",
+      "tools/figure/scripts/setup_style.py": "d58ef81684577bb605a92733dd2ca48ade03b4f819b3d255fd62f319be7fea82",
+      "tools/figure/scripts/style_constants.py": "d574969063fc1fb0fbd2449c4a77201ae8e46bb837cf4db8467c36bb0073dc8b",
+      "tools/figure/scripts/validate_figure.py": "1886d3cb050c9e0eea6a17d798e3ec8df823b3abbfd50b4490c6c910c95c92d8",
+      "tools/figure/scripts/visual_qa.py": "67675709e523c76e2748d50749de7bc6332f07df865379b26d024321fb40120f"
+    }
+  },
+  "reproducibility_contract": {
+    "byte_stable_outputs": [
+      "M3_M4成本独立审计/m_cost_grid.csv",
+      "M3_M4成本独立审计/m_budget_feasibility.csv",
+      "M3_M4成本独立审计/figures/result_q3_m3_m4_cost_feasibility.png",
+      "M3_M4成本独立审计/result_q3_m3_m4_cost_feasibility_grayscale.png"
+    ],
+    "metadata_may_vary": [
+      "report generation timestamp",
+      "SVG IDs/timestamp",
+      "p1_smoke_receipt.json generated_at_utc"
+    ],
+    "verification": "Compare numeric audit tables and raster image hashes; regenerate the manifest for current report/vector metadata hashes."
+  },
+  "inputs_sha256": {
+    "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q3/04_结果/M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "Q3/04_结果/m3_q3_support_grid.csv": "7e97aed1ef5f35a336da50baf2760b08c053ab7a697f65e1453b95702bf53e07",
+    "Q3/04_结果/m4_budget_feasible_mask.csv": "aae829847746b3db9fa6c382b863941655d86ab1b910c71834ba9b6c63bb87bc",
+    "Q3/04_结果/m1_optimum_boundary_audit.csv": "90b6b160bbf969a034096f20535d2ded631f47c2dd5216b0b7ef03a46aecad0d",
+    "Q3/04_结果/M3_support_manifest.json": "8d0616fcc0289fe10356f30f81c2fd1dcdeb598638b5c24822d45788cb7e602c",
+    "Q3/04_结果/M4_budget_manifest.json": "382b49ff7466a72e8fbc5190737271372df01e844baedbc50ac2505a83b763bd",
+    "Q3/04_结果/M1_masked_optimization_manifest.json": "2af7518962a36624d894a05dc4d930e313bd8d643746f5890941ee1ec0695701",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+  },
+  "outputs_sha256": {
+    "Q3/04_结果/M3_M4成本独立审计/m_cost_grid.csv": "ea18712363bc8312c63cfecb1ed7ef0fbcabb824780d6f4198bbabb33d0b7c10",
+    "Q3/04_结果/M3_M4成本独立审计/m_unit_check.csv": "f0233bee23aae6811de5a0eb20a9d5aed0d33096c462296a25c9a35cf68ce81d",
+    "Q3/04_结果/M3_M4成本独立审计/m_cost_identity_failures.csv": "ae092c97ca8bfd024396af786f49b45655624188f634d89af323bcbddd54f0ae",
+    "Q3/04_结果/M3_M4成本独立审计/m_monotonicity_audit.csv": "3d97adcddb7d70a589d84d66dde716c38c49a0b317fef6d84db06ffbc6d9d47a",
+    "Q3/04_结果/M3_M4成本独立审计/m_budget_feasibility.csv": "bc66380fb49d4a63b7655e648e136d95812fdf8cb74c7aaf74806713e69787a6",
+    "Q3/04_结果/M3_M4成本独立审计/m_budget_summary.csv": "4c196f6941635726308ea6f7cd67f662280cf3b0e7bc89acdfd351a74985dc25",
+    "Q3/04_结果/M3_M4成本独立审计/m_budget_nesting_audit.csv": "53045a1653319249e88c49b44b0c47e6bf833956b6a37d99c6c3814df2ec6561",
+    "Q3/04_结果/M3_M4成本独立审计/m_cost_share.csv": "d91beb993da501573f7b150f3256f4609b7e7f86bd4c24d19e0a9edd1858bd83",
+    "Q3/04_结果/M3_M4成本独立审计/m0_optimum_cost_audit.csv": "d91beb993da501573f7b150f3256f4609b7e7f86bd4c24d19e0a9edd1858bd83",
+    "Q3/04_结果/M3_M4成本独立审计/m3_support_alignment.csv": "7426324d77c8dc1b9e0d6dd8b60089f5de3fd232c98b21fc5573c4b64f3dd63b",
+    "Q3/04_结果/M3_M4成本独立审计/figure_preview_150dpi.png": "5b4a8d156e7b008961d5ad5735466bb7ae23a84670867dee29f49a684f7d4e7d",
+    "Q3/04_结果/M3_M4成本独立审计/chart_contract.md": "3284e9471f6efa5d359fdd50a9498224ca474bb6778611cfbc1b35210ab86710",
+    "Q3/04_结果/M3_M4成本独立审计/m4_cost_audit_report.md": "f42cb6dc0ca8a9e1dc3ed2837c89a5158125c24a75c7b6c04d926cf498c6e31e",
+    "Q3/04_结果/M3_M4成本独立审计/p1_smoke_receipt.json": "95e98ca389940b22e504f6c69c88b1234f80d25d64e68029d1dc592583980f0f",
+    "Q3/04_结果/M3_M4成本独立审计/figures/result_q3_m3_m4_cost_feasibility.svg": "1a8c01c557a7dc9049f4e08d46f2125c025f648afa28c5de13518ff5465dda93",
+    "Q3/04_结果/M3_M4成本独立审计/figures/result_q3_m3_m4_cost_feasibility.png": "5c437c8634a0c6d6973a5f6774d5745e7053165ab644ddcac9db69d716cf0c5b",
+    "Q3/04_结果/M3_M4成本独立审计/result_q3_m3_m4_cost_feasibility_grayscale.png": "142e2ec9f5d871868ad4c71289074a200831b9b2ab6fcd1b13c5bdcd20ebff8e"
+  },
+  "parameters": {
+    "Q_version": "Q1-q_huber-v1",
+    "Q0": 0.49847810484764643,
+    "training_coefficient": 6,
+    "eta": 0.0002,
+    "N_D_source_scale": "billion; multiply by 1e9 before cost calculation",
+    "budgets_flops": [
+      10000000000000000000,
+      10000000000000000000000,
+      1000000000000000000000000
+    ],
+    "context_lengths": [
+      2048,
+      4096,
+      8192,
+      32768,
+      131072
+    ],
+    "support_flag_mapping": "screenshot support_feasible aliases existing m3_search_allowed; read-only join by grid_id",
+    "M1_label": "Q3 M0-based grid selection step; not Q2 p-only M1 model",
+    "tolerances": {
+      "relative": 1e-12,
+      "absolute_flops": 1e-06
+    }
+  },
+  "counts": {
+    "B1_grid_points": 1176,
+    "cost_grid_rows": 5880,
+    "M4_mask_rows_audited": 17640,
+    "M3_support_rows_aligned": 1176,
+    "M0_M1_scenarios": 15,
+    "cost_identity_failures": 0,
+    "support_alignment_failures": 0,
+    "M0_M1_pick_failures": 0,
+    "monotonicity_checks_passed": 11,
+    "monotonicity_checks_total": 11,
+    "budget_nesting_checks_passed": 10,
+    "budget_nesting_checks_total": 10
+  },
+  "figure": {
+    "preview": "Q3/04_结果/M3_M4成本独立审计/figure_preview_150dpi.png",
+    "layout_verdict": "PASS",
+    "layout_issues": [],
+    "outputs": [
+      "Q3/04_结果/M3_M4成本独立审计/figures/result_q3_m3_m4_cost_feasibility.svg",
+      "Q3/04_结果/M3_M4成本独立审计/figures/result_q3_m3_m4_cost_feasibility.png",
+      "Q3/04_结果/M3_M4成本独立审计/result_q3_m3_m4_cost_feasibility_grayscale.png"
+    ],
+    "size_inches": [
+      8.4,
+      3.65
+    ],
+    "dpi": 300
+  },
+  "claim_boundary": "Fixed Q0 and exact observed B1 support grid; no Q/p response is estimated and no support expansion is performed.",
+  "generated_at_utc": "2026-09-24T18:11:47+00:00"
+}

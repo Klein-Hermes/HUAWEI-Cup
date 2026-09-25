@@ -1,0 +1,6 @@
+﻿check,source_field,source_unit,conversion,calculation_unit,pass
+N_input_scale,N_params_B,billion parameters,multiply by 1e9,absolute parameters,True
+D_input_scale,D_tokens_B,billion tokens,multiply by 1e9,absolute tokens,True
+cost_terms,"C_train, C_Q, C_attn",Q3 cost proxy,current Q3 coefficients and absolute N/D,FLOPs,True
+budget_unit,budget_flops,FLOPs,none,FLOPs,True
+Q0_interface,Q1-q_huber-v1 A1 domain macro,quality score,mean of 7 frozen A1 domains,Q0=0.4984781048; fixed Q implies C_Q=0,True

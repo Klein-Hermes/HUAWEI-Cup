@@ -1,0 +1,50 @@
+{
+  "gate": "P1 minimal real-input cost audit",
+  "status": "PASS",
+  "command": "$env:MPLBACKEND = 'Agg'; & 'D:/Anaconda/envs/mmdet/python.exe' 'Q3/03_代码/audit_q3_m3_m4_cost_outputs.py' --smoke",
+  "python_executable": "D:\\Anaconda\\envs\\mmdet\\python.exe",
+  "python_version": "3.10.20",
+  "environment": {
+    "MPLBACKEND": "Agg"
+  },
+  "script_sha256": "839070d58e96062a32506c83b87259e0701c3c1b6439c8f8d3ed330273de6252",
+  "inputs_sha256": {
+    "q1_freeze": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "q1_domains": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "b1_predictions": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "m0_frontier": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "m3_support": "7e97aed1ef5f35a336da50baf2760b08c053ab7a697f65e1453b95702bf53e07",
+    "m4_mask": "aae829847746b3db9fa6c382b863941655d86ab1b910c71834ba9b6c63bb87bc",
+    "m1_picks": "90b6b160bbf969a034096f20535d2ded631f47c2dd5216b0b7ef03a46aecad0d",
+    "m3_manifest": "8d0616fcc0289fe10356f30f81c2fd1dcdeb598638b5c24822d45788cb7e602c",
+    "m4_manifest": "382b49ff7466a72e8fbc5190737271372df01e844baedbc50ac2505a83b763bd",
+    "m1_manifest": "2af7518962a36624d894a05dc4d930e313bd8d643746f5890941ee1ec0695701",
+    "c7_metadata": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+  },
+  "sample": {
+    "grid_id": "8",
+    "context_length_tokens": 2048,
+    "budget_flops": 10000000000000000000,
+    "N_parameters_abs": 70542000,
+    "D_tokens_abs": 134000000,
+    "C_train_flops": 56715768000000000,
+    "C_Q_flops": 0,
+    "C_attn_flops": 3871796428800000,
+    "C_total_flops": 60587564428800000,
+    "m3_search_allowed": true,
+    "selected_M4_budget_feasible": true,
+    "M0_selected_run_id": "169",
+    "M1_selected_run_id": "169"
+  },
+  "checks": {
+    "real_input_row_loaded": true,
+    "unit_conversion_and_formula_identity": true,
+    "existing_M3_support_alignment": true,
+    "existing_M4_mask_match": true,
+    "existing_M4_cost_match": true,
+    "selected_M1_candidate_matches_M0_B1_M3": true,
+    "selected_M0_M1_candidate_matches_M4": true,
+    "existing_M0_M1_pick_and_cost_match": true
+  },
+  "generated_at_utc": "2026-09-24T18:11:39+00:00"
+}

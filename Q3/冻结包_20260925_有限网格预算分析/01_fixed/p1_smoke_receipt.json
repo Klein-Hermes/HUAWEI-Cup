@@ -1,0 +1,28 @@
+{
+  "status": "P1 smoke slice ready for independent review",
+  "scope": "one real budget-context scenario and one real adjacent transition pair; full upstream tables validated",
+  "command": "$env:MPLBACKEND = 'Agg'; & 'D:/Anaconda/envs/mmdet/python.exe' 'Q3/03_代码/assemble_q3_fixedq_master_results.py' --smoke",
+  "python_executable": "D:\\Anaconda\\envs\\mmdet\\python.exe",
+  "python_version": "3.10.20",
+  "script_sha256": "70ea9371ea2d575a4763da7aa7e79f40d3957105de6b845b000764a8e709be6e",
+  "environment": {
+    "MPLBACKEND": "Agg"
+  },
+  "scenario_rows_written": 1,
+  "transition_rows_written": 1,
+  "full_source_scenario_count": 15,
+  "full_source_candidate_count": 1176,
+  "full_source_transition_count": 22,
+  "independent_audit_pass_scenarios": 15,
+  "inputs_sha256": {
+    "m0_frontier": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "m1_boundary_audit": "90b6b160bbf969a034096f20535d2ded631f47c2dd5216b0b7ef03a46aecad0d",
+    "m3_support": "7e97aed1ef5f35a336da50baf2760b08c053ab7a697f65e1453b95702bf53e07",
+    "m4_budget_mask": "aae829847746b3db9fa6c382b863941655d86ab1b910c71834ba9b6c63bb87bc",
+    "m1_final_mask": "2e201705adfdfec6089b088b7a17f403ff2b02e06ef87c0cffb9d80c69272662",
+    "cost_shares": "87535f7d2cae27c5b4fc13c77cb4848bbafc2e7c37ed5340fcb5befac9e6a26d",
+    "transition_pairs": "7410fcc545c7bea281598bb46ea9ff77eff0d976291887f4968063b0cc1c19fc",
+    "independent_cost_audit": "d91beb993da501573f7b150f3256f4609b7e7f86bd4c24d19e0a9edd1858bd83"
+  },
+  "generated_at_utc": "2026-09-24T18:13:20+00:00"
+}
