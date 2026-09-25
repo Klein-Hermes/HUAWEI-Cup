@@ -204,7 +204,7 @@
     "Q2/04_图表/q2_m0_effects/m0_elasticity_D.svg": "52ae0d221fd81ac8fb5bd35ce92a5edd4fe5972bbc8b55a0d7cd2f07563b2cf4",
     "Q2/04_图表/q2_m0_effects/m0_elasticity_D.png": "ec2aacb3687c07263c545173a573cbc19321105b6f72e5bc3e92239b481ba092",
     "Q2/04_图表/q2_m0_effects/m0_elasticity_D_grayscale.png": "461303d1f143c325b29f71d682119ade5f7ddaf3547cfbf5dac44559c48af2ee",
-    "Q2/README.md": "08b029247fce3e0f95c73d59d8112b3a1140b6b3714c662585f952c5cde30909"
+    "Q2/README.md": "db22e1b76c2790865a3ca5960e8b221d1eb3c283f411c7ce9885b23449912fb6"
   },
   "manifest_note": "Mirrored to results/q2_closeout/v1, Q2/03_结果/综合收口/v1, and docs; self-hash excluded.",
   "reproduction_boundary": "This command verifies the frozen M0 outputs and regenerates only deterministic derived tables/reports/figures. It does not rerun the B1 baseline fit. Historical source files that are missing or changed are explicitly recorded in inputs_manifest.csv."
