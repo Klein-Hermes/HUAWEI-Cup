@@ -1,0 +1,31 @@
+{
+  "artifact": "Q3 fixed-Q M0 discrete scenario transition audit",
+  "scope": "P1 smoke slice: one adjacent-budget pair, 20 actual Q2 trajectory-bootstrap fits",
+  "fixed_q": "Q=Q0; no p or Q response in the objective",
+  "pairing": "same Q2 trajectory-bootstrap replicate compared across adjacent scenario pairs",
+  "decision_rule": {
+    "robust_allocation_change": "selected N/D grid point differs in at least 95% of paired bootstrap replicates",
+    "robust_cost_mix_change": "exact cost-share total variation is nonzero in at least 95% of paired bootstrap replicates",
+    "cost_share_TV_p05": "reported descriptively; not used alone for classification",
+    "continuous_KKT": "not used; finite grid enumeration"
+  },
+  "bootstrap_cluster_count": 8,
+  "bootstrap_replicates": 20,
+  "python_version": "3.10.4",
+  "reproduction_command": "python Q3/03_代码/assess_q3_m0_discrete_transitions.py --smoke --output-dir \"Q3/归档_20260925/tmp_q3_transition_p1\"",
+  "script_sha256": "4289c035f045ceda677b3a81a3258da254880545d5d36e5bf2bfa242145773d9",
+  "inputs": {
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "Q2/03_结果/经典ScalingLaw基线/v1/cluster_bootstrap_estimates.csv": "c9d043ab768891a59657ee5df6c1df34e5ae5c44533723b5803f8157052d4668",
+    "Q2/03_结果/经典ScalingLaw基线/v1/cluster_bootstrap_intervals.json": "abb67700bec2634544de1635ce67377e07c62efbe9384588d2d7ff65b2a4b6e6",
+    "Q2/03_结果/经典ScalingLaw基线/v1/gate0_b1_trajectory_mapping.csv": "ea2c1fd78c7a84e0f41d70a57b630089781b8d8cbd9c9a9434e6ea7c787c0c37",
+    "Q3/04_结果/M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583"
+  },
+  "outputs": {
+    "Q3/归档_20260925/tmp_q3_transition_p1/Q3/04_结果/M0_discrete_transition_pairs.csv": "434d896b86236e9e8da4cc4ce9e711e5a58d913464d2659e9d62e3982259b537",
+    "Q3/归档_20260925/tmp_q3_transition_p1/Q3/04_结果/M0_discrete_transition_bootstrap_draws.csv": "7666cbae910a41f35bd52306ff29bfe28e2ad64c3af02efd657188ee2b64c733",
+    "Q3/归档_20260925/tmp_q3_transition_p1/Q3/04_结果/M0_discrete_transition_report.md": "e30515b676bf0e499dc6765ba01214e6b9c7cc1414f5f132a77b7ffd48e3dab3"
+  },
+  "claim_boundary": "discrete scenario sensitivity within frozen Q2 B1/M0 and observed support grid; not full Q3 optimum, causality, or external validation"
+}

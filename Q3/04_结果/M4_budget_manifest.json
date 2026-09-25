@@ -1,0 +1,41 @@
+{
+  "artifact": "Q3 M4 candidate budget feasibility mask",
+  "command": "python Q3/03_代码/build_q3_m3_m4_mask_pipeline.py --component m4",
+  "script": {
+    "path": "Q3/03_代码/build_q3_m3_m4_mask_pipeline.py",
+    "sha256": "2ca0de71796f5aedc5460ee339a71ab89d40cd83d6461f3f7d9f0f8facdf5f0c"
+  },
+  "python_version": "3.10.4",
+  "inputs_sha256": {
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+  },
+  "outputs_sha256": {
+    "Q3/04_结果/m4_budget_feasible_mask.csv": "aae829847746b3db9fa6c382b863941655d86ab1b910c71834ba9b6c63bb87bc",
+    "Q3/04_结果/M4_budget_feasibility_audit.md": "5c9a2b164a1db74f6f81e74cb31383177e0200f5562a52f88d20d937e80d96bb"
+  },
+  "policy": {
+    "cost_formula": "C_train=6ND; C_Q=0 at fixed Q=Q0; C_attn=eta*N*D*L_ctx",
+    "eta": 0.0002,
+    "training_cost_coefficient": 6,
+    "budgets_flops": [
+      10000000000000000000,
+      10000000000000000000000,
+      1000000000000000000000000
+    ],
+    "M3_dependency": "none; M4 emits budget_feasible only"
+  },
+  "scope": {
+    "candidate_points": 1176,
+    "candidate_grid_source": "Q2 B1 observed 1,176-point grid; matches the existing M0 search domain",
+    "context_lengths": [
+      2048,
+      4096,
+      8192,
+      32768,
+      131072
+    ],
+    "claim_boundary": "budget affordability only; does not imply model support"
+  },
+  "generated_at_utc": "2026-09-24T15:26:04+00:00"
+}

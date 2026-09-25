@@ -1,0 +1,133 @@
+{
+  "files": [
+    {
+      "sha256": "daa4a7e67c4b3c7d4ffaee52e52986da50b1ec8f2cfe35db063ac92b268b9acc",
+      "bytes": 257129,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p1_budget_nd_frontier_grayscale.png"
+    },
+    {
+      "sha256": "3c9d793739cbab3795455ab102decf7f6e9b416f6fc634124fad337ef50003e0",
+      "bytes": 64003,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p1_budget_nd_frontier.pdf"
+    },
+    {
+      "sha256": "5700a3180bbfc95d788c07fab54921c15ad15b6b2ba3552bc092ca31aed7cdb2",
+      "bytes": 592265,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p1_budget_nd_frontier.png"
+    },
+    {
+      "sha256": "2e37aa062a16a08de1cf655e11aaac80560b2ff6e41145a70af79bcc41d113f7",
+      "bytes": 67149,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p1_budget_nd_frontier.svg"
+    },
+    {
+      "sha256": "38662cb46d41f1bcb99ad6fc81706f70c0bbcb88f8aeb9e2c6924c5ab29b0a68",
+      "bytes": 245394,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p2_bootstrap_selection_stability_grayscale.png"
+    },
+    {
+      "sha256": "541487ccfc77a3316c5a58266d52eaf40a84d1baef6dc27469db1bea0e08613a",
+      "bytes": 76649,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p2_bootstrap_selection_stability.pdf"
+    },
+    {
+      "sha256": "ab3e8c98691ec7dc768da0d869756a4d59a25a2e3157b2211d47b7da8dd7f327",
+      "bytes": 505888,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p2_bootstrap_selection_stability.png"
+    },
+    {
+      "sha256": "eb421636539dd32383aee98f6465d8197ce7164a503dc48cdc8f913079dcf15b",
+      "bytes": 94849,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p2_bootstrap_selection_stability.svg"
+    },
+    {
+      "sha256": "c9971260636e980d299685e00f0b8f28c55b0c8954a0579e43881f2d4e1dab08",
+      "bytes": 398996,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p3_resource_shift_dashboard_grayscale.png"
+    },
+    {
+      "sha256": "b0629810b677cef3eeed0c2911fbdb6072801a73f6130237fa6e8c964a9ea526",
+      "bytes": 98192,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p3_resource_shift_dashboard.pdf"
+    },
+    {
+      "sha256": "32c32ebbcf11eaaa2c5f48786d1f6d0c869cc3682c343d89d328efe38d522893",
+      "bytes": 869447,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p3_resource_shift_dashboard.png"
+    },
+    {
+      "sha256": "eebac172fbe56aa88bcb6ab2a7d8d5dfdb6f78f3f8cae3fadafeb6c64b791fe9",
+      "bytes": 193127,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p3_resource_shift_dashboard.svg"
+    },
+    {
+      "sha256": "256afc97d0e9f5afb1d8fcdede3431438d0a6910ecd44601aad625236987b748",
+      "bytes": 309385,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p4_q_baseline_sensitivity_grayscale.png"
+    },
+    {
+      "sha256": "03027d3b2cd648ed9841a43e034d974beb0daeeeaaf4813a26254247caa130c9",
+      "bytes": 70801,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p4_q_baseline_sensitivity.pdf"
+    },
+    {
+      "sha256": "d63fe2122c4ef0ef98bdd1a6750d59487980ab5a17f98e46785006d759f90930",
+      "bytes": 664447,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p4_q_baseline_sensitivity.png"
+    },
+    {
+      "sha256": "41e3813292e65d7623cef3f4a6bc38a363d50e98eb2b2ceead8784462af9f1b1",
+      "bytes": 101687,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/Q3补充图表/result_q3_p4_q_baseline_sensitivity.svg"
+    },
+    {
+      "sha256": "d9348cc234be774cbd7ebb95eab036a257413f8768b39e14620470dd0235d54b",
+      "bytes": 121687,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/核心图表/q3-c7-lengths_grayscale.png"
+    },
+    {
+      "sha256": "9329367034329013673401408b730599342d75cf43c2ebfae78cb18d07257b59",
+      "bytes": 40890,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/核心图表/q3-c7-lengths.pdf"
+    },
+    {
+      "sha256": "829c77bc88a02c02cf3bb692978c29f84a38e78bf599fcb16be89d7df9557ae4",
+      "bytes": 233167,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/核心图表/q3-c7-lengths.png"
+    },
+    {
+      "sha256": "a0a2960c4d4e03ce9fcf1a62a50160354787734b5762e2d51b93667d1c1e6db8",
+      "bytes": 17178,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/核心图表/q3-c7-lengths.svg"
+    },
+    {
+      "sha256": "82d3a7058f8059a6fb972b30909cfa981b6803342560032e0466301e719bf1da",
+      "bytes": 178478,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/核心图表/q3-conditional_grayscale.png"
+    },
+    {
+      "sha256": "2e5d802974d61292b332d625abe1c798d583c78f36730f72ae4506b134be71ec",
+      "bytes": 61972,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/核心图表/q3-conditional.pdf"
+    },
+    {
+      "sha256": "4bf5eb0215d408fcb1c73bfccd3647d6b76b7abca20a5c1bbe883e734ceb12c5",
+      "bytes": 368601,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/核心图表/q3-conditional.png"
+    },
+    {
+      "sha256": "f44251505603674e36bb908e2d50e500cf6d30366981afe079a1762b12f2d3aa",
+      "bytes": 58373,
+      "output_path": "Q3/04_结果/figures/候选_zwj追加_20260925/核心图表/q3-conditional.svg"
+    }
+  ],
+  "purpose": "Q3 supplementary figure candidates retained inside the Q3 result tree",
+  "file_count": 24,
+  "date": "2026-09-25",
+  "notes": [
+    "These are candidate additions; some repeat existing Q3 result content.",
+    "All 24 retained files are verified by SHA-256 and byte size at their Q3 output_path; no external source path is required.",
+    "During migration, all 24 Q3 copies matched their former source files by SHA-256. The original export directory included image files only, with no generation script or reproduction manifest."
+  ],
+  "retained_scope": "Q3/04_结果/figures/候选_zwj追加_20260925"
+}

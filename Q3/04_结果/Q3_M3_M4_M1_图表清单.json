@@ -1,0 +1,50 @@
+{
+  "artifact": "Q3 M3/M4/M1 audit figures",
+  "command": "python Q3/03_代码/plot_q3_m3_m4_m1_audit.py",
+  "script": {
+    "path": "Q3/03_代码/plot_q3_m3_m4_m1_audit.py",
+    "sha256": "37a434acba945e784901a757f8a7dc959b714db8d7c608d4bbf217448556ac8b"
+  },
+  "backend": "Python/matplotlib",
+  "style": {
+    "journal": "general",
+    "lang": "zh",
+    "sciplots_used": false,
+    "cjk_font": "SimHei",
+    "constrained_layout": true
+  },
+  "dpi": 300,
+  "formats": [
+    "pdf",
+    "svg",
+    "png",
+    "grayscale PNG"
+  ],
+  "inputs_sha256": {
+    "Q3/04_结果/m3_observed_support.csv": "142f00b7b57a0f6a7502820dc7bf5f3a8aa6cf59c4ba202d96ffc4486f864f5a",
+    "Q3/04_结果/m3_q3_support_grid.csv": "7e97aed1ef5f35a336da50baf2760b08c053ab7a697f65e1453b95702bf53e07",
+    "Q3/04_结果/m3_candidate_grid.csv": "1710f5a9ae72f57c06be4daeb2d6cd4b84ad0aa1a90977c326d6a12f0d7c0b29",
+    "Q3/04_结果/M3_support_manifest.json": "8d0616fcc0289fe10356f30f81c2fd1dcdeb598638b5c24822d45788cb7e602c",
+    "Q3/04_结果/m4_budget_feasible_mask.csv": "aae829847746b3db9fa6c382b863941655d86ab1b910c71834ba9b6c63bb87bc",
+    "Q3/04_结果/m1_final_feasible_mask.csv": "2e201705adfdfec6089b088b7a17f403ff2b02e06ef87c0cffb9d80c69272662",
+    "Q3/04_结果/m1_optimum_boundary_audit.csv": "90b6b160bbf969a034096f20535d2ded631f47c2dd5216b0b7ef03a46aecad0d",
+    "Q3/04_结果/M4_budget_manifest.json": "382b49ff7466a72e8fbc5190737271372df01e844baedbc50ac2505a83b763bd",
+    "Q3/04_结果/M1_masked_optimization_manifest.json": "2af7518962a36624d894a05dc4d930e313bd8d643746f5890941ee1ec0695701"
+  },
+  "outputs_sha256": {
+    "Q3/04_结果/figures/raw_q3_observed_nd_support.pdf": "59b4fb93c1c2c76222697041f2e70677ab37410bd3cf90f8f6ea619eea32982c",
+    "Q3/04_结果/figures/raw_q3_observed_nd_support.svg": "84d05b39281d3ee39fb00297cce8d7608ccfeddbb00aa5bac1210c99e6cd25d5",
+    "Q3/04_结果/figures/raw_q3_observed_nd_support.png": "de557a291a8a91e7ac52eafe0e62aaaf74b88b4878d86aba2c6a17fe8416aab3",
+    "Q3/04_结果/figures/raw_q3_observed_nd_support_grayscale.png": "4647fe712497412d18a3c3f654b0fee0d451059c724f59463957f56305ea50d7",
+    "Q3/04_结果/figures/process_q3_m3_m4_mask_audit.pdf": "de33e1e954a0bc4566a0efca0d1f3f82bc22c57a9655e7a1521eb1681a45eccd",
+    "Q3/04_结果/figures/process_q3_m3_m4_mask_audit.svg": "968a10c81a33eac0d71ede8ba0809e9cbe08123a19e692dccdec319e916998e0",
+    "Q3/04_结果/figures/process_q3_m3_m4_mask_audit.png": "0eeb21afff5c79b6f00ef1056e9565ccb021df0e19aee92f12a56e4d646f7a99",
+    "Q3/04_结果/figures/process_q3_m3_m4_mask_audit_grayscale.png": "4540fd90496e3adba59f4c2ab673f20c73ce368631ca65f29707bb109da4c90d",
+    "Q3/04_结果/figures/result_q3_m1_budget_optima.pdf": "d41230c8214f21abbd8df329f1802bbecbb55e3abcd59c12a6015f1567186874",
+    "Q3/04_结果/figures/result_q3_m1_budget_optima.svg": "a3d1b47360909a5a81c3b5f3b9ff43da4ca294955c5b8027b63e9af7f0fa556b",
+    "Q3/04_结果/figures/result_q3_m1_budget_optima.png": "fe7b8506e2bd6bd7d65031d0e990d0f0f90fdd95523d6aeaef8fe49df3dbcba2",
+    "Q3/04_结果/figures/result_q3_m1_budget_optima_grayscale.png": "72530ff50120e8ef417d55c264e77a75d452a796e3b9cf0331af20868ffb380e"
+  },
+  "qa_report": "Q3/04_结果/Q3_M3_M4_M1_图表QA.md",
+  "generated_at_utc": "2026-09-24T15:48:52+00:00"
+}

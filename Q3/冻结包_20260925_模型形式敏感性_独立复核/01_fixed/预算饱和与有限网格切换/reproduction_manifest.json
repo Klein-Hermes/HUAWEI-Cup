@@ -1,0 +1,49 @@
+{
+  "artifact": "Q3 support-grid budget saturation and finite-grid transition analysis",
+  "status": "PASS",
+  "command": "python Q3/03_代码/analyze_q3_budget_grid_transitions.py",
+  "generated_on": "2026-09-25",
+  "generated_at_utc": "2026-09-25T06:33:35+00:00",
+  "python_version": "3.10.20",
+  "script": {
+    "path": "Q3/03_代码/analyze_q3_budget_grid_transitions.py",
+    "sha256": "7fe315d58e02654a2f76c20bdd6efb9aef957277f767b2917d722d6ccb043398"
+  },
+  "inputs_sha256": {
+    "Q3/04_结果/m3_candidate_grid.csv": "1710f5a9ae72f57c06be4daeb2d6cd4b84ad0aa1a90977c326d6a12f0d7c0b29",
+    "Q3/04_结果/M3_M4成本独立审计/m_cost_grid.csv": "ea18712363bc8312c63cfecb1ed7ef0fbcabb824780d6f4198bbabb33d0b7c10",
+    "Q3/04_结果/M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583"
+  },
+  "outputs_sha256": {
+    "Q3/04_结果/预算饱和与有限网格切换/q3_budget_saturation_by_context.csv": "66fb850859ba09c77639ac6d221964f054216d586acb2069aabf5856b19b73e9",
+    "Q3/04_结果/预算饱和与有限网格切换/q3_formal_budget_coverage.csv": "5769c4ca36137f3e2d481e7f346e254ebca488ccc24361e47a9465a83ce0b579",
+    "Q3/04_结果/预算饱和与有限网格切换/q3_finite_grid_switch_events.csv": "9ca72edb5b26b63ee1a2537484953826f84ae31a5472ded9f0198b1195f5a435",
+    "Q3/04_结果/预算饱和与有限网格切换/q3_formal_budget_switches.csv": "fe26fcafd4e6855d3a78614ded2c040cb15bb462d86c5440d18ac43e91b04a8e",
+    "Q3/04_结果/预算饱和与有限网格切换/report.md": "a29b3b0db06ceea2a0dbe51feb4ca619424d45edd736e8b7d8b7b79858dc315e",
+    "Q3/04_结果/预算饱和与有限网格切换/figure_contract.md": "e612df199a5cfe784cdbdc91067d953dfb2ecc1daf09ddc40a53e98dd9ca9abe",
+    "Q3/04_结果/预算饱和与有限网格切换/figures/result_q3_budget_saturation_finite_grid_switches.png": "d6ce74806127d3f5b6056c8bb5fbab2492ae24c01892c1100cfa1b2d9c560550",
+    "Q3/04_结果/预算饱和与有限网格切换/figures/result_q3_budget_saturation_finite_grid_switches.svg": "aa4407f998ea20ce4df76666822a2e94bbd07e93b3fb631899f58fdaea9aee0d",
+    "Q3/04_结果/预算饱和与有限网格切换/figures/result_q3_budget_saturation_finite_grid_switches.pdf": "80f8b861a879d468e7ea78219d242ed6aeeeb1b16d50a6c22dfc4aff81e3174b",
+    "Q3/04_结果/预算饱和与有限网格切换/figures/result_q3_budget_saturation_finite_grid_switches_grayscale.png": "91aa0a4e145e08cae86c35a3d65e3b9b459985b3a3e966105d0b9a690b0cf028"
+  },
+  "summary": {
+    "contexts": 5,
+    "formal_budget_context_scenarios": 15,
+    "support_grid_candidates_per_context": 1176,
+    "finite_grid_switch_events_including_initial_points": 1865,
+    "formal_budget_interval_comparisons": 10,
+    "formal_frontier_selection_parity": true,
+    "all_1e24_scenarios_support_saturated": true
+  },
+  "chart_qa": {
+    "paths": [
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q3\\04_结果\\预算饱和与有限网格切换\\figures\\result_q3_budget_saturation_finite_grid_switches.pdf",
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q3\\04_结果\\预算饱和与有限网格切换\\figures\\result_q3_budget_saturation_finite_grid_switches.svg",
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q3\\04_结果\\预算饱和与有限网格切换\\figures\\result_q3_budget_saturation_finite_grid_switches.png",
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q3\\04_结果\\预算饱和与有限网格切换\\figures\\result_q3_budget_saturation_finite_grid_switches_grayscale.png"
+    ],
+    "layout_verdict": "PASS",
+    "layout_issues": []
+  },
+  "claim_boundary": "fixed Q=Q0, frozen M0, exact observed 1,176-point B1 support grid; no continuous KKT threshold, support-external optimum, or full Q/p empirical optimum"
+}

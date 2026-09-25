@@ -1,0 +1,56 @@
+{
+  "artifact": "Q3 Q0 baseline sensitivity for quality cost and conditional Q-only reallocation thresholds",
+  "q0_branches": [
+    {
+      "branch": "q_huber_point",
+      "q0": 0.49847810484764643,
+      "basis": "frozen operational Q1 main interface"
+    },
+    {
+      "branch": "q_huber_ci95_low",
+      "q0": 0.496567443226065,
+      "basis": "lower endpoint of A1 seven-domain macro 95% interval"
+    },
+    {
+      "branch": "q_huber_ci95_high",
+      "q0": 0.5004265176398414,
+      "basis": "upper endpoint of A1 seven-domain macro 95% interval"
+    },
+    {
+      "branch": "q_equal_sensitivity",
+      "q0": 0.4962230100496153,
+      "basis": "frozen Q1 sensitivity interface; not an uncertainty endpoint"
+    }
+  ],
+  "q0_metadata": {
+    "q_version": "Q1-q_huber-v1",
+    "q_huber_point": 0.49847810484764643,
+    "q_huber_ci95_low": 0.496567443226065,
+    "q_huber_ci95_high": 0.5004265176398414,
+    "q_equal_sensitivity": 0.4962230100496153,
+    "q_huber_ci_repetitions": 2000
+  },
+  "conditional_response": "L_cond = L_M0(N,D) - beta_Q*(Q-Q0), beta_Q >= 0; beta_Q remains unknown",
+  "new_q2_data_required": false,
+  "no_empirical_q_response": true,
+  "p_setting": "excluded from model and decisions; no p vector assigned",
+  "bootstrap_repetitions_for_q_huber_ci": 2000,
+  "python_version": "3.10.4",
+  "reproduction_command": "python Q3/03_代码/analyze_q3_q0_baseline_sensitivity.py --smoke --output-dir \"Q3/归档_20260925/tmp_q3_q0_p1\"",
+  "script_sha256": "5e8f25e2c6c034db4fccd7f59d3bde0fdf4a6ee9eb46a36d42272568c3c67418",
+  "inputs": {
+    "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "Q1/03_结果/Q1.1/v1/a1_macro_summary.csv": "6b7cca1865ef6785981180fb0aea41fe839a5b6c12cb012bb21fa089d8b383f9",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "Q3/04_结果/M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "Q3/04_结果/Q_conditional_Q_break_even_summary.csv": "f2c64a42e41f5af24f8a11c246eca81991c40b1d7d4d1424cc4b6ac35e3d8e1c"
+  },
+  "outputs": {
+    "Q3/归档_20260925/tmp_q3_q0_p1/Q3/04_结果/Q3_Q0_baseline_sensitivity_cost.csv": "5164491af2930e0f1e38ecf7f8437652eb1a986f15fc2147094fb79b647eed5e",
+    "Q3/归档_20260925/tmp_q3_q0_p1/Q3/04_结果/Q3_Q0_baseline_sensitivity_beta_thresholds.csv": "555a1683d934da8bea1f818d2943e3dfb8bcf2e1e2cbb874658f60a4bc8b1b7d",
+    "Q3/归档_20260925/tmp_q3_q0_p1/Q3/04_结果/Q3_Q0_baseline_sensitivity_report.md": "acd5a6331befdf8e93a88755f97c4883f24589f43c9e9715372fea1565b468df"
+  },
+  "claim_boundary": "Q1 A1 baseline sensitivity only; Q1 interval is not B1 mixture uncertainty; beta_Q conditional thresholds are not empirical Q effects"
+}

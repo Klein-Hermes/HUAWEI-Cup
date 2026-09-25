@@ -1,0 +1,211 @@
+{
+  "date": "2026-09-25",
+  "selection": "P1, P2, P3 and all three supplementary candidates; P4 excluded by user direction.",
+  "file_count": 27,
+  "source_scripts": [
+    "Q3/03_代码/图表源/plot_q3_supplementary_figures.py",
+    "Q3/03_代码/图表源/论文版/plot_q3_supplementary_figures_paper.py",
+    "Q3/补充图_候选20260925/plot_q3_supplementary_candidates.py",
+    "Q3/04_结果/figures/supplementary_20260925/S4_质量增量成本曲线/plot_q3_quality_incremental_cost.py",
+    "Q3/04_结果/figures/supplementary_20260925/flow_q3_model/plot_flow_q3_model.py"
+  ],
+  "files": [
+    {
+      "output_path": "P1_预算_ND前沿/result_q3_p1_budget_nd_frontier.png",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/P1_预算_ND前沿/result_q3_p1_budget_nd_frontier.png",
+      "sha256": "0f800e5f99fa092141d96dd995b2713c7064f13d34955d847037244442d192c8",
+      "bytes": 211278
+    },
+    {
+      "output_path": "P1_预算_ND前沿/result_q3_p1_budget_nd_frontier.pdf",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/P1_预算_ND前沿/result_q3_p1_budget_nd_frontier.pdf",
+      "sha256": "55eace273588d4d13850daf451dcc10ca3418a90529fd27bb8c981e84ee1ee11",
+      "bytes": 24939
+    },
+    {
+      "output_path": "P1_预算_ND前沿/result_q3_p1_budget_nd_frontier.svg",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/P1_预算_ND前沿/result_q3_p1_budget_nd_frontier.svg",
+      "sha256": "1f3e975cd4cc2db3d1c7d82dab1923eb968f1466717f8ef337d39c0e2ea434f3",
+      "bytes": 59768
+    },
+    {
+      "output_path": "P1_预算_ND前沿/_qa/result_q3_p1_budget_nd_frontier_grayscale.png",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/P1_预算_ND前沿/_qa/result_q3_p1_budget_nd_frontier_grayscale.png",
+      "sha256": "4c5032954bf660d0424dd59037f1b33dbc7c42e8d2b7c34fcc770ce02249b4a9",
+      "bytes": 84470
+    },
+    {
+      "output_path": "P2_Bootstrap稳定性/result_q3_p2_bootstrap_selection_stability.png",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/P2_Bootstrap稳定性/result_q3_p2_bootstrap_selection_stability.png",
+      "sha256": "dabedc72add4db72e23fd48561b7af7cf250945682092aee066bdea2c0b3a354",
+      "bytes": 135765
+    },
+    {
+      "output_path": "P2_Bootstrap稳定性/result_q3_p2_bootstrap_selection_stability.pdf",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/P2_Bootstrap稳定性/result_q3_p2_bootstrap_selection_stability.pdf",
+      "sha256": "24cf03bfda7fa23c3d577fbc5098fa15480cc12f1b8f1d5123492c640c3e389b",
+      "bytes": 28860
+    },
+    {
+      "output_path": "P2_Bootstrap稳定性/result_q3_p2_bootstrap_selection_stability.svg",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/P2_Bootstrap稳定性/result_q3_p2_bootstrap_selection_stability.svg",
+      "sha256": "c50aa0e6844c91b26969ed7e9d27bcae7d926fc4f74cadab920c0a335177c610",
+      "bytes": 94443
+    },
+    {
+      "output_path": "P2_Bootstrap稳定性/_qa/result_q3_p2_bootstrap_selection_stability_grayscale.png",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/P2_Bootstrap稳定性/_qa/result_q3_p2_bootstrap_selection_stability_grayscale.png",
+      "sha256": "a4dc872bde9916cc4a1be833cf01a70d3a746d2c761eb7af2a8464672acde04a",
+      "bytes": 63450
+    },
+    {
+      "output_path": "P3_资源配置仪表盘/result_q3_p3_resource_shift_dashboard.png",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/P3_资源配置仪表盘/result_q3_p3_resource_shift_dashboard.png",
+      "sha256": "cabb656a749f1f6df5cc90d7e3d4fc8fc1677072495923e9d310a8d74d1ac970",
+      "bytes": 342136
+    },
+    {
+      "output_path": "P3_资源配置仪表盘/result_q3_p3_resource_shift_dashboard.pdf",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/P3_资源配置仪表盘/result_q3_p3_resource_shift_dashboard.pdf",
+      "sha256": "35d435aec1c939445ea05790d85bbac696e72e9c963e879503b3fbdbf783584d",
+      "bytes": 46838
+    },
+    {
+      "output_path": "P3_资源配置仪表盘/result_q3_p3_resource_shift_dashboard.svg",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/P3_资源配置仪表盘/result_q3_p3_resource_shift_dashboard.svg",
+      "sha256": "9325fd896bc99cf577d635355b36e76d2299b6367fd573f0e9e8afce58565ceb",
+      "bytes": 189471
+    },
+    {
+      "output_path": "P3_资源配置仪表盘/_qa/result_q3_p3_resource_shift_dashboard_grayscale.png",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/P3_资源配置仪表盘/_qa/result_q3_p3_resource_shift_dashboard_grayscale.png",
+      "sha256": "779630ef50a863d6f63924fb392f9eb3843bc0b9763c84b0b00cdcfea713bca8",
+      "bytes": 147010
+    },
+    {
+      "output_path": "S1_Bootstrap_Loss区间/result_q3_supp_bootstrap_loss_sensitivity.png",
+      "source_path": "Q3/补充图_候选20260925/result_q3_supp_bootstrap_loss_sensitivity.png",
+      "sha256": "d85d6d7eeba8b39266e88870b0fe1c72b8e2a9500adf41086529e08c2e7e8b80",
+      "bytes": 262159
+    },
+    {
+      "output_path": "S1_Bootstrap_Loss区间/result_q3_supp_bootstrap_loss_sensitivity.svg",
+      "source_path": "Q3/补充图_候选20260925/result_q3_supp_bootstrap_loss_sensitivity.svg",
+      "sha256": "4ad65bd9bad8937fc6659dc934063cc460644493a3a1464e85a5715a9d530d3d",
+      "bytes": 37933
+    },
+    {
+      "output_path": "S1_Bootstrap_Loss区间/_qa/result_q3_supp_bootstrap_loss_sensitivity_grayscale.png",
+      "source_path": "Q3/补充图_候选20260925/_qa/result_q3_supp_bootstrap_loss_sensitivity_grayscale.png",
+      "sha256": "59dcd49e820729404a09d3f7a4f4626890897784f0f447c9227f951751b9a724",
+      "bytes": 259922
+    },
+    {
+      "output_path": "S2_固定Q成本占比/result_q3_supp_fixedq_cost_shares.png",
+      "source_path": "Q3/补充图_候选20260925/result_q3_supp_fixedq_cost_shares.png",
+      "sha256": "3b8001c9189f7cc2fe0f5ffeb8642e2b3cb73b94630bbb69e459277b32c038c6",
+      "bytes": 218848
+    },
+    {
+      "output_path": "S2_固定Q成本占比/result_q3_supp_fixedq_cost_shares.svg",
+      "source_path": "Q3/补充图_候选20260925/result_q3_supp_fixedq_cost_shares.svg",
+      "sha256": "ab4d63eb59c6ebe90f6fc2646a0c6d51270a0b9b62457e32003e782b9915f429",
+      "bytes": 21371
+    },
+    {
+      "output_path": "S2_固定Q成本占比/_qa/result_q3_supp_fixedq_cost_shares_grayscale.png",
+      "source_path": "Q3/补充图_候选20260925/_qa/result_q3_supp_fixedq_cost_shares_grayscale.png",
+      "sha256": "68e1e09d84bc74b268ed66dc82e49ca8332bde6e9a3cfe06e76008d6a44b3be5",
+      "bytes": 215798
+    },
+    {
+      "output_path": "S3_近优候选规模响应/result_q3_supp_near_optimal_count_response.png",
+      "source_path": "Q3/补充图_候选20260925/result_q3_supp_near_optimal_count_response.png",
+      "sha256": "29b73fcd91835ddedec65674cef4c17466d989744711ed394dcb75b51bede9e6",
+      "bytes": 222663
+    },
+    {
+      "output_path": "S3_近优候选规模响应/result_q3_supp_near_optimal_count_response.svg",
+      "source_path": "Q3/补充图_候选20260925/result_q3_supp_near_optimal_count_response.svg",
+      "sha256": "5bec403b7697a2b69a599a6f0a706d7f094769e9e45e90af2ff0f56938f317ae",
+      "bytes": 217855
+    },
+    {
+      "output_path": "S3_近优候选规模响应/_qa/result_q3_supp_near_optimal_count_response_grayscale.png",
+      "source_path": "Q3/补充图_候选20260925/_qa/result_q3_supp_near_optimal_count_response_grayscale.png",
+      "sha256": "17497bdb8a0d8d61b82b9da7b535fdcd31c4d279124a8bd05fe48a020f5a2241",
+      "bytes": 216420
+    },
+    {
+      "output_path": "S4_质量增量成本曲线/result_q3_supp_quality_incremental_cost.png",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/S4_质量增量成本曲线/plot_q3_quality_incremental_cost.py",
+      "source_data": "Q3/04_结果/Q_cost_increment_envelope.csv",
+      "sha256": "566712f5121465367952acc95f974a172b693bf7357afc5ec77ef0c9776afd61",
+      "bytes": 303439
+    },
+    {
+      "output_path": "S4_质量增量成本曲线/result_q3_supp_quality_incremental_cost.svg",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/S4_质量增量成本曲线/plot_q3_quality_incremental_cost.py",
+      "source_data": "Q3/04_结果/Q_cost_increment_envelope.csv",
+      "sha256": "f0fb4a59e75a57a8da84066567a7381ba774ca4c7254cae5becaefd1dbc4b886",
+      "bytes": 86837
+    },
+    {
+      "output_path": "S4_质量增量成本曲线/result_q3_supp_quality_incremental_cost_grayscale.png",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/S4_质量增量成本曲线/plot_q3_quality_incremental_cost.py",
+      "source_data": "Q3/04_结果/Q_cost_increment_envelope.csv",
+      "sha256": "748c934668f8d849cf93231fd29e7628992068933d81866360dc40de7bdd5f49",
+      "bytes": 128526
+    },
+    {
+      "output_path": "flow_q3_model/flow_q3_model.png",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/flow_q3_model/plot_flow_q3_model.py",
+      "source_data": "Q3/03_代码/solve_q3_m0_reference_grid.py; Q3/03_代码/solve_q3_conditional_q_sensitivity.py; Q3/04_结果/M0_ND_reference_frontier_report.md; Q3/04_结果/Q3_conditional_Q_optimization_report.md",
+      "sha256": "6763867b2b24e62442feb1b5327326c903fe5999aabb6c6b1e0d5b8968bc0b5b",
+      "bytes": 616797
+    },
+    {
+      "output_path": "flow_q3_model/flow_q3_model.svg",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/flow_q3_model/plot_flow_q3_model.py",
+      "source_data": "Q3/03_代码/solve_q3_m0_reference_grid.py; Q3/03_代码/solve_q3_conditional_q_sensitivity.py; Q3/04_结果/M0_ND_reference_frontier_report.md; Q3/04_结果/Q3_conditional_Q_optimization_report.md",
+      "sha256": "928154d0dbe4f5411b54078aead156f57ead67bed01e91cc1d63ca56310923e0",
+      "bytes": 16893
+    },
+    {
+      "output_path": "flow_q3_model/flow_q3_model_grayscale.png",
+      "source_path": "Q3/04_结果/figures/supplementary_20260925/flow_q3_model/plot_flow_q3_model.py",
+      "source_data": "Q3/03_代码/solve_q3_m0_reference_grid.py; Q3/03_代码/solve_q3_conditional_q_sensitivity.py; Q3/04_结果/M0_ND_reference_frontier_report.md; Q3/04_结果/Q3_conditional_Q_optimization_report.md",
+      "sha256": "f2883d02d5f9cf02698ae094afc9bce3bbd1f425558b70bbb3bf06db9b4220b3",
+      "bytes": 245740
+    }
+  ],
+  "excluded": [
+    {
+      "figure": "P4 Q baseline sensitivity",
+      "reason": "Not recommended in the preceding review; under fixed-Q M0, N/D/Loss overlap and only Q0 differs."
+    }
+  ],
+  "quality_checks": {
+    "S4_质量增量成本曲线": "Script exit 0; layout gate PASS; color/grayscale visual review PASS; PNG and grayscale PNG 300.99 DPI at 2002x2034; SVG retains text and vector paths.",
+    "flow_q3_model": "Script exit 0; layout gate PASS; color/grayscale visual review PASS; PNG and grayscale PNG 300.99 DPI at 4237x2641; SVG retains text and vector paths.",
+    "global_q3_strict_audit": "Exit 1; Q3-wide raw/process minimums and pre-existing top-level DPI/embedded-raster findings prevent marking the entire Q3 audit PASS. This is not a pass for the global audit."
+  },
+  "source_scripts_sha256": {
+    "Q3/03_代码/图表源/plot_q3_supplementary_figures.py": "3f809aebeae6950169649b6ebb73ec400547032fa93192cabe1a05fda0973214",
+    "Q3/03_代码/图表源/论文版/plot_q3_supplementary_figures_paper.py": "4722c6687f150194dca4f3460dc7111ecbbfe22db9d6478ed160438c10bac7b1",
+    "Q3/补充图_候选20260925/plot_q3_supplementary_candidates.py": "b263e0971d68a4cea1928173fc9819ac3d323eb33bbc8d204793883bb6dee4b2",
+    "Q3/04_结果/figures/supplementary_20260925/S4_质量增量成本曲线/plot_q3_quality_incremental_cost.py": "0e3797dfcb3f20c9f7dc242954f63d2d1f94f42fb5c0a590ea5b3bce80f3b39e",
+    "Q3/04_结果/figures/supplementary_20260925/flow_q3_model/plot_flow_q3_model.py": "f2b9c87b892feef5f3d2185e343fa456150ccd6639fce315fbb9f5b2e697fd21"
+  },
+  "source_inputs_sha256": {
+    "Q3/04_结果/M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "Q3/04_结果/M0_ND_cluster_bootstrap_frontier.csv": "2e0677f48ae10acf4c148ea021864c14c09b4d9d8f7f83badaaf551792c796f2",
+    "Q3/04_结果/M0_ND_cluster_bootstrap_selection_frequency.csv": "37b12f07c580291caf078722ea4e3f355ae72a78d34c7ffa7923c8bf6e920ab5",
+    "Q3/04_结果/M0_budget_context_cost_shares.csv": "87535f7d2cae27c5b4fc13c77cb4848bbafc2e7c37ed5340fcb5befac9e6a26d",
+    "Q3/04_结果/M0_budget_context_descriptive_shifts.csv": "5707919ebdc1037a91e6b3fbec8996a0bb16a470dba68db95bd959be6c6da84e",
+    "Q1/03_结果/Q1.1/v1/a1_macro_summary.csv": "6b7cca1865ef6785981180fb0aea41fe839a5b6c12cb012bb21fa089d8b383f9",
+    "Q3/03_代码/analyze_q3_cost_sensitivities.py": "6b51afdc7da5bc7bf441303e6ff163abae94cbddcbd839524451d6a6f05e142e"
+  },
+  "source_scope_note": "All cited scripts, source datasets, and retained figure copies are inside the project/Q3 tree; no zwj path is required.",
+  "migration_copy_check": "P1-P3: all 12 retained local image files matched their former source copies by SHA-256 during migration. Current source_path entries point only inside Q3."
+}

@@ -1,0 +1,65 @@
+{
+  "as_of": "2026-09-25",
+  "scope": "Q3 identifiable result package at fixed Q0; full empirical Q/p joint optimization excluded",
+  "source_dimensions": {
+    "t1_master": 15,
+    "t1_transitions": 22,
+    "t2_near": 17640,
+    "t2_pareto": 1865,
+    "t2_marginal": 10,
+    "t3_bootstrap": 15,
+    "t3_config_switch": 22,
+    "t3_cost_switch": 22,
+    "t4_threshold": 45,
+    "t4_regime": 166,
+    "support_grid": 1176,
+    "m4_mask": 17640,
+    "m1_mask": 17640
+  },
+  "master_table": {
+    "rows": 15,
+    "columns": 77,
+    "key": [
+      "budget_flops",
+      "context_length_tokens"
+    ]
+  },
+  "t1": {
+    "scenarios": 15,
+    "candidate_support_points": 1176,
+    "cost_budget_mask_rows": 17640,
+    "final_mask_rows": 17640
+  },
+  "t2": {
+    "candidate_rows": 17640,
+    "pareto_points": 1865,
+    "pareto_points_by_context": {
+      "2048": 373,
+      "4096": 373,
+      "8192": 373,
+      "32768": 373,
+      "131072": 373
+    },
+    "marginal_return_rows": 10
+  },
+  "t3": {
+    "bootstrap_scenarios": 15,
+    "adjacent_pairs": 22,
+    "robust_configuration_switches": 17,
+    "robust_cost_structure_switches": 12
+  },
+  "t4": {
+    "conditional_scenarios": 45,
+    "regime_rows": 166,
+    "finite_first_reallocation_thresholds": 30,
+    "no_finite_first_reallocation_thresholds": 15,
+    "betaQ_identified": false,
+    "p_in_objective": false
+  },
+  "budget_saturation": {
+    "formal_budget_context_scenarios": 15,
+    "finite_grid_switch_events_including_initial_points": 1865,
+    "formal_budget_interval_comparisons": 10,
+    "all_1e24_supports_saturated": true
+  }
+}

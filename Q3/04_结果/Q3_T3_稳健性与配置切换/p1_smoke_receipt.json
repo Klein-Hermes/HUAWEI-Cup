@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "review_scope": "Q3-T3 standardization pre-export read-only P1 revalidation",
+  "receipt_updated_at_utc": "2026-09-24T17:58:04Z",
+  "independent_reviewer": "/root/q3_t3_p1",
+  "command": "$env:MATH_MODELING_SKILL_ROOT = 'C:\\Users\\86147\\.codex\\skills\\math-modeling'; $env:PYTHONDONTWRITEBYTECODE = '1'; & 'D:/Anaconda/envs/mmdet/python.exe' 'Q3/03_代码/standardize_q3_t3_outputs.py' '--validate-only'",
+  "exit_code": 0,
+  "write_mode": "read-only; no files written",
+  "script_sha256": "c9458a19ba4adb4f4a90888984e5bd197f01ef2a28f7e3d38496cfe08cb7f0cb",
+  "support_module_sha256": "ef5b8877a2d07c6a812422f3fe520ca1e379969145f5473e4817476081fd8b4d",
+  "source_hashes": {
+    "M0_ND_cluster_bootstrap_frontier.csv": "2e0677f48ae10acf4c148ea021864c14c09b4d9d8f7f83badaaf551792c796f2",
+    "M0_ND_cluster_bootstrap_selection_frequency.csv": "37b12f07c580291caf078722ea4e3f355ae72a78d34c7ffa7923c8bf6e920ab5",
+    "M0_cluster_bootstrap_sensitivity_manifest.json": "ca3d20fa819e9ed2a990aaf48124af22ca92ca95c2d160f4d438d28f6da4aa63",
+    "M0_discrete_transition_pairs.csv": "7410fcc545c7bea281598bb46ea9ff77eff0d976291887f4968063b0cc1c19fc",
+    "M0_discrete_transition_bootstrap_draws.csv": "1855f6fc70a25797ebd242cff5bb4a325090fdd88eceb45980181f5d5d9058bb",
+    "M0_discrete_transition_manifest.json": "6181d79c5d99e1d8134972a5400432cd2cb7be5b35d2d1e8c7e9af8e791c532e"
+  },
+  "counts": {
+    "bootstrap_scenarios": 15,
+    "bootstrap_replicates_per_scenario": 1000,
+    "paired_scenario_pairs": 22,
+    "paired_replicates_per_pair": 1000,
+    "paired_draw_rows": 22000,
+    "robust_ND_configuration_switches": 17,
+    "robust_cost_structure_switches": 12,
+    "pair_type_counts": {
+      "adjacent_budget": 10,
+      "adjacent_context": 12
+    },
+    "robust_switch_counts_by_pair_type": {
+      "adjacent_budget": {
+        "configuration": 10,
+        "cost": 0
+      },
+      "adjacent_context": {
+        "configuration": 7,
+        "cost": 12
+      }
+    }
+  },
+  "review_checks": [
+    "Source manifests and their registered input, output, and upstream script hashes verified.",
+    "Each paired-draw N/D changed flag agrees with left/right run IDs and selected N/D values.",
+    "Per-draw cost-share total variation recomputed from left/right training shares.",
+    "Bootstrap and transition quantile ordering checked.",
+    "N/D configuration and cost-structure switch fields and definitions remain separate.",
+    "Claims remain limited to fixed Q0, frozen M0, and the observed B1 support grid.",
+    "Validation ran from an isolated mirror and returned before output-writing code."
+  ],
+  "independent_review": "PASS; revalidation reviewed the current exporter and support-module hashes."
+}

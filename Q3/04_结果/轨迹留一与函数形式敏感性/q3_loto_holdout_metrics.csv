@@ -1,0 +1,25 @@
+﻿model_form,formula,omitted_trajectory,n,rmse,mae,bias_pred_minus_obs,max_abs_error
+m0_current,L = E + A*N^(-alpha) + B*D^(-beta),EleutherAI/pythia-70m,147,0.000220230367749,0.000168755134247,8.16325713375e-05,0.00069647031433
+m0_no_floor,L = A*N^(-alpha) + B*D^(-beta); E=0,EleutherAI/pythia-70m,147,0.148357031765,0.148355060019,-0.148355060019,0.151775691192
+m0_shared_exponent,L = E + A*N^(-gamma) + B*D^(-gamma); alpha=beta=gamma,EleutherAI/pythia-70m,147,0.0306738071463,0.0306168420981,-0.0306168420981,0.0354643000665
+m0_current,L = E + A*N^(-alpha) + B*D^(-beta),EleutherAI/pythia-160m,147,0.00018181804491,0.000137142054849,-3.57590461102e-05,0.000679021958852
+m0_no_floor,L = A*N^(-alpha) + B*D^(-beta); E=0,EleutherAI/pythia-160m,147,0.0155673704076,0.0153896455378,0.0153896455378,0.0216458920328
+m0_shared_exponent,L = E + A*N^(-gamma) + B*D^(-gamma); alpha=beta=gamma,EleutherAI/pythia-160m,147,0.00682951536284,0.00593774834126,0.00528641408321,0.031256327647
+m0_current,L = E + A*N^(-alpha) + B*D^(-beta),EleutherAI/pythia-410m,147,0.00013511027046,0.000107561692562,1.58241796578e-06,0.000481106020013
+m0_no_floor,L = A*N^(-alpha) + B*D^(-beta); E=0,EleutherAI/pythia-410m,147,0.0581426251785,0.0581087401465,0.0581087401465,0.0635960818887
+m0_shared_exponent,L = E + A*N^(-gamma) + B*D^(-gamma); alpha=beta=gamma,EleutherAI/pythia-410m,147,0.0114238621373,0.010797982534,0.010797982534,0.0336013877228
+m0_current,L = E + A*N^(-alpha) + B*D^(-beta),EleutherAI/pythia-1b,147,0.000154597708237,0.000108657296949,2.41055713669e-05,0.000653992892714
+m0_no_floor,L = A*N^(-alpha) + B*D^(-beta); E=0,EleutherAI/pythia-1b,147,0.0545202920496,0.0544880884515,0.0544880884515,0.0595319697338
+m0_shared_exponent,L = E + A*N^(-gamma) + B*D^(-gamma); alpha=beta=gamma,EleutherAI/pythia-1b,147,0.00930040250862,0.00847539426012,0.00838799249798,0.0331045183261
+m0_current,L = E + A*N^(-alpha) + B*D^(-beta),EleutherAI/pythia-1.4b,147,0.000131916747773,9.99692340483e-05,9.99797469713e-06,0.000509462625864
+m0_no_floor,L = A*N^(-alpha) + B*D^(-beta); E=0,EleutherAI/pythia-1.4b,147,0.0468432233224,0.0468002589699,0.0468002589699,0.0521929248978
+m0_shared_exponent,L = E + A*N^(-gamma) + B*D^(-gamma); alpha=beta=gamma,EleutherAI/pythia-1.4b,147,0.00776071529165,0.00688839761217,0.00657811794437,0.0312368269784
+m0_current,L = E + A*N^(-alpha) + B*D^(-beta),EleutherAI/pythia-2.8b,147,0.000114414630493,8.19147074172e-05,-1.31924569339e-05,0.000580664134787
+m0_no_floor,L = A*N^(-alpha) + B*D^(-beta); E=0,EleutherAI/pythia-2.8b,147,0.0198171719459,0.019694167318,0.019694167318,0.0260097219249
+m0_shared_exponent,L = E + A*N^(-gamma) + B*D^(-gamma); alpha=beta=gamma,EleutherAI/pythia-2.8b,147,0.00468628134338,0.00363206316835,0.00145269434959,0.0287917815528
+m0_current,L = E + A*N^(-alpha) + B*D^(-beta),EleutherAI/pythia-6.9b,147,0.000135042397934,8.31561223881e-05,7.1663427881e-06,0.000926945215654
+m0_no_floor,L = A*N^(-alpha) + B*D^(-beta); E=0,EleutherAI/pythia-6.9b,147,0.041498354689,0.0414350968462,-0.0414350968462,0.0525635362522
+m0_shared_exponent,L = E + A*N^(-gamma) + B*D^(-gamma); alpha=beta=gamma,EleutherAI/pythia-6.9b,147,0.00880581174696,0.00804692806506,-0.00779515886555,0.0179694031638
+m0_current,L = E + A*N^(-alpha) + B*D^(-beta),EleutherAI/pythia-12b,147,0.000101975318778,7.58691158255e-05,-1.67216232288e-05,0.000432867829709
+m0_no_floor,L = A*N^(-alpha) + B*D^(-beta); E=0,EleutherAI/pythia-12b,147,0.0978405511795,0.0978285829857,-0.0978285829857,0.104820266538
+m0_shared_exponent,L = E + A*N^(-gamma) + B*D^(-gamma); alpha=beta=gamma,EleutherAI/pythia-12b,147,0.0161387199943,0.0158727818848,-0.0158261451553,0.0237396341848

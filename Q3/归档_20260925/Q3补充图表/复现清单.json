@@ -1,0 +1,151 @@
+{
+  "artifact": "Q3 supplementary figures P1-P4",
+  "status": "PASS",
+  "generated_at_utc": "2026-09-24T16:29:13.965Z",
+  "command": "node Q3/归档_20260925/plot_q3_supplementary_figures.mjs",
+  "runtime": {
+    "node": "v22.14.0",
+    "sharp": "0.35.4",
+    "libvips": "8.18.6"
+  },
+  "renderer": "Node.js + Sharp/libvips rasterizes authored SVG; no Python, no refitting, no resampling.",
+  "inputs_sha256": {
+    "Q3/04_结果/M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "Q3/04_结果/M0_ND_cluster_bootstrap_frontier.csv": "2e0677f48ae10acf4c148ea021864c14c09b4d9d8f7f83badaaf551792c796f2",
+    "Q3/04_结果/M0_ND_cluster_bootstrap_selection_frequency.csv": "37b12f07c580291caf078722ea4e3f355ae72a78d34c7ffa7923c8bf6e920ab5",
+    "Q3/04_结果/M0_budget_context_cost_shares.csv": "87535f7d2cae27c5b4fc13c77cb4848bbafc2e7c37ed5340fcb5befac9e6a26d",
+    "Q3/04_结果/M0_budget_context_descriptive_shifts.csv": "5707919ebdc1037a91e6b3fbec8996a0bb16a470dba68db95bd959be6c6da84e",
+    "Q1/03_结果/Q1.1/v1/a1_macro_summary.csv": "6b7cca1865ef6785981180fb0aea41fe839a5b6c12cb012bb21fa089d8b383f9"
+  },
+  "script_sha256": {
+    "Q3/归档_20260925/plot_q3_supplementary_figures.mjs": "fd275a44edd7ef89dd456692a38433255b4c7a1f776a1790f0ca8af066ef4ee1"
+  },
+  "outputs_sha256": {
+    "Q3/归档_20260925/Q3补充图表/figures/result_q3_p1_budget_nd_frontier.png": "232fcbeb2d9afcf3d906ac70cfbb07e545a92a3dea75b2f4de58f14e31690ada",
+    "Q3/归档_20260925/Q3补充图表/figures/result_q3_p1_budget_nd_frontier.svg": "e3d6b4e5248608f3fb66c000386cc1b327f992d21b2dea947fc4c991d11f9c4b",
+    "Q3/归档_20260925/Q3补充图表/figures/result_q3_p1_budget_nd_frontier_grayscale.png": "0136e176404ac1699c095f2c4fd4f48ce8b0f8d3e9f17a559beb692c12501952",
+    "Q3/归档_20260925/Q3补充图表/figures/result_q3_p2_bootstrap_selection_stability.png": "e620f79f48126f7f20937053f648cf1a45f0cb0c5c9366bb2ad07cacc868c17f",
+    "Q3/归档_20260925/Q3补充图表/figures/result_q3_p2_bootstrap_selection_stability.svg": "b8283b290a2facee43b5b433a75d68f8553692e3ec9b0ffa63517e85c225e7de",
+    "Q3/归档_20260925/Q3补充图表/figures/result_q3_p2_bootstrap_selection_stability_grayscale.png": "088fbb3de9ce824b5ab16f336fe513ab3056ba241b868e3f52cf178b2b0f15d4",
+    "Q3/归档_20260925/Q3补充图表/figures/result_q3_p3_resource_shift_dashboard.png": "d84da44d1e04ae971e8723c41de22d92272f352a82ba3567510e95bbb7aef692",
+    "Q3/归档_20260925/Q3补充图表/figures/result_q3_p3_resource_shift_dashboard.svg": "6f2ec17dfe8ad800465a5f3e7bbd3bb01674afbc834f365f14e5595fcf50685a",
+    "Q3/归档_20260925/Q3补充图表/figures/result_q3_p3_resource_shift_dashboard_grayscale.png": "ca0a6737769204e9298cecd895ca8afd132163b75ec172ff9afa7e515346ea15",
+    "Q3/归档_20260925/Q3补充图表/figures/result_q3_p4_q_baseline_sensitivity.png": "c65c4210de8e26688880e23b482c8978717d6be617eac33da7050732a3c3a92c",
+    "Q3/归档_20260925/Q3补充图表/figures/result_q3_p4_q_baseline_sensitivity.svg": "c6d6bfa54b725fcdc41dc327bfb2796d3066749797fb1a77edfc55ae9e40ce75",
+    "Q3/归档_20260925/Q3补充图表/figures/result_q3_p4_q_baseline_sensitivity_grayscale.png": "efa325cf18c89e64e5d56f2f001b03c22ce5e13c1aefe14ececdfc3cf327dca8"
+  },
+  "contract_sha256": "680dca610df4593bfdd312edc63f8fcda05e623eff4201c1829e5e824a385214",
+  "validation": {
+    "budgets": [
+      10000000000000000000,
+      1e+22,
+      1e+24
+    ],
+    "contexts": [
+      2048,
+      4096,
+      8192,
+      32768,
+      131072
+    ],
+    "q_huber_q0": 0.49847810484764643,
+    "q_equal_q0": 0.4962230100496153,
+    "frontier_rows": 15,
+    "bootstrap_rows": 15,
+    "frequency_rows": 15,
+    "cost_share_rows": 15,
+    "descriptive_shift_rows": 22,
+    "bootstrap_replicates": 1000,
+    "point_mass_intervals": true,
+    "max_abs_delta_N_B": 0,
+    "max_abs_delta_D_B": 0,
+    "max_abs_delta_M0_loss": 0,
+    "q0_branch_logic": "At each branch Q is fixed to that branch Q0, so C_Q=0; M0 has no Q/p loss term; budget masks and M0 ranking are invariant.",
+    "p4_q_huber_q0": 0.49847810484764643,
+    "p4_q_equal_q0": 0.4962230100496153
+  },
+  "figure_qa": {
+    "result_q3_p1_budget_nd_frontier": {
+      "size_inches": [
+        10,
+        5
+      ],
+      "dpi": 300,
+      "png_pixels": [
+        3000,
+        1500
+      ],
+      "grayscale_png_pixels": [
+        3000,
+        1500
+      ],
+      "grayscale_dpi": 300,
+      "svg_text_nodes": 33,
+      "text_bounds_checked": 33,
+      "text_out_of_bounds": []
+    },
+    "result_q3_p2_bootstrap_selection_stability": {
+      "size_inches": [
+        12,
+        5.7
+      ],
+      "dpi": 300,
+      "png_pixels": [
+        3600,
+        1710
+      ],
+      "grayscale_png_pixels": [
+        3600,
+        1710
+      ],
+      "grayscale_dpi": 300,
+      "svg_text_nodes": 84,
+      "text_bounds_checked": 84,
+      "text_out_of_bounds": []
+    },
+    "result_q3_p3_resource_shift_dashboard": {
+      "size_inches": [
+        11.2,
+        7
+      ],
+      "dpi": 300,
+      "png_pixels": [
+        3360,
+        2100
+      ],
+      "grayscale_png_pixels": [
+        3360,
+        2100
+      ],
+      "grayscale_dpi": 300,
+      "svg_text_nodes": 68,
+      "text_bounds_checked": 68,
+      "text_out_of_bounds": []
+    },
+    "result_q3_p4_q_baseline_sensitivity": {
+      "size_inches": [
+        11.2,
+        6.6
+      ],
+      "dpi": 300,
+      "png_pixels": [
+        3360,
+        1980
+      ],
+      "grayscale_png_pixels": [
+        3360,
+        1980
+      ],
+      "grayscale_dpi": 300,
+      "svg_text_nodes": 36,
+      "text_bounds_checked": 36,
+      "text_out_of_bounds": []
+    }
+  },
+  "manual_visual_review": "Reviewed all four color and grayscale PNGs at full rendering scale: labels remain within the page, no legend or tick overlap was observed, and grayscale series retain distinct markers. P4 zero deltas are intentional and stated in the chart.",
+  "assets_per_figure": [
+    "svg",
+    "300-DPI png",
+    "grayscale png"
+  ]
+}

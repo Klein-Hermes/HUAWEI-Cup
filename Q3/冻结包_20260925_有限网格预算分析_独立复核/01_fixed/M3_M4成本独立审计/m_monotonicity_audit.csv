@@ -1,0 +1,12 @@
+﻿check,cost_component,varying_dimension,expected_relation,adjacent_comparisons,monotonicity_violations,invariance_comparisons,invariance_violations,pass
+train_vs_N_at_fixed_D_context,C_train_flops,N,nondecreasing,5145,0,0,0,True
+attention_vs_N_at_fixed_D_context,C_attn_flops,N,nondecreasing,5145,0,0,0,True
+total_vs_N_at_fixed_D_context,C_total_flops,N,nondecreasing,5145,0,0,0,True
+train_vs_D_at_fixed_N_context,C_train_flops,D,nondecreasing,5840,0,0,0,True
+attention_vs_D_at_fixed_N_context,C_attn_flops,D,nondecreasing,5840,0,0,0,True
+quality_Q0_vs_D_at_fixed_N_context,C_Q_flops,D,nondecreasing,5840,0,0,0,True
+total_vs_D_at_fixed_N_context,C_total_flops,D,nondecreasing,5840,0,0,0,True
+train_vs_context_at_fixed_ND,C_train_flops,context,constant,4704,0,4704,0,True
+attention_vs_context_at_fixed_ND,C_attn_flops,context,nondecreasing,4704,0,0,0,True
+quality_Q0_vs_context_at_fixed_ND,C_Q_flops,context,constant,4704,0,4704,0,True
+total_vs_context_at_fixed_ND,C_total_flops,context,nondecreasing,4704,0,0,0,True

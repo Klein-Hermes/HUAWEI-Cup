@@ -1,0 +1,27 @@
+{
+  "artifact": "Q3 budget-grid transition analysis P1 smoke receipt",
+  "status": "PASS",
+  "scope": "one real context (2048 tokens), all 1,176 exact observed B1 candidates, complete discrete envelope and the three formal budgets",
+  "checks": {
+    "candidate_count": 1176,
+    "cost_rows_for_context": 1176,
+    "cost_recomputed_against_independent_grid": true,
+    "formal_frontier_selection_parity": true,
+    "finite_grid_envelope_event_count": 373,
+    "formal_budget_interval_comparison_count": 2,
+    "high_budget_support_saturation": true,
+    "C_sat_support_grid_flops": "23000639087744560000000"
+  },
+  "formal_selected_run_ids": {
+    "1e19": "169",
+    "1e22": "1043",
+    "1e24": "1232"
+  },
+  "generated_at_utc": "2026-09-25T06:32:48+00:00",
+  "script_sha256": "7fe315d58e02654a2f76c20bdd6efb9aef957277f767b2917d722d6ccb043398",
+  "input_hashes": {
+    "Q3/04_结果/m3_candidate_grid.csv": "1710f5a9ae72f57c06be4daeb2d6cd4b84ad0aa1a90977c326d6a12f0d7c0b29",
+    "Q3/04_结果/M3_M4成本独立审计/m_cost_grid.csv": "ea18712363bc8312c63cfecb1ed7ef0fbcabb824780d6f4198bbabb33d0b7c10",
+    "Q3/04_结果/M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583"
+  }
+}

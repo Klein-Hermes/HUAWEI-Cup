@@ -1,0 +1,89 @@
+{
+  "status": "P1_SMOKE_PASS",
+  "scope": "one real held-out trajectory, all three forms, one real Q3 scenario",
+  "held_out_trajectory": "EleutherAI/pythia-70m",
+  "training_rows": 1029,
+  "held_out_rows": 147,
+  "scenario": {
+    "budget_flops": 10000000000000000000,
+    "context_length_tokens": 2048
+  },
+  "fit_evidence": {
+    "m0_current": {
+      "fit_source": "authoritative Q2 leave_one_size_out.csv"
+    },
+    "m0_no_floor": {
+      "successful_starts": 4,
+      "attempted_starts": 4,
+      "best_start_id": 1,
+      "training_sse": 0.9215344555881969,
+      "optimizer_status": 2,
+      "optimizer_message": "`ftol` termination condition is satisfied."
+    },
+    "m0_shared_exponent": {
+      "successful_starts": 4,
+      "attempted_starts": 4,
+      "best_start_id": 1,
+      "training_sse": 0.035262614327216724,
+      "optimizer_status": 2,
+      "optimizer_message": "`ftol` termination condition is satisfied."
+    }
+  },
+  "holdout_metrics": {
+    "m0_current": {
+      "n": 147,
+      "rmse": 0.00022023036774935958,
+      "mae": 0.00016875513424748315,
+      "bias_pred_minus_obs": 8.163257133745396e-05,
+      "max_abs_error": 0.0006964703143301776
+    },
+    "m0_no_floor": {
+      "n": 147,
+      "rmse": 0.14835703101952147,
+      "mae": 0.14835505927509962,
+      "bias_pred_minus_obs": -0.14835505927509962,
+      "max_abs_error": 0.15177568929188912
+    },
+    "m0_shared_exponent": {
+      "n": 147,
+      "rmse": 0.030673806498630694,
+      "mae": 0.030616841441203826,
+      "bias_pred_minus_obs": -0.030616841441203826,
+      "max_abs_error": 0.03546429990592248
+    }
+  },
+  "scenario_selections": {
+    "m0_current": {
+      "selected_run_id": 169,
+      "selected_grid_id": 169,
+      "selected_N_B": 0.162405,
+      "selected_D_B": 8.389,
+      "predicted_loss": 3.030435271598895,
+      "cost_flops": 8.732538677232e+18,
+      "feasible_grid_points": 39,
+      "selected_trajectory_id": "EleutherAI/pythia-160m"
+    },
+    "m0_no_floor": {
+      "selected_run_id": 21,
+      "selected_grid_id": 21,
+      "selected_N_B": 0.070542,
+      "selected_D_B": 20.972,
+      "predicted_loss": 2.943809009979211,
+      "cost_flops": 9.4824059791104e+18,
+      "feasible_grid_points": 39,
+      "selected_trajectory_id": "EleutherAI/pythia-70m"
+    },
+    "m0_shared_exponent": {
+      "selected_run_id": 169,
+      "selected_grid_id": 169,
+      "selected_N_B": 0.162405,
+      "selected_D_B": 8.389,
+      "predicted_loss": 3.0185840590140103,
+      "cost_flops": 8.732538677232e+18,
+      "feasible_grid_points": 39,
+      "selected_trajectory_id": "EleutherAI/pythia-160m"
+    }
+  },
+  "all_predictions_finite": true,
+  "all_selections_feasible": true
+}
