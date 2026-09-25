@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Q1.2 冲突分析与污染敏感性流程</title>
+  <style>
+    :root {
+      /* 结构底色取自五张参考图；语义色取自“配色.mplstyle” */
+      --ink: #202720;
+      --muted: #596557;
+      --true: #2e6da4;
+      --base: #c0392b;
+      --pred: #e67e22;
+      --alt: #27ae60;
+      --ref: #7f8c8d;
+      --fill-blue: #adc8c0;
+      --fill-green: #b7d2a5;
+      --fill-yellow: #ccd99b;
+      --fill-warm: #d6c7a1;
+      --fill-red: #d6c0b4;
+      --fill-grey: #afb4aa;
+      --fill-light: #dce7d5;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; color: var(--ink); }
+
+    body {
+      padding: 24px 16px 32px;
+      font-family: "Songti SC", "SimSun", "STSong", "Noto Serif SC", serif;
+    }
+
+    figure { width: min(1200px, 100%); margin: 0 auto; }
+    svg { display: block; width: 100%; height: auto; }
+
+    figcaption {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+
+    .scope {
+      margin: 8px auto 0;
+      text-align: center;
+      color: #465343;
+      font: 14px/1.7 "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    }
+
+    .node-title {
+      fill: var(--ink);
+      font: 700 18px "Songti SC", "SimSun", "STSong", serif;
+      text-anchor: middle;
+    }
+
+    .node-text {
+      fill: #273027;
+      font: 16px "Songti SC", "SimSun", "STSong", serif;
+      text-anchor: middle;
+    }
+
+    .technical {
+      font-family: "Cascadia Mono", "Consolas", "Noto Sans Mono CJK SC", monospace;
+      letter-spacing: 0;
+    }
+
+    .note {
+      fill: #465343;
+      font: 14px "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      text-anchor: middle;
+    }
+
+    @media print {
+      body { padding: 0; }
+      figure { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <figure>
+    <svg viewBox="0 0 1200 720" role="img" aria-labelledby="q1-conflict-title q1-conflict-desc">
+      <title id="q1-conflict-title">Q1.2 冲突分析与污染敏感性流程</title>
+      <desc id="q1-conflict-desc">主分析从冻结标准化指标出发，计算相关结构、样本冲突度及 A1 阈值；随后比较高冲突组、复核 A2 和 A3 同名域，并用两种 A1 Unicode 标记重估校准参数，最终汇总区间、排序稳定性与适用边界。</desc>
+
+      <defs>
+        <marker id="conflict-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+          <path d="M0 0 L10 4 L0 8 Z" fill="#202720" />
+        </marker>
+        <marker id="conflict-arrow-accent" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+          <path d="M0 0 L10 4 L0 8 Z" fill="#e67e22" />
+        </marker>
+        <marker id="conflict-arrow-link" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+          <path d="M0 0 L10 4 L0 8 Z" fill="#2e6da4" />
+        </marker>
+      </defs>
+
+      <!-- 主流程与复核支路：深色直线 / 圆角正交箭头 -->
+      <g fill="none" stroke="#202720" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#conflict-arrow)">
+        <path d="M296 104 H336" />
+        <path d="M560 104 H616" />
+        <path d="M816 104 H872" />
+
+        <path d="M952 144 V184 Q952 192 944 192 H556 Q548 192 548 200 V244" />
+        <path d="M1056 144 V184 Q1056 192 1048 192 H988 Q980 192 980 200 V244" />
+
+        <path d="M548 332 V468 Q548 476 556 476 H652 Q660 476 660 484 V516" />
+        <path d="M980 332 V468 Q980 476 972 476 H924 Q916 476 916 484 V516" />
+      </g>
+
+      <!-- Unicode 敏感性支路采用模型色橙，呼应 mplstyle 的本文模型色 -->
+      <g fill="none" stroke="#e67e22" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#conflict-arrow-accent)">
+        <path d="M184 324 V372" />
+        <path d="M184 464 V516" />
+        <path d="M304 552 H396" />
+      </g>
+
+      <!-- 主分析链 -->
+      <path d="M56 64 H272 L296 144 H80 Z" fill="#adc8c0" stroke="#2e6da4" stroke-width="2" />
+      <text x="176" y="90" class="node-title">冻结公共预处理</text>
+      <text x="176" y="116" class="node-text">A1–A3 <tspan class="technical">norm_*</tspan></text>
+      <text x="176" y="138" class="node-text">只读指标与审计标记</text>
+
+      <rect x="336" y="64" width="224" height="80" rx="6" fill="#dce7d5" stroke="#202720" stroke-width="1.8" />
+      <text x="448" y="92" class="node-title">指标结构诊断</text>
+      <text x="448" y="118" class="node-text">成对 Spearman 相关</text>
+      <text x="448" y="140" class="node-text">与绝对分差</text>
+
+      <rect x="616" y="64" width="200" height="80" rx="6" fill="#b7d2a5" stroke="#202720" stroke-width="1.8" />
+      <text x="716" y="94" class="node-title">样本冲突度</text>
+      <text x="716" y="122" class="node-text technical">D_s</text>
+      <text x="716" y="142" class="node-text">有效指标对内计算</text>
+
+      <rect x="872" y="64" width="264" height="80" rx="6" fill="#adc8c0" stroke="#2e6da4" stroke-width="2" />
+      <text x="1004" y="92" class="node-title">A1 域内阈值与区间</text>
+      <text x="1004" y="118" class="node-text">按来源域冻结 <tspan class="technical">Q95</tspan></text>
+      <text x="1004" y="140" class="node-text">记录阈值不确定性</text>
+
+      <!-- 冲突比较与同域复核 -->
+      <rect x="396" y="244" width="304" height="88" rx="6" fill="#ccd99b" stroke="#e67e22" stroke-width="2" />
+      <text x="548" y="274" class="node-title">高 / 非高冲突组比较</text>
+      <text x="548" y="302" class="node-text">比较 <tspan class="technical">Q_H − Q_eq</tspan></text>
+      <text x="548" y="326" class="node-text">检查差异方向与稳定性</text>
+
+      <rect x="820" y="244" width="316" height="88" rx="18" fill="#b7d2a5" stroke="#27ae60" stroke-width="2" />
+      <text x="978" y="274" class="node-title">冻结阈值与排序</text>
+      <text x="978" y="302" class="node-text">复核 A2 / A3 同名来源域</text>
+      <text x="978" y="326" class="node-text">不在扩展集重新估计</text>
+
+      <!-- A1 Unicode 敏感性 -->
+      <path d="M56 252 H280 L304 324 H80 Z" fill="#d6c7a1" stroke="#e67e22" stroke-width="2" />
+      <text x="180" y="278" class="node-title">A1 Unicode 审计</text>
+      <text x="180" y="306" class="node-text">428 / 463 两种标记</text>
+
+      <rect x="64" y="372" width="240" height="92" rx="6" fill="#d6c7a1" stroke="#e67e22" stroke-width="2" />
+      <text x="184" y="400" class="node-title">分别重估 A1 校准</text>
+      <text x="184" y="428" class="node-text">阈值、权重、Huber δ</text>
+      <text x="184" y="452" class="node-text">与指标对排序</text>
+
+      <rect x="64" y="516" width="240" height="72" rx="22" fill="#d6c7a1" stroke="#e67e22" stroke-width="2" />
+      <text x="184" y="546" class="node-title">比较全量与清洁校准</text>
+      <text x="184" y="574" class="node-text">仅作敏感性分组</text>
+
+      <!-- 结论汇总 -->
+      <rect x="396" y="516" width="740" height="88" rx="24" fill="#afb4aa" stroke="#202720" stroke-width="2.2" />
+      <text x="766" y="548" class="node-title">汇总差值区间、排序稳定性与适用边界</text>
+      <text x="766" y="578" class="node-text">主分析结论 + 跨数据集复核 + A1 校准敏感性并列报告</text>
+
+      <line x1="64" y1="636" x2="1136" y2="636" stroke="#7f8c8d" stroke-width="1" />
+      <text x="600" y="662" class="note">标记只用于敏感性分组；原文不进入统计，不据此认定恶意，也不证明评分器免疫污染。</text>
+      <text x="600" y="690" class="note">主分支只读冻结 <tspan class="technical">norm_*</tspan>；污染支路仅重估 A1 校准并比较稳定性。</text>
+    </svg>
+
+    <figcaption>图 4.2　Q1.2 冲突分析与污染敏感性流程</figcaption>
+    <p class="scope">A2/A3 无原文字段，外部复核限于冻结评分表条件下。</p>
+  </figure>
+</body>
+</html>

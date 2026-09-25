@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>F 题 Q1.1 建模与验证数据流</title>
+  <style>
+    :root {
+      /* 结构底色取自五张参考图；语义色取自“配色.mplstyle” */
+      --ink: #202720;
+      --muted: #596557;
+      --true: #2e6da4;
+      --base: #c0392b;
+      --pred: #e67e22;
+      --alt: #27ae60;
+      --ref: #7f8c8d;
+      --fill-blue: #adc8c0;
+      --fill-green: #b7d2a5;
+      --fill-yellow: #ccd99b;
+      --fill-warm: #d6c7a1;
+      --fill-red: #d6c0b4;
+      --fill-grey: #afb4aa;
+      --fill-light: #dce7d5;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; color: var(--ink); }
+
+    body {
+      padding: 24px 16px 32px;
+      font-family: "Songti SC", "SimSun", "STSong", "Noto Serif SC", serif;
+    }
+
+    figure { width: min(960px, 100%); margin: 0 auto; }
+    svg { display: block; width: 100%; height: auto; }
+
+    figcaption {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+
+    .scope {
+      margin: 8px auto 0;
+      text-align: center;
+      color: #465343;
+      font: 14px/1.7 "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    }
+
+    .node-title {
+      fill: var(--ink);
+      font: 700 18px "Songti SC", "SimSun", "STSong", serif;
+      text-anchor: middle;
+    }
+
+    .node-text {
+      fill: #273027;
+      font: 16px "Songti SC", "SimSun", "STSong", serif;
+      text-anchor: middle;
+    }
+
+    .technical {
+      font-family: "Cascadia Mono", "Consolas", "Noto Sans Mono CJK SC", monospace;
+      letter-spacing: 0;
+    }
+
+    .note {
+      fill: #465343;
+      font: 14px "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      text-anchor: middle;
+    }
+
+    @media print {
+      body { padding: 0; }
+      figure { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <figure>
+    <svg viewBox="0 0 960 900" role="img" aria-labelledby="q1-score-title q1-score-desc">
+      <title id="q1-score-title">F 题 Q1.1 建模与验证数据流</title>
+      <desc id="q1-score-desc">冻结三套数据的指标合同，通过污染与完整性门禁后在 A1 上校准参数，计算等权与加权 Huber 两类候选分，汇总域级区间，再分别开展稳健性校准和人工原文验证。</desc>
+
+      <defs>
+        <marker id="score-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+          <path d="M0 0 L10 4 L0 8 Z" fill="#202720" />
+        </marker>
+        <marker id="score-arrow-accent" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+          <path d="M0 0 L10 4 L0 8 Z" fill="#e67e22" />
+        </marker>
+        <marker id="score-arrow-link" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+          <path d="M0 0 L10 4 L0 8 Z" fill="#2e6da4" />
+        </marker>
+      </defs>
+
+      <!-- 连线位于节点下层；所有转折均为圆角正交路径 -->
+      <g fill="none" stroke="#202720" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#score-arrow)">
+        <path d="M480 96 V128" />
+        <path d="M480 216 V248" />
+
+        <path d="M432 312 V336 Q432 344 424 344 H248 Q240 344 240 352 V368" />
+        <path d="M528 312 V336 Q528 344 536 344 H712 Q720 344 720 352 V368" />
+
+        <path d="M240 440 V468 Q240 476 248 476 H412 Q420 476 420 484 V500" />
+        <path d="M720 440 V468 Q720 476 712 476 H548 Q540 476 540 484 V500" />
+
+        <path d="M420 568 V592 Q420 600 412 600 H248 Q240 600 240 608 V620" />
+        <path d="M540 568 V592 Q540 600 548 600 H712 Q720 600 720 608 V620" />
+
+        <path d="M240 708 V724 Q240 732 248 732 H412 Q420 732 420 740 V760" />
+        <path d="M720 708 V724 Q720 732 712 732 H548 Q540 732 540 740 V760" />
+      </g>
+
+      <!-- 数据合同 -->
+      <rect x="200" y="32" width="560" height="64" rx="22" fill="#adc8c0" stroke="#2e6da4" stroke-width="2" />
+      <text x="480" y="58" class="node-title">冻结 A1 / A2 / A3 标量与 22 指标合同</text>
+      <text x="480" y="82" class="node-text">保留 ID、域、缺失 / 异常 / 单位标记</text>
+
+      <!-- 污染门禁 -->
+      <rect x="160" y="128" width="640" height="88" rx="6" fill="#d6c7a1" stroke="#e67e22" stroke-width="2" />
+      <text x="480" y="154" class="node-title">污染与完整性门禁</text>
+      <text x="480" y="178" class="node-text">PDF 低可见度指令和 JSONL 文本只作审计数据</text>
+      <text x="480" y="200" class="node-text">A1 Unicode 命中不自动删行；A2 / A3 原文映射缺失</text>
+
+      <!-- A1 参数校准 -->
+      <rect x="200" y="248" width="560" height="64" rx="6" fill="#b7d2a5" stroke="#202720" stroke-width="1.8" />
+      <text x="480" y="274" class="node-title">A1 参数校准</text>
+      <text x="480" y="298" class="node-text">缺失度 × 七域重抽样排序稳定性估权；估计并冻结 <tspan class="technical">Huber δ</tspan></text>
+
+      <!-- 两类候选分 -->
+      <rect x="80" y="368" width="320" height="72" rx="18" fill="#dce7d5" stroke="#27ae60" stroke-width="2" />
+      <text x="240" y="396" class="node-title">等权样本分 <tspan class="technical">Q_equal</tspan></text>
+      <text x="240" y="422" class="node-text">有效指标透明平均</text>
+
+      <rect x="560" y="368" width="320" height="72" rx="18" fill="#dce7d5" stroke="#27ae60" stroke-width="2" />
+      <text x="720" y="396" class="node-title">加权 Huber 样本分 <tspan class="technical">Q_huber</tspan></text>
+      <text x="720" y="422" class="node-text">按有效权重重新归一</text>
+
+      <!-- 域级区间 -->
+      <rect x="180" y="500" width="600" height="68" rx="6" fill="#adc8c0" stroke="#2e6da4" stroke-width="2" />
+      <text x="480" y="526" class="node-title">域级稳健位置 + 记录 bootstrap 区间</text>
+      <text x="480" y="552" class="node-text">A1 七域；A2-arxiv / A1-arxiv；A3-github / A1-github</text>
+
+      <!-- 两类验证 -->
+      <rect x="76" y="620" width="328" height="88" rx="6" fill="#ccd99b" stroke="#e67e22" stroke-width="2" />
+      <text x="240" y="648" class="node-title">稳健性校准</text>
+      <text x="240" y="674" class="node-text">全量 / 窄 / 宽 Unicode；单位标记</text>
+      <text x="240" y="698" class="node-text">权重、Huber δ、7 字段剔除敏感性</text>
+
+      <rect x="556" y="620" width="328" height="88" rx="6" fill="#d6c0b4" stroke="#c0392b" stroke-width="2" />
+      <text x="720" y="648" class="node-title">A1 原文双人盲评包</text>
+      <text x="720" y="674" class="node-text">人工评分待回填</text>
+      <text x="720" y="698" class="node-text">A2 / A3 原文验证待补</text>
+
+      <!-- 当前交付状态 -->
+      <rect x="240" y="760" width="480" height="68" rx="24" fill="#afb4aa" stroke="#202720" stroke-width="2.2" />
+      <text x="480" y="786" class="node-title">当前交付：候选评分与稳健性结果已计算</text>
+      <text x="480" y="812" class="node-text">整体效度验证 / 最终唯一 Q 仍待人工与原文验证</text>
+
+      <line x1="80" y1="856" x2="880" y2="856" stroke="#7f8c8d" stroke-width="1" />
+      <text x="480" y="882" class="note">治理冻结不等于统计胜出；<tspan class="technical">q_huber</tspan> 接口不代表人工效度已通过。</text>
+    </svg>
+
+    <figcaption>图 4.1　F 题 Q1.1 建模与验证数据流</figcaption>
+    <p class="scope">范围限定为 Q1.1；Q1.2、Q1.3 与题目分析报告保持独立。</p>
+  </figure>
+</body>
+</html>
