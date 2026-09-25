@@ -1,0 +1,40 @@
+### plot_q1_1.py (exit 0)
+问题一 · 质量评分：
+    ✓ q1-indicator-dist.png
+    ✓ q1-weight-calibration.png
+    ✓ q1-domain-scores.png
+    ✓ q1-domain-transfer.png
+    ✓ q1-rank-robustness.png
+完成。
+### plot_q1_2.py (exit 0)
+问题一 · 冲突消解：
+    ✓ q1-conflict-dist.png
+    ✓ q1-pair-conflict.png
+    ✓ q1-conflict-external.png
+完成。
+### plot_q1_new.py (exit 0)
+问题一 · 新增图：
+    ✓ q1-model-gain.png
+    ✓ q1-conflict-effect.png
+    ✓ q1-substitution-volcano.png
+完成。
+### plot_q2.py (exit 0)
+问题二 · M0 边际效应与弹性：
+    ✓ q2-m0-marginal.png
+    ✓ q2-m0-elasticity.png
+    ✓ q2-b1-residual.png
+    ✓ q2-b1-support.png
+    ✓ q2-q-sign.png
+完成。
+### plot_q3.py (exit 0)
+问题三 · 算力约束与资源配置：
+    ✓ q3-c7-lengths.png
+    ✓ q3-frontier.png
+    ✓ q3-cost-curve.png
+    ✓ q3-conditional.png
+完成。
+### plot_q1_3 selected (exit 0; raw CSV absent so preserved verified archived correlation figure)
+    ✓ q1-model-selection.png
+    ✓ q1-holdout-1m.png
+    ✓ q1-cross-scale.png
+    ✓ q1-substitution.png

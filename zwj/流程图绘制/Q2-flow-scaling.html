@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>F 题 Q2 标度律建模与证据门禁流程</title>
+  <style>
+    :root {
+      /* 与同目录 Q1 流程图保持一致：Okabe–Ito 色盲安全描边、白色节点 */
+      --ink: #20252b;
+      --blue: #0072b2;
+      --sky: #56b4e9;
+      --green: #009e73;
+      --amber: #e69f00;
+      --vermillion: #d55e00;
+      --purple: #cc79a7;
+      --grey: #68717b;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; color: var(--ink); }
+
+    body {
+      padding: 24px 16px 32px;
+      font-family: "Songti SC", "SimSun", "STSong", "Noto Serif SC", serif;
+    }
+
+    figure { width: min(1280px, 100%); margin: 0 auto; }
+    svg { display: block; width: 100%; height: auto; }
+
+    .node-title {
+      fill: var(--ink);
+      font: 700 20px "Songti SC", "SimSun", "STSong", serif;
+      text-anchor: middle;
+    }
+
+    .node-text {
+      fill: var(--ink);
+      font: 18px "Songti SC", "SimSun", "STSong", serif;
+      text-anchor: middle;
+    }
+
+    .compact {
+      font-size: 16px;
+    }
+
+    .gate-title {
+      font-size: 18px;
+    }
+
+    .branch-label {
+      fill: var(--vermillion);
+      font: 700 16px "Songti SC", "SimSun", "STSong", serif;
+      text-anchor: middle;
+    }
+
+    .technical {
+      font-family: "Cascadia Mono", "Consolas", "Noto Sans Mono CJK SC", monospace;
+      letter-spacing: 0;
+    }
+
+    @media print {
+      body { padding: 0; }
+      figure { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <figure>
+    <svg viewBox="0 0 1280 1224" role="img" aria-labelledby="q2-scaling-title q2-scaling-desc">
+      <title id="q2-scaling-title">F 题 Q2 标度律建模与证据门禁流程</title>
+      <desc id="q2-scaling-desc">先审计 B 组数据和跨来源 Loss 口径，再用 B1 拟合经典 N、D 标度律 M0 并计算局部效应。配比 p 与 Loss 的连接门禁未通过，因此 M1 未估计；独立于 p 的 Q 变化也不可识别，因此 M2 未估计。图中区分 B2 半合成、B3 同来源插值及 B4/B5 不可比验证边界。</desc>
+
+      <defs>
+        <marker id="q2-scaling-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+          <path d="M0 0 L10 4 L0 8 Z" fill="#20252b" />
+        </marker>
+      </defs>
+
+      <!-- 主流程与分支：连线置于节点下层 -->
+      <g fill="none" stroke="#20252b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#q2-scaling-arrow)">
+        <path d="M640 112 V144" />
+
+        <path d="M408 236 V264 Q408 272 400 272 H356 Q348 272 348 280 V304" />
+        <path d="M872 236 V264 Q872 272 880 272 H952 Q960 272 960 280" />
+
+        <path d="M348 416 V496" />
+        <path d="M960 440 V500" />
+        <path d="M960 596 V654" />
+        <path d="M960 834 V900" />
+
+        <path d="M348 632 V1024 Q348 1032 356 1032 H488 Q496 1032 496 1040 V1080" />
+        <path d="M960 1004 V1032 Q960 1040 952 1040 H792 Q784 1040 784 1048 V1080" />
+      </g>
+
+      <!-- 菱形出口标签，放在连线旁并留出空白 -->
+      <rect x="970" y="452" width="112" height="24" rx="4" fill="#ffffff" />
+      <text x="1026" y="470" class="branch-label">未通过</text>
+      <rect x="970" y="852" width="112" height="24" rx="4" fill="#ffffff" />
+      <text x="1026" y="870" class="branch-label">未识别</text>
+
+      <!-- 输入 -->
+      <path d="M280 24 H1000 L1024 112 H256 Z" fill="#ffffff" stroke="#0072b2" stroke-width="2.4" />
+      <text x="640" y="56" class="node-title">B 组训练 / Loss 数据与 Q1 冻结接口</text>
+      <text x="640" y="84" class="node-text">按来源、训练轨迹与检查点对齐 <tspan class="technical">N, D, Loss, p, Q</tspan></text>
+
+      <!-- 来源和数据口径审计 -->
+      <rect x="216" y="144" width="848" height="92" rx="6" fill="#ffffff" stroke="#68717b" stroke-width="2.2" />
+      <text x="640" y="174" class="node-title">数据完整性与来源口径审计</text>
+      <text x="640" y="202" class="node-text">核对来源、轨迹、单位与 Loss 协议；B1 作为经典基线数据</text>
+      <text x="640" y="228" class="node-text">跨来源记录先分层审查，不把不可比的 Loss 合并拟合</text>
+
+      <!-- M0 基线 -->
+      <rect x="56" y="304" width="584" height="112" rx="6" fill="#ffffff" stroke="#009e73" stroke-width="2.4" />
+      <text x="348" y="336" class="node-title">B1 拟合经典标度律 M0</text>
+      <text x="348" y="366" class="node-text"><tspan class="technical">L = E + A N⁻ᵅ + B D⁻ᵝ</tspan></text>
+      <text x="348" y="396" class="node-text">8 条轨迹 × 147 个检查点；限定在 B1 支持域</text>
+
+      <!-- 配比门禁 -->
+      <path d="M960 280 L1120 360 L960 440 L800 360 Z" fill="#ffffff" stroke="#e69f00" stroke-width="2.4" />
+      <text x="960" y="340" class="node-title">p—Loss 联接有效？</text>
+      <text x="960" y="368" class="node-text compact">独立于 N / D 与模型族变化</text>
+      <text x="960" y="396" class="node-text compact">当前核验联接：0 条</text>
+
+      <!-- M0 衍生结果与来源验证 -->
+      <rect x="56" y="496" width="584" height="136" rx="6" fill="#ffffff" stroke="#0072b2" stroke-width="2.4" />
+      <text x="348" y="526" class="node-title">M0 局部效应与验证边界</text>
+      <text x="348" y="556" class="node-text compact">计算 <tspan class="technical">dL/dN、dL/dD</tspan> 与弹性；1,000 次整轨迹 Bootstrap</text>
+      <text x="348" y="588" class="node-text compact">B2 半合成 · B3 同源插值 · B4 / B5 与 B1 不可比</text>
+      <text x="348" y="616" class="node-text compact">Bootstrap 仅有 8 条独立轨迹，作为稳定性提示</text>
+
+      <!-- M1 状态 -->
+      <rect x="760" y="500" width="400" height="96" rx="6" fill="#ffffff" stroke="#d55e00" stroke-width="2.4" />
+      <text x="960" y="530" class="node-title">M1：<tspan class="technical">Loss=f(N,D,p)</tspan></text>
+      <text x="960" y="558" class="node-text">p 门禁未通过：<tspan class="technical">NOT_ESTIMATED</tspan></text>
+      <text x="960" y="584" class="node-text compact">待有可追溯、逐检查点的配比变化后重开</text>
+
+      <!-- 独立 Q 门禁 -->
+      <path d="M960 654 L1140 744 L960 834 L780 744 Z" fill="#ffffff" stroke="#cc79a7" stroke-width="2.4" />
+      <text x="960" y="720" class="node-title gate-title">Q 独立增量？</text>
+      <text x="960" y="748" class="node-text compact">控制 p / N / D 后仍变化</text>
+      <text x="960" y="776" class="node-text compact">当前：未识别</text>
+
+      <!-- M2 状态 -->
+      <rect x="760" y="900" width="400" height="104" rx="6" fill="#ffffff" stroke="#d55e00" stroke-width="2.4" />
+      <text x="960" y="930" class="node-title">M2：<tspan class="technical">Loss=f(N,D,p,Q)</tspan></text>
+      <text x="960" y="958" class="node-text compact">p 与独立 Q 门禁未过：<tspan class="technical">NOT_ESTIMATED</tspan></text>
+      <text x="960" y="986" class="node-text compact"><tspan class="technical">Q_covered(p)</tspan> 由 p 派生，不是独立 Q</text>
+
+      <!-- 当前收口 -->
+      <rect x="224" y="1080" width="832" height="112" rx="20" fill="#ffffff" stroke="#20252b" stroke-width="2.4" />
+      <text x="640" y="1112" class="node-title">当前数据版本：<tspan class="technical">FROZEN_WITH_LIMITATIONS</tspan></text>
+      <text x="640" y="1140" class="node-text">M0 是 B1 支持域内的经典参照；M1 / M2 尚未估计</text>
+      <text x="640" y="1168" class="node-text">门禁未过不表示 p 或 Q 无效；需要新的可追溯联合数据</text>
+    </svg>
+  </figure>
+</body>
+</html>

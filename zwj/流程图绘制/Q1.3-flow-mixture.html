@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>F 题 Q1.3 配比—Loss 建模与验证流程</title>
+  <style>
+    :root {
+      /* 与同目录 Q1 流程图保持一致：Okabe–Ito 色盲安全描边、白色节点 */
+      --ink: #20252b;
+      --blue: #0072b2;
+      --sky: #56b4e9;
+      --green: #009e73;
+      --amber: #e69f00;
+      --vermillion: #d55e00;
+      --purple: #cc79a7;
+      --grey: #68717b;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; color: var(--ink); }
+
+    body {
+      padding: 24px 16px 32px;
+      font-family: "Songti SC", "SimSun", "STSong", "Noto Serif SC", serif;
+    }
+
+    figure { width: min(1200px, 100%); margin: 0 auto; }
+    svg { display: block; width: 100%; height: auto; }
+
+    .node-title {
+      fill: var(--ink);
+      font: 700 20px "Songti SC", "SimSun", "STSong", serif;
+      text-anchor: middle;
+    }
+
+    .node-text {
+      fill: var(--ink);
+      font: 18px "Songti SC", "SimSun", "STSong", serif;
+      text-anchor: middle;
+    }
+
+    .compact { font-size: 16px; }
+
+    .technical {
+      font-family: "Cascadia Mono", "Consolas", "Noto Sans Mono CJK SC", monospace;
+      letter-spacing: 0;
+    }
+
+    @media print {
+      body { padding: 0; }
+      figure { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <figure>
+    <svg viewBox="0 0 1200 900" role="img" aria-labelledby="q1-mixture-title q1-mixture-desc">
+      <title id="q1-mixture-title">F 题 Q1.3 配比—Loss 建模与验证流程</title>
+      <desc id="q1-mixture-desc">使用 A4/A5 训练数据，在分组嵌套交叉验证中选择配比模型；并行比较单纯形岭回归与由配比确定的 Q-covered 扩展，再用冻结评估集检查同尺度和跨尺度表现，单独标记估算表一致性检查及质量效应解释边界。</desc>
+
+      <defs>
+        <marker id="q1-mixture-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+          <path d="M0 0 L10 4 L0 8 Z" fill="#20252b" />
+        </marker>
+      </defs>
+
+      <!-- 连线置于节点下层，采用圆角正交路径 -->
+      <g fill="none" stroke="#20252b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#q1-mixture-arrow)">
+        <path d="M600 112 V144" />
+        <path d="M600 232 V264" />
+
+        <path d="M456 352 V376 Q456 384 448 384 H328 Q320 384 320 392 V416" />
+        <path d="M744 352 V376 Q744 384 752 384 H872 Q880 384 880 392 V416" />
+
+        <path d="M320 520 V552 Q320 560 328 560 H448 Q456 560 456 568 V592" />
+        <path d="M880 520 V552 Q880 560 872 560 H752 Q744 560 744 568 V592" />
+        <path d="M600 700 V760" />
+      </g>
+
+      <!-- 输入 -->
+      <path d="M280 24 H920 L940 112 H260 Z" fill="#ffffff" stroke="#0072b2" stroke-width="2.4" />
+      <text x="600" y="56" class="node-title">A4 / A5 配比训练数据</text>
+      <text x="600" y="84" class="node-text">17 域配比 <tspan class="technical">p</tspan> × 13 个验证 <tspan class="technical">Loss</tspan></text>
+
+      <!-- 数据审计 -->
+      <rect x="200" y="144" width="800" height="88" rx="6" fill="#ffffff" stroke="#68717b" stroke-width="2.2" />
+      <text x="600" y="174" class="node-title">配比与映射审计</text>
+      <text x="600" y="200" class="node-text">检查单纯形行和、零比例与重复配方；区分 direct / near 映射</text>
+      <text x="600" y="224" class="node-text">保留原始行；闭合配比作为主结果，原始配比作敏感性</text>
+
+      <!-- 训练内选模 -->
+      <rect x="260" y="264" width="680" height="88" rx="6" fill="#ffffff" stroke="#0072b2" stroke-width="2.4" />
+      <text x="600" y="294" class="node-title">A4 / A5 分组嵌套交叉验证</text>
+      <text x="600" y="320" class="node-text">仅在训练折内选择模型与正则强度 <tspan class="technical">λ</tspan></text>
+      <text x="600" y="344" class="node-text">A6–A11 与 A12–A15 不参与调参或选模</text>
+
+      <!-- 两条比较路线 -->
+      <rect x="60" y="416" width="520" height="104" rx="6" fill="#ffffff" stroke="#009e73" stroke-width="2.4" />
+      <text x="320" y="448" class="node-title">p-only 主模型</text>
+      <text x="320" y="480" class="node-text"><tspan class="technical">simplex_ridge</tspan>；每个目标的 17 个系数和为 0</text>
+      <text x="320" y="504" class="node-text">系数解释为域间配比替代效应</text>
+
+      <rect x="620" y="416" width="520" height="104" rx="6" fill="#ffffff" stroke="#56b4e9" stroke-width="2.4" />
+      <text x="880" y="448" class="node-title">受限 p+Q 预测扩展</text>
+      <text x="880" y="480" class="node-text compact">线性 <tspan class="technical">p + Q_covered(p)</tspan>，与线性 / 二次 p-only 同折比较</text>
+      <text x="880" y="504" class="node-text compact"><tspan class="technical">Q_covered(p)</tspan> 由配比派生，不是独立质量信息</text>
+
+      <!-- 冻结评估 -->
+      <rect x="160" y="592" width="880" height="108" rx="6" fill="#ffffff" stroke="#e69f00" stroke-width="2.4" />
+      <text x="600" y="622" class="node-title">冻结评估与一致性检查</text>
+      <text x="600" y="650" class="node-text">A6 / A7：1M 同尺度；A8 / A9：60M；A10 / A11：1B 跨尺度</text>
+      <text x="600" y="678" class="node-text">A12–A15 的 10B / 70B 结果只与估算表核对，不视为真实测试集</text>
+
+      <!-- 输出与边界 -->
+      <rect x="160" y="760" width="880" height="104" rx="20" fill="#ffffff" stroke="#20252b" stroke-width="2.4" />
+      <text x="600" y="790" class="node-title">报告配比—Loss 结果与适用边界</text>
+      <text x="600" y="818" class="node-text">主模型为 <tspan class="technical">simplex_ridge</tspan>；同尺度信号不能外推为稳定的跨尺度预测</text>
+      <text x="600" y="842" class="node-text">p+Q 未稳定优于二次 p-only；不据此宣称独立质量效应</text>
+    </svg>
+  </figure>
+</body>
+</html>

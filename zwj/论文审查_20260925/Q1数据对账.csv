@@ -1,0 +1,45 @@
+﻿核对项,论文报告值,工作区核对来源,工作区核对值,结论与口径说明
+A1预处理行数,51230,"Q1/03_结果/00_公共预处理/v1/a1_preprocessed.csv.gz",51230,一致；按存档预处理输出核对
+A2预处理行数,17523,"Q1/03_结果/00_公共预处理/v1/a2_preprocessed.csv.gz",17523,一致；按存档预处理输出核对
+A3预处理行数,203752,"Q1/03_结果/00_公共预处理/v1/a3_preprocessed.csv.gz",203752,一致；按存档预处理输出核对
+A1-A3合计,272505,"a1_preprocessed.csv.gz / a2_preprocessed.csv.gz / a3_preprocessed.csv.gz",272505,一致；51230+17523+203752
+A1 q_equal 域宏平均,0.49622,"results/q1_1/v1/a1_macro_summary.csv",0.4962230100,一致；论文四舍五入至5位小数
+A1 q_huber 域宏平均,0.49848,"results/q1_1/v1/a1_macro_summary.csv",0.4984781048,一致；论文四舍五入至5位小数
+A2 arxiv q_equal 域分数,0.53096,"results/q1_1/v1/domain_summary.csv domain_score",0.5309591176,一致；须使用 domain_score，不是 mean_sample_score
+A2 arxiv q_huber 域分数,0.55997,"results/q1_1/v1/domain_summary.csv domain_score",0.5599738811,一致；须使用 domain_score，不是 mean_sample_score
+A3 github q_equal 域分数,0.40394,"results/q1_1/v1/domain_summary.csv domain_score",0.4039371675,一致；须使用 domain_score，不是 mean_sample_score
+A3 github q_huber 域分数,0.38887,"results/q1_1/v1/domain_summary.csv domain_score",0.3888717821,一致；须使用 domain_score，不是 mean_sample_score
+A1 arxiv 冲突度中位数,0.4382,"results/q1_2_conflict_model/v1/domain_summary.csv",0.4382232734,一致；四位小数
+A1 arxiv q95阈值,0.4660,"results/q1_2_conflict_model/v1/thresholds.csv",0.4660317515,一致；四位小数
+A1 arxiv 高冲突率,0.0500,"results/q1_2_conflict_model/v1/domain_summary.csv",0.0500352361,一致；按该域自身 q95 阈值定义
+A1 book 高冲突率,0.0526,"results/q1_2_conflict_model/v1/domain_summary.csv",0.0526315789,一致；小样本域 n=171
+Q1 冲突率正文概括,A1各域恒为0.0500,"paper.tex 第5.4节文字与表5",book域0.0526,不一致；应改为 book 域 0.0526、其他域约0.05，并解释经验分位数有限样本效应
+A2 arxiv 冲突度中位数,0.4393,"results/q1_2_conflict_model/v1/domain_summary.csv",0.4392793312,一致；四位小数
+A2 arxiv 高冲突率,0.0447,"results/q1_2_conflict_model/v1/domain_summary.csv",0.0447411973,一致；套用 A1 域阈值
+A3 github 冲突度中位数,0.3236,"results/q1_2_conflict_model/v1/domain_summary.csv",0.3236476275,一致；四位小数
+A3 github 高冲突率,0.0514,"results/q1_2_conflict_model/v1/domain_summary.csv",0.0513761828,一致；套用 A1 域阈值
+Q1.3 均值基线分组CV标准化MSE,1.00448,"results/q1_3/v1/full_training_model_selection.csv",1.0044751468,一致；论文五位小数
+Q1.3 参考分量OLS分组CV标准化MSE,0.40032,"results/q1_3/v1/full_training_model_selection.csv",0.4003161514,一致；论文五位小数
+Q1.3 单纯形岭回归分组CV标准化MSE,0.39860,"results/q1_3/v1/full_training_model_selection.csv",0.3985994161,一致；论文五位小数，选定模型
+A6/A7 1M 同尺度 MAE,0.3876,"results/q1_3/v1/holdout_metrics.csv；closed、13个目标宏平均",0.3876144,一致；保留论文主模型 closed 口径
+A6/A7 1M 同尺度 RMSE,0.4539,"results/q1_3/v1/holdout_metrics.csv；closed、13个目标宏平均",0.4538630,一致；保留论文主模型 closed 口径
+A6/A7 1M 同尺度 R2,0.6189,"results/q1_3/v1/holdout_metrics.csv；closed、13个目标宏平均",0.6188879,一致；保留论文主模型 closed 口径
+A6/A7 1M 同尺度 Spearman,0.8327,"results/q1_3/v1/holdout_metrics.csv；closed、13个目标宏平均",0.8326617,一致；保留论文主模型 closed 口径
+A8/A9 60M 跨尺度 MAE,1.5125,"results/q1_3/v1/holdout_metrics.csv；closed、13个目标宏平均",1.5125359,一致；跨尺度 R2 为负，应强调不能作准确跨尺度预测
+A8/A9 60M 跨尺度 RMSE,1.5590,"results/q1_3/v1/holdout_metrics.csv；closed、13个目标宏平均",1.5590162,一致；保留论文主模型 closed 口径
+A8/A9 60M 跨尺度 R2,-7.9336,"results/q1_3/v1/holdout_metrics.csv；closed、13个目标宏平均",-7.9335695,一致；负R2代表预测水平误差很差
+A8/A9 60M 跨尺度 Spearman,0.8314,"results/q1_3/v1/holdout_metrics.csv；closed、13个目标宏平均",0.8313862,一致；排序相关较高不能替代绝对误差表现
+A10/A11 1B 跨尺度 MAE,3.1830,"results/q1_3/v1/holdout_metrics.csv；closed、13个目标宏平均",3.1829563,一致；保留论文主模型 closed 口径
+A10/A11 1B 跨尺度 RMSE,3.1970,"results/q1_3/v1/holdout_metrics.csv；closed、13个目标宏平均",3.1969897,一致；保留论文主模型 closed 口径
+A10/A11 1B 跨尺度 R2,-810.12,"results/q1_3/v1/holdout_metrics.csv；closed、13个目标宏平均",-810.1196,一致；负R2非常大，解释应谨慎且限定用途
+A10/A11 1B 跨尺度 Spearman,0.7268,"results/q1_3/v1/holdout_metrics.csv；closed、13个目标宏平均",0.7268456,一致；排序相关较高不能替代绝对误差表现
+A12/A13 10B 一致性检查 MAE,3.5730,"results/q1_3/v1/estimate_consistency_metrics.csv；closed、13目标宏平均",3.57304,一致；估计表一致性检查，不是独立留出验证
+A12/A13 10B 一致性检查 RMSE,3.6016,"results/q1_3/v1/estimate_consistency_metrics.csv；closed、13目标宏平均",3.60155,一致；估计表一致性检查，不是独立留出验证
+A12/A13 10B 一致性检查 R2,-236.86,"results/q1_3/v1/estimate_consistency_metrics.csv；closed、13目标宏平均",-236.85738,一致；不可包装成外部验证
+A12/A13 10B 一致性检查 Spearman,0.4896,"results/q1_3/v1/estimate_consistency_metrics.csv；closed、13目标宏平均",0.48978,一致；四位小数一致
+A14/A15 70B 一致性检查 MAE,3.9556,"results/q1_3/v1/estimate_consistency_metrics.csv；closed、13目标宏平均",3.95562,一致；估计表一致性检查，不是独立留出验证
+A14/A15 70B 一致性检查 RMSE,3.9848,"results/q1_3/v1/estimate_consistency_metrics.csv；closed、13目标宏平均",3.98477,一致；估计表一致性检查，不是独立留出验证
+A14/A15 70B 一致性检查 R2,-385.31,"results/q1_3/v1/estimate_consistency_metrics.csv；closed、13目标宏平均",-385.31283,一致；不可包装成外部验证
+A14/A15 70B 一致性检查 Spearman,0.4132,"results/q1_3/v1/estimate_consistency_metrics.csv；closed、13目标宏平均",0.41329,一致；四位小数一致
+原始输入可否端到端重算,不可,"工作区题目附件目录未发现 A_data_value 原始表；存在预处理 gzip 与结果 CSV",仅可做处理结果层对账,限制项；恢复原始附件并重跑后才能完成源头核验
+冻结清单SHA-256,三个结果文件清单哈希,"results/q1_final/q1_final_freeze.json 对比工作副本",CRLF 转 LF 后三文件均匹配,一致；原始字节哈希因 Windows 换行转换不同

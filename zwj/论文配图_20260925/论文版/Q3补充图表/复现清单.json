@@ -1,0 +1,317 @@
+{
+  "purpose": "Q3 four supplementary figures; existing Q1/Q2/Q3 data are read-only; no resampling, refitting, or fabricated observations",
+  "python": "3.13.15 | packaged by Anaconda, Inc. | (main, Aug 14 2026, 17:17:48) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "D:\\miniconda3\\envs\\huawei-cup\\python.exe",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.9",
+    "Pillow": "12.3.0"
+  },
+  "style": {
+    "journal": "general",
+    "lang": "zh",
+    "sciplots_used": false,
+    "cjk_font": "SimHei",
+    "constrained_layout": false,
+    "font_chain": [
+      "Microsoft YaHei",
+      "SimHei",
+      "Arial",
+      "Helvetica",
+      "DejaVu Sans"
+    ]
+  },
+  "png_dpi": 600,
+  "command_from_project_root": "D:\\miniconda3\\envs\\huawei-cup\\python.exe zwj\\Q3补充图表\\plot_q3_supplementary_figures.py",
+  "inputs": {
+    "Q3\\04_结果\\M0_ND_reference_frontier.csv": {
+      "sha256": "8018ECF57B47781098E4F9BC8CEB02F08B998B222DC674993640B32C0F936583"
+    },
+    "Q3\\04_结果\\M0_ND_cluster_bootstrap_frontier.csv": {
+      "sha256": "2E0677F48AE10ACF4C148EA021864C14C09B4D9D8F7F83BADAAF551792C796F2"
+    },
+    "Q3\\04_结果\\M0_ND_cluster_bootstrap_selection_frequency.csv": {
+      "sha256": "37B12F07C580291CAF078722EA4E3F355AE72A78D34C7FFA7923C8BF6E920AB5"
+    },
+    "Q3\\04_结果\\M0_budget_context_cost_shares.csv": {
+      "sha256": "87535F7D2CAE27C5B4FC13C77CB4848BBAFC2E7C37ED5340FCB5BEFAC9E6A26D"
+    },
+    "Q3\\04_结果\\M0_budget_context_descriptive_shifts.csv": {
+      "sha256": "5707919EBDC1037A91E6B3FBEC8996A0BB16A470DBA68DB95BD959BE6C6DA84E"
+    },
+    "Q1\\03_结果\\Q1.1\\v1\\a1_macro_summary.csv": {
+      "sha256": "6B7CCA1865EF6785981180FB0AEA41FE839A5B6C12CB012BB21FA089D8B383F9"
+    },
+    "Q3\\03_代码\\analyze_q3_cost_sensitivities.py": {
+      "sha256": "34E21E9296C638C8677CA9E3D1E05FE0A57E3CAAB039E9AB5F750F7376B338E1"
+    }
+  },
+  "figures": {
+    "result_q3_p1_budget_nd_frontier": [
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p1_budget_nd_frontier.svg",
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p1_budget_nd_frontier.pdf",
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p1_budget_nd_frontier.png",
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p1_budget_nd_frontier_grayscale.png"
+    ],
+    "result_q3_p2_bootstrap_selection_stability": [
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability.svg",
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability.pdf",
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability.png",
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability_grayscale.png"
+    ],
+    "result_q3_p3_resource_shift_dashboard": [
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p3_resource_shift_dashboard.svg",
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p3_resource_shift_dashboard.pdf",
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p3_resource_shift_dashboard.png",
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p3_resource_shift_dashboard_grayscale.png"
+    ],
+    "result_q3_p4_q_baseline_sensitivity": [
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity.svg",
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity.pdf",
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity.png",
+      "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity_grayscale.png"
+    ]
+  },
+  "outputs_sha256": {
+    "zwj\\论文配图_20260925\\plot_q3_supplementary_figures.py": "5F495F530D5BB83225F4A94F272DB098D2372BD7B2CE911ECDEB2C07B8FA1571",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p1_budget_nd_frontier.svg": "287DADBC96CB9F6796199FEF6BF3768F3371D653F815E31E913C4D89B6BA8F8D",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p1_budget_nd_frontier.pdf": "99FBAEFA8D544A9F008D3B02BB4C4A077D9B686F2497495362758DBB6E505415",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p1_budget_nd_frontier.png": "77213EC595E33FFCAA5CAD17E0CC7933EA41F6B68F5416CBB3D4C6B7F0E82614",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p1_budget_nd_frontier_grayscale.png": "82F3B7E3779518384C0364256FDFA59A437349E883F29777B061F25F3CBD01B5",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability.svg": "0A2DCC1C095E3E65C04A6DAFEF7563C33F656ABEDC2F72F7797457BB43AF838C",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability.pdf": "87BA709BADE9E2ABAFC0B30D184988FF173103E6F404752FE912DDBA9E44B16B",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability.png": "2BD3296BB223202B1C66E637F6AD24A06FE9626F602275248F97BF8A5A1CD256",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p2_bootstrap_selection_stability_grayscale.png": "05C668C6E7F357BB1C7BA92605D95AA58E9FC0188CADD642365EF59E3E6A5777",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p3_resource_shift_dashboard.svg": "EE32516D614A55A04A957305E611AE7620444CB796F0B2658952F048F4FC763A",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p3_resource_shift_dashboard.pdf": "E4D9611F7393D5D5CE16854711A1663A1D6C89B8D762B052B79D5B211199308D",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p3_resource_shift_dashboard.png": "FBD1B0071D7E7CA6BA2DF83456419800E1AC7D77874C8429BFF633D4C955C51D",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p3_resource_shift_dashboard_grayscale.png": "5AD8ED897A133BEB753A930B2DAFFDBB87CBF3C64E31CAAAD3F80FB8D73E56B0",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity.svg": "57EB3F81A1EC8E81A85240B9D6E901D38754293B919CBEA3899F95C2DB644D4F",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity.pdf": "20231CF865D598E914E7F2800874102597F375EBA705436951E77FDCA38A5EE1",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity.png": "73D86A66C6851DB2D2874500051B1222B5009F70ACF189240B6871AFAC43A421",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\result_q3_p4_q_baseline_sensitivity_grayscale.png": "C490B4B0A632C6A8CE9F4F2EB55F3EC8BD61450D2C22F5905A8162BC6B888882",
+    "zwj\\论文配图_20260925\\论文版\\Q3补充图表\\图表契约.md": "A2993105CDD21E6DAF07188684D1B915D569A39AA1CCB92EAAFD8B622ABB71F4"
+  },
+  "statistics_and_checks": {
+    "result_q3_p1_budget_nd_frontier": {
+      "source_rows": 15,
+      "scenario_count": 15,
+      "budget_levels": [
+        1e+19,
+        1e+22,
+        1e+24
+      ],
+      "context_levels_tokens": [
+        2048,
+        4096,
+        8192,
+        32768,
+        131072
+      ],
+      "support_upper_bound_points": 5,
+      "figure_variant": "paper_without_overall_title",
+      "layout_audit": {
+        "layout_verdict": "PASS",
+        "layout_issue_count": 0
+      }
+    },
+    "result_q3_p2_bootstrap_selection_stability": {
+      "source_rows": {
+        "frontier": 15,
+        "selection_frequency": 15
+      },
+      "bootstrap_replicates": [
+        1000
+      ],
+      "N_interval_max_width": 0.0,
+      "D_interval_max_width": 0.0,
+      "loss_interval_max_width": 0.00021383562280918866,
+      "baseline_selection_frequency_range": [
+        1.0,
+        1.0
+      ],
+      "selection_frequency_crosscheck_range": [
+        1.0,
+        1.0
+      ],
+      "figure_variant": "paper_without_overall_title",
+      "layout_audit": {
+        "layout_verdict": "PASS",
+        "layout_issue_count": 0
+      }
+    },
+    "result_q3_p3_resource_shift_dashboard": {
+      "source_rows": {
+        "frontier": 15,
+        "cost_shares": 15,
+        "descriptive_shifts": 22
+      },
+      "merge_rows": 15,
+      "comparison_axis_counts": {
+        "context_at_fixed_budget": 12,
+        "budget_at_fixed_context": 10
+      },
+      "configuration_changed_pairs": 17,
+      "quality_cost_share_range": [
+        0.0,
+        0.0
+      ],
+      "cost_share_sum_max_abs_error": 1.1102230246251565e-16,
+      "support_upper_bound_scenarios": 5,
+      "figure_variant": "paper_without_overall_title",
+      "layout_audit": {
+        "layout_verdict": "PASS",
+        "layout_issue_count": 0
+      }
+    },
+    "result_q3_p4_q_baseline_sensitivity": {
+      "source_rows": {
+        "frontier": 15,
+        "q1_baselines": 2
+      },
+      "q0": {
+        "q_huber": 0.4984781048476464,
+        "q_equal": 0.4962230100496153
+      },
+      "q0_difference_q_equal_minus_q_huber": -0.0022550947980310987,
+      "fixed_q_branch_reason": "M0 has no Q term and C_Q is zero at each branch's own Q0; feasible set and objective are unchanged",
+      "max_abs_N_B_difference": 0.0,
+      "max_abs_D_B_difference": 0.0,
+      "max_abs_m0_loss_difference": 0.0,
+      "figure_variant": "paper_without_overall_title",
+      "layout_audit": {
+        "layout_verdict": "PASS",
+        "layout_issue_count": 0
+      }
+    }
+  },
+  "file_audits": {
+    "result_q3_p1_budget_nd_frontier": {
+      "format_pair_complete": true,
+      "png": {
+        "pixels": [
+          4320,
+          3120
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "mode": "RGBA"
+      },
+      "grayscale": {
+        "pixels": [
+          4320,
+          3120
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "mode": "L"
+      },
+      "svg_xml_readable": true,
+      "svg_editable_text_present": true,
+      "legend_overlap_and_tick_collision": "programmatic layout audit passed; visually reviewed after rendering",
+      "grayscale_redundancy": "series also encoded by marker/line style or hatch where applicable"
+    },
+    "result_q3_p2_bootstrap_selection_stability": {
+      "format_pair_complete": true,
+      "png": {
+        "pixels": [
+          4320,
+          3720
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "mode": "RGBA"
+      },
+      "grayscale": {
+        "pixels": [
+          4320,
+          3720
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "mode": "L"
+      },
+      "svg_xml_readable": true,
+      "svg_editable_text_present": true,
+      "legend_overlap_and_tick_collision": "programmatic layout audit passed; visually reviewed after rendering",
+      "grayscale_redundancy": "series also encoded by marker/line style or hatch where applicable"
+    },
+    "result_q3_p3_resource_shift_dashboard": {
+      "format_pair_complete": true,
+      "png": {
+        "pixels": [
+          4320,
+          3600
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "mode": "RGBA"
+      },
+      "grayscale": {
+        "pixels": [
+          4320,
+          3600
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "mode": "L"
+      },
+      "svg_xml_readable": true,
+      "svg_editable_text_present": true,
+      "legend_overlap_and_tick_collision": "programmatic layout audit passed; visually reviewed after rendering",
+      "grayscale_redundancy": "series also encoded by marker/line style or hatch where applicable"
+    },
+    "result_q3_p4_q_baseline_sensitivity": {
+      "format_pair_complete": true,
+      "png": {
+        "pixels": [
+          4320,
+          3480
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "mode": "RGBA"
+      },
+      "grayscale": {
+        "pixels": [
+          4320,
+          3480
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "mode": "L"
+      },
+      "svg_xml_readable": true,
+      "svg_editable_text_present": true,
+      "legend_overlap_and_tick_collision": "programmatic layout audit passed; visually reviewed after rendering",
+      "grayscale_redundancy": "series also encoded by marker/line style or hatch where applicable"
+    }
+  },
+  "manual_visual_review": {
+    "status": "completed",
+    "checks": [
+      "titles, axes, units, legends and panel labels present",
+      "no visible text clipping or legend occlusion at final size",
+      "budget and scenario tick labels remain distinguishable",
+      "support-bound markers are visible",
+      "grayscale previews retain redundant marker, line-style, or hatch encoding"
+    ]
+  }
+}

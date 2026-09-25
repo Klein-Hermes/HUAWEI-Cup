@@ -1,0 +1,1206 @@
+{
+  "active_latex_figure_references": 32,
+  "unique_active_references": 32,
+  "missing_latex_references": [],
+  "groups": [
+    {
+      "directory": "绘图版\\核心图表",
+      "figure_count": 27,
+      "figures": [
+        {
+          "name": "q1-conflict-dist",
+          "png_pixels": [
+            3198,
+            2970
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 334755,
+          "png_sha256": "c0b35edf41ba1d2cc2095cb977c843f688e3111d22e37f18fe09a0e465816711",
+          "pdf_bytes": 65614,
+          "svg_bytes": 137176,
+          "gray_png_bytes": 171549
+        },
+        {
+          "name": "q1-conflict-effect",
+          "png_pixels": [
+            3852,
+            2367
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 627495,
+          "png_sha256": "093721c524f9a5a0ab2ec16ea3658ac76a9bae4d74a0e0518928059c160c1d58",
+          "pdf_bytes": 64661,
+          "svg_bytes": 182890,
+          "gray_png_bytes": 285513
+        },
+        {
+          "name": "q1-conflict-external",
+          "png_pixels": [
+            3841,
+            1566
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 240911,
+          "png_sha256": "fb57453f43763af4075a5253f3d13d332ea6e0e4a38972bf6f476a9346614ea6",
+          "pdf_bytes": 41009,
+          "svg_bytes": 17827,
+          "gray_png_bytes": 124548
+        },
+        {
+          "name": "q1-cross-scale",
+          "png_pixels": [
+            3864,
+            2103
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 330581,
+          "png_sha256": "c924d0cf3985ec0f480caf6857efb57f64041fe17cb70d4bff1aa02dc4437f97",
+          "pdf_bytes": 44438,
+          "svg_bytes": 22605,
+          "gray_png_bytes": 154425
+        },
+        {
+          "name": "q1-domain-scores",
+          "png_pixels": [
+            3907,
+            2905
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 292435,
+          "png_sha256": "d04ac6e2fb8142eaefc133c707c54e08a082a683d3ea758c3c2c9ec9d6ae1fac",
+          "pdf_bytes": 43741,
+          "svg_bytes": 31367,
+          "gray_png_bytes": 148040
+        },
+        {
+          "name": "q1-domain-transfer",
+          "png_pixels": [
+            4849,
+            2065
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 318193,
+          "png_sha256": "14b87fddd70217d0144fa2577c1edeb548135629bcfe3ce2dea700e358c28e5e",
+          "pdf_bytes": 42934,
+          "svg_bytes": 18391,
+          "gray_png_bytes": 155941
+        },
+        {
+          "name": "q1-flow-conflict",
+          "png_pixels": [
+            4183,
+            3078
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 726835,
+          "png_sha256": "efd831c9179c4146c4f3b44ca5e12a4df864916cddbcf4d25d8f75f37bd15acb",
+          "pdf_bytes": 598641,
+          "svg_bytes": 731673,
+          "gray_png_bytes": 348523
+        },
+        {
+          "name": "q1-flow-score",
+          "png_pixels": [
+            4183,
+            5170
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 803046,
+          "png_sha256": "3a355d9d5bc26a5c5d01f0df644acaa5402036224eea3874695369eaf95c9546",
+          "pdf_bytes": 579355,
+          "svg_bytes": 699818,
+          "gray_png_bytes": 375591
+        },
+        {
+          "name": "q1-holdout-1m",
+          "png_pixels": [
+            3675,
+            2140
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 694182,
+          "png_sha256": "15bfdb7daf830440f21f3a14115fb8411d4f2fd077cf67bddf580b1007cedb63",
+          "pdf_bytes": 106875,
+          "svg_bytes": 592719,
+          "gray_png_bytes": 290362
+        },
+        {
+          "name": "q1-indicator-dist",
+          "png_pixels": [
+            4877,
+            3834
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 564902,
+          "png_sha256": "217747312b084bb26a9ff97b50b3d5a7e47203055cf15c425f71c5b58df8b2e1",
+          "pdf_bytes": 55208,
+          "svg_bytes": 51573,
+          "gray_png_bytes": 278311
+        },
+        {
+          "name": "q1-model-gain",
+          "png_pixels": [
+            4128,
+            2793
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 436070,
+          "png_sha256": "5fa4a53501aefaca6fdc71837898158d899beb67c89e954bb455a10597a5700c",
+          "pdf_bytes": 46498,
+          "svg_bytes": 36822,
+          "gray_png_bytes": 219092
+        },
+        {
+          "name": "q1-model-selection",
+          "png_pixels": [
+            4125,
+            1826
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 292045,
+          "png_sha256": "b232f79276bff97c8ab0cc67a29e9b00c5d558d8900747d43f4f446d35d0ad67",
+          "pdf_bytes": 49347,
+          "svg_bytes": 15519,
+          "gray_png_bytes": 149082
+        },
+        {
+          "name": "q1-pair-conflict",
+          "png_pixels": [
+            3914,
+            4049
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 701643,
+          "png_sha256": "9d4f8ad1a773e1006ada179a6d7c6547cfd30d2163f399cb00d7680d8ef8fce8",
+          "pdf_bytes": 40420,
+          "svg_bytes": 32257,
+          "gray_png_bytes": 361273
+        },
+        {
+          "name": "q1-rank-robustness",
+          "png_pixels": [
+            4311,
+            2414
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 428547,
+          "png_sha256": "7462dac933a2eab980dffc504d575cb75f413992eb05b869cb49ada3d5ec48f7",
+          "pdf_bytes": 54594,
+          "svg_bytes": 48994,
+          "gray_png_bytes": 208875
+        },
+        {
+          "name": "q1-share-loss-corr",
+          "png_pixels": [
+            4183,
+            3930
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 473819,
+          "png_sha256": "7ac8372556bdda2af1a6fa05f0a5805ee741ad9188267728118378a1274caf2a",
+          "pdf_bytes": 373810,
+          "svg_bytes": 467564,
+          "gray_png_bytes": 224028
+        },
+        {
+          "name": "q1-substitution-volcano",
+          "png_pixels": [
+            3555,
+            2802
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 480842,
+          "png_sha256": "5ab024c0ae09fc5a84ea8ca9de61e8d7359665757706be8a7b70663027649772",
+          "pdf_bytes": 61991,
+          "svg_bytes": 303345,
+          "gray_png_bytes": 248232
+        },
+        {
+          "name": "q1-substitution",
+          "png_pixels": [
+            4320,
+            3240
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 618572,
+          "png_sha256": "721894de0603a9369ccae2aea58befbfe5eb05c5dd5c1526ece58355048114f7",
+          "pdf_bytes": 103778,
+          "svg_bytes": 65614,
+          "gray_png_bytes": 302627
+        },
+        {
+          "name": "q1-weight-calibration",
+          "png_pixels": [
+            5063,
+            3609
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 535972,
+          "png_sha256": "0f091fee3ab1c019d1412a114a5d7233216c6836fbc6bb6b16cdaaa306a63c40",
+          "pdf_bytes": 47418,
+          "svg_bytes": 45383,
+          "gray_png_bytes": 265267
+        },
+        {
+          "name": "q2-b1-residual",
+          "png_pixels": [
+            3717,
+            2138
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 580638,
+          "png_sha256": "9b27734302b7c9053d7c2fee5a3d4b5b29ab1b867eef6d6b71e17267cca9423e",
+          "pdf_bytes": 53776,
+          "svg_bytes": 213029,
+          "gray_png_bytes": 275800
+        },
+        {
+          "name": "q2-b1-support",
+          "png_pixels": [
+            3774,
+            2138
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 252062,
+          "png_sha256": "38d63adb380738c63e0cc0c38190a44246e1cec2cd002538fc76a558a1546644",
+          "pdf_bytes": 52342,
+          "svg_bytes": 198496,
+          "gray_png_bytes": 127823
+        },
+        {
+          "name": "q2-m0-elasticity",
+          "png_pixels": [
+            3820,
+            3611
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 505675,
+          "png_sha256": "b4ae83bf75b5b7da0572802af49c303249556843664e2d7c7ec0eee85f66e51c",
+          "pdf_bytes": 58644,
+          "svg_bytes": 72470,
+          "gray_png_bytes": 255805
+        },
+        {
+          "name": "q2-m0-marginal",
+          "png_pixels": [
+            3853,
+            2036
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 372553,
+          "png_sha256": "6398ba1da3f453ea60155701c8fa77ece25b1e04c89460220b3d3c7bb55bb1b4",
+          "pdf_bytes": 57306,
+          "svg_bytes": 53008,
+          "gray_png_bytes": 188002
+        },
+        {
+          "name": "q2-q-sign",
+          "png_pixels": [
+            3765,
+            2382
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 258927,
+          "png_sha256": "c1b7c4e45a32afd7db2b4eadb62378d7cd79802efff1a7aa909cd35d969b3ba9",
+          "pdf_bytes": 43724,
+          "svg_bytes": 17948,
+          "gray_png_bytes": 129782
+        },
+        {
+          "name": "q3-c7-lengths",
+          "png_pixels": [
+            3533,
+            2034
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 233167,
+          "png_sha256": "829c77bc88a02c02cf3bb692978c29f84a38e78bf599fcb16be89d7df9557ae4",
+          "pdf_bytes": 40890,
+          "svg_bytes": 17603,
+          "gray_png_bytes": 121687
+        },
+        {
+          "name": "q3-conditional",
+          "png_pixels": [
+            4314,
+            2444
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 368601,
+          "png_sha256": "4bf5eb0215d408fcb1c73bfccd3647d6b76b7abca20a5c1bbe883e734ceb12c5",
+          "pdf_bytes": 61972,
+          "svg_bytes": 59898,
+          "gray_png_bytes": 178478
+        },
+        {
+          "name": "q3-cost-curve",
+          "png_pixels": [
+            3788,
+            2560
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 343454,
+          "png_sha256": "ebdf2911692018b3be09f9d370f8faa482ea8d16f22e4e2de55666b58dab63c3",
+          "pdf_bytes": 52689,
+          "svg_bytes": 49412,
+          "gray_png_bytes": 167745
+        },
+        {
+          "name": "q3-frontier",
+          "png_pixels": [
+            3779,
+            2088
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 374744,
+          "png_sha256": "7c68338990b16c21aa9c63d8a11e09f985198eba36f2ca47667ede9b329822ad",
+          "pdf_bytes": 50178,
+          "svg_bytes": 39861,
+          "gray_png_bytes": 180730
+        }
+      ],
+      "problems": []
+    },
+    {
+      "directory": "绘图版\\Q2补充图表",
+      "figure_count": 3,
+      "figures": [
+        {
+          "name": "result_q2_A_p_only_cross_scale",
+          "png_pixels": [
+            4320,
+            2340
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 448082,
+          "png_sha256": "6da9087aee033f764eecde32f97fd0403d05a7e6cdde233121ce9b484840f752",
+          "pdf_bytes": 71617,
+          "svg_bytes": 41084,
+          "gray_png_bytes": 204765
+        },
+        {
+          "name": "result_q2_m0_elasticity_profile",
+          "png_pixels": [
+            4320,
+            5400
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 1016566,
+          "png_sha256": "a259c0e85120ebd50524dbcc3a922bdbd069cd9adc7439fb910d1cecc78724ab",
+          "pdf_bytes": 143449,
+          "svg_bytes": 576478,
+          "gray_png_bytes": 460669
+        },
+        {
+          "name": "result_q2_p_gate_audit",
+          "png_pixels": [
+            4320,
+            2700
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 624277,
+          "png_sha256": "9e1aea5bb3334cc86e74d0b05bee241db3ba4c9d2307edc82432b17cc08dc59d",
+          "pdf_bytes": 89560,
+          "svg_bytes": 21934,
+          "gray_png_bytes": 293093
+        }
+      ],
+      "problems": []
+    },
+    {
+      "directory": "绘图版\\Q3补充图表",
+      "figure_count": 4,
+      "figures": [
+        {
+          "name": "result_q3_p1_budget_nd_frontier",
+          "png_pixels": [
+            4320,
+            3120
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 592265,
+          "png_sha256": "5700a3180bbfc95d788c07fab54921c15ad15b6b2ba3552bc092ca31aed7cdb2",
+          "pdf_bytes": 64003,
+          "svg_bytes": 68806,
+          "gray_png_bytes": 257129
+        },
+        {
+          "name": "result_q3_p2_bootstrap_selection_stability",
+          "png_pixels": [
+            4320,
+            3720
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 505888,
+          "png_sha256": "ab3e8c98691ec7dc768da0d869756a4d59a25a2e3157b2211d47b7da8dd7f327",
+          "pdf_bytes": 76649,
+          "svg_bytes": 96883,
+          "gray_png_bytes": 245394
+        },
+        {
+          "name": "result_q3_p3_resource_shift_dashboard",
+          "png_pixels": [
+            4320,
+            3600
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 869447,
+          "png_sha256": "32c32ebbcf11eaaa2c5f48786d1f6d0c869cc3682c343d89d328efe38d522893",
+          "pdf_bytes": 98192,
+          "svg_bytes": 197824,
+          "gray_png_bytes": 398996
+        },
+        {
+          "name": "result_q3_p4_q_baseline_sensitivity",
+          "png_pixels": [
+            4320,
+            3480
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 664447,
+          "png_sha256": "d63fe2122c4ef0ef98bdd1a6750d59487980ab5a17f98e46785006d759f90930",
+          "pdf_bytes": 70801,
+          "svg_bytes": 103651,
+          "gray_png_bytes": 309385
+        }
+      ],
+      "problems": []
+    },
+    {
+      "directory": "论文版\\核心图表",
+      "figure_count": 27,
+      "figures": [
+        {
+          "name": "q1-conflict-dist",
+          "png_pixels": [
+            3198,
+            2673
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 265286,
+          "png_sha256": "6c45efca572f09962c2d53c097cd5cda324155dcc7030e3f190590129cace71d",
+          "pdf_bytes": 49328,
+          "svg_bytes": 136670,
+          "gray_png_bytes": 131116
+        },
+        {
+          "name": "q1-conflict-effect",
+          "png_pixels": [
+            3852,
+            2330
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 564817,
+          "png_sha256": "b1914614e0f467845adf65e22535155b74730d0bd82c04341274d354eca568e2",
+          "pdf_bytes": 48756,
+          "svg_bytes": 182360,
+          "gray_png_bytes": 250583
+        },
+        {
+          "name": "q1-conflict-external",
+          "png_pixels": [
+            3841,
+            1536
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 163016,
+          "png_sha256": "b89c15de384903b8d7a5f484141631bb8ce449b15cb6a218c61166e20900722d",
+          "pdf_bytes": 19035,
+          "svg_bytes": 17270,
+          "gray_png_bytes": 78722
+        },
+        {
+          "name": "q1-cross-scale",
+          "png_pixels": [
+            3631,
+            2764
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 200500,
+          "png_sha256": "93f9efdd4ceec9c6500c1da7209e4118bfc25d28e81a73bdec223f273678990b",
+          "pdf_bytes": 27106,
+          "svg_bytes": 19032,
+          "gray_png_bytes": 89247
+        },
+        {
+          "name": "q1-domain-scores",
+          "png_pixels": [
+            3907,
+            2695
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 210454,
+          "png_sha256": "274bfd7a43cfd0edb348cf87c47d339cdc8d4d7eaae2f57893eb9fbc3c5a5c96",
+          "pdf_bytes": 27097,
+          "svg_bytes": 30595,
+          "gray_png_bytes": 100811
+        },
+        {
+          "name": "q1-domain-transfer",
+          "png_pixels": [
+            4849,
+            1946
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 246640,
+          "png_sha256": "809f77711e0213fc20b556f409c37a312d62c1c21b6ebce3a2fc1409d258e9c8",
+          "pdf_bytes": 23715,
+          "svg_bytes": 17577,
+          "gray_png_bytes": 117700
+        },
+        {
+          "name": "q1-flow-conflict",
+          "png_pixels": [
+            3261,
+            1904
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGB",
+          "png_bytes": 537375,
+          "png_sha256": "2d5a9933bc453052dd30ace2510a59ef982a74f72c576bbc8293abfcca67d918",
+          "pdf_bytes": 569195,
+          "svg_bytes": 730851,
+          "gray_png_bytes": 248223
+        },
+        {
+          "name": "q1-flow-score",
+          "png_pixels": [
+            2444,
+            2408
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGB",
+          "png_bytes": 520380,
+          "png_sha256": "529bde1af6f3b2c0ed32cdc6a078ab533afa243afba8953a25a17330cb6c7cb3",
+          "pdf_bytes": 551225,
+          "svg_bytes": 698995,
+          "gray_png_bytes": 241385
+        },
+        {
+          "name": "q1-holdout-1m",
+          "png_pixels": [
+            3675,
+            2062
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 664046,
+          "png_sha256": "275ba018b89d3434b0f1c970d8f388967577c4fba7f53f13953eaeb9b144a083",
+          "pdf_bytes": 94781,
+          "svg_bytes": 590586,
+          "gray_png_bytes": 263887
+        },
+        {
+          "name": "q1-indicator-dist",
+          "png_pixels": [
+            4877,
+            3495
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 482507,
+          "png_sha256": "e078bb22f7518b1ddd3e5888d62b53d9993cb9122eb0602f911be39a8b4d7958",
+          "pdf_bytes": 34799,
+          "svg_bytes": 50141,
+          "gray_png_bytes": 232595
+        },
+        {
+          "name": "q1-model-gain",
+          "png_pixels": [
+            4128,
+            2583
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 356977,
+          "png_sha256": "e72f128b7ac871814c19f47e8a378cccd89867693c24c9816962a997c712b5aa",
+          "pdf_bytes": 29055,
+          "svg_bytes": 36038,
+          "gray_png_bytes": 174452
+        },
+        {
+          "name": "q1-model-selection",
+          "png_pixels": [
+            4125,
+            1655
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 201447,
+          "png_sha256": "8b7f080a9114db6faa8692726aaed18deba5408a8bc2fc5b3bcc81d642ecacd3",
+          "pdf_bytes": 29770,
+          "svg_bytes": 14736,
+          "gray_png_bytes": 97938
+        },
+        {
+          "name": "q1-pair-conflict",
+          "png_pixels": [
+            3914,
+            4071
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 644069,
+          "png_sha256": "3a775a3c165015df421cdab58cc3285683efa733ad62cdc784d85a8bd238d7bc",
+          "pdf_bytes": 20021,
+          "svg_bytes": 31512,
+          "gray_png_bytes": 327233
+        },
+        {
+          "name": "q1-rank-robustness",
+          "png_pixels": [
+            4320,
+            2191
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 355157,
+          "png_sha256": "1424364235d9f0297b1e2bc4b2004b1a73f9c5bcb03a4168d3821d4bd4710fd4",
+          "pdf_bytes": 37946,
+          "svg_bytes": 52998,
+          "gray_png_bytes": 168104
+        },
+        {
+          "name": "q1-share-loss-corr",
+          "png_pixels": [
+            3831,
+            2863
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 349117,
+          "png_sha256": "03a7a5eef1096943ab627402e3ff1ea42b7cf14c8d9f1088649358b519748974",
+          "pdf_bytes": 80514,
+          "svg_bytes": null,
+          "gray_png_bytes": 162000
+        },
+        {
+          "name": "q1-substitution-volcano",
+          "png_pixels": [
+            3555,
+            2627
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 423326,
+          "png_sha256": "94ed1493f9d356d108561d79e39f86b121ac7d4e972023b9334441994457305e",
+          "pdf_bytes": 43094,
+          "svg_bytes": 303011,
+          "gray_png_bytes": 212577
+        },
+        {
+          "name": "q1-substitution",
+          "png_pixels": [
+            4320,
+            3240
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 545948,
+          "png_sha256": "ed0c5c9e1a25f6e9f2e98b9e56f1bca9f0774dd41dd12f27fd8229d07fe36f62",
+          "pdf_bytes": 104326,
+          "svg_bytes": 77184,
+          "gray_png_bytes": 261916
+        },
+        {
+          "name": "q1-weight-calibration",
+          "png_pixels": [
+            5063,
+            3338
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 456768,
+          "png_sha256": "175697cdcd6e455b2cdfbe062417cc3995e23ece58cdda156bc9f0c454225672",
+          "pdf_bytes": 28247,
+          "svg_bytes": 44722,
+          "gray_png_bytes": 221493
+        },
+        {
+          "name": "q2-b1-residual",
+          "png_pixels": [
+            3717,
+            1933
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 532317,
+          "png_sha256": "f71cf299e38f61febfb0d3d1f2a8a968a39e696d0c271bf31e05409e4fd7a0a5",
+          "pdf_bytes": 38027,
+          "svg_bytes": 212193,
+          "gray_png_bytes": 246177
+        },
+        {
+          "name": "q2-b1-support",
+          "png_pixels": [
+            3783,
+            1933
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 160095,
+          "png_sha256": "568c6cc8819019655ecdd0a8200e91be8c0a8f1f4f41198134fc5f1f2a481fa0",
+          "pdf_bytes": 30939,
+          "svg_bytes": 199181,
+          "gray_png_bytes": 73600
+        },
+        {
+          "name": "q2-m0-elasticity",
+          "png_pixels": [
+            3820,
+            3665
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 412841,
+          "png_sha256": "e15d088163ddeea65053428cf89b94e5bb1f9233a71d03194653f78b9c91c928",
+          "pdf_bytes": 44144,
+          "svg_bytes": 77456,
+          "gray_png_bytes": 197538
+        },
+        {
+          "name": "q2-m0-marginal",
+          "png_pixels": [
+            3788,
+            1958
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 250397,
+          "png_sha256": "b3689d891b74de45006a06841d47c9b6a79244d1e52622bf4ce4b89d302dcc3b",
+          "pdf_bytes": 33191,
+          "svg_bytes": 52164,
+          "gray_png_bytes": 117119
+        },
+        {
+          "name": "q2-q-sign",
+          "png_pixels": [
+            3765,
+            2244
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 186974,
+          "png_sha256": "54ffed803349bd79e99daa5da80d1c25d0441be05351b4d9b5134fbb1399fe5a",
+          "pdf_bytes": 25586,
+          "svg_bytes": 17163,
+          "gray_png_bytes": 87921
+        },
+        {
+          "name": "q3-c7-lengths",
+          "png_pixels": [
+            3533,
+            1840
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 164488,
+          "png_sha256": "97c8129437c9075d60c355f22341022f7ffb0ec135844d8b563368f662b69a27",
+          "pdf_bytes": 24905,
+          "svg_bytes": 16913,
+          "gray_png_bytes": 82611
+        },
+        {
+          "name": "q3-conditional",
+          "png_pixels": [
+            4314,
+            1932
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 239708,
+          "png_sha256": "2b2d36c81c0d95ce1743e07ac281bfee62a1a67a233ec8a3a6cac5d183422b3c",
+          "pdf_bytes": 33517,
+          "svg_bytes": 55194,
+          "gray_png_bytes": 106031
+        },
+        {
+          "name": "q3-cost-curve",
+          "png_pixels": [
+            3788,
+            2417
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 277120,
+          "png_sha256": "05bfc46c09f7deafefc455ebe7a9cc32b6d93ff4764d09562a24a0a5d7cf087b",
+          "pdf_bytes": 33655,
+          "svg_bytes": 44248,
+          "gray_png_bytes": 127712
+        },
+        {
+          "name": "q3-frontier",
+          "png_pixels": [
+            3779,
+            2006
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 297669,
+          "png_sha256": "d731da58479ba5868e3d12e3e9e3e86ddc19b57d04d3bf060ad7fb752827cb3a",
+          "pdf_bytes": 37190,
+          "svg_bytes": 39530,
+          "gray_png_bytes": 134899
+        }
+      ],
+      "problems": []
+    },
+    {
+      "directory": "论文版\\Q2补充图表",
+      "figure_count": 3,
+      "figures": [
+        {
+          "name": "result_q2_A_p_only_cross_scale",
+          "png_pixels": [
+            4320,
+            2070
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 306356,
+          "png_sha256": "fedd799309951bddca4072e9db1e35ef47721caadd35fbfbff47898e756bcec3",
+          "pdf_bytes": 47203,
+          "svg_bytes": 40133,
+          "gray_png_bytes": 134877
+        },
+        {
+          "name": "result_q2_m0_elasticity_profile",
+          "png_pixels": [
+            4320,
+            5010
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 833679,
+          "png_sha256": "d9ad7952765536b48aec124186b09ed3116209fbeeac5c3f996ff463cdcef941",
+          "pdf_bytes": 117611,
+          "svg_bytes": 575662,
+          "gray_png_bytes": 369552
+        },
+        {
+          "name": "result_q2_p_gate_audit",
+          "png_pixels": [
+            4320,
+            2700
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 503097,
+          "png_sha256": "30a4eb61838b6310a066a49698ab905e8449a38d3d51e5fe131783524ac3b499",
+          "pdf_bytes": 73314,
+          "svg_bytes": 20807,
+          "gray_png_bytes": 226591
+        }
+      ],
+      "problems": []
+    },
+    {
+      "directory": "论文版\\Q3补充图表",
+      "figure_count": 4,
+      "figures": [
+        {
+          "name": "result_q3_p1_budget_nd_frontier",
+          "png_pixels": [
+            4320,
+            3120
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 480883,
+          "png_sha256": "77213ec595e33ffcaa5cad17e0cc7933ea41f6b68f5416cbb3d4c6b7f0e82614",
+          "pdf_bytes": 39177,
+          "svg_bytes": 59101,
+          "gray_png_bytes": 199473
+        },
+        {
+          "name": "result_q3_p2_bootstrap_selection_stability",
+          "png_pixels": [
+            4320,
+            3720
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 329933,
+          "png_sha256": "2bd3296bb223202b1c66e637f6ad24a06fe9626f602275248f97bf8a5a1cd256",
+          "pdf_bytes": 45736,
+          "svg_bytes": 95814,
+          "gray_png_bytes": 154185
+        },
+        {
+          "name": "result_q3_p3_resource_shift_dashboard",
+          "png_pixels": [
+            4320,
+            3600
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 786544,
+          "png_sha256": "fbd1b0071d7e7ca6ba2df83456419800e1ac7d77874c8429bff633d4c955c51d",
+          "pdf_bytes": 75751,
+          "svg_bytes": 188415,
+          "gray_png_bytes": 342997
+        },
+        {
+          "name": "result_q3_p4_q_baseline_sensitivity",
+          "png_pixels": [
+            4320,
+            3480
+          ],
+          "png_dpi": [
+            600.0,
+            600.0
+          ],
+          "png_mode": "RGBA",
+          "png_bytes": 565789,
+          "png_sha256": "73d86a66c6851db2d2874500051b1222b5009f70acf189240b6871afac43a421",
+          "pdf_bytes": 50613,
+          "svg_bytes": 93422,
+          "gray_png_bytes": 255295
+        }
+      ],
+      "problems": []
+    }
+  ],
+  "all_checks_pass": true
+}

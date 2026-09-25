@@ -1,0 +1,32 @@
+
+[layout audit] result_q3_p1_budget_nd_frontier
+  [PASS] 程序自检未发现缺字 / 裁切 / 刻度重叠。
+  >>> 仍需 AI 读图复核感知性问题（见 visual_review.md）。
+[scipilot-figure-skill] wrote C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\result_q3_p1_budget_nd_frontier.svg
+[scipilot-figure-skill] wrote C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\result_q3_p1_budget_nd_frontier.pdf
+[scipilot-figure-skill] wrote C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\result_q3_p1_budget_nd_frontier.png
+
+[layout audit] result_q3_p2_bootstrap_selection_stability
+  [PASS] 程序自检未发现缺字 / 裁切 / 刻度重叠。
+  >>> 仍需 AI 读图复核感知性问题（见 visual_review.md）。
+[scipilot-figure-skill] wrote C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\result_q3_p2_bootstrap_selection_stability.svg
+[scipilot-figure-skill] wrote C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\result_q3_p2_bootstrap_selection_stability.pdf
+[scipilot-figure-skill] wrote C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\result_q3_p2_bootstrap_selection_stability.png
+
+[layout audit] result_q3_p3_resource_shift_dashboard
+  [PASS] 程序自检未发现缺字 / 裁切 / 刻度重叠。
+  >>> 仍需 AI 读图复核感知性问题（见 visual_review.md）。
+[scipilot-figure-skill] wrote C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\result_q3_p3_resource_shift_dashboard.svg
+[scipilot-figure-skill] wrote C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\result_q3_p3_resource_shift_dashboard.pdf
+[scipilot-figure-skill] wrote C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\result_q3_p3_resource_shift_dashboard.png
+
+[layout audit] result_q3_p4_q_baseline_sensitivity
+  [PASS] 程序自检未发现缺字 / 裁切 / 刻度重叠。
+  >>> 仍需 AI 读图复核感知性问题（见 visual_review.md）。
+[scipilot-figure-skill] wrote C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\result_q3_p4_q_baseline_sensitivity.svg
+[scipilot-figure-skill] wrote C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\result_q3_p4_q_baseline_sensitivity.pdf
+[scipilot-figure-skill] wrote C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\result_q3_p4_q_baseline_sensitivity.png
+已生成 4 张逻辑图，共 16 个图文件。
+输出目录：C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表
+图表契约：C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\图表契约.md
+复现清单：C:\Users\Zhang Wanjie\Desktop\github-work\HUAWEI-Cup\zwj\论文配图_20260925\论文版\Q3补充图表\复现清单.json
