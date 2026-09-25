@@ -4,7 +4,7 @@
   "command": "D:\\Anaconda\\python.exe src/q2_full_answer_supplement.py",
   "code": {
     "path": "src\\q2_full_answer_supplement.py",
-    "sha256": "ce8932f120b2d2428f34474d66feefc32ad83ea353ebafca219c2a65af7a8f52"
+    "sha256": "fc2cc02d78803856fd94f48eb9ee006821fb50c048130c79faeb25465801f663"
   },
   "python": "3.10+",
   "resampling": {
@@ -227,7 +227,7 @@
     },
     {
       "path": "src/q2_full_answer_figures.py",
-      "sha256": "edc6bff8e8c79dd9a0167d17768548c9c6d07a496ac057d69cddceada6a1ea14"
+      "sha256": "173f8e967ece9af3fb936a1a3b090c58da6eca6bb8781c5fa0e80966d25b6b73"
     },
     {
       "path": "utils/plot_style.py",
@@ -244,6 +244,70 @@
     {
       "path": "C:\\Users\\86147\\.codex\\skills\\math-modeling\\tools\\figure\\scripts\\visual_qa.py",
       "sha256": "67675709e523c76e2748d50749de7bc6332f07df865379b26d024321fb40120f"
+    },
+    {
+      "path": "Q2/归档_20260925/plot_q2_supplementary_figures.py",
+      "sha256": "1e808d5272a5d296bb97584f5099753c502729dca20a14def1df508478fbd0f7"
+    },
+    {
+      "path": "Q2/03_结果/经典ScalingLaw基线/v1/q2_m0_marginal_effects_by_checkpoint.csv",
+      "sha256": "a2e1b1408ba1e68990244b0cdfad97d25c4a8f73a74333e206ae1f0e83e43530"
+    },
+    {
+      "path": "Q2/03_结果/经典ScalingLaw基线/v1/validation_comparability.json",
+      "sha256": "73fcacf9a212cd5c63428329021e7389e8f5e0d1dbb582c31a1d2aea5d908a75"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/复现清单.json",
+      "sha256": "e7fc12e6d65c930b2dd0686539c9a345c334ad68d38638701b04a193987cee03"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/result_q2_p_gate_audit.pdf",
+      "sha256": "bbba4986a6815e4e8822292e27f14b45a62892933853a35dbc72d5b24bfd71f5"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/result_q2_p_gate_audit.svg",
+      "sha256": "6d168d33d33e4565e2fd135a3131199bbfb74b95417bd63e40c5aba32f06f43b"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/result_q2_p_gate_audit.png",
+      "sha256": "2383a7c75561a9596b992e1f153c990991609476085e510631624d19d5f1cac6"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/result_q2_p_gate_audit_grayscale.png",
+      "sha256": "58b10cfad9a72d8e2e35e45399ff3c6dd35035fc69165e291b7d286e36d25e67"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/result_q2_m0_elasticity_profile.pdf",
+      "sha256": "1657d63e13333c377fa4bf0cee2a1dcab33952a1c30507f520904be08c28fc9c"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/result_q2_m0_elasticity_profile.svg",
+      "sha256": "b43ff56e4c29eb84ec8d6102121173ebcafb1986a037ae3cd6b5a5f00055e519"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/result_q2_m0_elasticity_profile.png",
+      "sha256": "09f73034dba09bdd92fc8c01d3990ba6ed04c4f54c8f6dbea01c065cc28b8343"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/result_q2_m0_elasticity_profile_grayscale.png",
+      "sha256": "d97e64be56295ed21861d58752babf6e54357f9c9a6715d51dce9da8c02994c3"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/result_q2_A_p_only_cross_scale.pdf",
+      "sha256": "7af6ce1bb42267cd6bd44dfb253e04163fe8b4320988e89432401d2d7f9eed33"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/result_q2_A_p_only_cross_scale.svg",
+      "sha256": "9e361ff3a78b5f67c4ccadb9ffa52a418a9834a3bc4b410affab7b8bb32e0d1a"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/result_q2_A_p_only_cross_scale.png",
+      "sha256": "1c908f0fa325017d843eff5bb6b285ba0d4bfb1db93c3c2c3f05dad0ce137db8"
+    },
+    {
+      "path": "Q2/归档_20260925/Q2补充图表/result_q2_A_p_only_cross_scale_grayscale.png",
+      "sha256": "56edd48182387204eed61b0ab91479a4ad061a18afef5149a42232be2c413dac"
     }
   ],
   "outputs": {
@@ -263,37 +327,37 @@
     "q1_source_evidence/q1_3_run_report.md": "1008f21235bf54f128b1d042ed0b4a486710d5d459e50ee1962d56c6ea445b7c",
     "q1_source_evidence/q1_3_substitution_effects_10pp_bootstrap.csv": "7a79338ad9cbabcf8774eed5468ecd60f193e30d5e5608d2889fb8648241cbe5",
     "q1_source_evidence/README.md": "6cc17a11766a714b6f3c5e40933d48dd7876d0b16fcc4e754e62ecbf811fbfa1",
-    "q2_full_answer_evidence_supplement.md": "7510d9e37c6bc029cb042ba326ce7acc52a9404d9529772111251f0dcce0d77a",
-    "q2_full_answer_figures/flow_q2_full_answer.pdf": "7ed03b76528ddf7748605933c8586b67c01839db0358243dc730df3c19d8396f",
+    "q2_full_answer_evidence_supplement.md": "6a32432fa184eddafaca602c915fac4dc8096f939cc8c3e73518415c5b9b42f2",
+    "q2_full_answer_figures/flow_q2_full_answer.pdf": "4708a1a5c441243bc2291ee2a91318cc93fe567b19cd2af8ced3accb35bd794a",
     "q2_full_answer_figures/flow_q2_full_answer.png": "305f0e7ab60b885b1b93811b55435398c79f7fccd48ed94cd8903ce4e7450612",
-    "q2_full_answer_figures/flow_q2_full_answer.svg": "4dd1b4b15637836ed75b3966cc14af15332370140156906d04ee6acd78a669a0",
+    "q2_full_answer_figures/flow_q2_full_answer.svg": "ae45da4f86201c53730ae532432967d59cbdebec062b2b56eaf10529b0dc89c1",
     "q2_full_answer_figures/flow_q2_full_answer_grayscale.png": "ab405e59abbad071972ca35fea9db8bbfb6a66906c18114d8920b304e8386e62",
-    "q2_full_answer_figures/process_q2_p_interval_adjustment.pdf": "f5a61657b4677b03f99e623be1ea542b0912c1a3f804b9d4322d4c96202e0fb2",
+    "q2_full_answer_figures/process_q2_p_interval_adjustment.pdf": "969a68ed8b0b0492535d76e073ab30c3b16e892298f66c7a42062b19853ede17",
     "q2_full_answer_figures/process_q2_p_interval_adjustment.png": "50bcc53787c780ebce7450bf30814415f9a0f36a7c35d29f4e0d791188fe73e2",
-    "q2_full_answer_figures/process_q2_p_interval_adjustment.svg": "863c7eedb21b2639ff29d5fb4c2ac320cdf34fa19f12ba12ca8d2baaa1ada99e",
+    "q2_full_answer_figures/process_q2_p_interval_adjustment.svg": "81820644054737ce23bf7c1a47f0df2ff64b5e1524241aa9e79c00a6d8db9f84",
     "q2_full_answer_figures/process_q2_p_interval_adjustment_grayscale.png": "e3e19e862a8908cb8f38468ec50ce5fe7e90d49f65b3925299e5cab008c2c4c0",
-    "q2_full_answer_figures/process_q2_q_leave_q_comparison.pdf": "fbefe051bed25003caf4e8804b14928acd99adcb012959754102ae5b4585ba31",
+    "q2_full_answer_figures/process_q2_q_leave_q_comparison.pdf": "204503096498068edf44816d6959c9c1b829abb5ed828b0be8195ca4c8cd9ce2",
     "q2_full_answer_figures/process_q2_q_leave_q_comparison.png": "df3af27cdc67b4159b0fa5be597d4103afb5e154138166505307055668eb9810",
-    "q2_full_answer_figures/process_q2_q_leave_q_comparison.svg": "4e6fcce90a011502a0c4e2958101ee4066dbcaf56fd0b1944953f4843d24f1f1",
+    "q2_full_answer_figures/process_q2_q_leave_q_comparison.svg": "b62bdf3a2d2e0a81125970b22b10a56610751776adf9f819524723fdbc36e38b",
     "q2_full_answer_figures/process_q2_q_leave_q_comparison_grayscale.png": "22fe64ac4c8d5517ebb78caf7aace987742ee4364a62f1999584f517d782a800",
-    "q2_full_answer_figures/raw_q2_p_recipe_support.pdf": "31135eb7571f75a6745e906895e2abac4109033782c32206a23febc4aee73da6",
+    "q2_full_answer_figures/raw_q2_p_recipe_support.pdf": "63e53fdf568f5c72817ba52ae79cc217aad785895aa1988ed64586175bbfcb82",
     "q2_full_answer_figures/raw_q2_p_recipe_support.png": "2427099793b9525f27423a132f93a7526a25649f96cde2f81cfd16e84ba8c969",
-    "q2_full_answer_figures/raw_q2_p_recipe_support.svg": "84c8ae979f5ea6e967c1282ac97f364183a88cafbfeee44acf733af215d2da7c",
+    "q2_full_answer_figures/raw_q2_p_recipe_support.svg": "2fb7b0d0f81073543ad08ef0519193b620e42a6f8c5592311cf0b1e31cee0585",
     "q2_full_answer_figures/raw_q2_p_recipe_support_grayscale.png": "c22e6b89dbc3ac58bc50c053ee95bb264f00b2453d679aceb12527dc0b3fd311",
-    "q2_full_answer_figures/raw_q2_q_source_patterns.pdf": "ce621b8de97514efa446abc3d22812b03656bf12b3e2ab1c5c926045301407b4",
+    "q2_full_answer_figures/raw_q2_q_source_patterns.pdf": "9f6cef60b7cd3b15c2a407ca4486ae989ad56d693ce4607b50516e0cb67013d6",
     "q2_full_answer_figures/raw_q2_q_source_patterns.png": "5e97b3ea6c98d95c1a3558107e96135734fb912dbf6767c3c914a8b8f2ba165d",
-    "q2_full_answer_figures/raw_q2_q_source_patterns.svg": "5f9d0609dafe2b0aec60a8d242ceef754b2be9c24e173c612303e6f9466efe44",
+    "q2_full_answer_figures/raw_q2_q_source_patterns.svg": "eccb2adadca7318449716d91ac0e656025b5e228a14b732230f29c11c69b9692",
     "q2_full_answer_figures/raw_q2_q_source_patterns_grayscale.png": "35a13c70bc225a714ed1452b1fe78f3b89ab6e02568288602d3448894529aa46",
-    "q2_full_answer_figures/result_q2_p_cross_scale_rmse.pdf": "83e2d52eb13aa69cb3f2460ee382d3bbbf05ca23e54c5bf622b6f40102087cb8",
-    "q2_full_answer_figures/result_q2_p_cross_scale_rmse.png": "d8563e1a0ffa75a0cd87a18282cf1acf48a554cd2f0318cf49bf682c105a5d2c",
-    "q2_full_answer_figures/result_q2_p_cross_scale_rmse.svg": "7ab8e9599b65bc105ba455a7663ed4727c4d42dc9ff874cffe149bb15f832aa4",
-    "q2_full_answer_figures/result_q2_p_cross_scale_rmse_grayscale.png": "bc72f3385c7834e2e300d83f72965d60a577b8447c84ed0b06e751cd4ff925a4",
-    "q2_full_answer_figures/result_q2_q_matched_slope_conflict.pdf": "47ee64bb9ee5bcf1eb5d3826066542ceac78edca55faf5a7e88f81b7b4a1369a",
+    "q2_full_answer_figures/result_q2_p_cross_scale_rmse.pdf": "692a4a733e75a0ff851caef4529e5d4da592c56f7de218e7d38b0a28807e98ef",
+    "q2_full_answer_figures/result_q2_p_cross_scale_rmse.png": "7c16d0c13ba75ffb6b6874ffd49deb1eff057205a3a5c0a608f1a8fc7cb7180c",
+    "q2_full_answer_figures/result_q2_p_cross_scale_rmse.svg": "ac818c35973c3a8c3b0da400399a7d0a73b476e62550f015edf0c67417827074",
+    "q2_full_answer_figures/result_q2_p_cross_scale_rmse_grayscale.png": "cadf28488ab355efea98cae60dda980f881353cdc9188b93822a3ad83ed7ae37",
+    "q2_full_answer_figures/result_q2_q_matched_slope_conflict.pdf": "035819de55c34c016d13e07a9ee4d342467f5065a89135c20edf0a481a8e3f9d",
     "q2_full_answer_figures/result_q2_q_matched_slope_conflict.png": "70541183bbe6980cb02d58bae64f92829b5dbb8e59fe9a5aa2f42f95d85ba4f4",
-    "q2_full_answer_figures/result_q2_q_matched_slope_conflict.svg": "6b65e6055e6dd1cded431b4816af18c929bc2ae6943cab4102d57c3ebf9e528d",
+    "q2_full_answer_figures/result_q2_q_matched_slope_conflict.svg": "0e72744275be31460ccc64ad760b66622a7228695496d935f44382aa77f54f15",
     "q2_full_answer_figures/result_q2_q_matched_slope_conflict_grayscale.png": "59950b0e6b78f6fd2427be135a3af1610c4275806d3111f1a6be9e616c2c2c34",
-    "q2_full_answer_figures_contract.csv": "5b43243c9749c43ea260579c5b4b8220c30cc8abd5c80e81878895cb6257cfc7",
-    "q2_full_answer_figures_qa.json": "2e18b0fa199b0513bdc9b9d936d7441b2f5fca566589dff2c6e57bdd81996690",
+    "q2_full_answer_figures_contract.csv": "82dd2682dd4dad8a3f66e08b1a74da2c9eca70e7007fd2b805c00fb9dee33a85",
+    "q2_full_answer_figures_qa.json": "c95fae14fb7bff3839da9da7e4156fa304cd5baffa3996963010e88b4aaa3c18",
     "q2_m1_m2_identifiability_proof.md": "07eeead154025ee0e630eb98188db1be46390b0d30275c03a945f302fc857f29",
     "reference_evidence/b3_validation_closeout.md": "21f6928afc99cf6bb71e5ba2eb753143d4c63d229ec0e956a66ae8530b1a40fa",
     "reference_evidence/b4_b5_loss_comparability_audit.md": "4523fad8c2b5dceac7619f80a06ca13b003f06e268263f0bcfb9eb512f6b96dc",
@@ -304,7 +368,19 @@
     "reference_evidence/m0_validation_comparability.json": "73fcacf9a212cd5c63428329021e7389e8f5e0d1dbb582c31a1d2aea5d908a75",
     "reference_evidence/m0_validation_metrics_by_source.csv": "15ea2b015ba1bd1dad49b92999b13b97d26a676be3bfb68dd11c63f574755af0",
     "reference_evidence/m0_validation_scope_closeout.md": "551d8d00e16f5106a2239cd0dadc92b1e4ee3c305802140d2b0a9215964c1e25",
-    "reference_evidence/README.md": "0f98bda16796522bee4141563467341bfb88980f5536770f4d0d9ae3a68789e0"
+    "reference_evidence/README.md": "0f98bda16796522bee4141563467341bfb88980f5536770f4d0d9ae3a68789e0",
+    "q2_full_answer_figures/result_q2_p_gate_audit.pdf": "bbba4986a6815e4e8822292e27f14b45a62892933853a35dbc72d5b24bfd71f5",
+    "q2_full_answer_figures/result_q2_p_gate_audit.svg": "6d168d33d33e4565e2fd135a3131199bbfb74b95417bd63e40c5aba32f06f43b",
+    "q2_full_answer_figures/result_q2_p_gate_audit.png": "2383a7c75561a9596b992e1f153c990991609476085e510631624d19d5f1cac6",
+    "q2_full_answer_figures/result_q2_p_gate_audit_grayscale.png": "58b10cfad9a72d8e2e35e45399ff3c6dd35035fc69165e291b7d286e36d25e67",
+    "q2_full_answer_figures/result_q2_m0_elasticity_profile.pdf": "1657d63e13333c377fa4bf0cee2a1dcab33952a1c30507f520904be08c28fc9c",
+    "q2_full_answer_figures/result_q2_m0_elasticity_profile.svg": "b43ff56e4c29eb84ec8d6102121173ebcafb1986a037ae3cd6b5a5f00055e519",
+    "q2_full_answer_figures/result_q2_m0_elasticity_profile.png": "09f73034dba09bdd92fc8c01d3990ba6ed04c4f54c8f6dbea01c065cc28b8343",
+    "q2_full_answer_figures/result_q2_m0_elasticity_profile_grayscale.png": "d97e64be56295ed21861d58752babf6e54357f9c9a6715d51dce9da8c02994c3",
+    "q2_full_answer_figures/result_q2_A_p_only_cross_scale.pdf": "7af6ce1bb42267cd6bd44dfb253e04163fe8b4320988e89432401d2d7f9eed33",
+    "q2_full_answer_figures/result_q2_A_p_only_cross_scale.svg": "9e361ff3a78b5f67c4ccadb9ffa52a418a9834a3bc4b410affab7b8bb32e0d1a",
+    "q2_full_answer_figures/result_q2_A_p_only_cross_scale.png": "1c908f0fa325017d843eff5bb6b285ba0d4bfb1db93c3c2c3f05dad0ce137db8",
+    "q2_full_answer_figures/result_q2_A_p_only_cross_scale_grayscale.png": "56edd48182387204eed61b0ab91479a4ad061a18afef5149a42232be2c413dac"
   },
   "B6_B7_overlap": {
     "B6_rows": 360,

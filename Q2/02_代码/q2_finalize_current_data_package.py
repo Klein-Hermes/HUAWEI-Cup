@@ -173,15 +173,35 @@ def configure_plotting() -> tuple[dict, object | None, object | None, object | N
 def export_plot(fig, basename: Path, export_figure, size: tuple[float, float]) -> list[Path]:
     basename.parent.mkdir(parents=True, exist_ok=True)
     if export_figure is not None:
-        names = export_figure(
-            fig,
-            str(basename),
-            formats=["pdf", "svg", "png"],
-            dpi=300,
-            size_inches=size,
-            grayscale_preview=True,
-            tight=False,
-        )
+        export_args = {
+            "formats": ["pdf", "svg", "png"],
+            "dpi": 300,
+            "size_inches": size,
+            "grayscale_preview": True,
+            "tight": False,
+        }
+        try:
+            names = export_figure(fig, str(basename), **export_args)
+        except OSError as exc:
+            # On some Windows/Python combinations, Matplotlib's SVG writer
+            # can reject an otherwise writable long project path with
+            # EINVAL. Retry in the same directory using a short basename,
+            # then replace the intended files so every mirror keeps its name.
+            if exc.errno != 22:
+                raise
+            temp_basename = basename.with_name(f"q2tmp_{basename.name}")
+            suffixes = [".pdf", ".svg", ".png", "_grayscale.png"]
+            for suffix in suffixes:
+                temp_basename.with_name(temp_basename.name + suffix).unlink(missing_ok=True)
+            print(f"[q2-finalizer] retrying figure export with a short temporary basename: {basename.name}")
+            temp_names = export_figure(fig, str(temp_basename), **export_args)
+            names = []
+            for name in temp_names:
+                temp_path = Path(name)
+                suffix = temp_path.name[len(temp_basename.name):]
+                target = basename.with_name(basename.name + suffix)
+                temp_path.replace(target)
+                names.append(str(target))
         paths = [Path(name) for name in names]
         # Pillow's grayscale conversion drops PNG resolution metadata; restore
         # the same 300-DPI tag as the color preview for a clean export audit.

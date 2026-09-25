@@ -99,7 +99,7 @@ B2 结果为半合成压力测试，不是 Cerebras 原始训练日志或独立�
 **数据说明版本声明：**完整回答补充在核验 B6–B10 数据角色时，实际使用 `中文题目/F题/数据说明(无隐藏字段版本）.pdf` 的可见文本。该文件哈希登记在 `03_结果/综合收口/v1/inputs_manifest.csv` 和本补充的 `03_结果/完整回答补充/v1/repro_manifest.json` 中；用途仅限角色核验，不是 M0 拟合输入。本次同步将该版本纳入仓库，供核对哈希和复现角色核验。历史清单中的 `中文题目/F题/数据说明.pdf` 是另一文件，其原路径缺失仍单独记录；无隐藏字段版本不替代历史原件。原始带隐藏字段 PDF 的隐藏文本未读取。
 
 - 证据补充报告：`03_结果/完整回答补充/v1/q2_full_answer_evidence_supplement.md`（同步副本：`docs/q2_full_answer_evidence_supplement.md`）
-- 完整回答图表：`04_图表/q2_full_answer/`（图表契约与 QA：`03_结果/完整回答补充/v1/q2_full_answer_figures_contract.csv`、`q2_full_answer_figures_qa.json`）
+- 完整回答图表：`04_图表/q2_full_answer/`（现含原图组、M0 弹性剖面、B1–B5 p Gate 审计图及 A 侧跨尺度来源副本；该副本与已有跨尺度图内容重复；图表契约与 QA：`03_结果/完整回答补充/v1/q2_full_answer_figures_contract.csv`、`q2_full_answer_figures_qa.json`）
 - B6/B7 半合成 Q 响应、多初值诊断及留一 Q 水平结果：`03_结果/完整回答补充/v1/b6_b7_q_model_supplement.csv`
 - B6/B7 半合成 Q→N 等 Loss 数值示例：`03_结果/完整回答补充/v1/b6_b7_q_n_equal_loss_demo.csv`
 - B6–B8 Q 方向与 B7/B6 重叠审计：`03_结果/完整回答补充/v1/b6_b8_q_direction_audit.csv`

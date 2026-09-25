@@ -1,7 +1,7 @@
 {
   "task": "Q2 M0 marginal effects and B2-B5 validation scope closeout",
   "status": "completed_with_validation_limits",
-  "created_utc": "2026-09-24T14:35:56+00:00",
+  "created_utc": "2026-09-25T03:29:19+00:00",
   "command": "D:\\Anaconda\\python.exe src/q2_m0_effects_validation_closeout.py",
   "script": "src/q2_m0_effects_validation_closeout.py",
   "script_sha256": "837fd30491d5d113b8f7e7853e34087bf13038bd71af679b27fbd1be086e0d1a",
