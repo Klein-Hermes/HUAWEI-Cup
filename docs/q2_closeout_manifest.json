@@ -1,7 +1,7 @@
 {
   "task": "Q2 A/B evidence matrix, independent-Q gate, and current-data closeout",
   "status": "FROZEN_WITH_LIMITATIONS",
-  "created_utc": "2026-09-25T03:29:21+00:00",
+  "created_utc": "2026-09-25T05:05:42+00:00",
   "command": "D:/Anaconda/python.exe src/q2_build_evidence_closeout.py",
   "script": "src/q2_build_evidence_closeout.py",
   "script_sha256": "a7d2a851c96a705eb7a0089e7adc5573fc8da593743c136b915de6d983a79e1b",

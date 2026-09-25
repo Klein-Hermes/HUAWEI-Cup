@@ -16,7 +16,7 @@
 | `rps_lines_ending_with_terminal_punctution_mark` | 每行是否以指定终止标点结尾 | 本地 A1 2.7972–61.0092；公开范围 0–100 | 百分数尺度相符；从行级布尔值到文档级标量的聚合公式未证实 |
 | `rps_lines_numerical_chars_fraction` | 归一化文本每行中数字字符/总字符数 | 本地 A1 0–36.8423；公开范围 0–85.7 | 指标定义与百分数尺度相符 |
 
-本地范围取自既有冻结方案记录 `zwj/q1_1_modeling_plan.md`；公开范围来自查看器。它们支持字段解释，但不替代对底层生成版本的核验。
+本地范围取自既有冻结方案记录 `Q1/归档_20260925/q1_1_modeling_plan.md`；公开范围来自查看器。它们支持字段解释，但不替代对底层生成版本的核验。
 
 本题使用的上游整理数据是 OpenDataLab 的 SlimPajama-Meta-rater。该数据集查看器为这些字段展示的数值范围主要在 0–100，例如 `rps_doc_frac_unique_words` 为 1.16–100、句末标点为 0–100、`rps_doc_frac_chars_top_2gram` 为 0–92.9。这与把比例乘以 100 后存储相符。因此，“字段值大于 1 就是错误单位”的判断不成立；对这些列整体再除以 100 也不是当前应做的修正。该尺度判断是根据公开数据卡定义与查看器数值范围作出的，公开说明没有逐列写出乘 100 的转换代码。见 [SlimPajama-Meta-rater 数据卡](https://huggingface.co/datasets/opendatalab/SlimPajama-Meta-rater) 和 [查看器中的字段范围及示例行](https://huggingface.co/datasets/opendatalab/SlimPajama-Meta-rater/viewer)。
 

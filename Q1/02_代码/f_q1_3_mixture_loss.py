@@ -1916,7 +1916,7 @@ def main() -> int:
     DATA_ROOT = args.data_root if args.data_root.is_absolute() else PROJECT_ROOT / args.data_root
     if args.output_dir is None:
         if args.mode == "audit":
-            out = (PROJECT_ROOT / "zwj" / "F题" / "_Q1" / "_当前编程任务"
+            out = (PROJECT_ROOT / "Q1" / "归档_20260925" / "F题_Q1_当前编程任务"
                    / "results" / "q1_3" / "audit")
         else:
             subdir = {"p1": "p1", "full": "v1"}[args.mode]

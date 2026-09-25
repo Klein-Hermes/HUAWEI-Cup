@@ -1,0 +1,7 @@
+﻿split,role,mixture_rows,loss_rows,mixture_duplicate_index_count,loss_duplicate_index_count,mixture_blank_index_count,loss_blank_index_count,missing_in_loss_count,extra_in_loss_count,missing_in_loss_sample,extra_in_loss_sample,index_order_exact,pair_status
+train_1m,training,512,512,0,0,0,0,0,0,[],[],True,PASS
+test_1m,validation_same_scale,256,256,0,0,0,0,0,0,[],[],True,PASS
+test_60m,validation_cross_scale,256,256,0,0,0,0,0,0,[],[],True,PASS
+test_1b,validation_cross_scale,64,64,0,0,0,0,0,0,[],[],True,PASS
+estimate_10b,extrapolation_estimate_only,63,63,0,0,0,0,0,0,[],[],True,PASS
+estimate_70b,extrapolation_estimate_only,63,63,0,0,0,0,0,0,[],[],True,PASS
