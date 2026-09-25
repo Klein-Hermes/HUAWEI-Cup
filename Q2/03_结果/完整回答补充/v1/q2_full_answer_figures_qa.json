@@ -12,10 +12,10 @@
       "layout_issues": [],
       "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\raw_q2_p_recipe_support_preview.png",
       "exports": [
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_p_recipe_support.pdf",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_p_recipe_support.svg",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_p_recipe_support.png",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_p_recipe_support_grayscale.png"
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\raw_q2_p_recipe_support.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\raw_q2_p_recipe_support.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\raw_q2_p_recipe_support.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\raw_q2_p_recipe_support_grayscale.png"
       ]
     },
     {
@@ -23,23 +23,21 @@
       "layout_issues": [],
       "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\process_q2_p_interval_adjustment_preview.png",
       "exports": [
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_p_interval_adjustment.pdf",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_p_interval_adjustment.svg",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_p_interval_adjustment.png",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_p_interval_adjustment_grayscale.png"
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\process_q2_p_interval_adjustment.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\process_q2_p_interval_adjustment.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\process_q2_p_interval_adjustment.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\process_q2_p_interval_adjustment_grayscale.png"
       ]
     },
     {
       "figure_id": "result_q2_p_cross_scale_rmse",
-      "layout_issues": [
-        "('WARN', \"以下文字可能超出画布被裁切：['13 个 Loss 目标的目标级 RMSE']。跑 finalize_figure(fig) 或导出时 bbox_inches='tight' 兜底；标题/标签过长可换行或缩短。\")"
-      ],
+      "layout_issues": [],
       "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\result_q2_p_cross_scale_rmse_preview.png",
       "exports": [
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_p_cross_scale_rmse.pdf",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_p_cross_scale_rmse.svg",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_p_cross_scale_rmse.png",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_p_cross_scale_rmse_grayscale.png"
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_p_cross_scale_rmse.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_p_cross_scale_rmse.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_p_cross_scale_rmse.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_p_cross_scale_rmse_grayscale.png"
       ]
     },
     {
@@ -47,10 +45,10 @@
       "layout_issues": [],
       "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\raw_q2_q_source_patterns_preview.png",
       "exports": [
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_q_source_patterns.pdf",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_q_source_patterns.svg",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_q_source_patterns.png",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\raw_q2_q_source_patterns_grayscale.png"
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\raw_q2_q_source_patterns.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\raw_q2_q_source_patterns.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\raw_q2_q_source_patterns.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\raw_q2_q_source_patterns_grayscale.png"
       ]
     },
     {
@@ -60,10 +58,10 @@
       ],
       "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\process_q2_q_leave_q_comparison_preview.png",
       "exports": [
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_q_leave_q_comparison.pdf",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_q_leave_q_comparison.svg",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_q_leave_q_comparison.png",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\process_q2_q_leave_q_comparison_grayscale.png"
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\process_q2_q_leave_q_comparison.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\process_q2_q_leave_q_comparison.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\process_q2_q_leave_q_comparison.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\process_q2_q_leave_q_comparison_grayscale.png"
       ]
     },
     {
@@ -73,10 +71,10 @@
       ],
       "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\result_q2_q_matched_slope_conflict_preview.png",
       "exports": [
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_q_matched_slope_conflict.pdf",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_q_matched_slope_conflict.svg",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_q_matched_slope_conflict.png",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\result_q2_q_matched_slope_conflict_grayscale.png"
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_q_matched_slope_conflict.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_q_matched_slope_conflict.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_q_matched_slope_conflict.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_q_matched_slope_conflict_grayscale.png"
       ]
     },
     {
@@ -84,11 +82,98 @@
       "layout_issues": [],
       "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_full_answer_figure_previews\\flow_q2_full_answer_preview.png",
       "exports": [
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\flow_q2_full_answer.pdf",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\flow_q2_full_answer.svg",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\flow_q2_full_answer.png",
-        "D:\\PycharmProject\\HUAWEI-Cup\\results\\q2_full_answer_supplement\\v1\\q2_full_answer_figures\\flow_q2_full_answer_grayscale.png"
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\flow_q2_full_answer.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\flow_q2_full_answer.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\flow_q2_full_answer.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\flow_q2_full_answer_grayscale.png"
       ]
+    },
+    {
+      "figure_id": "result_q2_p_gate_audit",
+      "layout_issues": [],
+      "preview": "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_p_gate_audit.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_p_gate_audit.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_p_gate_audit.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_p_gate_audit.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_p_gate_audit_grayscale.png"
+      ],
+      "source_manifest": "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\复现清单.json",
+      "source_inputs": {
+        "Q2\\03_结果\\经典ScalingLaw基线\\v1\\q2_m0_marginal_effects_by_checkpoint.csv": "A2E1B1408BA1E68990244B0CDFAD97D25C4A8F73A74333E206AE1F0E83E43530",
+        "Q1\\03_结果\\Q1.3\\v1\\holdout_metrics.csv": "E2E2F7850B9BA5B7D51373F5E78F401EC8863291C1F357577F96DD9189B7E229",
+        "Q1\\03_结果\\Q1.3\\v1\\q1_3_run_report.md": "1008F21235BF54F128B1D042ED0B4A486710D5D459E50EE1962D56C6EA445B7C",
+        "Q2\\03_结果\\p配比可行性审计\\v1\\q2_p_audit_summary.json": "82E53B9A4A6612A88B9B8C244A0B145EB951D96A84D1BAC8B613589B4A7A71CE",
+        "Q2\\03_结果\\p配比可行性审计\\v1\\q2_p_trajectory_mapping.csv": "FE7B233FAA4B2C3213A0C086551E3603E957F1CC816FC69140900F394DCEB868",
+        "Q2\\03_结果\\经典ScalingLaw基线\\v1\\validation_comparability.json": "73FCACF9A212CD5C63428329021E7389E8F5E0D1DBB582C31A1D2AEA5D908A75",
+        "Q2\\03_结果\\经典ScalingLaw基线\\v1\\loss_protocol_matrix.csv": "29C08F249954D23820FB615A88C067E0EBDBEC5CCC85D46B447500C6C80D9B71",
+        "Q2\\03_结果\\p配比可行性审计\\v1\\q2_p_feasibility_audit.md": "15C61269A83F104F2020417F900F4B78626C7A5BC029A2817D6D46EBA5C48A76",
+        "Q2\\03_结果\\经典ScalingLaw基线\\v1\\b4_b5_loss_comparability_audit.md": "4523FAD8C2B5DCEAC7619F80A06CA13B003F06E268263F0BCFB9EB512F6B96DC"
+      },
+      "source_figure_hashes": {
+        "result_q2_p_gate_audit.svg": "6D168D33D33E4565E2FD135A3131199BBFB74B95417BD63E40C5ABA32F06F43B",
+        "result_q2_p_gate_audit.pdf": "BBBA4986A6815E4E8822292E27F14B45A62892933853A35DBC72D5B24BFD71F5",
+        "result_q2_p_gate_audit.png": "2383A7C75561A9596B992E1F153C990991609476085E510631624D19D5F1CAC6",
+        "result_q2_p_gate_audit_grayscale.png": "58B10CFAD9A72D8E2E35E45399FF3C6DD35035FC69165E291B7D286E36D25E67"
+      }
+    },
+    {
+      "figure_id": "result_q2_m0_elasticity_profile",
+      "layout_issues": [],
+      "preview": "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_m0_elasticity_profile.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_m0_elasticity_profile.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_m0_elasticity_profile.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_m0_elasticity_profile.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_m0_elasticity_profile_grayscale.png"
+      ],
+      "source_manifest": "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\复现清单.json",
+      "source_inputs": {
+        "Q2\\03_结果\\经典ScalingLaw基线\\v1\\q2_m0_marginal_effects_by_checkpoint.csv": "A2E1B1408BA1E68990244B0CDFAD97D25C4A8F73A74333E206AE1F0E83E43530",
+        "Q1\\03_结果\\Q1.3\\v1\\holdout_metrics.csv": "E2E2F7850B9BA5B7D51373F5E78F401EC8863291C1F357577F96DD9189B7E229",
+        "Q1\\03_结果\\Q1.3\\v1\\q1_3_run_report.md": "1008F21235BF54F128B1D042ED0B4A486710D5D459E50EE1962D56C6EA445B7C",
+        "Q2\\03_结果\\p配比可行性审计\\v1\\q2_p_audit_summary.json": "82E53B9A4A6612A88B9B8C244A0B145EB951D96A84D1BAC8B613589B4A7A71CE",
+        "Q2\\03_结果\\p配比可行性审计\\v1\\q2_p_trajectory_mapping.csv": "FE7B233FAA4B2C3213A0C086551E3603E957F1CC816FC69140900F394DCEB868",
+        "Q2\\03_结果\\经典ScalingLaw基线\\v1\\validation_comparability.json": "73FCACF9A212CD5C63428329021E7389E8F5E0D1DBB582C31A1D2AEA5D908A75",
+        "Q2\\03_结果\\经典ScalingLaw基线\\v1\\loss_protocol_matrix.csv": "29C08F249954D23820FB615A88C067E0EBDBEC5CCC85D46B447500C6C80D9B71",
+        "Q2\\03_结果\\p配比可行性审计\\v1\\q2_p_feasibility_audit.md": "15C61269A83F104F2020417F900F4B78626C7A5BC029A2817D6D46EBA5C48A76",
+        "Q2\\03_结果\\经典ScalingLaw基线\\v1\\b4_b5_loss_comparability_audit.md": "4523FAD8C2B5DCEAC7619F80A06CA13B003F06E268263F0BCFB9EB512F6B96DC"
+      },
+      "source_figure_hashes": {
+        "result_q2_m0_elasticity_profile.svg": "B43FF56E4C29EB84EC8D6102121173EBCAFB1986A037AE3CD6B5A5F00055E519",
+        "result_q2_m0_elasticity_profile.pdf": "1657D63E13333C377FA4BF0CEE2A1DCAB33952A1C30507F520904BE08C28FC9C",
+        "result_q2_m0_elasticity_profile.png": "09F73034DBA09BDD92FC8C01D3990BA6ED04C4F54C8F6DBEA01C065CC28B8343",
+        "result_q2_m0_elasticity_profile_grayscale.png": "D97E64BE56295ED21861D58752BABF6E54357F9C9A6715D51DCE9DA8C02994C3"
+      }
+    },
+    {
+      "figure_id": "result_q2_A_p_only_cross_scale",
+      "layout_issues": [],
+      "preview": "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_A_p_only_cross_scale.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_A_p_only_cross_scale.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_A_p_only_cross_scale.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_A_p_only_cross_scale.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\03_结果\\完整回答补充\\v1\\q2_full_answer_figures\\result_q2_A_p_only_cross_scale_grayscale.png"
+      ],
+      "source_manifest": "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\复现清单.json",
+      "source_inputs": {
+        "Q2\\03_结果\\经典ScalingLaw基线\\v1\\q2_m0_marginal_effects_by_checkpoint.csv": "A2E1B1408BA1E68990244B0CDFAD97D25C4A8F73A74333E206AE1F0E83E43530",
+        "Q1\\03_结果\\Q1.3\\v1\\holdout_metrics.csv": "E2E2F7850B9BA5B7D51373F5E78F401EC8863291C1F357577F96DD9189B7E229",
+        "Q1\\03_结果\\Q1.3\\v1\\q1_3_run_report.md": "1008F21235BF54F128B1D042ED0B4A486710D5D459E50EE1962D56C6EA445B7C",
+        "Q2\\03_结果\\p配比可行性审计\\v1\\q2_p_audit_summary.json": "82E53B9A4A6612A88B9B8C244A0B145EB951D96A84D1BAC8B613589B4A7A71CE",
+        "Q2\\03_结果\\p配比可行性审计\\v1\\q2_p_trajectory_mapping.csv": "FE7B233FAA4B2C3213A0C086551E3603E957F1CC816FC69140900F394DCEB868",
+        "Q2\\03_结果\\经典ScalingLaw基线\\v1\\validation_comparability.json": "73FCACF9A212CD5C63428329021E7389E8F5E0D1DBB582C31A1D2AEA5D908A75",
+        "Q2\\03_结果\\经典ScalingLaw基线\\v1\\loss_protocol_matrix.csv": "29C08F249954D23820FB615A88C067E0EBDBEC5CCC85D46B447500C6C80D9B71",
+        "Q2\\03_结果\\p配比可行性审计\\v1\\q2_p_feasibility_audit.md": "15C61269A83F104F2020417F900F4B78626C7A5BC029A2817D6D46EBA5C48A76",
+        "Q2\\03_结果\\经典ScalingLaw基线\\v1\\b4_b5_loss_comparability_audit.md": "4523FAD8C2B5DCEAC7619F80A06CA13B003F06E268263F0BCFB9EB512F6B96DC"
+      },
+      "source_figure_hashes": {
+        "result_q2_A_p_only_cross_scale.svg": "9E361FF3A78B5F67C4CCADB9FFA52A418A9834A3BC4B410AFFAB7B8BB32E0D1A",
+        "result_q2_A_p_only_cross_scale.pdf": "7AF6CE1BB42267CD6BD44DFB253E04163FE8B4320988E89432401D2D7F9EED33",
+        "result_q2_A_p_only_cross_scale.png": "1C908F0FA325017D843EFF5BB6B285BA0D4BFB1DB93C3C2C3F05DAD0CE137DB8",
+        "result_q2_A_p_only_cross_scale_grayscale.png": "56EDD48182387204EED61B0AB91479A4AD061A18AFEF5149A42232BE2C413DAC"
+      }
     }
   ]
 }

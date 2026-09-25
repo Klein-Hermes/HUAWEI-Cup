@@ -1,0 +1,147 @@
+{
+  "purpose": "Q2 supplementary figures only; no data modification and no model fitting",
+  "generator": {
+    "path": "Q2\\归档_20260925\\plot_q2_supplementary_figures.py",
+    "sha256": "1E808D5272A5D296BB97584F5099753C502729DCA20A14DEF1DF508478FBD0F7"
+  },
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "D:\\Anaconda\\python.exe",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.6",
+    "Pillow": "12.0.0"
+  },
+  "style": {
+    "journal": "general",
+    "lang": "zh",
+    "sciplots_used": false,
+    "cjk_font": "SimHei",
+    "constrained_layout": false
+  },
+  "dpi": 300,
+  "command_from_project_root": "D:\\Anaconda\\python.exe Q2\\归档_20260925\\plot_q2_supplementary_figures.py",
+  "inputs": {
+    "Q2\\03_结果\\经典ScalingLaw基线\\v1\\q2_m0_marginal_effects_by_checkpoint.csv": "A2E1B1408BA1E68990244B0CDFAD97D25C4A8F73A74333E206AE1F0E83E43530",
+    "Q1\\03_结果\\Q1.3\\v1\\holdout_metrics.csv": "E2E2F7850B9BA5B7D51373F5E78F401EC8863291C1F357577F96DD9189B7E229",
+    "Q1\\03_结果\\Q1.3\\v1\\q1_3_run_report.md": "1008F21235BF54F128B1D042ED0B4A486710D5D459E50EE1962D56C6EA445B7C",
+    "Q2\\03_结果\\p配比可行性审计\\v1\\q2_p_audit_summary.json": "82E53B9A4A6612A88B9B8C244A0B145EB951D96A84D1BAC8B613589B4A7A71CE",
+    "Q2\\03_结果\\p配比可行性审计\\v1\\q2_p_trajectory_mapping.csv": "FE7B233FAA4B2C3213A0C086551E3603E957F1CC816FC69140900F394DCEB868",
+    "Q2\\03_结果\\经典ScalingLaw基线\\v1\\validation_comparability.json": "73FCACF9A212CD5C63428329021E7389E8F5E0D1DBB582C31A1D2AEA5D908A75",
+    "Q2\\03_结果\\经典ScalingLaw基线\\v1\\loss_protocol_matrix.csv": "29C08F249954D23820FB615A88C067E0EBDBEC5CCC85D46B447500C6C80D9B71",
+    "Q2\\03_结果\\p配比可行性审计\\v1\\q2_p_feasibility_audit.md": "15C61269A83F104F2020417F900F4B78626C7A5BC029A2817D6D46EBA5C48A76",
+    "Q2\\03_结果\\经典ScalingLaw基线\\v1\\b4_b5_loss_comparability_audit.md": "4523FAD8C2B5DCEAC7619F80A06CA13B003F06E268263F0BCFB9EB512F6B96DC"
+  },
+  "figures": {
+    "result_q2_m0_elasticity_profile": [
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\result_q2_m0_elasticity_profile.svg",
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\result_q2_m0_elasticity_profile.pdf",
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\result_q2_m0_elasticity_profile.png",
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\result_q2_m0_elasticity_profile_grayscale.png"
+    ],
+    "result_q2_A_p_only_cross_scale": [
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\result_q2_A_p_only_cross_scale.svg",
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\result_q2_A_p_only_cross_scale.pdf",
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\result_q2_A_p_only_cross_scale.png",
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\result_q2_A_p_only_cross_scale_grayscale.png"
+    ],
+    "result_q2_p_gate_audit": [
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\result_q2_p_gate_audit.svg",
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\result_q2_p_gate_audit.pdf",
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\result_q2_p_gate_audit.png",
+      "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\归档_20260925\\Q2补充图表\\result_q2_p_gate_audit_grayscale.png"
+    ]
+  },
+  "figure_sha256": {
+    "result_q2_m0_elasticity_profile": {
+      "result_q2_m0_elasticity_profile.svg": "B43FF56E4C29EB84EC8D6102121173EBCAFB1986A037AE3CD6B5A5F00055E519",
+      "result_q2_m0_elasticity_profile.pdf": "1657D63E13333C377FA4BF0CEE2A1DCAB33952A1C30507F520904BE08C28FC9C",
+      "result_q2_m0_elasticity_profile.png": "09F73034DBA09BDD92FC8C01D3990BA6ED04C4F54C8F6DBEA01C065CC28B8343",
+      "result_q2_m0_elasticity_profile_grayscale.png": "D97E64BE56295ED21861D58752BABF6E54357F9C9A6715D51DCE9DA8C02994C3"
+    },
+    "result_q2_A_p_only_cross_scale": {
+      "result_q2_A_p_only_cross_scale.svg": "9E361FF3A78B5F67C4CCADB9FFA52A418A9834A3BC4B410AFFAB7B8BB32E0D1A",
+      "result_q2_A_p_only_cross_scale.pdf": "7AF6CE1BB42267CD6BD44DFB253E04163FE8B4320988E89432401D2D7F9EED33",
+      "result_q2_A_p_only_cross_scale.png": "1C908F0FA325017D843EFF5BB6B285BA0D4BFB1DB93C3C2C3F05DAD0CE137DB8",
+      "result_q2_A_p_only_cross_scale_grayscale.png": "56EDD48182387204EED61B0AB91479A4AD061A18AFEF5149A42232BE2C413DAC"
+    },
+    "result_q2_p_gate_audit": {
+      "result_q2_p_gate_audit.svg": "6D168D33D33E4565E2FD135A3131199BBFB74B95417BD63E40C5ABA32F06F43B",
+      "result_q2_p_gate_audit.pdf": "BBBA4986A6815E4E8822292E27F14B45A62892933853A35DBC72D5B24BFD71F5",
+      "result_q2_p_gate_audit.png": "2383A7C75561A9596B992E1F153C990991609476085E510631624D19D5F1CAC6",
+      "result_q2_p_gate_audit_grayscale.png": "58B10CFAD9A72D8E2E35E45399FF3C6DD35035FC69165E291B7D286E36D25E67"
+    }
+  },
+  "statistics": {
+    "result_q2_m0_elasticity_profile": {
+      "source_rows": 1176,
+      "model_scales": 8,
+      "checkpoints_per_scale": [
+        147
+      ],
+      "D_range_B_tokens": [
+        0.134,
+        299.893
+      ],
+      "layout": "4x4 single figure: two 2x4 N/D blocks for readability and complete coverage of 8 scales"
+    },
+    "result_q2_A_p_only_cross_scale": {
+      "source_rows": 156,
+      "filtered_rows": 39,
+      "filter": "model=simplex_ridge; variant=closed; split in test_1m,test_60m,test_1b",
+      "targets_per_split": {
+        "test_1b": 13,
+        "test_1m": 13,
+        "test_60m": 13
+      },
+      "n_per_target": {
+        "test_1m": 256,
+        "test_60m": 256,
+        "test_1b": 64
+      },
+      "macro_rmse": {
+        "test_1m": 0.453863022539131,
+        "test_60m": 1.559016237743511,
+        "test_1b": 3.1969897294857077
+      },
+      "macro_r2": {
+        "test_1m": 0.6188879050595114,
+        "test_60m": -7.933569486978266,
+        "test_1b": -810.1195857238465
+      }
+    },
+    "result_q2_p_gate_audit": {
+      "mapping_rows": 124,
+      "record_total_and_units": {
+        "B1": {
+          "record_total": 1176,
+          "unit_rows": 8
+        },
+        "B2": {
+          "record_total": 1029,
+          "unit_rows": 7
+        },
+        "B3": {
+          "record_total": 4000,
+          "unit_rows": 8
+        },
+        "B4": {
+          "record_total": 57,
+          "unit_rows": 57
+        },
+        "B5": {
+          "record_total": 44,
+          "unit_rows": 44
+        }
+      },
+      "verified_p_vectors_joined_to_loss": 0,
+      "loss_rows_with_p_joined": 0,
+      "B4_B5_classification_vs_B1": "NOT_COMPARABLE",
+      "B2_label_correction": "1,029 semi-synthetic records; 7 tracks (the task sheet incorrectly called all 1,029 rows tracks)"
+    }
+  },
+  "optional_figure_4": {
+    "generated": false,
+    "reason": "Within every model size, fitted loss is a monotone transform of D (Spearman=-1); residual-vs-D is therefore a horizontal-axis re-expression of the existing residual-vs-fitted diagnostic and adds no independent statistical or validation evidence."
+  }
+}

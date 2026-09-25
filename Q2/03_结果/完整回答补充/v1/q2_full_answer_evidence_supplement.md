@@ -90,7 +90,9 @@ B1 只有一个共同配方政策组。若 p 为固定 `p_0`，M1 中 `B exp[-be
 
 本分析遵循《题目分析报告》中的投毒处理：原始 PDF 低可见度文本不作为题意、公式、先验、变量或结论。本轮数据说明只从 `数据说明(无隐藏字段版本）.pdf` 的可见文本层确认 B6–B10 数据角色；未读取原始带隐藏字段版本的文本层。对 B8 冲突只报告可复核的数值模式，不推断恶意来源。输入原件只读。
 
-唯一复现命令：`D:\Anaconda\python.exe src/q2_full_answer_supplement.py`。
+完整回答数值分析与图表复现命令：`D:\Anaconda\python.exe src/q2_full_answer_supplement.py`。
+
+先刷新 M0 弹性剖面、p Gate 审计和 A 侧 p-only 跨尺度图的只读派生文件：`D:\Anaconda\python.exe Q2\归档_20260925\plot_q2_supplementary_figures.py`；随后运行完整回答入口。入口会校验补充图的 SHA-256，将三图接入正式图组，并同步到 `Q2/04_图表/q2_full_answer/` 与 `docs/q2_full_answer_figures/`。输入和图表口径见 `Q2/归档_20260925/Q2补充图表/复现清单.json` 与 `图表契约.md`。
 
 ## 图表索引
 
@@ -101,10 +103,13 @@ B1 只有一个共同配方政策组。若 p 为固定 `p_0`，M1 中 `B exp[-be
 |---|---|
 | 原始数据 | [A 侧 17 域配方支持范围](q2_full_answer_figures/raw_q2_p_recipe_support.png) |
 | 过程 | [p 互补候选区间校正](q2_full_answer_figures/process_q2_p_interval_adjustment.png) |
-| 结果 | [A 侧 p-only 跨尺度误差](q2_full_answer_figures/result_q2_p_cross_scale_rmse.png) |
+| 结果 | [A 侧 p-only 同尺度与跨尺度评估（RMSE、R²）](q2_full_answer_figures/result_q2_p_cross_scale_rmse.png) |
 | 原始数据 | [半合成 Q–Loss 来源分布](q2_full_answer_figures/raw_q2_q_source_patterns.png) |
 | 过程 | [B6/B7 留一 Q 水平比较](q2_full_answer_figures/process_q2_q_leave_q_comparison.png) |
 | 结果 | [固定 N,D 的 Q 斜率冲突](q2_full_answer_figures/result_q2_q_matched_slope_conflict.png) |
+| 识别门禁 | [B1–B5 p Gate 审计矩阵](q2_full_answer_figures/result_q2_p_gate_audit.png) |
+| M0 结果 | [N、D 弹性随训练量变化](q2_full_answer_figures/result_q2_m0_elasticity_profile.png) |
+| A 侧补充 | [A 侧 p-only 同尺度与跨尺度评估](q2_full_answer_figures/result_q2_A_p_only_cross_scale.png)（与既有跨尺度图内容重复） |
 | 流程图 | [Q2 证据分支与识别门禁](q2_full_answer_figures/flow_q2_full_answer.png) |
 
-本次入口生成 6 张数据图和 1 张流程图；各图同时导出 PNG、SVG 与 PDF。
+本次入口收录 9 张数据图和 1 张流程图；各图导出 PNG、SVG、PDF 与灰度 PNG。A 侧 p-only 跨尺度图是既有同内容图的来源标记副本，不增加评估证据；弹性区间仅作稳定性提示；p Gate 图中的 0 表示当前没有已核验并连接到 Loss 的配比向量。

@@ -1,8 +1,11 @@
-figure_id,category,claim,evidence,warning
+﻿figure_id,category,claim,evidence,warning
 raw_q2_p_recipe_support,raw,A 侧训练配比在 17 域上的经验覆盖和零占比特征。,"A_data_value/regmix_tables/train_mixture_1m.csv, 512 recipes.",这 512 条是 A 侧配方，不是 B1–B5 训练配方；原比例和未强制归一化。
 process_q2_p_interval_adjustment,process,家族区间校正后，互补候选由逐点信号收缩至零个稳健负向区间。,A4/A5 17-domain transfer-pair recipe-group bootstrap summary.,候选集由同一完整样本筛选；max-|t| 结果仅条件于已筛候选，不是确认性检验。
-result_q2_p_cross_scale_rmse,result,A 侧 p-only 模型的目标级绝对误差随测试尺度增大，不能作为 B 侧通用 p 系数。,Q1.3 holdout_metrics.csv; 13 targets per held-out scale.,RMSE 按目标汇总；跨尺度样本并非独立训练复制，不能外推到 B1。
+result_q2_p_cross_scale_rmse,result,附件 A 的 p-only 模型跨尺度评估显示 RMSE 增大且 R² 大幅下降；不能外推为 B 侧 p 效应。,Q1.3 holdout_metrics.csv; 13 targets at each existing evaluation scale; target-wise RMSE and R².,已有评估切分而非新增盲测；13 个领域目标不是独立训练重复；不能据此推断 B 侧 p 效应。
 raw_q2_q_source_patterns,raw,B6/B7/B8 的原始 Q–Loss 结构异质，且必须分来源和数据类型展示。,"B6/B7/B8 source CSV; N,D vary in all panels.","未经 N,D 控制的点云仅为描述；B6/B7 有完全重叠样本。"
 process_q2_q_leave_q_comparison,process,加入 Q 项降低给定半合成网格的留一 Q 水平误差。,Saved B6/B7 Q model supplement; M0 and M_Q_NDQ leave-Q-level RMSE.,仅检验半合成生成表和预设形式；B7 与 B6 完全复用 360 行，不是独立验证。
 result_q2_q_matched_slope_conflict,result,"控制固定 N,D 后，B6/B7 的半合成条件斜率全负，B8 校准/外推组全正。",Matched-cell linear slopes computed from the source B6/B7/B8 CSV files.,匹配单元不是独立实验；B6/B7 复用行，B8 仍是补充/整理数据。不能合并为一个 Q 弹性。
 flow_q2_full_answer,flow,展示 Q2 真实数据、来源内分析、半合成响应和 M1/M2 识别门禁的完整依赖。,"Current Q2 source manifest, p feasibility gate, frozen M0 and q2 supplement code.",流程图将 M1/M2 标为当前未估计；不是未来通过门禁后的拟合方案承诺。
+result_q2_p_gate_audit,result,B1–B5 当前没有经核验并逐行连接到 Loss 的 17 维 p 向量；B 侧 p-only Gate 仍为 FAIL。,"Q2 p audit summary, trajectory mapping, validation comparability, loss protocol matrix, and current audit reports.",0 表示当前已核验并连接到 Loss 的配比数，不代表真实 p 效应为零；B2 半合成、B3 插值、B4/B5 Loss 不可比是不同限制。
+result_q2_m0_elasticity_profile,result,冻结 M0 中 N、D 的模型蕴含弹性随训练量和模型规模变化，补充既有边际效应图。,"q2_m0_marginal_effects_by_checkpoint.csv; 1,176 checkpoints; 8 scales × 147 checkpoints.",仅表示冻结 M0 的 N/D 模型蕴含效应，不是 p/Q 效应或因果效应；8 条轨迹的 cluster Bootstrap 区间仅作稳定性提示。
+result_q2_A_p_only_cross_scale,result,附件 A 的 p-only 模型在同尺度与跨尺度评估中表现差异明显，不能迁移为 B 侧 p 效应。,"Q1.3 holdout_metrics.csv and q1_3_run_report.md; 13 targets across 1M, 60M and 1B evaluation splits.",这是已有切分而非新增盲测，13 个目标不是独立训练重复；图面与 result_q2_p_cross_scale_rmse 内容重复，不增加新的评估证据。

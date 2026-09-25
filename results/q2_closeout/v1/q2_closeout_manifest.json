@@ -1,7 +1,7 @@
 {
   "task": "Q2 A/B evidence matrix, independent-Q gate, and current-data closeout",
   "status": "FROZEN_WITH_LIMITATIONS",
-  "created_utc": "2026-09-24T14:35:59+00:00",
+  "created_utc": "2026-09-25T03:29:21+00:00",
   "command": "D:/Anaconda/python.exe src/q2_build_evidence_closeout.py",
   "script": "src/q2_build_evidence_closeout.py",
   "script_sha256": "a7d2a851c96a705eb7a0089e7adc5573fc8da593743c136b915de6d983a79e1b",
@@ -31,7 +31,7 @@
     "Q2/03_结果/经典ScalingLaw基线/v1/b4_b5_loss_comparability_audit.md": "4523fad8c2b5dceac7619f80a06ca13b003f06e268263f0bcfb9eb512f6b96dc",
     "Q2/03_结果/p配比可行性审计/v1/q2_p_audit_summary.json": "82e53b9a4a6612a88b9b8c244a0b145eb951d96a84d1bac8b613589b4a7a71ce",
     "Q2/03_结果/p配比可行性审计/v1/q2_p_feasibility_audit.md": "15c61269a83f104f2020417f900f4b78626c7a5bc029a2817d6d46eba5c48a76",
-    "Q2/01_方案说明/题目分析报告.md": "5c1a06d42684d597ae3c4acdaf1544bd23b293150765a1d47bef5ebdcb32c0de",
+    "Q2/01_方案说明/题目分析报告.md": "ebb8c62fb72f50b3225a3246e7592437657efee378c2a29ecc450889f1b48544",
     "Q2/01_方案说明/Q2_主模型路线复审_2026-09-24.md": "502904c828e44ae27c6a5a43117f776e8101e70ee53432056fe5d1f0d64a39fc"
   },
   "verification": {

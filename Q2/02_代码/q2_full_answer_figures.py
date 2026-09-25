@@ -7,7 +7,9 @@ semi-synthetic Q response. They do not imply that A/B rows form a joint sample.
 from __future__ import annotations
 
 import json
+import hashlib
 import os
+import shutil
 import sys
 import tempfile
 from pathlib import Path
@@ -18,7 +20,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from matplotlib.lines import Line2D
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Polygon
+from PIL import Image
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -153,7 +157,7 @@ def create_q2_full_answer_figures(
     q1_holdout_metrics: pd.DataFrame,
     skill_root: Path = FIGURE_SKILL_ROOT,
 ) -> dict[str, object]:
-    """Create six data figures and one full-answer workflow chart."""
+    """Create nine data figures and one full-answer workflow chart."""
     setup_style, export_figure, audit_layout, render_preview = _tools(skill_root)
     setup_info = setup_style(journal="general", lang="zh", use_sciplots=False,
                              serif_for_zh=False, constrained_layout=True)
@@ -183,7 +187,7 @@ def create_q2_full_answer_figures(
     qa_records: list[dict[str, object]] = []
 
     def save(fig, stem: str, *, size: tuple[float, float], category: str,
-             claim: str, evidence: str, warning: str) -> None:
+             claim: str, evidence: str, warning: str, tight: bool = True) -> None:
         issues = audit_layout(fig)
         failures = [str(item) for item in issues if str(item).upper().startswith("FAIL")]
         if failures:
@@ -193,8 +197,14 @@ def create_q2_full_answer_figures(
         render_preview(fig, str(preview_path), dpi=150)
         paths = export_figure(
             fig, str(fig_dir / stem), formats=["pdf", "svg", "png"],
-            size_inches=size, dpi=300, grayscale_preview=True,
+            size_inches=size, dpi=300, grayscale_preview=tight, tight=tight,
         )
+        if not tight:
+            png_path = fig_dir / f"{stem}.png"
+            grayscale_path = fig_dir / f"{stem}_grayscale.png"
+            with Image.open(png_path) as image:
+                image.convert("L").save(grayscale_path, dpi=(300, 300))
+            paths.append(str(grayscale_path))
         plt.close(fig)
         figure_specs.append({
             "figure_id": stem,
@@ -292,47 +302,108 @@ def create_q2_full_answer_figures(
          evidence="A4/A5 17-domain transfer-pair recipe-group bootstrap summary.",
          warning="候选集由同一完整样本筛选；max-|t| 结果仅条件于已筛候选，不是确认性检验。")
 
-    # RESULT — target-wise held-out RMSE for the A-side p-only model across training scales.
+    # RESULT — target-wise A-side p-only performance across the existing scale splits.
     held = q1_holdout_metrics[
         (q1_holdout_metrics["model"] == "simplex_ridge")
         & (q1_holdout_metrics["variant"] == "closed")
         & q1_holdout_metrics["split"].isin(["test_1m", "test_60m", "test_1b"])
     ].copy()
     split_order = ["test_1m", "test_60m", "test_1b"]
-    split_labels = ["1M", "60M", "1B"]
-    if held.groupby("split")["target"].nunique().to_dict() != {s: 13 for s in split_order}:
-        raise ValueError("Expected 13 held-out target metrics at each scale")
-    fig, ax = plt.subplots(figsize=(6.3, 4.0))
-    rng = np.random.default_rng(20260924)
-    means_r2 = held.groupby("split")["r2"].mean().to_dict()
-    for idx, (split, label) in enumerate(zip(split_order, split_labels), start=1):
-        values = held.loc[held["split"] == split, "rmse"].to_numpy(float)
-        bp = ax.boxplot(values, positions=[idx], widths=0.44, patch_artist=True,
-                        showfliers=False, medianprops={"color": "#202124", "linewidth": 1.1},
-                        whiskerprops={"color": "#6B7280", "linewidth": 0.8},
-                        capprops={"color": "#6B7280", "linewidth": 0.8})
-        bp["boxes"][0].set_facecolor([PALETTE["primary"], PALETTE["secondary"], PALETTE["contrast"]][idx - 1])
-        bp["boxes"][0].set_alpha(0.30)
-        jitter = rng.normal(0, 0.045, size=len(values))
-        ax.scatter(idx + jitter, values, s=18, alpha=0.78,
-                   color=[PALETTE["primary"], PALETTE["secondary"], PALETTE["contrast"]][idx - 1],
-                   edgecolor="white", linewidth=0.35, zorder=3)
-        ax.text(idx, 4.55, f"mean R2={means_r2[split]:.3g}", ha="center", va="top", fontsize=6.4)
-    ax.set_xticks([1, 2, 3], split_labels)
-    ax.set_xlim(0.5, 3.5)
-    ax.set_ylim(0, 4.9)
-    ax.set_ylabel("13 个 Loss 目标的目标级 RMSE")
-    ax.set_xlabel("配比模型训练尺度")
-    ax.set_title("A 侧 p-only 的跨尺度误差扩大", loc="left")
-    ax.grid(axis="y", color="#D9DEE3", linewidth=0.55, alpha=0.75)
-    ax.set_axisbelow(True)
-    ax.text(0.01, -0.17,
-            "箱线为 13 个目标的分布，点为各目标 RMSE；不是 13 次独立训练。模型在 1M 训练，60M/1B 只作跨尺度检查。",
-            transform=ax.transAxes, ha="left", va="top", fontsize=6.3, color="#4B5563")
-    save(fig, "result_q2_p_cross_scale_rmse", size=(6.3, 4.0), category="result",
-         claim="A 侧 p-only 模型的目标级绝对误差随测试尺度增大，不能作为 B 侧通用 p 系数。",
-         evidence="Q1.3 holdout_metrics.csv; 13 targets per held-out scale.",
-         warning="RMSE 按目标汇总；跨尺度样本并非独立训练复制，不能外推到 B1。")
+    if len(held) != 39 or held.groupby("split")["target"].nunique().to_dict() != {s: 13 for s in split_order}:
+        raise ValueError("Expected 3 existing scale splits × 13 target metrics")
+    expected_n = {"test_1m": 256, "test_60m": 256, "test_1b": 64}
+    for split, n_value in expected_n.items():
+        if set(held.loc[held["split"] == split, "n"].astype(int)) != {n_value}:
+            raise ValueError(f"Unexpected sample size for {split}")
+    macro = held.groupby("split", sort=False)[["rmse", "r2"]].mean().reindex(split_order)
+    expected_macro = {
+        "rmse": np.array([0.453863022539131, 1.5590162377435113, 3.1969897294857073]),
+        "r2": np.array([0.6188879050595115, -7.933569486978265, -810.1195857238465]),
+    }
+    for metric in ("rmse", "r2"):
+        if not np.allclose(macro[metric].to_numpy(float), expected_macro[metric], rtol=0, atol=1e-10):
+            raise ValueError(f"Frozen Q1.3 macro-{metric} values changed")
+
+    cross_scale_rc = {
+        "figure.constrained_layout.use": False,
+        "figure.facecolor": "white",
+        "axes.facecolor": "white",
+        "axes.grid": False,
+        "font.family": "sans-serif",
+        "font.sans-serif": ["Microsoft YaHei", "SimHei", "Arial", "Helvetica", "DejaVu Sans"],
+        "font.size": 7.5,
+        "axes.titlesize": 8.0,
+        "axes.labelsize": 8.0,
+        "xtick.labelsize": 6.8,
+        "ytick.labelsize": 6.8,
+        "legend.fontsize": 7.0,
+        "svg.fonttype": "none",
+        "pdf.fonttype": 42,
+        "axes.unicode_minus": False,
+    }
+    previous_rc = {key: plt.rcParams[key] for key in cross_scale_rc}
+    plt.rcParams.update(cross_scale_rc)
+    x_positions = np.arange(3, dtype=float)
+    x_labels = ["1M\n同尺度", "60M\n跨尺度", "1B\n跨尺度"]
+    colors = ["#0072B2", "#E69F00", "#009E73"]
+    fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.9), constrained_layout=False)
+    for metric, ylabel, axis in (
+        ("rmse", "逐目标 RMSE", axes[0]),
+        ("r2", r"逐目标 $R^2$（symlog）", axes[1]),
+    ):
+        for index, split in enumerate(split_order):
+            subset = held.loc[held["split"] == split].sort_values("target")
+            jitter = np.linspace(-0.17, 0.17, len(subset))
+            axis.scatter(
+                np.full(len(subset), x_positions[index]) + jitter,
+                subset[metric], s=20, facecolor=colors[index], edgecolor="white",
+                linewidth=0.45, alpha=0.76, zorder=2,
+            )
+            mean_value = float(macro.loc[split, metric])
+            axis.scatter(x_positions[index], mean_value, marker="D", s=56,
+                         facecolor=colors[index], edgecolor="#222222", linewidth=0.85,
+                         zorder=4)
+            text_value = (f"{mean_value:.3f}" if metric == "rmse" or abs(mean_value) < 10
+                          else f"{mean_value:.1f}")
+            axis.annotate(text_value, (x_positions[index], mean_value), xytext=(0, 7),
+                          textcoords="offset points", ha="center", va="bottom",
+                          fontsize=6.2, fontweight="bold", color="#222222")
+        axis.set_xticks(x_positions, x_labels)
+        axis.set_xlim(-0.45, 2.45)
+        axis.set_ylabel(ylabel)
+        axis.set_xlabel("已有评估切分")
+        axis.grid(axis="y", color="#E6E8EB", linewidth=0.5)
+        axis.set_axisbelow(True)
+    axes[0].set_ylim(bottom=0)
+    axes[0].set_title("a  RMSE：跨尺度误差上升", loc="left", fontweight="bold")
+    axes[1].axhline(0, color="#222222", linewidth=0.8, linestyle="--", zorder=1)
+    axes[1].set_yscale("symlog", linthresh=1.0, linscale=1.0, base=10)
+    axes[1].set_ylim(-6000, 1.2)
+    axes[1].set_title(r"b  $R^2$：跨尺度大幅下降", loc="left", fontweight="bold")
+    axes[1].text(0.98, 0.97, "symlog；线性阈值 ±1", transform=axes[1].transAxes,
+                 ha="right", va="top", fontsize=6.4, color="#6B7280")
+    legend_handles = [
+        Line2D([0], [0], marker="o", color="none", markerfacecolor="#6B7280",
+               markeredgecolor="white", markersize=5, label="领域目标（13个）"),
+        Line2D([0], [0], marker="D", color="none", markerfacecolor="#6B7280",
+               markeredgecolor="#222222", markersize=6, label="13目标等权宏平均"),
+    ]
+    fig.legend(handles=legend_handles, loc="upper center", bbox_to_anchor=(0.5, 0.92),
+               ncol=2, frameon=False)
+    fig.suptitle("附件 A 的 p-only 配比模型：同尺度与跨尺度评估", fontsize=11, y=0.992)
+    fig.text(
+        0.5, 0.016,
+        "点为领域目标，不是独立训练重复；菱形为13个目标指标的算术平均，无置信区间或误差棒。\n"
+        "这是已有评估切分而非新增盲测；跨尺度表现仅说明迁移限制，不证明 B 侧 p 效应。",
+        ha="center", va="bottom", fontsize=6.7, color="#40464D",
+    )
+    fig.subplots_adjust(left=0.095, right=0.985, top=0.80, bottom=0.23, wspace=0.30)
+    save(fig, "result_q2_p_cross_scale_rmse", size=(7.2, 3.9), category="result",
+         claim="附件 A 的 p-only 模型跨尺度评估显示 RMSE 增大且 R² 大幅下降；不能外推为 B 侧 p 效应。",
+         evidence="Q1.3 holdout_metrics.csv; 13 targets at each existing evaluation scale; target-wise RMSE and R².",
+         warning="已有评估切分而非新增盲测；13 个领域目标不是独立训练重复；不能据此推断 B 侧 p 效应。",
+         tight=False)
+    plt.rcParams.update(previous_rc)
 
     # RAW — unadjusted Q-score/Loss support, explicitly faceted by data source/type.
     fig, axes = plt.subplots(2, 2, figsize=(7.2, 5.2), sharex=True, sharey=True)
@@ -435,6 +506,72 @@ def create_q2_full_answer_figures(
          evidence="Current Q2 source manifest, p feasibility gate, frozen M0 and q2 supplement code.",
          warning="流程图将 M1/M2 标为当前未估计；不是未来通过门禁后的拟合方案承诺。")
 
+    # Include the separately generated M0 profile and p identifiability gate.
+    supplementary_dir = project_root / "Q2" / "归档_20260925" / "Q2补充图表"
+    supplementary_figures = [
+        {
+            "figure_id": "result_q2_p_gate_audit",
+            "category": "result",
+            "claim": "B1–B5 当前没有经核验并逐行连接到 Loss 的 17 维 p 向量；B 侧 p-only Gate 仍为 FAIL。",
+            "evidence": "Q2 p audit summary, trajectory mapping, validation comparability, loss protocol matrix, and current audit reports.",
+            "warning": "0 表示当前已核验并连接到 Loss 的配比数，不代表真实 p 效应为零；B2 半合成、B3 插值、B4/B5 Loss 不可比是不同限制。",
+        },
+        {
+            "figure_id": "result_q2_m0_elasticity_profile",
+            "category": "result",
+            "claim": "冻结 M0 中 N、D 的模型蕴含弹性随训练量和模型规模变化，补充既有边际效应图。",
+            "evidence": "q2_m0_marginal_effects_by_checkpoint.csv; 1,176 checkpoints; 8 scales × 147 checkpoints.",
+            "warning": "仅表示冻结 M0 的 N/D 模型蕴含效应，不是 p/Q 效应或因果效应；8 条轨迹的 cluster Bootstrap 区间仅作稳定性提示。",
+        },
+        {
+            "figure_id": "result_q2_A_p_only_cross_scale",
+            "category": "result",
+            "claim": "附件 A 的 p-only 模型在同尺度与跨尺度评估中表现差异明显，不能迁移为 B 侧 p 效应。",
+            "evidence": "Q1.3 holdout_metrics.csv and q1_3_run_report.md; 13 targets across 1M, 60M and 1B evaluation splits.",
+            "warning": "这是已有切分而非新增盲测，13 个目标不是独立训练重复；图面与 result_q2_p_cross_scale_rmse 内容重复，不增加新的评估证据。",
+        },
+    ]
+    source_manifest_path = supplementary_dir / "复现清单.json"
+    if not source_manifest_path.is_file():
+        raise FileNotFoundError(
+            f"Supplementary figure manifest not found: {source_manifest_path}; "
+            "run Q2/归档_20260925/plot_q2_supplementary_figures.py first."
+        )
+    source_manifest = json.loads(source_manifest_path.read_text(encoding="utf-8"))
+    source_hashes = source_manifest.get("inputs", {})
+    source_figure_hashes = source_manifest.get("figure_sha256", {})
+    for item in supplementary_figures:
+        stem = item["figure_id"]
+        if stem not in source_figure_hashes:
+            raise ValueError(f"Supplementary figure hashes missing for {stem}; regenerate the manifest.")
+        for suffix in ("pdf", "svg", "png", "grayscale.png"):
+            filename = f"{stem}_{suffix}" if suffix == "grayscale.png" else f"{stem}.{suffix}"
+            source = supplementary_dir / filename
+            if not source.is_file():
+                raise FileNotFoundError(
+                    f"Supplementary figure missing: {source}; regenerate the supplementary figures first."
+                )
+            actual_hash = hashlib.sha256(source.read_bytes()).hexdigest().upper()
+            expected_hash = source_figure_hashes[stem].get(filename, "").upper()
+            if actual_hash != expected_hash:
+                raise ValueError(f"Supplementary figure hash mismatch for {source}; regenerate the manifest.")
+            shutil.copy2(source, fig_dir / filename)
+        figure_specs.append(item)
+        qa_records.append({
+            "figure_id": stem,
+            "layout_issues": [],
+            "preview": str((fig_dir / f"{stem}.png").resolve()),
+            "exports": [
+                str((fig_dir / f"{stem}.pdf").resolve()),
+                str((fig_dir / f"{stem}.svg").resolve()),
+                str((fig_dir / f"{stem}.png").resolve()),
+                str((fig_dir / f"{stem}_grayscale.png").resolve()),
+            ],
+            "source_manifest": str(source_manifest_path.resolve()),
+            "source_inputs": source_hashes,
+            "source_figure_hashes": source_figure_hashes[stem],
+        })
+
     contracts = pd.DataFrame(figure_specs)
     contracts.to_csv(output_dir / "q2_full_answer_figures_contract.csv", index=False)
     qa_path = output_dir / "q2_full_answer_figures_qa.json"
@@ -444,7 +581,7 @@ def create_q2_full_answer_figures(
         "figure_dir": fig_dir,
         "contracts": output_dir / "q2_full_answer_figures_contract.csv",
         "qa": qa_path,
-        "n_data_figures": 6,
+        "n_data_figures": 9,
         "n_workflow_figures": 1,
         "figure_ids": [item["figure_id"] for item in figure_specs],
         "style": setup_info,
