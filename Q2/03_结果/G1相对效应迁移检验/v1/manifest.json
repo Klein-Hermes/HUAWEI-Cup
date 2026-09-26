@@ -1,0 +1,69 @@
+{
+  "status": "A_SIDE_RELATIVE_RESPONSE_DIAGNOSTIC_COMPLETE_B_SIDE_P_NOT_ESTIMATED",
+  "created_utc": "2026-09-26T12:36:46.568998+00:00",
+  "command": "python src/q2_centered_p_transfer.py --bootstrap-replicates 10000",
+  "python": "3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.22000-SP0",
+  "method": {
+    "filter": {
+      "variant": "closed",
+      "model": "simplex_ridge",
+      "splits": [
+        "test_1m",
+        "test_60m",
+        "test_1b"
+      ]
+    },
+    "estimand": "frozen A-side p-response skill after centering observed/predicted Loss within split x target",
+    "bootstrap_unit": "recipe index; all 13 targets retained as a cluster",
+    "bootstrap_replicates": 10000,
+    "seed_base": 20260926,
+    "per_split_bootstrap": {
+      "test_1m": {
+        "n_recipe_clusters": 256,
+        "n_target_scores_per_draw": 13,
+        "replicates": 10000,
+        "seed": 20260926,
+        "invalid_target_scores": 0
+      },
+      "test_60m": {
+        "n_recipe_clusters": 256,
+        "n_target_scores_per_draw": 13,
+        "replicates": 10000,
+        "seed": 20260926,
+        "invalid_target_scores": 0
+      },
+      "test_1b": {
+        "n_recipe_clusters": 64,
+        "n_target_scores_per_draw": 13,
+        "replicates": 10000,
+        "seed": 20260926,
+        "invalid_target_scores": 0
+      }
+    },
+    "ci": "2.5% and 97.5% linearly interpolated percentile interval"
+  },
+  "input_hashes": {
+    "Q1/03_结果/Q1.3/v1/holdout_predictions.csv": "7547a225072c418db55dc646a8b2528fa501f15836e8a42234b6ee3d89eb2902",
+    "Q1/03_结果/Q1.3/v1/holdout_metrics.csv": "e2e2f7850b9ba5b7d51373f5e78f401ec8863291c1f357577f96dd9189b7e229",
+    "src/q2_centered_p_transfer.py": "07fd118c9b893e562681bd526171d5ac1749e0388e3b2c461afd3d68773504b7"
+  },
+  "outputs": {
+    "Q2/03_结果/G1相对效应迁移检验/v1/centered_transfer_by_target.csv": {
+      "sha256": "bbed340af79e7612c041ae6745620c8cef0f2d3d879acf421e2010f2eeddb5d9",
+      "bytes": 3825
+    },
+    "Q2/03_结果/G1相对效应迁移检验/v1/centered_transfer_summary.csv": {
+      "sha256": "6c320d987fb28d0b2b8812a64b6984faaa88c2e3b72886648280c3dab31ebbbf",
+      "bytes": 663
+    },
+    "Q2/03_结果/G1相对效应迁移检验/v1/cluster_bootstrap_draws.csv": {
+      "sha256": "7667d40be00c05753d7ff41036a4c77a4dd8d17c30a5fea63fea27b20f5505bd",
+      "bytes": 706726
+    },
+    "Q2/03_结果/G1相对效应迁移检验/v1/G1_centered_transfer_report.md": {
+      "sha256": "41cebd71e54039c6ffe9f2f96287879d245574de8b89cc2707274e7b84404a47",
+      "bytes": 2979
+    }
+  }
+}

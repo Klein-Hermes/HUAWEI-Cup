@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "analysis_id": "q4_bbh_task_influence_v1",
+  "package_status": "revision_in_progress",
+  "run_mode": "full",
+  "generated_at_utc": "2026-09-26T08:11:05+00:00",
+  "project_root": "D:\\PycharmProject\\HUAWEI-Cup",
+  "inputs": {
+    "Q4/03_结果/results/q4_task_aggregate.csv": {
+      "sha256": "e51c5516a8e1a3e7a451d726eeeb7699b324a9bd765306462c408a62e9935c18",
+      "bytes": 2331552
+    },
+    "Q4/03_结果/results/q4_task_family_scores.csv": {
+      "sha256": "16adbd2f63baccd70a989770b126dfcbc80ddb07fa372a48ac7450261bcdfa56",
+      "bytes": 1242194
+    },
+    "Q4/03_结果/results/q4_selected_task_scores.csv": {
+      "sha256": "555179f58a519178ebce6a63739746cf44c5f76096e3940168f4eb3c3aa86218",
+      "bytes": 18535697
+    }
+  },
+  "sample": {
+    "complete_core6_models": 789,
+    "bbh_leaf_tasks": 24,
+    "metric": "acc_norm",
+    "top_n_rank_check": 100,
+    "max_reconstructed_index_difference": 2.842170943040401e-14
+  },
+  "method": {
+    "aggregation": "equal leaf-task weights within BBH; equal family weights within Core6",
+    "sensitivity": "deterministic leave-one-BBH-leaf-task-out",
+    "task_percentiles": "reuse historical exact-name candidate-cohort percentiles; do not rerank the complete Core6 subset",
+    "tie_break": "descending score, then model_name_raw ascending",
+    "random_seed": null
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "platform": "Windows-11-10.0.22000-SP0"
+  },
+  "reproduction_command": "python Q4/06_修订推进_20260926/scripts/q4_bbh_task_influence.py",
+  "script_sha256": "62cae19ed20608464c509286fa8f0f9f22c2160cba9130913dddbdd32366e3a9",
+  "outputs": {
+    "q4_bbh_task_leave_one_out.csv": {
+      "sha256": "0a6405d963a46fc7c19c7535436de72113772841170b5222eaa8d1fbe32c9ee6",
+      "bytes": 4385
+    },
+    "q4_bbh_model_rank_stability.csv": {
+      "sha256": "72544373e0e65acdf5adced7d33408c97b591ecbd5081b37aea65e38c8242d51",
+      "bytes": 96705
+    },
+    "q4_bbh_task_difficulty_summary.csv": {
+      "sha256": "7962785b8f431c9efd52987bca0e16bec826013797684c27ecdae79e726f1355",
+      "bytes": 2638
+    },
+    "q4_bbh_task_influence_report.md": {
+      "sha256": "50634c5541b7a86198063f95f8d9769447cf1cf5b7c397b48adade3c90f43502",
+      "bytes": 2629
+    }
+  }
+}

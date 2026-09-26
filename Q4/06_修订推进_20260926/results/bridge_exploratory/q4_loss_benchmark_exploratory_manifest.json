@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-26T10:00:35.274269+00:00",
+  "script": "Q4/06_修订推进_20260926/scripts/q4_loss_benchmark_exploratory_mapping.py",
+  "script_sha256": "640c3e2b1fab1ed633a47b54e353852299bdb2b10e73ea4b3c824e4bf1288136",
+  "contract_sha256": "0287ba010ecfa4cfc35c2303b68f10b4b2bfc167c01e1952ca0564ae055b6c6e",
+  "status": "ELIGIBLE_LIMITED_EXPLORATORY_NOT_CALIBRATED",
+  "strict_v0_6_historical_status": "BLOCKED_NO_FIT_preserved",
+  "inputs": {
+    "b1_training_log": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+    "c1_leaderboard": "199891128629f24f83ed2f51211eee65a82a13f45275e79a8227d5dacc7c2846",
+    "c5_bridge": "284dee7f8878bfe8ebf48c4efbcaa85c1c566377edc5008727c06efa6520170f",
+    "c6_bridge": "e175462233c2b856e2878c603055b4ed70135f021300f912852af1bb485ba4fd",
+    "q4_pair_audit": "ea50a05e4111b0027287d14f359af1715c3097917bf735fb55434117a97e7914",
+    "q4_target_audit": "d9581e4c625bcfb741a755f9f0eacce8c29fa87f83d2942da3d268d1b7e52116",
+    "v0_9_contract": "0287ba010ecfa4cfc35c2303b68f10b4b2bfc167c01e1952ca0564ae055b6c6e",
+    "pythia_detail_1": "b06c9a01ff477294e5dfea51e1c8696e6e9b1812d43141a0437368ff054f89bc",
+    "pythia_detail_2": "692f58d8ba3cc0a706d4a2cf31ac8305502799cffe3fefe3427dd1c1e266046c",
+    "pythia_detail_3": "b5f298b3ad468eb3d143634334f2f68466b9f3046e626cd83d4db072b2c1365d",
+    "pythia_detail_4": "324c7d4e385aa385fe40f2f7ed1dd45d3e6c24ff9418162cffdab715259800ea",
+    "pythia_detail_5": "6c661f557b9311c3ebd5c5dcfebfb4ad3ca653980501c9e20739d2834d4acc13",
+    "pythia_detail_6": "2b0cbc78d741e2b318b16c0dca20c0171776cbdada7c320889c3d1db30980ef3",
+    "pythia_detail_7": "851bc2b7a64e2f18b12dd34cc7798e8f0d6b2076a0b7acb61fc291c617dbcb70"
+  },
+  "fit": {
+    "status": "ELIGIBLE_LIMITED_EXPLORATORY_NOT_CALIBRATED",
+    "n_unique_models": 7,
+    "n_independent_model_families": 1,
+    "loss_min": 2.0933,
+    "loss_max": 2.5978,
+    "intercept": 7.671652427888837,
+    "slope_per_nats_token": -0.8816640389379025,
+    "pearson_r": -0.3974663147423842,
+    "r_squared": 0.15797947135489201,
+    "in_sample_rmse": 0.3338408785945045,
+    "leave_one_size_out_mae": 0.47810768059179115,
+    "leave_one_size_out_mean_baseline_mae": 0.3755617007914145,
+    "leave_one_size_out_rmse": 0.5528338936058496,
+    "leave_one_size_out_mean_baseline_rmse": 0.4244484621431831,
+    "leave_one_size_out_beats_mean_baseline": false,
+    "uncertainty_status": "no transferable CI; one-family leave-one-size-out errors are sensitivity only"
+  },
+  "version_audit": {
+    "detail_json_records": 7,
+    "exact_all_six_score_matches": 5,
+    "rows_with_metric_discrepancy": [
+      "EleutherAI/pythia-1b",
+      "EleutherAI/pythia-6.9b"
+    ]
+  },
+  "bridge_table_overlap_audit": {
+    "c5_row_count": 43,
+    "c6_row_count": 75,
+    "c5_exact_rows_present_in_c6": 43,
+    "c6_additional_row_count": 32,
+    "all_c5_rows_exactly_match_c6_by_model": true
+  },
+  "outputs": {
+    "q4_loss_benchmark_pythia_crosswalk.csv": "ca74be06cb6ec9df6da5399197833396b0df5a6e7b5db019a0469157aadb7998",
+    "q4_loss_benchmark_mapping_fit.csv": "5e56e8b8204dcc5dd47618b7dc1037f6461a2554127c04e36c2bf80da8fa857e",
+    "q4_loss_benchmark_target_support.csv": "2ffb69cdd61f39488af12b9d4ac5ffcbb6a8739e7623f26a348b2d273844a813",
+    "q4_loss_benchmark_fit_summary.csv": "ff6adf2512ab5be965f911bc4663250c9d52355efefde4335af07e68922bf10e",
+    "q4_loss_benchmark_sensitivity.csv": "0959f4b9ba172a00a31d3c91e50260f9243f9b53afd6f9f118be4e589cf99e77",
+    "q4_loss_benchmark_exploratory_report.md": "b7727aac2603b04f133bb4786e78a745d8c168993694d36a16ab9c9a2a33fbe6"
+  },
+  "scope": "within-Pythia-family exploratory relation; no calibration or Task 3 integration"
+}

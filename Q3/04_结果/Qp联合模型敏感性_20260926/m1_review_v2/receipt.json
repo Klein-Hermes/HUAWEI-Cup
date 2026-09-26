@@ -1,0 +1,43 @@
+{
+  "gate": "M1_delta_review",
+  "status": "PASS",
+  "scope": "Focused re-review of the revised Q/p design and implementation change from analytic inversion to monotone bisection. Per parent instruction, other M1 clauses previously passed are inherited and not re-audited in this delta check.",
+  "input_snapshot": {
+    "plan_path": "Q3/01_方案与设计/Q3_Qp条件联合模型与转移判定方案_20260926.md",
+    "plan_sha256": "83A0D4DEF62DB44FB58F99B8C5C73568CCD7967C9F543308F63F1C103D373518",
+    "implementation_path": "Q3/03_代码/fit_q3_qp_conditional_model.py",
+    "implementation_sha256": "50E9E5CE681FA390A9AA44A77BD64283B000774EB3CF7D5F3D4F1D532F8983AA",
+    "previous_gate_context": "Parent reported the revised baseline M1 as PASS; this receipt reviews the requested bisection-method delta."
+  },
+  "evidence": [
+    {
+      "item": "Plan specifies the method",
+      "source": "Q3/01_方案与设计/Q3_Qp条件联合模型与转移判定方案_20260926.md:36",
+      "finding": "For each feasible finite-grid N/D candidate, solve the affordable Q upper bound continuously by bisection over the monotone cost function; choose Qmax for positive kappa and Q0 for nonpositive kappa."
+    },
+    {
+      "item": "Implementation matches the plan",
+      "source": "Q3/03_代码/fit_q3_qp_conditional_model.py:309-345",
+      "finding": "The three g(Q) forms are increasing on the declared Q interval. q_upper_from_budget brackets [Q0,qmax], keeps lo as the feasible endpoint, and runs Q_BISECTION_ITERS=80 iterations before returning lo."
+    },
+    {
+      "item": "Strict budget boundary remains enforced",
+      "source": "Q3/03_代码/fit_q3_qp_conditional_model.py:374-383",
+      "finding": "The selected candidate recomputes component costs with math.fsum and steps Q toward Q0 using np.nextafter until total cost is no greater than budget; infeasible candidates are omitted."
+    }
+  ],
+  "inherited_m1_clauses": {
+    "status": "PASS_BY_PRIOR_GATE",
+    "coverage": [
+      "model and parameter constraints",
+      "source support domains and B8 extrapolated exclusion",
+      "Q/p scope and conditional claims",
+      "cost formula and units",
+      "transition and validation criteria"
+    ]
+  },
+  "limitations": [
+    "This focused M1 delta review did not run full mode or re-audit the inherited M1 clauses."
+  ],
+  "rework": null
+}

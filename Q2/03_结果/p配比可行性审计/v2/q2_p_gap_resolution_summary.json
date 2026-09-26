@@ -1,0 +1,255 @@
+{
+  "audit_version": "v2",
+  "date": "2026-09-26",
+  "purpose": "Resolve the G1 p–Loss gap as far as current project evidence permits; do not estimate without identifiable joined p rows.",
+  "A_side": {
+    "mixture_rows": 512,
+    "loss_rows": 512,
+    "mixture_unique_index_count": 512,
+    "loss_unique_index_count": 512,
+    "duplicate_mixture_index_excess_rows": 0,
+    "duplicate_loss_index_excess_rows": 0,
+    "shared_index_count": 512,
+    "mixture_only_index_count": 0,
+    "loss_only_index_count": 0,
+    "mixture_p_columns": [
+      "train_the_pile_arxiv",
+      "train_the_pile_freelaw",
+      "train_the_pile_nih_exporter",
+      "train_the_pile_pubmed_central",
+      "train_the_pile_wikipedia_en",
+      "train_the_pile_dm_mathematics",
+      "train_the_pile_github",
+      "train_the_pile_philpapers",
+      "train_the_pile_stackexchange",
+      "train_the_pile_enron_emails",
+      "train_the_pile_gutenberg_pg_19",
+      "train_the_pile_pile_cc",
+      "train_the_pile_ubuntu_irc",
+      "train_the_pile_europarl",
+      "train_the_pile_hackernews",
+      "train_the_pile_pubmed_abstracts",
+      "train_the_pile_uspto_backgrounds"
+    ],
+    "mixture_rows_with_finite_nonnegative_17_component_values": 512,
+    "mixture_rows_with_invalid_or_negative_values": 0,
+    "mixture_component_sum_min": 0.996,
+    "mixture_component_sum_max": 1.003,
+    "mixture_rows_abs_sum_deviation_gt_0_001": 47,
+    "loss_target_columns": [
+      "metric/the_pile_arxiv_val_loss",
+      "metric/the_pile_freelaw_val_loss",
+      "metric/the_pile_pubmed_central_val_loss",
+      "metric/the_pile_wikipedia_en_val_loss",
+      "metric/the_pile_dm_mathematics_val_loss",
+      "metric/the_pile_github_val_loss",
+      "metric/the_pile_stackexchange_val_loss",
+      "metric/the_pile_gutenberg_pg_19_val_loss",
+      "metric/the_pile_pile_cc_val_loss",
+      "metric/the_pile_ubuntu_irc_val_loss",
+      "metric/the_pile_hackernews_val_loss",
+      "metric/the_pile_pubmed_abstracts_val_loss",
+      "metric/the_pile_uspto_backgrounds_val_loss"
+    ],
+    "status": "EXACT_JOIN",
+    "scope": "A-side RegMix fixed-scale p-only evidence; not B-side generalized scaling M1."
+  },
+  "B_side": {
+    "sources": [
+      {
+        "dataset": "B1",
+        "description": "Pythia checkpoint loss log",
+        "row_count": 1176,
+        "p_columns_detected": [],
+        "has_project_17_p_vector": "no",
+        "row_identity_fields": [
+          "run_id"
+        ],
+        "verified_p_loss_join_rows": 0,
+        "p_recipe_candidate_join_rows": 1176,
+        "measured_p_D_loss_join_rows": 0
+      },
+      {
+        "dataset": "B2",
+        "description": "semi-synthetic Cerebras-calibrated log",
+        "row_count": 1029,
+        "p_columns_detected": [],
+        "has_project_17_p_vector": "no",
+        "row_identity_fields": [
+          "run_id"
+        ],
+        "verified_p_loss_join_rows": 0,
+        "p_recipe_candidate_join_rows": 0,
+        "measured_p_D_loss_join_rows": 0
+      },
+      {
+        "dataset": "B3",
+        "description": "Pythia-derived interpolated trajectories",
+        "row_count": 4000,
+        "p_columns_detected": [],
+        "has_project_17_p_vector": "no",
+        "row_identity_fields": [
+          "trajectory file; interpolated rows"
+        ],
+        "verified_p_loss_join_rows": 0,
+        "p_recipe_candidate_join_rows": 0,
+        "measured_p_D_loss_join_rows": 0
+      },
+      {
+        "dataset": "B4",
+        "description": "curated scaling baseline",
+        "row_count": 57,
+        "p_columns_detected": [],
+        "has_project_17_p_vector": "no",
+        "row_identity_fields": [],
+        "verified_p_loss_join_rows": 0,
+        "p_recipe_candidate_join_rows": 0,
+        "measured_p_D_loss_join_rows": 0
+      },
+      {
+        "dataset": "B5",
+        "description": "published scaling points",
+        "row_count": 44,
+        "p_columns_detected": [],
+        "has_project_17_p_vector": "no",
+        "row_identity_fields": [],
+        "verified_p_loss_join_rows": 0,
+        "p_recipe_candidate_join_rows": 0,
+        "measured_p_D_loss_join_rows": 0
+      }
+    ],
+    "verified_project_17_p_loss_join_rows": 0,
+    "B1_checkpoint_index_and_p_recipe_candidate_join": {
+      "b1_loss_rows": 1176,
+      "matched_unique_checkpoint_rows": 1176,
+      "unmatched_or_ambiguous_checkpoint_rows": 0,
+      "duplicate_b1_model_step_rows": 0,
+      "duplicate_checkpoint_index_key_excess_rows": 0,
+      "unique_static_p_recipe_candidate_count": 1,
+      "p_recipe_candidate_join_rows": 1176,
+      "p_recipe_candidate_components": 18,
+      "p_recipe_candidate_component_sum": 1.0,
+      "checkpoint_join_key": "model_repo resolved through exact N_params_B mapping + steps matched to checkpoint_index.step",
+      "measured_p_D_join_rows": 0,
+      "candidate_semantics": "official Pile component weights mapped to Pythia rows through the exact model-repo/step checkpoint index; source weights are not realized checkpoint token counts"
+    },
+    "measured_p_D_loss_join_rows": 0,
+    "status": "NOT_ESTIMATED",
+    "reason": "B1 can receive a sourced static corpus-mix candidate but has only one constant candidate vector and no checkpoint-level source-token exposure p(D); B2–B5 have no verified p–Loss rows, and B4/B5 also lack precise model/run crosswalks.",
+    "B2_source_manifest_classification": "semi-synthetic"
+  },
+  "Pile_published_component_table": {
+    "component_count": 22,
+    "project_17_domain_component_weight_percent": 75.02,
+    "unmapped_five_component_weight_percent": 24.98,
+    "total_weight_percent": 100.0,
+    "warning": "These are published corpus/component weights, not observed checkpoint-level source-token exposure or a complete p(D) table.",
+    "source": "https://github.com/EleutherAI/the-pile"
+  },
+  "model_fit": {
+    "attempted": false,
+    "status": "NOT_ESTIMATED",
+    "reason": "Input join and identifiability gates are not passed."
+  },
+  "input_hashes": {
+    "A_mixture": {
+      "path": "中文题目/F题/real_attachments/A_data_value/regmix_tables/train_mixture_1m.csv",
+      "bytes": 46412,
+      "sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8"
+    },
+    "A_loss": {
+      "path": "中文题目/F题/real_attachments/A_data_value/regmix_tables/train_pile_loss_1m.csv",
+      "bytes": 121898,
+      "sha256": "49a959aa07ce5c20831d5abe3a7896ff0cd90a398bd407c8913fd5588be0465a"
+    },
+    "B1_Pythia": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "bytes": 111459,
+      "sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2"
+    },
+    "B1_checkpoint_index": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/pythia_checkpoint_index.csv",
+      "bytes": 117698,
+      "sha256": "0f7f63535cbc1bbef5165776562e71401af9f762cfe02aaea30c824f45fbc9ed"
+    },
+    "B1_model_map": {
+      "path": "results/q2_scaling_baseline/v1/gate0_b1_trajectory_mapping.csv",
+      "bytes": 955,
+      "sha256": "ea2c1fd78c7a84e0f41d70a57b630089781b8d8cbd9c9a9434e6ea7c787c0c37"
+    },
+    "B2_Cerebras": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/cerebras_training_log.csv",
+      "bytes": 89643,
+      "sha256": "178f878cad2cb31e4ec104c670553de23818197876d824a113fdb911125951a6"
+    },
+    "B4_baseline": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/scaling_baseline.csv",
+      "bytes": 1421,
+      "sha256": "2272983ded93de35e05f9acbf95ebceedf43f283345e4be72b54fee94080391e"
+    },
+    "B5_published": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/published_scaling_data.csv",
+      "bytes": 1967,
+      "sha256": "dd858c5e48610e28589340d5db023d6abfb31df597506789ccdfc6a546731bbd"
+    },
+    "source_manifest": {
+      "path": "中文题目/F题/real_attachments/source_manifest.json",
+      "bytes": 10018,
+      "sha256": "34e81dabf46302eebaac8551fa18d2e72acd0833b1cf0276690bee897f1323db"
+    },
+    "audit_script": {
+      "path": "src/q2_p_gap_resolution_audit.py",
+      "bytes": 30755,
+      "sha256": "1868ac7fba9a7c6802303bd4d1cd52d4f0170aa7c551c58ab439ebf4a1eb1e7b"
+    },
+    "B3_trajectory:pythia_0.070542B_trajectory.csv": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv",
+      "bytes": 14040,
+      "sha256": "19663f2f14d62af377377962ec8f794148450bfb278fdbeb2452f4641fe6a440"
+    },
+    "B3_trajectory:pythia_0.162405B_trajectory.csv": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv",
+      "bytes": 14040,
+      "sha256": "8e2b78cde966b0a3e8b6272935c3f3dcccc5a54e94bb7db79ded2fd8fdf5a124"
+    },
+    "B3_trajectory:pythia_0.409009B_trajectory.csv": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv",
+      "bytes": 14040,
+      "sha256": "8c803195d475d8ff320afd90887ae48cec6463f4d01a2264c6680611ed9db170"
+    },
+    "B3_trajectory:pythia_1.040867B_trajectory.csv": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv",
+      "bytes": 14040,
+      "sha256": "bb73b2852db183bee3d76c76f55e2bdcc292d7ed0881cb27966525b56afcafc0"
+    },
+    "B3_trajectory:pythia_1.416184B_trajectory.csv": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv",
+      "bytes": 14040,
+      "sha256": "cd0d718747fb6048cb474066dbf35f64ef852f59cba2886484cbdf14bc68a02f"
+    },
+    "B3_trajectory:pythia_11.965825B_trajectory.csv": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv",
+      "bytes": 14540,
+      "sha256": "e223b3d48bc4fef3cbc03fd583ff7aef87e474903d829f6c417310cb99fa7b5e"
+    },
+    "B3_trajectory:pythia_2.782831B_trajectory.csv": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv",
+      "bytes": 14040,
+      "sha256": "552f03249b69234009eb028b3296d6bd1b1cb3a52c0d3a84a669baa0e3179482"
+    },
+    "B3_trajectory:pythia_6.86104B_trajectory.csv": {
+      "path": "中文题目/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv",
+      "bytes": 13540,
+      "sha256": "8814c8414fddc914444c74e6cf8da02e3e156a0d7fb8acea6c5da05e438bf054"
+    }
+  },
+  "output_files": [
+    "q2_p_gap_resolution_report.md",
+    "q2_p_gap_resolution_summary.json",
+    "q2_pile_component_crosswalk.csv",
+    "q2_a_pair_coverage.csv",
+    "q2_b_source_gate.csv",
+    "q2_b1_p_recipe_candidate_join.csv",
+    "q2_p_required_input_contract.csv"
+  ]
+}

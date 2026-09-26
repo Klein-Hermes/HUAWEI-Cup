@@ -1,0 +1,82 @@
+{
+  "gate": "P1",
+  "status": "PASS",
+  "reviewed_script": {
+    "path": "Q3/03_代码/fit_q3_qp_conditional_model.py",
+    "sha256": "50E9E5CE681FA390A9AA44A77BD64283B000774EB3CF7D5F3D4F1D532F8983AA"
+  },
+  "plan": {
+    "path": "Q3/01_方案与设计/Q3_Qp条件联合模型与转移判定方案_20260926.md",
+    "sha256": "83A0D4DEF62DB44FB58F99B8C5C73568CCD7967C9F543308F63F1C103D373518",
+    "m1_receipt": "Q3/04_结果/Qp联合模型敏感性_20260926/m1_review_v2/receipt.json",
+    "m1_status": "PASS"
+  },
+  "execution": {
+    "command": "D:/Anaconda/python.exe Q3/03_代码/fit_q3_qp_conditional_model.py --mode p1 --output-dir Q3/04_结果/Qp联合模型敏感性_20260926/p1_review_v6",
+    "exit_code": 0,
+    "stdout_summary": "mode=p1; full_source_fits=3; B1-anchored fits=3; support feasibility rows=30; minimal solutions=2",
+    "output_dir": "Q3/04_结果/Qp联合模型敏感性_20260926/p1_review_v6",
+    "generated_at_utc": "2026-09-26T10:30:20Z"
+  },
+  "input_sha256": {
+    "Q3/01_方案与设计/Q3_Qp条件联合模型与转移判定方案_20260926.md": "83a0d4def62db44fb58f99b8c5c73568ccd7967c9f543308f63f1c103d373518",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+    "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+    "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+  },
+  "output_sha256": {
+    "p1_minimal_conditional_solutions.csv": "6848263bc7cb0f2685ca160a8f33b6ffdb470206a458ba997681afb79533e53d",
+    "p1_scenario_support_feasibility.csv": "67ba1648153e01fc955f0197c88a4ca67a9806e09caf9a1e2162800867880c5d",
+    "p1_status.json": "78db40ff72b396ac3cf778e022af0a9bd091dc1126dc7a2877091f78e16d70b5",
+    "q_response_b1_anchored_fits.csv": "cd0b8d072ee33268bcc0361f4295f29e3518ab6f21f6a895f47ba5502377b48f",
+    "q_response_full_fits.csv": "f08f8905f3f9d8490eb1b1ceee7687dc85ca86f420a6e5b42a87de382fe554cd",
+    "q_response_p1_b1_anchored_fits.csv": "cd0b8d072ee33268bcc0361f4295f29e3518ab6f21f6a895f47ba5502377b48f",
+    "q_response_p1_fits.csv": "f08f8905f3f9d8490eb1b1ceee7687dc85ca86f420a6e5b42a87de382fe554cd"
+  },
+  "checks": [
+    {
+      "id": "strict_minimum_budget_boundary",
+      "status": "PASS",
+      "evidence": "Read-only boundary evaluation using the reviewed script at budget=1e19, context=2048, logarithmic g(Q): B6 C_total_flops=9.999999999999992e18, slack=8192.0; strict total<=budget and slack>=0 are true. B8_calibrated C_total_flops=8.732538677231999e18, slack=1.267461322768001e18; both predicates true. P1 scenario calculation uses 80-step bisection followed by math.fsum and ULP correction."
+    },
+    {
+      "id": "frozen_q0_c7_interfaces",
+      "status": "PASS",
+      "evidence": "p1_status.json confirms Q1 status FROZEN_WITH_LIMITATIONS, operational q=q_huber, version Q1-q_huber-v1. Q0 recomputed from seven A1 rows is 0.49847810484764643, within 1e-10 of frozen Q0=0.4984781048. C7 metadata contains 45 unique model names and contexts [2048,4096,8192,32768,131072], matching the plan."
+    },
+    {
+      "id": "source_fit_contract",
+      "status": "PASS",
+      "evidence": "B6, B8_calibrated, and B8_extrapolated each have 54 attempted and 54 successful starts. Full-fit kappas are 0.08503298034695203, -1.1782546040071582, and -1.8703107404432997; all reported exponents and kappas lie within their plan bounds and positive coefficients are finite. B1-anchored kappas are 0.3830006502775433, -0.8193728642158753, and -0.791636028723241."
+    },
+    {
+      "id": "units_support_and_source_scope",
+      "status": "PASS",
+      "evidence": "N and D fit inputs use billion units; cost computation converts each by 1e9 to absolute counts. B1/source support intersections are B6=1112 and B8_calibrated=1128. The feasibility output has 15 rows for each optimization source, with zero Q0-feasible points at 1e19 and context 131072. B8_extrapolated is fitted diagnostically but not included in B1 optimization."
+    },
+    {
+      "id": "conditional_q_p_claims",
+      "status": "PASS",
+      "evidence": "The selected solutions explicitly label Q_score=q_huber as an unvalidated conditional assumption, fix the B1 common p policy with the 17-domain vector unavailable, and state its effect is absorbed by M0. Source fits are not presented as validated B1 transfer. At 1e22 and context 8192, both selected solutions have finite cost strictly below budget."
+    },
+    {
+      "id": "bisection_plan_implementation",
+      "status": "PASS",
+      "evidence": "The p1 status records q_upper_bisection_iterations=80. Implementation brackets [Q0,qmax], retains a feasible lower endpoint, and applies strict cost correction; this matches plan SHA 83A0D4...373518."
+    },
+    {
+      "id": "hash_provenance",
+      "status": "PASS",
+      "evidence": "The reviewed script SHA and each generated output SHA are recorded in p1_status.json and match independent recomputation. All listed input hashes match the runtime status manifest."
+    }
+  ],
+  "findings": [],
+  "limitations": [
+    "This P1 run is the minimal vertical slice; full-mode validation/bootstrap, all optimized scenarios, transition analysis, and report generation were not run here."
+  ],
+  "rework_entrypoint": null
+}

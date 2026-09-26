@@ -1,0 +1,85 @@
+{
+  "status": "P1_MINIMAL_SLICE_COMPLETE",
+  "generated_at_utc": "2026-09-26T10:14:35+00:00",
+  "command": "python Q3/03_代码/fit_q3_qp_conditional_model.py --mode p1",
+  "full_model_source_fits": 3,
+  "source_support_rows": 30,
+  "minimal_solutions": 2,
+  "solutions": [
+    {
+      "source": "B6",
+      "status": "feasible",
+      "budget_flops": 10000000000000000000000,
+      "context_length_tokens": 8192,
+      "g_function": "logarithmic",
+      "kappa_B1_anchored": 0.3830006502775433,
+      "selected_run_id": 1023,
+      "selected_N_B": 6.86104,
+      "selected_D_B": 184.549,
+      "selected_Q": 1.0,
+      "predicted_loss": 2.0942586379771635,
+      "C_train_flops": 7.59718842576e+21,
+      "C_Q_flops": 2.2466091631186015e+20,
+      "C_attn_flops": 2.074538919460864e+21,
+      "C_total_flops": 9.896388261532725e+21,
+      "budget_utilization": 0.9896388261532725,
+      "budget_slack_flops": 1.0361173846727537e+20,
+      "Q_upper_affordable": 1.0,
+      "selected_at_Q_boundary": true,
+      "p_setting": "B1 common mixture policy fixed; numeric 17-domain vector unavailable; p effect absorbed in M0 baseline",
+      "Q_mapping_assumption": "Q2 Q_score numerically identical to Q1 q_huber; unvalidated conditional scenario"
+    },
+    {
+      "source": "B8_calibrated",
+      "status": "feasible",
+      "budget_flops": 10000000000000000000000,
+      "context_length_tokens": 8192,
+      "g_function": "logarithmic",
+      "kappa_B1_anchored": -0.8193728642158753,
+      "selected_run_id": 1025,
+      "selected_N_B": 6.86104,
+      "selected_D_B": 188.744,
+      "selected_Q": 0.4984781048,
+      "predicted_loss": 2.159845165552461,
+      "C_train_flops": 7.76988080256e+21,
+      "C_Q_flops": 0.0,
+      "C_attn_flops": 2.121695451152384e+21,
+      "C_total_flops": 9.891576253712383e+21,
+      "budget_utilization": 0.9891576253712383,
+      "budget_slack_flops": 1.0842374628761718e+20,
+      "Q_upper_affordable": 0.697605642630826,
+      "selected_at_Q_boundary": true,
+      "p_setting": "B1 common mixture policy fixed; numeric 17-domain vector unavailable; p effect absorbed in M0 baseline",
+      "Q_mapping_assumption": "Q2 Q_score numerically identical to Q1 q_huber; unvalidated conditional scenario"
+    }
+  ],
+  "frozen_interface_verification": {
+    "q1_status": "FROZEN_WITH_LIMITATIONS",
+    "q1_operational_q": "q_huber",
+    "q1_q_version": "Q1-q_huber-v1",
+    "q0_from_a1_domain_mean": 0.49847810484764643,
+    "a1_domain_rows": 7,
+    "c7_metadata_rows": 45,
+    "c7_contexts": [
+      2048,
+      4096,
+      8192,
+      32768,
+      131072
+    ],
+    "inputs": {
+      "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+      "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+      "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+    }
+  },
+  "inputs": {
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+    "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+    "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+  }
+}

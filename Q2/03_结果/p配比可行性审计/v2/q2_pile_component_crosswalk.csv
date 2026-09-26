@@ -1,0 +1,23 @@
+﻿pile_component,published_weight_percent,project_p_field,mapped_to_project_17_domain,interpretation,source_url
+Pile-CC,18.11,train_the_pile_pile_cc,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+PubMed Central,14.40,train_the_pile_pubmed_central,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+Books3,12.07,,no,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+OpenWebText2,10.01,,no,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+ArXiv,8.96,train_the_pile_arxiv,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+Github,7.59,train_the_pile_github,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+FreeLaw,6.12,train_the_pile_freelaw,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+StackExchange,5.13,train_the_pile_stackexchange,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+USPTO Backgrounds,3.65,train_the_pile_uspto_backgrounds,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+PubMed Abstracts,3.07,train_the_pile_pubmed_abstracts,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+Gutenberg (PG-19),2.17,train_the_pile_gutenberg_pg_19,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+OpenSubtitles,1.55,,no,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+Wikipedia (en),1.53,train_the_pile_wikipedia_en,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+DM Mathematics,1.24,train_the_pile_dm_mathematics,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+Ubuntu IRC,0.88,train_the_pile_ubuntu_irc,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+BookCorpus2,0.75,,no,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+EuroParl,0.73,train_the_pile_europarl,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+HackerNews,0.62,train_the_pile_hackernews,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+YoutubeSubtitles,0.60,,no,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+PhilPapers,0.38,train_the_pile_philpapers,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+NIH ExPorter,0.30,train_the_pile_nih_exporter,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile
+Enron Emails,0.14,train_the_pile_enron_emails,yes,published corpus/component weight; not checkpoint token count,https://github.com/EleutherAI/the-pile

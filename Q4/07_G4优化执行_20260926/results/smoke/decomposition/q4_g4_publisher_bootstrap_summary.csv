@@ -1,0 +1,6 @@
+﻿component,successful_replicates,requested_replicates,failed_replicates,ratio_replicates_nonzero_denominator,denominator_sign_opposite_original_n,denominator_sign_opposite_original_pct,share_q025_pct,share_median_pct,share_q975_pct,interval_basis
+month_fixed_effect,59,60,1,59,32,54.23728813559322,-969.5408118123253,72.23152681408536,342.5874473969189,publisher-cluster bootstrap sensitivity only; not a calibrated CI
+non_scale_total,59,60,1,59,32,54.23728813559322,-1148.6690682040858,93.07546701111302,578.1581672043291,publisher-cluster bootstrap sensitivity only; not a calibrated CI
+predicted_mean_change,59,60,1,59,32,54.23728813559322,99.99999999987506,99.9999999999991,100.00000000005488,publisher-cluster bootstrap sensitivity only; not a calibrated CI
+scale_composition,59,60,1,59,32,54.23728813559322,-478.1581672043096,6.924532988889783,1248.6690682039714,publisher-cluster bootstrap sensitivity only; not a calibrated CI
+type_composition,59,60,1,59,32,54.23728813559322,-238.9183042216472,21.148048535192626,373.4585734008783,publisher-cluster bootstrap sensitivity only; not a calibrated CI

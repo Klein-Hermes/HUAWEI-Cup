@@ -1,0 +1,45 @@
+{
+  "status": "short_horizon_diagnostic_only",
+  "horizons_months": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "min_monthly_model_count": 10,
+  "min_training_months": 3,
+  "origin_rule": "exact target calendar month minus h; train only on eligible months not later than origin",
+  "methods": [
+    "last_value",
+    "linear_time_trend"
+  ],
+  "annual_skill_status": "NOT_VALIDATED",
+  "data_period_all_rows": [
+    "2024-06",
+    "2025-03"
+  ],
+  "data_period_eligible_rows": [
+    "2024-06",
+    "2025-03"
+  ],
+  "raw_month_rows": 10,
+  "eligible_month_rows": 8,
+  "calendar_gaps_among_eligible_months": 2,
+  "input": "D:\\PycharmProject\\HUAWEI-Cup\\Q4\\07_G4优化执行_20260926\\results\\forecast\\q4_frontier_monthly_rebuilt.csv",
+  "input_sha256": "54553f1909546dc9988b74dfe21d6eb9d98b182b72ec19dde5b3d4f0567b34f8",
+  "script": "D:\\PycharmProject\\HUAWEI-Cup\\Q4\\07_G4优化执行_20260926\\scripts\\q4_short_horizon_validation.py",
+  "script_sha256": "a5e91c4aa6373c507f64dc28279d7e2d15250a654b6b192de22438e275e33bfa",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  },
+  "unique_reproduction_command_from_project_root": "& \"C:\\Users\\86147\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" \"D:\\PycharmProject\\HUAWEI-Cup\\Q4\\07_G4优化执行_20260926\\scripts\\q4_short_horizon_validation.py\"",
+  "folds_file": "q4_short_horizon_validation_folds.csv",
+  "folds_sha256": "75d773bfcdb6bead935d23067f50f25b03e24e90d94a30af92e10451d332d4f5",
+  "summary_file": "q4_short_horizon_validation_summary.csv",
+  "summary_sha256": "c0cc146c747db6757e13cbeec3ecc1897dca2775babe140e9c5c0279947be892",
+  "note": "Small exact-calendar backtests are diagnostic only and do not validate 12/24-month predictive skill or interval coverage.",
+  "report_file": "q4_short_horizon_validation_report.md",
+  "report_sha256": "b585b068dc1f91ce6845321be231199e4af8f17570ee9f62d606f90cbf21af9b"
+}

@@ -1,0 +1,94 @@
+{
+  "generated_at_utc": "2026-09-26T10:49:13+00:00",
+  "command": "python Q3/03_代码/fit_q3_qp_conditional_model.py --mode full",
+  "mode": "full",
+  "seed": 20260926,
+  "q0": 0.4984781048,
+  "budgets_flops": [
+    10000000000000000000,
+    10000000000000000000000,
+    1000000000000000000000000
+  ],
+  "contexts": [
+    2048,
+    4096,
+    8192,
+    32768,
+    131072
+  ],
+  "eta": 0.0002,
+  "kappa_bounds": [
+    -4.0,
+    4.0
+  ],
+  "q_upper_bisection_iterations": 80,
+  "bootstrap_replicates": 1000,
+  "q_score_identity_bridge": "Q2 Q_score = Q1 q_huber; unverified assumption, conditional scenarios only",
+  "frozen_interface_verification": {
+    "q1_status": "FROZEN_WITH_LIMITATIONS",
+    "q1_operational_q": "q_huber",
+    "q1_q_version": "Q1-q_huber-v1",
+    "q0_from_a1_domain_mean": 0.49847810484764643,
+    "a1_domain_rows": 7,
+    "c7_metadata_rows": 45,
+    "c7_contexts": [
+      2048,
+      4096,
+      8192,
+      32768,
+      131072
+    ],
+    "inputs": {
+      "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+      "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+      "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+    }
+  },
+  "sources": [
+    "B6",
+    "B8_calibrated",
+    "B8_extrapolated"
+  ],
+  "optimization_sources": [
+    "B6",
+    "B8_calibrated"
+  ],
+  "script": {
+    "path": "Q3/03_代码/fit_q3_qp_conditional_model.py",
+    "sha256": "50e9e5ce681fa390a9aa44a77bd64283b000774eb3cf7d5f3d4f1d532f8983aa"
+  },
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22000-SP0",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3"
+  },
+  "inputs": {
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "Q2/03_结果/经典ScalingLaw基线/v1/cluster_bootstrap_estimates.csv": "c9d043ab768891a59657ee5df6c1df34e5ae5c44533723b5803f8157052d4668",
+    "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+    "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+    "Q1/03_结果/Q1.3/v1/q1_3_run_report.md": "1008f21235bf54f128b1d042ed0b4a486710d5d459e50ee1962d56c6ea445b7c",
+    "Q1/03_结果/Q1.3/v1/holdout_metrics.csv": "e2e2f7850b9ba5b7d51373f5e78f401ec8863291c1f357577f96dd9189b7e229",
+    "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+  },
+  "outputs": {
+    "conditional_scenario_results.csv": "9e7c50ca6fe73b6baebf5b6a6c3341bec319c27e3ae095bdca8996192da9dae5",
+    "conditional_selection_bootstrap_summary.csv": "6a63b7987235b7671ad42d1451635e848a20c5bd981877de101ef79bb534b35a",
+    "conditional_transition_bootstrap_summary.csv": "3c8e2838cf118ebd358c1d39e6d75206efa0877185f535cbc52cfbe6ee5af199",
+    "conditional_transition_pairs.csv": "adcf9791a0de7be630a920498c19baee24d9f2ace8ec61a120fb58060ae72731",
+    "eda_b1.md": "a48de45b86e903a029eacf6ce09054eebb44f2a995701010ad9f21b8983793e8",
+    "eda_b6.md": "fa3b9e9cea72e465348467644a808e7c817d725a30dd589c86a24dbf9585fd1f",
+    "eda_b8.md": "4735052a950b1d67212ffedcd3aecfb1b83a36dab43d6c9abd2c0924754bac3f",
+    "q3_qp_conditional_report.md": "51000136166416d81b84f8704a02a02a3a7707c8d756f824b480e4a4b0f9cd1a",
+    "q_response_anchored_kappa_bootstrap.csv": "65d418b6d913497df7a0d1c413de58c69113b9f2131f80a9d776f762663094f5",
+    "q_response_b1_anchored_fits.csv": "cd0b8d072ee33268bcc0361f4295f29e3518ab6f21f6a895f47ba5502377b48f",
+    "q_response_full_fits.csv": "f08f8905f3f9d8490eb1b1ceee7687dc85ca86f420a6e5b42a87de382fe554cd",
+    "q_response_leave_one_q_validation.csv": "41c6985625826ad71ec899681022fc9488f2ee1c3c3b0d024991fd52c3b9c5ee",
+    "scenario_support_feasibility.csv": "67ba1648153e01fc955f0197c88a4ca67a9806e09caf9a1e2162800867880c5d"
+  }
+}

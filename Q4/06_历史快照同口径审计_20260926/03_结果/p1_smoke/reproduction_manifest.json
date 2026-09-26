@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-26T08:32:27.299578+00:00",
+  "status": "scoped_local_audit_complete",
+  "project_root": "D:\\PycharmProject\\HUAWEI-Cup",
+  "script": "Q4\\06_历史快照同口径审计_20260926\\02_代码\\q4_historical_snapshot_audit.py",
+  "script_sha256": "1af5f65bf80aab2a064f580697cf3b1254d0b359262e8ef5d4af671d8b4f6669",
+  "command": "python \"Q4/06_历史快照同口径审计_20260926/02_代码/q4_historical_snapshot_audit.py\" --verify-remote",
+  "remote_command_parameters": {
+    "verify_remote": false,
+    "remote_limit": 0
+  },
+  "inputs_sha256": {
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\leaderboard_cleaned.csv": "199891128629f24f83ed2f51211eee65a82a13f45275e79a8227d5dacc7c2846",
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\leaderboard_enhanced.csv": "d8ae5b1e00f36bf17adb0c3fbf88c60edd54298625d2db1aa744b2b001202799",
+    "Q4\\03_结果\\results\\q4_frontier_monthly.csv": "0678b8f7fd781528f13c97702d06f4db47e8f1f6d637bf21e82bf0159f86e712",
+    "Q4\\03_结果\\results\\q4_c8_c1_match_candidates.csv": "603f5160abf49704f1546310ad773aef04ca61e6227aa4312d28814da1dd1d50",
+    "中文题目\\F题\\real_attachments\\source_manifest.json": "34e81dabf46302eebaac8551fa18d2e72acd0833b1cf0276690bee897f1323db"
+  },
+  "outputs_sha256": {
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\p1_smoke\\historical_monthly_p90_reconstruction.csv": "da2faf1c01168e2d1e75cfceb1670c8e50850e759dafde33c338c1ba9fbb7d46",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\p1_smoke\\q4_source_manifest_correction.csv": "ee9e6292515b7759b5dad2d238a7e413513ec3fb00482a7e8417526660686141",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\p1_smoke\\remote_source_validation.json": "03084ce9fcc0d5b98b4fe16ef6598946bae49fad29e01565e64e82cb8aadb7d3",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\p1_smoke\\report.md": "fe5790c2b41c99a6e474834b4e4dc49ff5bf507e4e3c678c4f97caa5aee049ab",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\p1_smoke\\row_alignment_summary.json": "6a1e696ced40fcbfdec722d8f7f0de71eeb6ae74ad9383477b55d5facd8953bb",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\p1_smoke\\same_caliber_open_weight_sample.csv": "a573291e8b917b7cc7c358cade4c3d838a1d43f4d089faac9646ffceb39a950b",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\p1_smoke\\source_protocol_comparability.csv": "5e877a2342b7cae66fb78210ba734bff7f99f544fa6c99fac9125f75e4580c85",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\p1_smoke\\version_match_summary.json": "b80e4579b4c118c6f6b10a6c957248776cef3c1a51051ba5217bd2b3887a15d8"
+  },
+  "environment": {
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22000-SP0",
+    "dependencies": "Python standard library only",
+    "random_seed": "not_applicable_no_randomness"
+  },
+  "key_results": {
+    "c1_c2_full_row_matches": 4576,
+    "c1_c2_all_rows_one_to_one": true,
+    "registered_exact_name_unique_c1_candidates": 1819,
+    "c1_remote_rows_checked": 0,
+    "c1_remote_full_row_matches": null,
+    "monthly_rows_reconstructed": 10,
+    "open_weight_records_reconstructed": 201,
+    "months_with_n_at_least_20": 3,
+    "v2_snapshot_cutoff": "2025-03-20T12:17:27Z",
+    "v2_revision": "9c09a7cae43334062a82cb164f2ef255013dafa2"
+  },
+  "self_hash_note": "This manifest is intentionally not listed in its own outputs_sha256."
+}

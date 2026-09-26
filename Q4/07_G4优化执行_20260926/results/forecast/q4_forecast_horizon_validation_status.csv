@@ -1,0 +1,3 @@
+﻿forecast_origin,horizon_months,target_month,as_of_run_status,annual_rolling_origin_folds,interval_type,empirical_coverage_status,reason,simulation_draws_per_scenario
+2025-03,12,2026-03,elapsed_before_run_month,0,fixed-scenario empirical 2.5%–97.5% Monte Carlo quantiles,UNKNOWN_NOT_CALIBRATED,zero same-protocol annual rolling origins; the target cannot be scored against a matched observation,12000
+2025-03,24,2027-03,upcoming_after_run_month,0,fixed-scenario empirical 2.5%–97.5% Monte Carlo quantiles,UNKNOWN_NOT_CALIBRATED,zero same-protocol annual rolling origins; the target cannot be scored against a matched observation,12000

@@ -1,0 +1,6 @@
+﻿dataset,description,row_count,p_columns_detected,has_project_17_p_vector,row_identity_fields,verified_p_loss_join_rows,p_recipe_candidate_join_rows,measured_p_D_loss_join_rows
+B1,Pythia checkpoint loss log,1176,,no,run_id,0,1176,0
+B2,semi-synthetic Cerebras-calibrated log,1029,,no,run_id,0,0,0
+B3,Pythia-derived interpolated trajectories,4000,,no,trajectory file; interpolated rows,0,0,0
+B4,curated scaling baseline,57,,no,,0,0,0
+B5,published scaling points,44,,no,,0,0,0

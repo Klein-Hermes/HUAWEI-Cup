@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "repo_sha": "9c09a7cae43334062a82cb164f2ef255013dafa2",
+  "last_modified": "2025-03-20T12:17:27.000Z",
+  "repo_id": "open-llm-leaderboard/contents",
+  "remote_total_rows": 4576,
+  "remote_rows_checked": 4576,
+  "c1_remote_row_matches": 4576,
+  "full_row_comparison": {
+    "left_name": "local_C1",
+    "right_name": "pinned_HF_v2_contents",
+    "left_rows": 4576,
+    "right_rows": 4576,
+    "one_to_one_matches": 4576,
+    "unmatched_left": 0,
+    "unmatched_right": 0,
+    "ambiguous_left": 0,
+    "all_rows_one_to_one": true
+  },
+  "revision_validation_note": "The documented rows endpoint has no revision parameter; expected Hub head SHA and lastModified were checked before and after the paginated read and remained at the pinned revision."
+}

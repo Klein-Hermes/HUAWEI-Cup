@@ -1,0 +1,96 @@
+{
+  "status": "descriptive_share_estimable_with_bounded_Fieller_sets",
+  "generated_at_utc": "2026-09-26T11:05:32.437635+00:00",
+  "runtime": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3"
+  },
+  "input": "Q4/03_结果/results/q4_task_aggregate.csv",
+  "input_sha256": "e51c5516a8e1a3e7a451d726eeeb7699b324a9bd765306462c408a62e9935c18",
+  "script": "Q4/09_C1全窗占比补充_20260926/scripts/q4_minimum_c1_share.py",
+  "script_sha256": "d740061435fb448c9d814e7f0b5400abc8ef57aac8c1e228761705e3169b3906",
+  "source_model_script": "Q4/02_代码/scripts/q4_dynamic_decomposition.py",
+  "source_model_script_sha256": "a406bde337afa34aeb7e5c932d852efb511f14bd592dcea8b42a4f7dc53b06ea",
+  "outcome": "C1_Average_0_100, the single leaderboard Average field used consistently over all supported months",
+  "cohort": "one row per C8/C1 exact-name candidate in q4_task_aggregate.csv; exact model revisions and license permissions are not implied",
+  "candidate_rows": 1819,
+  "unique_model_names": 1819,
+  "strict_version_confirmed_rows": 0,
+  "time_axis": "C1 submission_date; earliest and latest months with at least 20 eligible records",
+  "early_month": "2024-06",
+  "late_month": "2025-03",
+  "eligible_month_counts": {
+    "2024-06": 161,
+    "2024-07": 62,
+    "2024-08": 97,
+    "2024-09": 246,
+    "2024-10": 185,
+    "2024-11": 164,
+    "2024-12": 220,
+    "2025-01": 359,
+    "2025-02": 203,
+    "2025-03": 118
+  },
+  "support_log10_parameter_count_B": [
+    0.09201847075279702,
+    1.3723964324231115
+  ],
+  "endpoint_rows_in_common_support": {
+    "2024-06": 114,
+    "2025-03": 110
+  },
+  "fit_rows": 1420,
+  "design_rank": 12,
+  "design_columns": 12,
+  "residual_df": 1408,
+  "type_reference": "base_pretrained",
+  "type_grouping_rule": "base_pretrained combines pretrained and continuously_pretrained; chat_finetuned_or_other combines chat_posttrained, domain_finetuned, merge, multimodal, other, and unknown_or_unmapped",
+  "month_reference": "2024-06",
+  "type_group_counts_in_fit": {
+    "chat_finetuned_or_other": 1348,
+    "base_pretrained": 72
+  },
+  "type_group_publisher_cluster_counts": {
+    "base_pretrained": {
+      "fit_rows": 72,
+      "fit_publisher_clusters": 33,
+      "endpoint_rows": 33,
+      "endpoint_publisher_clusters": 15
+    },
+    "chat_finetuned_or_other": {
+      "fit_rows": 1348,
+      "fit_publisher_clusters": 331,
+      "endpoint_rows": 191,
+      "endpoint_publisher_clusters": 82
+    }
+  },
+  "normalized_type_counts_in_fit": {
+    "merge": 568,
+    "domain_finetuned": 534,
+    "chat_posttrained": 243,
+    "pretrained": 55,
+    "continuously_pretrained": 17,
+    "multimodal": 3
+  },
+  "observed_endpoint_change_C1_Average_points": 7.7192289968862475,
+  "publisher_cluster_key": "lowercased namespace before first slash in model_name_raw",
+  "publisher_clusters_in_fit": 345,
+  "publisher_clusters_in_endpoints": 90,
+  "joint_cluster_correction": 1.0112359550561798,
+  "critical_t_975_df": 1.986978699506281,
+  "uncertainty": "joint publisher-cluster influence-function sandwich, including uncertainty in fitted coefficients and endpoint covariate distributions; uses analyst-defined endpoint-cluster correction G/(G-1) and t(df=G-1), with Fieller ratio sets from the joint covariance",
+  "inference_caveat": "This finite-sample adjustment is a custom approximation, not the canonical OLS CR1 factor. The base_pretrained subgroup contributes only 15 endpoint publisher clusters, so its type-composition interval may understate uncertainty; interpret all intervals as approximate descriptive uncertainty, not guaranteed 95% coverage.",
+  "causal_status": "not_causal; time fixed effect is only a non-scale evolution proxy and absorbs unobserved time-varying composition, data, alignment, and evaluation differences",
+  "known_limits": [
+    "C1 Average is the raw leaderboard summary, not the C8 six-family index used in the shorter G4 decomposition.",
+    "C1 and C8 are matched by model name; exact revisions are not confirmed.",
+    "C1 Average is treated as a consistent score field across this 10-month source window; hidden protocol changes cannot be ruled out from supplied rows alone.",
+    "A bounded share interval establishes a finite descriptive ratio, not that the time term is pure technical progress or a causal effect."
+  ],
+  "component_sum_abs_error": 0.0,
+  "predicted_observed_change_abs_error": 4.440892098500626e-14,
+  "output": "Q4/09_C1全窗占比补充_20260926/results/q4_c1_full_window_decomposition_and_shares.csv",
+  "output_sha256": "98f852e48d475406d9e049a5581428b31249417e6de168abafbdebdefebdf68a"
+}

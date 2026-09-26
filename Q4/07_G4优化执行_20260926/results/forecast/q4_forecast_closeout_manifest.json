@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-26T10:30:03.631887+00:00",
+  "status": "conditional_scenarios_formalized_with_scoped_validation_limits",
+  "forecast_origin": "2025-03",
+  "scope": "supplemental forecast closeout only; frozen Q4 v0.6 results remain unchanged",
+  "source_forecast_manifest": "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_forecast_manifest.json",
+  "source_simulations_per_scenario_horizon": 12000,
+  "annual_forecast_skill": "NOT_VALIDATED",
+  "annual_rolling_origin_count": 0,
+  "simulation_interval_coverage": "UNKNOWN_NOT_CALIBRATED",
+  "review_gates": {
+    "environment_check": "PASS",
+    "data_profile": "PASS",
+    "source_output_invariants": "PASS",
+    "figure_layout_programmatic": "PASS",
+    "figure_format_audit": "PASS",
+    "Q4_question_figure_coverage": "PASS",
+    "independent_P2": "PASS"
+  },
+  "one_step_validation": {
+    "size_time_c4_ref_origins": 5,
+    "size_time_c4_ref_mae": 1.2625982145488224,
+    "last_value_origins": 5,
+    "last_value_mae": 0.7565289339292605,
+    "paired_mae_difference_vs_last_value": 0.5060692806195619,
+    "AR1_origins": 2
+  },
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.6"
+  },
+  "seed_in_upstream_forecast": 20260926,
+  "input_sha256": {
+    "Q4/07_G4优化执行_20260926/scripts/q4_forecast_closeout.py": "b1b7ec544866305675ba59a0718898f3854d9714e87d9669ac448587b0d6d4b1",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_scenario_forecasts.csv": "5c8a3e549f8cbc542807d8d45b3d0b383565be6fa161c59770c34a5e0dfd2bb0",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_candidate_backtest.csv": "8780ccb03be496129c31b917c8a7b4ce37a5e587c4828ea38169cd0cafebeec8",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_candidate_summary.csv": "ba7f83a8c6632e2337602d0b2ba8b3a899057c985e39c921fa45d0da88f62ebb",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_monthly_rebuilt.csv": "54553f1909546dc9988b74dfe21d6eb9d98b182b72ec19dde5b3d4f0567b34f8",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_model_diagnostics.json": "978c8e9506b1ee8a4d7e26ec66cdc3914d478a13552f634d1cd76373eabae8e2",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_forecast_manifest.json": "ab59ffcd096bc0581c4a141f93e4f4fa1dde4d332259f3d354e6922241149ecf",
+    "Q4/07_G4优化执行_20260926/frozen_q4_baseline_sha256.json": "bf670b1cb52480b1ec3f6452690f63a43a21b782dbad02f38f9111bb208aa7f1",
+    "Q4/07_G4优化执行_20260926/q4_frontier_forecast_method_v0.1.md": "982e587ec826216a2d114b4af7f98e66b287dfd3500b89de3b03f0e5c3136eaa",
+    "Q4/07_G4优化执行_20260926/q4_task3_forecast_amendment_v0.8.md": "1205bb5c6210b2449a604692b92d83516849ca4dbb0deeb06abe43383db7cd91",
+    "Q4/07_G4优化执行_20260926/scripts/q4_g4_frontier_scenario_model.py": "3a6b2fa5ee89b4eb8d40827f8d6aae17fc54414e122a3691ea1cc2e0d1c35966",
+    "Q4/07_G4优化执行_20260926/utils/plot_style.py": "f3de0a0c858d6018310d7e461574697a4cec7b28e5e20b8ccdaa7749772147e2"
+  },
+  "output_sha256": {
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_forecast_one_step_validation.csv": "338ad6dc120595c341e5dad7253d79f1a4343ff74cea6d90b43284c66151c32c",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_forecast_horizon_validation_status.csv": "acf26ad0c05ad71fdb8ce264e15fb0a09e26e1f8b480a78b5d83b6a59e5e61af",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_forecast_figure_contract.md": "8379acb6b3d25e322dc8097bab4878aa7128ced869b88f0230b8fb960f74be3e",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_forecast_closeout.md": "86b284a2b08164ba55703a54c5ca3f6a0c250694eb7c08d192ac50e4b0e561bc",
+    "Q4/07_G4优化执行_20260926/figures/result_q4_conditional_forecast_intervals.pdf": "b7bb0addacf9c3cfbf0f35474ad33feb27b4a7965fbcdf9b03a42182d39b2b07",
+    "Q4/07_G4优化执行_20260926/figures/result_q4_conditional_forecast_intervals.svg": "5d4cc2eb983288091eabff5b9950b5119a15c4255c6ac1650853de8f97c6ef7c",
+    "Q4/07_G4优化执行_20260926/figures/result_q4_conditional_forecast_intervals.png": "87b14fdeb9356a81b3b407a91b68265e488ea5175ec2305125e9ab70540e0fdc",
+    "Q4/07_G4优化执行_20260926/figures/result_q4_conditional_forecast_intervals.tiff": "8e0f745e42ec5d72f9c96614d08f1b766341de8a41a2de71e52924fbe240859e",
+    "Q4/07_G4优化执行_20260926/figures/result_q4_conditional_forecast_intervals_grayscale.png": "0b6fb4466f880837e12b3d87ff8dc9c90757075c9efb6f4071a438933d94837c",
+    "Q4/07_G4优化执行_20260926/figures/result_q4_conditional_forecast_intervals_preview.png": "b78db666b2983c324cff7b5ee5f153cb839b5f8b5c30d7e1a7d56446676e319e",
+    "Q4/07_G4优化执行_20260926/figures/process_q4_one_step_backtest.pdf": "31f037aa048b1150046f49e2778386059ea55df5ed0ffb8077b749f760370a0d",
+    "Q4/07_G4优化执行_20260926/figures/process_q4_one_step_backtest.svg": "7ae10f92338c2cdfa287fcf4d4be4497df93c95bc89570c745027628808b26db",
+    "Q4/07_G4优化执行_20260926/figures/process_q4_one_step_backtest.png": "b122f0ff850d69290c0724bf2c0cac3d86cbeae6f1ee77523d97681fae37347d",
+    "Q4/07_G4优化执行_20260926/figures/process_q4_one_step_backtest.tiff": "bd90b1b6bfc8cdf7f46b9bde6f6a6f7f79701e496aaf80e404c445ec1aa826a0",
+    "Q4/07_G4优化执行_20260926/figures/process_q4_one_step_backtest_grayscale.png": "bb7d5081df5f01d91817112eafbf52ce7f7cce5400284c987b6b3bf703e1bd1a",
+    "Q4/07_G4优化执行_20260926/figures/process_q4_one_step_backtest_preview.png": "cfa3f920243d4d6b2ff9cf9dcb89eae9a8d0806b61e66fbf98584406fe13a2f9"
+  },
+  "frozen_Q4_baseline_status": true,
+  "frozen_Q4_baseline_snapshot_sha256": "bf670b1cb52480b1ec3f6452690f63a43a21b782dbad02f38f9111bb208aa7f1",
+  "command": "D:/Anaconda/python.exe Q4/07_G4优化执行_20260926/scripts/q4_forecast_closeout.py"
+}

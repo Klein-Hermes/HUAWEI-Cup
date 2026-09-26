@@ -1,0 +1,4 @@
+﻿source,B1_points_in_source_support,B1_total_points,excluded_points
+B6_semi_synthetic,1112,1176,64
+B8_calibrated,1128,1176,48
+B8_extrapolated_diagnostic_only,0,1176,1176

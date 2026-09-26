@@ -1,6 +1,12 @@
 # Q1 交付物索引
 
+> Q1–Q4 历史遗留问题的统一当前状态见[总表](../docs/q1_q4_legacy_issue_register_20260926.md)。
+
 本目录集中整理 Q1 当前方案、代码、结果和图表，便于查看。原项目中的 docs/、src/、results/、figures/ 保持原位；本目录中的内容为整理副本。代码副本供集中阅读，运行时请从项目根目录调用原 src/ 中的脚本。
+
+## 问题一答案
+
+Q1 三项要求的集中作答见[《问题一答案》](03_结果/Q1答案.md)。该文件按题目顺序统一给出质量评分及 9 个领域分、冲突定义与 A2/A3 复核、17 域配比—Loss 模型和验证结果，并说明结论限制。
 
 ## 当前状态
 
@@ -30,7 +36,7 @@
 
 - Q1.1 计算结果：03_结果/Q1.1/v1/q1_1_results.md
 - Q1.1 七个 frac 字段独立复算：03_结果/Q1.1/frac字段独立复算/v2/结论与Q1处理建议.md（支持百分数尺度；保留上游精确定义限制）
-- 原计划 793 条全量评审状态（尚未完成；30 条微型核查已另行完成）：03_结果/Q1.1/review_intake/v1/closeout_status.md
+- 历史计划：793 条全量评审未执行；按最终收口，这不是当前交付要求。仅 30 条译文一致性核查作为有限证据，见 `03_结果/Q1_最终收口/q1_final_decision.md`。原计划记录：`03_结果/Q1.1/review_intake/v1/closeout_status.md`。
 - Q1.1 30 条双人评分分析：03_结果/Q1.1/human_spotcheck_final/received_20260924/summary.md
 - Q1.2 冲突模型报告：03_结果/Q1.2/v1/q1_2_conflict_report.md
 - Q1.3 p-only 运行报告：03_结果/Q1.3/v1/q1_3_run_report.md
@@ -38,7 +44,7 @@
 - Q1.1/Q1.2/p+Q 评审后整合状态：03_结果/Q1.3/pq_extension_v1/postreview_integration_20260924.md
 - 公共预处理 QC：03_结果/00_公共预处理/v1/preprocess_qc_report.md
 
-当前状态以 `03_结果/Q1_最终收口/` 为便捷查阅入口，原始生成源仍为项目根目录 `results/q1_final/`。30 条微型评审结论及其范围限制见 `Q1.1/human_spotcheck_final/received_20260924/`；793 条全量评审尚未完成，状态见 `Q1.1/review_intake/v1/closeout_status.md`。
+当前状态以 `03_结果/Q1_最终收口/` 为便捷查阅入口，原始生成源仍为项目根目录 `results/q1_final/`。30 条微型评审结论及其范围限制见 `Q1.1/human_spotcheck_final/received_20260924/`；793 条全量评审属于未执行的历史计划，按最终收口不再作为待办要求，记录见 `Q1.1/review_intake/v1/closeout_status.md`。
 
 ## 复现信息
 

@@ -1,0 +1,4 @@
+﻿dataset,rows,matched_ND_groups,median_log_loss_slope_per_log_Q,kappa_from_matched_slope,kappa_cluster_bootstrap_95_low,kappa_cluster_bootstrap_95_high,bootstrap_draws,bootstrap_unit,kappa_model_fit_used_for_optimization,optimization_basis
+B6_semi_synthetic,360,45,-0.05371014557658939,0.05371014557658939,0.04988950688235376,0.058300319129422296,100,"matched (N,D) cell",0.08503285994273319,precomputed B6 M_Q_NDQ; semi-synthetic
+B8_calibrated,984,90,0.5520719416527808,-0.5520719416527808,-0.5634649068795895,-0.5421764388137612,100,"matched (N,D) cell",-0.5520719416527808,"median matched-(N,D) log-loss/log-Q slope; B8 source kept separate"
+B8_extrapolated,720,60,0.5318344798560323,-0.5318344798560323,-0.5525214762384917,-0.5213635698691254,100,"matched (N,D) cell",-0.5318344798560323,"median matched-(N,D) log-loss/log-Q slope; B8 source kept separate"

@@ -1,0 +1,76 @@
+{
+  "gate": "P1",
+  "status": "PASS",
+  "reviewed_script": {
+    "path": "Q3/03_代码/fit_q3_qp_conditional_model.py",
+    "sha256": "F8BD8C3578E0A3D23CA02C385C1DCB8825B8D498934E6267CD82BF3437F94A50"
+  },
+  "execution": {
+    "command": "D:/Anaconda/python.exe Q3/03_代码/fit_q3_qp_conditional_model.py --mode p1 --output-dir Q3/04_结果/Qp联合模型敏感性_20260926/p1_review_v3",
+    "exit_code": 0,
+    "stdout_summary": "mode=p1; full_source_fits=3; B1-anchored fits=3; support feasibility rows=30; minimal solutions=2",
+    "output_dir": "Q3/04_结果/Qp联合模型敏感性_20260926/p1_review_v3",
+    "generated_at_utc": "2026-09-26T09:54:46Z"
+  },
+  "input_sha256": {
+    "Q3/01_方案与设计/Q3_Qp条件联合模型与转移判定方案_20260926.md": "8e15ac7337c27a2ce46f807f821d9228c6584390c25cabb2bade8b3e075bcc9d",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+    "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+    "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+  },
+  "output_sha256": {
+    "p1_minimal_conditional_solutions.csv": "1a16a9771f78a98dacb1ce7d3c11f3f4d57f64ec0789ea461253716e4812f508",
+    "p1_scenario_support_feasibility.csv": "67ba1648153e01fc955f0197c88a4ca67a9806e09caf9a1e2162800867880c5d",
+    "p1_status.json": "fbe3bab5dc8cb3720024eff11603ca2e2730ffb856baef89a2d799b7851e0e79",
+    "q_response_b1_anchored_fits.csv": "cd0b8d072ee33268bcc0361f4295f29e3518ab6f21f6a895f47ba5502377b48f",
+    "q_response_full_fits.csv": "f08f8905f3f9d8490eb1b1ceee7687dc85ca86f420a6e5b42a87de382fe554cd",
+    "q_response_p1_b1_anchored_fits.csv": "cd0b8d072ee33268bcc0361f4295f29e3518ab6f21f6a895f47ba5502377b48f",
+    "q_response_p1_fits.csv": "f08f8905f3f9d8490eb1b1ceee7687dc85ca86f420a6e5b42a87de382fe554cd"
+  },
+  "checks": [
+    {
+      "id": "minimum_budget_strict_cap",
+      "status": "PASS",
+      "evidence": "Independent read-only boundary evaluation of solve_scenario at budget=1e19, context=2048, logarithmic g(Q), using the reviewed code and frozen B1 inputs: B6 is feasible with N=0.070542B, D=20.972B, Q=0.5059091525385317, cost components 8.876440944e18 + 5.1759402088959194e17 + 6.059650351104e17, math.fsum total=9.999999999999992e18, slack=8192.0. Strict total<=budget and slack>=0 both evaluate true. B8_calibrated total=8.732538677231999e18, slack=1.267461322768001e18. Script lines 366-374 use math.fsum and step Q toward Q0 with np.nextafter until the strict cap holds."
+    },
+    {
+      "id": "frozen_interfaces",
+      "status": "PASS",
+      "evidence": "p1_status.json records Q1 status FROZEN_WITH_LIMITATIONS, operational_q=q_huber, q_version=Q1-q_huber-v1. Q0 recomputed from seven A1 rows is 0.49847810484764643, matching the frozen Q0 within 1e-10. C7 metadata has 45 unique model names and contexts [2048,4096,8192,32768,131072]. Runtime validation is at script lines 70-104; frozen input hashes are recorded in p1_status.json and this receipt."
+    },
+    {
+      "id": "source_fits_and_contract",
+      "status": "PASS",
+      "evidence": "Three separate source fits each report 54 attempted and 54 successful starts, with parameters within E/A/B/exponent/kappa bounds. Full-model kappas: B6=0.08503298034695203, B8_calibrated=-1.1782546040071582, B8_extrapolated=-1.8703107404432997. B1-anchored kappas: 0.3830006502775433, -0.8193728642158753, -0.791636028723241. Start generation/bounds are in script lines 148-192; source-specific fits are written to q_response_p1_fits.csv."
+    },
+    {
+      "id": "units_support_and_scenario_scope",
+      "status": "PASS",
+      "evidence": "Fit inputs use N_params_B and D_tokens_B in billions; cost_components multiplies each by 1e9 before computing FLOPs (script lines 341-348). B1 support intersections are 1,112 points for B6 and 1,128 for B8_calibrated. The feasibility CSV has exactly 15 rows per optimization source; at minimum budget 1e19 and context 131072 both have zero feasible Q0 candidates. B8_extrapolated is fit for diagnosis but excluded from OPTIMIZATION_SOURCES and B1 optimization (script lines 40-44, 294-305, 473-486, 829-877)."
+    },
+    {
+      "id": "p1_selected_solutions",
+      "status": "PASS",
+      "evidence": "At budget 1e22, context 8192, logarithmic g(Q), B6 returns finite C_total=9.896388261532725e21 and slack=1.0361173846727537e20; B8_calibrated returns C_total=9.891576253712383e21 and slack=1.0842374628761718e20. Both are strictly within budget. The chosen Q follows the anchored-kappa direction."
+    },
+    {
+      "id": "conditional_claims",
+      "status": "PASS",
+      "evidence": "Output labels full fits as source-specific and not validated B1 transfers; anchored fits as conditional transfer stress tests; and budget results as conditional on the unvalidated Q_score=q_huber identity. The 17-domain p vector remains explicitly unavailable and its effect is treated as absorbed in the M0 baseline. No validated unified Q/p optimum is claimed."
+    },
+    {
+      "id": "input_output_hashes",
+      "status": "PASS",
+      "evidence": "The script SHA and all design, data, frozen-interface, and generated-output SHA-256 values are recorded above. The hashes in p1_status.json for its seven runtime data inputs match independent recomputation."
+    }
+  ],
+  "findings": [],
+  "limitations": [
+    "P1 is a minimum runnable slice. It does not execute full-mode cross-validation, bootstrap, all 90 optimized scenarios, transition analysis, or figures."
+  ],
+  "rework_entrypoint": null
+}

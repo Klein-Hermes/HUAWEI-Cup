@@ -1,0 +1,13 @@
+{
+  "created_at_utc": "2026-09-24T03:17:21.588391+00:00",
+  "translation_provider": "Google Translate",
+  "direction": "auto -> zh-CN",
+  "sample_count": 30,
+  "reviewer_forms": [
+    "reviewer1_中文机译版.xlsx",
+    "reviewer2_中文机译版.xlsx"
+  ],
+  "scope_note": "Machine-translated Chinese aids; scores are translation-assisted checks, not direct validation of original-language text. Code-only rows remain original. Marked code, URLs and delimited math are protected; other technical notation, names and idioms may be imperfect.",
+  "sample_ids_sent_to_provider": false,
+  "candidate_scores_or_private_manifest_sent": false
+}

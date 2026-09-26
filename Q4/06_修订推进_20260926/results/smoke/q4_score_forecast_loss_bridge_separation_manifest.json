@@ -1,0 +1,58 @@
+{
+  "status": "separation_snapshot_generated",
+  "generated_at_local": "2026-09-26T16:33:49+08:00",
+  "script": "Q4/06_修订推进_20260926/scripts/q4_score_forecast_loss_bridge_separation.py",
+  "script_sha256": "b18284a48744fc7c4d8c57020aee964608048c38ce10f96d4a8d4ef2a27093b9",
+  "python_version": "3.10.4",
+  "inputs_sha256": {
+    "Q4/03_结果/results/q4_frontier_monthly.csv": "0678b8f7fd781528f13c97702d06f4db47e8f1f6d637bf21e82bf0159f86e712",
+    "Q4/03_结果/results/q4_forecast_feasibility.csv": "38cf7a716913b73d3d5b3a83ca830d00a64bbb97a3dc9f8c4fb79daf9902e11d",
+    "Q4/03_结果/results/q4_ar1_backtest_summary.csv": "e68eaff6455dc53d355846df63df61de313f88871d3f21af9e89c930cb1acf40",
+    "Q4/03_结果/results/q4_forecast_backtest_1month_summary.csv": "9ca670a1147f201f77c3efe01657be2e9f7519057808e26be6b2ac16ae267cc5",
+    "Q4/03_结果/results/q4_loss_benchmark_feasibility.csv": "5df2ff5a9c0503f1a5667bdef5e43b4414fad115ac229b513dcc209ecfae26a6",
+    "Q4/03_结果/results/q4_loss_benchmark_feasibility_manifest.json": "0272ea7d665bd7259acc0e56beae546bacc86febe2e0d3d1b9b6e0a64520c185",
+    "Q4/03_结果/results/q4_c4_year_summary.csv": "a6c08768ced2212b75a64504b1a5843791acc1bc7c913c2fc58cefb7f00a04aa",
+    "Q4/01_方案说明/q4_modeling_report.md": "a36d75a2949cf5f7570692a5daaa40344b58cb9f1873cd53de3c850719128a10",
+    "Q4/05_审计交付/q4_next_steps_plan.md": "28d63a06224ced6e6400faec59752327a5e412c08c9e02393c6f043e349a79a7",
+    "Q4/01_方案说明/q4_model_contract_v0.6.md": "446ebad1376d6683e76dee17cbed15fc03b417c7316d4c09e657cc943ac11ebd",
+    "Q4/02_代码/scripts/q4_modeling_analysis.py": "260715b0a36991a0e394999ddf7de085a88b40a57d78e716ea39f754ddc0f310",
+    "Q4/02_代码/scripts/q4_loss_bridge_feasibility.py": "658ff923f872ce1a3342c8feb74b58a3b5421afb61314f2780b279b5f6877d16",
+    "Q4/06_修订推进_20260926/q4_model_contract_v0.7_addendum.md": "6337cc5a03f0bf56caf1c514bf78006d61c7ac5e71e87c3192c7a134c46e1d84",
+    "Q4/06_修订推进_20260926/q4_task3_forecast_amendment_v0.8.md": "1205bb5c6210b2449a604692b92d83516849ca4dbb0deeb06abe43383db7cd91",
+    "Q4/06_修订推进_20260926/q4_frontier_forecast_method_v0.1.md": "52f44e97dae8b14199914d52bbccd6428977deb4118aed2416554f355b9bcfb9",
+    "Q4/06_修订推进_20260926/scripts/q4_frontier_scenario_model.py": "7f16cd5d5ed7830272990d5b633f184e1b835304ac210b23749600df331d8f8a",
+    "Q4/06_修订推进_20260926/results/forecast/q4_frontier_forecast_manifest.json": "a1268c157f1df8f9c8e487a56273998f023ea8d112efc5cf86cf3625d051dd7d",
+    "Q4/06_修订推进_20260926/results/forecast/q4_frontier_scenario_report.md": "b2c91d060b896d7f1cf3a3b0c341ec1c6f7c03d06a59a3aa83ddf8706350f18f",
+    "Q4/06_修订推进_20260926/results/forecast/q4_frontier_scenario_forecasts.csv": "f62187dafccd80856a7e6bd5eced8f440d2a5bfed0ba5286da6b04d926a1be61",
+    "Q4/06_修订推进_20260926/results/forecast/q4_c4_compute_scenarios.csv": "fd4de697f45e3b7d2f76e9c7834428c08ac34cf16339775f984e90680a011a36"
+  },
+  "outputs_sha256": {
+    "Q4/06_修订推进_20260926/results/smoke/q4_score_forecast_loss_bridge_separation.csv": "a243c2dd63aa305e5e5684762a8c97519ecb2713f677c5e47e548c78f1e754d6",
+    "Q4/06_修订推进_20260926/results/smoke/q4_score_forecast_loss_bridge_separation_report.md": "1488a674019cfee5604f4331b01e39910056a181b050c5bbef90e71236b5536b"
+  },
+  "unconditional_score_trend_track": {
+    "status": "not_estimable_from_supplied_history",
+    "observed_month_bins": 10,
+    "calendar_span_months": 9,
+    "rolling_origins_12m": 0,
+    "rolling_origins_24m": 0
+  },
+  "compute_conditioned_score_track": {
+    "status": "conditional_scenario_only",
+    "evidence_stage": "full_run",
+    "annual_forecast_skill": "NOT_VALIDATED",
+    "simulation_band_coverage": "UNKNOWN",
+    "scenario_row_count": 12,
+    "loss_used": false,
+    "scenario_provenance": {
+      "scenario_output_hashes_match": true,
+      "source_and_contract_hashes_match": true,
+      "provenance_mismatches": []
+    },
+    "full_run_manifest_verified": true
+  },
+  "loss_bridge_track": {
+    "status": "BLOCKED_NO_FIT",
+    "fit_executed": false
+  }
+}

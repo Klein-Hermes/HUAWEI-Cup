@@ -1,0 +1,55 @@
+{
+  "artifact": "Q3 source-separated Q/p conditional transition sensitivity",
+  "generated_at_utc": "2026-09-26T09:46:36.025658+00:00",
+  "command": "D:/Anaconda/envs/mmdet/python.exe Q3/03_代码/solve_q3_qp_conditioned_transition.py",
+  "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.22000-SP0",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3"
+  },
+  "seed": 260926,
+  "bootstrap_draws": 100,
+  "quality_reference": {
+    "q_version": "Q1-q_huber-v1",
+    "operational_q": "q_huber",
+    "q1_status": "FROZEN_WITH_LIMITATIONS",
+    "Q0": 0.49847810484764643
+  },
+  "scope": "conditional Q scenario; fixed p; fixed B1 M0 coefficients; no empirical joint p/Q identification",
+  "source_calibrations": {
+    "B6_semi_synthetic": 0.08503285994273319,
+    "B8_calibrated": -0.5520719416527808,
+    "B8_extrapolated": -0.5318344798560323
+  },
+  "input_sha256": {
+    "Q2\\03_结果\\经典ScalingLaw基线\\v1\\b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2\\03_结果\\经典ScalingLaw基线\\v1\\fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "Q2\\03_结果\\完整回答补充\\v1\\b6_b7_q_model_supplement.csv": "12323933facdbdcb6b8af212e850eda90f6048d35ac11f1b21a568480954ae1d",
+    "中文题目\\F题\\real_attachments\\B_scaling_laws\\supplementary_NQ_experiment.csv": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+    "中文题目\\F题\\real_attachments\\B_scaling_laws\\supplementary_NQ_experiment_large.csv": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+    "Q3\\04_结果\\M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "Q1\\03_结果\\Q1_最终收口\\q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1\\03_结果\\Q1_最终收口\\q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "Q1\\03_结果\\Q1.1\\v1\\a1_macro_summary.csv": "6b7cca1865ef6785981180fb0aea41fe839a5b6c12cb012bb21fa089d8b383f9"
+  },
+  "output_sha256": {
+    "Q3\\04_结果\\Qp条件转移敏感性_20260926\\_p1_smoke\\q_response_exponent_estimates.csv": "1f239da27f7a900f8d12b623154b416a530fda011dc3530d5abe642f9f1a7587",
+    "Q3\\04_结果\\Qp条件转移敏感性_20260926\\_p1_smoke\\q3_qp_conditional_scenarios.csv": "a14886f905cf748303f35cd8e466458915d06c7778d55e0232ec8d018eeccbd7",
+    "Q3\\04_结果\\Qp条件转移敏感性_20260926\\_p1_smoke\\q3_qp_adjacent_transitions.csv": "a80f9ae0a6553aa110b6ff7b87a7c1d81f2f5b2ab9c90a4cf0dcfe501dbe172e",
+    "Q3\\04_结果\\Qp条件转移敏感性_20260926\\_p1_smoke\\report.md": "042f3be23be1c053492d4b35c87d61a9a61200de636495b57cbf36165787bfd9"
+  },
+  "row_counts": {
+    "B1_grid": 1176,
+    "frontier_scenarios": 1,
+    "Q_response_estimates": 3,
+    "conditional_scenarios": 3,
+    "adjacent_transitions": 0
+  },
+  "checks": {
+    "B1_M0_prediction_reconciled": true,
+    "budget_feasibility_checked": true,
+    "B8_sources_kept_separate": true,
+    "p_vector_not_fabricated": true
+  }
+}

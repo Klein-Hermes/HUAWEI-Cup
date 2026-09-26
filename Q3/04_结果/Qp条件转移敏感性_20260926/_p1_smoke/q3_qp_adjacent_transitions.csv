@@ -1,0 +1,1 @@
+﻿q_response_source,transition_type,left_budget_flops,left_context_tokens,right_budget_flops,right_context_tokens,N_changed,D_changed,Q_changed,left_N_B,right_N_B,left_D_B,right_D_B,left_Q,right_Q,left_predicted_loss,right_predicted_loss

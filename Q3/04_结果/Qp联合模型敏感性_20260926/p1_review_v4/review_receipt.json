@@ -1,0 +1,85 @@
+{
+  "gate": "P1",
+  "status": "FAIL",
+  "reviewed_script": {
+    "path": "Q3/03_代码/fit_q3_qp_conditional_model.py",
+    "sha256": "1316D68CDE8761563C73C71BFBD6C93E154A708C82716C78DF0BA549386D436C"
+  },
+  "execution": {
+    "command": "D:/Anaconda/python.exe Q3/03_代码/fit_q3_qp_conditional_model.py --mode p1 --output-dir Q3/04_结果/Qp联合模型敏感性_20260926/p1_review_v4",
+    "exit_code": 0,
+    "stdout_summary": "mode=p1; full_source_fits=3; B1-anchored fits=3; support feasibility rows=30; minimal solutions=2",
+    "output_dir": "Q3/04_结果/Qp联合模型敏感性_20260926/p1_review_v4",
+    "generated_at_utc": "2026-09-26T10:15:21Z"
+  },
+  "input_sha256": {
+    "Q3/01_方案与设计/Q3_Qp条件联合模型与转移判定方案_20260926.md": "83a0d4def62db44fb58f99b8c5c73568ccd7967c9f543308f63f1c103d373518",
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+    "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+    "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+  },
+  "output_sha256": {
+    "p1_minimal_conditional_solutions.csv": "1a16a9771f78a98dacb1ce7d3c11f3f4d57f64ec0789ea461253716e4812f508",
+    "p1_scenario_support_feasibility.csv": "67ba1648153e01fc955f0197c88a4ca67a9806e09caf9a1e2162800867880c5d",
+    "p1_status.json": "338d1704b51a518f3ed6db8a2fb09b06940be41a2a38f7fc906cf3f535ddc151",
+    "q_response_b1_anchored_fits.csv": "cd0b8d072ee33268bcc0361f4295f29e3518ab6f21f6a895f47ba5502377b48f",
+    "q_response_full_fits.csv": "f08f8905f3f9d8490eb1b1ceee7687dc85ca86f420a6e5b42a87de382fe554cd",
+    "q_response_p1_b1_anchored_fits.csv": "cd0b8d072ee33268bcc0361f4295f29e3518ab6f21f6a895f47ba5502377b48f",
+    "q_response_p1_fits.csv": "f08f8905f3f9d8490eb1b1ceee7687dc85ca86f420a6e5b42a87de382fe554cd"
+  },
+  "checks": [
+    {
+      "id": "minimum_budget_strict_cap",
+      "status": "PASS",
+      "evidence": "Read-only boundary call using the reviewed script at budget=1e19, context=2048, logarithmic g(Q): B6 returns C_total_flops=9.999999999999992e18 and budget_slack_flops=8192.0; strict total<=budget and slack>=0 are true. B8_calibrated returns C_total_flops=8.732538677231999e18 and slack=1.267461322768001e18. Script uses math.fsum and np.nextafter toward Q0 when the inverse affordable-Q boundary rounds above budget (lines 366-374)."
+    },
+    {
+      "id": "frozen_interfaces",
+      "status": "PASS",
+      "evidence": "p1_status.json records Q1 FROZEN_WITH_LIMITATIONS, q_huber, Q1-q_huber-v1; Q0 recomputed from seven A1 domain rows is 0.49847810484764643, matching frozen Q0 within 1e-10. C7 has 45 unique model names and contexts [2048,4096,8192,32768,131072]. Runtime guards are at script lines 70-104."
+    },
+    {
+      "id": "source_fits_and_contract",
+      "status": "PASS",
+      "evidence": "Three source-specific six-parameter fits each report 54/54 successful starts and parameters within specified bounds. Full-model kappa: B6=0.08503298034695203, B8_calibrated=-1.1782546040071582, B8_extrapolated=-1.8703107404432997. B1-anchored kappa: B6=0.3830006502775433, B8_calibrated=-0.8193728642158753, B8_extrapolated=-0.791636028723241. Fitted N,D remain in billion units; FLOPs use absolute counts via multiplication by 1e9 (script lines 148-192, 341-348)."
+    },
+    {
+      "id": "support_scope_and_feasibility",
+      "status": "PASS",
+      "evidence": "Output has 15 feasibility rows for each optimization source; support intersections are B6=1112 and B8_calibrated=1128. At 1e19 and context 131072, each has zero feasible Q0 candidates. B8_extrapolated is fitted diagnostically but excluded from optimization. The two 1e22, context 8192 solutions are finite and strictly within budget."
+    },
+    {
+      "id": "conditional_output_claims",
+      "status": "PASS",
+      "evidence": "Outputs retain the unvalidated Q_score=q_huber bridge as a conditional scenario, state that the 17-domain p vector is unavailable and its effect is absorbed in the M0 baseline, and label source and anchored fits as not validated B1 transfer / conditional stress tests."
+    },
+    {
+      "id": "report_formatter_field_contract",
+      "status": "PASS_STATIC_CHECK",
+      "evidence": "No full run performed, per instruction. write_report builds full_by_source directly from full_rows (script line 689), reads diag['kappa'] (line 707), and the producer writes the full-fit table field 'kappa': theta[5] (line 803). The anchored formatter reads kappa_B1_anchored, which is produced by anchored_rows (lines 812-816). The requested KeyError path is therefore aligned by static inspection."
+    },
+    {
+      "id": "input_output_hashes",
+      "status": "PASS",
+      "evidence": "All listed input and generated output SHA-256 values were independently recomputed. The seven data-input hashes match the values recorded in p1_status.json."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "P1",
+      "summary": "The current Q3 plan explicitly requires solving the affordable-Q upper bound by bisection, while this reviewed script still uses closed-form inverse functions in q_upper_from_budget. The mathematical roots are equivalent for these monotone g(Q) forms and P1 budget checks pass, but the implementation does not follow the active plan method; v4 is therefore provisional and not a final P1 code signoff.",
+      "rework": "编程手：implement the specified bisection method (or get the plan formally aligned if authorized by the parent task), then rerun P1 under a fresh directory. The report formatter key fix is independently confirmed by static inspection."
+    }
+  ],
+  "limitations": [
+    "Full mode was not executed. The report formatter field contract was checked statically as requested; its runtime rendering remains unverified until the scheduled full run."
+  ],
+  "rework_entrypoint": {
+    "role": "编程手",
+    "required": "Implement the active plan’s bisection method, then request a fresh P1 review. The report formatter field fix itself is confirmed."
+  }
+}

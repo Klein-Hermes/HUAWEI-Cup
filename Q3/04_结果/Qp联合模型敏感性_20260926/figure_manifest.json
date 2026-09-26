@@ -1,0 +1,129 @@
+{
+  "purpose": "Q3 figure reproducibility and file audit",
+  "generator": {
+    "path": "Q3\\03_代码\\plot_q3_qp_conditional_figures.py",
+    "sha256": "f6305a3423f3d98eea9babe2bb5ddcb1e366f6dff5bad8658e6484f75cd1ffd0"
+  },
+  "inputs": [
+    {
+      "path": "中文题目\\F题\\real_attachments\\B_scaling_laws\\supplementary_NQ_experiment.csv",
+      "sha256": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f"
+    },
+    {
+      "path": "中文题目\\F题\\real_attachments\\B_scaling_laws\\supplementary_NQ_experiment_large.csv",
+      "sha256": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe"
+    },
+    {
+      "path": "Q2\\03_结果\\经典ScalingLaw基线\\v1\\b1_fitted_predictions.csv",
+      "sha256": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\flow_overall_model.png",
+      "sha256": "b3e488e99765175e1c44cd9040c9ad6c5ed1bbf6900e80356cb378a002f53b61"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\flow_overall_model.svg",
+      "sha256": "acefcdb6a397a2a7f412319567d56d71c62254d48ee1f2bc3039b3f861f5dc6f"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\flow_q3_model.png",
+      "sha256": "8a20a522d771d3b0fd7f5530e9cb6b2e91c98f5a92c6db24803d87ef30c09862"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\flow_q3_model.svg",
+      "sha256": "f22d1238b9996e4e013091f951e1428caa2a0dddf8e75c29f3c0f25462fbd9f9"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\process_q3_feasibility.png",
+      "sha256": "b0b08544a9f5479d706cf4d65505b93bd09e99f89b821c4a0569e3fac3a04c40"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\process_q3_feasibility.svg",
+      "sha256": "2f9dcdd913ee4e15cbc8440dd28cc35a1ad67574c4d121f4ec753da27c3e9e9f"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\process_q3_fit_cv.png",
+      "sha256": "e6c9f5d4ba3da8da35f033005f1af0e82191d993ae8cf1b3f73155b44dc6a572"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\process_q3_fit_cv.svg",
+      "sha256": "5de830d9b23f199a0691e0722ad35106cf6d7278f40d30cbc18ea9ee68d346b7"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\process_q3_kappa_estimates.png",
+      "sha256": "54a2f2cef959c5a20680bccad472effd9bbd45e42e27ec685d4466bae5267a49"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\process_q3_kappa_estimates.svg",
+      "sha256": "0ca3263690c217a9ccdf5678cb92da486ea045a60ae7090fd9a865bbe5a6c35b"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\raw_q3_b1_source_support.png",
+      "sha256": "b59dcb2b2e03330e3117221e5579c97ec6f19c3420022e153daf1c66b8f8d554"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\raw_q3_b1_source_support.svg",
+      "sha256": "e788ec6904fd9cfe6353de4b8f18570ed2676bca577944a72c0bc53158a20e86"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\raw_q3_loss_by_q_distribution.png",
+      "sha256": "f913ae08efa9cba5173303e7fbbf6094a7e383a927084362e52e8e1f12891fb0"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\raw_q3_loss_by_q_distribution.svg",
+      "sha256": "b26d029bb52719a6f6df0fe4c9208e8d1dd3179ecd5443a938068b3d7e4ed5c8"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\raw_q3_q_loss_relation.png",
+      "sha256": "c22f8377e9c50b5a36a4e08e2ce8336ff5d4a884d8e0d5e64a684c587b973b0a"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\raw_q3_q_loss_relation.svg",
+      "sha256": "694a5d09e69af26e1ed59a6d624171ac7838adf84c00d61f76d3f8d00ed58bc9"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\result_q3_selected_nd.png",
+      "sha256": "9229d976903c48c1a39eaf527d319eb929c8f04a9e6a94c667fa583e59c2ccc5"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\result_q3_selected_nd.svg",
+      "sha256": "f40d69629172d91a90ec321218851f0c404e83a62b6bd1d1fd539f522cb971bf"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\result_q3_selected_q_loss.png",
+      "sha256": "65ccf7bb457121b2437498601a46e97cfc076e33600de3ada99fb37ea6239862"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\result_q3_selected_q_loss.svg",
+      "sha256": "9bf808432ba72b84ac9d543beb2f02e2c31dddeeb2a16aa5c1515ff57335c84b"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\result_q3_transition_stability.png",
+      "sha256": "f65dcf9277a216320f100273911df5c50a5eaa18733676e7f55824a40c51eb45"
+    },
+    {
+      "path": "Q3\\04_结果\\Qp联合模型敏感性_20260926\\figures\\result_q3_transition_stability.svg",
+      "sha256": "c7c0b6dced31371b60077b6c0ce0c144e6b7ef47002504663efea53b7cd03218"
+    }
+  ],
+  "figure_counts": {
+    "raw": 3,
+    "process": 3,
+    "result": 3,
+    "flowcharts": 2
+  },
+  "audit": {
+    "figure_audit_questions": [
+      "q3"
+    ],
+    "figure_audit": "PASS",
+    "check_figure": "PASS",
+    "dpi_min": 300,
+    "svg_editable_text": true,
+    "svg_embedded_raster": false,
+    "layout_failures": 0,
+    "layout_warnings": 0
+  }
+}

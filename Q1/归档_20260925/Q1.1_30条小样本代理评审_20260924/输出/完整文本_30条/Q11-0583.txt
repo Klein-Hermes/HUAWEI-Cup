@@ -1,0 +1,381 @@
+Q: Could not resolve all dependencies for configuration ':classpath' I cant seem to get build tools for the latest gradle at all. I suspect its something to do with proxy setting for gradle. I have had a good look online but still cant seem to find a solution. I use gradle 2.1.
+I created gradle.properties file in my /home/user/.gradle folder with these setting.
+
+systemProp.http.proxyHost=proxy
+systemProp.http.proxyPort=80
+systemProp.http.proxyUser=myusername
+systemProp.http.proxyPassword=password
+systemProp.https.proxyHost=proxy
+systemProp.https.proxyPort=80
+systemProp.https.proxyUser=myusername
+systemProp.https.proxyPassword=password
+
+Here is my global build.gradle
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.13.0'
+        classpath fileTree(dir: 'build-libs', include: '*.jar')
+    }
+}
+
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+And here is the error i get when running gradlew
+Could not HEAD 'https://repo1.maven.org/maven2/com/android/tools/build/gradle/0.13.0/gradle-0.13.0.pom'.
+peer not authenticated
+
+What am I missing? that maven link opens fine in a browser.
+
+A: The solution is in your build.gradle change this block: 
+allprojects {
+  repositories {
+    jcenter()
+    google()
+  }
+}
+
+to google in first position : 
+allprojects {
+  repositories {
+    google()
+    jcenter()
+  }
+}
+
+
+A: late but it worked for me:
+change your dns setting by going Network and sharing center.
+ In left pane choose change adapter setting
+-right click on your network connection
+-properties
+-select ipv4
+-properties
+- now in dns server setting:-
+                                       -choose the option use the following dns server addresses 
+and use google dns server 8.8.8.8 as preferred dns server and 
+8.8.4.4 as alternate dns server.
+
+it will solve your problem.
+
+A: In the Android Studio v4.0, you should be off the Gradle offline-mode and retry to sync Gradle.
+
+
+A: Right, I'm not sure if it will work for others but worked for me.
+I changed proxyPort to 8080 and used jcenter instead of Maven. But I had to apply expeption to use HTTP instead of HTTPS. This is what I have in my build.gradle for build script and allprojects
+buildscript {
+  repositories {
+    jcenter {
+        url "http://jcenter.bintray.com/"
+    }
+  }
+}
+
+allprojects {
+repositories {
+    jcenter {
+        url "http://jcenter.bintray.com/"
+    }
+  }
+}
+
+UPDATE: 06/08
+I have recently updated Gradle and plugin version and had some problems. It was complaining about plugin com.android.application
+I did some digging around and changed
+ jcenter {
+    url "http://jcenter.bintray.com/"
+}
+
+to
+repositories {
+    maven { url 'http://repo1.maven.org/maven2' }
+}
+
+
+A: I try to modify the repositories and import the cer to java, but both failed, then I upgrade my jdk version from 1.8.0_66 to 1.8.0_74, gradle build success.
+
+A: I got the same problem. Just use File->INVALIDATE CACHES AND RESTART
+
+A: 6 years later here, but for them who are stil facing this issue, I solved it as following.
+It happened when my module had a different gradle version than the main project. I had gradle version 3.5.3 in project and an older version in module. So, I Just updated that version. The file is here:
+./node-modules/[module-name]/android/build.gradle
+
+A: Find and Replace:
+jcenter()
+maven {
+    url "https://maven.google.com"
+}
+
+to:
+maven {
+    url "https://maven.google.com"
+}
+jcenter()
+
+
+A: In my case deleting the .gradle folder worked for me.
+
+A: For newer android studio 3.0.0 and gradle update, this needed to be included in project level build.gradle file for android Gradle build tools and related dependencies since Google moved to its own maven repository.
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+
+        // NOTE: Do not place your application dependencies here; they belong
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+A: In my case, my Android Studio version was 3.6.1 and i have modified the classpath like below;
+classpath 'com.android.tools.build:gradle:3.6.1'
+
+and that error was gone.
+
+A: Go to 
+File --> Invalidate Caches / Restart.
+It worked for me.
+
+A: Android Studio > view > tool Windows > Gradle > click toggle offline mode (besides gradle settings icon)
+this work for me :)
+
+A: I had a same problem and I fix it with the following steps:
+
+
+*
+
+*check the event log and if you see the errors like "cash version
+is not available for the offline mode" follow the steps.
+
+*click on View => Gradle then new window will open.
+
+*click on the WIFI icon and then sync the Gradle.
+"if you see different errors from what I mentioned in number one, 
+please go to the file -> project structure -> and there is suggestion" 
+
+
+A: Tools > SDK Manager > SDK Tools > Show Package Details
+and remove all the old versions
+
+
+A: You should have gradle-wrapper.properties inside gradle/wrapper folder.
+Make sure you are using the right distributionURL, and the latest one. It should look something like this :
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-6.7.1-bin.zip
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+
+
+A: I installed new Android Studio and faced with this problem. Nothing is helped me except of downloading a few more Android SDK versions:
+Added Android Q and Android Pie to downloaded and installed SDK
+
+A: Well if anyone facing with this problem after updating android studio to 4.2, the problem is about kotlin version. changing cotlin version line from "ext.kotlin_version = "1.5.0-release-764" to "ext.kotlin_version = "1.5.0" may solve your issue. Here is the link which has more information about it:
+https://exerror.com/cant-create-new-kotlin-project-after-updating-to-android-studio-4-2/
+
+A: I Updated my android studio to latest version: Android Studio - Arctic Fox | 2020.3.1
+Then it was showing this error. To solve this error, you have to follow these steps:
+File>project Structure>project
+
+*
+
+*Change  Android Gradle Plugin version: 7.0.0  and Gradle Version: 7.0.2
+
+*then  Go to file>setting>Build, Execution, Deployment>Build Tools>Gradle
+
+*change Gradle JDK to 11 version  if it is 1.8 version.
+
+*if notification popup for Gradle upgraded then tap on it and click on run selected steps.
+
+*sync project and rebuild your project if necessary.
+
+I hope it will work for you, Thanks me later.
+
+A: I encountered a similar issue while building a Java project on Jenkins using Gradle.
+When I run the build on Jenkins, at some point it throws the error below:
+22:37:05  + GRADLE_OPTS='-Xms8192M -Xmx8192M'
+22:37:05  + gradle clean build '-Dorg.gradle.jvmargs=-XX:MaxPermSize=4096M -Xms4096M -Xmx8192M' --full-stacktrace
+22:37:05  
+22:37:05  Welcome to Gradle 5.6.4!
+22:37:05  
+22:37:05  Here are the highlights of this release:
+22:37:05   - Incremental Groovy compilation
+22:37:05   - Groovy compile avoidance
+22:37:05   - Test fixtures for Java projects
+22:37:05   - Manage plugin versions via settings script
+22:37:05  
+22:37:05  For more details see https://docs.gradle.org/5.6.4/release-notes.html
+22:37:05  
+22:37:05  Starting a Gradle Daemon (subsequent builds will be faster)
+22:37:14  > Task :my-service:clean UP-TO-DATE
+22:37:18  > Task :my-service:compileJava FAILED
+22:37:18  
+22:37:18  FAILURE: Build failed with an exception.
+22:37:18  
+22:37:18  * What went wrong:
+22:37:18  Execution failed for task ':my-service:compileJava'.
+22:37:18  > Could not resolve all files for configuration ':my:compileClasspath'.
+22:37:18     > Could not download spring-boot-autoconfigure.jar (org.springframework.boot:spring-boot-autoconfigure:2.1.14.RELEASE)
+22:37:18        > Could not get resource 'https://nexus.my-test.network/repository/maven-public/org/springframework/boot/spring-boot-autoconfigure/2.1.14.RELEASE/spring-boot-autoconfigure-2.1.14.RELEASE.jar'.
+22:37:18           > Premature end of Content-Length delimited message body (expected: 1276879; received: 496657
+22:37:18  
+22:37:18  * Try:
+22:37:18  Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+Here's how I fixed it:
+So first I looked the previous builds and they were building fine except this last one, also we had not changed anything in the build process.
+The issue was with our Nexus artifactory server that has not been running fine. The server stops responding sometimes.
+I just restarted the server and re-tried the build and it worked fine.
+That's all
+
+A: I'm using Gradle plugin 3.0.1 and saw this error. Not sure what caused this but the solution that works for me is to stop the running Gradle daemon by ./gradlew --stop.
+
+A: **A problem occurred evaluating project ':app'.
+
+Could not resolve all files for configuration 'classpath'.**
+
+Solution:
+       Platform->cordova-support-google-services
+In this file 
+Replace 
+classpath 'com.android.tools.build:gradle:+' to this
+ classpath 'com.android.tools.build:gradle:3.+'
+
+A: I basically just removed jcenter() from my repositories of project gradle in buildscript block, since i declared it in my app gradle.
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.72'
+    repositories {
+        google()
+        mavenLocal()
+        mavenCentral()
+
+        jcenter() //remove this line
+    }
+
+
+A: There seems to be many different causes to this problem.  My cause is different from other posted answers, so I'll go ahead and explain what my problem was just in case it's useful.
+I have a set of custom gradle plugins that for all practical purposes can be thought of as a wrapper around four familiar plugins: "com.android.application", "com.application.library", "java" and "java-library".  These wrapper plugin are responsible for actually applying those familiar plugins, along with supplying configuration data. The result is that it simplifies the "build.gradle.kts" scripts for modules in my various projects.
+My wrapper plugin for the "java-library".  Is pretty straight forward.  It applies the "java-library" plugin and adds the "sourceCompatibility" and "targetCompatibility" values. I followed the pattern that others have suggested on how to set those values.  Essentially doing something like: "project.tasks.withType<JavaCompile> { sourceCompatibility = ...  }"  That's what caused my problem.  I changed the above to:
+   val javaExt:JavaPluginExtension = project.extensions.get("java")  as JavaPluginExtension
+    javaExt.sourceCompatibility = JavaVersion.toVersion( versions.getProperty("java-source-compatibility"))
+    javaExt.targetCompatibility = JavaVersion.toVersion( versions.getProperty("java-target-compatibility"))
+
+And that solved the issue for me! The only useful information I got from gradle on resolving the problem is that it let me know the offending module, which was a module that didn't need any dependencies.  In order to track down what was going on, I put the offending module into a separate project. That's where I discovered that the problem was definitely related to my custom "java-library" wrapper plugin.
+
+A: I have resolved this error which was occurring at time of generating release build.
+To get rid of this just past the below code into android/build.gradle in allprojects -> repositories
+allprojects {
+    repositories {
+        google()
+         ...
+         exclusiveContent {
+           filter {
+               includeGroup "com.facebook.react"
+           }
+           forRepository {
+               maven {
+                   url "$rootDir/../node_modules/react-native/android"
+               }
+           }
+       }
+       ...
+       }
+}
+
+
+A: you should  have gradle.properties file defined for the build with proxy settings so that gradle knows how to use http connection
+# This file contains the basics for Maven Version control and will be used by the Artifactory Release management
+# These settings are for the root project and all sub-projects in this application
+releaseVersion=1.0.0-SNAPSHOT
+releaseGroup=com.xx.xx.xx
+artifactory_user=
+artifactory_password=
+artifactory_contextUrl=https://artifactory.xxxx.com/artifactory/
+systemProp.http.proxyHost=proxy.xxx.com
+systemProp.http.proxyPort=8080
+systemProp.https.proxyHost=proxy.xxx.com
+systemProp.https.proxyPort=8080
+systemProp.http.nonProxyHosts=*.xxx.com|localhost|*.int.targoe.com
+org.gradle.java.home=C:\\Program Files (x86)\\Java\\jdk1.8.0_121
+
+
+A: I had this issue and it was because I hadn't added an exception for gradle in my firewall (TinyWall).
+
+A: I got this issue solved by switching internet from Wifi to mobile hot-spot. It means this issue occurs due to network issue. I could also see below logs which confirms my understanding,
+
+Connect to jcenter.bintray.com:443
+  [jcenter.bintray.com/75.126.118.188] failed: Connection timed out:
+  connect
+
+and 
+
+Connect to repo1.maven.org:443 [repo1.maven.org/151.101.36.209]
+  failed: Connection timed out: connect
+
+Hope it helps.
+
+A: If adding google() into your build.gradle doesn't work try adding it at first place in your repositories section of node_modules/YOUR_PACKAGE/android/build.gradle file.
+
+A: *
+
+*I am working with flutter in the VS Code.
+
+*In my case, I solved it by
+stopping gradlew process in VS code using the below command
+android/gradlew --stop
+
+A: I changed the ext.kotlin_version in "build.gradle" to the previous one (from 1.5.0 back to 1.4.32) and that worked for me. Maybe the current Gradle version wasn't compatible with it.
+
+A: Make sure Build Tool version compatible with gradle version and then
+invalidate cache and restart
+
+A: In my case there were also the exception I have enabled with build --stacktrace --info
+* What went wrong:
+A problem occurred configuring root project 'project'.
+> Could not resolve all dependencies for configuration ':classpath'.
+   > Authentication scheme 'all'(Authentication) is not supported by protocol 'file'
+
+Caused by: org.gradle.api.InvalidUserDataException: Authentication scheme 'all'(Authentication) is not supported by protocol 'file'
+  at org.gradle.api.internal.artifacts.repositories.transport.RepositoryTransportFactory.validateConnectorFactoryCredentials(RepositoryTransportFactory.java:158)
+  at org.gradle.api.internal.artifacts.repositories.transport.RepositoryTransportFactory.createTransport(RepositoryTransportFactory.java:112)
+
+The reason was... Docker repository was added to config instead of Maven Nexus repository. So please check for that kind of stuff.
+
+A: I was facing the same issue, it was because of the cache.
+You just need to follow these Steps:
+
+
+*
+
+*Go to File -> Invalidate Caches / Restart
+
+*After restarting Android Studio, connect your PC to a good network.
+
+*Go to build and choose rebuild, and Android Studio will automatically download the missing files for the project
+

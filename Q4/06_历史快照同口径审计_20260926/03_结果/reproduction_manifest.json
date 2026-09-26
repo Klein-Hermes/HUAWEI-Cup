@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-26T09:05:26.926716+00:00",
+  "status": "supplementary_audit_complete",
+  "project_root": "D:\\PycharmProject\\HUAWEI-Cup",
+  "script": "Q4\\06_历史快照同口径审计_20260926\\02_代码\\q4_historical_snapshot_audit.py",
+  "script_sha256": "88990839b9a9cb1e252040aee2df6e2b643dd19fd0138902aba69e3434d389ba",
+  "command": "python \"Q4/06_历史快照同口径审计_20260926/02_代码/q4_historical_snapshot_audit.py\" --verify-remote",
+  "snapshot_command": "python \"Q4/06_历史快照同口径审计_20260926/02_代码/q4_monthly_snapshot_reconstruction.py\"",
+  "snapshot_runtime_requirement": "pyarrow==25.0.1 from requirements_snapshot.txt",
+  "remote_command_parameters": {
+    "verify_remote": true,
+    "remote_limit": 0
+  },
+  "inputs_sha256": {
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\leaderboard_cleaned.csv": "199891128629f24f83ed2f51211eee65a82a13f45275e79a8227d5dacc7c2846",
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\leaderboard_enhanced.csv": "d8ae5b1e00f36bf17adb0c3fbf88c60edd54298625d2db1aa744b2b001202799",
+    "Q4\\03_结果\\results\\q4_frontier_monthly.csv": "0678b8f7fd781528f13c97702d06f4db47e8f1f6d637bf21e82bf0159f86e712",
+    "Q4\\03_结果\\results\\q4_c8_c1_match_candidates.csv": "603f5160abf49704f1546310ad773aef04ca61e6227aa4312d28814da1dd1d50",
+    "中文题目\\F题\\real_attachments\\source_manifest.json": "34e81dabf46302eebaac8551fa18d2e72acd0833b1cf0276690bee897f1323db"
+  },
+  "outputs_sha256": {
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\historical_monthly_p90_reconstruction.csv": "da2faf1c01168e2d1e75cfceb1670c8e50850e759dafde33c338c1ba9fbb7d46",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\historical_snapshot_cohort_p90.csv": "797b7ccf14f50eacc48cc753f988c6bc7d3772db2f6e9581a29250661a3be159",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\historical_snapshot_inventory.csv": "46af4a2e8946f0c15392c0de518010fc0872926b329491dea4c160b7f8d34d23",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\historical_snapshot_report.md": "a143e2d327a0da252dace9df25ea5c0ffd36d71a3e3ad88aec2ef6bd95f3e72b",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\historical_snapshot_reproduction_manifest.json": "eddedd42e43c05ac74cb156ad04d0524625b7a08df6c2a13c9b0622cf4225f2b",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\historical_snapshot_same_month_p90.csv": "9f81b568f3048bd4771f2f19c2781609311dc056453e5875ba1a985e8434f668",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\q4_source_manifest_correction.csv": "28a84743c215e212d8b803f6a226a51b3622cfd8861e92c2105b3a98f8697fc3",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\remote_source_validation.json": "1d44f1f8d1eb9496557a7b62137c32c5ea91a377cb798b8c06aab55c1a786e9a",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\report.md": "7e825d468541ab27f6154803ee21e9fba1f2ad79913cac8541f593a09ded7ff7",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\row_alignment_summary.json": "3e38970d378539b8d230daa9a64325a344f5f22abe8d31412893911cce1ca3fb",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\same_caliber_open_weight_sample.csv": "236895a046813632b493549fdd95ea566955dd451d922f6fbe6981d8fadb7e95",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\source_protocol_comparability.csv": "5e877a2342b7cae66fb78210ba734bff7f99f544fa6c99fac9125f75e4580c85",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\version_match_summary.json": "193b4107d2333063732e5a88b021b526bb70bcad24f8492116cf81e2868cd1d3"
+  },
+  "environment": {
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22000-SP0",
+    "dependencies": "Python standard library only",
+    "random_seed": "not_applicable_no_randomness"
+  },
+  "key_results": {
+    "c1_c2_full_row_matches": 4576,
+    "c1_c2_all_rows_one_to_one": true,
+    "registered_exact_name_unique_c1_candidates": 1819,
+    "monthly_historical_snapshots": 10,
+    "same_month_snapshot_p90_matches_final_baseline": 1,
+    "c1_remote_rows_checked": 4576,
+    "c1_remote_full_row_matches": 4576,
+    "monthly_rows_reconstructed": 10,
+    "open_weight_records_reconstructed": 201,
+    "months_with_n_at_least_20": 3,
+    "v2_snapshot_cutoff": "2025-03-20T12:17:27Z",
+    "v2_revision": "9c09a7cae43334062a82cb164f2ef255013dafa2"
+  },
+  "self_hash_note": "This manifest is intentionally not listed in its own outputs_sha256."
+}

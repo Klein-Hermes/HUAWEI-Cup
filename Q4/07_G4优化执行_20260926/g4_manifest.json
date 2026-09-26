@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-26T10:40:47.973367+00:00",
+  "status": "analysis_complete_with_scoped_limitations",
+  "review_gates": {
+    "M1_model_contract": "PASS",
+    "P1_minimum_execution": "PASS",
+    "P2_task3_forecast": "PASS",
+    "decomposition_P2": "NOT_RECHECKED_IN_THIS_TASK3_TURN",
+    "contest_submission_ai_disclosure": "PENDING_TEAM_VERIFICATION"
+  },
+  "frozen_baseline_verification": {
+    "unchanged": true,
+    "snapshot_created_at_local": "2026-09-26T16:44:28.5773894+08:00",
+    "roots": [
+      {
+        "root": "Q4/03_结果/results",
+        "expected_file_count": 58,
+        "actual_file_count": 58,
+        "unchanged": true,
+        "changed": [],
+        "added": [],
+        "removed": []
+      },
+      {
+        "root": "Q4/04_图表",
+        "expected_file_count": 30,
+        "actual_file_count": 30,
+        "unchanged": true,
+        "changed": [],
+        "added": [],
+        "removed": []
+      },
+      {
+        "root": "Q4/05_审计交付",
+        "expected_file_count": 15,
+        "actual_file_count": 15,
+        "unchanged": true,
+        "changed": [],
+        "added": [],
+        "removed": []
+      }
+    ]
+  },
+  "analysis_metrics": {
+    "decomposition_max_abs_baseline_difference": 4.121147867408581e-13,
+    "common_support_n": 645,
+    "observed_endpoint_change": 1.18550183980296,
+    "ratio_shares_stably_identified": false,
+    "publisher_bootstrap_successes": 1989,
+    "publisher_bootstrap_requested": 2000,
+    "forecast_annual_rolling_origins": 0,
+    "forecast_analysis_date_utc": "2026-09-26T10:02:23.072011+00:00",
+    "forecast_target_timing_as_of_run": {
+      "2026-03": {
+        "status": "elapsed_before_run_month",
+        "months_from_run_month": -6
+      },
+      "2027-03": {
+        "status": "upcoming_after_run_month",
+        "months_from_run_month": 6
+      }
+    }
+  },
+  "files": {
+    "Q4/07_G4优化执行_20260926/figures/process_q4_one_step_backtest.pdf": "31f037aa048b1150046f49e2778386059ea55df5ed0ffb8077b749f760370a0d",
+    "Q4/07_G4优化执行_20260926/figures/process_q4_one_step_backtest.png": "b122f0ff850d69290c0724bf2c0cac3d86cbeae6f1ee77523d97681fae37347d",
+    "Q4/07_G4优化执行_20260926/figures/process_q4_one_step_backtest.svg": "7ae10f92338c2cdfa287fcf4d4be4497df93c95bc89570c745027628808b26db",
+    "Q4/07_G4优化执行_20260926/figures/process_q4_one_step_backtest.tiff": "bd90b1b6bfc8cdf7f46b9bde6f6a6f7f79701e496aaf80e404c445ec1aa826a0",
+    "Q4/07_G4优化执行_20260926/figures/process_q4_one_step_backtest_grayscale.png": "bb7d5081df5f01d91817112eafbf52ce7f7cce5400284c987b6b3bf703e1bd1a",
+    "Q4/07_G4优化执行_20260926/figures/process_q4_one_step_backtest_preview.png": "cfa3f920243d4d6b2ff9cf9dcb89eae9a8d0806b61e66fbf98584406fe13a2f9",
+    "Q4/07_G4优化执行_20260926/figures/result_q4_conditional_forecast_intervals.pdf": "b7bb0addacf9c3cfbf0f35474ad33feb27b4a7965fbcdf9b03a42182d39b2b07",
+    "Q4/07_G4优化执行_20260926/figures/result_q4_conditional_forecast_intervals.png": "87b14fdeb9356a81b3b407a91b68265e488ea5175ec2305125e9ab70540e0fdc",
+    "Q4/07_G4优化执行_20260926/figures/result_q4_conditional_forecast_intervals.svg": "5d4cc2eb983288091eabff5b9950b5119a15c4255c6ac1650853de8f97c6ef7c",
+    "Q4/07_G4优化执行_20260926/figures/result_q4_conditional_forecast_intervals.tiff": "8e0f745e42ec5d72f9c96614d08f1b766341de8a41a2de71e52924fbe240859e",
+    "Q4/07_G4优化执行_20260926/figures/result_q4_conditional_forecast_intervals_grayscale.png": "0b6fb4466f880837e12b3d87ff8dc9c90757075c9efb6f4071a438933d94837c",
+    "Q4/07_G4优化执行_20260926/figures/result_q4_conditional_forecast_intervals_preview.png": "b78db666b2983c324cff7b5ee5f153cb839b5f8b5c30d7e1a7d56446676e319e",
+    "Q4/07_G4优化执行_20260926/frozen_q4_baseline_sha256.json": "bf670b1cb52480b1ec3f6452690f63a43a21b782dbad02f38f9111bb208aa7f1",
+    "Q4/07_G4优化执行_20260926/g4_execution_plan.md": "09eec4bd6677e7b01b389cf3908136ecd72fd134a1490fc67f4bb4aa197d2cd6",
+    "Q4/07_G4优化执行_20260926/g4_execution_report.md": "c79353d625ae1600486eb5e8a6d66025c740226748838bbadd202060c828084a",
+    "Q4/07_G4优化执行_20260926/q4_frontier_forecast_method_v0.1.md": "982e587ec826216a2d114b4af7f98e66b287dfd3500b89de3b03f0e5c3136eaa",
+    "Q4/07_G4优化执行_20260926/q4_g4_task3_p2_review_receipt.json": "6b3ce32a2d57611cd9ef44e3a3b85880e91805edaa0687ed45123b7d90d32902",
+    "Q4/07_G4优化执行_20260926/q4_task3_forecast_amendment_v0.8.md": "1205bb5c6210b2449a604692b92d83516849ca4dbb0deeb06abe43383db7cd91",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_c4_compute_scenarios.csv": "fd4de697f45e3b7d2f76e9c7834428c08ac34cf16339775f984e90680a011a36",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_forecast_closeout.md": "86b284a2b08164ba55703a54c5ca3f6a0c250694eb7c08d192ac50e4b0e561bc",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_forecast_closeout_manifest.json": "e1e2b382579b2b39d8aef81c5f696b8222b82a35a1716faa8b9856a7ee9f997f",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_forecast_figure_contract.md": "8379acb6b3d25e322dc8097bab4878aa7128ced869b88f0230b8fb960f74be3e",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_forecast_horizon_validation_status.csv": "acf26ad0c05ad71fdb8ce264e15fb0a09e26e1f8b480a78b5d83b6a59e5e61af",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_forecast_one_step_validation.csv": "338ad6dc120595c341e5dad7253d79f1a4343ff74cea6d90b43284c66151c32c",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_candidate_backtest.csv": "8780ccb03be496129c31b917c8a7b4ce37a5e587c4828ea38169cd0cafebeec8",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_candidate_summary.csv": "ba7f83a8c6632e2337602d0b2ba8b3a899057c985e39c921fa45d0da88f62ebb",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_forecast_manifest.json": "ab59ffcd096bc0581c4a141f93e4f4fa1dde4d332259f3d354e6922241149ecf",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_model_diagnostics.json": "978c8e9506b1ee8a4d7e26ec66cdc3914d478a13552f634d1cd76373eabae8e2",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_monthly_rebuilt.csv": "54553f1909546dc9988b74dfe21d6eb9d98b182b72ec19dde5b3d4f0567b34f8",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_scenario_forecasts.csv": "5c8a3e549f8cbc542807d8d45b3d0b383565be6fa161c59770c34a5e0dfd2bb0",
+    "Q4/07_G4优化执行_20260926/results/forecast/q4_frontier_scenario_report.md": "ba84e243664a3ffb0ef8e63c279918194f07a59d8d71ae3656c3024ca4fdfbf6",
+    "Q4/07_G4优化执行_20260926/results/full/decomposition/q4_g4_coefficients.csv": "0f8861044516cfb959464c4ce5d97fdece9bf1738c4de0e6db74e91669f60509",
+    "Q4/07_G4优化执行_20260926/results/full/decomposition/q4_g4_decomposition.csv": "32fe296810d42bda8ba2afa96f9f601b9ca079bcebdcdcb78d762e5ea8282e25",
+    "Q4/07_G4优化执行_20260926/results/full/decomposition/q4_g4_decomposition_diagnostics.json": "7f86a712540a0078dd4acabf71a9f5072e9458f55d9ee04f99dcb625d8cba4e2",
+    "Q4/07_G4优化执行_20260926/results/full/decomposition/q4_g4_publisher_bootstrap_summary.csv": "31184fcb57983f77cd4f86b30a52f8473b0b2c02d0b9e8295a999135179e15f7",
+    "Q4/07_G4优化执行_20260926/results/full/decomposition/q4_g4_share_fieller.csv": "a1e4427b930c900d81d4be2134dcee62d2cb5b75466165ee51ef9caa6b7b4666",
+    "Q4/07_G4优化执行_20260926/results/full/decomposition/q4_g4_support_audit.csv": "6e137fe9db3d88cf61b5d776939246ae8c10c905ef6830d9351103dca002985c",
+    "Q4/07_G4优化执行_20260926/results/smoke/decomposition/q4_g4_coefficients.csv": "0f8861044516cfb959464c4ce5d97fdece9bf1738c4de0e6db74e91669f60509",
+    "Q4/07_G4优化执行_20260926/results/smoke/decomposition/q4_g4_decomposition.csv": "32fe296810d42bda8ba2afa96f9f601b9ca079bcebdcdcb78d762e5ea8282e25",
+    "Q4/07_G4优化执行_20260926/results/smoke/decomposition/q4_g4_decomposition_diagnostics.json": "ee96a4651736a0ab521d96a02a9de121280edef37794a08273de2ec22a596392",
+    "Q4/07_G4优化执行_20260926/results/smoke/decomposition/q4_g4_publisher_bootstrap_summary.csv": "85e371309842151055f528e5fa6a53de24be583d7f319a6b861f129444d1236c",
+    "Q4/07_G4优化执行_20260926/results/smoke/decomposition/q4_g4_share_fieller.csv": "a1e4427b930c900d81d4be2134dcee62d2cb5b75466165ee51ef9caa6b7b4666",
+    "Q4/07_G4优化执行_20260926/results/smoke/decomposition/q4_g4_support_audit.csv": "86e38a605ba7ae9855329379089956a15a2063eb20f9163ee58098a77d2e71ab",
+    "Q4/07_G4优化执行_20260926/results/smoke/forecast_model/q4_c4_compute_scenarios.csv": "fd4de697f45e3b7d2f76e9c7834428c08ac34cf16339775f984e90680a011a36",
+    "Q4/07_G4优化执行_20260926/results/smoke/forecast_model/q4_frontier_candidate_backtest.csv": "8780ccb03be496129c31b917c8a7b4ce37a5e587c4828ea38169cd0cafebeec8",
+    "Q4/07_G4优化执行_20260926/results/smoke/forecast_model/q4_frontier_candidate_summary.csv": "ba7f83a8c6632e2337602d0b2ba8b3a899057c985e39c921fa45d0da88f62ebb",
+    "Q4/07_G4优化执行_20260926/results/smoke/forecast_model/q4_frontier_forecast_manifest.json": "2b2cb56673c5f37f199ceae4494b08e537f6c4e9dceefb720e3136eda971e75a",
+    "Q4/07_G4优化执行_20260926/results/smoke/forecast_model/q4_frontier_model_diagnostics.json": "4591fd650a2029d5593cba2422a23a01305f95fa8c572500c559ed3a70a97f40",
+    "Q4/07_G4优化执行_20260926/results/smoke/forecast_model/q4_frontier_monthly_rebuilt.csv": "54553f1909546dc9988b74dfe21d6eb9d98b182b72ec19dde5b3d4f0567b34f8",
+    "Q4/07_G4优化执行_20260926/results/smoke/forecast_model/q4_frontier_scenario_forecasts.csv": "f4c6a9e47e18c9478d6624c534b8bbaf69d8c5f22a15bc467c16d9dff76fa541",
+    "Q4/07_G4优化执行_20260926/results/smoke/forecast_model/q4_frontier_scenario_report.md": "8fd5ad1e8c4448d4acca866e4eb14ae061b3d39bd02d0098d369fbc5cf2a2383",
+    "Q4/07_G4优化执行_20260926/scripts/q4_forecast_closeout.py": "b1b7ec544866305675ba59a0718898f3854d9714e87d9669ac448587b0d6d4b1",
+    "Q4/07_G4优化执行_20260926/scripts/q4_g4_decomposition_inference.py": "a3cea135aa4388a965e5e64951928373a8d71bf7c46924e1aed9cd8fa64ed82b",
+    "Q4/07_G4优化执行_20260926/scripts/q4_g4_finalize.py": "27d730cc0e3ad5d2cee6d6fe4b4e875312e43c0af463ac75d576d35d59d611f8",
+    "Q4/07_G4优化执行_20260926/scripts/q4_g4_frontier_scenario_model.py": "3a6b2fa5ee89b4eb8d40827f8d6aae17fc54414e122a3691ea1cc2e0d1c35966",
+    "Q4/07_G4优化执行_20260926/utils/plot_style.py": "f3de0a0c858d6018310d7e461574697a4cec7b28e5e20b8ccdaa7749772147e2"
+  }
+}

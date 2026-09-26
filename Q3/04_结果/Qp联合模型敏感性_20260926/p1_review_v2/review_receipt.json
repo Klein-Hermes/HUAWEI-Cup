@@ -1,0 +1,85 @@
+{
+  "gate": "P1",
+  "status": "FAIL",
+  "reviewed_script": {
+    "path": "Q3/03_代码/fit_q3_qp_conditional_model.py",
+    "sha256": "4218984407C3A05F7CB5CEAAA37121F3C4554E379FC1454B61A5DCB6C0BC4611"
+  },
+  "execution": {
+    "command": "D:/Anaconda/python.exe Q3/03_代码/fit_q3_qp_conditional_model.py --mode p1 --output-dir Q3/04_结果/Qp联合模型敏感性_20260926/p1_review_v2",
+    "exit_code": 0,
+    "stdout_summary": "mode=p1; full_source_fits=3; B1-anchored fits=3; support feasibility rows=30; minimal solutions=2",
+    "output_dir": "Q3/04_结果/Qp联合模型敏感性_20260926/p1_review_v2",
+    "generated_at_utc": "2026-09-26T09:44:17Z"
+  },
+  "input_sha256": {
+    "Q2/03_结果/经典ScalingLaw基线/v1/b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+    "中文题目/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+    "Q1/03_结果/Q1_最终收口/q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1/03_结果/Q1_最终收口/q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+  },
+  "output_sha256": {
+    "p1_minimal_conditional_solutions.csv": "1a16a9771f78a98dacb1ce7d3c11f3f4d57f64ec0789ea461253716e4812f508",
+    "p1_scenario_support_feasibility.csv": "67ba1648153e01fc955f0197c88a4ca67a9806e09caf9a1e2162800867880c5d",
+    "p1_status.json": "e1ced1a3781648619155779adadd5e8e1eb01ef733be704b366c306f0d223f96",
+    "q_response_b1_anchored_fits.csv": "cd0b8d072ee33268bcc0361f4295f29e3518ab6f21f6a895f47ba5502377b48f",
+    "q_response_full_fits.csv": "f08f8905f3f9d8490eb1b1ceee7687dc85ca86f420a6e5b42a87de382fe554cd",
+    "q_response_p1_b1_anchored_fits.csv": "cd0b8d072ee33268bcc0361f4295f29e3518ab6f21f6a895f47ba5502377b48f",
+    "q_response_p1_fits.csv": "f08f8905f3f9d8490eb1b1ceee7687dc85ca86f420a6e5b42a87de382fe554cd"
+  },
+  "checks": [
+    {
+      "id": "frozen_interfaces",
+      "status": "PASS",
+      "evidence": "p1_status.json records Q1 status FROZEN_WITH_LIMITATIONS, operational_q=q_huber, q_version=Q1-q_huber-v1; recomputed Q0 from seven A1 rows is 0.49847810484764643, matching frozen Q0=0.4984781048 within 1e-10. C7 metadata has 45 unique model names and contexts [2048,4096,8192,32768,131072]. Runtime guards are in script lines 70-104."
+    },
+    {
+      "id": "source_fits_and_contract",
+      "status": "PASS",
+      "evidence": "q_response_p1_fits.csv has separate B6/B8_calibrated/B8_extrapolated fits, each with 54/54 successful deterministic starts; parameters satisfy E/A/B/exponent/kappa constraints. Fitted kappas are 0.0850329803, -1.1782546040, -1.8703107404. B1-anchored kappas are 0.3830006503, -0.8193728642, -0.7916360287. Start generation and bounds are in script lines 148-192 and anchored fitting in lines 207-244."
+    },
+    {
+      "id": "units_support_and_source_scope",
+      "status": "PASS",
+      "evidence": "N_params_B and D_tokens_B are fitted in billions as specified; cost_components converts both by 1e9 before FLOPs arithmetic (script lines 340-350). The support intersection is 1,112 B1 points for B6 and 1,128 for B8_calibrated. The feasibility file contains exactly 15 budget/context rows per optimization source; B8_extrapolated is excluded via OPTIMIZATION_SOURCES and does not enter B1 optimization (script lines 40-44, 294-305, 473-486, 829-877)."
+    },
+    {
+      "id": "q0_feasibility_boundary",
+      "status": "PASS",
+      "evidence": "At Q0 and the minimum budget 1e19, context 131072 is infeasible for both B6 and B8_calibrated (0 candidates); all other expected feasibility counts are finite. The 30-row output includes support counts and feasible_at_Q0."
+    },
+    {
+      "id": "conditional_claims",
+      "status": "PASS",
+      "evidence": "Output labels each full fit as source-specific and not a validated B1 transfer; anchored fits say conditional transfer stress test only; scenario rows identify the unvalidated Q_score=q_huber numerical bridge and unavailable 17-domain p vector. No overclaim of validated unified Q/p optimum is present."
+    },
+    {
+      "id": "p1_selected_solutions",
+      "status": "PASS",
+      "evidence": "At budget 1e22, context 8192, logarithmic g(Q), B6 returns finite C_total=9.896388261532725e21 and B8_calibrated returns 9.891576253712383e21; both are below budget. The selected Q follows the anchored-kappa sign: 1.0 for positive B6 kappa and Q0=0.4984781048 for negative B8_calibrated kappa."
+    },
+    {
+      "id": "minimum_budget_strict_cap",
+      "status": "FAIL",
+      "evidence": "Read-only boundary evaluation using the reviewed script's load_b1/source_frames/source_support/fit_anchored_kappa/solve_scenario functions at budget=1e19, context=2048, logarithmic g(Q): B6 returns C_total_flops=1.0000000000000002e19, 2,048 FLOPs (2.05e-16 relative) above budget and negative slack. B8_calibrated returns 8.732538677231999e18. Script line 365 allows total up to budget*(1+1e-12), so this floating-point overshoot is accepted and returned. The prior P1 contract explicitly requires the minimum-budget solution to satisfy FLOPs<=budget."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "P1",
+      "summary": "Strict minimum-budget feasibility is not preserved in the reported B6 boundary solution: computed total exceeds the cap by one floating-point ULP (2,048 FLOPs), and the tolerance guard permits it while budget_slack_flops becomes negative.",
+      "rework": "编程手：make the selected boundary Q/cost representation satisfy C_total_flops<=budget_flops (or establish and encode an explicit rounding convention that keeps reported slack nonnegative), then rerun P1 under a fresh isolated output directory and repeat this receipt check."
+    }
+  ],
+  "limitations": [
+    "This P1 run covers the minimum slice only; it does not run full-mode cross-validation, bootstrap, all optimized scenarios, transition analysis, or figures."
+  ],
+  "rework_entrypoint": {
+    "role": "编程手",
+    "required": "Resolve the strict minimum-budget cap discrepancy and request P1 re-review.",
+    "recommended_fresh_command": "D:/Anaconda/python.exe Q3/03_代码/fit_q3_qp_conditional_model.py --mode p1 --output-dir Q3/04_结果/Qp联合模型敏感性_20260926/p1_review_v3"
+  }
+}

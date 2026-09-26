@@ -1,0 +1,47 @@
+{
+  "artifact": "Q3-G2 finite-support budget-limitation-state transition analysis",
+  "mode": "full",
+  "scope": "fixed_Q0_M0_B1_policy_1176_point_observed_support",
+  "formula": "loss=E+A*n^(-alpha)+B*d^(-beta), with n=N_params_B and d=D_tokens_B in billions; cost=6*N*D+N*D*L/5000 using actual counts",
+  "decision_threshold": "0.95",
+  "bootstrap_replicates_used": 1000,
+  "bootstrap_replicates_available": 1000,
+  "contexts_used": [
+    2048,
+    4096,
+    8192,
+    32768,
+    131072
+  ],
+  "budgets_flops": [
+    10000000000000000000,
+    10000000000000000000000,
+    1000000000000000000000000
+  ],
+  "candidate_count": 1176,
+  "unique_joint_max_support_point": {
+    "run_id": 1232,
+    "N_params_B": "11.965825",
+    "D_tokens_B": "299.893"
+  },
+  "bootstrap_positive_parameter_minima": {
+    "A": "0.3534959506491344",
+    "alpha": "0.3393019715000158",
+    "B": "1.2400327514143406",
+    "beta": "0.2797704577798407"
+  },
+  "input_sha256": {
+    "bootstrap_parameters": "c9d043ab768891a59657ee5df6c1df34e5ae5c44533723b5803f8157052d4668",
+    "b1_candidate_grid": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "m0_reference_frontier": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "m0_bootstrap_frontier": "2e0677f48ae10acf4c148ea021864c14c09b4d9d8f7f83badaaf551792c796f2",
+    "m0_transition_draws": "1855f6fc70a25797ebd242cff5bb4a325090fdd88eceb45980181f5d5d9058bb",
+    "support_saturation": "66fb850859ba09c77639ac6d221964f054216d586acb2069aabf5856b19b73e9"
+  },
+  "script_sha256": "8ae6b932c595ffc2bddef41777bbb0bb56c9a9ebdbaf5a73c940f6111ccfd84b",
+  "output_sha256": {
+    "g2_transition_summary.csv": "f5509426620512726c22e5957b5d39b35414057d9c0b95c35d77af4aeae31476",
+    "report.md": "d59a6471f7b60d9878cebc12f9d7c026bd3810edb7117b934059d0608bbaf1d2"
+  },
+  "python": "3.10.4"
+}

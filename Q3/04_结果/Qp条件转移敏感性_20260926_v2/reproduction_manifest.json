@@ -1,0 +1,78 @@
+{
+  "artifact": "Q3 source-separated Q response transfer sensitivity",
+  "generated_at_utc": "2026-09-26T10:14:10.442740+00:00",
+  "command": "D:/Anaconda/envs/mmdet/python.exe Q3/03_代码/solve_q3_qp_conditioned_transition_v2.py",
+  "script_sha256": "a38e1cc7389850495dd4a73157d4e1af6d1aa5b8c2153feed423a91ee0f01aaf",
+  "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.22000-SP0",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3"
+  },
+  "random_seed": 260926,
+  "anchor_cluster_bootstrap_draws": 1000,
+  "quality_reference": {
+    "q_version": "Q1-q_huber-v1",
+    "operational_q": "q_huber",
+    "q1_status": "FROZEN_WITH_LIMITATIONS",
+    "Q0": 0.49847810484764643,
+    "mapping_assumption": "Q_score numerically identified with q_huber; unvalidated"
+  },
+  "scope": "B6/B8 calibrated Q-only migration pressure test; fixed p; not empirical joint p/Q identification",
+  "full_curve_fits": {
+    "B6_semi_synthetic": {
+      "kappa": 0.08503299838809368,
+      "LOO_Q_RMSE": 0.08984020942405983
+    },
+    "B8_calibrated": {
+      "kappa": -1.1782546062349546,
+      "LOO_Q_RMSE": 0.07036367751595078
+    },
+    "B8_extrapolated_diagnostic_only": {
+      "kappa": -1.8703107158698635,
+      "LOO_Q_RMSE": 0.08747955412630933
+    }
+  },
+  "B1_anchored_kappa": {
+    "B6_semi_synthetic": 0.38300064456112093,
+    "B8_calibrated": -0.8193728391558368
+  },
+  "input_sha256": {
+    "Q2\\03_结果\\经典ScalingLaw基线\\v1\\b1_fitted_predictions.csv": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e",
+    "Q2\\03_结果\\经典ScalingLaw基线\\v1\\fit_parameters.json": "d2bdfcf9cb8b66f32cbd633b36614a3552d290f7207cf86f4e3a02b602e4e4d8",
+    "中文题目\\F题\\real_attachments\\B_scaling_laws\\supplementary_NQ_experiment.csv": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+    "中文题目\\F题\\real_attachments\\B_scaling_laws\\supplementary_NQ_experiment_large.csv": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+    "Q3\\04_结果\\M0_ND_reference_frontier.csv": "8018ecf57b47781098e4f9bc8ceb02f08b998b222dc674993640b32c0f936583",
+    "Q3\\01_方案与设计\\Q3_Qp条件联合模型与转移判定方案_20260926.md": "83a0d4def62db44fb58f99b8c5c73568ccd7967c9f543308f63f1c103d373518",
+    "Q1\\03_结果\\Q1_最终收口\\q1_final_freeze.json": "0de8b80a24622a78a97bfb9a3ec496839896e18963ce7972b978c76d3bef6ee7",
+    "Q1\\03_结果\\Q1_最终收口\\q1_final_domain_quality.csv": "281b79df9bc0afcacf1ca927e9e354eb46543795d5432729ba8690344772b574",
+    "Q1\\03_结果\\Q1.1\\v1\\a1_macro_summary.csv": "6b7cca1865ef6785981180fb0aea41fe839a5b6c12cb012bb21fa089d8b383f9"
+  },
+  "output_sha256": {
+    "Q3\\04_结果\\Qp条件转移敏感性_20260926_v2\\q2_source_full_curve_fits.csv": "9d89d26ee54411e195edadcb566f3c5d7736cbc7cfca4672dd064b8897c8ed81",
+    "Q3\\04_结果\\Qp条件转移敏感性_20260926_v2\\q2_leave_one_Q_level_predictions.csv": "4643edb9e7c7317bfc7cacc29b40c44f68cfd25852a3661518a86f5711513f64",
+    "Q3\\04_结果\\Qp条件转移敏感性_20260926_v2\\q3_B1_anchored_Q_response.csv": "11d8464b4e3dc3bde52113e17503bc9a839149f985401afaf3b25df43f2e0901",
+    "Q3\\04_结果\\Qp条件转移敏感性_20260926_v2\\q3_anchored_leave_one_Q_predictions.csv": "636a0065bdf1700ffca02ae0796f158aadc88ce86f2152f38521ef4d55aca725",
+    "Q3\\04_结果\\Qp条件转移敏感性_20260926_v2\\q3_source_support_intersections.csv": "dabdbd7a1c3a51eec6c1625e65051d7363356c725d9778d88c9eabf11e9324e0",
+    "Q3\\04_结果\\Qp条件转移敏感性_20260926_v2\\q3_qp_conditional_scenarios.csv": "3b7033c62e7c92be3bdb255185b860c94d11c8094cd7513de6a8666fa2550207",
+    "Q3\\04_结果\\Qp条件转移敏感性_20260926_v2\\q3_qp_adjacent_transitions.csv": "b8ff20afce66c9181792d0bb0556a65b2313897a95323b53f2c67c521f94b7b9",
+    "Q3\\04_结果\\Qp条件转移敏感性_20260926_v2\\report.md": "c0ff706fe7eb17f41a9b93dc1b4d1ba69de853bb2c14b433dc56757e70af1653"
+  },
+  "row_counts": {
+    "B1_grid": 1176,
+    "frontier_scenarios": 15,
+    "source_curve_fits": 3,
+    "source_curve_LOO_rows": 32,
+    "B1_anchored_fits": 2,
+    "conditional_scenarios": 90,
+    "adjacent_edges": 132
+  },
+  "checks": {
+    "B1_M0_predictions_reconciled": true,
+    "all_budget_constraints_checked": true,
+    "source_support_intersections_applied": true,
+    "three_g_functions_run": true,
+    "B8_extrapolated_omitted_from_B1_optimization": true,
+    "independent_p_Q_effect_not_claimed": true
+  }
+}

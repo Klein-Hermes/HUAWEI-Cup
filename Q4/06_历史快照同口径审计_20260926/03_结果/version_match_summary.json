@@ -1,0 +1,18 @@
+{
+  "open_weight_c1_records": 201,
+  "registered_exact_name_unique_c1_candidates": 1819,
+  "c1_records_sha_equal_latest_q4_c8_candidate": 198,
+  "c1_records_with_sha_conflict_latest_q4_c8_candidate": 2,
+  "c1_records_without_source_sha": 1,
+  "q4_candidate_open_state_counts": {
+    "unknown": 1614,
+    "Yes": 201,
+    "No": 4
+  },
+  "sample_level_version_status_counts": {
+    "revision_sha_equal_latest_q4_candidate": 198,
+    "revision_conflict": 2,
+    "source_version_missing": 1
+  },
+  "interpretation": "A SHA match supports weight identity only, not exact score or protocol identity."
+}

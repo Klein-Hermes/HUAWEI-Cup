@@ -1,0 +1,4 @@
+﻿split,role,n_recipes,n_targets,absolute_macro_r2_frozen,macro_centered_rmse,macro_centered_r2,macro_centered_r2_ci95_low,macro_centered_r2_ci95_high,macro_pearson_r_centered,negative_target_r2_count,bootstrap_replicates,bootstrap_seed,bootstrap_invalid_target_scores,transfer_support_vs_mean_baseline
+test_1m,same_scale_positive_control,256,13,0.618888,0.449176,0.627170,0.609285,0.642889,0.791703,0,10000,20260926,0,True
+test_60m,cross_scale_holdout,256,13,-7.933569,0.371948,0.537929,0.502329,0.568472,0.782518,0,10000,20260926,0,True
+test_1b,cross_scale_holdout,64,13,-810.119586,0.262125,-4.440704,-7.433226,-2.756658,0.669866,9,10000,20260926,0,False

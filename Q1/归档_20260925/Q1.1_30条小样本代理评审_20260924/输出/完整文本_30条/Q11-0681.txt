@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>s.e.e.d.</title>
+    <link rel="icon" type="image/jpeg" href="img/logourl.jpg" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+
+    <!-- Custom Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div>
+                    <a class="language-selector-col navbar-toggle collapsed" href="index.html"><strong>ENG</strong></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-seed-navbar-collapse-1">
+                    <span class="fa fa-align-justify wow bounceIn"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-seed-navbar-collapse-1">
+                <div class="col-lg-10">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <div class="row-marker-navbar color1"></div>
+                            <a class="page-scroll" href="#page-top">Inicio</a>
+                        </li>
+                        <li>
+                            <div class="row-marker-navbar color2"></div>
+                            <a class="page-scroll" href="#Servicios">Servicios</a>
+                        </li>
+                        <li>
+                            <div class="row-marker-navbar color3"></div>
+                            <a class="page-scroll" href="#Clientes">Clientes</a>
+                        </li>
+                        <li>
+                            <div class="row-marker-navbar color4"></div>
+                            <a class="page-scroll" href="#Equipo">NUestro equipo</a>
+                        </li>
+                        <li>
+                            <div class="row-marker-navbar color1"></div>
+                            <a class="page-scroll" href="#Impacto">Impacto</a>
+                        </li>
+                        <li>
+                            <div class="row-marker-navbar color2"></div>
+                            <a class="page-scroll" href="#blog">Publicaciones</a>
+                        </li>
+                        <li>
+                            <div class="row-marker-navbar color3"></div>
+                            <a class="page-scroll" href="#Contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right language-selector-div">
+                    <a class="language-selector nav navbar-nav" href="index.html"><strong>ENG</strong></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner text">
+
+                <img src="img/logo-blanco.png" width="66%">
+                <h3>s.e.e.d. es una firma de abogados especializada en temas de inversión de impacto.  Cubrimos todas las necesidades legales de nuestros clientes, quienes se ubican a lo largo del espectro de la inversión de impacto en Latinoamérica: desde ONGs, startups y PYMEs hasta inversionistas y corporaciones. Damos a nuestros clientes soluciones legales que mejoran su huella a largo plazo.</h3>
+                <h3>Nuestra misión es mejorar y promover los esfuerzos de nuestros clientes que se esfuerzan por construir un mundo mejor. Creemos que las ideas de nuestros clientes tienen el poder de convertirse en instrumentos de cambio social.</h3>
+
+                <a href="#Servicios" class="btn btn-primary btn-xl page-scroll">Conocé más</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="Servicios">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">NUESTROS SERVICIOS</h2>
+                    <hr class="primary">
+                    <div class="text-quote">
+                        <h3>"La manera en que los negocios han operado en los últimos 50 años debe sufrir un cambio, porque no vamos a sobrevivir como sociedad o planeta si no derribamos las barreras que separan lo económico, social y ambiental."</h3>
+                    </div>
+                    <div class="text-muted">
+                        <p>Pamela Hartigan <br>
+                       Directora del Centro Skoll para el Emprendimiento Social</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="text-services">
+                        <p>En s.e.e.d. entendemos que la inversión de impacto representa una amplia gama de proyectos que van desde la filantropía hasta la inversión responsable y sostenible; articulada de manera conjunta con los rendimientos financieros, tratando de lograr un impacto social positivo (por social, también nos referimos al medio ambiente). Se ha convertido en una tendencia global en la que cada vez más empresas se suman, gracias evidencia creciente tanto sobre su poder transformativo en términos sociales como los atractivos rendimientos para los inversionistas. Latinoamérica es actualmente el segundo mayor mercado de inversión de impacto y ha experimentado un crecimiento de más de 12x veces desde 2008 a la fecha. Esto ofrece enormes oportunidades para la región y en particular para Costa Rica, que se posiciona a nivel mundial como un centro de desarrollo sostenible.</p>
+
+                         <p>Esta es una muestra de nuestros servicios. Nuestro objetivo final va más allá de la resolución de problemas legales. Somos aliados de nuestros clientes en asegurar e incrementar el impacto de sus operaciones diarias. En s.e.e.d. dominamos las áreas resaltadas en negrita donde se requiere especial consideración para la inversión de impacto.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/advocacy.png"></img>
+                        <h3 class="text-bold">PROMOCIÓN DE DERECHOS HUMANOS</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/comercial-contracts.png"></img>
+                        <h3>CONTRATOS COMERCIALES</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/dealing-with.png"></img>
+                        <h3 class="text-bold">RELACIONES CON AUTORIDADES PÚBLICAS</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/employment.png"></img>
+                        <h3>EMPLEO</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/migration.png"></img>
+                        <h3>MIGRACIÓN</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/fundraising.png"></img>
+                        <h3 class="text-bold">GESTIÓN DE RECURSOS</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/governance.png"></img>
+                        <h3 class="text-bold">GOBIERNO CORPORATIVO</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/fusionesyadquisiciones.png"></img>
+                        <h3>FUSIONES Y ADQUISICIONES</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/intelectual.png"></img>
+                        <h3>PROPIEDAD INTELECTUAL</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/investment.png"></img>
+                        <h3 class="text-bold">INVERSIÓN</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/litigation.png"></img>
+                        <h3>LITIGIO</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/notary.png"></img>
+                        <h3>SERVICIOS NOTARIALES</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/real-estate.png"></img>
+                        <h3>BIENES RAÍCES</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/regulation.png"></img>
+                        <h3 class="text-bold">DERECHO PÚBLICO</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/structuring.png"></img>
+                        <h3 class="text-bold">ESTRUCTURACIÓN DE PROYECTOS</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/icons/taxation.png"></img>
+                        <h3 class="text-bold">IMPUESTOS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Clientes">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">NUESTROS CLIENTES</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/Alimentos-Bermudez.jpg"></img>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/Viogaz.jpg"></img>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/Chefilisimo.jpg"></img>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/Enertiva.jpg"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/Fruktus.jpg"></img>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/fundamentes.jpg"></img>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/Ideas-en-accion.jpg"></img>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/Grupo-Finca.jpg"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/RBA.jpg"></img>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/Impactico.jpg"></img>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/PU.jpg"></img>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/Intercultura.jpg"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/Caminos-de-Osa.jpg"></img>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/SEG.jpg"></img>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/Greentique-hotels.jpg"></img>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="client-box">
+                        <img src="img/clients/UpePlaces.jpg"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary" id="Equipo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">NUESTRO EQUIPO</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+
+            <div class="row team-row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box">
+                        <img src="img/team/jose_alfaro.jpg" class="img-responsive img-circle">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <h3 class="team-name">Socio</h3>
+                                </div>
+                                <div class="project-name">
+
+                                    <h3 class="team-name" >José Miguel Alfaro Gómez</h3>
+                                    <br/>
+                                    <a href="https://www.linkedin.com/in/josé-miguel-alfaro-gómez-6a491529" target="_blank" class="fa fa-linkedin-square fa-2x wow bounceIn"></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box text-justify portfolio-margin-text">
+                        <p >En 2009, decide fundar s.e.e.d., donde coordina los asuntos legales de las empresas sobresalientes en distintos campos de la inversión de impacto, como la sostenibilidad, la tecnología limpia, la conservación, el microfinanciamiento, el comercio justo, la cultura, la educación, el voluntariado, la salud, el deporte y el desarrollo. Promueve activamente las inversiones socialmente responsables y la mejora del ecosistema empresarial social en Costa Rica. José también está a cargo del desarrollo de negocios para s.e.e.d., escalando su modelo a otras jurisdicciones. </p>
+                    </div>
+                    <a id="btn-team-read-more" class="btn-info btn-team user0 btn-team-read-more" data-id="user0">LEER MÁS</a>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8"style="margin:15px">
+                        <div class="hide-text-jm text-justify" id="user0" style="display:none;">
+                            <p>Antes de fundar s.e.e.d., José se unió a Arias & Muñoz, el mayor bufete de abogados en Centroamérica. Trabajó como coordinador de Prácticas Legales en varios campos del derecho corporativo y comercial, bienes raíces, fideicomisos y herencias, fusiones y adquisiciones y litigios y arbitraje. Allí, fundó el Comité Pro Bono de Costa Rica, lo que le familiariza con ONGs tales como Techo y el Grameen Bank.</p>
+                            <p>José es licenciado en Derecho de la Universidad de Costa Rica y notario público. Tiene una Maestría en Administración de Empresas de la Universidad de Oxford, donde fue galardonado con la Beca Skoll. También es Global Shaper, una comunidad del Foro Económico Mundial para líderes jóvenes.</p>
+                            <a id="btn-team-hide" class="btn-info btn-team btn-team-hide user0" data-id="user0"> OCULTAR</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+            </div>
+
+            <hr class="primary">
+            <div class="row team-row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box">
+                        <img src="img/team/sebastian_morua.jpg" class="img-responsive img-circle">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <h3 class="team-name">Socio</h3>
+                                </div>
+                                <div class="project-name">
+
+                                    <h3 class="team-name" >Sebastián Morúa Hernández</h3>
+                                    <br/>
+                                    <a href="https://cr.linkedin.com/in/smorua" target="_blank" class="fa fa-linkedin-square fa-2x wow bounceIn"></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box text-justify portfolio-margin-text">
+                        <p>Sebastián es socio fundador en s.e.e.d. y fungió como coordinador de los programas de consultoría de riesgo y de la juventud. Ha participado en el desarrollo de las empresas sociales basadas \u200B\u200Ben la comunidad y ha trabajado como consultor de sostenibilidad en lugares como África Occidental, India y Brasil. Él se centra en ayudar a nuestros clientes a maximizar su impacto a través de sus relaciones con los grupos de interés.</p>
+                    </div>
+                    <a id="btn-team-read-more" class="btn-info btn-team btn-team-read-more user1" data-id="user1">LEER MÁS</a>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8"style="margin:15px">
+                        <div class="hide-text-jm text-justify" id="user1" style="display:none;">
+                            <p>Antes de fundar s.e.e.d., Sebastián fue el Administrador de Programas Internacionales en Albion in the Community, la galardonada fundación benéfica de  Brighton & Hove Albion FC, \u200B\u200Buna empresa social que utiliza el fútbol como herramienta para el cambio social. En Albion in the Community, Sebastián participó en el diseño y ejecución del programa de liderazgo juvenil y la promoción, una plataforma que ayuda a los jóvenes a permanecer en los estudios e involucrarse en el empleo en países como Inglaterra, Mali, Burkina Faso y la India.</p>
+                            <p>Sebastián se graduó en Relaciones Internacionales y Estudios del Desarrollo de la Universidad de Sussex, en Inglaterra y tiene una maestría en Administración de Empresas con especialización en Gestión Deportiva de la Escuela de Negocios de la UE. En la actualidad es responsable del desarrollo de la asociación Right to Dream, un importante actor global en el fútbol social.</p>
+                            <a id="btn-team-hide" class="btn-info btn-team btn-team-hide user1" data-id="user1">OCULTAR</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+
+            <hr class="primary">
+            <div class="row team-row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box">
+                        <img src="img/team/andres_vargas.jpg" class="img-responsive img-circle">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <h3 class="team-name">Coordinador de Práctica Legal</h3>
+                                </div>
+                                <div class="project-name">
+
+                                    <h3 class="team-name" >Andrés Vargas Rojas</h3>
+                                    <br/>
+                                    <a href="https://www.linkedin.com/in/andr%C3%A9s-vargas-rojas-ab52a8120" target="_blank" class="fa fa-linkedin-square fa-2x wow bounceIn"></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box text-justify portfolio-margin-text">
+
+                        <p>Andrés fue invitado por los fundadores de s.e.e.d. para unirse a la firma en 2012, y actualmente ejerce como el coordinador de la práctica legal.</p>
+                        <p>La experiencia previa en su carrera incluye la participación de alto nivel en una amplia gama de prácticas en Arias & Muñoz, el bufete más grande de abogados de América Central, y la participación en la diplomacia internacional en una pasantía en la Misión Permanente de Costa Rica ante las Naciones Unidas (en la sede en Nueva York).</p>
+
+                    </div>
+                    <a id="btn-team-read-more" class="btn-info btn-team user3 btn-team-read-more" data-id="user3">LEER MÁS</a>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8"style="margin:15px">
+                        <div class="hide-text-jm text-justify" id="user3" style="display:none;">
+                            <p>WEn Arias & Muñoz construyó una fuerte visión jurídica que ejerce en la banca y las finanzas internacionales, corporativos, gobierno, fusiones y adquisiciones, las transacciones de varias jurisdicciones, tecnología, medios de comunicación y de telecomunicaciones, clientes privados, asociaciones públicas y privadas, desarrollo de bienes raíces, y regulación y cumplimiento.</p>
+                            <p>Su tiempo en las Naciones Unidas lo formó en habilidades esenciales y valores para superar los problemas complejos y participar en las negociaciones multilaterales e interculturales.</p>
+                            <p>Andrés ha completado el plan de estudios del programa de la Licenciatura de la Universidad Costa Rica y actualmente está escribiendo su tesis como candidato para este grado. También invierte cada vez más en los esfuerzos de conservación de la Península de Osa en el Pacífico Sur de Costa Rica.</p>
+                            <a id="btn-team-hide" class="btn-info btn-team btn-team-hide user3" data-id="user3">OCULTAR</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+
+            <hr class="primary">
+            <div class="row team-row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box">
+                    <img src="img/team/gabriel_arguedas.jpg" class="img-responsive img-circle">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                <h3 class="team-name">Asistente Legal</h3>
+                            </div>
+                            <div class="project-name">
+
+                                <h3 class="team-name" >Gabriel Arguedas Araya</h3>
+                                <br/>
+                                <a href="https://cr.linkedin.com/in/gabriel-arguedas-22745b120" target="_blank" class="fa fa-linkedin-square fa-2x wow bounceIn"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box text-justify portfolio-margin-text">
+                    <p>Como asistente legal en s.e.e.d., Gabriel colabora en con empresas sobresalientes  que buscan consejo y soluciones legales. Sus campos de trabajo son, entre otros, el turismo sostenible, las microfinanzas, la cultura, la salud y el desarrollo.</p>
+                </div>
+                <a id="btn-team-read-more" class="btn-info btn-team user2 btn-team-read-more" data-id="user2">LEER MÁS</a>
+            </div>
+            </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8"style="margin:15px">
+                        <div class="hide-text-jm text-justify" id="user2" style="display:none;">
+                            <p>Antes de unirse a s.e.e.d. como asistente legal, Gabriel colaboró en la Asociación Nacional de Seguros Privados Empresas. Trabajó como Asistente del Director del Centro de Protección del Consumidor y practicó el derecho comercial, derecho de seguros, y la ley de regulación financiera. Allí se familiarizó con múltiples mecanismos de protección de riesgo que necesitan las personas y las empresas.</p>
+                            <p>Gabriel está cursando la Licenciatura en Derecho por la Universidad de Costa Rica. En 2015 fue galardonado con una beca de la Universidad de Helsinki, Finlandia, en donde estudió derecho internacional, derecho europeo y derecho financiero.</p>
+                            <a id="btn-team-hide" class="btn-info btn-team btn-team-hide user2" data-id="user2">OCULTAR</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+            </div>
+    </section>
+
+    <section class="bg-primary" id="Impacto">
+        <div class="row">
+                <hr class="primary">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h3 class="section-heading">Inversión de impacto suena bien, ¿verdad? Aquí un vistazo a algunas métricas de nuestro trabajo.</h3>
+            </div>
+        </div>
+        <div class="row impact-section">
+             <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-2 col-md-2 text-center">
+                <div class="client-box">
+                    <img src="img/impact/500esp.png"></img>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2  text-center">
+                <div class="client-box">
+                    <img src="img/impact/1200esp.png"></img>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 text-center">
+                <div class="client-box">
+                    <img src="img/impact/40esp.png"></img>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 text-center">
+                <div class="client-box">
+                    <img src="img/impact/8000esp.png"></img>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 text-center">
+                <div class="client-box">
+                    <img src="img/impact/2000esp.png"></img>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+        </div>
+    </section>
+
+    <section id="video" class="container">
+        <div class="embed-responsive embed-responsive-16by9">
+		  <iframe src="//player.vimeo.com/video/43077557"></iframe>
+	   </div>
+    </section>
+
+    <section class="container">
+        <div class="container">
+             <div class="col-lg-8 col-lg-offset-2 text-center">
+               <h2 class="section-heading">NETWORKS</h2>
+                <hr class="primary">
+                <h3>Somos miembros activos de las siguientes redes</h3>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-8 text-center">
+                    <div class="client-box">
+                        <a href="https://www.bcorporation.net">
+                            <img src="img/networks/bcorp1.png"></img>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 text-center">
+                    <div class="client-box">
+                        <a href="https://skollworldforum.org">
+                            <img src="img/networks/skoll1.png"></img>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 text-center">
+                    <div class="client-box">
+                        <a href="http://www.trust.org/trustlaw/">
+                            <img src="img/networks/thomson1.png"></img>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<section id="blog">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">PUBLICACIONES</h2>
+                    <hr class="primary">
+                </div>
+            <ul class="gridder"></ul>
+            <div class="blog-gridder-show"></div>
+        </div>
+    </section>
+
+    <section id="Contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">CONTACTO</h2>
+                    <hr class="primary">
+                    <h3>Llamanos o envianos un correo y te contactaremos de vuelta tan pronto como podamos.</h3>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn contact-icons"></i>
+                    <p>(506) 2221‐3503</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn contact-icons" data-wow-delay=".1s"></i>
+                    <p><a class="contact-a" href="mailto:info@seedcr.com">info@seedcr.com</a></p>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <i class="fa fa-map-marker fa-3x wow bounceIn contact-icons " data-wow-delay=".1s"></i>
+                    <p>San José, Costa Rica, Calle 11, avenidas 2 y 2 bis, número 255</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+    <script src="js/team.js"></script>
+    <script src="js/blog.js"></script>
+
+</body>
+
+</html>

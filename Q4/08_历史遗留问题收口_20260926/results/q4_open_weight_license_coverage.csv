@@ -1,0 +1,9 @@
+﻿open_weights_filter,c1_hub_license_raw,n_models,strict_version_confirmed_n,permission_status_counts
+C2 Open Weights=Yes,apache-2.0,88,0,"{""not_assessed"": 88}"
+C2 Open Weights=Yes,<blank>,68,0,"{""not_assessed"": 68}"
+C2 Open Weights=Yes,mit,26,0,"{""not_assessed"": 26}"
+C2 Open Weights=Yes,other,15,0,"{""not_assessed"": 15}"
+C2 Open Weights=Yes,bigscience-bloom-rail-1.0,1,0,"{""not_assessed"": 1}"
+C2 Open Weights=Yes,gpl-3.0,1,0,"{""not_assessed"": 1}"
+C2 Open Weights=Yes,llama3,1,0,"{""not_assessed"": 1}"
+C2 Open Weights=Yes,llama3.1,1,0,"{""not_assessed"": 1}"

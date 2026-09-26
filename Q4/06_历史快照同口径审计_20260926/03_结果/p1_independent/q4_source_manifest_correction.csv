@@ -1,0 +1,2 @@
+file,existing_source_manifest_entry,verified_upstream_dataset,verified_upstream_revision,verified_row_count,full_row_match_count,correction,evidence
+leaderboard_cleaned.csv,https://huggingface.co/datasets/open-llm-leaderboard-old/results,open-llm-leaderboard/contents,not_verified_offline,4576,,Record the v2 contents source in this Q4 supplement; preserve original source_manifest.json unchanged.,"Exact one-to-one match over four text and eight numeric C1 fields, tolerance 5e-13; upstream Model sha retained separately."

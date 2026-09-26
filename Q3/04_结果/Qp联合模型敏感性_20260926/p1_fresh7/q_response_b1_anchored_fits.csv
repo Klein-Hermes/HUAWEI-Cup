@@ -1,0 +1,4 @@
+﻿source,kappa_B1_anchored,sse,rmse,mae,r2,boundary_kappa,n_rows_weighted,bridge_assumption,interpretation
+B6,0.3830006502775433,9.676822788984566,0.1639514053088137,0.142477124023652,0.7742380786214569,False,360.0,Q_score numerically identical to Q1 q_huber; unvalidated,conditional transfer stress test only
+B8_calibrated,-0.8193728642158753,1178.013589979809,1.0941518553198208,0.986539279463992,-1.3749213039475636,False,984.0,Q_score numerically identical to Q1 q_huber; unvalidated,conditional transfer stress test only
+B8_extrapolated,-0.791636028723241,878.500978244576,1.1045995869825007,1.0070753172888087,-2.0098792750944368,False,720.0,Q_score numerically identical to Q1 q_huber; unvalidated,conditional transfer stress test only

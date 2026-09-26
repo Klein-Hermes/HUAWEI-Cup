@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-26T08:59:36.313484+00:00",
+  "status": "monthly_snapshot_reconstruction_complete",
+  "project_root": "D:\\PycharmProject\\HUAWEI-Cup",
+  "repo_id": "open-llm-leaderboard/contents",
+  "repo_head_sha": "9c09a7cae43334062a82cb164f2ef255013dafa2",
+  "repo_head_last_modified": "2025-03-20T12:17:27Z",
+  "history": {
+    "commit_count": 3598,
+    "head_sha": "9c09a7cae43334062a82cb164f2ef255013dafa2",
+    "head_date": "2025-03-20T12:17:27.000Z",
+    "pagination_pages": 36,
+    "commit_api": "https://huggingface.co/api/datasets/open-llm-leaderboard/contents/commits/main",
+    "selection_rule": "latest available dated commit within each UTC calendar month in the pinned v2 repo history; March 2025 ends on March 20"
+  },
+  "monthly_snapshots": 10,
+  "snapshot_months": [
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03"
+  ],
+  "months_without_submission_date": [
+    "2024-06"
+  ],
+  "same_month_p90_matches_final_baseline": 1,
+  "same_month_p90_comparisons": 9,
+  "current_c2_open_weight_status_counts_in_frozen_candidates": {
+    "unknown": 1614,
+    "Yes": 201,
+    "No": 4
+  },
+  "frozen_exact_name_unique_candidates": 1819,
+  "c1_c2_row_alignment": {
+    "left_name": "local_C1",
+    "right_name": "local_C2",
+    "left_rows": 4576,
+    "right_rows": 4576,
+    "one_to_one_matches": 4576,
+    "unmatched_left": 0,
+    "unmatched_right": 0,
+    "ambiguous_left": 0,
+    "all_rows_one_to_one": true
+  },
+  "script_sha256": "37335c14f38c38b71d42469219888fa8ad6783710fcca748e6b4c466911d0f74",
+  "helper_script_sha256": "84ba9f7e8a669208e13c75e793df804b1be83ab4d42779c16e4247b55124a4c3",
+  "inputs_sha256": {
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\leaderboard_cleaned.csv": "199891128629f24f83ed2f51211eee65a82a13f45275e79a8227d5dacc7c2846",
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\leaderboard_enhanced.csv": "d8ae5b1e00f36bf17adb0c3fbf88c60edd54298625d2db1aa744b2b001202799",
+    "Q4\\03_结果\\results\\q4_c8_c1_match_candidates.csv": "603f5160abf49704f1546310ad773aef04ca61e6227aa4312d28814da1dd1d50",
+    "Q4\\03_结果\\results\\q4_frontier_monthly.csv": "0678b8f7fd781528f13c97702d06f4db47e8f1f6d637bf21e82bf0159f86e712",
+    "Q4\\06_历史快照同口径审计_20260926\\02_代码\\q4_historical_snapshot_audit.py": "84ba9f7e8a669208e13c75e793df804b1be83ab4d42779c16e4247b55124a4c3",
+    "Q4\\06_历史快照同口径审计_20260926\\02_代码\\requirements_snapshot.txt": "c8d942b4f137ab3dedb56cfe8ed0c5d82c211d37f3237882ff65ef31328e7e3f",
+    "Q4\\06_历史快照同口径审计_20260926\\02_代码\\q4_monthly_snapshot_reconstruction.py": "37335c14f38c38b71d42469219888fa8ad6783710fcca748e6b4c466911d0f74"
+  },
+  "outputs_sha256": {
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\historical_snapshot_inventory.csv": "46af4a2e8946f0c15392c0de518010fc0872926b329491dea4c160b7f8d34d23",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\historical_snapshot_cohort_p90.csv": "797b7ccf14f50eacc48cc753f988c6bc7d3772db2f6e9581a29250661a3be159",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\historical_snapshot_same_month_p90.csv": "9f81b568f3048bd4771f2f19c2781609311dc056453e5875ba1a985e8434f668",
+    "Q4\\06_历史快照同口径审计_20260926\\03_结果\\historical_snapshot_report.md": "a143e2d327a0da252dace9df25ea5c0ffd36d71a3e3ad88aec2ef6bd95f3e72b"
+  },
+  "environment": {
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22000-SP0",
+    "pyarrow_version": "25.0.1",
+    "additional_dependencies": "requirements_snapshot.txt",
+    "random_seed": "not_applicable_no_randomness",
+    "cache_dir": "C:\\Users\\86147\\AppData\\Local\\Temp\\q4_hf_v2_month_end_snapshots_20260926"
+  },
+  "revision_validation": "Each Parquet downloaded from a commit-addressed resolve URL; repository head checked before and after history retrieval."
+}

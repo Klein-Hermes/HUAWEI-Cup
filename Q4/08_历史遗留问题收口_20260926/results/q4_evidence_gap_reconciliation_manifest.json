@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-26T10:01:51.582800+00:00",
+  "script": "Q4/08_历史遗留问题收口_20260926/scripts/q4_evidence_gap_reconciliation.py",
+  "python_version": "3.10.4",
+  "scope": "stratified descriptive Loss-Benchmark diagnostics and license-field coverage; no calibration or legal determination",
+  "inputs": {
+    "C5": {
+      "path": "中文题目/F题/real_attachments/C_efficiency_evolution/loss_benchmark_bridge.csv",
+      "sha256": "284dee7f8878bfe8ebf48c4efbcaa85c1c566377edc5008727c06efa6520170f"
+    },
+    "C6": {
+      "path": "中文题目/F题/real_attachments/C_efficiency_evolution/loss_benchmark_bridge_expanded.csv",
+      "sha256": "e175462233c2b856e2878c603055b4ed70135f021300f912852af1bb485ba4fd"
+    },
+    "license_audit": {
+      "path": "Q4/03_结果/results/q4_license_source_audit.csv",
+      "sha256": "403e6e68d9246055e96445dfa31940d22c736af396c92844fad870790ff70ca1"
+    }
+  },
+  "script_sha256": "92f3307fad24e64057a2b0662c3cd248229a2b1fde0eae889f8d1c9724110e87",
+  "outputs": {
+    "q4_bridge_tier_validation.csv": {
+      "path": "Q4/08_历史遗留问题收口_20260926/results/q4_bridge_tier_validation.csv",
+      "sha256": "28535d2da5a17b3b2db6df43ab3d7925ea4351be2f1a0598b809c4a136c1ad21"
+    },
+    "q4_bridge_holdout_folds.csv": {
+      "path": "Q4/08_历史遗留问题收口_20260926/results/q4_bridge_holdout_folds.csv",
+      "sha256": "d51869893fcb3ea04463fbeee195a6c13ef09d8e273bd420328da9edfa5b3e29"
+    },
+    "q4_open_weight_license_coverage.csv": {
+      "path": "Q4/08_历史遗留问题收口_20260926/results/q4_open_weight_license_coverage.csv",
+      "sha256": "db233c46c6befc29dec1f4d8ee4fe348fbd9cd1dc79cdcdda621b5c7d84dfd32"
+    }
+  },
+  "bridge_validation": {
+    "C5_primary_medium_validation": "leave-one-publisher-out",
+    "C5_high_validation": "leave-one-size-out within one Pythia family",
+    "C6_expanded_used_as_sensitivity_only": true,
+    "no_rows_pooled_across_comparability_tiers": true,
+    "publisher_group": "Model namespace prefix before the first slash; full model identifier when no slash exists"
+  },
+  "license_validation": {
+    "open_weight_row_count": 201,
+    "permission_statuses": {
+      "not_assessed": 201
+    },
+    "strict_version_confirmed_count": 0,
+    "no_license_terms_interpreted": true
+  }
+}
