@@ -1,0 +1,69 @@
+# ============================================================
+#  F 题论文出图样式
+#
+#  ⚠ 权威来源是 figures/src/style.py —— 本文件是它的镜像，
+#    供不跑那套脚本时（例如新写一个独立小图）直接复用。
+#    两者数值不一致时，以 style.py 为准。
+#
+#  用法： plt.style.use('assets/gmcm.mplstyle')
+# ============================================================
+
+# ---------- 字体 ----------
+font.family         : sans-serif
+font.sans-serif     : Songti SC, Heiti SC, PingFang SC, Arial Unicode MS, SimHei, DejaVu Sans
+axes.unicode_minus  : False
+
+# ---------- 字号 ----------
+font.size           : 10.5
+axes.labelsize      : 10.5
+axes.titlesize      : 11
+xtick.labelsize     : 9
+ytick.labelsize     : 9
+legend.fontsize     : 9.5
+
+# ---------- 版面：极浅灰网格 + 去上右脊 + 图内不加标题 ----------
+axes.linewidth      : 0.8
+axes.grid           : True
+axes.grid.color     : #D9D9D9
+axes.grid.linewidth : 0.6
+axes.grid.alpha     : 0.7
+axes.axisbelow      : True
+axes.spines.top     : False
+axes.spines.right   : False
+xtick.direction     : in
+ytick.direction     : in
+xtick.major.width   : 0.8
+ytick.major.width   : 0.8
+
+# ---------- 线与标记 ----------
+lines.linewidth     : 1.4
+lines.markersize    : 4.5
+legend.frameon      : False
+legend.framealpha   : 0.9
+legend.edgecolor    : #CCCCCC
+legend.fancybox     : False
+
+# ---------- 导出：位图 600dpi + 矢量 PDF ----------
+figure.dpi          : 130
+savefig.dpi         : 600
+savefig.bbox        : tight
+savefig.pad_inches  : 0.03
+
+# ---------- 色标：密度用 viridis；发散场景在代码里显式指定 RdBu_r ----------
+# 禁用 jet（亮黄处产生虚假边界且非色盲友好）。
+# 相关系数 / 关联系数：cmap='RdBu_r', vmin=-1, vmax=1（以零为中心）
+image.cmap          : viridis
+
+axes.prop_cycle     : cycler('color', ['#0072B2', '#D55E00', '#009E73', '#E69F00', '#CC79A7'])
+
+# ============================================================
+#  语义色（与 style.py 的 C 字典一致，出图时直接引用）
+#    #0072B2 蓝   本文方法 / 观测值
+#    #D55E00 橙红 基线 / 对照
+#    #009E73 绿   第二对照
+#    #8C8C8C 灰   参考线、次要文本（配 ls='--'）
+#    #B33A3A 暗红 异常、警示
+#    #E69F00 琥珀 最优点、高亮区间
+#    #CC79A7 紫   第四组
+#    #56B4E9 浅蓝 辅助
+# ============================================================

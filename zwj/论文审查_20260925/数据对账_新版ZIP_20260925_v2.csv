@@ -1,0 +1,42 @@
+﻿核对项,新版论文值,HUAWEI-Cup核对来源,HUAWEI-Cup核对值,结论与说明
+A1预处理行数,51230,Q1/03_结果/00_公共预处理/v1/a1_preprocessed.csv.gz,51230,一致
+A2预处理行数,17523,Q1/03_结果/00_公共预处理/v1/a2_preprocessed.csv.gz,17523,一致
+A3预处理行数,203752,Q1/03_结果/00_公共预处理/v1/a3_preprocessed.csv.gz,203752,一致
+A1-A3合计,272505,三份公共预处理gzip行数之和,272505,一致
+A1 q_equal域宏平均,0.496223,Q1/03_结果/Q1.1/v1/a1_macro_summary.csv,0.4962230100,一致
+A1 q_huber域宏平均,0.498478,Q1/03_结果/Q1.1/v1/a1_macro_summary.csv,0.4984781048,一致
+A2 arxiv q_equal域分,0.53096,Q1/03_结果/Q1.1/v1/domain_summary.csv domain_score,0.5309591176,一致；按domain_score口径
+A2 arxiv q_huber域分,0.55997,Q1/03_结果/Q1.1/v1/domain_summary.csv domain_score,0.5599738811,一致；按domain_score口径
+A3 github q_equal域分,0.40394,Q1/03_结果/Q1.1/v1/domain_summary.csv domain_score,0.4039371675,一致；按domain_score口径
+A3 github q_huber域分,0.38887,Q1/03_结果/Q1.1/v1/domain_summary.csv domain_score,0.3888717821,一致；按domain_score口径
+A1 arxiv 冲突度中位数,0.4382,Q1/03_结果/Q1.2/v1/domain_summary.csv,0.4382232734,一致
+A1 arxiv q95阈值,0.4660,Q1/03_结果/Q1.2/v1/thresholds.csv,0.4660317515,一致
+A1 arxiv 超阈条数与比例,71/1419；0.0500,Q1/03_结果/Q1.2/v1/domain_summary.csv,71/1419；0.0500352361,一致；论文按显示精度四舍五入
+A1 book 超阈条数与比例,9/171；0.0526,Q1/03_结果/Q1.2/v1/domain_summary.csv,9/171；0.0526315789,数值一致
+A1 book 阈值并列比例,正文说存在并列, Q1/03_结果/Q1.2/v1/domain_summary.csv threshold_tie_rate,0.0,解释不一致；结果文件未发现阈值并列
+A1各域高冲突率恒占5%,是,domain_summary.csv / thresholds.csv,A1 book 0.052632；有限样本率并非恒等0.05,结论不成立；需按实际比例改写
+A2 arxiv 高冲突率,0.0447,Q1/03_结果/Q1.2/v1/domain_summary.csv,0.0447411973,数值一致；也反证所有样本恒占5%的说法
+A3 github 高冲突率,0.0514,Q1/03_结果/Q1.2/v1/domain_summary.csv,0.0513761828,数值一致；也反证所有样本恒占5%的说法
+Q1 单纯形岭回归分组CV MSE,0.39860,Q1/03_结果/Q1.3/v1/full_training_model_selection.csv,0.3985994161,一致
+Q1 参考分量OLS分组CV MSE,0.40032,Q1/03_结果/Q1.3/v1/full_training_model_selection.csv,0.4003161514,一致
+Q1 均值基线分组CV MSE,1.00448,Q1/03_结果/Q1.3/v1/full_training_model_selection.csv,1.0044751468,一致
+Q1 1M主模型留出集R2,0.6189,Q1/03_结果/Q1.3/v1/holdout_metrics.csv closed 13目标宏平均,0.6188879,一致
+Q1 60M主模型留出集R2,-7.9336,Q1/03_结果/Q1.3/v1/holdout_metrics.csv closed 13目标宏平均,-7.9335695,一致
+Q1 1B主模型留出集R2,-810.12,Q1/03_结果/Q1.3/v1/holdout_metrics.csv closed 13目标宏平均,-810.1196,一致
+Q1 10B估计表检查RMSE,3.6016,Q1/03_结果/Q1.3/v1/estimate_consistency_metrics.csv closed 13目标宏平均,3.60155,一致；不是独立留出验证
+Q1 70B估计表检查RMSE,3.9848,Q1/03_结果/Q1.3/v1/estimate_consistency_metrics.csv closed 13目标宏平均,3.98477,一致；不是独立留出验证
+Q1 p+Q nested OOF标准化RMSE,0.763354,Q1/03_结果/Q1.3/pq_extension_v1/model_summary.csv direct_only q_huber_candidate,0.7633536425,一致；478/512条共同支持样本
+Q1 p+Q比较训练共同样本量,正文未报告,Q1/03_结果/Q1.3/pq_extension_v1/model_summary.csv n_recipes,478/512,需在表注报告映射direct_only及共同支持规则
+Q1 p+Q 1M相对二次模型标准化RMSE变化,+0.188977,Q1/03_结果/Q1.3/pq_extension_v1/paired_comparison.csv,0.1889766120,一致；n=248，正值表示误差变大
+Q1 p+Q 60M相对二次模型标准化RMSE变化,-0.090549,Q1/03_结果/Q1.3/pq_extension_v1/paired_comparison.csv,-0.0905488643,一致；n=248，负值表示该切分误差略低
+Q1 p+Q 1B相对二次模型标准化RMSE变化,+0.045533,Q1/03_结果/Q1.3/pq_extension_v1/paired_comparison.csv,0.0455330702,一致；n=64，正值表示误差变大
+Q1二次敏感性模型嵌套OOF标准化RMSE,0.58901,Q1/03_结果/Q1.3/v1/nested_cv_metrics.csv nonlinear_sensitivity_only,0.5890145267,数值一致；优于线性主模型0.63305，需说明事前选模角色
+Q2经典模型参数（E、A、alpha、B、beta）,1.689798；0.353980；0.339977；1.240306；0.279878,Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json,1.68979756；0.35398032；0.33997658；1.24030558；0.27987813,一致；按论文精度四舍五入
+Q2 B1内样本R2及Jacobian条件数,0.99999982；56.378,Q2/03_结果/经典ScalingLaw基线/v1/fit_parameters.json,0.9999998166；56.377759,一致；内样本指标，不是独立验证
+Q2中位点弹性N/D,-0.048225；-0.036924,Q2/03_结果/综合收口/v1/q2_m0_effects_distribution_summary.csv,-0.048225；-0.036924,与数字登记表一致
+Q3临界上下文长度,30000,Q3/04_结果/C7_context_audit_summary.json,30000,一致；45条架构记录中12条超过该值
+Q3 C7五种长度计数,2048:18；4096:8；8192:7；32768:11；131072:1,Q3/04_结果/C7_context_audit_summary.json,2048:18；4096:8；8192:7；32768:11；131072:1,一致；总数45
+Q3 1e22预算利用率范围,98.92%-99.64%,Q3/04_结果/M0_ND_reference_frontier.csv,98.916%-99.642%,一致；论文显示精度四舍五入
+Q3 1e24预算利用率范围,2.300%-11.560%,Q3/04_结果/M0_ND_reference_frontier.csv,2.300064%-11.560032%,一致；结果受B1网格上界约束
+Q3注意力成本份额首末值,6.390%；81.375%,Q3/04_结果/M0_budget_context_cost_shares.csv,6.3904%；81.37479%,一致；按显示精度四舍五入
+A 数据原始表仓库内可得性,论文未声称,中文题目/F题/real_attachments 当前文件清单,未发现A_data_value原始表；现有预处理与结果文件,无法从仓库当前文件完成从原始表到结果的端到端复算

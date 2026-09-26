@@ -1,0 +1,140 @@
+%% ============================================================
+%%  参考文献库
+%%  样式：gmcm.bst（= gbt7714-unsrt，按正文引用次序编号，符合国标）
+%%
+%%  当前条目包括题面所列文献及正文引用的标度律、数据配比、鲁棒估计和重抽样研究。
+%%  仅正文实际引用的条目会进入最终参考文献表；定稿前需复核引用次序与著录信息。
+%%
+%%  【重要】本文件里绝对不能出现裸露的 at 符号（即使写在注释里）！
+%%  BibTeX 不把百分号当注释符——它会扫描全文任何位置的 at 符号
+%%  并试图解析成条目，然后把后面的花括号当成其内容，导致编译报错。
+%%
+%%  【规则】
+%%    1. 只有被正文 cite 的条目才会出现在 PDF 里——未被引用则不出现
+%%    2. 反之，写了条目却没在正文引用，评委会视为凑数
+%%       （往届优秀论文真实缺陷：C题-2 列了 9 条只引了 2 条；
+%%        F题园林 [10][11][12] 从头到尾未被引）
+%%    3. 定稿前核对：正文 cite 的 key 与这里的 key 一一对应
+%%    4. 每条的著录细节（卷期页、DOI、年份）必须核实，
+%%       不得凭记忆或推测填写
+%%
+%%  用法：正文写 cite{key}；引书须指出页码，如 cite{xxx} 后接"第108页"
+%% ============================================================
+
+
+%% ------------------------------------------------------------
+%%  F 题题面《参考文献》给出的 6 篇
+%% ------------------------------------------------------------
+
+@article{bahri_explaining_2024,
+  author  = {Bahri, Yasaman and Dyer, Ethan and Kaplan, Jared and others},
+  title   = {Explaining Neural Scaling Laws},
+  journal = {Proceedings of the National Academy of Sciences},
+  year    = {2024},
+  volume  = {121},
+  number  = {27},
+  doi     = {10.1073/pnas.2311878121},
+}
+
+@inproceedings{hoffmann_training_2022,
+  author    = {Hoffmann, Jordan and Borgeaud, Sebastian and Mensch, Arthur
+               and others},
+  title     = {Training Compute-Optimal Large Language Models},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {35},
+  year      = {2022},
+}
+
+@inproceedings{xia_regmix_2024,
+  author    = {Xia, Mengzhou and others},
+  title     = {{RegMix}: Data Mixture as Regression for Language Model
+               Pre-training},
+  booktitle = {Proceedings of the 41st International Conference on Machine
+               Learning (ICML)},
+  year      = {2024},
+}
+
+@inproceedings{biderman_pythia_2023,
+  author    = {Biderman, Stella and others},
+  title     = {Pythia: A Suite for Analyzing Large Language Models Across
+               Training and Scaling},
+  booktitle = {Proceedings of the 40th International Conference on Machine
+               Learning (ICML)},
+  year      = {2023},
+}
+
+@article{asai_synthesizing_2026,
+  author  = {Asai, Akari and others},
+  title   = {Synthesizing Scientific Literature with Retrieval-Augmented
+             Language Models},
+  journal = {Nature},
+  year    = {2026},
+  volume  = {650},
+  pages   = {857--863},
+  doi     = {10.1038/s41586-025-10072-4},
+}
+
+@inproceedings{schaeffer_emergent_2023,
+  author    = {Schaeffer, Rylan and Miranda, Brando and Koyejo, Sanmi},
+  title     = {Are Emergent Abilities of Large Language Models a Mirage?},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {36},
+  year      = {2023},
+}
+
+@misc{kaplan_scaling_2020,
+  author        = {Kaplan, Jared and McCandlish, Sam and Henighan, Tom and Brown, Tom B. and others},
+  title         = {Scaling Laws for Neural Language Models},
+  year          = {2020},
+  eprint        = {2001.08361},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2001.08361}
+}
+
+@misc{xie_doremi_2024,
+  author        = {Xie, Sang Michael and Pham, Hieu and Dong, Xuanyi and Du, Nan and Liu, Hanxiao and Lu, Yifeng and Yu, Percy Liang and others},
+  title         = {{DoReMi}: Optimizing Data Mixtures Speeds Up Language Model Pretraining},
+  year          = {2024},
+  eprint        = {2305.10429},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2305.10429}
+}
+
+@inproceedings{li_datacomp_lm_2024,
+  author    = {Li, Jeffrey and Fang, Alex and Smyrnis, Georgios and Ivgi, Maor and others},
+  title     = {{DataComp-LM}: In Search of the Next Generation of Training Sets for Language Models},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2024},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2024/file/19e4ea30dded58259665db375885e412-Paper-Datasets_and_Benchmarks_Track.pdf}
+}
+
+@inproceedings{penedo_refinedweb_2023,
+  author    = {Penedo, Guilherme and Malartic, Quentin and Hesslow, Daniel and Cojocaru, Ruxandra and Alobeidli, Hamza and Cappelli, Alessandro and Pannier, Baptiste and Almazrouei, Ebtesam and Launay, Julien},
+  title     = {The {RefinedWeb} Dataset for {Falcon} {LLM}: Outperforming Curated Corpora with Web Data Only},
+  booktitle = {Advances in Neural Information Processing Systems, Datasets and Benchmarks Track},
+  year      = {2023},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/fa3ed726cc5073b9c31e3e49a807789c-Abstract-Datasets_and_Benchmarks.html}
+}
+
+@article{huber_robust_1964,
+  author  = {Huber, Peter J.},
+  title   = {Robust Estimation of a Location Parameter},
+  journal = {The Annals of Mathematical Statistics},
+  volume  = {35},
+  number  = {1},
+  pages   = {73--101},
+  year    = {1964},
+  doi     = {10.1214/aoms/1177703732}
+}
+
+@article{efron_bootstrap_1979,
+  author  = {Efron, Bradley},
+  title   = {Bootstrap Methods: Another Look at the Jackknife},
+  journal = {The Annals of Statistics},
+  volume  = {7},
+  number  = {1},
+  pages   = {1--26},
+  year    = {1979},
+  doi     = {10.1214/aos/1176344552}
+}
+

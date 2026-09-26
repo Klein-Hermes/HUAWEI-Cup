@@ -1,0 +1,91 @@
+\contentsline {section}{\numberline {1}问题重述}{7}{section.1}%
+\contentsline {subsection}{\numberline {1\hskip 0.05em\relax .\hskip 0.05em\relax 1}问题背景}{7}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1\hskip 0.05em\relax .\hskip 0.05em\relax 2}问题的提出}{7}{subsection.1.2}%
+\contentsline {section}{\numberline {2}问题分析}{9}{section.2}%
+\contentsline {subsection}{\numberline {2\hskip 0.05em\relax .\hskip 0.05em\relax 1}总体技术路线}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2\hskip 0.05em\relax .\hskip 0.05em\relax 2}问题一分析}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2\hskip 0.05em\relax .\hskip 0.05em\relax 3}问题二分析}{9}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2\hskip 0.05em\relax .\hskip 0.05em\relax 4}问题三分析}{10}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2\hskip 0.05em\relax .\hskip 0.05em\relax 5}问题四分析}{10}{subsection.2.5}%
+\contentsline {section}{\numberline {3}模型假设与符号说明}{10}{section.3}%
+\contentsline {subsection}{\numberline {3\hskip 0.05em\relax .\hskip 0.05em\relax 1}模型假设}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3\hskip 0.05em\relax .\hskip 0.05em\relax 2}符号说明}{11}{subsection.3.2}%
+\contentsline {section}{\numberline {4}数据描述与预处理}{12}{section.4}%
+\contentsline {subsection}{\numberline {4\hskip 0.05em\relax .\hskip 0.05em\relax 1}数据来源与说明}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4\hskip 0.05em\relax .\hskip 0.05em\relax 2}数据探索与可视化}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4\hskip 0.05em\relax .\hskip 0.05em\relax 3}数据清洗与特征构建}{13}{subsection.4.3}%
+\contentsline {section}{\numberline {5}问题一的模型建立与求解}{15}{section.5}%
+\contentsline {subsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 1}问题一分析}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 2}模型建立}{16}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 2\hskip 0.05em\relax .\hskip 0.05em\relax 1}公共预处理与指标方向统一}{16}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 2\hskip 0.05em\relax .\hskip 0.05em\relax 2}质量评分模型}{17}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 2\hskip 0.05em\relax .\hskip 0.05em\relax 3}冲突度定义与消解规则}{19}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 2\hskip 0.05em\relax .\hskip 0.05em\relax 4}领域配比与损失的定量关系模型}{20}{subsubsection.5.2.4}%
+\contentsline {subsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 3}模型求解}{23}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 4}结果分析}{23}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 1}质量评分结果}{23}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 2}冲突分析与消解结果}{25}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 3}配比—损失模型结果}{28}{subsubsection.5.4.3}%
+\contentsline {subsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 5}模型验证与灵敏度分析}{33}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5\hskip 0.05em\relax .\hskip 0.05em\relax 6}本章小结}{36}{subsection.5.6}%
+\contentsline {section}{\numberline {6}问题二的模型建立与求解}{38}{section.6}%
+\contentsline {subsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 1}问题二分析}{38}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 2}模型建立}{38}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 2\hskip 0.05em\relax .\hskip 0.05em\relax 1}广义标度律的嵌套形式}{38}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 2\hskip 0.05em\relax .\hskip 0.05em\relax 2}边际效应与弹性的定义}{40}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 3}模型求解}{40}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 4}结果分析}{41}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 1}经典分支的参数与拟合优度}{41}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 2}边际效应与弹性}{43}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 3}质量与规模的等损失兑换条件}{45}{subsubsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 4}领域配比之间的替代与互补}{48}{subsubsection.6.4.4}%
+\contentsline {subsubsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 5}大尺度外推情景}{49}{subsubsection.6.4.5}%
+\contentsline {subsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 5}模型验证与灵敏度分析}{50}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 5\hskip 0.05em\relax .\hskip 0.05em\relax 1}分来源验证}{50}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 5\hskip 0.05em\relax .\hskip 0.05em\relax 2}损失量尺的可比性审计}{51}{subsubsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 5\hskip 0.05em\relax .\hskip 0.05em\relax 3}配比与质量的可识别性}{52}{subsubsection.6.5.3}%
+\contentsline {subsubsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 5\hskip 0.05em\relax .\hskip 0.05em\relax 4}稳健性小结}{53}{subsubsection.6.5.4}%
+\contentsline {subsection}{\numberline {6\hskip 0.05em\relax .\hskip 0.05em\relax 6}本章小结}{54}{subsection.6.6}%
+\contentsline {section}{\numberline {7}问题三的模型建立与求解}{55}{section.7}%
+\contentsline {subsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 1}问题三分析}{55}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 2}模型建立}{55}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 2\hskip 0.05em\relax .\hskip 0.05em\relax 1}优化模型与变量域}{55}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 2\hskip 0.05em\relax .\hskip 0.05em\relax 2}质量成本函数与临界上下文长度}{56}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 2\hskip 0.05em\relax .\hskip 0.05em\relax 3}结构性转移的定义与识别方法}{56}{subsubsection.7.2.3}%
+\contentsline {subsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 3}模型求解}{57}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 4}结果分析}{57}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 1}上下文长度的可行取值}{57}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 2}预算与上下文交叉下的参考配置}{58}{subsubsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 3}成本结构只由上下文长度决定}{59}{subsubsection.7.4.3}%
+\contentsline {subsubsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 4}成本函数选择的影响}{61}{subsubsection.7.4.4}%
+\contentsline {subsubsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 4\hskip 0.05em\relax .\hskip 0.05em\relax 5}相邻情景的比较与条件性重分配}{62}{subsubsection.7.4.5}%
+\contentsline {subsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 5}模型验证与灵敏度分析}{63}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7\hskip 0.05em\relax .\hskip 0.05em\relax 6}本章小结}{66}{subsection.7.6}%
+\contentsline {section}{\numberline {8}问题四的模型建立与求解}{67}{section.8}%
+\contentsline {subsection}{\numberline {8\hskip 0.05em\relax .\hskip 0.05em\relax 1}问题四分析}{67}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8\hskip 0.05em\relax .\hskip 0.05em\relax 2}模型建立}{67}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8\hskip 0.05em\relax .\hskip 0.05em\relax 3}模型求解}{67}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8\hskip 0.05em\relax .\hskip 0.05em\relax 4}结果分析}{67}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8\hskip 0.05em\relax .\hskip 0.05em\relax 5}模型验证与灵敏度分析}{67}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8\hskip 0.05em\relax .\hskip 0.05em\relax 6}本章小结}{67}{subsection.8.6}%
+\contentsline {section}{\numberline {9}模型稳健性与综合检验}{68}{section.9}%
+\contentsline {subsection}{\numberline {9\hskip 0.05em\relax .\hskip 0.05em\relax 1}参数灵敏度与随机性}{68}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9\hskip 0.05em\relax .\hskip 0.05em\relax 2}消融实验}{68}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9\hskip 0.05em\relax .\hskip 0.05em\relax 3}误差分解与失效案例}{68}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9\hskip 0.05em\relax .\hskip 0.05em\relax 4}外推与分布偏移}{68}{subsection.9.4}%
+\contentsline {section}{\numberline {10}模型的评价、改进与推广}{70}{section.10}%
+\contentsline {subsection}{\numberline {10\hskip 0.05em\relax .\hskip 0.05em\relax 1}模型的优点}{70}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10\hskip 0.05em\relax .\hskip 0.05em\relax 2}模型的缺点}{70}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10\hskip 0.05em\relax .\hskip 0.05em\relax 3}模型的改进方向}{71}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10\hskip 0.05em\relax .\hskip 0.05em\relax 4}模型的推广}{71}{subsection.10.4}%
+\contentsline {section}{参考文献}{72}{section*.65}%
+\contentsline {section}{附录 \numberline {A}问题一主要程序}{73}{appendix.1.A}%
+\contentsline {section}{附录 \numberline {B}问题二主要程序}{74}{appendix.1.B}%
+\contentsline {section}{附录 \numberline {C}问题三主要程序}{75}{appendix.1.C}%
+\contentsline {section}{附录 \numberline {D}问题四主要程序}{76}{appendix.1.D}%
+\contentsline {section}{附录 \numberline {E}人工智能使用披露}{77}{appendix.1.E}%
+\contentsline {subsection}{\numberline {E\hskip 0.05em\relax .\hskip 0.05em\relax 1}使用的AI工具}{77}{subsection.1.E.1}%
+\contentsline {subsection}{\numberline {E\hskip 0.05em\relax .\hskip 0.05em\relax 2}使用环节与贡献范围}{77}{subsection.1.E.2}%
+\contentsline {subsection}{\numberline {E\hskip 0.05em\relax .\hskip 0.05em\relax 3}对AI输出的核验与处理}{77}{subsection.1.E.3}%
+\contentsline {subsection}{\numberline {E\hskip 0.05em\relax .\hskip 0.05em\relax 4}由参赛队独立完成的工作}{78}{subsection.1.E.4}%
+\contentsfinish 

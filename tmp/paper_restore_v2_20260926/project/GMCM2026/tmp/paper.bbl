@@ -1,0 +1,91 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
+  \urlstyle{same}\fi
+
+\bibitem[{Schaeffer et~al.(2023)Schaeffer, Miranda, and
+  Koyejo}]{schaeffer_emergent_2023}
+Schaeffer~R, Miranda~B, Koyejo~S,
+\newblock Are Emergent Abilities of Large Language Models a Mirage?,
+\newblock Advances in Neural Information Processing Systems (NeurIPS):
+  volume~36,
+\newblock 2023.
+
+\bibitem[{Asai et~al.(2026)}]{asai_synthesizing_2026}
+Asai~A, et~al.,
+\newblock Synthesizing Scientific Literature with Retrieval-Augmented Language
+  Models,
+\newblock Nature, 650:\penalty0 857-863, 2026.
+
+\bibitem[{Xia et~al.(2024)}]{xia_regmix_2024}
+Xia~M, et~al.,
+\newblock {RegMix}: Data Mixture as Regression for Language Model Pre-training,
+\newblock Proceedings of the 41st International Conference on Machine Learning
+  (ICML),
+\newblock 2024.
+
+\bibitem[{Xie et~al.(2024)Xie, Pham, Dong, Du, Liu, Lu, Yu,
+  et~al.}]{xie_doremi_2024}
+Xie~S~M, Pham~H, Dong~X, et~al.,
+\newblock {DoReMi}: Optimizing Data Mixtures Speeds Up Language Model
+  Pretraining,
+\newblock 2024.
+
+\bibitem[{Penedo et~al.(2023)Penedo, Malartic, Hesslow, Cojocaru, Alobeidli,
+  Cappelli, Pannier, Almazrouei, and Launay}]{penedo_refinedweb_2023}
+Penedo~G, Malartic~Q, Hesslow~D, et~al.,
+\newblock The {RefinedWeb} Dataset for {Falcon} {LLM}: Outperforming Curated
+  Corpora with Web Data Only,
+\newblock Advances in Neural Information Processing Systems, Datasets and
+  Benchmarks Track,
+\newblock 2023.
+
+\bibitem[{Li et~al.(2024)Li, Fang, Smyrnis, Ivgi, et~al.}]{li_datacomp_lm_2024}
+Li~J, Fang~A, Smyrnis~G, et~al.,
+\newblock {DataComp-LM}: In Search of the Next Generation of Training Sets for
+  Language Models,
+\newblock Advances in Neural Information Processing Systems,
+\newblock 2024.
+
+\bibitem[{Kaplan et~al.(2020)Kaplan, McCandlish, Henighan, Brown,
+  et~al.}]{kaplan_scaling_2020}
+Kaplan~J, McCandlish~S, Henighan~T, et~al.,
+\newblock Scaling Laws for Neural Language Models,
+\newblock 2020.
+
+\bibitem[{Hoffmann et~al.(2022)Hoffmann, Borgeaud, Mensch,
+  et~al.}]{hoffmann_training_2022}
+Hoffmann~J, Borgeaud~S, Mensch~A, et~al.,
+\newblock Training Compute-Optimal Large Language Models,
+\newblock Advances in Neural Information Processing Systems (NeurIPS):
+  volume~35,
+\newblock 2022.
+
+\bibitem[{Bahri et~al.(2024)Bahri, Dyer, Kaplan,
+  et~al.}]{bahri_explaining_2024}
+Bahri~Y, Dyer~E, Kaplan~J, et~al.,
+\newblock Explaining Neural Scaling Laws,
+\newblock Proceedings of the National Academy of Sciences, 121\penalty0 (27),
+  2024.
+
+\bibitem[{Biderman et~al.(2023)}]{biderman_pythia_2023}
+Biderman~S, et~al.,
+\newblock Pythia: A Suite for Analyzing Large Language Models Across Training
+  and Scaling,
+\newblock Proceedings of the 40th International Conference on Machine Learning
+  (ICML),
+\newblock 2023.
+
+\bibitem[{Huber(1964)}]{huber_robust_1964}
+Huber~P~J,
+\newblock Robust Estimation of a Location Parameter,
+\newblock The Annals of Mathematical Statistics, 35\penalty0 (1):\penalty0
+  73-101, 1964.
+
+\bibitem[{Efron(1979)}]{efron_bootstrap_1979}
+Efron~B,
+\newblock Bootstrap Methods: Another Look at the Jackknife,
+\newblock The Annals of Statistics, 7\penalty0 (1):\penalty0 1-26, 1979.
+
+\end{thebibliography}
