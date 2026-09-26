@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.2in" height="5.2in" viewBox="0 0 2160 1560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="1080.0" y="48.0" font-family="Microsoft YaHei, sans-serif" font-size="34" fill="#222222" text-anchor="middle" dominant-baseline="middle" font-weight="bold">AR(1) 与持平基线：仅两个一步留出点</text>
+<text x="130.0" y="112.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#666666" text-anchor="start" dominant-baseline="middle">绝对误差（指数点）；小样本点图，不作显著性或年度预测结论</text>
+<line x1="440.0" y1="320.0" x2="440.0" y2="1170.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="440.0" y="1202.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">0.0</text>
+<line x1="673.3" y1="320.0" x2="673.3" y2="1170.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="673.3" y="1202.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">0.3</text>
+<line x1="906.7" y1="320.0" x2="906.7" y2="1170.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="906.7" y="1202.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">0.6</text>
+<line x1="1140.0" y1="320.0" x2="1140.0" y2="1170.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1140.0" y="1202.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">0.9</text>
+<line x1="1373.3" y1="320.0" x2="1373.3" y2="1170.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1373.3" y="1202.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">1.2</text>
+<line x1="1606.7" y1="320.0" x2="1606.7" y2="1170.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1606.7" y="1202.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">1.5</text>
+<line x1="1840.0" y1="320.0" x2="1840.0" y2="1170.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1840.0" y="1202.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">1.8</text>
+<text x="370.0" y="770.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#222222" text-anchor="end" dominant-baseline="middle">2025-02</text>
+<circle cx="1620.0" cy="749.0" r="11.0" fill="#0072B2"/>
+<text x="1638.0" y="749.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0072B2" text-anchor="start" dominant-baseline="middle">AR(1) 1.517</text>
+<circle cx="1670.4" cy="791.0" r="11.0" fill="#E69F00"/>
+<text x="1688.4" y="791.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#E69F00" text-anchor="start" dominant-baseline="middle">持平基线 1.582</text>
+<text x="370.0" y="1390.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#222222" text-anchor="end" dominant-baseline="middle">2025-03</text>
+<circle cx="536.6" cy="1369.0" r="11.0" fill="#0072B2"/>
+<text x="554.6" y="1369.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0072B2" text-anchor="start" dominant-baseline="middle">AR(1) 0.124</text>
+<circle cx="476.8" cy="1411.0" r="11.0" fill="#E69F00"/>
+<text x="494.8" y="1411.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#E69F00" text-anchor="start" dominant-baseline="middle">持平基线 0.047</text>
+<text x="1140.0" y="1255.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">一步绝对误差（六族指数点）</text>
+<text x="135.0" y="1490.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">两次留出预测：AR(1) MAE=0.821，持平基线 MAE=0.815；不足以证明稳定预测能力。</text>
+</svg>

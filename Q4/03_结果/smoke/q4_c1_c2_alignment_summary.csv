@@ -1,0 +1,2 @@
+﻿c1_rows,c2_rows,common_base_fields,c1_unique_signatures,c2_unique_signatures,one_to_one_full_row_match_with_numeric_tolerance_5e_13,numeric_match_rule,c1_header_contains_version_field
+4576,4576,"[""Model"",""#Params (B)"",""Submission Date"",""Hub License"",""Type"",""Average ⬆️"",""IFEval"",""BBH"",""MATH Lvl 5"",""GPQA"",""MUSR"",""MMLU-PRO""]",4576,4576,True,all text fields exact; numeric fields absolute difference <= 5e-13,False

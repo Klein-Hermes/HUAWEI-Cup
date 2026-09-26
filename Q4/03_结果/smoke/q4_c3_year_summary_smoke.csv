@@ -1,0 +1,2 @@
+﻿Source,Year,source_rows,unique_model_records_after_dedup,conflicting_model_year_groups_excluded,Average_numeric_records,Average_median,Average_p90,coverage_status,included_in_complete_year_trend
+Open LLM Leaderboard,2024,2671,2535,68,2535,21.22,35.163999999999994,leaderboard_source_full_year_candidate,True

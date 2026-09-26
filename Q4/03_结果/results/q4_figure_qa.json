@@ -1,0 +1,138 @@
+{
+  "generated_at_local": "2026-09-26T12:44:31+08:00",
+  "generator": "Pillow raster plus direct editable SVG primitives",
+  "font": "C:\\Windows\\Fonts\\msyh.ttc",
+  "image_size_px": [
+    2160,
+    1560
+  ],
+  "dpi": 300,
+  "candidate_figure_count": 9,
+  "candidate_class_counts": {
+    "raw": 3,
+    "process": 3,
+    "result": 3
+  },
+  "question_coverage": {
+    "q4": {
+      "raw": true,
+      "process": true,
+      "result": true
+    }
+  },
+  "figures": [
+    {
+      "name": "raw_q4_data",
+      "class": "原始数据候选",
+      "png": "Q4/04_图表/raw_q4_data.png",
+      "svg": "Q4/04_图表/raw_q4_data.svg",
+      "grayscale_png": "Q4/04_图表/灰度预览/raw_q4_data_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All nine candidate figures, the separate overall flowchart, and all ten grayscale previews were visually inspected (10 color PNGs and 10 grayscale PNGs). Chinese labels and symbols render; no panel labels, axes, legends, intervals, or annotations are clipped or overlap. Raw-data plots mark sparse cells; the version-match flow retains unresolved status; the AR(1) annotation clears both held-out error labels; the decomposition forest plot shows HC3 95% intervals and a zero reference. The flowchart shows Loss-Benchmark BLOCKED_NO_FIT and annual forecast infeasibility. Grayscale previews retain separation by position, labels, and lightness."
+    },
+    {
+      "name": "raw_q4_c3_coverage",
+      "class": "原始数据候选",
+      "png": "Q4/04_图表/raw_q4_c3_coverage.png",
+      "svg": "Q4/04_图表/raw_q4_c3_coverage.svg",
+      "grayscale_png": "Q4/04_图表/灰度预览/raw_q4_c3_coverage_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All nine candidate figures, the separate overall flowchart, and all ten grayscale previews were visually inspected (10 color PNGs and 10 grayscale PNGs). Chinese labels and symbols render; no panel labels, axes, legends, intervals, or annotations are clipped or overlap. Raw-data plots mark sparse cells; the version-match flow retains unresolved status; the AR(1) annotation clears both held-out error labels; the decomposition forest plot shows HC3 95% intervals and a zero reference. The flowchart shows Loss-Benchmark BLOCKED_NO_FIT and annual forecast infeasibility. Grayscale previews retain separation by position, labels, and lightness."
+    },
+    {
+      "name": "raw_q4_loss_gate_inputs",
+      "class": "原始数据候选",
+      "png": "Q4/04_图表/raw_q4_loss_gate_inputs.png",
+      "svg": "Q4/04_图表/raw_q4_loss_gate_inputs.svg",
+      "grayscale_png": "Q4/04_图表/灰度预览/raw_q4_loss_gate_inputs_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All nine candidate figures, the separate overall flowchart, and all ten grayscale previews were visually inspected (10 color PNGs and 10 grayscale PNGs). Chinese labels and symbols render; no panel labels, axes, legends, intervals, or annotations are clipped or overlap. Raw-data plots mark sparse cells; the version-match flow retains unresolved status; the AR(1) annotation clears both held-out error labels; the decomposition forest plot shows HC3 95% intervals and a zero reference. The flowchart shows Loss-Benchmark BLOCKED_NO_FIT and annual forecast infeasibility. Grayscale previews retain separation by position, labels, and lightness."
+    },
+    {
+      "name": "process_q4_diagnostics",
+      "class": "计算过程候选",
+      "png": "Q4/04_图表/process_q4_diagnostics.png",
+      "svg": "Q4/04_图表/process_q4_diagnostics.svg",
+      "grayscale_png": "Q4/04_图表/灰度预览/process_q4_diagnostics_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All nine candidate figures, the separate overall flowchart, and all ten grayscale previews were visually inspected (10 color PNGs and 10 grayscale PNGs). Chinese labels and symbols render; no panel labels, axes, legends, intervals, or annotations are clipped or overlap. Raw-data plots mark sparse cells; the version-match flow retains unresolved status; the AR(1) annotation clears both held-out error labels; the decomposition forest plot shows HC3 95% intervals and a zero reference. The flowchart shows Loss-Benchmark BLOCKED_NO_FIT and annual forecast infeasibility. Grayscale previews retain separation by position, labels, and lightness."
+    },
+    {
+      "name": "process_q4_version_match",
+      "class": "计算过程候选",
+      "png": "Q4/04_图表/process_q4_version_match.png",
+      "svg": "Q4/04_图表/process_q4_version_match.svg",
+      "grayscale_png": "Q4/04_图表/灰度预览/process_q4_version_match_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All nine candidate figures, the separate overall flowchart, and all ten grayscale previews were visually inspected (10 color PNGs and 10 grayscale PNGs). Chinese labels and symbols render; no panel labels, axes, legends, intervals, or annotations are clipped or overlap. Raw-data plots mark sparse cells; the version-match flow retains unresolved status; the AR(1) annotation clears both held-out error labels; the decomposition forest plot shows HC3 95% intervals and a zero reference. The flowchart shows Loss-Benchmark BLOCKED_NO_FIT and annual forecast infeasibility. Grayscale previews retain separation by position, labels, and lightness."
+    },
+    {
+      "name": "process_q4_ar1_backtest",
+      "class": "计算过程候选",
+      "png": "Q4/04_图表/process_q4_ar1_backtest.png",
+      "svg": "Q4/04_图表/process_q4_ar1_backtest.svg",
+      "grayscale_png": "Q4/04_图表/灰度预览/process_q4_ar1_backtest_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All nine candidate figures, the separate overall flowchart, and all ten grayscale previews were visually inspected (10 color PNGs and 10 grayscale PNGs). Chinese labels and symbols render; no panel labels, axes, legends, intervals, or annotations are clipped or overlap. Raw-data plots mark sparse cells; the version-match flow retains unresolved status; the AR(1) annotation clears both held-out error labels; the decomposition forest plot shows HC3 95% intervals and a zero reference. The flowchart shows Loss-Benchmark BLOCKED_NO_FIT and annual forecast infeasibility. Grayscale previews retain separation by position, labels, and lightness."
+    },
+    {
+      "name": "result_q4_frontier",
+      "class": "结果候选",
+      "png": "Q4/04_图表/result_q4_frontier.png",
+      "svg": "Q4/04_图表/result_q4_frontier.svg",
+      "grayscale_png": "Q4/04_图表/灰度预览/result_q4_frontier_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All nine candidate figures, the separate overall flowchart, and all ten grayscale previews were visually inspected (10 color PNGs and 10 grayscale PNGs). Chinese labels and symbols render; no panel labels, axes, legends, intervals, or annotations are clipped or overlap. Raw-data plots mark sparse cells; the version-match flow retains unresolved status; the AR(1) annotation clears both held-out error labels; the decomposition forest plot shows HC3 95% intervals and a zero reference. The flowchart shows Loss-Benchmark BLOCKED_NO_FIT and annual forecast infeasibility. Grayscale previews retain separation by position, labels, and lightness."
+    },
+    {
+      "name": "result_q4_dynamic_decomposition",
+      "class": "结果候选",
+      "png": "Q4/04_图表/result_q4_dynamic_decomposition.png",
+      "svg": "Q4/04_图表/result_q4_dynamic_decomposition.svg",
+      "grayscale_png": "Q4/04_图表/灰度预览/result_q4_dynamic_decomposition_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All nine candidate figures, the separate overall flowchart, and all ten grayscale previews were visually inspected (10 color PNGs and 10 grayscale PNGs). Chinese labels and symbols render; no panel labels, axes, legends, intervals, or annotations are clipped or overlap. Raw-data plots mark sparse cells; the version-match flow retains unresolved status; the AR(1) annotation clears both held-out error labels; the decomposition forest plot shows HC3 95% intervals and a zero reference. The flowchart shows Loss-Benchmark BLOCKED_NO_FIT and annual forecast infeasibility. Grayscale previews retain separation by position, labels, and lightness."
+    },
+    {
+      "name": "result_q4_c3_context",
+      "class": "结果候选",
+      "png": "Q4/04_图表/result_q4_c3_context.png",
+      "svg": "Q4/04_图表/result_q4_c3_context.svg",
+      "grayscale_png": "Q4/04_图表/灰度预览/result_q4_c3_context_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All nine candidate figures, the separate overall flowchart, and all ten grayscale previews were visually inspected (10 color PNGs and 10 grayscale PNGs). Chinese labels and symbols render; no panel labels, axes, legends, intervals, or annotations are clipped or overlap. Raw-data plots mark sparse cells; the version-match flow retains unresolved status; the AR(1) annotation clears both held-out error labels; the decomposition forest plot shows HC3 95% intervals and a zero reference. The flowchart shows Loss-Benchmark BLOCKED_NO_FIT and annual forecast infeasibility. Grayscale previews retain separation by position, labels, and lightness."
+    },
+    {
+      "name": "flow_overall_model",
+      "class": "独立流程图",
+      "png": "Q4/04_图表/flow_overall_model.png",
+      "svg": "Q4/04_图表/flow_overall_model.svg",
+      "grayscale_png": "Q4/04_图表/灰度预览/flow_overall_model_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All nine candidate figures, the separate overall flowchart, and all ten grayscale previews were visually inspected (10 color PNGs and 10 grayscale PNGs). Chinese labels and symbols render; no panel labels, axes, legends, intervals, or annotations are clipped or overlap. Raw-data plots mark sparse cells; the version-match flow retains unresolved status; the AR(1) annotation clears both held-out error labels; the decomposition forest plot shows HC3 95% intervals and a zero reference. The flowchart shows Loss-Benchmark BLOCKED_NO_FIT and annual forecast infeasibility. Grayscale previews retain separation by position, labels, and lightness."
+    }
+  ],
+  "manual_visual_review": "PASS",
+  "visual_review_findings": "All nine candidate figures, the separate overall flowchart, and all ten grayscale previews were visually inspected (10 color PNGs and 10 grayscale PNGs). Chinese labels and symbols render; no panel labels, axes, legends, intervals, or annotations are clipped or overlap. Raw-data plots mark sparse cells; the version-match flow retains unresolved status; the AR(1) annotation clears both held-out error labels; the decomposition forest plot shows HC3 95% intervals and a zero reference. The flowchart shows Loss-Benchmark BLOCKED_NO_FIT and annual forecast infeasibility. Grayscale previews retain separation by position, labels, and lightness.",
+  "visual_reviewed_at_local": "2026-09-26T12:45:44+08:00",
+  "file_audit": {
+    "status": "PASS",
+    "command": "references/roles/编程手/scripts/figure_audit.py Q4/04_图表 --questions q4 --min-dpi 300 --strict; tools/figure/scripts/check_figure.py --min-dpi 300 --strict (all recursive PNG/SVG assets)",
+    "checked_assets": 30,
+    "png_dpi_minimum": 300,
+    "formats": [
+      "PNG",
+      "SVG"
+    ]
+  }
+}

@@ -1,6 +1,9 @@
 # Preserve the byte-level Q2 deliverables referenced by SHA-256 manifests.
 # This avoids Windows core.autocrlf rewriting committed text artifacts.
 Q2/** -text
+
+# Preserve Q4 package bytes referenced by SHA-256 manifests.
+Q4/** -text
 docs/README_Q2_FINAL.md -text
 docs/README_inputs.md -text
 docs/inputs_manifest.csv -text

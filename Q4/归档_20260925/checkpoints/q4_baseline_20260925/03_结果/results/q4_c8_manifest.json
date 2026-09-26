@@ -1,0 +1,47 @@
+{
+  "scope": "full",
+  "ai_disclosure": "AI辅助：OpenAI Codex 桌面版 26.917.71314（build 10954，prod；2026-09-25 更新器核验为 up_to_date）；开发机构 OpenAI；模型选择器显示名称：；模型版本/发布日期：。（按用户指示暂空。）",
+  "workspace_root": "D:\\PycharmProject\\HUAWEI-Cup",
+  "input_root": "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\detailed_results",
+  "input_c1": "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\leaderboard_cleaned.csv",
+  "input_c2": "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\leaderboard_enhanced.csv",
+  "input_sha256": {
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\leaderboard_cleaned.csv": "199891128629f24f83ed2f51211eee65a82a13f45275e79a8227d5dacc7c2846",
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\leaderboard_enhanced.csv": "d8ae5b1e00f36bf17adb0c3fbf88c60edd54298625d2db1aa744b2b001202799",
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\epoch_all_ai_models.csv": "0b98a01bcb8d96958745b6fbe505416c38f719948d9029b38ff6233425c0e1c1"
+  },
+  "script": "Q4\\02_代码\\scripts\\q4_c8_pipeline.py",
+  "script_sha256": "eff49deabe6bc8234aabce59abe8cf7617cc838ec0f4b10096f1e52b10db3b9c",
+  "python_version": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:38:44) [MSC v.1944 64 bit (AMD64)]",
+  "generated_at_local": "2026-09-25T22:28:50+08:00",
+  "c8_model_directories_in_scope": 1863,
+  "c8_files_in_scope": 1958,
+  "c8_parseable_files_in_scope": 1954,
+  "c8_run_registry_rows": 1954,
+  "latest_status_counts_in_file_registry": {
+    "latest_parseable": 1859,
+    "not_selected": 95,
+    "latest_parseable_fallback": 1,
+    "no_parseable_json": 3
+  },
+  "fallback_model_dirs": [
+    "DreadPoor_Winter_Dawn-8B-TIES"
+  ],
+  "long_rows_all_runs": 293201,
+  "long_rows_latest": 279101,
+  "coverage_cells": 84,
+  "all_runs_path": "Q4\\03_结果\\results\\q4_c8_long_all_runs.csv.gz",
+  "latest_path": "Q4\\03_结果\\results\\q4_c8_long_latest.csv.gz",
+  "match_counts": {
+    "exact_model_id_unique_record": 1819,
+    "exact_name_multiple_records": 39,
+    "unmatched": 2
+  },
+  "latest_model_directories": 1860,
+  "limitations": [
+    "C1 has no revision/SHA; name/row match does not establish model-version identity.",
+    "No cohort, task weights, primary metrics, scale decomposition or forecast is frozen by this parser.",
+    "C3 historical paper/report rows are outside the C8 primary metric table.",
+    "Model selector name and model version/publication date are blank per user instruction; AI disclosure is incomplete for final submission."
+  ]
+}

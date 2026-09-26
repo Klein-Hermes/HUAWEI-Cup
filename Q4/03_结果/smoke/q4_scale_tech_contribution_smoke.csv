@@ -1,0 +1,8 @@
+﻿component,estimate_index_points,hc3_se,ci95_low,ci95_high,share_of_observed_change_pct,interval_basis
+scale_composition,-1.6876553249923436,0.18053748076099035,-2.0415087872838846,-1.3338018627008026,,same HC3 covariance matrix; fixed early/late empirical covariate distributions
+type_composition,1.505550523793396,0.6901405683677794,0.15287500979254842,2.8582260377942434,,same HC3 covariance matrix; fixed early/late empirical covariate distributions
+month_fixed_effect,1.3676066410019017,2.336094861236358,-3.2111392870213598,5.946352569025163,,same HC3 covariance matrix; fixed early/late empirical covariate distributions
+non_scale_total,2.8731571647952974,2.1953203070462077,-1.4296706370152696,7.175984966605864,,same HC3 covariance matrix; fixed early/late empirical covariate distributions
+predicted_mean_change,1.1855018398029542,2.1728970602784874,-3.0733763983428806,5.444380077948789,,same HC3 covariance matrix; fixed early/late empirical covariate distributions
+observed_mean_change,1.18550183980296,2.939687236037348,-4.576285142830251,6.947288822436153,,HC3 two-group mean contrast on common-support endpoint records
+arithmetic_closure_residual,5.773159728050814e-15,,,,,point arithmetic check only; endpoint month fixed effects make the fitted-sample group mean residual zero by OLS normal equations

@@ -1,0 +1,8 @@
+﻿C1_Type_raw,normalized_regression_group,candidate_count,complete_core6_count,scale_universe_positive_params_and_date_count,supported_month_regression_count,rare_groups_pooled_as_other_rare
+❓ other,not_in_scale_universe,3,1,0,0,False
+🌸 multimodal,other_rare,4,2,2,2,True
+"💬 chat models (RLHF, DPO, IFT, ...)",chat_posttrained,308,73,73,72,False
+🔶 fine-tuned on domain-specific datasets,domain_finetuned,760,342,342,341,False
+🟢 pretrained,pretrained,113,22,22,22,False
+🟩 continuously pretrained,other_rare,24,11,11,11,True
+🤝 base merges and moerges,merge,607,338,338,335,False

@@ -1,0 +1,8 @@
+﻿family,version,metric,expected_tasks,selected_score_rows,models_with_selected_scores,complete_family_models
+ARC,1.0,acc_norm,1,83,83,83
+BBH,0.0,acc_norm,24,43656,1819,1819
+GPQA,1.0,acc_norm,3,5445,1815,1815
+IFEval,2.0,inst_level_strict_acc,1,1815,1815,1815
+MATH-Hard,2.0,exact_match,7,5523,789,789
+MMLU-Pro,0.1,acc,1,1815,1815,1815
+MuSR,1.0,acc_norm,3,5445,1815,1815

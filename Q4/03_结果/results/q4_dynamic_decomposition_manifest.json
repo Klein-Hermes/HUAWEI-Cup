@@ -1,0 +1,51 @@
+{
+  "status": "provisional_full_run",
+  "generated_at_local": "2026-09-26T12:16:48+08:00",
+  "ai_disclosure": "OpenAI Codex desktop 26.917.71314 (build 10954; prod); model ID gpt-6-luna (GPT-6 Luna); developer OpenAI; official release date 2026-09-22.",
+  "script": "Q4/02_代码/scripts/q4_dynamic_decomposition.py",
+  "script_sha256": "a406bde337afa34aeb7e5c932d852efb511f14bd592dcea8b42a4f7dc53b06ea",
+  "contract_sha256": "446ebad1376d6683e76dee17cbed15fc03b417c7316d4c09e657cc943ac11ebd",
+  "inputs_sha256": {
+    "Q4/03_结果/results/q4_task_aggregate.csv": "e51c5516a8e1a3e7a451d726eeeb7699b324a9bd765306462c408a62e9935c18",
+    "Q4/03_结果/results/q4_frontier_monthly.csv": "0678b8f7fd781528f13c97702d06f4db47e8f1f6d637bf21e82bf0159f86e712",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/leaderboard_extended_timeseries.csv": "ab2b5715b2945ebdeeabfb18e8d040f7c68d8c76bd02c01e446959218bfcd184",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/epoch_all_ai_models.csv": "0b98a01bcb8d96958745b6fbe505416c38f719948d9029b38ff6233425c0e1c1",
+    "Q4/01_方案说明/q4_model_contract_v0.6.md": "446ebad1376d6683e76dee17cbed15fc03b417c7316d4c09e657cc943ac11ebd",
+    "Q4/02_代码/scripts/q4_modeling_analysis.py": "61afbcece98c497f055e936a5921925a1fa0aec23195367a8bf37e9009afbfbb"
+  },
+  "outputs_sha256": {
+    "Q4/03_结果/results/q4_ar1_dynamic.csv": "dc1b0486255b96ef23e6bc49bb480a77a58004c25f4aa099dbac3f1bb327da2a",
+    "Q4/03_结果/results/q4_ar1_residuals.csv": "d9a070f374025025a1001602d662e670550c0f5d3d674088b739d8d7c49f2814",
+    "Q4/03_结果/results/q4_ar1_expanding_backtest.csv": "38fbd74d4d01b5c128c322bd94d9379b7448623d73261ac55ea02b5ce70e5c6b",
+    "Q4/03_结果/results/q4_ar1_backtest_summary.csv": "e68eaff6455dc53d355846df63df61de313f88871d3f21af9e89c930cb1acf40",
+    "Q4/03_结果/results/q4_scale_tech_contribution.csv": "2fd64c740a8027f928f01852115051fdce0ab338e5f904a9c83718ece96b3b59",
+    "Q4/03_结果/results/q4_scale_tech_contribution_coefficients.csv": "03c4ce7634c559b6570152b644bc5a320edcb125196af27f71c41fcf669b9b28",
+    "Q4/03_结果/results/q4_scale_tech_support_audit.csv": "9514ebea87f4fb83df061519a599c8b7aea59dda4c2d154b4e4a5da5f02fb92a",
+    "Q4/03_结果/results/q4_c3_year_summary.csv": "02d3aae59c9d7a13e4b0e3488ea855045991eb5058f9af1d290d51285c3398fb",
+    "Q4/03_结果/results/q4_c3_dedup_audit.csv": "e2021afcfc31fcdc208905e84b71ed1e26ecb7a807763c59095f8f5a873e0645",
+    "Q4/03_结果/results/q4_c4_year_summary.csv": "a6c08768ced2212b75a64504b1a5843791acc1bc7c913c2fc58cefb7f00a04aa",
+    "Q4/03_结果/results/q4_c4_confidence_summary.csv": "6c63242335ac39a89d4b4130d56ef62e8139927592fc0ba0fd7a478168594ffb",
+    "Q4/03_结果/results/q4_c4_cutoff_row_audit.csv": "07f1ca29893a21fb0532ced54f6644360dca4d19c871303e29c1c31faa644193",
+    "Q4/01_方案说明/q4_dynamic_decomposition_report.md": "4022f0e864b9258ea9fa79a1ced932c7d9e8b5b32a02c9e95ddfc28391f393a5"
+  },
+  "smoke_run": false,
+  "loss_bridge_fit_executed": false,
+  "analysis_scope": {
+    "ar1_minimum_consecutive_months": 8,
+    "ar1_annual_forecast_authorized": false,
+    "scale_common_support": "intersection of endpoint linearly interpolated p05-p95 log10(parameter count in B); central-overlap inference only",
+    "scale_fit_month_scope": "supported months n>=20 within common parameter interval; endpoints fixed to earliest/latest eligible months; smoke uses endpoints only",
+    "c3_source_separated": true,
+    "c4_publication_cutoff": "2025-03-14"
+  },
+  "row_counts": {
+    "ar1_bins": 10,
+    "scale_fit_rows": 645,
+    "scale_early_endpoint_rows": 92,
+    "scale_late_endpoint_rows": 110,
+    "c3_summary_rows": 8,
+    "c3_audit_rows": 4599,
+    "c4_year_rows": 65,
+    "c4_cutoff_audit_rows": 3523
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "status": "provisional_user_decision_accepted_ai_scope_review_pending",
+  "generated_at_local": "2026-09-26T12:44:21+08:00",
+  "ai_disclosure": "OpenAI Codex desktop 26.917.71314 (build 10954; prod); model ID gpt-6-luna (GPT-6 Luna); developer OpenAI; official release date 2026-09-22.",
+  "script": "Q4/02_代码/scripts/q4_registry_coverage.py",
+  "script_sha256": "994e56f46758521525424044866bfd458d2a694eb1c7b6b75dcfef1d3e90907f",
+  "inputs_sha256": {
+    "中文题目/F题/real_attachments/C_efficiency_evolution/leaderboard_cleaned.csv": "199891128629f24f83ed2f51211eee65a82a13f45275e79a8227d5dacc7c2846",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/leaderboard_enhanced.csv": "d8ae5b1e00f36bf17adb0c3fbf88c60edd54298625d2db1aa744b2b001202799",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/leaderboard_extended_timeseries.csv": "ab2b5715b2945ebdeeabfb18e8d040f7c68d8c76bd02c01e446959218bfcd184",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/epoch_all_ai_models.csv": "0b98a01bcb8d96958745b6fbe505416c38f719948d9029b38ff6233425c0e1c1",
+    "Q4/03_结果/results/q4_c8_c1_match_candidates.csv": "603f5160abf49704f1546310ad773aef04ca61e6227aa4312d28814da1dd1d50",
+    "Q4/03_结果/results/q4_c1_c2_alignment_summary.csv": "880f60faaca407e7c25deb8a13c9a1eaeea669af60831c4e606f67dea82c279e",
+    "Q4/03_结果/results/q4_task_aggregate.csv": "e51c5516a8e1a3e7a451d726eeeb7699b324a9bd765306462c408a62e9935c18",
+    "Q4/03_结果/results/q4_selected_task_scores.csv": "555179f58a519178ebce6a63739746cf44c5f76096e3940168f4eb3c3aa86218",
+    "Q4/03_结果/results/q4_selected_metric_coverage.csv": "ec83b6e7ba050d927a400eaad490397e162b692d6aaefd0711e67516a113536e",
+    "Q4/03_结果/results/q4_auxiliary_source_coverage.csv": "1ffb707bf0e5b349f2bbabed0541419f0ebc6fe767c285629c20e830ac7edad1",
+    "Q4/03_结果/results/q4_scale_tech_monthly.csv": "5035b04d878ec0b3fe6481cede8b3b86a950ed84a9025204b87525945218e79b",
+    "Q4/03_结果/results/q4_c8_manifest.json": "f253362fd62a103b5719d587bea575799b3bdff5e7f60fdfd3a649a01ba9548a"
+  },
+  "outputs_sha256": {
+    "Q4/03_结果/results/q4_model_registry.csv": "6a3be98443b89597b1677ea38f39ea3dc04af2d298cde02b6d75cfa84068c380",
+    "Q4/03_结果/results/q4_match_audit.csv": "a9513ecc9a033a32dd4f577a15b1310a430969d226683782c3c31d2075def719",
+    "Q4/03_结果/results/q4_license_source_audit.csv": "403e6e68d9246055e96445dfa31940d22c736af396c92844fad870790ff70ca1",
+    "Q4/03_结果/results/q4_coverage.csv": "01bc44baaec98aa75c0b4a95f35c2fdb1cdc6ee2669c12e16c6a2f42be0e5868",
+    "Q4/01_方案说明/q4_coverage_report.md": "734de0c788be862ad0fd9a9d774966df42e5f7ec6b95ab71a60c5ec914cfe006"
+  },
+  "registry_rows": 1860,
+  "match_audit_rows": 1860,
+  "unique_name_candidates": 1819,
+  "strict_version_confirmed": 0,
+  "coverage_rows": 78,
+  "limitations": [
+    "Exact model-name joins do not establish C1/C8 model-version identity.",
+    "C1/C2 are joined by verified one-to-one source row correspondence.",
+    "The license-source audit preserves raw C1 values and missingness; no license terms or research/reproduction permissions were independently verified.",
+    "C3 exact-name rows can represent distinct years or evaluation sources and are preserved as raw candidates.",
+    "The C4 exact-name intersection is zero for the current candidate cohort."
+  ]
+}

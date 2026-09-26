@@ -1,0 +1,12 @@
+﻿month,c1_submission_rows,c1_unique_model_names,c1_rows_with_parameter_count,c8_latest_runs_by_file_month,c8_unique_model_names_by_file_month,note
+2024-06,443,441,443,74,74,counts only; no score aggregation or forecast
+2024-07,174,170,173,81,81,counts only; no score aggregation or forecast
+2024-08,208,204,207,62,62,counts only; no score aggregation or forecast
+2024-09,460,455,459,203,203,counts only; no score aggregation or forecast
+2024-10,432,422,432,157,157,counts only; no score aggregation or forecast
+2024-11,374,365,374,106,106,counts only; no score aggregation or forecast
+2024-12,571,560,571,171,171,counts only; no score aggregation or forecast
+2025-01,868,863,868,215,215,counts only; no score aggregation or forecast
+2025-02,692,689,692,676,676,counts only; no score aggregation or forecast
+2025-03,342,340,342,115,115,counts only; no score aggregation or forecast
+(missing_C1_Submission_Date),12,12,12,0,0,C1 missing submission date; excluded from monthly bins

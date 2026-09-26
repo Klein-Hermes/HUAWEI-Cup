@@ -1,0 +1,110 @@
+{
+  "status": "provisional_user_decision_accepted_ai_disclosure_pending",
+  "generated_at_local": "2026-09-25T22:29:06+08:00",
+  "ai_disclosure": "OpenAI Codex desktop 26.917.71314 (build 10954; prod; updater checked 2026-09-25, up_to_date); developer OpenAI; model selector name: ; model version/publication date: .",
+  "script": "Q4/02_代码/scripts/q4_modeling_analysis.py",
+  "script_sha256": "0f9f641db14fe5a8a96e78561d705e9051484082f3d39997f1fec7dce8a5f957",
+  "inputs_sha256": {
+    "Q4/03_结果/results/q4_c8_long_latest.csv.gz": "f76b4af93a97c3d3bb7c20269ee9eb3b7a3e0fd9bd6d9947b1a850124d4268b6",
+    "Q4/03_结果/results/q4_c8_c1_match_candidates.csv": "603f5160abf49704f1546310ad773aef04ca61e6227aa4312d28814da1dd1d50",
+    "中文题目/F题/real_attachments/C_efficiency_evolution/leaderboard_cleaned.csv": "199891128629f24f83ed2f51211eee65a82a13f45275e79a8227d5dacc7c2846",
+    "Q4/03_结果/results/q4_c8_task_metric_coverage_latest.csv": "6a9c5000ffef4fc16eef95915a9163288ea9a03a7bcf00eddb63efdfa0e88891"
+  },
+  "outputs_sha256": {
+    "Q4/03_结果/results/q4_selected_task_scores.csv": "555179f58a519178ebce6a63739746cf44c5f76096e3940168f4eb3c3aa86218",
+    "Q4/03_结果/results/q4_task_family_scores.csv": "16adbd2f63baccd70a989770b126dfcbc80ddb07fa372a48ac7450261bcdfa56",
+    "Q4/03_结果/results/q4_task_aggregate.csv": "e51c5516a8e1a3e7a451d726eeeb7699b324a9bd765306462c408a62e9935c18",
+    "Q4/03_结果/results/q4_index_sensitivity.csv": "4bbb22792f596dd186ddcda6bfd142a5a4defd4875bf9e36efb1110f3d29bd91",
+    "Q4/03_结果/results/q4_coverage_by_dimension.csv": "24fd6d3203bfb47bd6b39fa8857970d2d1f06203588c20ce60e5487837c432c3",
+    "Q4/03_结果/results/q4_scale_tech_monthly.csv": "b78f62a3c8a0ebe6f041800d8500960766019077174edee66d437712a0a4e358",
+    "Q4/03_结果/results/q4_scale_tech_coefficients.csv": "58f58654386ad50a12203362cdd7f01b3c3b9a6c450fbbefc14617698a95c55a",
+    "Q4/03_结果/results/q4_type_group_crosswalk.csv": "5d1bb2a0cfce4e7e0eb0c5c5c56a7ab93ee9fe99105c49c84e1edf6ef5a9bfc0",
+    "Q4/03_结果/results/q4_frontier_monthly.csv": "0678b8f7fd781528f13c97702d06f4db47e8f1f6d637bf21e82bf0159f86e712",
+    "Q4/03_结果/results/q4_forecast_backtest_1month.csv": "6ae4c0ba2587be97c91a4efe5b76c3e929ac5b958c95fc8215d3b878390629cf",
+    "Q4/03_结果/results/q4_forecast_backtest_1month_summary.csv": "9ca670a1147f201f77c3efe01657be2e9f7519057808e26be6b2ac16ae267cc5",
+    "Q4/03_结果/results/q4_forecast_feasibility.csv": "38cf7a716913b73d3d5b3a83ca830d00a64bbb97a3dc9f8c4fb79daf9902e11d",
+    "Q4/03_结果/results/q4_selected_metric_coverage.csv": "ec83b6e7ba050d927a400eaad490397e162b692d6aaefd0711e67516a113536e",
+    "Q4/01_方案说明/q4_modeling_report.md": "ca3390d2dd6e635b2da402d6eecbd3bc04d8cd5cb2b4d3de6428361cb90fb5ba",
+    "Q4/03_结果/results/q4_data_profile.csv": "ff268305098a8ac52482d1b24fe5540d7cc57ec892545925b4f9d76c8c13631d",
+    "Q4/01_方案说明/q4_figures_contract.md": "a4df8bdbbfb6a211d2d19c6614c9d1a8ec3a45b5e0a574dd698c99d0605e1a8a",
+    "Q4/03_结果/results/q4_figure_qa.json": "d67bcf65b7785261e9bbb51f7a26f5ab56b9405987b9f94954b475344551acf9",
+    "Q4/04_图表/q4_raw_data.png": "c97d30e44ad908aec5cce723ff8b54bbe098668954e1a5730ab63169c0466323",
+    "Q4/04_图表/q4_raw_data.svg": "5f4d49e62ac6d56a712b4b1de967f615aeab49e046f4e275910145134a9bd415",
+    "Q4/04_图表/q4_raw_data_grayscale.png": "7455841374f0ee73973be553889bbb81dbbe694b9683e9706d4defa5d0ae0a6a",
+    "Q4/04_图表/q4_process_diagnostics.png": "d6a56e0f2c181a48570ce6fbae945c8a51dd1304e861ce4629fee46f2db33a1b",
+    "Q4/04_图表/q4_process_diagnostics.svg": "b5a39f1d4f390c1a554ebff3bb9ee64ed0ed5fc4c27109319f26542422ea5ec7",
+    "Q4/04_图表/q4_process_diagnostics_grayscale.png": "8b4d87f15ac749590672794f94ab45ab7cac6f483ff641f43ee21f396c01a026",
+    "Q4/04_图表/q4_results.png": "45c0cd5cad3c28554c0e673d4e73bea4be95a6c3eb9ce4f017ce2b8a8766a795",
+    "Q4/04_图表/q4_results.svg": "2ab4778e8dad73daa4f3760fb4888e5ad5e4011289b996bdd055c4a0957e593e",
+    "Q4/04_图表/q4_results_grayscale.png": "f235dcd69ced3e2a5634382fb11a637c235956589a26508ad19139e1e8746f20"
+  },
+  "cohort": {
+    "exact_unique_name_candidates": 1819,
+    "version_confirmed": 0,
+    "status": "version_unresolved",
+    "complete_core6": 789,
+    "complete_full7": 0
+  },
+  "contract": {
+    "main_families": [
+      "BBH",
+      "GPQA",
+      "IFEval",
+      "MATH-Hard",
+      "MMLU-Pro",
+      "MuSR"
+    ],
+    "main_family_weighting": "equal",
+    "within_family_weighting": "equal leaf tasks after within-task candidate-cohort percentile-rank normalization; incomplete family is missing",
+    "task_normalization": "higher-is-better average percentile rank among exact-name unique-C1-row candidates with that leaf score",
+    "MATH_Hard_version": "2.0",
+    "IFEval_metric": "inst_level_strict_acc",
+    "scale": "C1 #Params (B), log10 transformed for regression",
+    "time": "C1 Submission Date, not model release date",
+    "open_weights": "C2 candidate metadata; only explicit Yes is known Yes"
+  },
+  "scale_model": {
+    "n_models_in_scale_model": 788,
+    "n_models_in_supported_month_regression": 783,
+    "excluded_sparse_months": {
+      "2024-10": 4,
+      "2024-09": 1
+    },
+    "n_complete_core6": 789,
+    "beta_log10_params_B": 33.6678852075923,
+    "r_squared": 0.6462763881429596,
+    "reference_type_group": "chat_posttrained",
+    "reference_month": "2024-11",
+    "month_count": 5,
+    "common_support": {
+      "status": "overlap",
+      "early_month": "2024-11",
+      "late_month": "2025-03",
+      "log10_params_low": 0.09201847075279702,
+      "log10_params_high": 1.3723964324231115,
+      "n_early": 92,
+      "n_late": 110
+    },
+    "type_group_counts": {
+      "chat_posttrained": 72,
+      "domain_finetuned": 341,
+      "merge": 335,
+      "other_rare": 13,
+      "pretrained": 22
+    }
+  },
+  "forecast": {
+    "known_open_month_bins": 10,
+    "calendar_span_months": 9,
+    "12m_rolling_origin_count": 0,
+    "24m_rolling_origin_count": 0,
+    "numeric_forecasts_issued": false
+  },
+  "limitations": [
+    "Exact name and C1 row uniqueness do not confirm C8/C1 model-version identity.",
+    "The decomposition is observational and not causal.",
+    "The annual forecast horizon exceeds the supplied comparable time support.",
+    "Historical paper/report C3 records were not pooled with leaderboard-source records."
+  ],
+  "figure_qa_status": "Pillow/SVG program checks passed; visual review PASS"
+}

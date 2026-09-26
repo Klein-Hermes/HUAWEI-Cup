@@ -1,0 +1,14 @@
+﻿dimension,level,n_models,expected,note,n_models_any_numeric_task,n_models_complete_family,expected_task_count,version,metric
+cohort,exact unique C1 row/name candidates,1819.0,1819.0,Version unresolved; 39 duplicate-name groups and two unmatched C8 names excluded.,,,,,
+task_family,ARC,,,"Complete requires every declared leaf task, selected version/metric, numeric score, and known higher-is-better direction.",83.0,83.0,1.0,1.0,acc_norm
+task_family,BBH,,,"Complete requires every declared leaf task, selected version/metric, numeric score, and known higher-is-better direction.",1819.0,1819.0,24.0,0.0,acc_norm
+task_family,GPQA,,,"Complete requires every declared leaf task, selected version/metric, numeric score, and known higher-is-better direction.",1815.0,1815.0,3.0,1.0,acc_norm
+task_family,IFEval,,,"Complete requires every declared leaf task, selected version/metric, numeric score, and known higher-is-better direction.",1815.0,1815.0,1.0,2.0,inst_level_strict_acc
+task_family,MATH-Hard,,,"Complete requires every declared leaf task, selected version/metric, numeric score, and known higher-is-better direction.",789.0,789.0,7.0,2.0,exact_match
+task_family,MMLU-Pro,,,"Complete requires every declared leaf task, selected version/metric, numeric score, and known higher-is-better direction.",1815.0,1815.0,1.0,0.1,acc
+task_family,MuSR,,,"Complete requires every declared leaf task, selected version/metric, numeric score, and known higher-is-better direction.",1815.0,1815.0,3.0,1.0,acc_norm
+index,core6_equal_family,789.0,1819.0,Complete in six families; ARC excluded from main index due low coverage.,,,,,
+index,full7_equal_family,0.0,1819.0,Requires ARC-Challenge as seventh family.,,,,,
+parameter,positive C1 params among core6,788.0,789.0,No model-name parameter imputation.,,,,,
+open_weights,C2 Yes among candidates,201.0,1819.0,C2 source candidate retained; No and unknown are separate.,,,,,
+fallback,C8 latest parseable fallback,1.0,1819.0,Included in primary; exclusion reported as sensitivity.,,,,,

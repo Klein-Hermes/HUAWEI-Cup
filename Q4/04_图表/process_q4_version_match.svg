@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.2in" height="5.2in" viewBox="0 0 2160 1560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="1080.0" y="48.0" font-family="Microsoft YaHei, sans-serif" font-size="34" fill="#222222" text-anchor="middle" dominant-baseline="middle" font-weight="bold">模型匹配流程：名称候选没有替代版本证据</text>
+<text x="125.0" y="112.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#666666" text-anchor="start" dominant-baseline="middle">横条显示记录数；严格版本必须有可核验 revision/SHA 或人工版本证据</text>
+<line x1="650.0" y1="285.0" x2="650.0" y2="1165.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="650.0" y="1210.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">0</text>
+<line x1="973.7" y1="285.0" x2="973.7" y2="1165.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="973.7" y="1210.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">500</text>
+<line x1="1297.4" y1="285.0" x2="1297.4" y2="1165.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1297.4" y="1210.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">1,000</text>
+<line x1="1621.1" y1="285.0" x2="1621.1" y2="1165.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1621.1" y="1210.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">1,500</text>
+<line x1="1944.7" y1="285.0" x2="1944.7" y2="1165.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1944.7" y="1210.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">2,000</text>
+<text x="610.0" y="440.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#222222" text-anchor="end" dominant-baseline="middle">C8 最新目录</text>
+<line x1="650.0" y1="440.0" x2="1854.1" y2="440.0" stroke="#0072B2" stroke-width="11"/>
+<circle cx="1854.1" cy="440.0" r="11.0" fill="#0072B2"/>
+<text x="1910.0" y="440.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#0072B2" text-anchor="start" dominant-baseline="middle">1,860</text>
+<text x="610.0" y="660.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#222222" text-anchor="end" dominant-baseline="middle">C1 唯一名称候选</text>
+<line x1="650.0" y1="660.0" x2="1827.6" y2="660.0" stroke="#009E73" stroke-width="11"/>
+<circle cx="1827.6" cy="660.0" r="11.0" fill="#009E73"/>
+<text x="1910.0" y="660.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#009E73" text-anchor="start" dominant-baseline="middle">1,819</text>
+<text x="610.0" y="880.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#222222" text-anchor="end" dominant-baseline="middle">C1/C8 严格版本确认</text>
+<circle cx="650.0" cy="880.0" r="11.0" fill="#D55E00"/>
+<text x="1910.0" y="880.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#D55E00" text-anchor="start" dominant-baseline="middle">0</text>
+<text x="610.0" y="1100.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#222222" text-anchor="end" dominant-baseline="middle">C4 精确名称交集</text>
+<circle cx="650.0" cy="1100.0" r="11.0" fill="#CC79A7"/>
+<text x="1910.0" y="1100.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#CC79A7" text-anchor="start" dominant-baseline="middle">0</text>
+<text x="160.0" y="1320.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#666666" text-anchor="start" dominant-baseline="middle">精确名称只构成连接候选；当前严格版本确认为 0，C4 也没有精确名称交集。</text>
+</svg>

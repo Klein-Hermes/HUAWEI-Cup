@@ -1,0 +1,39 @@
+{
+  "created_local": "2026-09-25 22:48:59 +08:00",
+  "timezone": "Asia/Shanghai",
+  "source_root": "Q4",
+  "copied_directories": [
+    "01_方案说明",
+    "02_代码",
+    "03_结果",
+    "04_图表",
+    "05_审计交付"
+  ],
+  "included_readme": true,
+  "input_and_manifest_hashes": [
+    {
+      "path": "Q4/03_结果/results/q4_package_manifest.json",
+      "sha256": "73B4B0C3F66603184BFD606342C19FF276967E42F76442860A6D0E873E2B6B6B"
+    },
+    {
+      "path": "Q4/03_结果/results/q4_modeling_manifest.json",
+      "sha256": "53537F41292BC51B491C7DFD57690E5FD3CD13200EA087E8652CF0C244E930D3"
+    },
+    {
+      "path": "中文题目/F题/real_attachments/source_manifest.json",
+      "sha256": "34E81DABF46302EEBAAC8551FA18D2E72ACD0833B1CF0276690BEE897F1323DB"
+    },
+    {
+      "path": "中文题目/F题/算力约束下提升大语言模型能力的资源配置建模.docx",
+      "sha256": "BC99A72460FA3D947A442D502969A13212CE0EA092D827AFDBBF3B55339DA4C4"
+    },
+    {
+      "path": "中文题目/F题/数据说明(无隐藏字段版本）.pdf",
+      "sha256": "B2C8E1B997F25AB7F5C83539931DFE2260262078FAC85ED09F2E99B801F3866F"
+    }
+  ],
+  "metadata_revision": {
+    "revised_on": "2026-09-26",
+    "scope": "Date-scoping of historical documentation and corresponding checkpoint manifest hash refresh; original checkpoint creation time and analytical outputs preserved."
+  }
+}

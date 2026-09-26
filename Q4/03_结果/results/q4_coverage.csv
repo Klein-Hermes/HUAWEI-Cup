@@ -1,0 +1,79 @@
+﻿dimension,level,n_models,denominator,coverage_fraction,source,note
+identity,C8 latest parseable model directories,1860,1860,1.0,C8,One row per latest parseable model directory.
+identity,Exact-name unique C1 row candidates,1819,1860,0.9779569892473118,C8+C1,Candidate join only; strict version confirmation remains zero.
+identity,Strict version-confirmed candidates,0,1819,0.0,C8+C1,C1 exposes no revision/SHA field to validate C8 identity.
+analysis_intersection,C1 positive parameter count among candidates,1815,1819,0.9978009895547004,C1+C2+C8,C1 #Params (B) is not name-imputed.
+analysis_intersection,C1 Submission Date among candidates,1816,1819,0.9983507421660253,C1+C2+C8,"Submission date is a leaderboard timestamp, not release date."
+analysis_intersection,Complete six-family score index,789,1819,0.4337548103353491,C1+C2+C8,Requires all selected leaf tasks for all six primary task families.
+analysis_intersection,Complete seven-family score index,0,1819,0.0,C1+C2+C8,Requires ARC-Challenge in addition to all six core families.
+analysis_intersection,Core6 + positive parameters,788,1819,0.4332050577240242,C1+C2+C8,Intersection of complete score index and observed positive C1 parameter count.
+analysis_intersection,Core6 + submission date,788,1819,0.4332050577240242,C1+C2+C8,Intersection of complete score index and observed C1 Submission Date.
+analysis_intersection,Core6 + positive parameters + submission date,788,1819,0.4332050577240242,C1+C2+C8,Scale/time model universe before sparse-month support restriction.
+analysis_intersection,Core6 + explicit C2 Open Weights=Yes,119,1819,0.06542056074766354,C1+C2+C8,Known-open subset; unknown and No remain distinct.
+analysis_intersection,Core6 + explicit open + positive parameters + date,119,1819,0.06542056074766354,C1+C2+C8,Intersection for open-weight scale/time descriptions.
+task_family,ARC selected-score models,83,1819,0.04562946673996701,C8 selected metric,version=1.0; metric=acc_norm; expected leaf tasks=1.
+task_family,ARC complete family,83,1819,0.04562946673996701,C8 selected metric,"Complete requires every declared leaf task, selected metric/version, numeric score, and known higher-is-better direction."
+task_family,BBH selected-score models,1819,1819,1.0,C8 selected metric,version=0.0; metric=acc_norm; expected leaf tasks=24.
+task_family,BBH complete family,1819,1819,1.0,C8 selected metric,"Complete requires every declared leaf task, selected metric/version, numeric score, and known higher-is-better direction."
+task_family,GPQA selected-score models,1815,1819,0.9978009895547004,C8 selected metric,version=1.0; metric=acc_norm; expected leaf tasks=3.
+task_family,GPQA complete family,1815,1819,0.9978009895547004,C8 selected metric,"Complete requires every declared leaf task, selected metric/version, numeric score, and known higher-is-better direction."
+task_family,IFEval selected-score models,1815,1819,0.9978009895547004,C8 selected metric,version=2.0; metric=inst_level_strict_acc; expected leaf tasks=1.
+task_family,IFEval complete family,1815,1819,0.9978009895547004,C8 selected metric,"Complete requires every declared leaf task, selected metric/version, numeric score, and known higher-is-better direction."
+task_family,MATH-Hard selected-score models,789,1819,0.4337548103353491,C8 selected metric,version=2.0; metric=exact_match; expected leaf tasks=7.
+task_family,MATH-Hard complete family,789,1819,0.4337548103353491,C8 selected metric,"Complete requires every declared leaf task, selected metric/version, numeric score, and known higher-is-better direction."
+task_family,MMLU-Pro selected-score models,1815,1819,0.9978009895547004,C8 selected metric,version=0.1; metric=acc; expected leaf tasks=1.
+task_family,MMLU-Pro complete family,1815,1819,0.9978009895547004,C8 selected metric,"Complete requires every declared leaf task, selected metric/version, numeric score, and known higher-is-better direction."
+task_family,MuSR selected-score models,1815,1819,0.9978009895547004,C8 selected metric,version=1.0; metric=acc_norm; expected leaf tasks=3.
+task_family,MuSR complete family,1815,1819,0.9978009895547004,C8 selected metric,"Complete requires every declared leaf task, selected metric/version, numeric score, and known higher-is-better direction."
+leaf_task,leaderboard_arc_challenge,83,1819,0.04562946673996701,C8 selected metric,family=ARC; version=1.0; metric=acc_norm; mean_n_effective=1159.0843373493976.
+leaf_task,leaderboard_bbh_boolean_expressions,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_causal_judgement,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=186.95217152281472.
+leaf_task,leaderboard_bbh_date_understanding,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_disambiguation_qa,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_formal_fallacies,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_geometric_shapes,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_hyperbaton,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_logical_deduction_five_objects,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_logical_deduction_seven_objects,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_logical_deduction_three_objects,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_movie_recommendation,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_navigate,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_object_counting,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_penguins_in_a_table,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=145.97471137987907.
+leaf_task,leaderboard_bbh_reasoning_about_colored_objects,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_ruin_names,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_salient_translation_error_detection,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_snarks,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=177.95711929631665.
+leaf_task,leaderboard_bbh_sports_understanding,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_temporal_sequences,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_tracking_shuffled_objects_five_objects,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_tracking_shuffled_objects_seven_objects,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_tracking_shuffled_objects_three_objects,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_bbh_web_of_lies,1819,1819,1.0,C8 selected metric,family=BBH; version=0.0; metric=acc_norm; mean_n_effective=249.91753710830127.
+leaf_task,leaderboard_gpqa_diamond,1815,1819,0.9978009895547004,C8 selected metric,family=GPQA; version=1.0; metric=acc_norm; mean_n_effective=197.94600550964188.
+leaf_task,leaderboard_gpqa_extended,1815,1819,0.9978009895547004,C8 selected metric,family=GPQA; version=1.0; metric=acc_norm; mean_n_effective=545.7542699724518.
+leaf_task,leaderboard_gpqa_main,1815,1819,0.9978009895547004,C8 selected metric,family=GPQA; version=1.0; metric=acc_norm; mean_n_effective=447.8082644628099.
+leaf_task,leaderboard_ifeval,1815,1819,0.9978009895547004,C8 selected metric,family=IFEval; version=2.0; metric=inst_level_strict_acc; mean_n_effective=540.7570247933884.
+leaf_task,leaderboard_math_algebra_hard,789,1819,0.4337548103353491,C8 selected metric,family=MATH-Hard; version=2.0; metric=exact_match; mean_n_effective=307.0.
+leaf_task,leaderboard_math_counting_and_prob_hard,789,1819,0.4337548103353491,C8 selected metric,family=MATH-Hard; version=2.0; metric=exact_match; mean_n_effective=123.0.
+leaf_task,leaderboard_math_geometry_hard,789,1819,0.4337548103353491,C8 selected metric,family=MATH-Hard; version=2.0; metric=exact_match; mean_n_effective=132.0.
+leaf_task,leaderboard_math_intermediate_algebra_hard,789,1819,0.4337548103353491,C8 selected metric,family=MATH-Hard; version=2.0; metric=exact_match; mean_n_effective=280.0.
+leaf_task,leaderboard_math_num_theory_hard,789,1819,0.4337548103353491,C8 selected metric,family=MATH-Hard; version=2.0; metric=exact_match; mean_n_effective=154.0.
+leaf_task,leaderboard_math_prealgebra_hard,789,1819,0.4337548103353491,C8 selected metric,family=MATH-Hard; version=2.0; metric=exact_match; mean_n_effective=193.0.
+leaf_task,leaderboard_math_precalculus_hard,789,1819,0.4337548103353491,C8 selected metric,family=MATH-Hard; version=2.0; metric=exact_match; mean_n_effective=135.0.
+leaf_task,leaderboard_mmlu_pro,1815,1819,0.9978009895547004,C8 selected metric,family=MMLU-Pro; version=0.1; metric=acc; mean_n_effective=12025.425895316805.
+leaf_task,leaderboard_musr_murder_mysteries,1815,1819,0.9978009895547004,C8 selected metric,family=MuSR; version=1.0; metric=acc_norm; mean_n_effective=249.91735537190084.
+leaf_task,leaderboard_musr_object_placements,1815,1819,0.9978009895547004,C8 selected metric,family=MuSR; version=1.0; metric=acc_norm; mean_n_effective=255.91404958677685.
+leaf_task,leaderboard_musr_team_allocation,1815,1819,0.9978009895547004,C8 selected metric,family=MuSR; version=1.0; metric=acc_norm; mean_n_effective=249.91735537190084.
+source_intersection,C3,1818,1819,0.999450247388675,leaderboard_extended_timeseries.csv,Exact model-name intersection only; no version confirmation.
+source_intersection,C4,0,1819,0.0,epoch_all_ai_models.csv,Exact model-name intersection only; no version confirmation.
+source_intersection,C5,21,1819,0.01154480483782298,loss_benchmark_bridge.csv,Exact model-name intersection only; no version confirmation.
+source_intersection,C6,42,1819,0.02308960967564596,loss_benchmark_bridge_expanded.csv,Exact model-name intersection only; no version confirmation.
+source_intersection,C7,17,1819,0.009345794392523364,model_architecture_metadata.csv,Exact model-name intersection only; no version confirmation.
+time_month,2024-09,1,1819,0.0005497526113249038,C1 Submission Date + complete Core6,n>=20 decomposition support=false; rows below 20 remain descriptive only.
+time_month,2024-10,4,1819,0.0021990104452996153,C1 Submission Date + complete Core6,n>=20 decomposition support=false; rows below 20 remain descriptive only.
+time_month,2024-11,106,1819,0.058273776800439804,C1 Submission Date + complete Core6,n>=20 decomposition support=true; rows below 20 remain descriptive only.
+time_month,2024-12,164,1819,0.09015942825728422,C1 Submission Date + complete Core6,n>=20 decomposition support=true; rows below 20 remain descriptive only.
+time_month,2025-01,219,1819,0.12039582188015394,C1 Submission Date + complete Core6,n>=20 decomposition support=true; rows below 20 remain descriptive only.
+time_month,2025-02,176,1819,0.09675645959318306,C1 Submission Date + complete Core6,n>=20 decomposition support=true; rows below 20 remain descriptive only.
+time_month,2025-03,118,1819,0.06487080813633865,C1 Submission Date + complete Core6,n>=20 decomposition support=true; rows below 20 remain descriptive only.

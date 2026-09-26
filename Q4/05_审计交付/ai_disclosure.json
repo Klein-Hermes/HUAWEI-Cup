@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "status": "known_codex_and_chatgpt_models_identified; chatgpt_output_scope_mapped; broader_team_scope_review_pending",
+  "tool": {
+    "name": "OpenAI Codex desktop",
+    "application_version": "26.917.71314",
+    "application_build": "10954",
+    "channel": "prod",
+    "developer": "OpenAI",
+    "updater_status": "up_to_date",
+    "updater_checked_on": "2026-09-25"
+  },
+  "model_identity": {
+    "runtime_reported_family": "GPT-6",
+    "runtime_evidence_scope": "Local Codex session metadata for the current Q4 thread and two related Q4 Codex tasks records model ID gpt-6-luna. The M1/P2 review agents had no model override and inherited the parent session model. This evidence verifies those Codex sessions; it does not establish the model used by every historical or non-Codex interaction.",
+    "selector_display_name": "GPT-6 Luna (official name mapped from model ID; exact UI label not separately captured)",
+    "model_variant_or_id": "gpt-6-luna",
+    "model_version": "gpt-6-luna",
+    "publication_date": "2026-09-22",
+    "identity_status": "exact_model_id_verified_from_local_codex_session_metadata; official_name_and_date_cross_checked; selector_ui_wording_not_logged",
+    "model_id_evidence_source": "Local Codex session rollout metadata: payload.model, payload.thread_settings.model, and payload.state.model; Codex config default also reports gpt-6-luna.",
+    "official_name_and_release_date_source_url": "https://developers.openai.com/api/docs/changelog",
+    "official_name_and_release_date_source_note": "OpenAI's changelog identifies GPT-6 Luna (gpt-6-luna) and gives its release date as 2026-09-22.",
+    "verified_codex_sessions": [
+      {
+        "thread_id": "01a0db64-66ae-7402-9d4f-e946bbd5ed88",
+        "title": "Current Q4 task",
+        "model_id": "gpt-6-luna",
+        "evidence": "payload.model, payload.thread_settings.model, payload.state.model"
+      },
+      {
+        "thread_id": "01a0db66-1056-7d31-9182-0f44efbab59c",
+        "title": "盘点Q1–Q4建模与编程进度",
+        "model_id": "gpt-6-luna",
+        "evidence": "Local Codex session rollout metadata"
+      },
+      {
+        "thread_id": "01a0d7e9-ed86-7301-bd31-bb912d5cc78d",
+        "title": "规划Q4交付物推进",
+        "model_id": "gpt-6-luna",
+        "evidence": "Local Codex session rollout metadata"
+      }
+    ],
+    "review_agent_model_evidence": "M1/P2 review subagents were spawned without per-agent model overrides, so they inherited gpt-6-luna from the parent Codex session.",
+    "separate_non_codex_thread_scope": "The user identified the separate projectless ChatGPT conversation titled '推进Q4工作' as GPT-5.6 Sol. Its model ID and official release date are mapped from OpenAI's official records; the conversation metadata itself does not independently expose the selected model. The reviewed output assessed the method, accepted the values conditionally as descriptive results, and emphasized strict-version and licensing limitations; those decision points are reflected in the frozen Q4 package. No verbatim ChatGPT wording is claimed as copied into code or results.",
+    "thread_metadata_checked": true,
+    "thread_metadata_exposes_exact_selector": false,
+    "session_metadata_exposes_exact_model_id": true,
+    "release_date_policy": "Use the release date associated with the verified model ID; do not infer a UI label or attribute this identity to unrelated sessions without evidence.",
+    "public_variant_examples": [
+      {
+        "name": "GPT-6 Astra",
+        "model_id": "gpt-6-astra",
+        "official_release_date": "2026-09-03",
+        "source_url": "https://developers.openai.com/api/docs/changelog",
+        "attributed_to_this_work": false
+      },
+      {
+        "name": "GPT-6 Sol",
+        "model_id": "gpt-6-sol",
+        "official_release_date": "2026-09-22",
+        "source_url": "https://developers.openai.com/api/docs/changelog",
+        "attributed_to_this_work": false
+      },
+      {
+        "name": "GPT-6 Luna",
+        "model_id": "gpt-6-luna",
+        "official_release_date": "2026-09-22",
+        "source_url": "https://developers.openai.com/api/docs/changelog",
+        "attributed_to_this_work": true
+      }
+    ]
+  },
+  "additional_ai_tools": [
+    {
+      "tool": "ChatGPT",
+      "developer": "OpenAI",
+      "conversation_title": "推进Q4工作",
+      "conversation_scope": "Projectless Q4-related discussion; summary-level adoption mapping is recorded in this disclosure.",
+      "model_display_name": "GPT-5.6 Sol",
+      "model_id": "gpt-5.6-sol",
+      "publication_date": "2026-07-09",
+      "model_identity_evidence": "Model display name supplied by the user; model ID and official release date matched to OpenAI's changelog and model release notes. The conversation metadata itself does not expose its selected model.",
+      "adopted_output_summary": "Method assessment; conditional acceptance of numeric results as descriptive only; preservation of zero strict-version confirmations and unassessed license permissions as limitations; no recommendation to force unsupported Loss fitting or annual forecasts.",
+      "adoption_mapping_status": "summary_level_mapping_reviewed_against_Q4_package; no_verbatim_output_attribution",
+      "official_source_urls": [
+        "https://developers.openai.com/api/docs/changelog",
+        "https://help.openai.com/en/articles/9624314-model-release-notes"
+      ],
+      "identity_status": "user_reported_name_official_id_and_release_date_cross_checked"
+    }
+  ],
+  "ai_assistance_scope": [
+    "Q4 cohort, metric, and method analysis",
+    "Python data parsing, matching, audit, statistical analysis, and reproducibility scripts",
+    "Loss-Benchmark and 12/24-month forecast feasibility gating",
+    "Tables, figures, reports, and package manifests",
+    "Independent Codex M1 and P2 review agents; their model is inferred from inheritance because no per-agent override was set",
+    "Q4-related projectless ChatGPT discussion identified by the user as GPT-5.6 Sol; its method/result/limitation guidance is mapped at summary level to current package decisions",
+    "Current task's verification and update of Q4 AI disclosure records"
+  ],
+  "inputs_summary": [
+    "User-provided F problem statement and Q4 directions",
+    "C1-C8 contest attachments and registered source metadata",
+    "Q4 method contracts, cohort decisions, code, results, and review instructions",
+    "Q2 Loss reference predictions and protocol evidence listed in the reproduction manifest",
+    "Official 2026 contest AI-use rule and official OpenAI model release notes used to check disclosure fields"
+  ],
+  "output_handling": [
+    "AI-generated code and analysis were executed against the registered data through the documented pipeline; missing, ambiguous, and unresolved records were retained as such rather than silently imputed.",
+    "Results, gate decisions, figures, and hashes were mechanically checked; the M1 and P2 Codex agents supplied additional review, which is not a substitute for team review.",
+    "The team must verify the methods and numbers and write the final paper in its own language; no AI output should be treated as automatically accepted or submitted verbatim."
+  ],
+  "official_rule": {
+    "required_disclosure_fields": [
+      "AI tool name",
+      "model version or model identifier",
+      "developer or company",
+      "model release/publication date",
+      "AI input and subsequent output processing when required"
+    ],
+    "source_url": "https://www.cmathc.org.cn/cpmcm/news/643.html"
+  },
+  "completion_items": [
+    "Before final competition-paper submission, confirm whether any AI tool or model beyond the recorded Codex and ChatGPT sessions contributed to Q4 artifacts; disclose it or explicitly record that none did. The current frozen package does not claim that no other AI was used.",
+    "Before final competition-paper submission, have the team review the AI-use statement and confirm the summary-level mapping of the ChatGPT outputs adopted in Q4 artifacts."
+  ]
+}

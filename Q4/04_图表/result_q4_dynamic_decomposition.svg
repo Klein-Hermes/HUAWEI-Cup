@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.2in" height="5.2in" viewBox="0 0 2160 1560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="1080.0" y="45.0" font-family="Microsoft YaHei, sans-serif" font-size="35" fill="#222222" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Q4 动态诊断与共同支持分解</text>
+<text x="95.0" y="120.0" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#222222" text-anchor="start" dominant-baseline="middle" font-weight="bold">(a) 2024-11 → 2025-03 的共同支持变化分解</text>
+<text x="1500.0" y="120.0" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#222222" text-anchor="start" dominant-baseline="middle" font-weight="bold">(b) 样本与可行性边界</text>
+<line x1="490.0" y1="280.0" x2="490.0" y2="1070.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="490.0" y="1096.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">-8</text>
+<line x1="662.5" y1="280.0" x2="662.5" y2="1070.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="662.5" y="1096.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">-4</text>
+<line x1="835.0" y1="280.0" x2="835.0" y2="1070.0" stroke="#333333" stroke-width="2"/>
+<text x="835.0" y="1096.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">0</text>
+<line x1="1007.5" y1="280.0" x2="1007.5" y2="1070.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1007.5" y="1096.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">4</text>
+<line x1="1180.0" y1="280.0" x2="1180.0" y2="1070.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1180.0" y="1096.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">8</text>
+<text x="450.0" y="345.8" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#222222" text-anchor="end" dominant-baseline="middle">参数规模项</text>
+<line x1="734.0" y1="345.8" x2="751.4" y2="345.8" stroke="#0072B2" stroke-width="6"/>
+<line x1="734.0" y1="334.8" x2="734.0" y2="356.8" stroke="#0072B2" stroke-width="3"/>
+<line x1="751.4" y1="334.8" x2="751.4" y2="356.8" stroke="#0072B2" stroke-width="3"/>
+<circle cx="742.7" cy="345.8" r="9.0" fill="#0072B2"/>
+<text x="1215.0" y="345.8" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#0072B2" text-anchor="start" dominant-baseline="middle">-2.14 [-2.34, -1.94]</text>
+<text x="450.0" y="477.5" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#222222" text-anchor="end" dominant-baseline="middle">模型类型构成</text>
+<line x1="858.2" y1="477.5" x2="917.4" y2="477.5" stroke="#E69F00" stroke-width="6"/>
+<line x1="858.2" y1="466.5" x2="858.2" y2="488.5" stroke="#E69F00" stroke-width="3"/>
+<line x1="917.4" y1="466.5" x2="917.4" y2="488.5" stroke="#E69F00" stroke-width="3"/>
+<circle cx="887.8" cy="477.5" r="9.0" fill="#E69F00"/>
+<text x="1215.0" y="477.5" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#E69F00" text-anchor="start" dominant-baseline="middle">+1.22 [+0.54, +1.91]</text>
+<text x="450.0" y="609.2" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#222222" text-anchor="end" dominant-baseline="middle">月份条件项</text>
+<line x1="735.5" y1="609.2" x2="1115.8" y2="609.2" stroke="#009E73" stroke-width="6"/>
+<line x1="735.5" y1="598.2" x2="735.5" y2="620.2" stroke="#009E73" stroke-width="3"/>
+<line x1="1115.8" y1="598.2" x2="1115.8" y2="620.2" stroke="#009E73" stroke-width="3"/>
+<circle cx="925.6" cy="609.2" r="9.0" fill="#009E73"/>
+<text x="1215.0" y="609.2" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#009E73" text-anchor="start" dominant-baseline="middle">+2.10 [-2.31, +6.51]</text>
+<text x="450.0" y="740.8" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#222222" text-anchor="end" dominant-baseline="middle">非规模合计</text>
+<line x1="791.3" y1="740.8" x2="1165.5" y2="740.8" stroke="#CC79A7" stroke-width="6"/>
+<line x1="791.3" y1="729.8" x2="791.3" y2="751.8" stroke="#CC79A7" stroke-width="3"/>
+<line x1="1165.5" y1="729.8" x2="1165.5" y2="751.8" stroke="#CC79A7" stroke-width="3"/>
+<circle cx="978.4" cy="740.8" r="9.0" fill="#CC79A7"/>
+<text x="1215.0" y="740.8" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#CC79A7" text-anchor="start" dominant-baseline="middle">+3.33 [-1.01, +7.66]</text>
+<text x="450.0" y="872.5" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#222222" text-anchor="end" dominant-baseline="middle">模型预测均值变化</text>
+<line x1="700.0" y1="872.5" x2="1072.3" y2="872.5" stroke="#666666" stroke-width="6"/>
+<line x1="700.0" y1="861.5" x2="700.0" y2="883.5" stroke="#666666" stroke-width="3"/>
+<line x1="1072.3" y1="861.5" x2="1072.3" y2="883.5" stroke="#666666" stroke-width="3"/>
+<circle cx="886.1" cy="872.5" r="9.0" fill="#666666"/>
+<text x="1215.0" y="872.5" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="start" dominant-baseline="middle">+1.19 [-3.13, +5.50]</text>
+<text x="450.0" y="1004.2" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#222222" text-anchor="end" dominant-baseline="middle">观测均值变化</text>
+<line x1="637.6" y1="1004.2" x2="1134.6" y2="1004.2" stroke="#D55E00" stroke-width="6"/>
+<line x1="637.6" y1="993.2" x2="637.6" y2="1015.2" stroke="#D55E00" stroke-width="3"/>
+<line x1="1134.6" y1="993.2" x2="1134.6" y2="1015.2" stroke="#D55E00" stroke-width="3"/>
+<circle cx="886.1" cy="1004.2" r="9.0" fill="#D55E00"/>
+<text x="1215.0" y="1004.2" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#D55E00" text-anchor="start" dominant-baseline="middle">+1.19 [-4.58, +6.95]</text>
+<text x="835.0" y="1140.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">指数点；点为估计，横线为 HC3 95% 区间</text>
+<text x="105.0" y="1200.0" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#666666" text-anchor="start" dominant-baseline="middle">加总闭合误差 -9.2e-14：仅为算术核对，不是未解释因素</text>
+<text x="105.0" y="1245.0" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#666666" text-anchor="start" dominant-baseline="middle">观测变化与非规模总项区间含 0；按合同不报告贡献占比。</text>
+<text x="1500.0" y="190.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#222222" text-anchor="start" dominant-baseline="middle" font-weight="bold">共同参数支持</text>
+<text x="1508.0" y="227.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">拟合记录 n=645；秩 10/10</text>
+<text x="1508.0" y="258.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">端点样本 n=92 / 110</text>
+<text x="1508.0" y="289.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">log10(B) 区间 [0.092, 1.372]</text>
+<text x="1500.0" y="342.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0072B2" text-anchor="start" dominant-baseline="middle" font-weight="bold">AR(1) 仅作描述</text>
+<text x="1508.0" y="379.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">连续月份 10，转移 9</text>
+<text x="1508.0" y="410.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">ρ=0.669；HC3 95% [0.051, 1.288]</text>
+<text x="1500.0" y="463.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#E69F00" text-anchor="start" dominant-baseline="middle" font-weight="bold">一步回测支持有限</text>
+<text x="1508.0" y="500.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">合格起点：AR(1) 2，持平基线 2</text>
+<text x="1508.0" y="531.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">MAE：0.821 vs 0.815</text>
+<text x="1508.0" y="562.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">两次预测不足以证明稳定预测能力。</text>
+<text x="1500.0" y="615.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#D55E00" text-anchor="start" dominant-baseline="middle" font-weight="bold">12 / 24 个月预测</text>
+<text x="1508.0" y="652.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">年度滚动起点 0；数值预测不估计。</text>
+<text x="1500.0" y="705.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#CC79A7" text-anchor="start" dominant-baseline="middle" font-weight="bold">Loss–Benchmark 门控</text>
+<text x="1508.0" y="742.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">状态：BLOCKED_NO_FIT</text>
+<text x="1508.0" y="773.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">桥接拟合未执行；可比性和目标网格待补。</text>
+<text x="1500.0" y="831.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="start" dominant-baseline="middle">非因果分解；年份覆盖详见 C3/C4 分表。</text>
+</svg>

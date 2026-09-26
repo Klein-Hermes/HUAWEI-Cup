@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.2in" height="5.2in" viewBox="0 0 2160 1560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="1080.0" y="48.0" font-family="Microsoft YaHei, sans-serif" font-size="34" fill="#222222" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Loss–Benchmark 原始证据覆盖（拟合前）</text>
+<text x="130.0" y="112.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#666666" text-anchor="start" dominant-baseline="middle">每项显示可核验数量 / 候选数量；数值范围重合不代表协议可比</text>
+<line x1="730.0" y1="265.0" x2="1730.0" y2="265.0" stroke="#333333" stroke-width="2"/>
+<line x1="730.0" y1="265.0" x2="730.0" y2="1220.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="730.0" y="1270.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">0%</text>
+<line x1="980.0" y1="265.0" x2="980.0" y2="1220.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="980.0" y="1270.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">25%</text>
+<line x1="1230.0" y1="265.0" x2="1230.0" y2="1220.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1230.0" y="1270.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">50%</text>
+<line x1="1480.0" y1="265.0" x2="1480.0" y2="1220.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1480.0" y="1270.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">75%</text>
+<line x1="1730.0" y1="265.0" x2="1730.0" y2="1220.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1730.0" y="1270.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">100%</text>
+<text x="690.0" y="405.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#222222" text-anchor="end" dominant-baseline="middle">高可比 Loss–Benchmark 配对</text>
+<line x1="730.0" y1="405.0" x2="1730.0" y2="405.0" stroke="#0072B2" stroke-width="11"/>
+<circle cx="1730.0" cy="405.0" r="11.0" fill="#0072B2"/>
+<text x="1780.0" y="405.0" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#0072B2" text-anchor="start" dominant-baseline="middle">7 / 7</text>
+<text x="690.0" y="595.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#222222" text-anchor="end" dominant-baseline="middle">历史模型版本已核验</text>
+<line x1="730.0" y1="595.0" x2="730.0" y2="595.0" stroke="#D55E00" stroke-width="11"/>
+<circle cx="730.0" cy="595.0" r="11.0" fill="#D55E00"/>
+<text x="1780.0" y="595.0" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#D55E00" text-anchor="start" dominant-baseline="middle">0 / 7</text>
+<text x="690.0" y="785.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#222222" text-anchor="end" dominant-baseline="middle">独立来源模型族已核验</text>
+<line x1="730.0" y1="785.0" x2="730.0" y2="785.0" stroke="#CC79A7" stroke-width="11"/>
+<circle cx="730.0" cy="785.0" r="11.0" fill="#CC79A7"/>
+<text x="1780.0" y="785.0" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#CC79A7" text-anchor="start" dominant-baseline="middle">0 / 7</text>
+<text x="690.0" y="975.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#222222" text-anchor="end" dominant-baseline="middle">Loss 协议字段已知</text>
+<line x1="730.0" y1="975.0" x2="1130.0" y2="975.0" stroke="#E69F00" stroke-width="11"/>
+<circle cx="1130.0" cy="975.0" r="11.0" fill="#E69F00"/>
+<text x="1780.0" y="975.0" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#E69F00" text-anchor="start" dominant-baseline="middle">2 / 5</text>
+<text x="690.0" y="1165.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#222222" text-anchor="end" dominant-baseline="middle">Q2 数值候选落在观察范围</text>
+<line x1="730.0" y1="1165.0" x2="1542.5" y2="1165.0" stroke="#009E73" stroke-width="11"/>
+<circle cx="1542.5" cy="1165.0" r="11.0" fill="#009E73"/>
+<text x="1780.0" y="1165.0" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#009E73" text-anchor="start" dominant-baseline="middle">13 / 16</text>
+<text x="145.0" y="1350.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#D55E00" text-anchor="start" dominant-baseline="middle">单位、评测集、split、tokenizer、preprocessing 未核验；版本与独立来源也未确认。门控结果：BLOCKED_NO_FIT。</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.2in" height="5.2in" viewBox="0 0 2160 1560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="1080.0" y="54.0" font-family="Microsoft YaHei, sans-serif" font-size="36" fill="#222222" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Q4 当前分析流程与停止门</text>
+<rect x="70.0" y="215.0" width="620.0" height="330.0" fill="#F7F9FB" stroke="#0072B2" stroke-width="4"/>
+<text x="380.0" y="267.0" font-family="Microsoft YaHei, sans-serif" font-size="26" fill="#0072B2" text-anchor="middle" dominant-baseline="middle" font-weight="bold">① 数据与来源</text>
+<text x="380.0" y="340.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">C1–C8 原始附件</text>
+<text x="380.0" y="398.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">字段字典：无隐藏字段版 PDF</text>
+<text x="380.0" y="456.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">逐项记录来源与 SHA-256</text>
+<rect x="770.0" y="215.0" width="620.0" height="330.0" fill="#F7F9FB" stroke="#009E73" stroke-width="4"/>
+<text x="1080.0" y="267.0" font-family="Microsoft YaHei, sans-serif" font-size="26" fill="#009E73" text-anchor="middle" dominant-baseline="middle" font-weight="bold">② 已确认样本与指标</text>
+<text x="1080.0" y="340.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">用户确认并冻结队列和权重</text>
+<text x="1080.0" y="398.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">六族完整指数；缺失不补 0</text>
+<text x="1080.0" y="456.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">版本未知继续标 version_unresolved</text>
+<rect x="1470.0" y="215.0" width="620.0" height="330.0" fill="#F7F9FB" stroke="#E69F00" stroke-width="4"/>
+<text x="1780.0" y="267.0" font-family="Microsoft YaHei, sans-serif" font-size="26" fill="#E69F00" text-anchor="middle" dominant-baseline="middle" font-weight="bold">③ 逐任务处理与覆盖</text>
+<text x="1780.0" y="340.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">C8 最新目录 1,860 个</text>
+<text x="1780.0" y="398.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">唯一名称候选 1,819 个</text>
+<text x="1780.0" y="456.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">严格版本确认 0 个</text>
+<rect x="1470.0" y="800.0" width="620.0" height="330.0" fill="#F7F9FB" stroke="#CC79A7" stroke-width="4"/>
+<text x="1780.0" y="852.0" font-family="Microsoft YaHei, sans-serif" font-size="26" fill="#CC79A7" text-anchor="middle" dominant-baseline="middle" font-weight="bold">④ 动态与共同支持分解</text>
+<text x="1780.0" y="925.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">共同支持拟合 645 条，秩 10/10</text>
+<text x="1780.0" y="983.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">HC3 区间；只作观察性关联</text>
+<text x="1780.0" y="1041.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">闭合残差只作算术核对</text>
+<rect x="770.0" y="800.0" width="620.0" height="330.0" fill="#F7F9FB" stroke="#D55E00" stroke-width="4"/>
+<text x="1080.0" y="852.0" font-family="Microsoft YaHei, sans-serif" font-size="26" fill="#D55E00" text-anchor="middle" dominant-baseline="middle" font-weight="bold">⑤ Loss–Benchmark 预拟合门</text>
+<text x="1080.0" y="925.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">先核协议、单位、版本和目标网格</text>
+<text x="1080.0" y="983.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">关键协议与 revision 证据缺失</text>
+<text x="1080.0" y="1041.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">当前 BLOCKED_NO_FIT，不拟合</text>
+<rect x="70.0" y="800.0" width="620.0" height="330.0" fill="#F7F9FB" stroke="#666666" stroke-width="4"/>
+<text x="380.0" y="852.0" font-family="Microsoft YaHei, sans-serif" font-size="26" fill="#666666" text-anchor="middle" dominant-baseline="middle" font-weight="bold">⑥ 预测支持门</text>
+<text x="380.0" y="925.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">前沿时间轴 10 个月、跨 9 个月</text>
+<text x="380.0" y="983.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">年度滚动起点 0</text>
+<text x="380.0" y="1041.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">12 / 24 月数值预测不估计</text>
+<line x1="690.0" y1="380.0" x2="755.0" y2="380.0" stroke="#0072B2" stroke-width="5"/>
+<polygon points="755.0,380.0 739.9,387.9 739.9,372.1" fill="#0072B2"/>
+<line x1="1390.0" y1="380.0" x2="1455.0" y2="380.0" stroke="#0072B2" stroke-width="5"/>
+<polygon points="1455.0,380.0 1439.9,387.9 1439.9,372.1" fill="#0072B2"/>
+<line x1="1780.0" y1="545.0" x2="1780.0" y2="780.0" stroke="#0072B2" stroke-width="5"/>
+<polygon points="1780.0,780.0 1772.1,764.9 1787.9,764.9" fill="#0072B2"/>
+<line x1="1470.0" y1="965.0" x2="1405.0" y2="965.0" stroke="#0072B2" stroke-width="5"/>
+<polygon points="1405.0,965.0 1420.1,957.1 1420.1,972.9" fill="#0072B2"/>
+<line x1="770.0" y1="965.0" x2="705.0" y2="965.0" stroke="#0072B2" stroke-width="5"/>
+<polygon points="705.0,965.0 720.1,957.1 720.1,972.9" fill="#0072B2"/>
+<rect x="700.0" y="1280.0" width="760.0" height="180.0" fill="#F7F9FB" stroke="#0072B2" stroke-width="4"/>
+<text x="1080.0" y="1325.0" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#0072B2" text-anchor="middle" dominant-baseline="middle" font-weight="bold">⑦ 结果包与队伍复核</text>
+<text x="1080.0" y="1380.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="middle" dominant-baseline="middle">9 张候选图 + 流程图 + 可复现清单 + 输入 / 输出哈希</text>
+<text x="1080.0" y="1510.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">Q4 分析包已由用户授权冻结；其他 AI 使用范围须在竞赛论文提交前核实。</text>
+<line x1="380.0" y1="1130.0" x2="820.0" y2="1260.0" stroke="#0072B2" stroke-width="5"/>
+<polygon points="820.0,1260.0 803.3,1263.3 807.8,1248.2" fill="#0072B2"/>
+<line x1="1080.0" y1="1130.0" x2="1080.0" y2="1260.0" stroke="#0072B2" stroke-width="5"/>
+<polygon points="1080.0,1260.0 1072.1,1244.9 1087.9,1244.9" fill="#0072B2"/>
+<line x1="1780.0" y1="1130.0" x2="1340.0" y2="1260.0" stroke="#0072B2" stroke-width="5"/>
+<polygon points="1340.0,1260.0 1352.2,1248.2 1356.7,1263.3" fill="#0072B2"/>
+</svg>

@@ -1,0 +1,6 @@
+﻿publication_year,Confidence,record_count,training_compute_scalar_n,training_compute_median_FLOP,dataset_size_scalar_n,dataset_size_median_tokens,parameter_count_scalar_n,parameter_count_median
+2024,<blank>,3,0,,1,2000000000000.0,3,72000000000.0
+2024,Confident,554,245,5.1741608015e+22,178,233380000000.0,453,7000000000.0
+2024,Likely,108,51,2.106e+22,37,34513333333.0,76,7000000000.0
+2024,Speculative,32,14,9.494999999999999e+23,4,572113040000.0,15,13000000000.0
+2024,Unknown,252,0,,4,229401000000.0,6,11750000000.0

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.2in" height="5.2in" viewBox="0 0 2160 1560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="1080.0" y="48.0" font-family="Microsoft YaHei, sans-serif" font-size="34" fill="#222222" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C3 年度背景：不同来源分列，年份不连线</text>
+<text x="125.0" y="112.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#666666" text-anchor="start" dominant-baseline="middle">点为 Average 中位数 / P90；历史文献行是选择性记录，2025 排行榜数据为部分年度</text>
+<line x1="560.0" y1="190.0" x2="560.0" y2="1195.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="560.0" y="1230.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">0</text>
+<line x1="818.0" y1="190.0" x2="818.0" y2="1195.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="818.0" y="1230.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">20</text>
+<line x1="1076.0" y1="190.0" x2="1076.0" y2="1195.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1076.0" y="1230.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">40</text>
+<line x1="1334.0" y1="190.0" x2="1334.0" y2="1195.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1334.0" y="1230.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">60</text>
+<line x1="1592.0" y1="190.0" x2="1592.0" y2="1195.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1592.0" y="1230.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">80</text>
+<line x1="1850.0" y1="190.0" x2="1850.0" y2="1195.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1850.0" y="1230.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">100</text>
+<text x="525.0" y="287.5" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#222222" text-anchor="end" dominant-baseline="middle">历史论文/报告 · 2019  n=1</text>
+<circle cx="624.5" cy="272.5" r="9.0" fill="#666666"/>
+<rect x="616.5" y="294.5" width="16.0" height="16.0" fill="#666666"/>
+<text x="525.0" y="412.5" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#222222" text-anchor="end" dominant-baseline="middle">历史论文/报告 · 2020  n=1</text>
+<circle cx="1205.0" cy="397.5" r="9.0" fill="#666666"/>
+<rect x="1197.0" y="419.5" width="16.0" height="16.0" fill="#666666"/>
+<text x="525.0" y="537.5" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#222222" text-anchor="end" dominant-baseline="middle">历史论文/报告 · 2021  n=2</text>
+<circle cx="605.1" cy="522.5" r="9.0" fill="#666666"/>
+<rect x="612.6" y="544.5" width="16.0" height="16.0" fill="#666666"/>
+<text x="525.0" y="662.5" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#222222" text-anchor="end" dominant-baseline="middle">历史论文/报告 · 2022  n=7</text>
+<circle cx="714.8" cy="647.5" r="9.0" fill="#666666"/>
+<rect x="964.8" y="669.5" width="16.0" height="16.0" fill="#666666"/>
+<text x="525.0" y="787.5" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#222222" text-anchor="end" dominant-baseline="middle">历史论文/报告 · 2023  n=13</text>
+<circle cx="714.8" cy="772.5" r="9.0" fill="#666666"/>
+<rect x="861.6" y="794.5" width="16.0" height="16.0" fill="#666666"/>
+<text x="525.0" y="912.5" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#222222" text-anchor="end" dominant-baseline="middle">历史论文/报告 · 2024  n=2</text>
+<circle cx="631.0" cy="897.5" r="9.0" fill="#666666"/>
+<rect x="648.8" y="919.5" width="16.0" height="16.0" fill="#666666"/>
+<text x="525.0" y="1037.5" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#222222" text-anchor="end" dominant-baseline="middle">OLLB · 2024  n=2535</text>
+<circle cx="833.7" cy="1022.5" r="9.0" fill="#0072B2"/>
+<rect x="1005.6" y="1044.5" width="16.0" height="16.0" fill="#0072B2"/>
+<text x="525.0" y="1162.5" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#222222" text-anchor="end" dominant-baseline="middle">OLLB · 2025 *  n=1880</text>
+<circle cx="862.9" cy="1147.5" r="9.0" fill="#0072B2"/>
+<rect x="1063.3" y="1169.5" width="16.0" height="16.0" fill="#0072B2"/>
+<circle cx="1420.0" cy="1390.0" r="8.0" fill="#0072B2"/>
+<text x="1440.0" y="1390.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#222222" text-anchor="start" dominant-baseline="middle">中位数</text>
+<rect x="1610.0" y="1382.0" width="16.0" height="16.0" fill="#0072B2"/>
+<text x="1635.0" y="1390.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#222222" text-anchor="start" dominant-baseline="middle">P90</text>
+<text x="125.0" y="1490.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="start" dominant-baseline="middle">* 2025 OLLB 部分年度；不作为完整年度变化率。各行仅作来源内背景比较。</text>
+</svg>

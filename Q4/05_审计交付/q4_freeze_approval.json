@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "package_status": "frozen",
+  "authorization_confirmed": true,
+  "authorized_on": "2026-09-26",
+  "timezone": "Asia/Shanghai",
+  "authorized_by": "Current Q4 user",
+  "authorization_message": "认可 给我冻结吧",
+  "authorization_basis": "The user reviewed the current Q4 method, results, and limitations presented in this conversation, approved all three, and explicitly authorized freezing.",
+  "scope": "Q4 internal analytical and reproducibility package. This does not certify the full F-problem paper, official-format rendering, submission-level W2 review, or competition submission readiness.",
+  "accepted_method": "Six-family percentile index with equal family weighting; regression and exact decomposition within documented samples/common support; feasibility gates for Loss–Benchmark and annual forecasts.",
+  "accepted_results": "789 complete six-family models; 645 common-support decomposition records; scale component -2.141 (95% CI [-2.342, -1.939]); non-scale component +3.326 (95% CI [-1.012, 7.665]); Loss–Benchmark BLOCKED_NO_FIT; no numeric 12/24-month forecasts.",
+  "accepted_limitations": "Descriptive association only; strict model-version confirmation count is zero; non-scale interval crosses zero; Loss bridge and annual forecasts are not estimable from supplied evidence; license/research-reproduction permissions have not been individually assessed.",
+  "ai_disclosure_boundary": {
+    "identified_records": [
+      "OpenAI Codex desktop, model gpt-6-luna.",
+      "OpenAI ChatGPT conversation 推进Q4工作, user-identified as GPT-5.6 Sol (gpt-5.6-sol)."
+    ],
+    "chatgpt_output_mapping": "The reviewed conversation assessed the method, conditionally accepted the reported values as descriptive results, and advised retaining the zero strict-version-confirmation and licensing limits and not reopening Q4 for unsupported fitting or forecasting. These points are reflected in the frozen Q4 reporting and stopping decisions; no verbatim ChatGPT text is claimed as copied into the code or results.",
+    "other_ai_tool_scope": "Not confirmed by the user's freeze authorization. This package does not claim that no other AI tool or model was used. Check and disclose any additional use before final competition-paper submission; if additional use affected Q4 artifacts, create a revised package version."
+  }
+}

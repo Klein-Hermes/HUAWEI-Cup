@@ -1,0 +1,2 @@
+﻿c8_latest_model_directories,match_status_counts_json,strict_version_confirmed_count,c4_exact_name_intersection,note
+14,"{""exact_model_id_unique_record"":14}",0,0,"C1 does not expose model revision/SHA; exact name and unique C1 row are candidates, not version confirmation."

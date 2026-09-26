@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.2in" height="5.2in" viewBox="0 0 2160 1560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="1080.0" y="48.0" font-family="Microsoft YaHei, sans-serif" font-size="34" fill="#222222" text-anchor="middle" dominant-baseline="middle" font-weight="bold">C3 原始年度覆盖：来源分层与样本不均</text>
+<text x="125.0" y="112.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#666666" text-anchor="start" dominant-baseline="middle">去冲突后的唯一模型记录数；横轴为 log10(n)，不连接年份</text>
+<line x1="690.0" y1="201.0" x2="1810.0" y2="201.0" stroke="#333333" stroke-width="2"/>
+<line x1="690.0" y1="201.0" x2="690.0" y2="1130.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="690.0" y="1160.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">1</text>
+<line x1="970.0" y1="201.0" x2="970.0" y2="1130.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="970.0" y="1160.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">10</text>
+<line x1="1250.0" y1="201.0" x2="1250.0" y2="1130.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1250.0" y="1160.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">100</text>
+<line x1="1530.0" y1="201.0" x2="1530.0" y2="1130.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1530.0" y="1160.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">1,000</text>
+<line x1="1810.0" y1="201.0" x2="1810.0" y2="1130.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1810.0" y="1160.0" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#666666" text-anchor="middle" dominant-baseline="middle">10,000</text>
+<text x="650.0" y="292.5" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#222222" text-anchor="end" dominant-baseline="middle">历史论文/报告 · 2019</text>
+<line x1="690.0" y1="292.5" x2="690.0" y2="292.5" stroke="#666666" stroke-width="9"/>
+<circle cx="690.0" cy="292.5" r="9.0" fill="#666666"/>
+<text x="1845.0" y="292.5" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="start" dominant-baseline="middle">n=1；冲突排除 0</text>
+<text x="650.0" y="407.5" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#222222" text-anchor="end" dominant-baseline="middle">历史论文/报告 · 2020</text>
+<line x1="690.0" y1="407.5" x2="690.0" y2="407.5" stroke="#666666" stroke-width="9"/>
+<circle cx="690.0" cy="407.5" r="9.0" fill="#666666"/>
+<text x="1845.0" y="407.5" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="start" dominant-baseline="middle">n=1；冲突排除 0</text>
+<text x="650.0" y="522.5" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#222222" text-anchor="end" dominant-baseline="middle">历史论文/报告 · 2021</text>
+<line x1="690.0" y1="522.5" x2="774.3" y2="522.5" stroke="#666666" stroke-width="9"/>
+<circle cx="774.3" cy="522.5" r="9.0" fill="#666666"/>
+<text x="1845.0" y="522.5" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="start" dominant-baseline="middle">n=2；冲突排除 0</text>
+<text x="650.0" y="637.5" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#222222" text-anchor="end" dominant-baseline="middle">历史论文/报告 · 2022</text>
+<line x1="690.0" y1="637.5" x2="926.6" y2="637.5" stroke="#666666" stroke-width="9"/>
+<circle cx="926.6" cy="637.5" r="9.0" fill="#666666"/>
+<text x="1845.0" y="637.5" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="start" dominant-baseline="middle">n=7；冲突排除 0</text>
+<text x="650.0" y="752.5" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#222222" text-anchor="end" dominant-baseline="middle">历史论文/报告 · 2023</text>
+<line x1="690.0" y1="752.5" x2="1001.9" y2="752.5" stroke="#666666" stroke-width="9"/>
+<circle cx="1001.9" cy="752.5" r="9.0" fill="#666666"/>
+<text x="1845.0" y="752.5" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="start" dominant-baseline="middle">n=13；冲突排除 0</text>
+<text x="650.0" y="867.5" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#222222" text-anchor="end" dominant-baseline="middle">历史论文/报告 · 2024</text>
+<line x1="690.0" y1="867.5" x2="774.3" y2="867.5" stroke="#666666" stroke-width="9"/>
+<circle cx="774.3" cy="867.5" r="9.0" fill="#666666"/>
+<text x="1845.0" y="867.5" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="start" dominant-baseline="middle">n=2；冲突排除 0</text>
+<text x="650.0" y="982.5" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#222222" text-anchor="end" dominant-baseline="middle">OLLB · 2024</text>
+<line x1="690.0" y1="982.5" x2="1643.1" y2="982.5" stroke="#0072B2" stroke-width="9"/>
+<circle cx="1643.1" cy="982.5" r="9.0" fill="#0072B2"/>
+<text x="1845.0" y="982.5" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#0072B2" text-anchor="start" dominant-baseline="middle">n=2,535；冲突排除 68</text>
+<text x="650.0" y="1097.5" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#222222" text-anchor="end" dominant-baseline="middle">OLLB · 2025（部分年）</text>
+<line x1="690.0" y1="1097.5" x2="1606.8" y2="1097.5" stroke="#0072B2" stroke-width="9"/>
+<circle cx="1606.8" cy="1097.5" r="9.0" fill="#0072B2"/>
+<text x="1845.0" y="1097.5" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#0072B2" text-anchor="start" dominant-baseline="middle">n=1,880；冲突排除 11</text>
+<text x="1250.0" y="1390.0" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#666666" text-anchor="middle" dominant-baseline="middle">历史论文/报告样本选择性强，与排行榜来源分开；2025 年仅部分年度覆盖。</text>
+</svg>

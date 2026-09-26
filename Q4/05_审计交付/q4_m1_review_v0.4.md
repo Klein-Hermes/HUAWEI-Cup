@@ -1,0 +1,35 @@
+# Q4 M1 独立复核回执：建模合同 v0.4
+
+## 范围与结论
+
+只读复核 v0.4 合同、分析报告、术语表、计划、F 题 DOCX、无隐藏字段数据说明 PDF 与 C3–C6 表头字段。未运行门控、拟合或数值计算，未修改文件。
+
+**状态：PASS；P0/P1 阻断项：无。**
+
+## 输入快照（SHA-256）
+
+| 输入 | SHA-256 |
+|---|---|
+| `q4_model_contract_v0.4.md` | `A45D07D0F1F83CDB4E2059C18A8B63DCE23D89D4A3A1808C17F9055D4A3F7061` |
+| `q4_modeling_report.md` | `226132431304A111C5D896B215B0C8A5F38E81E1188209CA22B73AF91E4AA4EC` |
+| `q4_glossary.md` | `2A5E593E91924542203B120A3C83D770DB9B3C8F7D65FB134ACAE505EE741AD7` |
+| `q4_next_steps_plan.md` | `2F1C2A85FBCC5F3BE46A085B96FAFEC29E67CFD7494171704F5891C3B7295C7F` |
+| F 题 DOCX | `BC99A72460FA3D947A442D502969A13212CE0EA092D827AFDBBF3B55339DA4C4` |
+| 无隐藏字段数据说明 PDF | `B2C8E1B997F25AB7F5C83539931DFE2260262078FAC85ED09F2E99B801F3866F` |
+| C3 `leaderboard_extended_timeseries.csv` | `AB2B5715B2945EBDEEABFB18E8D040F7C68D8C76BD02C01E446959218BFCD184` |
+| C4 `epoch_all_ai_models.csv` | `0B98A01BCB8D96958745B6FBE505416C38F719948D9029B38FF6233425C0E1C1` |
+| C5 `loss_benchmark_bridge.csv` | `284DEE7F8878BFE8EBF48C4EFBCAA85C1C566377EDC5008727C06EFA6520170F` |
+| C6 `loss_benchmark_bridge_expanded.csv` | `E175462233C2B856E2878C603055B4ED70135F021300F912852AF1BB485BA4FD` |
+
+## 复核要点
+
+- Q4 动态模型、规模分解、C3/C4 字段路径及数据截止、C8 任务覆盖要求已有明确合同；C4 不被当作 C1 候选的个体算力值。
+- 规模、类型和月份预测均值差使用同一线性模型的精确可加恒等式；预测变化剩余项另行报告；没有未定义的 Shapley 混合反事实。
+- 预拟合门控只给出 `BLOCKED_NO_FIT`、`ELIGIBLE_LIMITED_EXPLORATORY` 或 `ELIGIBLE_FOR_CALIBRATION_VALIDATION`；最终 `SUPPORTED_FOR_CALIBRATION` 留待获准最小拟合及 P1 验证后判定，阶段循环已消除。
+- 用户要求的模型选择器名称、模型版本和发布日期字段继续留空。
+
+## P2 非阻断建议
+
+1. 年度滚动预测基线“上月值”建议明确为：在每个滚动起点将最后观测值持平外推到目标月。
+2. 说明 HC3 区间覆盖分解中的哪些线性对比；若剩余项不提供区间，明确标注。
+

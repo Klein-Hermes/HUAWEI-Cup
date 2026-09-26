@@ -1,0 +1,42 @@
+{
+  "generated_at_local": "2026-09-25T22:29:10+08:00",
+  "generator": "Pillow raster plus direct editable SVG primitives",
+  "font": "C:\\Windows\\Fonts\\msyh.ttc",
+  "image_size_px": [
+    2160,
+    1560
+  ],
+  "dpi": 300,
+  "figures": [
+    {
+      "name": "q4_raw_data",
+      "png": "Q4/04_图表/q4_raw_data.png",
+      "svg": "Q4/04_图表/q4_raw_data.svg",
+      "grayscale_png": "Q4/04_图表/q4_raw_data_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All three color and all three grayscale previews reviewed. Raw-data regression line stays within the 0-100 index range; results-panel bottom label overlap is removed; the near-zero monthly regression identity term is labeled and explained in the figure contract; labels, axes, legends, sample annotations, and empty/sparse-cell conventions remain legible at preview scale."
+    },
+    {
+      "name": "q4_process_diagnostics",
+      "png": "Q4/04_图表/q4_process_diagnostics.png",
+      "svg": "Q4/04_图表/q4_process_diagnostics.svg",
+      "grayscale_png": "Q4/04_图表/q4_process_diagnostics_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All three color and all three grayscale previews reviewed. Raw-data regression line stays within the 0-100 index range; results-panel bottom label overlap is removed; the near-zero monthly regression identity term is labeled and explained in the figure contract; labels, axes, legends, sample annotations, and empty/sparse-cell conventions remain legible at preview scale."
+    },
+    {
+      "name": "q4_results",
+      "png": "Q4/04_图表/q4_results.png",
+      "svg": "Q4/04_图表/q4_results.svg",
+      "grayscale_png": "Q4/04_图表/q4_results_grayscale.png",
+      "program_status": "PASS",
+      "manual_visual_review": "PASS",
+      "visual_review_findings": "All three color and all three grayscale previews reviewed. Raw-data regression line stays within the 0-100 index range; results-panel bottom label overlap is removed; the near-zero monthly regression identity term is labeled and explained in the figure contract; labels, axes, legends, sample annotations, and empty/sparse-cell conventions remain legible at preview scale."
+    }
+  ],
+  "manual_visual_review": "PASS",
+  "visual_review_findings": "All three color and all three grayscale previews reviewed. Raw-data regression line stays within the 0-100 index range; results-panel bottom label overlap is removed; the near-zero monthly regression identity term is labeled and explained in the figure contract; labels, axes, legends, sample annotations, and empty/sparse-cell conventions remain legible at preview scale.",
+  "visual_reviewed_at_local": "2026-09-25T22:30:07+08:00"
+}

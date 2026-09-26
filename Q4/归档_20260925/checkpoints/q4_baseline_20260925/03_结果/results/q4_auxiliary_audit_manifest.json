@@ -1,0 +1,28 @@
+{
+  "ai_disclosure": "OpenAI Codex desktop 26.917.71314 (build 10954; prod; updater checked 2026-09-25, up_to_date); developer OpenAI; model selector name: ; model version/publication date: .",
+  "generated_at_local": "2026-09-25T22:28:53+08:00",
+  "script": "Q4\\02_代码\\scripts\\q4_auxiliary_source_audit.py",
+  "script_sha256": "6c4bbe23e24a74599a05b4c4e797fc06d6fb979a80f7cab67a9adf6a404c50ce",
+  "candidate_unique_name_count": 1819,
+  "inputs_sha256": {
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\leaderboard_extended_timeseries.csv": "ab2b5715b2945ebdeeabfb18e8d040f7c68d8c76bd02c01e446959218bfcd184",
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\epoch_all_ai_models.csv": "0b98a01bcb8d96958745b6fbe505416c38f719948d9029b38ff6233425c0e1c1",
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\loss_benchmark_bridge.csv": "284dee7f8878bfe8ebf48c4efbcaa85c1c566377edc5008727c06efa6520170f",
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\loss_benchmark_bridge_expanded.csv": "e175462233c2b856e2878c603055b4ed70135f021300f912852af1bb485ba4fd",
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\model_architecture_metadata.csv": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc",
+    "中文题目\\F题\\real_attachments\\C_efficiency_evolution\\leaderboard_cleaned.csv": "199891128629f24f83ed2f51211eee65a82a13f45275e79a8227d5dacc7c2846",
+    "Q4\\03_结果\\results\\q4_c8_c1_match_candidates.csv": "603f5160abf49704f1546310ad773aef04ca61e6227aa4312d28814da1dd1d50",
+    "Q4\\03_结果\\results\\q4_c8_run_registry.csv": "9b6cba529723ae3134f92d4e2b6a81683e4e2424602cf22a688586302af5ef4a"
+  },
+  "outputs_sha256": {
+    "Q4\\03_结果\\results\\q4_auxiliary_source_coverage.csv": "1ffb707bf0e5b349f2bbabed0541419f0ebc6fe767c285629c20e830ac7edad1",
+    "Q4\\03_结果\\results\\q4_c3_year_source_coverage.csv": "8e7e46be8acef2796b92bb05ce822e7cd4b9bafab061ed29f010bb9bd8366bb0",
+    "Q4\\03_结果\\results\\q4_loss_bridge_quality.csv": "ece59905d6cd25a21e21cbb2ad4e5b76f344a9d0377b26d065797a5be76437ca",
+    "Q4\\03_结果\\results\\q4_monthly_time_axis_coverage.csv": "328367c581b7b2847280536ecfdf2d1926d49265dca7db6ae40323b19f604cda"
+  },
+  "limitations": [
+    "Exact string intersections are candidate joins only, not version confirmation.",
+    "Monthly tables contain record counts only, not score summaries or forecasts.",
+    "C3 historical papers/reports remain separated from Open LLM Leaderboard rows."
+  ]
+}

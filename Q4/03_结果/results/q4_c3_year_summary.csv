@@ -1,0 +1,9 @@
+﻿Source,Year,source_rows,unique_model_records_after_dedup,conflicting_model_year_groups_excluded,Average_numeric_records,Average_median,Average_p90,coverage_status,included_in_complete_year_trend
+Historical (papers/reports),2019,1,1,0,1,5.0,5.0,historical_non_comparable_selective_records,False
+Historical (papers/reports),2020,1,1,0,1,50.0,50.0,historical_non_comparable_selective_records,False
+Historical (papers/reports),2021,2,2,0,2,3.5,4.7,historical_non_comparable_selective_records,False
+Historical (papers/reports),2022,7,7,0,7,12.0,32.0,historical_non_comparable_selective_records,False
+Historical (papers/reports),2023,13,13,0,13,12.0,24.000000000000004,historical_non_comparable_selective_records,False
+Historical (papers/reports),2024,2,2,0,2,5.5,7.5,historical_non_comparable_selective_records,False
+Open LLM Leaderboard,2024,2671,2535,68,2535,21.22,35.163999999999994,leaderboard_source_full_year_candidate,True
+Open LLM Leaderboard,2025,1902,1880,11,1880,23.48,39.63400000000001,partial_year_coverage_only,False

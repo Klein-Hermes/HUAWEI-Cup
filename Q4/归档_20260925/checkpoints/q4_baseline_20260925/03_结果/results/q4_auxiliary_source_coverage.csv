@@ -1,0 +1,6 @@
+﻿source_id,file,row_count,join_field,unique_nonblank_ids,exact_overlap_with_1819_unique_name_candidates,exact_overlap_with_c1_name_universe,interpretation
+C3,leaderboard_extended_timeseries.csv,4599,Model,4520,1818,4494,exact name intersection only; not model-version confirmation
+C4,epoch_all_ai_models.csv,3523,Model,3503,0,0,exact name intersection only; not model-version confirmation
+C5,loss_benchmark_bridge.csv,43,Model,43,21,43,exact name intersection only; not model-version confirmation
+C6,loss_benchmark_bridge_expanded.csv,75,Model,75,42,75,exact name intersection only; not model-version confirmation
+C7,model_architecture_metadata.csv,45,model_name,45,17,37,exact name intersection only; not model-version confirmation

@@ -1,0 +1,9 @@
+﻿source,year,rows,unique_model_names,duplicate_rows,duplicated_model_names,unique_name_candidates_present,is_open_llm_leaderboard_source
+Historical (papers/reports),2019,1,1,0,0,0,False
+Historical (papers/reports),2020,1,1,0,0,0,False
+Historical (papers/reports),2021,2,2,0,0,0,False
+Historical (papers/reports),2022,7,7,0,0,0,False
+Historical (papers/reports),2023,13,13,0,0,0,False
+Historical (papers/reports),2024,2,2,0,0,0,False
+Open LLM Leaderboard,2024,2671,2603,68,68,1138,True
+Open LLM Leaderboard,2025,1902,1891,11,11,680,True

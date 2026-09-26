@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.2in" height="5.2in" viewBox="0 0 2160 1560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="1080.0" y="45.0" font-family="Microsoft YaHei, sans-serif" font-size="35" fill="#222222" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Q4 结果：任务族分布、分解与开放权重前沿</text>
+<text x="70.0" y="126.0" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#222222" text-anchor="start" dominant-baseline="middle" font-weight="bold">(a) 同一完整样本的任务族分布</text>
+<text x="1120.0" y="126.0" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#222222" text-anchor="start" dominant-baseline="middle" font-weight="bold">(b) 支持月份的均值变化分解</text>
+<text x="70.0" y="806.0" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#222222" text-anchor="start" dominant-baseline="middle" font-weight="bold">(c) 明确开放权重模型的月度进入表现</text>
+<line x1="230.0" y1="646.0" x2="980.0" y2="646.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="220.0" y="646.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="end" dominant-baseline="middle">0</text>
+<line x1="230.0" y1="531.0" x2="980.0" y2="531.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="220.0" y="531.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="end" dominant-baseline="middle">25</text>
+<line x1="230.0" y1="416.0" x2="980.0" y2="416.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="220.0" y="416.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="end" dominant-baseline="middle">50</text>
+<line x1="230.0" y1="301.0" x2="980.0" y2="301.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="220.0" y="301.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="end" dominant-baseline="middle">75</text>
+<line x1="230.0" y1="186.0" x2="980.0" y2="186.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="220.0" y="186.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="end" dominant-baseline="middle">100</text>
+<line x1="292.5" y1="235.5" x2="292.5" y2="566.5" stroke="#0072B2" stroke-width="5"/>
+<line x1="278.5" y1="235.5" x2="306.5" y2="235.5" stroke="#0072B2" stroke-width="4"/>
+<line x1="278.5" y1="566.5" x2="306.5" y2="566.5" stroke="#0072B2" stroke-width="4"/>
+<rect x="266.5" y="297.4" width="52.0" height="223.6" fill="#E9F1F6" stroke="#0072B2" stroke-width="3"/>
+<line x1="266.5" y1="389.6" x2="318.5" y2="389.6" stroke="#0072B2" stroke-width="4"/>
+<text x="292.5" y="673.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#222222" text-anchor="middle" dominant-baseline="middle">BBH</text>
+<line x1="417.5" y1="204.3" x2="417.5" y2="583.3" stroke="#E69F00" stroke-width="5"/>
+<line x1="403.5" y1="204.3" x2="431.5" y2="204.3" stroke="#E69F00" stroke-width="4"/>
+<line x1="403.5" y1="583.3" x2="431.5" y2="583.3" stroke="#E69F00" stroke-width="4"/>
+<rect x="391.5" y="271.6" width="52.0" height="242.3" fill="#E9F1F6" stroke="#E69F00" stroke-width="3"/>
+<line x1="391.5" y1="386.8" x2="443.5" y2="386.8" stroke="#E69F00" stroke-width="4"/>
+<text x="417.5" y="673.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#222222" text-anchor="middle" dominant-baseline="middle">GPQA</text>
+<line x1="542.5" y1="208.5" x2="542.5" y2="624.7" stroke="#009E73" stroke-width="5"/>
+<line x1="528.5" y1="208.5" x2="556.5" y2="208.5" stroke="#009E73" stroke-width="4"/>
+<line x1="528.5" y1="624.7" x2="556.5" y2="624.7" stroke="#009E73" stroke-width="4"/>
+<rect x="516.5" y="290.5" width="52.0" height="233.9" fill="#E9F1F6" stroke="#009E73" stroke-width="3"/>
+<line x1="516.5" y1="395.9" x2="568.5" y2="395.9" stroke="#009E73" stroke-width="4"/>
+<text x="542.5" y="673.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#222222" text-anchor="middle" dominant-baseline="middle">IFEval</text>
+<line x1="667.5" y1="210.3" x2="667.5" y2="598.0" stroke="#D55E00" stroke-width="5"/>
+<line x1="653.5" y1="210.3" x2="681.5" y2="210.3" stroke="#D55E00" stroke-width="4"/>
+<line x1="653.5" y1="598.0" x2="681.5" y2="598.0" stroke="#D55E00" stroke-width="4"/>
+<rect x="641.5" y="306.3" width="52.0" height="225.5" fill="#E9F1F6" stroke="#D55E00" stroke-width="3"/>
+<line x1="641.5" y1="417.2" x2="693.5" y2="417.2" stroke="#D55E00" stroke-width="4"/>
+<text x="667.5" y="673.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#222222" text-anchor="middle" dominant-baseline="middle">MATH v2</text>
+<line x1="792.5" y1="201.3" x2="792.5" y2="616.9" stroke="#CC79A7" stroke-width="5"/>
+<line x1="778.5" y1="201.3" x2="806.5" y2="201.3" stroke="#CC79A7" stroke-width="4"/>
+<line x1="778.5" y1="616.9" x2="806.5" y2="616.9" stroke="#CC79A7" stroke-width="4"/>
+<rect x="766.5" y="263.9" width="52.0" height="269.2" fill="#E9F1F6" stroke="#CC79A7" stroke-width="3"/>
+<line x1="766.5" y1="389.4" x2="818.5" y2="389.4" stroke="#CC79A7" stroke-width="4"/>
+<text x="792.5" y="673.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#222222" text-anchor="middle" dominant-baseline="middle">MMLU-P</text>
+<line x1="917.5" y1="243.0" x2="917.5" y2="600.3" stroke="#666666" stroke-width="5"/>
+<line x1="903.5" y1="243.0" x2="931.5" y2="243.0" stroke="#666666" stroke-width="4"/>
+<line x1="903.5" y1="600.3" x2="931.5" y2="600.3" stroke="#666666" stroke-width="4"/>
+<rect x="891.5" y="322.1" width="52.0" height="190.5" fill="#E9F1F6" stroke="#666666" stroke-width="3"/>
+<line x1="891.5" y1="401.0" x2="943.5" y2="401.0" stroke="#666666" stroke-width="4"/>
+<text x="917.5" y="673.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#222222" text-anchor="middle" dominant-baseline="middle">MuSR</text>
+<text x="605.0" y="708.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="middle" dominant-baseline="middle">族内百分位分布（须=P5/P95，箱=P25/P75，中线=P50；n=789）</text>
+<line x1="1220.0" y1="186.0" x2="1220.0" y2="646.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1220.0" y="664.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#666666" text-anchor="middle" dominant-baseline="middle">-3</text>
+<line x1="1428.8" y1="186.0" x2="1428.8" y2="646.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1428.8" y="664.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#666666" text-anchor="middle" dominant-baseline="middle">-1</text>
+<line x1="1637.5" y1="186.0" x2="1637.5" y2="646.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1637.5" y="664.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#666666" text-anchor="middle" dominant-baseline="middle">2</text>
+<line x1="1846.2" y1="186.0" x2="1846.2" y2="646.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="1846.2" y="664.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#666666" text-anchor="middle" dominant-baseline="middle">4</text>
+<line x1="2055.0" y1="186.0" x2="2055.0" y2="646.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="2055.0" y="664.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#666666" text-anchor="middle" dominant-baseline="middle">6</text>
+<line x1="1498.3" y1="186.0" x2="1498.3" y2="646.0" stroke="#333333" stroke-width="2"/>
+<text x="1208.0" y="301.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#222222" text-anchor="end" dominant-baseline="middle">2024-11 n=106</text>
+<line x1="1498.3" y1="250.0" x2="1960.1" y2="250.0" stroke="#0072B2" stroke-width="7"/>
+<circle cx="1960.1" cy="250.0" r="7.0" fill="#0072B2"/>
+<text x="2047.0" y="250.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#0072B2" text-anchor="end" dominant-baseline="middle">参数构成 +5.0</text>
+<line x1="1414.5" y1="284.0" x2="1498.3" y2="284.0" stroke="#E69F00" stroke-width="7"/>
+<circle cx="1414.5" cy="284.0" r="7.0" fill="#E69F00"/>
+<text x="2047.0" y="284.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#E69F00" text-anchor="end" dominant-baseline="middle">C1 类型构成 -0.9</text>
+<line x1="1362.9" y1="318.0" x2="1498.3" y2="318.0" stroke="#009E73" stroke-width="7"/>
+<circle cx="1362.9" cy="318.0" r="7.0" fill="#009E73"/>
+<text x="2047.0" y="318.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#009E73" text-anchor="end" dominant-baseline="middle">月份条件项 -1.5</text>
+<line x1="1498.3" y1="352.0" x2="1498.3" y2="352.0" stroke="#666666" stroke-width="7"/>
+<circle cx="1498.3" cy="352.0" r="7.0" fill="#666666"/>
+<text x="2047.0" y="352.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#666666" text-anchor="end" dominant-baseline="middle">回归恒等项 +0.0</text>
+<text x="1208.0" y="531.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#222222" text-anchor="end" dominant-baseline="middle">2025-03 n=118</text>
+<line x1="1498.3" y1="480.0" x2="1839.3" y2="480.0" stroke="#0072B2" stroke-width="7"/>
+<circle cx="1839.3" cy="480.0" r="7.0" fill="#0072B2"/>
+<text x="2047.0" y="480.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#0072B2" text-anchor="end" dominant-baseline="middle">参数构成 +3.7</text>
+<line x1="1498.3" y1="514.0" x2="1544.1" y2="514.0" stroke="#E69F00" stroke-width="7"/>
+<circle cx="1544.1" cy="514.0" r="7.0" fill="#E69F00"/>
+<text x="2047.0" y="514.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#E69F00" text-anchor="end" dominant-baseline="middle">C1 类型构成 +0.5</text>
+<line x1="1498.3" y1="548.0" x2="1516.0" y2="548.0" stroke="#009E73" stroke-width="7"/>
+<circle cx="1516.0" cy="548.0" r="7.0" fill="#009E73"/>
+<text x="2047.0" y="548.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#009E73" text-anchor="end" dominant-baseline="middle">月份条件项 +0.2</text>
+<line x1="1498.3" y1="582.0" x2="1498.3" y2="582.0" stroke="#666666" stroke-width="7"/>
+<circle cx="1498.3" cy="582.0" r="7.0" fill="#666666"/>
+<text x="2047.0" y="582.0" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#666666" text-anchor="end" dominant-baseline="middle">回归恒等项 +0.0</text>
+<text x="1637.5" y="696.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="middle" dominant-baseline="middle">指数点，相对回归支持样本均值；非因果贡献</text>
+<line x1="170.0" y1="1356.0" x2="2055.0" y2="1356.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="157.0" y="1356.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="end" dominant-baseline="middle">0</text>
+<line x1="170.0" y1="1233.5" x2="2055.0" y2="1233.5" stroke="#D9E0E7" stroke-width="1"/>
+<text x="157.0" y="1233.5" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="end" dominant-baseline="middle">25</text>
+<line x1="170.0" y1="1111.0" x2="2055.0" y2="1111.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="157.0" y="1111.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="end" dominant-baseline="middle">50</text>
+<line x1="170.0" y1="988.5" x2="2055.0" y2="988.5" stroke="#D9E0E7" stroke-width="1"/>
+<text x="157.0" y="988.5" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="end" dominant-baseline="middle">75</text>
+<line x1="170.0" y1="866.0" x2="2055.0" y2="866.0" stroke="#D9E0E7" stroke-width="1"/>
+<text x="157.0" y="866.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="end" dominant-baseline="middle">100</text>
+<line x1="246.9" y1="866.0" x2="246.9" y2="1356.0" stroke="#EEF1F4" stroke-width="1"/>
+<text x="246.9" y="1378.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="middle" dominant-baseline="middle">2024-06</text>
+<line x1="439.3" y1="866.0" x2="439.3" y2="1356.0" stroke="#EEF1F4" stroke-width="1"/>
+<text x="439.3" y="1378.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="middle" dominant-baseline="middle">2024-07</text>
+<line x1="631.6" y1="866.0" x2="631.6" y2="1356.0" stroke="#EEF1F4" stroke-width="1"/>
+<text x="631.6" y="1378.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="middle" dominant-baseline="middle">2024-08</text>
+<line x1="824.0" y1="866.0" x2="824.0" y2="1356.0" stroke="#EEF1F4" stroke-width="1"/>
+<text x="824.0" y="1378.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="middle" dominant-baseline="middle">2024-09</text>
+<line x1="1016.3" y1="866.0" x2="1016.3" y2="1356.0" stroke="#EEF1F4" stroke-width="1"/>
+<text x="1016.3" y="1378.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="middle" dominant-baseline="middle">2024-10</text>
+<line x1="1208.7" y1="866.0" x2="1208.7" y2="1356.0" stroke="#EEF1F4" stroke-width="1"/>
+<text x="1208.7" y="1378.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="middle" dominant-baseline="middle">2024-11</text>
+<line x1="1401.0" y1="866.0" x2="1401.0" y2="1356.0" stroke="#EEF1F4" stroke-width="1"/>
+<text x="1401.0" y="1378.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="middle" dominant-baseline="middle">2024-12</text>
+<line x1="1593.4" y1="866.0" x2="1593.4" y2="1356.0" stroke="#EEF1F4" stroke-width="1"/>
+<text x="1593.4" y="1378.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="middle" dominant-baseline="middle">2025-01</text>
+<line x1="1785.7" y1="866.0" x2="1785.7" y2="1356.0" stroke="#EEF1F4" stroke-width="1"/>
+<text x="1785.7" y="1378.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="middle" dominant-baseline="middle">2025-02</text>
+<line x1="1978.1" y1="866.0" x2="1978.1" y2="1356.0" stroke="#EEF1F4" stroke-width="1"/>
+<text x="1978.1" y="1378.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#666666" text-anchor="middle" dominant-baseline="middle">2025-03</text>
+<line x1="170.0" y1="866.0" x2="170.0" y2="1356.0" stroke="#333333" stroke-width="2"/>
+<line x1="170.0" y1="1356.0" x2="2055.0" y2="1356.0" stroke="#333333" stroke-width="2"/>
+<text x="1112.5" y="1418.0" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#222222" text-anchor="middle" dominant-baseline="middle">C1 Submission Date 月份</text>
+<text x="97.0" y="1111.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#222222" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 97.0 1111.0)">C1 官方 Average</text>
+<polyline points="246.9,1217.2 439.3,1215.4 631.6,1205.0 824.0,1155.3 1016.3,1166.2 1208.7,1160.8 1401.0,1158.4 1593.4,1161.3 1785.7,1153.5 1978.1,1153.8" fill="none" stroke="#0072B2" stroke-width="5"/>
+<polyline points="246.9,1277.8 439.3,1322.4 631.6,1305.6 824.0,1234.1 1016.3,1227.4 1208.7,1193.8 1401.0,1170.0 1593.4,1212.4 1785.7,1220.1 1978.1,1232.6" fill="none" stroke="#E69F00" stroke-width="4" stroke-dasharray="10 7"/>
+<circle cx="246.9" cy="1217.2" r="10.0" fill="#0072B2" stroke="#0072B2" stroke-width="4"/>
+<circle cx="246.9" cy="1277.8" r="8.0" fill="#E69F00"/>
+<text x="246.9" y="1191.2" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="middle" dominant-baseline="middle">n=38</text>
+<circle cx="439.3" cy="1215.4" r="10.0" fill="#ffffff" stroke="#0072B2" stroke-width="4"/>
+<circle cx="439.3" cy="1322.4" r="8.0" fill="#E69F00"/>
+<text x="439.3" y="1189.4" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="middle" dominant-baseline="middle">n=9</text>
+<circle cx="631.6" cy="1205.0" r="10.0" fill="#ffffff" stroke="#0072B2" stroke-width="4"/>
+<circle cx="631.6" cy="1305.6" r="8.0" fill="#E69F00"/>
+<text x="631.6" y="1179.0" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="middle" dominant-baseline="middle">n=4</text>
+<circle cx="824.0" cy="1155.3" r="10.0" fill="#0072B2" stroke="#0072B2" stroke-width="4"/>
+<circle cx="824.0" cy="1234.1" r="8.0" fill="#E69F00"/>
+<text x="824.0" y="1129.3" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="middle" dominant-baseline="middle">n=19</text>
+<circle cx="1016.3" cy="1166.2" r="10.0" fill="#0072B2" stroke="#0072B2" stroke-width="4"/>
+<circle cx="1016.3" cy="1227.4" r="8.0" fill="#E69F00"/>
+<text x="1016.3" y="1140.2" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="middle" dominant-baseline="middle">n=11</text>
+<circle cx="1208.7" cy="1160.8" r="10.0" fill="#0072B2" stroke="#0072B2" stroke-width="4"/>
+<circle cx="1208.7" cy="1193.8" r="8.0" fill="#E69F00"/>
+<text x="1208.7" y="1134.8" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="middle" dominant-baseline="middle">n=15</text>
+<circle cx="1401.0" cy="1158.4" r="10.0" fill="#0072B2" stroke="#0072B2" stroke-width="4"/>
+<circle cx="1401.0" cy="1170.0" r="8.0" fill="#E69F00"/>
+<text x="1401.0" y="1132.4" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="middle" dominant-baseline="middle">n=17</text>
+<circle cx="1593.4" cy="1161.3" r="10.0" fill="#0072B2" stroke="#0072B2" stroke-width="4"/>
+<circle cx="1593.4" cy="1212.4" r="8.0" fill="#E69F00"/>
+<text x="1593.4" y="1135.3" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="middle" dominant-baseline="middle">n=37</text>
+<circle cx="1785.7" cy="1153.5" r="10.0" fill="#0072B2" stroke="#0072B2" stroke-width="4"/>
+<circle cx="1785.7" cy="1220.1" r="8.0" fill="#E69F00"/>
+<text x="1785.7" y="1127.5" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="middle" dominant-baseline="middle">n=33</text>
+<circle cx="1978.1" cy="1153.8" r="10.0" fill="#0072B2" stroke="#0072B2" stroke-width="4"/>
+<circle cx="1978.1" cy="1232.6" r="8.0" fill="#E69F00"/>
+<text x="1978.1" y="1127.8" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#666666" text-anchor="middle" dominant-baseline="middle">n=18</text>
+<line x1="1675.0" y1="871.0" x2="1725.0" y2="871.0" stroke="#0072B2" stroke-width="5"/>
+<circle cx="1700.0" cy="871.0" r="8.0" fill="#0072B2"/>
+<text x="1735.0" y="871.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#222222" text-anchor="start" dominant-baseline="middle">每月新提交模型 P90</text>
+<line x1="1675.0" y1="904.0" x2="1725.0" y2="904.0" stroke="#E69F00" stroke-width="4" stroke-dasharray="10 7"/>
+<circle cx="1700.0" cy="904.0" r="7.0" fill="#E69F00"/>
+<text x="1735.0" y="904.0" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#222222" text-anchor="start" dominant-baseline="middle">每月中位数</text>
+</svg>
