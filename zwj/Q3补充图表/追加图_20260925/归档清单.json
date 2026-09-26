@@ -1,0 +1,133 @@
+{
+  "title": "Q3 追加图件归档清单",
+  "date": "2026-09-25",
+  "destination": "zwj/Q3补充图表/追加图_20260925",
+  "principle": "仅复制已验证成图和图表契约；不移动或覆盖 Q3 源图，不修改原有 P1-P4。",
+  "self_hash_note": "本清单不列自身哈希以避免递归；files 覆盖除此 JSON 外的全部归档文件。",
+  "reproducibility": [
+    {
+      "target_folder": "S4_质量增量成本曲线",
+      "source_script": "Q3/04_结果/figures/supplementary_20260925/S4_质量增量成本曲线/plot_q3_quality_incremental_cost.py",
+      "command_from_project_root": "D:\\Anaconda\\python.exe Q3\\04_结果\\figures\\supplementary_20260925\\S4_质量增量成本曲线\\plot_q3_quality_incremental_cost.py --output-dir zwj\\Q3补充图表\\追加图_20260925\\复现输出\\S4_质量增量成本曲线",
+      "script_copied": false
+    },
+    {
+      "target_folder": "flow_q3_model",
+      "source_script": "Q3/04_结果/figures/supplementary_20260925/flow_q3_model/plot_flow_q3_model.py",
+      "command_from_project_root": "D:\\Anaconda\\python.exe Q3\\04_结果\\figures\\supplementary_20260925\\flow_q3_model\\plot_flow_q3_model.py --output-dir zwj\\Q3补充图表\\追加图_20260925\\复现输出\\flow_q3_model",
+      "script_copied": false
+    }
+  ],
+  "files": [
+    {
+      "source": "Q3/04_结果/figures/supplementary_20260925/S4_质量增量成本曲线/result_q3_supp_quality_incremental_cost.png",
+      "target": "S4_质量增量成本曲线/result_q3_supp_quality_incremental_cost.png",
+      "bytes": 303439,
+      "sha256": "566712f5121465367952acc95f974a172b693bf7357afc5ec77ef0c9776afd61",
+      "copy_hash_matches_source": true,
+      "image": {
+        "width_px": 2002,
+        "height_px": 2034,
+        "dpi": [
+          300.99,
+          300.99
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "source": "Q3/04_结果/figures/supplementary_20260925/S4_质量增量成本曲线/result_q3_supp_quality_incremental_cost_grayscale.png",
+      "target": "S4_质量增量成本曲线/result_q3_supp_quality_incremental_cost_grayscale.png",
+      "bytes": 128526,
+      "sha256": "748c934668f8d849cf93231fd29e7628992068933d81866360dc40de7bdd5f49",
+      "copy_hash_matches_source": true,
+      "image": {
+        "width_px": 2002,
+        "height_px": 2034,
+        "dpi": [
+          300.99,
+          300.99
+        ],
+        "mode": "L"
+      }
+    },
+    {
+      "source": "Q3/04_结果/figures/supplementary_20260925/S4_质量增量成本曲线/result_q3_supp_quality_incremental_cost.svg",
+      "target": "S4_质量增量成本曲线/result_q3_supp_quality_incremental_cost.svg",
+      "bytes": 86837,
+      "sha256": "f0fb4a59e75a57a8da84066567a7381ba774ca4c7254cae5becaefd1dbc4b886",
+      "copy_hash_matches_source": true
+    },
+    {
+      "source": "Q3/04_结果/figures/supplementary_20260925/S4_质量增量成本曲线/图表契约.md",
+      "target": "S4_质量增量成本曲线/图表契约.md",
+      "bytes": 1976,
+      "sha256": "ff94298a30ece36c1c084337117f541ef31b793be5333555ed845570141a0bd5",
+      "copy_hash_matches_source": true
+    },
+    {
+      "source": "由本次归档任务创建；绘图脚本引用见文件正文",
+      "target": "S4_质量增量成本曲线/复现入口说明.md",
+      "bytes": 945,
+      "sha256": "9f3d2f048c6540cfa8669efe3e2abc5a79a2c4f2a9a9dc4c6d77c43becc6d9bc"
+    },
+    {
+      "source": "Q3/04_结果/figures/supplementary_20260925/flow_q3_model/flow_q3_model.png",
+      "target": "flow_q3_model/flow_q3_model.png",
+      "bytes": 616797,
+      "sha256": "6763867b2b24e62442feb1b5327326c903fe5999aabb6c6b1e0d5b8968bc0b5b",
+      "copy_hash_matches_source": true,
+      "image": {
+        "width_px": 4237,
+        "height_px": 2641,
+        "dpi": [
+          300.99,
+          300.99
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "source": "Q3/04_结果/figures/supplementary_20260925/flow_q3_model/flow_q3_model_grayscale.png",
+      "target": "flow_q3_model/flow_q3_model_grayscale.png",
+      "bytes": 245740,
+      "sha256": "f2883d02d5f9cf02698ae094afc9bce3bbd1f425558b70bbb3bf06db9b4220b3",
+      "copy_hash_matches_source": true,
+      "image": {
+        "width_px": 4237,
+        "height_px": 2641,
+        "dpi": [
+          300.99,
+          300.99
+        ],
+        "mode": "L"
+      }
+    },
+    {
+      "source": "Q3/04_结果/figures/supplementary_20260925/flow_q3_model/flow_q3_model.svg",
+      "target": "flow_q3_model/flow_q3_model.svg",
+      "bytes": 16893,
+      "sha256": "928154d0dbe4f5411b54078aead156f57ead67bed01e91cc1d63ca56310923e0",
+      "copy_hash_matches_source": true
+    },
+    {
+      "source": "Q3/04_结果/figures/supplementary_20260925/flow_q3_model/图表契约.md",
+      "target": "flow_q3_model/图表契约.md",
+      "bytes": 2075,
+      "sha256": "3cda81a6e29724ea57257731d2e902afa45db184cedd4d0289a039bc3bb42b6b",
+      "copy_hash_matches_source": true
+    },
+    {
+      "source": "由本次归档任务创建；绘图脚本引用见文件正文",
+      "target": "flow_q3_model/复现入口说明.md",
+      "bytes": 933,
+      "sha256": "4c93fa1adccb57d39a2e15f1ff1c41574e4f92192a40e90634dcf57c67332c06"
+    },
+    {
+      "source": "由本次归档任务创建",
+      "target": "README.md",
+      "bytes": 2178,
+      "sha256": "56ce198730d0a2ed4edaab2284365490cf22242f461e9869fe42455d9032a596"
+    }
+  ]
+}

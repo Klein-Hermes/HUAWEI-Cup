@@ -1,0 +1,70 @@
+{
+  "status": "GENERATED_WITH_LIMITATIONS",
+  "generated_utc_date": "2026-09-25",
+  "reproduction_command": "D:\\Anaconda\\python.exe src/q2_evidence_complement_figures.py",
+  "script": {
+    "path": "src\\q2_evidence_complement_figures.py",
+    "sha256": "efa6a65847fe75b553cf118a41267fc17ad1fb33a2a2410e50be3761c35eb9be"
+  },
+  "inputs": {
+    "B1 fitted checkpoints": {
+      "path": "Q2\\03_结果\\经典ScalingLaw基线\\v1\\b1_fitted_predictions.csv",
+      "sha256": "d43d8c20480cf8cd4a750344de0aaf68a1e972621dd343222006d9a359cfe38e"
+    },
+    "B3 interpolated checkpoints": {
+      "path": "Q2\\03_结果\\经典ScalingLaw基线\\v1\\b3_predictions.csv",
+      "sha256": "eed72f2e524a9b711e4eeb1149c7d31061d55d5010c3e1020b6d087cf00fb32e"
+    },
+    "B3 trajectory closeout": {
+      "path": "Q2\\03_结果\\经典ScalingLaw基线\\v1\\b3_validation_closeout.md",
+      "sha256": "21f6928afc99cf6bb71e5ba2eb753143d4c63d229ec0e956a66ae8530b1a40fa"
+    },
+    "B10 M0 predictions": {
+      "path": "Q2\\03_结果\\完整回答补充\\v1\\b9_b10_m0_extrapolation.csv",
+      "sha256": "8918a9d09af59321b0be4727fca44e8148458c55201e38caddea831a4da197cb"
+    },
+    "B10 support summary": {
+      "path": "Q2\\03_结果\\完整回答补充\\v1\\b9_b10_extrapolation_summary.json",
+      "sha256": "8fbb872ea8e85f8d03bf3a8e7fa8ec9caaa456b5dae6b233bc31317bb967c33f"
+    },
+    "B6/B7 Q response fits": {
+      "path": "Q2\\03_结果\\完整回答补充\\v1\\b6_b7_q_model_supplement.csv",
+      "sha256": "12323933facdbdcb6b8af212e850eda90f6048d35ac11f1b21a568480954ae1d"
+    },
+    "B6/B7 equal-Loss reference": {
+      "path": "Q2\\03_结果\\完整回答补充\\v1\\b6_b7_q_n_equal_loss_demo.csv",
+      "sha256": "1955d67f10cae82683b8d65063e244857e231bd5c8f65c12a28330349e60c16e"
+    },
+    "B6 semi-synthetic source": {
+      "path": "中文题目\\F题\\real_attachments\\B_scaling_laws\\supplementary_NQ_experiment.csv",
+      "sha256": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f"
+    },
+    "B7 semi-synthetic source": {
+      "path": "中文题目\\F题\\real_attachments\\B_scaling_laws\\supplementary_NQ_experiment_expanded.csv",
+      "sha256": "880fd265ca3e1d9bc93b4559af7ed7c18f89040634266c50bae03d88486e0f3a"
+    }
+  },
+  "outputs": {
+    "Q2\\04_图表\\q2_evidence_complements\\figure_contract.csv": "1526cbf94bc97dc331dbb0ee927852371d09d48d5a709a062d28318c772ff5e3",
+    "Q2\\04_图表\\q2_evidence_complements\\figure_qa.json": "31af9129a5a761827b01084367afe276d13ec1a57e77a13d487f2f742fc2323e",
+    "Q2\\04_图表\\q2_evidence_complements\\raw_q2_b10_extrapolation_support_map.pdf": "6013b1d8734afa600b4b08235f60085aeee765b8103f255f8e297bc65e2bb2fa",
+    "Q2\\04_图表\\q2_evidence_complements\\raw_q2_b10_extrapolation_support_map.png": "d6ba4bc47d0ee9e83088b4f07377cb3bd83ba20f8ae86caedbc047da376ff0ec",
+    "Q2\\04_图表\\q2_evidence_complements\\raw_q2_b10_extrapolation_support_map.svg": "997b9da0cbff1b7a8cfd6aff1800553d0348bac3dd20efee5203dee205bb6e0a",
+    "Q2\\04_图表\\q2_evidence_complements\\raw_q2_b10_extrapolation_support_map_grayscale.png": "6a73596e989186000569c5f8b84035ce80d369227b27bc4bd9418dc1417200e3",
+    "Q2\\04_图表\\q2_evidence_complements\\README.md": "013974cf1bf0de3acda3cbea1ae6b82de0beeba1eed6ba246ecc27f56fbce206",
+    "Q2\\04_图表\\q2_evidence_complements\\result_q2_b3_track_level_errors.pdf": "abacf70980bd34eb9aa674d08d52ca9abe9ee2fd455302e1dab85560eaf73e09",
+    "Q2\\04_图表\\q2_evidence_complements\\result_q2_b3_track_level_errors.png": "b66aa278573dfa0cfc996df4cc8ca1bd6cb0745a2bc4bac292e738beaec16356",
+    "Q2\\04_图表\\q2_evidence_complements\\result_q2_b3_track_level_errors.svg": "ddbdbe12cc1fd17345cdc13ca00585144ebb76d685ec3102faf7e5148422b18d",
+    "Q2\\04_图表\\q2_evidence_complements\\result_q2_b3_track_level_errors_grayscale.png": "ece373288a8f8a021b77f96dc7e9cb345d18c452e3a7867fe9c7022db44dee31",
+    "Q2\\04_图表\\q2_evidence_complements\\result_q2_b6_b7_conditional_equal_loss.pdf": "8a6365fcc7a2ce1526eb01bf4b34ac2147d449cb9377665607fbd94762515960",
+    "Q2\\04_图表\\q2_evidence_complements\\result_q2_b6_b7_conditional_equal_loss.png": "6fa259602a512dd196d8c33914724167dc5d273255b44436d03fac83c5a3246e",
+    "Q2\\04_图表\\q2_evidence_complements\\result_q2_b6_b7_conditional_equal_loss.svg": "f8e03b0f602b71a2d4007e6fbdcb70a6245aefdf0f4c7da134bf122758f988e6",
+    "Q2\\04_图表\\q2_evidence_complements\\result_q2_b6_b7_conditional_equal_loss_grayscale.png": "71aa4acb08a73f74da81ebcf24d7a6600c30b6a50470fcd8dfe1ffc83b19df69"
+  },
+  "scope": [
+    "No M0 refit, M1/M2 fit, new bootstrap, or raw data edit.",
+    "B3 is a same-source interpolation check summarized by eight trajectories.",
+    "B10 is an estimated/curated table outside B1 support, not external validation.",
+    "B6/B7 equal-Loss curves are conditional semi-synthetic fit illustrations only."
+  ]
+}

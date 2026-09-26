@@ -1,0 +1,37 @@
+{
+  "figures": [
+    {
+      "figure_id": "result_q2_b3_track_level_errors",
+      "layout_issues": [],
+      "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_evidence_complement_previews\\result_q2_b3_track_level_errors_preview.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\04_图表\\q2_evidence_complements\\result_q2_b3_track_level_errors.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\04_图表\\q2_evidence_complements\\result_q2_b3_track_level_errors.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\04_图表\\q2_evidence_complements\\result_q2_b3_track_level_errors.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\04_图表\\q2_evidence_complements\\result_q2_b3_track_level_errors_grayscale.png"
+      ]
+    },
+    {
+      "figure_id": "raw_q2_b10_extrapolation_support_map",
+      "layout_issues": [],
+      "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_evidence_complement_previews\\raw_q2_b10_extrapolation_support_map_preview.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\04_图表\\q2_evidence_complements\\raw_q2_b10_extrapolation_support_map.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\04_图表\\q2_evidence_complements\\raw_q2_b10_extrapolation_support_map.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\04_图表\\q2_evidence_complements\\raw_q2_b10_extrapolation_support_map.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\04_图表\\q2_evidence_complements\\raw_q2_b10_extrapolation_support_map_grayscale.png"
+      ]
+    },
+    {
+      "figure_id": "result_q2_b6_b7_conditional_equal_loss",
+      "layout_issues": [],
+      "preview": "C:\\Users\\86147\\AppData\\Local\\Temp\\q2_evidence_complement_previews\\result_q2_b6_b7_conditional_equal_loss_preview.png",
+      "exports": [
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\04_图表\\q2_evidence_complements\\result_q2_b6_b7_conditional_equal_loss.pdf",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\04_图表\\q2_evidence_complements\\result_q2_b6_b7_conditional_equal_loss.svg",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\04_图表\\q2_evidence_complements\\result_q2_b6_b7_conditional_equal_loss.png",
+        "D:\\PycharmProject\\HUAWEI-Cup\\Q2\\04_图表\\q2_evidence_complements\\result_q2_b6_b7_conditional_equal_loss_grayscale.png"
+      ]
+    }
+  ]
+}

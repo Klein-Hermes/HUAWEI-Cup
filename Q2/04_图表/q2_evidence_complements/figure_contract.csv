@@ -1,0 +1,4 @@
+﻿figure_id,category,claim,evidence,warning
+result_q2_b3_track_level_errors,result,B3 总体指标拆分到 8 条 Pythia 参数轨迹后，轨迹间 RMSE 和系统偏差相近。,冻结 B1 参数生成的 b3_predictions.csv；按 trajectory 汇总 8 组，每组 500 个插值点。,B3 是 Pythia 同来源插值检查；500 点/轨迹不是独立训练实验，图不提供总体推断区间。
+raw_q2_b10_extrapolation_support_map,raw,B10 的 128 条大尺度估算均超出 B1 的 N 上界，其中 102 条也超出 D 上界。,B1 冻结拟合检查点 N/D 坐标、B10 M0 预测表及保存的支持域摘要。,B10 是估算/整理表；位置图说明外推范围，不代表预测已验证。参数 Bootstrap 不含外推模型形式误差。
+result_q2_b6_b7_conditional_equal_loss,result,在 B6/B7 半合成拟合曲面、固定 D 和目标 Loss 的条件下，拟合模型给出 Q 提高时所需 N 的变化。,已保存的 B6/B7 M_Q_NDQ 系数、共同等 Loss 参考点及各来源 Q_score 水平。,半合成条件计算而非真实训练资源替代率；B6 的 Q=0.7 点为拟合插值，B6/B7 不能作为独立复制。

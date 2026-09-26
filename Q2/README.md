@@ -115,3 +115,12 @@ B2 结果为半合成压力测试，不是 Cerebras 原始训练日志或独立�
 - 复现入口：`& "D:\Anaconda\python.exe" src/q2_full_answer_supplement.py`；代码副本：`02_代码/q2_full_answer_supplement.py`、`02_代码/q2_a_side_complementarity_sensitivity.py`、`02_代码/q2_full_answer_figures.py`（主入口会复算 500 次配方组 Bootstrap 并重新导出图表）
 
 此补充扩展解析边际效应、A 侧配比替代统计、半合成 Q 响应与 B9/B10 外推情景；不重拟合 M0。B6/B7 只作半合成条件响应，B8 的 Q 方向相反而未合并，B10 为估算 Loss 且远超 B1 支持域。B 侧真实 p-Loss 行级连接仍为 0，因此不能声称完整联合 `Loss=f(N,D,p,Q)` 已估计或验证；当前状态见该补充包的机器清单。
+ 
+## Q2 补充图：逐轨迹验证、外推支持域与条件等 Loss
+
+- 图表目录：04_图表/q2_evidence_complements/
+- B3 逐轨迹误差：result_q2_b3_track_level_errors.png；按 8 条轨迹汇总，不把 4,000 个插值点当作独立实验。
+- B10 外推支持域：raw_q2_b10_extrapolation_support_map.png；128/128 个估算点的 N 超出 B1 上界，102/128 个 D 超出上界；不是外部验证。
+- B6/B7 条件等 Loss 曲线：result_q2_b6_b7_conditional_equal_loss.png；只表示半合成拟合曲面，B6 的 Q=0.7 为拟合插值，不是实际训练资源替代率。
+- PDF、SVG、PNG、灰度 PNG、合同、布局 QA、复现说明与输入/输出哈希均随图存放；复现命令：& "D:\Anaconda\python.exe" src/q2_evidence_complement_figures.py。
+- 可复现脚本副本：02_代码/q2_evidence_complement_figures.py；根目录入口：src/q2_evidence_complement_figures.py。
