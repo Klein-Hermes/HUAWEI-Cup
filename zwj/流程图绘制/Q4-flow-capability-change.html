@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>F 题 Q4 能力变化分析与可行性门控流程</title>
+  <style>
+    :root {
+      /* 与同目录 Q1–Q3 流程图保持一致：Okabe–Ito 描边、白色节点 */
+      --ink: #20252b;
+      --blue: #0072b2;
+      --sky: #56b4e9;
+      --green: #009e73;
+      --amber: #e69f00;
+      --vermillion: #d55e00;
+      --purple: #cc79a7;
+      --grey: #68717b;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; color: var(--ink); }
+
+    body {
+      padding: 24px 16px 32px;
+      font-family: "Songti SC", "SimSun", "STSong", "Noto Serif SC", serif;
+    }
+
+    figure { width: min(1280px, 100%); margin: 0 auto; }
+    svg { display: block; width: 100%; height: auto; }
+
+    .node-title {
+      fill: var(--ink);
+      font: 700 20px "Songti SC", "SimSun", "STSong", serif;
+      text-anchor: middle;
+    }
+
+    .node-text {
+      fill: var(--ink);
+      font: 18px "Songti SC", "SimSun", "STSong", serif;
+      text-anchor: middle;
+    }
+
+    .compact { font-size: 16px; }
+    .gate-title { font-size: 16px; }
+    .gate-compact { font-size: 15px; }
+
+    .technical {
+      font-family: "Cascadia Mono", "Consolas", "Noto Sans Mono CJK SC", monospace;
+      letter-spacing: 0;
+    }
+
+    @media print {
+      body { padding: 0; }
+      figure { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <figure>
+    <svg viewBox="0 0 1280 1120" role="img" aria-labelledby="q4-capability-title q4-capability-desc">
+      <title id="q4-capability-title">F 题 Q4 能力变化分析与可行性门控流程</title>
+      <desc id="q4-capability-desc">从 C1、C2、C3、C4、C5、C6 与 C8 的模型、表现、开放权重、任务分数、Loss 和 Benchmark 候选出发，审计名称匹配和逐任务覆盖，构建六族相对能力指数；再分别开展规模与时间分解、开放权重前沿预测门控、Loss 到 Benchmark 桥接预拟合门，并汇总敏感性、C3/C4 年度背景和结论边界。当前规模和组成结果仅为观察性关联，Loss 桥接为 BLOCKED_NO_FIT，12/24 月数值预测不输出。</desc>
+
+      <defs>
+        <marker id="q4-capability-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+          <path d="M0 0 L10 4 L0 8 Z" fill="#20252b" />
+        </marker>
+      </defs>
+
+      <!-- 主流程与分支连线置于节点下层 -->
+      <g fill="none" stroke="#20252b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#q4-capability-arrow)">
+        <path d="M640 128 V160" />
+
+        <path d="M500 328 V352 Q500 360 492 360 H228 Q220 360 220 368 V420" />
+      <path d="M640 328 V438" />
+        <path d="M780 328 V352 Q780 360 788 360 H1052 Q1060 360 1060 368 V420" />
+
+        <path d="M220 636 V660 Q220 668 228 668 H392 Q400 668 400 676 V696" />
+        <path d="M640 618 V696" />
+        <path d="M1060 636 V660 Q1060 668 1052 668 H888 Q880 668 880 676 V696" />
+
+        <path d="M976 76 H1264 V776 Q1264 784 1256 784 H1000" />
+        <path d="M640 872 V920" />
+      </g>
+
+      <!-- 输入 -->
+      <path d="M320 24 H960 L992 128 H288 Z" fill="#ffffff" stroke="#0072b2" stroke-width="2.4" />
+      <text x="640" y="56" class="node-title">Q4 数据与冻结分析口径</text>
+      <text x="640" y="84" class="node-text compact">C1 表现 / C2 开放权重 / C8 逐任务分数</text>
+      <text x="640" y="110" class="node-text compact">C3/C4 年度背景；C5/C6 Loss–Benchmark 候选</text>
+
+      <!-- 候选匹配、覆盖审计与综合指数 -->
+      <rect x="280" y="160" width="720" height="168" rx="6" fill="#ffffff" stroke="#68717b" stroke-width="2.2" />
+      <text x="640" y="190" class="node-title">候选核验与 Core6 能力指数</text>
+      <text x="640" y="218" class="node-text compact">审计 C1/C2/C8 名称匹配、版本证据与逐任务覆盖</text>
+      <text x="640" y="244" class="node-text compact">唯一名称候选 1,819；严格版本确认 0，保留 <tspan class="technical">version_unresolved</tspan></text>
+      <text x="640" y="270" class="node-text compact">叶任务 0–100 百分位 → 六族等权；完整 Core6 指数 789 个模型</text>
+      <text x="640" y="296" class="node-text compact">ARC 与 Core6 无交集，单独报告；指数表示队列内相对位置</text>
+
+      <!-- 规模与时间组成分解 -->
+      <rect x="24" y="420" width="392" height="216" rx="6" fill="#ffffff" stroke="#e69f00" stroke-width="2.4" />
+      <text x="220" y="452" class="node-title">规模 / 时间分解</text>
+      <text x="220" y="480" class="node-text compact"><tspan class="technical">n=783</tspan>；响应为 Core6 指数</text>
+      <text x="220" y="506" class="node-text compact">解释：<tspan class="technical">log10(参数量/B)</tspan>、类型、月份 FE</text>
+      <text x="220" y="532" class="node-text compact">HC3；β=33.67（95% CI 31.57–35.77）</text>
+      <text x="220" y="558" class="node-text compact">共同支持 <tspan class="technical">n=645</tspan>；尺度项 −2.141</text>
+      <text x="220" y="584" class="node-text compact">非尺度 +3.326；95% CI 含 0，贡献占比留空</text>
+      <text x="220" y="610" class="node-text compact">只作观察性关联，不解释为因果</text>
+
+      <!-- 年度前沿预测门 -->
+      <path d="M640 438 L820 528 L640 618 L460 528 Z" fill="#ffffff" stroke="#cc79a7" stroke-width="2.4" />
+      <text x="640" y="504" class="node-title gate-title">年度预测可行？</text>
+      <text x="640" y="528" class="node-text gate-compact">需 ≥3 个年度滚动起点</text>
+      <text x="640" y="552" class="node-text gate-compact"><tspan class="technical">MAE</tspan> ≤ 持平基线</text>
+      <text x="640" y="576" class="node-text gate-compact">当前：0</text>
+
+      <!-- Loss 到 Benchmark 桥接门 -->
+      <rect x="880" y="420" width="360" height="216" rx="6" fill="#ffffff" stroke="#d55e00" stroke-width="2.4" />
+      <text x="1060" y="452" class="node-title">Loss–Benchmark 预拟合门</text>
+      <text x="1060" y="482" class="node-text compact">C5/C6 高可比去重候选：7 条</text>
+      <text x="1060" y="510" class="node-text compact">已核验版本：0；单位 / 协议仍未知</text>
+      <text x="1060" y="538" class="node-text compact">目标 Loss 与 Benchmark 评测未对齐</text>
+      <text x="1060" y="566" class="node-text compact"><tspan class="technical">BLOCKED_NO_FIT</tspan>：不拟合</text>
+
+      <!-- 指标敏感性与辅助来源 -->
+      <rect x="280" y="696" width="720" height="176" rx="6" fill="#ffffff" stroke="#68717b" stroke-width="2.2" />
+      <text x="640" y="728" class="node-title">敏感性与辅助来源核验</text>
+      <text x="640" y="754" class="node-text compact">敏感性：39 叶任务等权、原始准确率、替代 <tspan class="technical">IFEval</tspan> 指标</text>
+      <text x="640" y="778" class="node-text compact"><tspan class="technical">MATH</tspan> v1/v3 分队列；排除回退快照；检查 C2 明确开放子集</text>
+      <text x="640" y="802" class="node-text compact">ARC 与 Core6 无共同样本，完整七族指数不计算</text>
+      <text x="640" y="826" class="node-text compact">C3 的 2025 年仅部分覆盖；C4 截止 2025-03-14</text>
+      <text x="640" y="850" class="node-text compact">C3/C4 独立作背景，不并入 C1/C8 个体或年度预测输入</text>
+
+      <!-- 当前结果与证据边界 -->
+      <rect x="280" y="920" width="720" height="176" rx="20" fill="#ffffff" stroke="#20252b" stroke-width="2.4" />
+      <text x="640" y="952" class="node-title">Q4 当前结果与证据边界</text>
+      <text x="640" y="980" class="node-text compact">Core6 与共同支持分解用于相对描述，不支持因果归因</text>
+      <text x="640" y="1008" class="node-text compact">尺度项 −2.141；非尺度 +3.326 的区间含 0，贡献份额不报告</text>
+      <text x="640" y="1036" class="node-text compact">Loss 桥接 <tspan class="technical">BLOCKED_NO_FIT</tspan>；12 / 24 月数值预测和区间均不输出</text>
+      <text x="640" y="1064" class="node-text compact">版本与数据支持有限，结论不外推至总体或因果机制</text>
+    </svg>
+  </figure>
+</body>
+</html>
